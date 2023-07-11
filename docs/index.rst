@@ -10,6 +10,14 @@ Rail Notebooks
 
    Back to Rail <https://rail-external-html-rtd.readthedocs.io/en/latest/>
 
+
 .. toctree::
    :caption: Usage Demos
+
    Introducing Jupyter Notebooks <notebooks/intro_notebook>
+
+
+.. toctree::
+   :caption: Notebooks List
+
+   Notebooks <notebooks>

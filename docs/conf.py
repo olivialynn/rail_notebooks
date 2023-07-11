@@ -38,10 +38,12 @@ master_doc = "index"  # This assumes that sphinx-build is called from the root d
 html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
 add_module_names = False # Remove namespaces from class/method signatures
 
+"""
 autoapi_type = "python"
 autoapi_dirs = ["../src"]
 autoapi_ignore = ["*/__main__.py", "*/_version.py"]
 autoapi_add_toc_tree_entry = False
 autoapi_member_order = "bysource"
+"""
 
 html_theme = "sphinx_rtd_theme"

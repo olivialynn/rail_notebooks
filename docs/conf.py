@@ -7,7 +7,6 @@
 import os
 import sys
 
-import autoapi
 from importlib.metadata import version
 
 # Define path to the code to be documented **relative to where conf.py (this file) is kept**

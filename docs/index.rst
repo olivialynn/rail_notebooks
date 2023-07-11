@@ -6,8 +6,6 @@ Welcome to rail_notebooks_placeholder's documentation!
 ========================================================================================
 
 .. toctree::
-   :hidden:
 
-   Home page <self>
-   API Reference <autoapi/index>
+   Rail <https://rail-external-html-rtd.readthedocs.io/en/latest/>
    Notebooks <notebooks>

@@ -14,10 +14,4 @@ Rail Notebooks
 .. toctree::
    :caption: Usage Demos
 
-   Introducing Jupyter Notebooks <notebooks/intro_notebook>
-
-
-.. toctree::
-   :caption: Notebooks List
-
    Notebooks <notebooks>

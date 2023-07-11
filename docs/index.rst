@@ -6,6 +6,7 @@ Rail Notebooks
 ========================================================================================
 
 .. toctree::
+   :caption: Main Project
 
    Back to Rail <https://rail-external-html-rtd.readthedocs.io/en/latest/>
    Notebooks <notebooks>

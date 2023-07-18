@@ -1,0 +1,1088 @@
+Using Engines and Degraders to Generate Galaxy Samples with Errors and Biases
+=============================================================================
+
+author: John Franklin Crenshaw, Sam Schmidt, Eric Charles, Ziang Yan
+
+last run successfully: April 26, 2023
+
+This notebook demonstrates how to do photometric realization from
+different magnitude error models. For more completed degrader demo, see
+``degradation-demo.ipynb``
+
+.. code:: ipython3
+
+    import matplotlib.pyplot as plt
+    from pzflow.examples import get_example_flow
+    from rail.creation.engines.flowEngine import FlowCreator
+    from rail.creation.degradation.lsst_error_model import LSSTErrorModel
+    from rail.core.stage import RailStage
+
+Specify the path to the pretrained ‘pzflow’ used to generate samples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: ipython3
+
+    import pzflow
+    import os
+    flow_file = os.path.join(os.path.dirname(pzflow.__file__), 'example_files', 'example-flow.pzflow.pkl')
+
+We’ll start by setting up the Rail data store. RAIL uses
+`ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
+pipelines rather than interactive notebooks, the data store will work
+around that and enable us to use data interactively. See the
+``rail/examples/goldenspike/goldenspike.ipynb`` example notebook for
+more details on the Data Store.
+
+.. code:: ipython3
+
+    DS = RailStage.data_store
+    DS.__class__.allow_overwrite = True
+
+“True” Engine
+-------------
+
+First, let’s make an Engine that has no degradation. We can use it to
+generate a “true” sample, to which we can compare all the degraded
+samples below.
+
+Note: in this example, we will use a normalizing flow engine from the
+`pzflow <https://github.com/jfcrenshaw/pzflow>`__ package. However,
+everything in this notebook is totally agnostic to what the underlying
+engine is.
+
+The Engine is a type of RailStage object, so we can make one using the
+``RailStage.make_stage`` function for the class of Engine that we want.
+We then pass in the configuration parameters as arguments to
+``make_stage``.
+
+.. code:: ipython3
+
+    n_samples = int(1e5)
+    flowEngine_truth = FlowCreator.make_stage(name='truth', model=flow_file, n_samples=n_samples)
+
+
+.. parsed-literal::
+
+    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
+
+
+Let’s check that the Engine correctly read the underlying PZ Flow object
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: ipython3
+
+    flowEngine_truth.get_data('model')
+
+
+
+
+.. parsed-literal::
+
+    <pzflow.flow.Flow at 0x7fd63d1c3880>
+
+
+
+Now we invoke the ``sample`` method to generate some samples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Note that this will return a ``DataHandle`` object, which can keep both
+the data itself, and also the path to where the data is written. When
+talking to rail stages we can use this as though it were the underlying
+data and pass it as an argument. This allows the rail stages to keep
+track of where their inputs are coming from.
+
+To calculate magnitude error for extended sources, we need the
+information about major and minor axes of each galaxy. Here we simply
+generate random values
+
+.. code:: ipython3
+
+    samples_truth = flowEngine_truth.sample(n_samples, seed=0)
+    
+    import numpy as np
+    
+    samples_truth.data['major'] = np.abs(np.random.normal(loc=0.01, scale=0.1, size=n_samples)) # add major and minor axes
+    b_to_a = 1 - 0.5*np.random.rand(n_samples)
+    samples_truth.data['minor'] = samples_truth.data['major'] * b_to_a 
+    
+    print(samples_truth())
+    print("Data was written to ", samples_truth.path)
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output_truth: inprogress_output_truth.pq, truth
+           redshift          u          g          r          i          z  \
+    0      0.890625  27.370831  26.712662  26.025223  25.327188  25.016500   
+    1      1.978239  29.557049  28.361185  27.587231  27.238544  26.628109   
+    2      0.974287  26.566015  25.937716  24.787413  23.872456  23.139563   
+    3      1.317979  29.042730  28.274593  27.501106  26.648790  26.091450   
+    4      1.386366  26.292624  25.774778  25.429958  24.806530  24.367950   
+    ...         ...        ...        ...        ...        ...        ...   
+    99995  2.147172  26.550978  26.349937  26.135286  26.082020  25.911032   
+    99996  1.457508  27.362207  27.036276  26.823139  26.420132  26.110037   
+    99997  1.372992  27.736044  27.271955  26.887581  26.416138  26.043434   
+    99998  0.855022  28.044552  27.327116  26.599014  25.862331  25.592169   
+    99999  1.723768  27.049067  26.526745  26.094595  25.642971  25.197956   
+    
+                   y     major     minor  
+    0      24.926821  0.003319  0.002869  
+    1      26.248560  0.008733  0.007945  
+    2      22.832047  0.103938  0.052162  
+    3      25.346500  0.147522  0.143359  
+    4      23.700010  0.010929  0.009473  
+    ...          ...       ...       ...  
+    99995  25.558136  0.086491  0.071701  
+    99996  25.524904  0.044537  0.022302  
+    99997  25.456165  0.073146  0.047825  
+    99998  25.506388  0.100551  0.094662  
+    99999  24.900501  0.059611  0.049181  
+    
+    [100000 rows x 9 columns]
+    Data was written to  output_truth.pq
+
+
+LSSTErrorModel
+
+Now, we will demonstrate the ``LSSTErrorModel``, which adds photometric
+errors using a model similar to the model from `Ivezic et
+al. 2019 <https://arxiv.org/abs/0805.2366>`__ (specifically, it uses the
+model from this paper, without making the high SNR assumption. To
+restore this assumption and therefore use the exact model from the
+paper, set ``highSNR=True``.)
+
+Let’s create an error model with the default settings for point sources:
+
+.. code:: ipython3
+
+    errorModel = LSSTErrorModel.make_stage(name='error_model')
+
+To see the details of the model, including the default settings we are
+using, you can just print the model:
+
+.. code:: ipython3
+
+    errorModel
+
+
+
+
+.. parsed-literal::
+
+    LSSTErrorModel parameters:
+    
+    Model for bands: u, g, r, i, z, y
+    
+    Using error type point
+    Exposure time = 30.0 s
+    Number of years of observations = 10.0
+    Mean visits per year per band:
+       u: 5.6, g: 8.0, r: 18.4, i: 18.4, z: 16.0, y: 16.0
+    Airmass = 1.2
+    Irreducible system error = 0.005
+    Magnitudes dimmer than 30.0 are set to nan
+    gamma for each band:
+       u: 0.038, g: 0.039, r: 0.039, i: 0.039, z: 0.039, y: 0.039
+    
+    The coadded 5-sigma limiting magnitudes are:
+    u: 26.04, g: 27.29, r: 27.31, i: 26.87, z: 26.23, y: 25.30
+    
+    The following single-visit 5-sigma limiting magnitudes are
+    calculated using the parameters that follow them:
+       u: 23.83, g: 24.90, r: 24.47, i: 24.03, z: 23.46, y: 22.53
+    Cm for each band:
+       u: 23.09, g: 24.42, r: 24.44, i: 24.32, z: 24.16, y: 23.73
+    Median zenith sky brightness in each band:
+       u: 22.99, g: 22.26, r: 21.2, i: 20.48, z: 19.6, y: 18.61
+    Median zenith seeing FWHM (in arcseconds) for each band:
+       u: 0.81, g: 0.77, r: 0.73, i: 0.71, z: 0.69, y: 0.68
+    Extinction coefficient for each band:
+       u: 0.491, g: 0.213, r: 0.126, i: 0.096, z: 0.069, y: 0.17
+
+
+
+For extended sources:
+
+.. code:: ipython3
+
+    errorModel_auto = LSSTErrorModel.make_stage(name='error_model_auto',
+                                                    errortype="auto")
+
+.. code:: ipython3
+
+    errorModel_gaap = LSSTErrorModel.make_stage(name='error_model_gaap',
+                                                    errortype="gaap")
+
+Now let’s add this error model as a degrader and draw some samples with
+photometric errors.
+
+.. code:: ipython3
+
+    samples_w_errs = errorModel(samples_truth)
+    samples_w_errs()
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output_error_model: inprogress_output_error_model.pq, error_model
+
+
+
+
+.. raw:: html
+
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+    
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+    
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>redshift</th>
+          <th>u</th>
+          <th>u_err</th>
+          <th>g</th>
+          <th>g_err</th>
+          <th>r</th>
+          <th>r_err</th>
+          <th>i</th>
+          <th>i_err</th>
+          <th>z</th>
+          <th>z_err</th>
+          <th>y</th>
+          <th>y_err</th>
+          <th>major</th>
+          <th>minor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>0.890625</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>26.562721</td>
+          <td>0.105583</td>
+          <td>26.084861</td>
+          <td>0.068194</td>
+          <td>25.340978</td>
+          <td>0.052257</td>
+          <td>25.021891</td>
+          <td>0.069445</td>
+          <td>25.047443</td>
+          <td>0.159796</td>
+          <td>0.003319</td>
+          <td>0.002869</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>1.978239</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>28.038419</td>
+          <td>0.362520</td>
+          <td>27.490722</td>
+          <td>0.229680</td>
+          <td>28.102581</td>
+          <td>0.525461</td>
+          <td>26.066428</td>
+          <td>0.172483</td>
+          <td>25.834953</td>
+          <td>0.307316</td>
+          <td>0.008733</td>
+          <td>0.007945</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>0.974287</td>
+          <td>26.873697</td>
+          <td>0.389236</td>
+          <td>25.882633</td>
+          <td>0.057988</td>
+          <td>24.797719</td>
+          <td>0.021944</td>
+          <td>23.873355</td>
+          <td>0.014716</td>
+          <td>23.128763</td>
+          <td>0.013557</td>
+          <td>22.861474</td>
+          <td>0.023448</td>
+          <td>0.103938</td>
+          <td>0.052162</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>1.317979</td>
+          <td>27.914048</td>
+          <td>0.817339</td>
+          <td>27.705399</td>
+          <td>0.277971</td>
+          <td>27.204204</td>
+          <td>0.180633</td>
+          <td>26.703293</td>
+          <td>0.172092</td>
+          <td>25.931166</td>
+          <td>0.153677</td>
+          <td>25.795159</td>
+          <td>0.297649</td>
+          <td>0.147522</td>
+          <td>0.143359</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>1.386366</td>
+          <td>26.336934</td>
+          <td>0.253759</td>
+          <td>25.750773</td>
+          <td>0.051593</td>
+          <td>25.483414</td>
+          <td>0.039993</td>
+          <td>24.809233</td>
+          <td>0.032626</td>
+          <td>24.301733</td>
+          <td>0.036670</td>
+          <td>23.576059</td>
+          <td>0.043921</td>
+          <td>0.010929</td>
+          <td>0.009473</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>99995</th>
+          <td>2.147172</td>
+          <td>26.643909</td>
+          <td>0.325091</td>
+          <td>26.212954</td>
+          <td>0.077661</td>
+          <td>26.220695</td>
+          <td>0.076900</td>
+          <td>26.027656</td>
+          <td>0.095907</td>
+          <td>26.102146</td>
+          <td>0.177794</td>
+          <td>25.635739</td>
+          <td>0.261534</td>
+          <td>0.086491</td>
+          <td>0.071701</td>
+        </tr>
+        <tr>
+          <th>99996</th>
+          <td>1.457508</td>
+          <td>26.621966</td>
+          <td>0.319467</td>
+          <td>26.982388</td>
+          <td>0.151845</td>
+          <td>26.542811</td>
+          <td>0.102093</td>
+          <td>26.446734</td>
+          <td>0.138137</td>
+          <td>25.959232</td>
+          <td>0.157414</td>
+          <td>25.461991</td>
+          <td>0.226646</td>
+          <td>0.044537</td>
+          <td>0.022302</td>
+        </tr>
+        <tr>
+          <th>99997</th>
+          <td>1.372992</td>
+          <td>26.679523</td>
+          <td>0.334399</td>
+          <td>27.416936</td>
+          <td>0.219265</td>
+          <td>27.042587</td>
+          <td>0.157411</td>
+          <td>26.480484</td>
+          <td>0.142215</td>
+          <td>26.165722</td>
+          <td>0.187622</td>
+          <td>24.902178</td>
+          <td>0.141068</td>
+          <td>0.073146</td>
+          <td>0.047825</td>
+        </tr>
+        <tr>
+          <th>99998</th>
+          <td>0.855022</td>
+          <td>26.886674</td>
+          <td>0.393155</td>
+          <td>27.355825</td>
+          <td>0.208363</td>
+          <td>26.494891</td>
+          <td>0.097896</td>
+          <td>25.783669</td>
+          <td>0.077364</td>
+          <td>25.514723</td>
+          <td>0.107157</td>
+          <td>25.333237</td>
+          <td>0.203557</td>
+          <td>0.100551</td>
+          <td>0.094662</td>
+        </tr>
+        <tr>
+          <th>99999</th>
+          <td>1.723768</td>
+          <td>27.557109</td>
+          <td>0.643300</td>
+          <td>26.442709</td>
+          <td>0.095055</td>
+          <td>26.216528</td>
+          <td>0.076618</td>
+          <td>25.710465</td>
+          <td>0.072517</td>
+          <td>25.169914</td>
+          <td>0.079153</td>
+          <td>24.799610</td>
+          <td>0.129108</td>
+          <td>0.059611</td>
+          <td>0.049181</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>100000 rows × 15 columns</p>
+    </div>
+
+
+
+.. code:: ipython3
+
+    samples_w_errs_gaap = errorModel_gaap(samples_truth)
+    samples_w_errs_gaap.data
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output_error_model_gaap: inprogress_output_error_model_gaap.pq, error_model_gaap
+
+
+
+
+.. raw:: html
+
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+    
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+    
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>redshift</th>
+          <th>u</th>
+          <th>u_err</th>
+          <th>g</th>
+          <th>g_err</th>
+          <th>r</th>
+          <th>r_err</th>
+          <th>i</th>
+          <th>i_err</th>
+          <th>z</th>
+          <th>z_err</th>
+          <th>y</th>
+          <th>y_err</th>
+          <th>major</th>
+          <th>minor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>0.890625</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>26.562721</td>
+          <td>0.105583</td>
+          <td>26.084861</td>
+          <td>0.068194</td>
+          <td>25.340978</td>
+          <td>0.052257</td>
+          <td>25.021891</td>
+          <td>0.069445</td>
+          <td>25.047443</td>
+          <td>0.159796</td>
+          <td>0.003319</td>
+          <td>0.002869</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>1.978239</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>28.038419</td>
+          <td>0.362520</td>
+          <td>27.490722</td>
+          <td>0.229680</td>
+          <td>28.102581</td>
+          <td>0.525461</td>
+          <td>26.066428</td>
+          <td>0.172483</td>
+          <td>25.834953</td>
+          <td>0.307316</td>
+          <td>0.008733</td>
+          <td>0.007945</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>0.974287</td>
+          <td>26.873697</td>
+          <td>0.389236</td>
+          <td>25.882633</td>
+          <td>0.057988</td>
+          <td>24.797719</td>
+          <td>0.021944</td>
+          <td>23.873355</td>
+          <td>0.014716</td>
+          <td>23.128763</td>
+          <td>0.013557</td>
+          <td>22.861474</td>
+          <td>0.023448</td>
+          <td>0.103938</td>
+          <td>0.052162</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>1.317979</td>
+          <td>27.914048</td>
+          <td>0.817339</td>
+          <td>27.705399</td>
+          <td>0.277971</td>
+          <td>27.204204</td>
+          <td>0.180633</td>
+          <td>26.703293</td>
+          <td>0.172092</td>
+          <td>25.931166</td>
+          <td>0.153677</td>
+          <td>25.795159</td>
+          <td>0.297649</td>
+          <td>0.147522</td>
+          <td>0.143359</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>1.386366</td>
+          <td>26.336934</td>
+          <td>0.253759</td>
+          <td>25.750773</td>
+          <td>0.051593</td>
+          <td>25.483414</td>
+          <td>0.039993</td>
+          <td>24.809233</td>
+          <td>0.032626</td>
+          <td>24.301733</td>
+          <td>0.036670</td>
+          <td>23.576059</td>
+          <td>0.043921</td>
+          <td>0.010929</td>
+          <td>0.009473</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>99995</th>
+          <td>2.147172</td>
+          <td>26.643909</td>
+          <td>0.325091</td>
+          <td>26.212954</td>
+          <td>0.077661</td>
+          <td>26.220695</td>
+          <td>0.076900</td>
+          <td>26.027656</td>
+          <td>0.095907</td>
+          <td>26.102146</td>
+          <td>0.177794</td>
+          <td>25.635739</td>
+          <td>0.261534</td>
+          <td>0.086491</td>
+          <td>0.071701</td>
+        </tr>
+        <tr>
+          <th>99996</th>
+          <td>1.457508</td>
+          <td>26.621966</td>
+          <td>0.319467</td>
+          <td>26.982388</td>
+          <td>0.151845</td>
+          <td>26.542811</td>
+          <td>0.102093</td>
+          <td>26.446734</td>
+          <td>0.138137</td>
+          <td>25.959232</td>
+          <td>0.157414</td>
+          <td>25.461991</td>
+          <td>0.226646</td>
+          <td>0.044537</td>
+          <td>0.022302</td>
+        </tr>
+        <tr>
+          <th>99997</th>
+          <td>1.372992</td>
+          <td>26.679523</td>
+          <td>0.334399</td>
+          <td>27.416936</td>
+          <td>0.219265</td>
+          <td>27.042587</td>
+          <td>0.157411</td>
+          <td>26.480484</td>
+          <td>0.142215</td>
+          <td>26.165722</td>
+          <td>0.187622</td>
+          <td>24.902178</td>
+          <td>0.141068</td>
+          <td>0.073146</td>
+          <td>0.047825</td>
+        </tr>
+        <tr>
+          <th>99998</th>
+          <td>0.855022</td>
+          <td>26.886674</td>
+          <td>0.393155</td>
+          <td>27.355825</td>
+          <td>0.208363</td>
+          <td>26.494891</td>
+          <td>0.097896</td>
+          <td>25.783669</td>
+          <td>0.077364</td>
+          <td>25.514723</td>
+          <td>0.107157</td>
+          <td>25.333237</td>
+          <td>0.203557</td>
+          <td>0.100551</td>
+          <td>0.094662</td>
+        </tr>
+        <tr>
+          <th>99999</th>
+          <td>1.723768</td>
+          <td>27.557109</td>
+          <td>0.643300</td>
+          <td>26.442709</td>
+          <td>0.095055</td>
+          <td>26.216528</td>
+          <td>0.076618</td>
+          <td>25.710465</td>
+          <td>0.072517</td>
+          <td>25.169914</td>
+          <td>0.079153</td>
+          <td>24.799610</td>
+          <td>0.129108</td>
+          <td>0.059611</td>
+          <td>0.049181</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>100000 rows × 15 columns</p>
+    </div>
+
+
+
+.. code:: ipython3
+
+    samples_w_errs_auto = errorModel_auto(samples_truth)
+    samples_w_errs_auto.data
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output_error_model_auto: inprogress_output_error_model_auto.pq, error_model_auto
+
+
+
+
+.. raw:: html
+
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+    
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+    
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>redshift</th>
+          <th>u</th>
+          <th>u_err</th>
+          <th>g</th>
+          <th>g_err</th>
+          <th>r</th>
+          <th>r_err</th>
+          <th>i</th>
+          <th>i_err</th>
+          <th>z</th>
+          <th>z_err</th>
+          <th>y</th>
+          <th>y_err</th>
+          <th>major</th>
+          <th>minor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>0.890625</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>26.562721</td>
+          <td>0.105583</td>
+          <td>26.084861</td>
+          <td>0.068194</td>
+          <td>25.340978</td>
+          <td>0.052257</td>
+          <td>25.021891</td>
+          <td>0.069445</td>
+          <td>25.047443</td>
+          <td>0.159796</td>
+          <td>0.003319</td>
+          <td>0.002869</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>1.978239</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>28.038419</td>
+          <td>0.362520</td>
+          <td>27.490722</td>
+          <td>0.229680</td>
+          <td>28.102581</td>
+          <td>0.525461</td>
+          <td>26.066428</td>
+          <td>0.172483</td>
+          <td>25.834953</td>
+          <td>0.307316</td>
+          <td>0.008733</td>
+          <td>0.007945</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>0.974287</td>
+          <td>26.873697</td>
+          <td>0.389236</td>
+          <td>25.882633</td>
+          <td>0.057988</td>
+          <td>24.797719</td>
+          <td>0.021944</td>
+          <td>23.873355</td>
+          <td>0.014716</td>
+          <td>23.128763</td>
+          <td>0.013557</td>
+          <td>22.861474</td>
+          <td>0.023448</td>
+          <td>0.103938</td>
+          <td>0.052162</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>1.317979</td>
+          <td>27.914048</td>
+          <td>0.817339</td>
+          <td>27.705399</td>
+          <td>0.277971</td>
+          <td>27.204204</td>
+          <td>0.180633</td>
+          <td>26.703293</td>
+          <td>0.172092</td>
+          <td>25.931166</td>
+          <td>0.153677</td>
+          <td>25.795159</td>
+          <td>0.297649</td>
+          <td>0.147522</td>
+          <td>0.143359</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>1.386366</td>
+          <td>26.336934</td>
+          <td>0.253759</td>
+          <td>25.750773</td>
+          <td>0.051593</td>
+          <td>25.483414</td>
+          <td>0.039993</td>
+          <td>24.809233</td>
+          <td>0.032626</td>
+          <td>24.301733</td>
+          <td>0.036670</td>
+          <td>23.576059</td>
+          <td>0.043921</td>
+          <td>0.010929</td>
+          <td>0.009473</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>99995</th>
+          <td>2.147172</td>
+          <td>26.643909</td>
+          <td>0.325091</td>
+          <td>26.212954</td>
+          <td>0.077661</td>
+          <td>26.220695</td>
+          <td>0.076900</td>
+          <td>26.027656</td>
+          <td>0.095907</td>
+          <td>26.102146</td>
+          <td>0.177794</td>
+          <td>25.635739</td>
+          <td>0.261534</td>
+          <td>0.086491</td>
+          <td>0.071701</td>
+        </tr>
+        <tr>
+          <th>99996</th>
+          <td>1.457508</td>
+          <td>26.621966</td>
+          <td>0.319467</td>
+          <td>26.982388</td>
+          <td>0.151845</td>
+          <td>26.542811</td>
+          <td>0.102093</td>
+          <td>26.446734</td>
+          <td>0.138137</td>
+          <td>25.959232</td>
+          <td>0.157414</td>
+          <td>25.461991</td>
+          <td>0.226646</td>
+          <td>0.044537</td>
+          <td>0.022302</td>
+        </tr>
+        <tr>
+          <th>99997</th>
+          <td>1.372992</td>
+          <td>26.679523</td>
+          <td>0.334399</td>
+          <td>27.416936</td>
+          <td>0.219265</td>
+          <td>27.042587</td>
+          <td>0.157411</td>
+          <td>26.480484</td>
+          <td>0.142215</td>
+          <td>26.165722</td>
+          <td>0.187622</td>
+          <td>24.902178</td>
+          <td>0.141068</td>
+          <td>0.073146</td>
+          <td>0.047825</td>
+        </tr>
+        <tr>
+          <th>99998</th>
+          <td>0.855022</td>
+          <td>26.886674</td>
+          <td>0.393155</td>
+          <td>27.355825</td>
+          <td>0.208363</td>
+          <td>26.494891</td>
+          <td>0.097896</td>
+          <td>25.783669</td>
+          <td>0.077364</td>
+          <td>25.514723</td>
+          <td>0.107157</td>
+          <td>25.333237</td>
+          <td>0.203557</td>
+          <td>0.100551</td>
+          <td>0.094662</td>
+        </tr>
+        <tr>
+          <th>99999</th>
+          <td>1.723768</td>
+          <td>27.557109</td>
+          <td>0.643300</td>
+          <td>26.442709</td>
+          <td>0.095055</td>
+          <td>26.216528</td>
+          <td>0.076618</td>
+          <td>25.710465</td>
+          <td>0.072517</td>
+          <td>25.169914</td>
+          <td>0.079153</td>
+          <td>24.799610</td>
+          <td>0.129108</td>
+          <td>0.059611</td>
+          <td>0.049181</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>100000 rows × 15 columns</p>
+    </div>
+
+
+
+Notice some of the magnitudes are NaN’s. These are non-detections. This
+means those observed magnitudes were beyond the 30mag limit that is
+default in ``LSSTErrorModel``. You can change this limit and the
+corresponding flag by setting ``magLim=...`` and ``ndFlag=...`` in the
+constructor for ``LSSTErrorModel``.
+
+Let’s plot the error as a function of magnitude
+
+.. code:: ipython3
+
+    %matplotlib inline
+    
+    fig, axes_ = plt.subplots(ncols=3, nrows=2, figsize=(15, 9), dpi=100)
+    axes = axes_.reshape(-1)
+    for i, band in enumerate("ugrizy"):
+        ax = axes[i]
+        # pull out the magnitudes and errors
+        mags = samples_w_errs.data[band].to_numpy()
+        errs = samples_w_errs.data[band + "_err"].to_numpy()
+        
+        # sort them by magnitude
+        mags, errs = mags[mags.argsort()], errs[mags.argsort()]
+        
+        # plot errs vs mags
+        #ax.plot(mags, errs, label=band) 
+        
+        #plt.plot(mags, errs, c='C'+str(i))
+        ax.scatter(samples_w_errs_gaap.data[band].to_numpy(),
+                samples_w_errs_gaap.data[band + "_err"].to_numpy(),
+                    s=5, marker='.', color='C0', alpha=0.8, label='GAAP')
+        
+        ax.plot(mags, errs, color='C3', label='Point source')
+        
+        
+        ax.legend()
+        ax.set_xlim(18, 31)
+        ax.set_ylim(-0.1, 3.5)
+        ax.set(xlabel=band+" Band Magnitude (AB)", ylabel="Error (mags)")
+
+
+
+
+.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_25_0.png
+
+
+.. code:: ipython3
+
+    %matplotlib inline
+    
+    fig, axes_ = plt.subplots(ncols=3, nrows=2, figsize=(15, 9), dpi=100)
+    axes = axes_.reshape(-1)
+    for i, band in enumerate("ugrizy"):
+        ax = axes[i]
+        # pull out the magnitudes and errors
+        mags = samples_w_errs.data[band].to_numpy()
+        errs = samples_w_errs.data[band + "_err"].to_numpy()
+        
+        # sort them by magnitude
+        mags, errs = mags[mags.argsort()], errs[mags.argsort()]
+        
+        # plot errs vs mags
+        #ax.plot(mags, errs, label=band) 
+        
+        #plt.plot(mags, errs, c='C'+str(i))
+        ax.scatter(samples_w_errs_auto.data[band].to_numpy(),
+                samples_w_errs_auto.data[band + "_err"].to_numpy(),
+                    s=5, marker='.', color='C0', alpha=0.8, label='AUTO')
+        
+        ax.plot(mags, errs, color='C3', label='Point source')
+        
+        
+        ax.legend()
+        ax.set_xlim(18, 31)
+        ax.set_ylim(-0.1, 3.5)
+        ax.set(xlabel=band+" Band Magnitude (AB)", ylabel="Error (mags)")
+
+
+
+
+.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_26_0.png
+
+
+You can see that the photometric error increases as magnitude gets
+dimmer, just like you would expect. Notice, however, that we have
+galaxies as dim as magnitude 30. This is because the Flow produces a
+sample much deeper than the LSST 5-sigma limiting magnitudes. There are
+no galaxies dimmer than magnitude 30 because LSSTErrorModel sets
+magnitudes > 30 equal to NaN (the default flag for non-detections).
+
+Also, you can find the GAaP and AUTO magnitude error are scattered due
+to variable galaxy sizes. Also, you can find that there are gaps between
+GAAP magnitude error and point souce magnitude error, this is because
+the additional factors due to aperture sizes have a minimum value of
+:math:`\sqrt{(\sigma^2+A_{\mathrm{min}})/\sigma^2}`, where
+:math:`\sigma` is the width of the beam, :math:`A_{\min}` is an offset
+of the aperture sizes (taken to be 0.7 arcmin here).
+

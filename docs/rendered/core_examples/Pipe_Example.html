@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FluxtoMag_and_Deredden_example</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Pipe_Example</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7436,18 +7436,25 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21af28b2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>author: Sam Schmidt<br/>
-Last successfully run: Apr 26, 2023<br/></p>
+<h1 id="RAIL-Pipeline-example-notebook">RAIL Pipeline example notebook<a class="anchor-link" href="#RAIL-Pipeline-example-notebook">¶</a></h1><p>author: Eric Charles<br/>
+last run successfully: April 26, 2023<br/></p>
+<p>This notbook shows how to:</p>
+<ol>
+<li>Build a simple rail pipeline interactive,</li>
+<li>Save that pipeline (including configuraiton) to a yaml file,</li>
+<li>Load that pipeline from the saved yaml file,</li>
+<li>Run the loaded pipeline.</li>
+</ol>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ae65f4e6-e7b3-4669-a6fa-e6e8d8592681">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7455,20 +7462,37 @@ Last successfully run: Apr 26, 2023<br/></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">tables_io</span>
-<span class="kn">import</span> <span class="nn">tempfile</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">ceci</span>
+<span class="kn">import</span> <span class="nn">rail</span>
 <span class="kn">from</span> <span class="nn">rail.core.stage</span> <span class="kn">import</span> <span class="n">RailStage</span>
+<span class="kn">from</span> <span class="nn">rail.creation.degradation.spectroscopic_degraders</span> <span class="kn">import</span> <span class="n">LineConfusion</span> 
+<span class="kn">from</span> <span class="nn">rail.creation.degradation.quantityCut</span> <span class="kn">import</span> <span class="n">QuantityCut</span>
+<span class="kn">from</span> <span class="nn">rail.creation.degradation.lsst_error_model</span> <span class="kn">import</span> <span class="n">LSSTErrorModel</span>
+<span class="kn">from</span> <span class="nn">rail.creation.engines.flowEngine</span> <span class="kn">import</span> <span class="n">FlowCreator</span><span class="p">,</span> <span class="n">FlowPosterior</span>
 <span class="kn">from</span> <span class="nn">rail.core.data</span> <span class="kn">import</span> <span class="n">TableHandle</span>
-<span class="kn">from</span> <span class="nn">rail.core.utils</span> <span class="kn">import</span> <span class="n">RAILDIR</span>
-<span class="kn">from</span> <span class="nn">rail.tools.utilPhotometry</span> <span class="kn">import</span> <span class="n">LSSTFluxToMagConverter</span><span class="p">,</span> <span class="n">Dereddener</span>
+<span class="kn">from</span> <span class="nn">rail.core.stage</span> <span class="kn">import</span> <span class="n">RailStage</span>
+<span class="kn">from</span> <span class="nn">rail.core.utilStages</span> <span class="kn">import</span> <span class="n">ColumnMapper</span><span class="p">,</span> <span class="n">TableConverter</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0ce08f0d-15f2-418b-8b3d-94937918b865">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We'll start by setting up the Rail data store. RAIL uses <a href="https://github.com/LSSTDESC/ceci">ceci</a>, which is designed for pipelines rather than interactive notebooks; the data store will work around that and enable us to use data interactively.
+When working interactively, we want to allow overwriting data in the Rail data store to avoid errors if we re-run cells.
+See the <code>rail/examples/goldenspike/goldenspike.ipynb</code> example notebook for more details on the Data Store.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7477,14 +7501,31 @@ Last successfully run: Apr 26, 2023<br/></p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DS</span> <span class="o">=</span> <span class="n">RailStage</span><span class="o">.</span><span class="n">data_store</span>
-<span class="n">example_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAILDIR</span><span class="p">,</span> <span class="s2">"rail"</span><span class="p">,</span> <span class="s2">"examples_data"</span><span class="p">,</span> <span class="s2">"testdata"</span><span class="p">,</span> <span class="s2">"rubin_dm_dc2_example.pq"</span><span class="p">)</span>
-<span class="n">test_data</span> <span class="o">=</span> <span class="n">DS</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">"test_data"</span><span class="p">,</span> <span class="n">TableHandle</span><span class="p">,</span> <span class="n">example_file</span><span class="p">)</span>
+<span class="n">DS</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">allow_overwrite</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=67da5095-a5d6-4979-a2a0-5fba0d3e5c58">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Some-configuration-setup">Some configuration setup<a class="anchor-link" href="#Some-configuration-setup">¶</a></h3><p>The example pipeline builds some of the RAIL creation functionality into a pipeline.</p>
+<p>Here we are defining:</p>
+<ol>
+<li>The location of the pretrained PZFlow file used with this example.</li>
+<li>The bands we will be generating data for.</li>
+<li>The names of the columns where we will be writing the error estimates.</li>
+<li>The grid of redshifts we use for posterior estimation.</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7492,58 +7533,37 @@ Last successfully run: Apr 26, 2023<br/></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">test_data</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">rail.core.utils</span> <span class="kn">import</span> <span class="n">RAILDIR</span>
+<span class="n">flow_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAILDIR</span><span class="p">,</span> <span class="s1">'rail/examples_data/goldenspike_data/data/pretrained_flow.pkl'</span><span class="p">)</span>
+<span class="n">bands</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'u'</span><span class="p">,</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'i'</span><span class="p">,</span><span class="s1">'z'</span><span class="p">,</span><span class="s1">'y'</span><span class="p">]</span>
+<span class="n">band_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">band</span><span class="p">:</span><span class="sa">f</span><span class="s1">'mag_</span><span class="si">{</span><span class="n">band</span><span class="si">}</span><span class="s1">_lsst'</span> <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="n">bands</span><span class="p">}</span>
+<span class="n">rename_dict</span> <span class="o">=</span> <span class="p">{</span><span class="sa">f</span><span class="s1">'mag_</span><span class="si">{</span><span class="n">band</span><span class="si">}</span><span class="s1">_lsst_err'</span><span class="p">:</span><span class="sa">f</span><span class="s1">'mag_err_</span><span class="si">{</span><span class="n">band</span><span class="si">}</span><span class="s1">_lsst'</span> <span class="k">for</span> <span class="n">band</span> <span class="ow">in</span> <span class="n">bands</span><span class="p">}</span>
+<span class="n">post_grid</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">21</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 100 entries, 0 to 99
-Data columns (total 15 columns):
- #   Column            Non-Null Count  Dtype  
----  ------            --------------  -----  
- 0   objectId          100 non-null    int64  
- 1   ra                100 non-null    float64
- 2   decl              100 non-null    float64
- 3   u_gaap1p0Flux     100 non-null    float64
- 4   u_gaap1p0FluxErr  100 non-null    float64
- 5   g_gaap1p0Flux     100 non-null    float64
- 6   g_gaap1p0FluxErr  100 non-null    float64
- 7   r_gaap1p0Flux     100 non-null    float64
- 8   r_gaap1p0FluxErr  100 non-null    float64
- 9   i_gaap1p0Flux     100 non-null    float64
- 10  i_gaap1p0FluxErr  100 non-null    float64
- 11  z_gaap1p0Flux     100 non-null    float64
- 12  z_gaap1p0FluxErr  100 non-null    float64
- 13  y_gaap1p0Flux     100 non-null    float64
- 14  y_gaap1p0FluxErr  100 non-null    float64
-dtypes: float64(14), int64(1)
-memory usage: 11.8 KB
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c235d20-74bd-4acb-957a-d2f24faa5827">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To convert mags to fluxes, we need to specify patterns for the <code>flux_name</code> and <code>flux_err_name</code> columns to be converted, and the <code>mag_name</code> and <code>mag_err_name</code> columsn that will store the newly created magnitudes.  This is done as below, by specifying a string listing the bands, and <code>{band}</code> in the patterns where the individual bands will go.  The dictionary below duplicates the default behavior of the converter, but is written out explicitly as an example:</p>
+<h3 id="Define-the-pipeline-stages">Define the pipeline stages<a class="anchor-link" href="#Define-the-pipeline-stages">¶</a></h3><p>The RailStage base class defines the <code>make_stage</code> "classmethod" function, which allows us to make a stage of
+that particular type in a general way.</p>
+<p>Note that that we are passing in the configuration parameters to each pipeline stage as keyword arguments.</p>
+<p>The names of the parameters will depend on the stage type.</p>
+<p>A couple of things are important:</p>
+<ol>
+<li>Each stage should have a unique name. In <code>ceci</code>, stage names default to the name of the class (e.g., FlowCreator, or LSSTErrorModel); this would be problematic if you wanted two stages of the same type in a given pipeline, so be sure to assign each stage its own name.</li>
+<li>At this point, we aren't actually worrying about the connections between the stages.</li>
+</ol>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b5d5ec2c-6a07-48c9-897e-b6e0a1025096">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7551,28 +7571,21 @@ memory usage: 11.8 KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># convert "gaap" fluxes to magnitudes:</span>
-<span class="n">ftomagdict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">bands</span> <span class="o">=</span> <span class="s2">"ugrizy"</span><span class="p">,</span>
-                  <span class="n">flux_name</span><span class="o">=</span><span class="s2">"</span><span class="si">{band}</span><span class="s2">_gaap1p0Flux"</span><span class="p">,</span>
-                  <span class="n">flux_err_name</span><span class="o">=</span><span class="s2">"</span><span class="si">{band}</span><span class="s2">_gaap1p0FluxErr"</span><span class="p">,</span>
-                  <span class="n">mag_name</span><span class="o">=</span><span class="s2">"mag_</span><span class="si">{band}</span><span class="s2">_lsst"</span><span class="p">,</span>
-                  <span class="n">mag_err_name</span><span class="o">=</span><span class="s2">"mag_err_</span><span class="si">{band}</span><span class="s2">_lsst"</span><span class="p">,</span>
-                  <span class="n">copy_cols</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">ra</span><span class="o">=</span><span class="s1">'ra'</span><span class="p">,</span> <span class="n">decl</span><span class="o">=</span><span class="s1">'decl'</span><span class="p">,</span> <span class="n">objectId</span><span class="o">=</span><span class="s1">'objectId'</span><span class="p">))</span>
-<span class="n">fluxToMag</span> <span class="o">=</span> <span class="n">LSSTFluxToMagConverter</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'flux2mag'</span><span class="p">,</span> <span class="o">**</span><span class="n">ftomagdict</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bbba7488-4f85-4361-8aac-f2a71b6b95d1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">mags_data</span> <span class="o">=</span> <span class="n">fluxToMag</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">flow_engine_test</span> <span class="o">=</span> <span class="n">FlowCreator</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'flow_engine_test'</span><span class="p">,</span> 
+                                         <span class="n">model</span><span class="o">=</span><span class="n">flow_file</span><span class="p">,</span> <span class="n">n_samples</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+      
+<span class="n">lsst_error_model_test</span> <span class="o">=</span> <span class="n">LSSTErrorModel</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'lsst_error_model_test'</span><span class="p">,</span>
+                                                  <span class="n">bandNames</span><span class="o">=</span><span class="n">band_dict</span><span class="p">)</span>
+                
+<span class="n">col_remapper_test</span> <span class="o">=</span> <span class="n">ColumnMapper</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'col_remapper_test'</span><span class="p">,</span> <span class="n">hdf5_groupname</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span>
+                                            <span class="n">columns</span><span class="o">=</span><span class="n">rename_dict</span><span class="p">)</span>
+
+<span class="n">flow_post_test</span> <span class="o">=</span> <span class="n">FlowPosterior</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'flow_post_test'</span><span class="p">,</span>
+                                          <span class="n">column</span><span class="o">=</span><span class="s1">'redshift'</span><span class="p">,</span> <span class="n">flow</span><span class="o">=</span><span class="n">flow_file</span><span class="p">,</span>
+                                          <span class="n">grid</span><span class="o">=</span><span class="n">post_grid</span><span class="p">)</span>
+
+<span class="n">table_conv_test</span> <span class="o">=</span> <span class="n">TableConverter</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'table_conv_test'</span><span class="p">,</span> <span class="n">output_format</span><span class="o">=</span><span class="s1">'numpyDict'</span><span class="p">,</span> 
+                                            <span class="n">seed</span><span class="o">=</span><span class="mi">12345</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7584,22 +7597,60 @@ memory usage: 11.8 KB
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Inserting handle into data store.  output_flux2mag: inprogress_output_flux2mag.hdf5, flux2mag
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/tools/utilPhotometry.py:379: RuntimeWarning: invalid value encountered in log10
-  return -2.5*np.log10(flux_vals) + self.config.mag_offset
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f37c80cf-1593-454a-a5ab-ad903eba6f2e">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Make-the-pipeline-and-add-the-stages">Make the pipeline and add the stages<a class="anchor-link" href="#Make-the-pipeline-and-add-the-stages">¶</a></h3><p>Here we make an empty interactive pipeline (interactive in the sense that it will be run locally, rather than using the batch submission mechanisms built into <code>ceci</code>), and add the stages to that pipeline.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">ceci</span><span class="o">.</span><span class="n">Pipeline</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+<span class="n">stages</span> <span class="o">=</span> <span class="p">[</span><span class="n">flow_engine_test</span><span class="p">,</span> <span class="n">lsst_error_model_test</span><span class="p">,</span> <span class="n">col_remapper_test</span><span class="p">,</span> <span class="n">table_conv_test</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">stage</span> <span class="ow">in</span> <span class="n">stages</span><span class="p">:</span>
+    <span class="n">pipe</span><span class="o">.</span><span class="n">add_stage</span><span class="p">(</span><span class="n">stage</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Here-are-some-examples-of-interactive-introspection-into-the-pipeline">Here are some examples of interactive introspection into the pipeline<a class="anchor-link" href="#Here-are-some-examples-of-interactive-introspection-into-the-pipeline">¶</a></h3><p>I.e., some functions that you can use to figure out what the pipeline is doing.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7607,7 +7658,8 @@ memory usage: 11.8 KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">mags_data</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the names of the stages</span>
+<span class="n">pipe</span><span class="o">.</span><span class="n">stage_names</span>
 </pre></div>
 </div>
 </div>
@@ -7620,48 +7672,15 @@ memory usage: 11.8 KB
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['mag_u_lsst',
- 'mag_err_u_lsst',
- 'mag_g_lsst',
- 'mag_err_g_lsst',
- 'mag_r_lsst',
- 'mag_err_r_lsst',
- 'mag_i_lsst',
- 'mag_err_i_lsst',
- 'mag_z_lsst',
- 'mag_err_z_lsst',
- 'mag_y_lsst',
- 'mag_err_y_lsst',
- 'ra',
- 'decl',
- 'objectId']</pre>
+<pre>['flow_engine_test',
+ 'lsst_error_model_test',
+ 'col_remapper_test',
+ 'table_conv_test']</pre>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7214fc16-3555-4553-9a0f-b145c21d86d0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To deredden magnitudes we need to grab one of the dust maps used by the <code>dustmaps</code> package.  We'll grab the default Schlegel-Finkbeiner-Davis "SFD" map.  NOTE: This will download a file to your machine containing the SFD data!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6394d1ce-df67-4da3-a64e-e21a3cbfffd3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We need to feed the location of the directory containing the newly created "sfd" maps to the stage, as we downloaded the data to the present working directory with the command above, that directory is just <code>"./"</code></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a1c7aef0-50aa-4cb0-907a-db7bca3843ab">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7669,10 +7688,8 @@ memory usage: 11.8 KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">dustmap_dir</span> <span class="o">=</span> <span class="s2">"./"</span>
-
-<span class="n">dereddener</span> <span class="o">=</span> <span class="n">Dereddener</span><span class="o">.</span><span class="n">make_stage</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'dereddener'</span><span class="p">,</span> <span class="n">dustmap_dir</span><span class="o">=</span><span class="n">dustmap_dir</span><span class="p">)</span>
-<span class="n">dereddener</span><span class="o">.</span><span class="n">fetch_map</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the configuration of a particular stage</span>
+<span class="n">pipe</span><span class="o">.</span><span class="n">flow_engine_test</span><span class="o">.</span><span class="n">config</span>
 </pre></div>
 </div>
 </div>
@@ -7682,49 +7699,15 @@ memory usage: 11.8 KB
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Configuration file not found:
-
-    /home/runner/.dustmapsrc
-
-To create a new configuration file in the default location, run the following python code:
-
-    from dustmaps.config import config
-    config.reset()
-
-Note that this will delete your configuration! For example, if you have specified a data directory, then dustmaps will forget about its location.
-Downloading SFD data file to /home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits
-Downloading data to '/home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits' ...
-Downloading https://dataverse.harvard.edu/api/access/datafile/2902687 ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 64.0 MiB of 64.0 MiB |  21.9 MiB/s |###################| 100% | ETA:  00:00:00</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Downloading SFD data file to /home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits
-Downloading data to '/home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits' ...
-Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 61.6 MiB of 64.0 MiB |  18.8 MiB/s |################## |  96% | ETA:   0:00:00</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>StageConfig{output_mode:default,n_samples:50,seed:12345,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=07e8a025">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7732,7 +7715,9 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">deredden_data</span> <span class="o">=</span> <span class="n">dereddener</span><span class="p">(</span><span class="n">mags_data</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the list of outputs 'tags' </span>
+<span class="c1"># These are how the stage thinks of the outputs, as a list names associated to DataHandle types.</span>
+<span class="n">pipe</span><span class="o">.</span><span class="n">flow_engine_test</span><span class="o">.</span><span class="n">outputs</span>
 </pre></div>
 </div>
 </div>
@@ -7742,16 +7727,15 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Inserting handle into data store.  output_dereddener: inprogress_output_dereddener.hdf5, dereddener
-</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[('output', rail.core.data.PqHandle)]</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a96eba23-6905-4300-846f-aa2ea8389e27">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7759,7 +7743,9 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">deredden_data</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the list of outputs 'aliased tags'</span>
+<span class="c1"># These are how the pipeline things of the outputs, as a unique key that points to a particular file</span>
+<span class="n">pipe</span><span class="o">.</span><span class="n">flow_engine_test</span><span class="o">.</span><span class="n">_outputs</span>
 </pre></div>
 </div>
 </div>
@@ -7772,23 +7758,24 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>dict_keys(['mag_u_lsst', 'mag_g_lsst', 'mag_r_lsst', 'mag_i_lsst', 'mag_z_lsst', 'mag_y_lsst'])</pre>
+<pre>{'output_flow_engine_test': 'output_flow_engine_test.pq'}</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=31c25a3d-ef3a-4877-8e88-286eeabe74c4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We see that the deredden stage returns us a dictionary with the dereddened magnitudes. Let's plot the difference of the un-dereddened magnitudes and the dereddened ones for u-band to see if they are, indeed, slightly brighter:</p>
+<h3 id="Okay,-now-let's-connect-up-the-pipeline-stages">Okay, now let's connect up the pipeline stages<a class="anchor-link" href="#Okay,-now-let's-connect-up-the-pipeline-stages">¶</a></h3><p>We can use the <code>RailStage.connect_input</code> function to connect one stage to another.
+By default, this will connect the output data product called <code>output</code> for one stage.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cc1300f4-9053-4af1-adf2-23dd1be62418">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7796,11 +7783,10 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">delta_u_mag</span> <span class="o">=</span> <span class="n">mags_data</span><span class="p">()[</span><span class="s1">'mag_u_lsst'</span><span class="p">]</span> <span class="o">-</span> <span class="n">deredden_data</span><span class="p">()[</span><span class="s1">'mag_u_lsst'</span><span class="p">]</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mags_data</span><span class="p">()[</span><span class="s1">'mag_u_lsst'</span><span class="p">],</span> <span class="n">delta_u_mag</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"orignal u-band mag"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"u - deredden_u"</span><span class="p">);</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">lsst_error_model_test</span><span class="o">.</span><span class="n">connect_input</span><span class="p">(</span><span class="n">flow_engine_test</span><span class="p">)</span>
+<span class="n">col_remapper_test</span><span class="o">.</span><span class="n">connect_input</span><span class="p">(</span><span class="n">lsst_error_model_test</span><span class="p">)</span>
+<span class="c1">#flow_post_test.connect_input(col_remapper_test, inputTag='input')</span>
+<span class="n">table_conv_test</span><span class="o">.</span><span class="n">connect_input</span><span class="p">(</span><span class="n">col_remapper_test</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7812,24 +7798,32 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="Image" class="" src="data:image/png;base64,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q/vvv19PPvmk2rdvr4CAAP3yl790670A4L0IxQD8RlhYmC699FLt37+/1uf27dungIAARUZGunzd6nrFRUVFToHy+++/d5ptdMWmTZv0/fff66233tKQIUMc7YcOHWrU9aSq2dcTJ044tZ07d05Hjx51fBwREaENGzY49enXr5/TxwcOHHB6nUVFRbLb7Y5T9VavXq2zZ8/q3XffdZoFbspms6ioKB04cKBWe133sjm88cYbGjZsmF566SWn9hMnTqhjx46Oj6OiovTll1/KMAynXxaKiopaZJwAmg9rigH4jVatWmnUqFF65513nP7UX1JSohUrVmjQoEGyWq0uX3fEiBFq3bp1rZJjixYtatJYJefZynPnzumvf/1ro6/ZvXt3ffjhh05tS5YscZopDg4O1siRI50eNZeAVJcxq/bcc89JksaMGXPBsZeXl+vll19u9Nhvuukmbdu2Tdu3b3e0lZaW6rXXXmv0NV3RqlWrWjPXq1at0rfffuvUlpKSom+//Vbvvvuuo+3MmTN64YUXWmScAJoPM8UA/MpTTz2lDRs2aNCgQXrooYfUunVrPf/88zp79qyeffbZRl0zPDxcM2bM0IIFCzR27FiNHj1an332mf7xj3+oY8eOjTrkY+DAgbr88suVlpam6dOny2KxaPny5U1aUvDAAw/oF7/4hW677TbdeOON+uyzz/Tee+85zXQ2xKFDhxyvs6CgQH//+9911113OWaUR40apcDAQN16662aOnWqTp06pRdeeEGdOnVympV2xW9+8xstX75co0eP1owZMxwl2aKiorR79+5GXdMVt9xyi5544gndd999GjhwoD7//HO99tprThs2JWnq1KlatGiR7rzzTs2YMUOdO3fWa6+9puDgYEm1l5oA8B3MFAPwK9dcc422bNmiPn36KDMzU48//riioqL0wQcf1LmRq6F+//vfa+7cufrkk0/061//WkVFRVq/fr0Mw3AEIld06NBBa9asUefOnTVnzhz98Y9/1I033tjo4C5VVdL47W9/qw8//FC/+tWvdOjQIW3YsEEhISEuXSc7O1tBQUGaNWuW1q5dq2nTpjktK+jZs6feeOMNWSwW/frXv1ZWVpamTJmiGTNmNHrsnTt31gcffKBrr71WzzzzjBYuXKhJkyY16ZquePTRR/WrX/1K7733nmbMmKGdO3dq7dq1tZbbVNeTHj58uP785z/rqaee0uDBgzV37lxJatT3AgDvYDHcvdMBAEzixIkTuvzyy/XUU0/pd7/7naeHAw9auHChZs6cqf/93/9Vly5dPD0cAI3ATDEANMCPP/5Yq23hwoWSVG/lBvifmt8LZ86c0fPPP68ePXoQiAEfxppiAGiA7OxsvfLKK7rpppvUtm1b5efn63/+5380atQo/cd//Ienh4cWNHHiRHXr1k1xcXEqLy/X3//+d+3bt6/FNgUCaB6EYgBogGuvvVatW7fWs88+K5vN5th899RTT3l6aGhhKSkpevHFF/Xaa6+psrJSvXv31sqVK5WamurpoQFoAtYUAwAAwPRYUwwAAADTIxQDAADA9AjFAAAAMD1CMQAAAEyPUAwAAADTIxQDAADA9AjFAAAAMD1CMQAAAEyPUAwAAADT+/8X86Y3Tjsy9gAAAABJRU5ErkJggg=="/>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Inserting handle into data store.  output_flow_engine_test: inprogress_output_flow_engine_test.pq, flow_engine_test
+Inserting handle into data store.  output_lsst_error_model_test: inprogress_output_lsst_error_model_test.pq, lsst_error_model_test
+Inserting handle into data store.  output_col_remapper_test: inprogress_output_col_remapper_test.pq, col_remapper_test
+</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7f4f0def-0ea4-4aa9-9e0f-35b1710e1e41">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="for-cleanup,-uncomment-the-line-below-to-delete-that-SFD-map-directory-downloaded-in-this-example">for cleanup, uncomment the line below to delete that SFD map directory downloaded in this example<a class="anchor-link" href="#for-cleanup,-uncomment-the-line-below-to-delete-that-SFD-map-directory-downloaded-in-this-example">¶</a></h2>
+<h3 id="Initialize-the-pipeline">Initialize the pipeline<a class="anchor-link" href="#Initialize-the-pipeline">¶</a></h3><p>This will do a few things:</p>
+<ol>
+<li>Attach any global pipeline inputs that were not specified in the connections above. In our case, the input flow file is pre-existing and must be specified as a global input.</li>
+<li>Specifiy output and logging directories.</li>
+<li>Optionally, create the pipeline in 'resume' mode, where it will ignore stages if all of their output already exists.</li>
+</ol>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b5bf769a-1b43-4576-b411-13b02e74cf28">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7837,13 +7831,187 @@ Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 <div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="ch">#! rm -rf sfd/</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pipe</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">flow_file</span><span class="p">),</span> <span class="nb">dict</span><span class="p">(</span><span class="n">output_dir</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">log_dir</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">resume</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=028193ea">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(({'flow_engine_test': &lt;Job flow_engine_test&gt;,
+   'lsst_error_model_test': &lt;Job lsst_error_model_test&gt;,
+   'col_remapper_test': &lt;Job col_remapper_test&gt;,
+   'table_conv_test': &lt;Job table_conv_test&gt;},
+  [&lt;rail.creation.engines.flowEngine.FlowCreator at 0x7f5c97253f70&gt;,
+   LSSTErrorModel parameters:
+   
+   Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
+   
+   Using error type point
+   Exposure time = 30.0 s
+   Number of years of observations = 10.0
+   Mean visits per year per band:
+      mag_u_lsst: 5.6, mag_g_lsst: 8.0, mag_r_lsst: 18.4, mag_i_lsst: 18.4, mag_z_lsst: 16.0, mag_y_lsst: 16.0
+   Airmass = 1.2
+   Irreducible system error = 0.005
+   Magnitudes dimmer than 30.0 are set to nan
+   gamma for each band:
+      mag_u_lsst: 0.038, mag_g_lsst: 0.039, mag_r_lsst: 0.039, mag_i_lsst: 0.039, mag_z_lsst: 0.039, mag_y_lsst: 0.039
+   
+   The coadded 5-sigma limiting magnitudes are:
+   mag_u_lsst: 26.04, mag_g_lsst: 27.29, mag_r_lsst: 27.31, mag_i_lsst: 26.87, mag_z_lsst: 26.23, mag_y_lsst: 25.30
+   
+   The following single-visit 5-sigma limiting magnitudes are
+   calculated using the parameters that follow them:
+      mag_u_lsst: 23.83, mag_g_lsst: 24.90, mag_r_lsst: 24.47, mag_i_lsst: 24.03, mag_z_lsst: 23.46, mag_y_lsst: 22.53
+   Cm for each band:
+      mag_u_lsst: 23.09, mag_g_lsst: 24.42, mag_r_lsst: 24.44, mag_i_lsst: 24.32, mag_z_lsst: 24.16, mag_y_lsst: 23.73
+   Median zenith sky brightness in each band:
+      mag_u_lsst: 22.99, mag_g_lsst: 22.26, mag_r_lsst: 21.2, mag_i_lsst: 20.48, mag_z_lsst: 19.6, mag_y_lsst: 18.61
+   Median zenith seeing FWHM (in arcseconds) for each band:
+      mag_u_lsst: 0.81, mag_g_lsst: 0.77, mag_r_lsst: 0.73, mag_i_lsst: 0.71, mag_z_lsst: 0.69, mag_y_lsst: 0.68
+   Extinction coefficient for each band:
+      mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
+   Stage that applies remaps the following column names in a pandas DataFrame:
+   f{str(self.config.columns)},
+   &lt;rail.core.utilStages.TableConverter at 0x7f5c970ed9f0&gt;]),
+ {'output_dir': '.', 'log_dir': '.', 'resume': False})</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Save-the-pipeline">Save the pipeline<a class="anchor-link" href="#Save-the-pipeline">¶</a></h3><p>This will actually write two files (b/c this is what <code>ceci</code> wants)</p>
+<ol>
+<li>pipe_example.yml, which will have a list of stages, with instructions on how to execute the stages (e.g., run this stage in parallel on 20 processors). For an interactive pipeline, those instructions will be trivial.</li>
+<li>pipe_example_config.yml, which will have a dictionary of configurations for each stage.</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pipe</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'pipe_saved.yml'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Read-the-saved-pipeline">Read the saved pipeline<a class="anchor-link" href="#Read-the-saved-pipeline">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pr</span> <span class="o">=</span> <span class="n">ceci</span><span class="o">.</span><span class="n">Pipeline</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">'pipe_saved.yml'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Run-the-newly-read-pipeline">Run the newly read pipeline<a class="anchor-link" href="#Run-the-newly-read-pipeline">¶</a></h3><p>This will actually launch Unix process to individually run each stage of the pipeline; you can see the commands that are being executed in each case.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pr</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Executing flow_engine_test
+Command is:
+OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl   --name=flow_engine_test   --config=pipe_saved_config.yml   --output=./output_flow_engine_test.pq 
+Output writing to ./flow_engine_test.out
+
+Job flow_engine_test has completed successfully!
+
+Executing lsst_error_model_test
+Command is:
+OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
+Output writing to ./lsst_error_model_test.out
+
+Job lsst_error_model_test has completed successfully!
+
+Executing col_remapper_test
+Command is:
+OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+Output writing to ./col_remapper_test.out
+
+Job col_remapper_test has completed successfully!
+
+Executing table_conv_test
+Command is:
+OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+Output writing to ./table_conv_test.out
+
+Job table_conv_test has completed successfully!
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

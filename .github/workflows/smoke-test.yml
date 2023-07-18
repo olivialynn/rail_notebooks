@@ -6,6 +6,7 @@
 name: Unit test smoke test
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: 45 6 * * *
 

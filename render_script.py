@@ -10,7 +10,7 @@ def render_nb():
         print(f'\nnb_file: {nb_file}')
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
-        outfile = os.path.join('..', '..', '..', 'docs', 'rendered', f"{subdir}/{basename}.html")
+        outfile = os.path.join('..', '..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
         relpath = os.path.join('docs', 'rendered', subdir)
         print(f'\nsubdir: {subdir}\nbasename: {basename}\noutfile: {outfile}\nrelpath: {relpath}\n')
 
@@ -20,7 +20,7 @@ def render_nb():
         except FileExistsError:
             pass
 
-        comline = f"jupyter nbconvert --to html --output {outfile} --execute {nb_file}"
+        comline = f"jupyter nbconvert --to rst --output {outfile} --execute {nb_file}"
         render = os.system(comline)
         status[nb_file] = render
 

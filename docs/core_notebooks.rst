@@ -5,3 +5,5 @@ Core Notebooks
     :glob:
 
     rendered/core_examples/*
+
+Core Notebooks

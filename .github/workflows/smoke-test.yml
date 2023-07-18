@@ -33,6 +33,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
+        sudo apt-get install pandoc
         python -m pip install --upgrade pip
         pip install wheel numpy
         pip install jupyter nbconvert nbsphinx
@@ -44,10 +45,6 @@ jobs:
         pip list
     - name: Run notebooks
       run: |
-        pwd
-        for entry in *; do
-          echo "$entry"
-        done
         python render_script.py
         
     # Commit all changed files back to the repository

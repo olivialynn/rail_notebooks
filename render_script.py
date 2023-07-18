@@ -3,10 +3,9 @@ import glob, os
 def render_nb():
     status = {}
 
-    #for nb_file in glob.glob("rail/examples/*_examples/*.ipynb"):
     #for nb_file in ['rail/examples/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
-    #for nb_file in ['docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
-    for nb_file in ['docs/notebooks/core_examples/intro_notebook.ipynb', 'docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
+    #for nb_file in ['docs/notebooks/core_examples/intro_notebook.ipynb', 'docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
+    for nb_file in glob.glob("rail/examples/core_examples/*.ipynb"):
         print(nb_file)
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]

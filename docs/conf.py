@@ -26,8 +26,7 @@ version = ".".join(release.split(".")[:2])
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ["sphinx.ext.mathjax", "sphinx.ext.napoleon", "sphinx.ext.viewcode"]
-
-extensions.append("nbsphinx")
+#extensions.append("nbsphinx")
 
 templates_path = []
 exclude_patterns = ['_build', '**.ipynb_checkpoints']

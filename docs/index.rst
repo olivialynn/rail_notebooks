@@ -16,3 +16,5 @@ Rail Notebooks
 
    Core Notebooks <core_notebooks>
    Creation Notebooks <creation_notebooks>
+   Estimation Notebooks <estimation_notebooks>
+   Evaluation Notebooks <evaluation_notebooks>

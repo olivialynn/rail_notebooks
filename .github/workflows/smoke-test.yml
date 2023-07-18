@@ -41,7 +41,7 @@ jobs:
         #rail render-nb docs/notebooks/*.ipynb
         #${{ matrix.notebook-dir }}
         #rail render-nb rail/examples/core_examples/*.ipynb docs/notebooks
-        python -m render_script.py
+        python render_script.py
         
     # Commit all changed files back to the repository
     - uses: stefanzweifel/git-auto-commit-action@v4

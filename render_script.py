@@ -1,9 +1,6 @@
 import glob, os
 
 def render_nb():
-    command = "jupyter nbconvert"
-    options = "--to html"
-
     status = {}
 
     #for nb_file in glob.glob("rail/examples/*_examples/*.ipynb"):
@@ -23,7 +20,7 @@ def render_nb():
         except FileExistsError:
             pass
 
-        comline = f"{command} {options} --output {outfile} --execute {nb_file}"
+        comline = f"jupyter nbconvert --to html --output {outfile} --execute {nb_file}"
         render = os.system(comline)
         status[nb_file] = render
 

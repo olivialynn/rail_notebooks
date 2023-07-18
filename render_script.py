@@ -11,7 +11,7 @@ def render_nb():
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
         outfile = os.path.join('rendered', f"{subdir}/{basename}.html")
-        relpath = os.path.join('rendered, f'{subdir}')
+        relpath = os.path.join('rendered', subdir)
 
         try:
             print(relpath)

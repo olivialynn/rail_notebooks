@@ -1,4 +1,4 @@
-import glob
+import glob, os
 
 def render_nb():
     command = "jupyter nbconvert"

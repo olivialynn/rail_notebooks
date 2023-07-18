@@ -1,10 +1,13 @@
+import glob
+
 def render_nb():
     command = "jupyter nbconvert"
     options = "--to html"
 
     status = {}
 
-    for nb_file in inputs:
+    for nb_file in glob.glob("rail/examples/*_examples/*.ipynb"):
+        print(nb_file)
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
         outfile = os.path.join('rendered', f"{subdir}/{basename}.html")

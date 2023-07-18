@@ -14,4 +14,5 @@ Rail Notebooks
 .. toctree::
    :caption: Usage Demos
 
-   Notebooks <notebooks>
+   Core Notebooks <core_notebooks>
+   Creation Notebooks <creation_notebooks>

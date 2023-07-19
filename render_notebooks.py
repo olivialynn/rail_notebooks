@@ -11,7 +11,7 @@ def render_notebook_group():
         
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
-        outfile = os.path.join('..', '..', '..', 'temp', 'rendered', f"{subdir}/{basename}.rst")
+        outfile = os.path.join('..', '..', '..', 'docs', 'output', 'rendered', f"{subdir}/{basename}.rst")
         print(f'\nnb_file: {nb_file}\nsubdir: {subdir}\nbasename: {basename}\noutfile: {outfile}\n')
 
         comline = f"jupyter nbconvert --to rst --output {outfile} --execute {nb_file}"

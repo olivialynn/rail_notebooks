@@ -11,7 +11,11 @@ def render_notebook_group():
         
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
-        outfile = os.path.join('..', '..', '..', 'docs', 'output', 'rendered', f"{subdir}/{basename}.rst")
+        outfile = os.path.join('..', '..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
+        
+        # nbconvert will put the notebooks in a ./docs/rendered/... folder and images in a ./docs/docs/rendered/... folder. 
+        # No clear way around this and probably easiest to just let it be.
+        
         print(f'\nnb_file: {nb_file}\nsubdir: {subdir}\nbasename: {basename}\noutfile: {outfile}\n')
 
         comline = f"jupyter nbconvert --to rst --output {outfile} --execute {nb_file}"

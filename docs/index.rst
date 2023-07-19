@@ -8,7 +8,7 @@ Rail Notebooks
 .. toctree::
    :caption: Main Project
 
-   Back to RAIL <https://rail-external-html-rtd.readthedocs.io/en/latest/>
+   Back to RAIL <https://rail-hub.readthedocs.io/en/latest/>
 
 .. toctree::
    :caption: Usage Demos
@@ -18,3 +18,4 @@ Rail Notebooks
    Creation Notebooks <creation_notebooks>
    Estimation Notebooks <estimation_notebooks>
    Evaluation Notebooks <evaluation_notebooks>
+   Goldenspike <goldenspike>

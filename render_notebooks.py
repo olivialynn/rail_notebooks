@@ -30,7 +30,7 @@ def render_notebook_group():
     failed_notebooks = []
     for nb_name, nb_status in status.items():
         print(f"{nb_name} {nb_status}")
-        if val != 0:
+        if nb_status != 0:
             failed_notebooks.append(nb_name)
 
     if failed_notebooks:

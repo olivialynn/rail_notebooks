@@ -18,4 +18,4 @@ Rail Notebooks
    Creation Notebooks <creation_notebooks>
    Estimation Notebooks <estimation_notebooks>
    Evaluation Notebooks <evaluation_notebooks>
-   Goldenspike <goldenspike>
+   Goldenspike Notebook <goldenspike_notebook>

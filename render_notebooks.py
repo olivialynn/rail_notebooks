@@ -1,21 +1,18 @@
 import glob, os, sys
 
 def render_notebook_group():
+    status = {}
+
     group_name = sys.argv[1]
     if group_name not in ['core', 'creation', 'estimation', 'evaluation', 'goldenspike']:
         raise ValueError("Invalid notebook group given. Try 'core', 'creation', 'estimation', 'evaluation', or 'goldenspike'.")
-        
-    status = {}
 
-    #for nb_file in ['docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
-    
     for nb_file in glob.glob(f'rail/examples/{group_name}_examples/*.ipynb'):
         
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
         outfile = os.path.join('..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
         relpath = os.path.join('docs', 'rendered', subdir)
-        print(f'\nsubdir: {subdir}\nbasename: {basename}\noutfile: {outfile}\nrelpath: {relpath}\n')
 
         try:
             print(relpath)

@@ -9,7 +9,7 @@ def render_notebook_group():
 
     #for nb_file in ['docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
     
-    for nb_file in glob.glob('rail/examples/{group_name}_examples/*.ipynb'):
+    for nb_file in glob.glob(f'rail/examples/{group_name}_examples/*.ipynb'):
         
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]

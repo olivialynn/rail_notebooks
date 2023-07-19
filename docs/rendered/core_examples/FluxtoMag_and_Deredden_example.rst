@@ -140,25 +140,25 @@ present working directory with the command above, that directory is just
         config.reset()
     
     Note that this will delete your configuration! For example, if you have specified a data directory, then dustmaps will forget about its location.
-    Downloading SFD data file to /home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits
-    Downloading data to '/home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits' ...
+    Downloading SFD data file to /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits
+    Downloading data to '/home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits' ...
     Downloading https://dataverse.harvard.edu/api/access/datafile/2902687 ...
 
 
 .. parsed-literal::
 
-     64.0 MiB of 64.0 MiB |  31.5 MiB/s |###################| 100% | ETA:  00:00:00
+     63.2 MiB of 64.0 MiB |  51.7 MiB/s |################## |  98% | ETA:   0:00:00
 
 .. parsed-literal::
 
-    Downloading SFD data file to /home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits
-    Downloading data to '/home/runner/work/rail-notebook-placeholder/rail-notebook-placeholder/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits' ...
+    Downloading SFD data file to /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits
+    Downloading data to '/home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_sgp.fits' ...
     Downloading https://dataverse.harvard.edu/api/access/datafile/2902695 ...
 
 
 .. parsed-literal::
 
-     64.0 MiB of 64.0 MiB |  30.7 MiB/s |###################| 100% | ETA:  00:00:00
+     61.6 MiB of 64.0 MiB |  46.7 MiB/s |################## |  96% | ETA:   0:00:00
 
 .. code:: ipython3
 

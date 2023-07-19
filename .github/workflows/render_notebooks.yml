@@ -37,12 +37,9 @@ jobs:
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
         pip install .[dev]
-    - name: List dependencies
-      run: |
-        pip list
     - name: Run notebooks 
       run: |
-        python render_script.py core
-        python render_script.py creation
+        python render_notebooks.py core
+        python render_notebooks.py creation
     - uses: stefanzweifel/git-auto-commit-action@v4
       if: always()

@@ -1,5 +1,5 @@
 [project]
-name = "rail_notebooks_placeholder"
+name = "rail_notebooks"
 license = {file = "LICENSE"}
 readme = "README.md"
 authors = [
@@ -44,7 +44,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-write_to = "src/rail_notebooks_placeholder/_version.py"
+write_to = "src/rail_notebooks/_version.py"
 
 [tool.pytest.ini_options]
 testpaths = [

@@ -15,10 +15,10 @@ sys.path.insert(0, os.path.abspath('../src/'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "rail_notebooks_placeholder"
+project = "RAIL Notebooks"
 copyright = "2023, LF"
 author = "LF"
-release = version("rail_notebooks_placeholder")
+release = version("rail_notebooks")
 # for example take major/minor
 version = ".".join(release.split(".")[:2])
 

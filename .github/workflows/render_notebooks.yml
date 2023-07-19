@@ -8,7 +8,7 @@
 #rail render-nb rail/examples/core_examples/FluxtoMag_and_Deredden_example.ipynb docs/notebooks
 #rail render-nb docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb docs/notebooks
         
-name: Unit test smoke test
+name: Render Notebooks
 
 on:
   workflow_dispatch:

@@ -8,9 +8,9 @@ custom_install: true
 include_docs: true
 include_notebooks: true
 mypy_type_checking: none
-package_name: rail_notebooks_placeholder
+package_name: rail_notebooks
 preferred_linter: none
 project_license: none
-project_name: rail_notebooks_placeholder
+project_name: rail_notebooks
 use_gitlfs: none
 use_isort: false

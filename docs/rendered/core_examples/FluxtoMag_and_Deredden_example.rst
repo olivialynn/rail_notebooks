@@ -147,7 +147,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     63.2 MiB of 64.0 MiB |  51.7 MiB/s |################## |  98% | ETA:   0:00:00
+     64.0 MiB of 64.0 MiB |  44.9 MiB/s |###################| 100% | ETA:  00:00:00
 
 .. parsed-literal::
 
@@ -158,7 +158,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     61.6 MiB of 64.0 MiB |  46.7 MiB/s |################## |  96% | ETA:   0:00:00
+     61.6 MiB of 64.0 MiB |  45.5 MiB/s |################## |  96% | ETA:   0:00:00
 
 .. code:: ipython3
 

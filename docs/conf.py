@@ -26,7 +26,6 @@ version = ".".join(release.split(".")[:2])
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ["sphinx.ext.mathjax", "sphinx.ext.napoleon", "sphinx.ext.viewcode"]
-#extensions.append("nbsphinx")
 
 templates_path = []
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
@@ -44,3 +43,6 @@ autoapi_member_order = "bysource"
 """
 
 html_theme = "sphinx_rtd_theme"
+html_css_files = [
+  "notebook_cell_background.css",
+]

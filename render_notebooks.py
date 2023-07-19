@@ -13,7 +13,7 @@ def render_notebook_group():
         
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
-        outfile = os.path.join('..', '..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
+        outfile = os.path.join('..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
         relpath = os.path.join('docs', 'rendered', subdir)
         print(f'\nsubdir: {subdir}\nbasename: {basename}\noutfile: {outfile}\nrelpath: {relpath}\n')
 

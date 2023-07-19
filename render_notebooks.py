@@ -1,12 +1,16 @@
-import glob, os
+import glob, os, sys
 
-def render_nb():
+def render_notebook_group():
+    group_name = sys.argv[1]
+    if group_name not in ['core', 'creation', 'estimation', 'evaluation', 'goldenspike']:
+        raise ValueError("Invalid notebook group given. Try 'core', 'creation', 'estimation', 'evaluation', or 'goldenspike'.")
+        
     status = {}
 
-    #for nb_file in ['docs/notebooks/core_examples/intro_notebook.ipynb', 'docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
-    #for nb_file in glob.glob("rail/examples/*_examples/*.ipynb"):
-    for nb_file in ['rail/examples/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
-        print(f'\nnb_file: {nb_file}')
+    #for nb_file in ['docs/notebooks/core_examples/FluxtoMag_and_Deredden_example.ipynb']:
+    
+    for nb_file in glob.glob('rail/examples/{group_name}_examples/*.ipynb'):
+        
         subdir = os.path.dirname(nb_file).split('/')[-1]
         basename = os.path.splitext(os.path.basename(nb_file))[0]
         outfile = os.path.join('..', '..', '..', 'docs', 'rendered', f"{subdir}/{basename}.rst")
@@ -24,13 +28,13 @@ def render_nb():
         status[nb_file] = render
 
     failed_notebooks = []
-    for key, val in status.items():
-        print(f"{key} {val}")
+    for nb_name, nb_status in status.items():
+        print(f"{nb_name} {nb_status}")
         if val != 0:
-            failed_notebooks.append(key)
+            failed_notebooks.append(nb_name)
 
     if failed_notebooks:
         raise ValueError(f"The following notebooks failed {str(failed_notebooks)}")
 
 if __name__ == "__main__":
-      render_nb()
+      render_notebook_group()

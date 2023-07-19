@@ -36,16 +36,16 @@ jobs:
         pip install .[dev]
         
     # Render notebooks
-    - run: python render_notebooks.py core
-      if: always()
-    - run: python render_notebooks.py creation
-      if: always()
-    - run: python render_notebooks.py estimation
-      if: always()
+    #- run: python render_notebooks.py core
+    #  if: always()
+    #- run: python render_notebooks.py creation
+    #  if: always()
+    #- run: python render_notebooks.py estimation
+    #  if: always()
     - run: python render_notebooks.py evaluation
       if: always()
-    - run: python render_notebooks.py goldenspike
-      if: always()
+    #- run: python render_notebooks.py goldenspike
+    #  if: always()
       
     # Commit changes
     - uses: stefanzweifel/git-auto-commit-action@v4

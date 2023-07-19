@@ -13,7 +13,7 @@ Rail Notebooks
 
 .. toctree::
    :caption: Usage Demos
-   :maxdepth: 1
+   :maxdepth: 2
 
    Core Notebooks <core_notebooks>
    Creation Notebooks <creation_notebooks>

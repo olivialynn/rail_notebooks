@@ -5,4 +5,4 @@ Goldenspike
     :glob:
     :maxdepth: 1
 
-    rendered/goldenspike/*
+    rendered/goldenspike_examples/*

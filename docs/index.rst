@@ -8,7 +8,7 @@ Rail Notebooks
 .. toctree::
    :caption: Main Project
 
-   Back to Rail <https://rail-external-html-rtd.readthedocs.io/en/latest/>
+   Back to RAIL <https://rail-external-html-rtd.readthedocs.io/en/latest/>
 
 .. toctree::
    :caption: Usage Demos

@@ -1,7 +1,9 @@
-Data, files, IO, and RAIL
+Data, Files, IO, and RAIL
 =========================
 
-author: Sam Schmidt Last successfully run: Apr 26, 2023
+author: Sam Schmidt
+
+last successfully run: Apr 26, 2023
 
 The switchover to a ``ceci``-based backend has increased the complexity
 of methods of data access and IO, this notebook will demonstrate a
@@ -32,7 +34,7 @@ overridden.
 
 Another concept used in the ``ceci``-based RAIL when used in a Jupyter
 Notebook is the DataStore and DataHandle file specifications (see
-`RAIL/rail/core/data.py <https://github.com/LSSTDESC/RAIL/blob/main/rail/core/data.py>`__
+`rail_base/src/rail/core/data.py <https://github.com/LSSTDESC/rail_base/blob/main/src/rail/core/data.py>`__
 for the actual code implementing these). ``ceci`` requires that each
 pipeline stage have defined ``input`` and ``output`` files, and is
 primarily geared toward pipelines rather than interactive runs with a
@@ -56,9 +58,9 @@ Let’s start out with some imports:
 First, let’s use tables_io to read in some example data. There are two
 example files that ship with RAIL containing a small amount of cosmoDC2
 data from healpix pixel ``9816``, it is located in the
-``RAIL/tests/data/`` directory in the RAIL repository, one for
-“training” and one for “validation”. Let’s read in one of those data
-files with tables_io:
+``rail_base/src/rail/examples_data/testdata/`` directory in the
+rail_base repository, one for “training” and one for “validation”. Let’s
+read in one of those data files with tables_io:
 
 (NOTE: for historical reasons, our examples files have data that is in
 hdf5 format where all of the data arrays are actually in a single hdf5
@@ -454,7 +456,7 @@ And there it is, a new “FakeID” column is now added to the end of the
 dataset, success!
 
 Using the data in a pipeline stage: photo-z estimation example
-==============================================================
+--------------------------------------------------------------
 
 Now that we have our data in place, we can use it in a RAIL stage. As an
 example, we’ll estimate photo-z’s for our data. Let’s train the
@@ -497,7 +499,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f864bc12320>
+    <rail.core.data.ModelHandle at 0x7f1c8439f8b0>
 
 
 
@@ -577,12 +579,12 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f864bc79ff0>
+    <matplotlib.legend.Legend at 0x7f1c84454880>
 
 
 
 
-.. image:: ../../../docs/rendered/core_examples/FileIO_DataStore_files/../../../docs/rendered/core_examples/FileIO_DataStore_33_1.png
+.. image:: ../../../docs/rendered/core_examples/FileIO_DataStore_files/../../../docs/rendered/core_examples/FileIO_DataStore_34_1.png
 
 
 As an alternative, we can read the data from file and make the same plot
@@ -607,16 +609,14 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8648c343a0>
+    <matplotlib.legend.Legend at 0x7f1c842b4a30>
 
 
 
 
-.. image:: ../../../docs/rendered/core_examples/FileIO_DataStore_files/../../../docs/rendered/core_examples/FileIO_DataStore_36_1.png
+.. image:: ../../../docs/rendered/core_examples/FileIO_DataStore_files/../../../docs/rendered/core_examples/FileIO_DataStore_37_1.png
 
 
 That’s about it. For more usages, including how to chain together
 multiple stages, feeding results one into the other with the DataStore
 names, see goldenspike.ipynb in the examples/goldenspike directory.
-
-

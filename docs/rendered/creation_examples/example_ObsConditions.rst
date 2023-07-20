@@ -1,4 +1,4 @@
-Generate spatially varying magnitude errors according to observing conditions
+Generate Spatially Varying Magnitude Errors According to Observing Conditions
 =============================================================================
 
 last run successfully: April 26, 2023
@@ -204,8 +204,7 @@ Now let’s import the ObsCondition from rail.
 
 .. code:: ipython3
 
-    # You can see what arguments have been entered by printing
-    # the degrader:
+    # You can see what arguments have been entered by printing the degrader:
     print(obs_cond_degrader)
 
 
@@ -234,8 +233,8 @@ Let’s run the code and see how long it takes:
     Inserting handle into data store.  input: None, ObsCondition
     Assigning pixels.
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 4.21 s, sys: 53.2 ms, total: 4.27 s
-    Wall time: 4.27 s
+    CPU times: user 4.38 s, sys: 43.9 ms, total: 4.43 s
+    Wall time: 4.42 s
 
 
 .. code:: ipython3
@@ -395,7 +394,7 @@ at the SNR at different area of the sky, and compare that with the
 
 .. code:: ipython3
 
-    # set negative values in mask to zero
+    # Set negative values in mask to zero
     mask[mask<0]=0
 
 .. code:: ipython3
@@ -424,7 +423,7 @@ at the SNR at different area of the sky, and compare that with the
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_20_0.png
+.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_21_0.png
 
 
 Now if we want to change any of the default settings, we can supply them
@@ -613,19 +612,20 @@ median airmass is more optimistic, thus reducing the magnitude errors.
 
     Med_airmass_i = hp.read_map(os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits"))
 
+Compute the average SNR in each pixel for i and r bands:
+
 .. code:: ipython3
 
-    # Compute the average SNR in each pixel for i and r bands
     avg_SNR_i_airmass = np.zeros(len(mask))
     avg_SNR_r_airmass = np.zeros(len(mask))
     for pix, pix_cat in (data_degraded_airmass.data).groupby("pixel"):
         avg_SNR_i_airmass[pix] = np.mean((pix_cat["i"]/pix_cat["i_err"]).to_numpy())
         avg_SNR_r_airmass[pix] = np.mean((pix_cat["r"]/pix_cat["r_err"]).to_numpy())
 
+View the healpix map:
+
 .. code:: ipython3
 
-    # View the healpix map in 
-    
     fig,axarr=plt.subplots(1,3,figsize=[12,6])
     
     plt.sca(axarr[0])
@@ -643,10 +643,8 @@ median airmass is more optimistic, thus reducing the magnitude errors.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_29_0.png
+.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_32_0.png
 
 
 In both cases, we see a negative correlation between the airmass and the
 SNR in :math:`i` and :math:`r` bands, as expected.
-
-

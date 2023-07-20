@@ -1,4 +1,4 @@
-Computing hyperbolic magnitudes
+Computing Hyperbolic Magnitudes
 ===============================
 
 Last successfully run: Apr 26, 2023
@@ -86,7 +86,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7fb4a59bd270>
+    <rail.core.data.PqHandle at 0x7fb041b1b370>
 
 
 
@@ -233,7 +233,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7fb45cbddde0>
+    <rail.core.data.PqHandle at 0x7faff97c6350>
 
 
 
@@ -490,7 +490,5 @@ turn-off point is determined by the value for :math:`b` estimated above.
 
 
 
-.. image:: ../../../docs/rendered/core_examples/hyperbolic_magnitude_test_files/../../../docs/rendered/core_examples/hyperbolic_magnitude_test_15_1.png
-
-
+.. image:: ../../../docs/rendered/core_examples/hyperbolic_magnitude_test_files/../../../docs/rendered/core_examples/hyperbolic_magnitude_test_16_1.png
 

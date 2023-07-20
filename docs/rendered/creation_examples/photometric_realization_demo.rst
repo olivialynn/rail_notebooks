@@ -1,5 +1,5 @@
-Using Engines and Degraders to Generate Galaxy Samples with Errors and Biases
-=============================================================================
+Photometric Realization from Different Magnitude Error Models
+=============================================================
 
 author: John Franklin Crenshaw, Sam Schmidt, Eric Charles, Ziang Yan
 
@@ -18,7 +18,6 @@ different magnitude error models. For more completed degrader demo, see
     from rail.core.stage import RailStage
 
 Specify the path to the pretrained ‘pzflow’ used to generate samples
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: ipython3
 
@@ -26,12 +25,12 @@ Specify the path to the pretrained ‘pzflow’ used to generate samples
     import os
     flow_file = os.path.join(os.path.dirname(pzflow.__file__), 'example_files', 'example-flow.pzflow.pkl')
 
-We’ll start by setting up the Rail data store. RAIL uses
+We’ll start by setting up the RAIL data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
 pipelines rather than interactive notebooks, the data store will work
 around that and enable us to use data interactively. See the
-``rail/examples/goldenspike/goldenspike.ipynb`` example notebook for
-more details on the Data Store.
+``rail/examples/goldenspike_examples/goldenspike.ipynb`` example
+notebook for more details on the Data Store.
 
 .. code:: ipython3
 
@@ -39,7 +38,7 @@ more details on the Data Store.
     DS.__class__.allow_overwrite = True
 
 “True” Engine
--------------
+~~~~~~~~~~~~~
 
 First, let’s make an Engine that has no degradation. We can use it to
 generate a “true” sample, to which we can compare all the degraded
@@ -71,8 +70,8 @@ We then pass in the configuration parameters as arguments to
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
 
 
-Let’s check that the Engine correctly read the underlying PZ Flow object
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Let’s check that the Engine correctly read the underlying PZ Flow
+object:
 
 .. code:: ipython3
 
@@ -83,7 +82,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f405f20eef0>
+    <pzflow.flow.Flow at 0x7fee024e5f00>
 
 
 
@@ -148,6 +147,7 @@ generate random values
 
 
 LSSTErrorModel
+~~~~~~~~~~~~~~
 
 Now, we will demonstrate the ``LSSTErrorModel``, which adds photometric
 errors using a model similar to the model from `Ivezic et
@@ -1031,7 +1031,7 @@ Let’s plot the error as a function of magnitude
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_25_0.png
+.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_26_0.png
 
 
 .. code:: ipython3
@@ -1068,7 +1068,7 @@ Let’s plot the error as a function of magnitude
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_26_0.png
+.. image:: ../../../docs/rendered/creation_examples/photometric_realization_demo_files/../../../docs/rendered/creation_examples/photometric_realization_demo_27_0.png
 
 
 You can see that the photometric error increases as magnitude gets
@@ -1085,4 +1085,3 @@ the additional factors due to aperture sizes have a minimum value of
 :math:`\sqrt{(\sigma^2+A_{\mathrm{min}})/\sigma^2}`, where
 :math:`\sigma` is the width of the beam, :math:`A_{\min}` is an offset
 of the aperture sizes (taken to be 0.7 arcmin here).
-

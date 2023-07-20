@@ -1,4 +1,4 @@
-GridSelection degrader to emulate HSC training samples
+GridSelection Degrader to Emulate HSC Training Samples
 ======================================================
 
 last run successfully: April 26, 2023
@@ -31,9 +31,10 @@ redshifts above the cutoff are also removed from the sample.
 
 In this quick notebook we’ll create a grid of mock galaxies on the same
 grid on which the HyperSuprimeCam Survey (HSC) spectroscopic success has
-been parameterized by Irene Moskowitz (and available in
-``RAIL/examples/creation/data``), and plot the success rate to visualize
-the spectroscopic success rate for HSC.
+been parameterized by Irene Moskowitz (and available in the rail_base
+repository at ``rail_base/src/rail/examples_data/creation_data/``), and
+plot the success rate to visualize the spectroscopic success rate for
+HSC.
 
 .. code:: ipython3
 
@@ -181,8 +182,10 @@ to not remove any galaxies with this cut.
 The ratio file for HSC is located in the ``RAIL/examples/creation/data``
 directory, as we are in ``RAIL/examples/creation`` folder with this demo
 the paths for the ``ratio_file`` and ``settings_file`` are set
-accordingly. We will set a random seed for reproducibility, and set the
-output file to write our incomplete catalog to “test_hsc.pq”.
+accordingly.
+
+We will set a random seed for reproducibility, and set the output file
+to write our incomplete catalog to “test_hsc.pq”.
 
 .. code:: ipython3
 
@@ -213,12 +216,12 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, hsc_cutter
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 4.16 s, sys: 224 ms, total: 4.38 s
-    Wall time: 4.38 s
+    CPU times: user 4.29 s, sys: 287 ms, total: 4.58 s
+    Wall time: 4.58 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
-galaxies
+galaxies.
 
 .. code:: ipython3
 
@@ -296,8 +299,9 @@ between our predicted ratios and the actual number of galaxies kept, the
 degrader is functioning properly, and we see a nice visual
 representation of the resulting spectroscopic sample incompleteness.
 
+As our demo data is just a grid of mock points, let’s remove it so we do
+not leave a large file sitting around:
+
 .. code:: ipython3
 
-    # as our demo data is just a grid of mock points, let's remove it so we do not leave a large file sitting around
     os.remove("./test_hsc.pq")
-

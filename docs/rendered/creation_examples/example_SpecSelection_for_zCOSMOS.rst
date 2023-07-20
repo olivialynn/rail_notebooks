@@ -1,4 +1,4 @@
-Spectroscopic selection degrader to emulate zCOSMOS training samples
+Spectroscopic Selection Degrader to Emulate zCOSMOS Training Samples
 ====================================================================
 
 last run successfully: April 26, 2023
@@ -10,16 +10,20 @@ variables (often magnitude, color, or redshift), the degrader will draw
 the appropriate fraction of samples from the input data and return a
 sample with incompleteness modeled.
 
-The degrader takes the following arguments: - ``N_tot``: number of
-selected sources - ``nondetect_val``: non detected magnitude value to be
-excluded (usually 99.0, -99.0 or NaN). - ``downsample``: If true,
-downsample the selected sources into a total number of N_tot. -
-``success_rate_dir``: The path to the directory containing success rate
-files. - ``colnames``: a dictionary that includes necessary columns
-(magnitudes, colors and redshift) for selection. For magnitudes, the
-keys are ugrizy; for colors, the keys are, for example, gr standing for
-g-r; for redshift, the key is ‘redshift’. In this demo, zCOSMOS takes
-{‘i’:‘i’, ‘redshift’:‘redshift’} as minimum necessary input
+The degrader takes the following arguments:
+
+-  ``N_tot``: number of selected sources
+-  ``nondetect_val``: non detected magnitude value to be excluded
+   (usually 99.0, -99.0 or NaN).
+-  ``downsample``: If true, downsample the selected sources into a total
+   number of N_tot.
+-  ``success_rate_dir``: The path to the directory containing success
+   rate files.
+-  ``colnames``: a dictionary that includes necessary columns
+   (magnitudes, colors and redshift) for selection. For magnitudes, the
+   keys are ugrizy; for colors, the keys are, for example, gr standing
+   for g-r; for redshift, the key is ‘redshift’. In this demo, zCOSMOS
+   takes {‘i’:‘i’, ‘redshift’:‘redshift’} as minimum necessary input
 
 In this quick notebook we’ll select galaxies based on zCOSMOS selection
 function.
@@ -55,7 +59,7 @@ Let’s make fake data for zCOSMOS selection.
     z = g - gz
     redshift = np.random.uniform(size=len(i)) * 2
 
-standardize the column names
+Standardize the column names:
 
 .. code:: ipython3
 
@@ -162,14 +166,16 @@ np.repeat(item, 100).flatten()
 
 
 
-Now, let’s import the spectroscopic_selections degrader for zCOSMOS. The
-ratio file for zCOSMOS is located in the
+Now, let’s import the spectroscopic_selections degrader for zCOSMOS.
+
+The ratio file for zCOSMOS is located in the
 ``RAIL/src/rail/examples/creation/data/success_rate_data/`` directory,
 as we are in ``RAIL/examples/creation`` folder named
 ``zCOSMOS_success.txt``; the binning in i band and redshift are given in
-``zCOSMOS_I_sampling.txt`` and ``zCOSMOS_z_sampling.txt``. We will set a
-random seed for reproducibility, and set the output file to write our
-incomplete catalog to “test_hsc.pq”.
+``zCOSMOS_I_sampling.txt`` and ``zCOSMOS_z_sampling.txt``.
+
+We will set a random seed for reproducibility, and set the output file
+to write our incomplete catalog to “test_hsc.pq”.
 
 .. code:: ipython3
 
@@ -195,8 +201,8 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, specselection_zCOSMOS
     Inserting handle into data store.  output: inprogress_output.pq, specselection_zCOSMOS
-    CPU times: user 1.98 s, sys: 80.8 ms, total: 2.06 s
-    Wall time: 2.06 s
+    CPU times: user 2.06 s, sys: 84.9 ms, total: 2.14 s
+    Wall time: 2.13 s
 
 
 .. code:: ipython3
@@ -412,7 +418,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/example_SpecSelection_for_zCOSMOS_files/../../../docs/rendered/creation_examples/example_SpecSelection_for_zCOSMOS_21_0.png
+.. image:: ../../../docs/rendered/creation_examples/example_SpecSelection_for_zCOSMOS_files/../../../docs/rendered/creation_examples/example_SpecSelection_for_zCOSMOS_22_0.png
 
 
 The colormap shows the zCOSMOS success ratios and the strenth of the

@@ -1,12 +1,16 @@
-iterator_test notebook
-======================
+Iterator Test
+=============
 
-author: Eric Charles last run successfully: April 26, 2022
+author: Eric Charles
+
+last run successfully: April 26, 2022
 
 This notebook demonstrates three ways to iterate over tabular data
 
 1. Using the ``tables_io.iteratorNative`` function
+
 2. Using the ``rail.core.data.TableHandle`` data handle object
+
 3. Using the ``rail.core.stage.RailStage`` functionality
 
 .. code:: ipython3
@@ -18,8 +22,8 @@ This notebook demonstrates three ways to iterate over tabular data
     from rail.core.stage import RailStage
     from rail.core.data import TableHandle
 
-Get access to the rail DataStore, and set it to allow use to overwrite data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get access to the rail DataStore, and set it to allow use to overwrite
+data.
 
 Allowing overwrites will prevent errors when re-running cells in the
 notebook
@@ -29,18 +33,16 @@ notebook
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
-Set up the path to the test data
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Set up the path to the test data.
 
 .. code:: ipython3
 
     from rail.core.utils import RAILDIR
     pdfs_file = os.path.join(RAILDIR, "rail/examples_data/testdata/test_dc2_training_9816.hdf5")
 
-Get access to the data directly, using the DataStore.read_file function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get access to the data directly, using the DataStore.read_file function.
 
-This will load the entire table from the file we are reading
+This will load the entire table from the file we are reading.
 
 .. code:: ipython3
 
@@ -71,7 +73,7 @@ This will load the entire table from the file we are reading
 
 
 Iterate using the tables_io.iteratorNative function
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 This will open the HDF5 file, and iterate over the file, returning
 chunks of data
@@ -87,7 +89,7 @@ chunks of data
 
 .. parsed-literal::
 
-    <generator object iterHdf5ToDict at 0x7f6961d66490>
+    <generator object iterHdf5ToDict at 0x7f57177a6490>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -102,7 +104,7 @@ chunks of data
 
 
 Iterate using the rail.core.data.TableHandle data handle object
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------
 
 This will create a TableHandle object that points to the correct file,
 which can be use to iterate over that file.
@@ -118,7 +120,7 @@ which can be use to iterate over that file.
 
 .. parsed-literal::
 
-    <generator object iterHdf5ToDict at 0x7f6961d665e0>
+    <generator object iterHdf5ToDict at 0x7f57177a6650>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -133,7 +135,7 @@ which can be use to iterate over that file.
 
 
 Iterator using the rail.core.stage.RailStage functionality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------
 
 This will create a RailStage pipeline stage, which takes as input an
 HDF5 file, so the ``input_iterator`` function can be used to iterate
@@ -164,5 +166,4 @@ over that file.
     8000 9000 8066223293
     9000 10000 8067729889
     10000 10225 8075587302
-
 

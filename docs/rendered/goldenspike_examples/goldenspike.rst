@@ -186,7 +186,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7face8189d20>
+    <rail.tools.flow_handle.FlowHandle at 0x7fac03b98100>
 
 
 
@@ -694,7 +694,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7face56da4d0>
+    <rail.core.data.ModelHandle at 0x7fabf0a19630>
 
 
 
@@ -1427,8 +1427,8 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fad14d7fd30>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7face833f070>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fac6c51fbb0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fac03b4ba90>,
        LSSTErrorModel parameters:
        
        Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
@@ -1460,8 +1460,8 @@ objects between them, we can build a ``ceci`` Pipeline.
           mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7face833dae0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7face7e90d60>,
+       <rail.core.utilStages.TableConverter at 0x7fac18f62fe0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fac03b485e0>,
        LSSTErrorModel parameters:
        
        Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
@@ -1491,22 +1491,22 @@ objects between them, we can build a ``ceci`` Pipeline.
           mag_u_lsst: 0.81, mag_g_lsst: 0.77, mag_r_lsst: 0.73, mag_i_lsst: 0.71, mag_z_lsst: 0.69, mag_y_lsst: 0.68
        Extinction coefficient for each band:
           mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7face7e91a80>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7face7e92860>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fac03b4abf0>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fac03b48880>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7face7e92560>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7face85a7010>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7face8189000>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7face85a7880>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7face5704760>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7face85a7820>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7face5706380>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7face57730d0>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7face5773790>]),
+       <rail.core.utilStages.TableConverter at 0x7fac03b4b6d0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fac03b08e20>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fac03f9a170>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fac03b0bd60>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fac03b99630>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fac03b0b520>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fabf0a1b790>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fabf0a520b0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fabf0a51210>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

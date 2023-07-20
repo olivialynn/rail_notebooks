@@ -1,4 +1,9 @@
-author: Sam Schmidt Last successfully run: Apr 26, 2023
+Flux to Mag And Deredden
+========================
+
+author: Sam Schmidt
+
+last successfully run: Apr 26, 2023
 
 .. code:: ipython3
 
@@ -48,13 +53,18 @@ author: Sam Schmidt Last successfully run: Apr 26, 2023
     memory usage: 11.8 KB
 
 
-To convert mags to fluxes, we need to specify patterns for the
+Fluxes to Mags
+~~~~~~~~~~~~~~
+
+To convert fluxes to mags, we need to specify patterns for the
 ``flux_name`` and ``flux_err_name`` columns to be converted, and the
-``mag_name`` and ``mag_err_name`` columsn that will store the newly
-created magnitudes. This is done as below, by specifying a string
-listing the bands, and ``{band}`` in the patterns where the individual
-bands will go. The dictionary below duplicates the default behavior of
-the converter, but is written out explicitly as an example:
+``mag_name`` and ``mag_err_name`` columns that will store the newly
+created magnitudes.
+
+This is done as below, by specifying a string listing the bands, and
+``{band}`` in the patterns where the individual bands will go. The
+dictionary below duplicates the default behavior of the converter, but
+is written out explicitly as an example:
 
 .. code:: ipython3
 
@@ -110,13 +120,16 @@ the converter, but is written out explicitly as an example:
 
 
 
+Deredden Mags
+~~~~~~~~~~~~~
+
 To deredden magnitudes we need to grab one of the dust maps used by the
 ``dustmaps`` package. We’ll grab the default Schlegel-Finkbeiner-Davis
 “SFD” map. NOTE: This will download a file to your machine containing
 the SFD data!
 
 We need to feed the location of the directory containing the newly
-created “sfd” maps to the stage, as we downloaded the data to the
+created “sfd” maps to the stage. As we downloaded the data to the
 present working directory with the command above, that directory is just
 ``"./"``
 
@@ -147,7 +160,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     62.4 MiB of 64.0 MiB |  53.5 MiB/s |################## |  97% | ETA:   0:00:00
+     64.0 MiB of 64.0 MiB |  41.9 MiB/s |###################| 100% | ETA:  00:00:00
 
 .. parsed-literal::
 
@@ -158,7 +171,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     64.0 MiB of 64.0 MiB |  57.7 MiB/s |###################| 100% | ETA:  00:00:00
+     64.0 MiB of 64.0 MiB |  45.9 MiB/s |###################| 100% | ETA:  00:00:00
 
 .. code:: ipython3
 
@@ -201,10 +214,12 @@ indeed, slightly brighter:
 .. image:: ../../../docs/rendered/core_examples/FluxtoMag_and_Deredden_example_files/../../../docs/rendered/core_examples/FluxtoMag_and_Deredden_example_14_0.png
 
 
-for cleanup, uncomment the line below to delete that SFD map directory downloaded in this example
--------------------------------------------------------------------------------------------------
+Clean up
+~~~~~~~~
+
+For cleanup, uncomment the line below to delete that SFD map directory
+downloaded in this example:
 
 .. code:: ipython3
 
     #! rm -rf sfd/
-

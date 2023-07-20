@@ -16,12 +16,16 @@ cuts, introducing systematic biases, etc.
 
 In this notebook, we will first learn how to draw samples from a RAIL
 Engine object. Then we will demonstrate how to use the following RAIL
-Degraders: 1. `LSSTErrorModel <#LSSTErrorModel>`__, which adds
-photometric errors 2. `QuantityCut <#QuantityCut>`__, which applies cuts
-to the specified columns of the sample 3.
-`InvRedshiftIncompleteness <#InvRedshiftIncompleteness>`__, which
-introduces sample incompleteness 4. `LineConfusion <#LineConfusion>`__,
-which introduces spectroscopic errors
+Degraders:
+
+1. **LSSTErrorModel**, which adds photometric errors
+
+2. **QuantityCut**, which applies cuts to the specified columns of the
+   sample
+
+3. **InvRedshiftIncompleteness**, which introduces sample incompleteness
+
+4. **LineConfusion**, which introduces spectroscopic errors
 
 Throughout the notebook, we will show how you can chain all these
 Degraders together to build a more complicated degrader. Hopefully, this
@@ -114,7 +118,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7fc0e515b670>
+    <pzflow.flow.Flow at 0x7fc204342380>
 
 
 
@@ -167,7 +171,8 @@ track of where their inputs are coming from.
     Data was written to  output_truth.pq
 
 
-## Degrader 1: LSSTErrorModel
+Degrader 1: LSSTErrorModel
+--------------------------
 
 Now, we will demonstrate the ``LSSTErrorModel``, which adds photometric
 errors using a model similar to the model from `Ivezic et
@@ -501,7 +506,8 @@ sample much deeper than the LSST 5-sigma limiting magnitudes. There are
 no galaxies dimmer than magnitude 30 because LSSTErrorModel sets
 magnitudes > 30 equal to NaN (the default flag for non-detections).
 
-## Degrader 2: QuantityCut
+Degrader 2: QuantityCut
+-----------------------
 
 Recall how the sample above has galaxies as dim as magnitude 30. This is
 well beyond the LSST 5-sigma limiting magnitudes, so it will be useful
@@ -555,7 +561,8 @@ make a cut
 For example, an SNR cut on the i band would look like this:
 ``QuantityCut({"i_err": 2.5/np.log(10) * 1/SNR})``.
 
-## Degrader 3: InvRedshiftIncompleteness
+Degrader 3: InvRedshiftIncompleteness
+-------------------------------------
 
 Next, we will demonstrate the ``InvRedshiftIncompleteness`` degrader. It
 applies a selection function, which keeps galaxies with probability
@@ -613,7 +620,8 @@ You can further see that the Incomplete Gold sample has even fewer
 high-redshift galaxies. This is exactly what we expected from this
 degrader.
 
-## Degrader 4: LineConfusion
+Degrader 4: LineConfusion
+-------------------------
 
 ``LineConfusion`` is a degrader that simulates spectroscopic errors
 resulting from the confusion of different emission lines.

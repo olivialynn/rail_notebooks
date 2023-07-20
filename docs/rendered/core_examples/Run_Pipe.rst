@@ -1,10 +1,15 @@
-Run_Pipe, example of running a rail pipeline
-============================================
+Running a Saved RAIL Pipeline
+=============================
 
-author: Eric Charles last run successfully: April 26, 2023
+author: Eric Charles
 
-This notbook shows how to: 1. Load that pipeline from a saved yaml file
-4. Run the loaded pipeline
+last run successfully: April 26, 2023
+
+This notebook shows how to:
+
+1. Load a pipeline from a saved yaml file
+
+2. Run the loaded pipeline
 
 .. code:: ipython3
 
@@ -75,5 +80,3 @@ This notbook shows how to: 1. Load that pipeline from a saved yaml file
 
 
 Yep, that’s it.
-~~~~~~~~~~~~~~~
-

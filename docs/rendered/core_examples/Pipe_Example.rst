@@ -1,11 +1,19 @@
-RAIL Pipeline example notebook
-==============================
+RAIL Pipeline: Build, Save, Load, and Run
+=========================================
 
-author: Eric Charles last run successfully: April 26, 2023
+author: Eric Charles
 
-This notbook shows how to: 1. Build a simple rail pipeline interactive,
-2. Save that pipeline (including configuraiton) to a yaml file, 3. Load
-that pipeline from the saved yaml file, 4. Run the loaded pipeline.
+last run successfully: April 26, 2023
+
+This notebook shows how to:
+
+1. Build a simple interactive rail pipeline,
+
+2. Save that pipeline (including configuration) to a yaml file,
+
+3. Load that pipeline from the saved yaml file,
+
+4. Run the loaded pipeline.
 
 .. code:: ipython3
 
@@ -22,14 +30,16 @@ that pipeline from the saved yaml file, 4. Run the loaded pipeline.
     from rail.core.stage import RailStage
     from rail.core.utilStages import ColumnMapper, TableConverter
 
-We’ll start by setting up the Rail data store. RAIL uses
+We’ll start by setting up the RAIL data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
 pipelines rather than interactive notebooks; the data store will work
-around that and enable us to use data interactively. When working
-interactively, we want to allow overwriting data in the Rail data store
-to avoid errors if we re-run cells. See the
-``rail/examples/goldenspike/goldenspike.ipynb`` example notebook for
-more details on the Data Store.
+around that and enable us to use data interactively.
+
+When working interactively, we want to allow overwriting data in the
+RAIL data store to avoid errors if we re-run cells.
+
+See the ``rail/examples/goldenspike_examples/goldenspike.ipynb`` example
+notebook for more details on the Data Store.
 
 .. code:: ipython3
 
@@ -42,10 +52,16 @@ Some configuration setup
 The example pipeline builds some of the RAIL creation functionality into
 a pipeline.
 
-Here we are defining: 1. The location of the pretrained PZFlow file used
-with this example. 2. The bands we will be generating data for. 3. The
-names of the columns where we will be writing the error estimates. 4.
-The grid of redshifts we use for posterior estimation.
+Here we are defining:
+
+1. The location of the pretrained PZFlow file used with this example.
+
+2. The bands we will be generating data for.
+
+3. The names of the columns where we will be writing the error
+   estimates.
+
+4. The grid of redshifts we use for posterior estimation.
 
 .. code:: ipython3
 
@@ -68,12 +84,16 @@ pipeline stage as keyword arguments.
 
 The names of the parameters will depend on the stage type.
 
-A couple of things are important: 1. Each stage should have a unique
-name. In ``ceci``, stage names default to the name of the class (e.g.,
-FlowCreator, or LSSTErrorModel); this would be problematic if you wanted
-two stages of the same type in a given pipeline, so be sure to assign
-each stage its own name. 2. At this point, we aren’t actually worrying
-about the connections between the stages.
+A couple of things are important:
+
+1. Each stage should have a unique name. In ``ceci``, stage names
+   default to the name of the class (e.g., FlowCreator, or
+   LSSTErrorModel); this would be problematic if you wanted two stages
+   of the same type in a given pipeline, so be sure to assign each stage
+   its own name.
+
+2. At this point, we aren’t actually worrying about the connections
+   between the stages.
 
 .. code:: ipython3
 
@@ -211,12 +231,16 @@ to another. By default, this will connect the output data product called
 Initialize the pipeline
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-This will do a few things: 1. Attach any global pipeline inputs that
-were not specified in the connections above. In our case, the input flow
-file is pre-existing and must be specified as a global input. 2.
-Specifiy output and logging directories. 3. Optionally, create the
-pipeline in ‘resume’ mode, where it will ignore stages if all of their
-output already exists.
+This will do a few things:
+
+1. Attach any global pipeline inputs that were not specified in the
+   connections above. In our case, the input flow file is pre-existing
+   and must be specified as a global input.
+
+2. Specifiy output and logging directories.
+
+3. Optionally, create the pipeline in ‘resume’ mode, where it will
+   ignore stages if all of their output already exists.
 
 .. code:: ipython3
 
@@ -231,7 +255,7 @@ output already exists.
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5ae94cab60>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7efe099ebd30>,
        LSSTErrorModel parameters:
        
        Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
@@ -263,7 +287,7 @@ output already exists.
           mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f5a98b31450>]),
+       <rail.core.utilStages.TableConverter at 0x7efe0988c6a0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -271,13 +295,14 @@ output already exists.
 Save the pipeline
 ~~~~~~~~~~~~~~~~~
 
-This will actually write two files (b/c this is what ``ceci`` wants)
+This will actually write two files (as this is what ``ceci`` wants)
 
-1. pipe_example.yml, which will have a list of stages, with instructions
-   on how to execute the stages (e.g., run this stage in parallel on 20
-   processors). For an interactive pipeline, those instructions will be
-   trivial.
-2. pipe_example_config.yml, which will have a dictionary of
+1. ``pipe_example.yml``, which will have a list of stages, with
+   instructions on how to execute the stages (e.g., run this stage in
+   parallel on 20 processors). For an interactive pipeline, those
+   instructions will be trivial.
+
+2. ``pipe_example_config.yml``, which will have a dictionary of
    configurations for each stage.
 
 .. code:: ipython3
@@ -340,6 +365,5 @@ case.
 .. parsed-literal::
 
     0
-
 
 

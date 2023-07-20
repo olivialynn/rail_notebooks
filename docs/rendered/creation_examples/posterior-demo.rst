@@ -16,10 +16,13 @@ this example, we will use the same engine we used in Degradation demo:
 ``FlowEngine`` which wraps a normalizing flow from the
 `pzflow <https://github.com/jfcrenshaw/pzflow>`__ package.
 
-This notebook will cover three scenarios of increasing complexity: 1.
-`Calculating posteriors without errors <#NoErrors>`__ 2. `Calculating
-posteriors while convolving errors <#ErrConv>`__ 3. `Calculating
-posteriors with missing bands <#MissingBands>`__
+This notebook will cover three scenarios of increasing complexity:
+
+1. Calculating posteriors without errors
+
+2. Calculating posteriors while convolving errors
+
+3. Calculating posteriors with missing bands
 
 .. code:: ipython3
 
@@ -48,15 +51,16 @@ We’ll start by setting up the Rail data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
 pipelines rather than interactive notebooks, the data store will work
 around that and enable us to use data interactively. See the
-``rail/examples/goldenspike/goldenspike.ipynb`` example notebook for
-more details on the Data Store.
+``rail/examples/goldenspike_examples/goldenspike.ipynb`` example
+notebook for more details on the Data Store.
 
 .. code:: ipython3
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
-## 1. Calculating posteriors without errors
+1. Calculating posteriors without errors
+----------------------------------------
 
 For a basic first example, let’s make a Creator with no degradation and
 draw a sample.
@@ -130,7 +134,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f3f30798ac0>
+    <qp.ensemble.Ensemble at 0x7f39192d33a0>
 
 
 
@@ -160,7 +164,7 @@ Let’s plot these pdfs:
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_13_0.png
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_14_0.png
 
 
 The true posteriors are in blue, and the true redshifts are marked by
@@ -441,7 +445,7 @@ Let’s calculate posteriors with a variable number of error samples.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_22_0.png
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_23_0.png
 
 
 You can see the effect of convolving the errors. In particular, notice
@@ -528,14 +532,15 @@ memory
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_25_0.png
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_26_0.png
 
 
 Notice that two of these galaxies may take upwards of 10,000 samples to
 converge (convolving over 10,000 samples takes 0.5 seconds / galaxy on
 my computer)
 
-## 3. Calculating posteriors with missing bands
+3. Calculating posteriors with missing bands
+--------------------------------------------
 
 Now let’s finally tackle posterior calculation with missing bands.
 
@@ -584,7 +589,7 @@ values of u to marginalize over.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_30_0.png
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_31_0.png
 
 
 Based on this histogram, I will marginalize over u band values from 27
@@ -658,7 +663,7 @@ grid.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_33_0.png
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_34_0.png
 
 
 Notice that the resolution with only 10 bins is sufficient for this
@@ -832,5 +837,4 @@ non-detection in the y band as well:
     #ax.set(xlabel="Redshift")
     #plt.show()
 
-Note that marginalizing over multiple bands quickly gets expensive
-
+Note that marginalizing over multiple bands quickly gets expensive.

@@ -233,8 +233,8 @@ Let’s run the code and see how long it takes:
     Inserting handle into data store.  input: None, ObsCondition
     Assigning pixels.
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 4.38 s, sys: 43.9 ms, total: 4.43 s
-    Wall time: 4.42 s
+    CPU times: user 5.96 s, sys: 63.9 ms, total: 6.03 s
+    Wall time: 6.03 s
 
 
 .. code:: ipython3

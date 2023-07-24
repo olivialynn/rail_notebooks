@@ -100,7 +100,7 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  25.7M      0  0:00:01  0:00:01 --:--:-- 25.6M
+    100 47.1M  100 47.1M    0     0  17.0M      0  0:00:02  0:00:02 --:--:-- 17.0M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -314,7 +314,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f82db0483a0>
+    <qp.ensemble.Ensemble at 0x7f9c671b10f0>
 
 
 
@@ -328,7 +328,7 @@ detailed below).
 .. parsed-literal::
 
     {'ad': Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001),
-     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
+     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10),
      'ks': KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1),
      'outlier_rate': 0.05873797877466336}
 
@@ -480,8 +480,8 @@ are perfect.
 
 .. parsed-literal::
 
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
 
 
 .. code:: ipython3

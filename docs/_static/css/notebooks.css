@@ -1,0 +1,25 @@
+/* Make the code cell backgrounds yellow-green (helps differentiate from
+results cells). */
+.highlight-ipython3 > .highlight {
+    background: #eeffcc;
+}
+
+/* Make tables horizontally scrollable, so they don't  disappear 
+off-screen. */
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+/* Give the table cells just a little more breathing room. */
+th, td {
+    padding: 6px;
+}
+
+/* Differentiate table headers. */
+th {
+    background: #f0f0f0;
+}

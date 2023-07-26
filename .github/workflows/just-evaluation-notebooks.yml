@@ -1,0 +1,42 @@
+# This workflow can be triggered manually; it will also run daily at 6:45 UTC.
+# This workflow grabs globbed notebooks from the RAIL repository, runs them, and
+# renders the notebooks with outputs into .rst files for easy integration into
+# ReadTheDocs.
+        
+name: Render notebooks
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    # Set up
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        python -m pip install --upgrade pip
+        
+        sudo apt-get install pandoc
+        pip install wheel numpy # For RAIL
+        pip install jupyter nbconvert # For notebooks
+        
+        git clone https://github.com/LSSTDESC/rail.git
+        cd rail
+        pip install .[dev]
+        
+    # Render evaluation notebooks
+    - run: python render_notebooks.py evaluation
+      if: always()
+      
+    # Commit changes
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      if: always()

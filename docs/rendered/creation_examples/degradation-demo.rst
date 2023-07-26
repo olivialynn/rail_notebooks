@@ -118,7 +118,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f09ab5c6890>
+    <pzflow.flow.Flow at 0x7f80895023b0>
 
 
 
@@ -306,13 +306,13 @@ photometric errors.
           <td>NaN</td>
           <td>28.038419</td>
           <td>0.362520</td>
-          <td>27.490722</td>
+          <td>27.490723</td>
           <td>0.229680</td>
           <td>28.102581</td>
           <td>0.525461</td>
           <td>26.066428</td>
           <td>0.172483</td>
-          <td>25.834953</td>
+          <td>25.834954</td>
           <td>0.307316</td>
         </tr>
         <tr>
@@ -322,7 +322,7 @@ photometric errors.
           <td>0.389236</td>
           <td>25.882633</td>
           <td>0.057988</td>
-          <td>24.797719</td>
+          <td>24.797720</td>
           <td>0.021944</td>
           <td>23.873355</td>
           <td>0.014716</td>

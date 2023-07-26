@@ -255,7 +255,7 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f80e3aa3ca0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7feb3c587c70>,
        LSSTErrorModel parameters:
        
        Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
@@ -287,7 +287,7 @@ This will do a few things:
           mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f80e39507f0>]),
+       <rail.core.utilStages.TableConverter at 0x7feb3c434610>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

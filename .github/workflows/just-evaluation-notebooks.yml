@@ -3,7 +3,7 @@
 # renders the notebooks with outputs into .rst files for easy integration into
 # ReadTheDocs.
         
-name: Render notebooks
+name: Just evaluation notebooks
 
 on:
   workflow_dispatch:

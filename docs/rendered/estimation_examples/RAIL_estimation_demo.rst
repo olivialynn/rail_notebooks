@@ -1,22 +1,29 @@
-RAIL/estimation Tutorial Notebook
+RAIL/Estimation Tutorial Notebook
 =================================
 
-author: Sam Schmidt, Eric Charles, others… last run successfully: April
-26, 2023
+author: Sam Schmidt, Eric Charles, others…
+
+last run successfully: April 26, 2023
 
 (FIXME, workaround for bug in mixmod PDF triggered in new version of
 scipy)
 
 This is a notebook demonstrating some of the features of the LSSTDESC
 ``RAIL`` package, namely the features of ``estimation``.
+
 ``RAIL/estimation`` is the interface for running production level
 photo-z codes within DESC. There is a minimimal superclass that sets up
 some file paths and variable names, each specific photo-z code resides
 in a subclass with code-specific setup variables.
 
-RAIL is available at: https://github.com/LSSTDESC/RAIL and must be
-installed and included in your python path to work. The LSSTDESC ``qp``
-package that handles PDF files is also required, it is available at:
+RAIL is available at:
+
+https://github.com/LSSTDESC/RAIL
+
+and must be installed and included in your python path to work. The
+LSSTDESC ``qp`` package that handles PDF files is also required, it is
+available at:
+
 https://github.com/LSSTDESC/qp
 
 .. code:: ipython3
@@ -96,28 +103,32 @@ out above. These are the names of the specific subclasses that invoke a
 particular method, and they are stored in the ``rail.estimation.algos``
 subdirectory of RAIL.
 
-``Randompz`` is a very simple class that does not actually predict a
-meaningful photo-z, instead it produces a randomly drawn Gaussian for
-each galaxy. ``trainZ`` is our “pathological” estimator, it makes a PDF
-from a histogram of the training data and assigns that PDF to every
-galaxy. ``simpleNN`` uses ``sklearn``\ ’s neural network to predict a
-point redshift from the training data, then assigns a sigma width based
-on the redshift, another toy model example ``FlexZBoost`` is a fully
-functional photo-z algorithm, implementing the FlexZBoost conditional
-density estimate method that was used in the PhotoZDC1 paper. FlexZBoost
-has been moved to its own GitHub repo, and is available in the
-`rail_flexzboost <https://github.com/LSSTDESC/rail_flexzboost/>`__ repo.
-``BPZ_lite`` is a template-based code that outputs the posterior
-estimated given a specific template set and Bayesian prior. See Benitez
-(2000) for more details. ``delight_hybrid`` is a hybrid gaussian
-process/template-based code, see the
-`Delight <https://github.com/LSSTDESC/Delight>`__ repo for more details.
-``KNearNeighEstimator`` is a simple implementation of a weighted
-k-nearest neighbor photo-z code, it stores each PDF as a weighted sum of
-Gaussians based on the distance from neighbors in color space.
-``PZFlowEstimator`` uses the same normalizing flow code
-`pzflow <https://github.com/jfcrenshaw/pzflow>`__ used in the
-``creation`` module to predict redshift PDFs.
+-  ``Randompz`` is a very simple class that does not actually predict a
+   meaningful photo-z, instead it produces a randomly drawn Gaussian for
+   each galaxy.
+-  ``trainZ`` is our “pathological” estimator, it makes a PDF from a
+   histogram of the training data and assigns that PDF to every galaxy.
+-  ``simpleNN`` uses ``sklearn``\ ’s neural network to predict a point
+   redshift from the training data, then assigns a sigma width based on
+   the redshift, another toy model example.
+-  ``FlexZBoost`` is a fully functional photo-z algorithm, implementing
+   the FlexZBoost conditional density estimate method that was used in
+   the PhotoZDC1 paper. FlexZBoost has been moved to its own GitHub
+   repo, and is available in the
+   `rail_flexzboost <https://github.com/LSSTDESC/rail_flexzboost/>`__
+   repo.
+-  ``BPZ_lite`` is a template-based code that outputs the posterior
+   estimated given a specific template set and Bayesian prior. See
+   Benitez (2000) for more details.
+-  ``delight_hybrid`` is a hybrid gaussian process/template-based code,
+   see the `Delight <https://github.com/LSSTDESC/Delight>`__ repo for
+   more details.
+-  ``KNearNeighEstimator`` is a simple implementation of a weighted
+   k-nearest neighbor photo-z code, it stores each PDF as a weighted sum
+   of Gaussians based on the distance from neighbors in color space.
+-  ``PZFlowEstimator`` uses the same normalizing flow code
+   `pzflow <https://github.com/jfcrenshaw/pzflow>`__ used in the
+   ``creation`` module to predict redshift PDFs.
 
 Each code should have two specific classes associated with it: one to
 train/inform using a set of training data, and a second to actually
@@ -170,15 +181,17 @@ grid of width and NN values, and the combination of width and NN with
 the lowest CDE loss is used. ``sigma_grid_min``, ``sigma_grid_max``, and
 ``ngrid_sigma`` are used to specify the grid of sigma values to test,
 while ``nneigh_min`` and ``nneigh_max`` are the integer values between
-which we will check the loss. ``zmin``, ``zmax``, and ``nzbins`` are
-used to create a grid on which the CDE Loss is computed when minimizing
-the loss to find the best values for sigma and number of neighbors to
-use
+which we will check the loss.
+
+``zmin``, ``zmax``, and ``nzbins`` are used to create a grid on which
+the CDE Loss is computed when minimizing the loss to find the best
+values for sigma and number of neighbors to use.
 
 We will begin by training the algorithm, to to this we instantiate a
-rail object with a call to the base class. If any essential parameters
-are missing from the parameter dictionary, they will be set to default
-values:
+rail object with a call to the base class.
+
+If any essential parameters are missing from the parameter dictionary,
+they will be set to default values:
 
 .. code:: ipython3
 
@@ -225,15 +238,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 12.3 s, sys: 3.51 s, total: 15.8 s
-    Wall time: 15.8 s
+    CPU times: user 19.2 s, sys: 4.96 s, total: 24.1 s
+    Wall time: 24.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2a61bbb6d0>
+    <rail.core.data.ModelHandle at 0x7fdf2efa3af0>
 
 
 
@@ -295,7 +308,7 @@ look:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_23_1.png
+.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_24_1.png
 
 
 Not bad, given our very simple estimator. For the PDFs, the simpleNN is
@@ -332,7 +345,7 @@ of that simple form. Let’s plot an example pdf:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_26_1.png
+.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_27_1.png
 
 
 We see that KNearNeigh PDFs do consist of a number of discrete
@@ -340,7 +353,7 @@ Gaussians, and many have quite a bit of substructure. This is a naive
 estimator, and some of these feature are likely spurious.
 
 FZBoost
-=======
+-------
 
 That illustrates the basics, now let’s try the ``FlexZBoostEstimator``
 estimator. FlexZBoost has been moved out of the “base” RAIL repo, and is
@@ -348,9 +361,11 @@ available in the
 `rail_flexzboost <https://github.com/LSSTDESC/rail_flexzboost/>`__ repo.
 You can install by cloning that repo and installing directly, or you can
 install it via PyPI by simply running the command
-``pip install pz-rail-flexzboost`` on the command line. Once installed,
-it will function the same as any of the other estimators included in the
-main RAIL repo.
+
+``pip install pz-rail-flexzboost``
+
+on the command line. Once installed, it will function the same as any of
+the other estimators included in the main RAIL repo.
 
 ``FlexZBoostEstimator`` finds a conditional density estimate for each
 PDF via a set of weights for basis functions. This can save space
@@ -376,21 +391,24 @@ FlexZBoostEstimator, just as we had for the scikit-learn neural network.
 Some of the parameters are the same as in ``skl_neurnet`` above,
 ``zmin``, ``zmax``, ``nzbins``. However, FlexZBoostEstimator performs a
 more in depth training than simpleNN, and as such has more input
-parameters to control behavior. These parameters are: ``basis_system``:
-which basis system to use in the density estimate. The default is
-``cosine`` but ``fourier`` is also an option ``max_basis``: the maximum
-number of basis functions parameters to use for PDFs
-``regression_params``: a dictionary of options fed to ``xgboost`` that
-control the maximum depth and the ``objective`` function. An update in
-``xgboost`` means that ``objective`` should now be set to
-``reg:squarederror`` for proper functioning. ``trainfrac``: The fraction
-of the training data to use for training the density estimate. The
-remaining galaxies will be used for validation of ``bump_thresh`` and
-``sharpening``. ``bumpmin``: the minimum value to test in the
-``bump_thresh`` grid ``bumpmax``: the maximum value to test in the
-``bump_thresh`` grid ``nbump``: how many points to test in the
-``bump_thresh`` grid ``sharpmin``, ``sharpmax``, ``nsharp``: same as
-equivalent ``bump_thresh`` params, but for ``sharpening`` parameter
+parameters to control behavior. These parameters are:
+
+-  ``basis_system``: which basis system to use in the density estimate.
+   The default is ``cosine`` but ``fourier`` is also an option
+-  ``max_basis``: the maximum number of basis functions parameters to
+   use for PDFs
+-  ``regression_params``: a dictionary of options fed to ``xgboost``
+   that control the maximum depth and the ``objective`` function. An
+   update in ``xgboost`` means that ``objective`` should now be set to
+   ``reg:squarederror`` for proper functioning.
+-  ``trainfrac``: The fraction of the training data to use for training
+   the density estimate. The remaining galaxies will be used for
+   validation of ``bump_thresh`` and ``sharpening``.
+-  ``bumpmin``: the minimum value to test in the ``bump_thresh`` grid
+-  ``bumpmax``: the maximum value to test in the ``bump_thresh`` grid
+-  ``nbump``: how many points to test in the ``bump_thresh`` grid
+-  ``sharpmin``, ``sharpmax``, ``nsharp``: same as equivalent
+   ``bump_thresh`` params, but for ``sharpening`` parameter
 
 .. code:: ipython3
 
@@ -412,10 +430,11 @@ We can now use this data to train our model using the
 conditional density estimate model, and also fits a ``bump_thresh``
 parameter that erases small peaks that are an artifact of the ``cosine``
 parameterization. It then finds a best fit ``sharpen`` parameter that
-modulates the peaks with a power law. We have ``save_train`` set to
-``True`` in our ``inform_options``, so this will save a pickled version
-of the best fit model to the file specified in
-``inform_options['modelfile']``, which is set above to
+modulates the peaks with a power law.
+
+We have ``save_train`` set to ``True`` in our ``inform_options``, so
+this will save a pickled version of the best fit model to the file
+specified in ``inform_options['modelfile']``, which is set above to
 ``demo_FZB_model.pkl``. We can use the same training data that we used
 for ``skl_neurnet``. ``FlexZBoost`` is a bit more sophisticated than
 ``skl_neurnet``, so it will take a bit longer to train (note: it should
@@ -437,15 +456,15 @@ sample):
     finding best sharpen parameter...
     Retraining with full training set...
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 57.7 s, sys: 1.98 s, total: 59.7 s
-    Wall time: 2min
+    CPU times: user 1min 19s, sys: 2.85 s, total: 1min 22s
+    Wall time: 2min 45s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2a602625f0>
+    <rail.core.data.ModelHandle at 0x7fded0f0e680>
 
 
 
@@ -493,8 +512,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 235 µs, sys: 20 µs, total: 255 µs
-    Wall time: 259 µs
+    CPU times: user 295 µs, sys: 26 µs, total: 321 µs
+    Wall time: 329 µs
 
 
 
@@ -526,8 +545,8 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 15 s, sys: 285 ms, total: 15.3 s
-    Wall time: 16 s
+    CPU times: user 21.1 s, sys: 373 ms, total: 21.5 s
+    Wall time: 23 s
 
 
 We can calculate the median and mode values of the PDFs and plot their
@@ -555,7 +574,7 @@ here is an example of computing via qp as well):
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_42_1.png
+.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_43_1.png
 
 
 We can plot an example PDF from the results file:
@@ -583,7 +602,7 @@ We can plot an example PDF from the results file:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_44_1.png
+.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_45_1.png
 
 
 We can also plot a few point estimates to make sure our algorithm worked
@@ -601,11 +620,9 @@ against true redshift:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_46_0.png
+.. image:: ../../../docs/rendered/estimation_examples/RAIL_estimation_demo_files/../../../docs/rendered/estimation_examples/RAIL_estimation_demo_47_0.png
 
 
 The results look very good! FlexZBoost is a mature algorithm, and with
 representative training data we see a very tight correlation with true
 redshift and few outliers.
-
-

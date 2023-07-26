@@ -19,23 +19,6 @@ particularly for the estimation codes that you want to run, as well as
 ceci, qp, tables_io, etc… See the RAIL installation instructions for
 more info.
 
-Contents
-~~~~~~~~
-
--  `Data <#data>`__
--  `Photo-z Results <#fzboost>`__
--  `CDF-based metrics <#metrics>`__
--  `PIT <#pit>`__
--  `QQ plot <#qq>`__
--  `Summary statistics of CDF-based metrics <#summary_stats>`__
-
-   -  `KS <#ks>`__
-   -  `CvM <#cvm>`__
-   -  `AD <#ad>`__
-   -  `KLD <#kld>`__
-
--  `CDE loss <#cde_loss>`__
-
 .. code:: ipython3
 
     import rail
@@ -52,14 +35,15 @@ Contents
 
 Let’s set up the data store, for more information on the data store, see
 the golden spike example notebook in
-RAIL/examples/goldenspike/goldenspike.ipynb
+``RAIL/examples/goldenspike_examples/goldenspike.ipynb``
 
 .. code:: ipython3
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
-# Data
+Data
+----
 
 To compute the photo-z metrics of a given test sample, it is necessary
 to read the output of a photo-z code containing galaxies’ photo-z PDFs.
@@ -68,7 +52,11 @@ Let’s use the toy data available in ``tests/data/``
 to generate a small sample of photo-z PDFs using the **FlexZBoost**
 algorithm available on RAIL’s *estimation* module.
 
-### Photo-z Results #### Run FlexZBoost
+Photo-z Results
+~~~~~~~~~~~~~~~
+
+Run FlexZBoost
+^^^^^^^^^^^^^^
 
 If you have run the notebook ``RAIL_estimation_demo.ipynb``, this will
 produce a file ``output_fzboost.hdf5``, writen at the location:
@@ -100,7 +88,7 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  17.8M      0  0:00:02  0:00:02 --:--:-- 17.8M
+    100 47.1M  100 47.1M    0     0  26.5M      0  0:00:01  0:00:01 --:--:-- 26.5M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -138,7 +126,7 @@ the data store
 
 
 Make an evaulator stage
-=======================
+-----------------------
 
 Now let’s set up the Evaluator stage to compute our metrics for the
 FlexZBoost results
@@ -270,11 +258,11 @@ individual metric, we can calculate the metrics using functions from the
 evaluation class separate from the stage infrastructure. Here are some
 examples below.
 
---------------
+CDF-based Metrics
+-----------------
 
-# Metrics
-
-## PIT
+PIT
+~~~
 
 The Probability Integral Transform (PIT), is the Cumulative Distribution
 Function (CDF) of the photo-z PDF
@@ -314,7 +302,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f01cc47e860>
+    <qp.ensemble.Ensemble at 0x7f27078879a0>
 
 
 
@@ -328,7 +316,7 @@ detailed below).
 .. parsed-literal::
 
     {'ad': Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001),
-     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10),
+     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
      'ks': KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1),
      'outlier_rate': 0.05873797877466336}
 
@@ -374,7 +362,8 @@ PIT :math:`>0.9999`).
     PIT outlier rate of this sample: 0.058738
 
 
-## PIT-QQ plot
+PIT-QQ plot
+~~~~~~~~~~~
 
 The histogram of PIT values is a useful tool for a qualitative
 assessment of PDFs quality. It shows whether the PDFs are: \* biased
@@ -396,19 +385,21 @@ diagonal, the better is the PDFs calibration.
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_33_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_34_0.png
 
 
 The black horizontal line represents the ideal case where the PIT
-histogram would behave as a uniform distribution U(0,1). \**\*
+histogram would behave as a uniform distribution U(0,1).
 
-# Summary statistics of CDF-based metrics
+Summary statistics of CDF-based metrics
+---------------------------------------
 
 To evaluate globally the quality of PDFs estimates, ``rail.evaluation``
 provides a set of metrics to compare the empirical distributions of PIT
 values with the reference uniform distribution, U(0,1).
 
-### Kolmogorov-Smirnov
+Kolmogorov-Smirnov
+~~~~~~~~~~~~~~~~~~
 
 Let’s start with the traditional Kolmogorov-Smirnov (KS) statistic test,
 which is the maximum difference between the empirical and the expected
@@ -446,7 +437,7 @@ Visual interpretation of the KS statistic:
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_39_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_40_0.png
 
 
 .. code:: ipython3
@@ -459,7 +450,8 @@ Visual interpretation of the KS statistic:
     KS metric of this sample: 0.0336
 
 
-### Cramer-von Mises
+Cramer-von Mises
+~~~~~~~~~~~~~~~~
 
 Similarly, let’s calculate the Cramer-von Mises (CvM) test, a variant of
 the KS statistic defined as the mean-square difference between the CDFs
@@ -480,8 +472,8 @@ are perfect.
 
 .. parsed-literal::
 
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 
 .. code:: ipython3
@@ -494,7 +486,8 @@ are perfect.
     CvM metric of this sample: 9.6234
 
 
-### Anderson-Darling
+Anderson-Darling
+~~~~~~~~~~~~~~~~
 
 Another variation of the KS statistic is the Anderson-Darling (AD) test,
 a weighted mean-squared difference featuring enhanced sensitivity to
@@ -549,7 +542,8 @@ interval (0.01, 0.99).
     AD metric for 0.01 < PIT < 0.99: 89.9826
 
 
-# CDE Loss
+CDE Loss
+--------
 
 In the absence of true photo-z posteriors, the metric used to evaluate
 individual PDFs is the **Conditional Density Estimate (CDE) Loss**, a
@@ -601,6 +595,5 @@ depending on the true conditional densities :math:`f(z | x)`.
 
 
 We note that all of the quantities as run individually are identical to
-the quantities in our summary table, a nice check that things have run
-properly
-
+the quantities in our summary table - a nice check that things have run
+properly.

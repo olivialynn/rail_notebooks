@@ -1,12 +1,15 @@
 The NZDir estimator
 ===================
 
-Author: Sam Schmidt Last successfully run: April 26, 2023
+Author: Sam Schmidt
+
+Last successfully run: April 26, 2023
 
 This is a quick demo of the NZDir estimator, it has been ported to RAIL
 based on Joe Zuntz’s implementation in TXPipe here:
 https://github.com/LSSTDESC/TXPipe/blob/nz-dir/txpipe/nz_calibration.py
-First off, let’s load the relevant packages from RAIL
+
+First off, let’s load the relevant packages from RAIL:
 
 .. code:: ipython3
 
@@ -33,6 +36,7 @@ where to fetch data:
     DS.__class__.allow_overwrite = True
 
 Next, we’ll load some data into the Data Store:
+
 ``test_dc2_training_9816.hdf5`` contains ~10,000 galaxies from healpix
 9816 of the cosmoDC2 “truth” catalog, and the “validation” data set
 contains ~20,000 galaxies from this same healpix pixel.
@@ -70,26 +74,29 @@ all weights to one):
     hi_bin = DS.add_data("hiz_bin", hizdata, TableHandle)
 
 The algorithm:
-==============
+--------------
 
 The NZDir estimator tries to reconstruct the redshift distribution for
 an unknown sample (which we’ll alternately call the “photometric
 sample”, as it has photometric, but not spectroscopic information for
 each galaxy) by finding spectroscopic galaxies with similar
 magnitudes/colors and assigning a redshift based on those
-similarly-colored objects. In practice, this particular algorithm
-actually reverses that process, it defines a neighborhood around each
-spectroscopic object (based on the distance to the Nth nearest neighbor,
-where N is defined by the user via the parameter ``n_neigh``). Then, it
-loops over the set of all spectroscopic objects and adds its (weighted)
-redshift to a histogram for each photometric object that it finds within
-the annulus. This process is more efficient computationally, and has the
-benefit of automatically “ignoring” photometric objects that have no
-similarly colored spectroscopic objects nearby. *However*, that could
-also be seen as a limitation, as if there are areas of color^N space not
-covered by your training sample, those galaxies will be “skipped” when
-assembling the tomographic redshift N(z) estimate, which can lead to
-biased results, as we will show later in this demo.
+similarly-colored objects.
+
+In practice, this particular algorithm actually reverses that process:
+it defines a neighborhood around each spectroscopic object (based on the
+distance to the Nth nearest neighbor, where N is defined by the user via
+the parameter ``n_neigh``). Then, it loops over the set of all
+spectroscopic objects and adds its (weighted) redshift to a histogram
+for each photometric object that it finds within the annulus.
+
+This process is more efficient computationally, and has the benefit of
+automatically “ignoring” photometric objects that have no similarly
+colored spectroscopic objects nearby. *However*, that could also be seen
+as a limitation, as if there are areas of color^N space not covered by
+your training sample, those galaxies will be “skipped” when assembling
+the tomographic redshift N(z) estimate, which can lead to biased
+results, as we will show later in this demo.
 
 Like PDF estimators, the algorithm is broken up into an “inform” stage
 and an “estimate” stage. The inform stage creates the neighbors for the
@@ -144,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f68ddf968c0>
+    <rail.core.data.ModelHandle at 0x7fef2c2625c0>
 
 
 
@@ -190,8 +197,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 349 ms, sys: 3.28 ms, total: 352 ms
-    Wall time: 351 ms
+    CPU times: user 493 ms, sys: 0 ns, total: 493 ms
+    Wall time: 492 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -230,11 +237,11 @@ realization for each bin:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_21_1.png
+.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_22_1.png
 
 
 Non-representative data
-=======================
+-----------------------
 
 That looks very nice, while there is a little bit of “slosh” outside of
 each bin, we have a relatively compact and accurate representation from
@@ -312,7 +319,7 @@ redshifts, and we are very incomplete at high redshift.
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_30_1.png
+.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_31_1.png
 
 
 Let’s re-run our estimator on the same test data but now with our
@@ -338,7 +345,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f68da0c6860>
+    <rail.core.data.ModelHandle at 0x7fef2ae4eda0>
 
 
 
@@ -368,8 +375,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 128 ms, sys: 0 ns, total: 128 ms
-    Wall time: 128 ms
+    CPU times: user 182 ms, sys: 4 ms, total: 186 ms
+    Wall time: 186 ms
 
 
 .. code:: ipython3
@@ -394,7 +401,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_36_0.png
+.. image:: ../../../docs/rendered/estimation_examples/NZDir_files/../../../docs/rendered/estimation_examples/NZDir_37_0.png
 
 
 We see that the high redshift bin, where our training set was very
@@ -402,4 +409,3 @@ incomplete, looks particularly bad, as expected. Bins 1 and 2 look
 surprisingly good, which is a promising sign that, even when a brighter
 magnitude cut is enforced, this method is sometimes still able to
 produce reasonable results.
-

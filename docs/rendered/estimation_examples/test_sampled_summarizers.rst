@@ -1,4 +1,8 @@
-Author: Sam Schmidt Last successfully run: April 26, 2023
+Test Sampled Summarizers
+
+Author: Sam Schmidt
+
+Last successfully run: April 26, 2023
 
 June 28 update: I modified the summarizers to output not just N sample
 N(z) distributions (saved to the file specified via the ``output``
@@ -87,7 +91,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2a57f73460>
+    <rail.core.data.ModelHandle at 0x7f8d5cd83af0>
 
 
 
@@ -126,7 +130,7 @@ Ensemble (Note: the previous versions of these degraders returned only
 the single overall N(z) rather than samples).
 
 Naive Stack
-===========
+-----------
 
 Naive stack just “stacks” i.e. sums up, the PDFs and returns a qp.interp
 distribution with bins defined by np.linspace(zmin, zmax, nzbins), we
@@ -169,7 +173,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2a57f72d70>
+    <matplotlib.legend.Legend at 0x7f8d13da6080>
 
 
 
@@ -200,7 +204,7 @@ grab the N(z) estimate with qp and plot it with the native plotter:
 
 
 Point Estimate Hist
-===================
+-------------------
 
 PointEstHistSummarizer takes the point estimate mode of each PDF and
 then histograms these, we’ll again generate 41 bootstrap samples of this
@@ -222,8 +226,8 @@ appears alpha is broken, so this plot is not the best:
 
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 15 ms, sys: 0 ns, total: 15 ms
-    Wall time: 14.8 ms
+    CPU times: user 42.7 ms, sys: 0 ns, total: 42.7 ms
+    Wall time: 42.2 ms
 
 
 .. code:: ipython3
@@ -244,7 +248,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2a5492ab30>
+    <matplotlib.legend.Legend at 0x7f8d10c3a200>
 
 
 
@@ -256,7 +260,7 @@ Again, we have saved the fiducial N(z) in a separate file,
 “point_NZ.hdf5”, we could read that data in if we desired.
 
 VarInfStackSummarizer
-=====================
+---------------------
 
 VarInfStackSummarizer implements Markus’ variational inference scheme
 and returns qp.interp gridded distribution. VarInfStackSummarizer tends
@@ -278,8 +282,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.35 s, sys: 91.2 ms, total: 1.44 s
-    Wall time: 1.44 s
+    CPU times: user 2.28 s, sys: 104 ms, total: 2.38 s
+    Wall time: 2.39 s
 
 
 .. code:: ipython3
@@ -292,7 +296,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f2a54729990>
+    <qp.ensemble.Ensemble at 0x7f8d1095d9c0>
 
 
 
@@ -317,7 +321,7 @@ Let’s plot the fiducial N(z) for this distribution:
 
 
 NZDir
-=====
+-----
 
 NZDirSummarizer is a different type of summarizer, taking a weighted set
 of neighbors to a set of training spectroscopic objects to reconstruct
@@ -351,7 +355,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2a59b1fdc0>
+    <rail.core.data.ModelHandle at 0x7f8d10b2ed40>
 
 
 
@@ -396,7 +400,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2a548dfb20>
+    <matplotlib.legend.Legend at 0x7f8d10773eb0>
 
 
 
@@ -430,7 +434,7 @@ given in NZDirSummarizer.make_stage above, in this case “NZDir_NZ.hdf5”)
 
 
 Results
-=======
+-------
 
 All three results files are qp distributions, NaiveStackSummarizer and
 VarInfStackSummarizer return qp.interp distributions while
@@ -524,7 +528,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f2a545c10c0>]
+    [<matplotlib.lines.Line2D at 0x7f8d10714f10>]
 
 
 
@@ -541,7 +545,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f2a545bc7c0>]
+    [<matplotlib.lines.Line2D at 0x7f8d108b11e0>]
 
 
 
@@ -558,7 +562,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f2a544ba800>]
+    [<matplotlib.lines.Line2D at 0x7f8d13cb34f0>]
 
 
 
@@ -567,7 +571,7 @@ distributions have been inherited by qp ensembles
 
 
 Shifts
-======
+------
 
 If you want to “shift” a PDF, you can just evaluate the PDF on a shifted
 grid, for example to shift the PDF by +0.0375 in redshift you could
@@ -593,7 +597,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2a57a4ff70>
+    <matplotlib.legend.Legend at 0x7f8d13c83c70>
 
 
 
@@ -640,4 +644,3 @@ NZDir-derived distribution:
 
 Again, not a huge spread in predicted mean redshifts based solely on
 bootstraps, even with only ~20,000 galaxies.
-

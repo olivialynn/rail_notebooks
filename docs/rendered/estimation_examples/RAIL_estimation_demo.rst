@@ -238,15 +238,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 12.5 s, sys: 4.61 s, total: 17.1 s
-    Wall time: 17.1 s
+    CPU times: user 12.5 s, sys: 4.74 s, total: 17.2 s
+    Wall time: 17.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb163e64610>
+    <rail.core.data.ModelHandle at 0x7fb224d63d00>
 
 
 
@@ -456,15 +456,15 @@ sample):
     finding best sharpen parameter...
     Retraining with full training set...
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 57.3 s, sys: 2.25 s, total: 59.6 s
-    Wall time: 2min 3s
+    CPU times: user 55 s, sys: 2.29 s, total: 57.3 s
+    Wall time: 2min
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb106a1e800>
+    <rail.core.data.ModelHandle at 0x7fb1c79574f0>
 
 
 
@@ -512,8 +512,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 241 µs, sys: 26 µs, total: 267 µs
-    Wall time: 273 µs
+    CPU times: user 238 µs, sys: 28 µs, total: 266 µs
+    Wall time: 269 µs
 
 
 
@@ -545,8 +545,8 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 15.2 s, sys: 306 ms, total: 15.5 s
-    Wall time: 16.4 s
+    CPU times: user 14.6 s, sys: 273 ms, total: 14.9 s
+    Wall time: 15.8 s
 
 
 We can calculate the median and mode values of the PDFs and plot their

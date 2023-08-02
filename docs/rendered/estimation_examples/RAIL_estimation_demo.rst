@@ -78,7 +78,16 @@ estimators that operator on catalog-like inputs.
     Imported rail.astro_tools
     Imported rail.bpz
     Imported rail.core
-    Failed to import rail.dsps because: You need to have the SPS_HOME environment variable
+
+
+.. parsed-literal::
+
+    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+
+
+.. parsed-literal::
+
+    Failed to import rail.dsps because: No module named 'gal_pop_model_components'
     Imported rail.flexzboost
     Failed to import rail.gpz because: No module named 'rail.estimation.algos.gpz_v1'
     Imported rail.hub
@@ -87,7 +96,7 @@ estimators that operator on catalog-like inputs.
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 10 base classes and 45 fully formed stages to rail.stages
+    Attached 10 base classes and 48 fully formed stages to rail.stages
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
@@ -238,15 +247,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 18.4 s, sys: 6.11 s, total: 24.5 s
-    Wall time: 24.5 s
+    CPU times: user 14.9 s, sys: 5.03 s, total: 19.9 s
+    Wall time: 19.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f847662bb80>
+    <rail.core.data.ModelHandle at 0x7fa6cc11b2b0>
 
 
 
@@ -456,15 +465,15 @@ sample):
     finding best sharpen parameter...
     Retraining with full training set...
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 1min 22s, sys: 2.77 s, total: 1min 25s
-    Wall time: 2min 44s
+    CPU times: user 1min 7s, sys: 3.06 s, total: 1min 11s
+    Wall time: 2min 28s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8415e33fa0>
+    <rail.core.data.ModelHandle at 0x7fa6c4b29ea0>
 
 
 
@@ -512,8 +521,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 261 µs, sys: 26 µs, total: 287 µs
-    Wall time: 292 µs
+    CPU times: user 279 µs, sys: 30 µs, total: 309 µs
+    Wall time: 315 µs
 
 
 
@@ -545,8 +554,8 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 22.4 s, sys: 373 ms, total: 22.8 s
-    Wall time: 24.3 s
+    CPU times: user 17.6 s, sys: 363 ms, total: 18 s
+    Wall time: 19.1 s
 
 
 We can calculate the median and mode values of the PDFs and plot their

@@ -3,7 +3,7 @@ Using Engines and Degraders to Generate Galaxy Samples with Errors and Biases
 
 author: John Franklin Crenshaw, Sam Schmidt, Eric Charles, others…
 
-last run successfully: April 26, 2023
+last run successfully: August 2, 2023
 
 This notebook demonstrates how to use a RAIL Engines to create galaxy
 samples, and how to use Degraders to add various errors and biases to
@@ -52,6 +52,7 @@ posteriors. For an example of how to calculate posteriors, see
     from rail.creation.degradation.quantityCut import QuantityCut
     from rail.core.stage import RailStage
 
+
 Specify the path to the pretrained ‘pzflow’ used to generate samples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -59,7 +60,11 @@ Specify the path to the pretrained ‘pzflow’ used to generate samples
 
     import pzflow
     import os
-    flow_file = os.path.join(os.path.dirname(pzflow.__file__), 'example_files', 'example-flow.pzflow.pkl')
+    
+    flow_file = os.path.join(
+        os.path.dirname(pzflow.__file__), "example_files", "example-flow.pzflow.pkl"
+    )
+
 
 We’ll start by setting up the Rail data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
@@ -72,6 +77,7 @@ more details on the Data Store.
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
+
 
 “True” Engine
 -------------
@@ -93,7 +99,10 @@ We then pass in the configuration parameters as arguments to
 .. code:: ipython3
 
     n_samples = int(1e5)
-    flowCreator_truth = FlowCreator.make_stage(name='truth', model=flow_file, n_samples=n_samples)
+    flowCreator_truth = FlowCreator.make_stage(
+        name="truth", model=flow_file, n_samples=n_samples
+    )
+
 
 
 .. parsed-literal::
@@ -111,14 +120,15 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. code:: ipython3
 
-    flowCreator_truth.get_data('model')
+    flowCreator_truth.get_data("model")
+
 
 
 
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f577342e320>
+    <pzflow.flow.Flow at 0x7f3458605d20>
 
 
 
@@ -136,6 +146,7 @@ track of where their inputs are coming from.
     samples_truth = flowCreator_truth.sample(n_samples, seed=0)
     print(samples_truth())
     print("Data was written to ", samples_truth.path)
+
 
 
 .. parsed-literal::
@@ -185,7 +196,8 @@ Let’s create an error model with the default settings:
 
 .. code:: ipython3
 
-    errorModel = LSSTErrorModel.make_stage(name='error_model')
+    errorModel = LSSTErrorModel.make_stage(name="error_model")
+
 
 To see the details of the model, including the default settings we are
 using, you can just print the model:
@@ -197,37 +209,10 @@ using, you can just print the model:
 
 
 
+
 .. parsed-literal::
 
-    LSSTErrorModel parameters:
-    
-    Model for bands: u, g, r, i, z, y
-    
-    Using error type point
-    Exposure time = 30.0 s
-    Number of years of observations = 10.0
-    Mean visits per year per band:
-       u: 5.6, g: 8.0, r: 18.4, i: 18.4, z: 16.0, y: 16.0
-    Airmass = 1.2
-    Irreducible system error = 0.005
-    Magnitudes dimmer than 30.0 are set to nan
-    gamma for each band:
-       u: 0.038, g: 0.039, r: 0.039, i: 0.039, z: 0.039, y: 0.039
-    
-    The coadded 5-sigma limiting magnitudes are:
-    u: 26.04, g: 27.29, r: 27.31, i: 26.87, z: 26.23, y: 25.30
-    
-    The following single-visit 5-sigma limiting magnitudes are
-    calculated using the parameters that follow them:
-       u: 23.83, g: 24.90, r: 24.47, i: 24.03, z: 23.46, y: 22.53
-    Cm for each band:
-       u: 23.09, g: 24.42, r: 24.44, i: 24.32, z: 24.16, y: 23.73
-    Median zenith sky brightness in each band:
-       u: 22.99, g: 22.26, r: 21.2, i: 20.48, z: 19.6, y: 18.61
-    Median zenith seeing FWHM (in arcseconds) for each band:
-       u: 0.81, g: 0.77, r: 0.73, i: 0.71, z: 0.69, y: 0.68
-    Extinction coefficient for each band:
-       u: 0.491, g: 0.213, r: 0.126, i: 0.096, z: 0.069, y: 0.17
+    <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f34a6c61570>
 
 
 
@@ -238,6 +223,7 @@ photometric errors.
 
     samples_w_errs = errorModel(samples_truth)
     samples_w_errs()
+
 
 
 .. parsed-literal::
@@ -286,8 +272,8 @@ photometric errors.
         <tr>
           <th>0</th>
           <td>0.890625</td>
-          <td>NaN</td>
-          <td>NaN</td>
+          <td>31.172297</td>
+          <td>3.430576</td>
           <td>26.562721</td>
           <td>0.105583</td>
           <td>26.084861</td>
@@ -302,8 +288,8 @@ photometric errors.
         <tr>
           <th>1</th>
           <td>1.978239</td>
-          <td>NaN</td>
-          <td>NaN</td>
+          <td>inf</td>
+          <td>inf</td>
           <td>28.038419</td>
           <td>0.362520</td>
           <td>27.490723</td>
@@ -466,11 +452,11 @@ photometric errors.
 
 
 
-Notice some of the magnitudes are NaN’s. These are non-detections. This
-means those observed magnitudes were beyond the 30mag limit that is
-default in ``LSSTErrorModel``. You can change this limit and the
-corresponding flag by setting ``magLim=...`` and ``ndFlag=...`` in the
-constructor for ``LSSTErrorModel``.
+Notice some of the magnitudes are inf’s. These are non-detections. This
+means those observed fluxes were negative. You can change the limit for
+non-detections by setting ``sigLim=...``, where the value you set is the
+minimum SNR. Setting ``ndFlag=...`` changes the value used to flag
+non-detections.
 
 Let’s plot the error as a function of magnitude
 
@@ -479,20 +465,20 @@ Let’s plot the error as a function of magnitude
     fig, ax = plt.subplots(figsize=(5, 4), dpi=100)
     
     for band in "ugrizy":
-        
         # pull out the magnitudes and errors
         mags = samples_w_errs.data[band].to_numpy()
         errs = samples_w_errs.data[band + "_err"].to_numpy()
-        
+    
         # sort them by magnitude
         mags, errs = mags[mags.argsort()], errs[mags.argsort()]
-        
+    
         # plot errs vs mags
-        ax.plot(mags, errs, label=band) 
-        
+        ax.plot(mags, errs, label=band)
+    
     ax.legend()
     ax.set(xlabel="Magnitude (AB)", ylabel="Error (mags)")
     plt.show()
+
 
 
 
@@ -520,13 +506,15 @@ cuts at i<25.3, which is the LSST gold sample.
 
 .. code:: ipython3
 
-    gold_cut = QuantityCut.make_stage(name='cuts', cuts={"i": 25.3})                                
+    gold_cut = QuantityCut.make_stage(name="cuts", cuts={"i": 25.3})
+
 
 Now we can stick this into a Creator and draw a new sample
 
 .. code:: ipython3
 
     samples_gold_w_errs = gold_cut(samples_w_errs)
+
 
 
 .. parsed-literal::
@@ -571,11 +559,15 @@ is the ‘’pivot’’ redshift. We’ll use :math:`z_p = 0.8`.
 
 .. code:: ipython3
 
-    inv_incomplete = InvRedshiftIncompleteness.make_stage(name='incompleteness', pivot_redshift=0.8)
+    inv_incomplete = InvRedshiftIncompleteness.make_stage(
+        name="incompleteness", pivot_redshift=0.8
+    )
+
 
 .. code:: ipython3
 
     samples_incomplete_gold_w_errs = inv_incomplete(samples_gold_w_errs)
+
 
 
 .. parsed-literal::
@@ -602,10 +594,15 @@ so far:
     
     ax.hist(samples_truth()["redshift"], label="Truth", **hist_settings)
     ax.hist(samples_gold_w_errs()["redshift"], label="Gold", **hist_settings)
-    ax.hist(samples_incomplete_gold_w_errs()["redshift"], label="Incomplete Gold", **hist_settings)
+    ax.hist(
+        samples_incomplete_gold_w_errs()["redshift"],
+        label="Incomplete Gold",
+        **hist_settings
+    )
     ax.legend(title="Sample")
     ax.set(xlim=(zmin, zmax), xlabel="Redshift", ylabel="Galaxy density")
     plt.show()
+
 
 
 
@@ -636,14 +633,20 @@ this scenario is!)
     OII = 3727
     OIII = 5007
     
-    lc_2p_0II_0III = LineConfusion.make_stage(name='lc_2p_0II_0III',
-                                              true_wavelen=OII, wrong_wavelen=OIII, frac_wrong=0.02)
-    lc_1p_0III_0II = LineConfusion.make_stage(name='lc_1p_0III_0II',
-                                              true_wavelen=OIII, wrong_wavelen=OII, frac_wrong=0.01)
+    lc_2p_0II_0III = LineConfusion.make_stage(
+        name="lc_2p_0II_0III", true_wavelen=OII, wrong_wavelen=OIII, frac_wrong=0.02
+    )
+    lc_1p_0III_0II = LineConfusion.make_stage(
+        name="lc_1p_0III_0II", true_wavelen=OIII, wrong_wavelen=OII, frac_wrong=0.01
+    )
+
 
 .. code:: ipython3
 
-    samples_conf_inc_gold_w_errs = lc_1p_0III_0II(lc_2p_0II_0III(samples_incomplete_gold_w_errs))
+    samples_conf_inc_gold_w_errs = lc_1p_0III_0II(
+        lc_2p_0II_0III(samples_incomplete_gold_w_errs)
+    )
+
 
 
 .. parsed-literal::
@@ -670,11 +673,20 @@ Let’s plot the redshift distributions one more time
     
     ax.hist(samples_truth()["redshift"], label="Truth", **hist_settings)
     ax.hist(samples_gold_w_errs()["redshift"], label="Gold", **hist_settings)
-    ax.hist(samples_incomplete_gold_w_errs()["redshift"], label="Incomplete Gold", **hist_settings)
-    ax.hist(samples_conf_inc_gold_w_errs()["redshift"], label="Confused Incomplete Gold", **hist_settings)
+    ax.hist(
+        samples_incomplete_gold_w_errs()["redshift"],
+        label="Incomplete Gold",
+        **hist_settings
+    )
+    ax.hist(
+        samples_conf_inc_gold_w_errs()["redshift"],
+        label="Confused Incomplete Gold",
+        **hist_settings
+    )
     ax.legend(title="Sample")
     ax.set(xlim=(zmin, zmax), xlabel="Redshift", ylabel="Galaxy density")
     plt.show()
+
 
 
 
@@ -695,15 +707,21 @@ listed in the new sample with Oxygen Line Confusion.
 
     fig, ax = plt.subplots(figsize=(6, 6), dpi=85)
     
-    ax.scatter(samples_incomplete_gold_w_errs()["redshift"], samples_conf_inc_gold_w_errs()["redshift"], 
-               marker=".", s=1)
+    ax.scatter(
+        samples_incomplete_gold_w_errs()["redshift"],
+        samples_conf_inc_gold_w_errs()["redshift"],
+        marker=".",
+        s=1,
+    )
     
     ax.set(
-        xlim=(0, 2.5), ylim=(0, 2.5),
+        xlim=(0, 2.5),
+        ylim=(0, 2.5),
         xlabel="True spec-z (in Incomplete Gold sample)",
         ylabel="Spec-z listed in the Confused sample",
     )
     plt.show()
+
 
 
 
@@ -713,3 +731,5 @@ listed in the new sample with Oxygen Line Confusion.
 Now we can clearly see the spec-z errors! The galaxies above the line
 y=x are the [OII] -> [OIII] galaxies, while the ones below are the
 [OIII] -> [OII] galaxies.
+
+

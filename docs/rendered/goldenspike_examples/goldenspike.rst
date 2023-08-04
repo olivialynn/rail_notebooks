@@ -52,12 +52,16 @@ Imports
     from pzflow.examples import get_galaxy_data
     import tables_io
 
+
 .. code:: ipython3
 
     # Various rail modules
     import rail
     from rail.creation.degradation.lsst_error_model import LSSTErrorModel
-    from rail.creation.degradation.spectroscopic_degraders import InvRedshiftIncompleteness, LineConfusion
+    from rail.creation.degradation.spectroscopic_degraders import (
+        InvRedshiftIncompleteness,
+        LineConfusion,
+    )
     from rail.creation.degradation.quantityCut import QuantityCut
     from rail.creation.engines.flowEngine import FlowModeler, FlowCreator, FlowPosterior
     from rail.core.data import TableHandle
@@ -72,7 +76,6 @@ Imports
     from rail.estimation.algos.point_est_hist import PointEstHistSummarizer
     
     from rail.evaluation.evaluator import Evaluator
-    
 
 
 RAIL now uses ceci as a back-end, which takes care of a lot of file I/O
@@ -92,16 +95,19 @@ reproducilble pipeline.
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
+
 Here we need a few configuration parameters to deal with differences in
 data schema between existing PZ codes.
 
 .. code:: ipython3
 
     from rail.core.utils import RAILDIR
-    flow_file = os.path.join(RAILDIR, 'examples/goldenspike/data/pretrained_flow.pkl')
-    bands = ['u','g','r','i','z','y']
-    band_dict = {band:f'mag_{band}_lsst' for band in bands}
-    rename_dict = {f'mag_{band}_lsst_err':f'mag_err_{band}_lsst' for band in bands}
+    
+    flow_file = os.path.join(RAILDIR, "examples/goldenspike/data/pretrained_flow.pkl")
+    bands = ["u", "g", "r", "i", "z", "y"]
+    band_dict = {band: f"mag_{band}_lsst" for band in bands}
+    rename_dict = {f"mag_{band}_lsst_err": f"mag_err_{band}_lsst" for band in bands}
+
 
 Train the Flow Engine
 ---------------------
@@ -125,6 +131,7 @@ where we will save the flow.
     catalog_file = str(catalog_file)
     flow_file = str(DATA_DIR / "trained_flow.pkl")
 
+
 Now we set the parameters for the FlowModeler, i.e. the pipeline stage
 that trains the flow:
 
@@ -147,11 +154,13 @@ that trains the flow:
         "calc_colors": {"ref_column_name": "mag_i_lsst"},
     }
 
+
 Now we will create the flow and train it
 
 .. code:: ipython3
 
     flow_modeler = FlowModeler.make_stage(**flow_modeler_params)
+
 
 
 .. parsed-literal::
@@ -162,6 +171,7 @@ Now we will create the flow and train it
 .. code:: ipython3
 
     flow_modeler.fit_model()
+
 
 
 .. parsed-literal::
@@ -184,7 +194,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7fdaa81b6c50>
+    <rail.tools.flow_handle.FlowHandle at 0x7ff2d390ac80>
 
 
 
@@ -221,54 +231,57 @@ More details about the degraders are available in the
 .. code:: ipython3
 
     flow_creator_train = FlowCreator.make_stage(
-        name='flow_creator_train', 
-        model=flow_modeler.get_handle("model"), 
+        name="flow_creator_train",
+        model=flow_modeler.get_handle("model"),
         n_samples=50,
         seed=1235,
     )
     
     lsst_error_model_train = LSSTErrorModel.make_stage(
-        name='lsst_error_model_train',
-        bandNames=band_dict, 
+        name="lsst_error_model_train",
+        renameDict=band_dict,
+        ndFlag=np.nan,
         seed=29,
     )
     
     inv_redshift = InvRedshiftIncompleteness.make_stage(
-        name='inv_redshift',
+        name="inv_redshift",
         pivot_redshift=1.0,
     )
     
     line_confusion = LineConfusion.make_stage(
-        name='line_confusion', 
-        true_wavelen=5007., 
-        wrong_wavelen=3727.,
+        name="line_confusion",
+        true_wavelen=5007.0,
+        wrong_wavelen=3727.0,
         frac_wrong=0.05,
     )
     
     quantity_cut = QuantityCut.make_stage(
-        name='quantity_cut',    
-        cuts={'mag_i_lsst': 25.0},
+        name="quantity_cut",
+        cuts={"mag_i_lsst": 25.0},
     )
     
     col_remapper_train = ColumnMapper.make_stage(
-        name='col_remapper_train', 
+        name="col_remapper_train",
         columns=rename_dict,
     )
-       
+    
     table_conv_train = TableConverter.make_stage(
-        name='table_conv_train', 
-        output_format='numpyDict',
+        name="table_conv_train",
+        output_format="numpyDict",
     )
+
 
 .. code:: ipython3
 
     train_data_orig = flow_creator_train.sample(150, 1235)
-    train_data_errs = lsst_error_model_train(train_data_orig,seed=66)
+    train_data_errs = lsst_error_model_train(train_data_orig, seed=66)
     train_data_inc = inv_redshift(train_data_errs)
     train_data_conf = line_confusion(train_data_inc)
     train_data_cut = quantity_cut(train_data_conf)
     train_data_pq = col_remapper_train(train_data_cut)
     train_data = table_conv_train(train_data_pq)
+
 
 
 .. parsed-literal::
@@ -290,6 +303,7 @@ quick writeout of the columns:
 
     train_table = tables_io.convertObj(train_data.data, tables_io.types.PD_DATAFRAME)
     train_table.head()
+
 
 
 
@@ -436,42 +450,44 @@ For the test sample we will:
 .. code:: ipython3
 
     flow_creator_test = FlowCreator.make_stage(
-        name='flow_creator_test',
+        name="flow_creator_test",
         model=flow_modeler.get_handle("model"),
         n_samples=50,
     )
-          
+    
     lsst_error_model_test = LSSTErrorModel.make_stage(
-        name='lsst_error_model_test',
-        bandNames=band_dict,
+        name="lsst_error_model_test",
+        renameDict=band_dict,
+        ndFlag=np.nan,
     )
     
     flow_post_test = FlowPosterior.make_stage(
-        name='flow_post_test',
+        name="flow_post_test",
         model=flow_modeler.get_handle("model"),
-        column='redshift',
-        grid=np.linspace(0., 5., 21),
+        column="redshift",
+        grid=np.linspace(0.0, 5.0, 21),
     )
-                    
+    
     col_remapper_test = ColumnMapper.make_stage(
-        name='col_remapper_test',
+        name="col_remapper_test",
         columns=rename_dict,
-        hdf5_groupname='',
+        hdf5_groupname="",
     )
     
     table_conv_test = TableConverter.make_stage(
-        name='table_conv_test', 
-        output_format='numpyDict',
+        name="table_conv_test",
+        output_format="numpyDict",
     )
 
 
 .. code:: ipython3
 
     test_data_orig = flow_creator_test.sample(150, 1234)
-    test_data_errs = lsst_error_model_test(test_data_orig,seed=58)
+    test_data_errs = lsst_error_model_test(test_data_orig, seed=58)
     test_data_post = flow_post_test.get_posterior(test_data_errs, err_samples=None)
     test_data_pq = col_remapper_test(test_data_errs)
     test_data = table_conv_test(test_data_pq)
+
 
 
 .. parsed-literal::
@@ -493,6 +509,7 @@ For the test sample we will:
 
     test_table = tables_io.convertObj(test_data.data, tables_io.types.PD_DATAFRAME)
     test_table.head()
+
 
 
 
@@ -641,23 +658,42 @@ an SED template library for a template-fitting or hybrid estimator.
     )
     
     inform_knn = KNearNeighInformer.make_stage(
-        name='inform_knn', 
+        name="inform_knn",
         nondetect_val=np.nan,
-        model='knnpz.pkl', 
-        hdf5_groupname='',
+        model="knnpz.pkl",
+        hdf5_groupname="",
     )
     
     inform_fzboost = FlexZBoostInformer.make_stage(
-        name='inform_FZBoost', 
-        model='fzboost.pkl', 
-        hdf5_groupname='',
+        name="inform_FZBoost",
+        model="fzboost.pkl",
+        hdf5_groupname="",
     )
+
+
+.. code:: ipython3
+
+    train_data_errs.data.keys()
+
+
+
+
+.. parsed-literal::
+
+    Index(['redshift', 'mag_u_lsst', 'mag_u_lsst_err', 'mag_g_lsst',
+           'mag_g_lsst_err', 'mag_r_lsst', 'mag_r_lsst_err', 'mag_i_lsst',
+           'mag_i_lsst_err', 'mag_z_lsst', 'mag_z_lsst_err', 'mag_y_lsst',
+           'mag_y_lsst_err'],
+          dtype='object')
+
+
 
 .. code:: ipython3
 
     inform_bpz.inform(train_data)
     inform_knn.inform(train_data)
     inform_fzboost.inform(train_data)
+
 
 
 .. parsed-literal::
@@ -692,7 +728,8 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fdaa2efb640>
+    <rail.core.data.ModelHandle at 0x7ff2c083ecb0>
+
 
 
 
@@ -715,31 +752,33 @@ details.
 .. code:: ipython3
 
     estimate_bpz = BPZliteEstimator.make_stage(
-        name='estimate_bpz', 
-        hdf5_groupname='', 
-        model=inform_bpz.get_handle('model'),
+        name="estimate_bpz",
+        hdf5_groupname="",
+        model=inform_bpz.get_handle("model"),
     )
     
     estimate_knn = KNearNeighEstimator.make_stage(
-        name='estimate_knn', 
-        hdf5_groupname='', 
-        nondetect_val=np.nan, 
-        model=inform_knn.get_handle('model'),
+        name="estimate_knn",
+        hdf5_groupname="",
+        nondetect_val=np.nan,
+        model=inform_knn.get_handle("model"),
     )
     
     estimate_fzboost = FlexZBoostEstimator.make_stage(
-        name='test_FZBoost', 
+        name="test_FZBoost",
         nondetect_val=np.nan,
-        model=inform_fzboost.get_handle('model'), 
-        hdf5_groupname='',
-        aliases=dict(input='test_data', output='fzboost_estim'),
+        model=inform_fzboost.get_handle("model"),
+        hdf5_groupname="",
+        aliases=dict(input="test_data", output="fzboost_estim"),
     )
+
 
 .. code:: ipython3
 
     knn_estimated = estimate_knn.estimate(test_data)
     fzboost_estimated = estimate_fzboost.estimate(test_data)
     bpz_estimated = estimate_bpz.estimate(test_data)
+
 
 
 .. parsed-literal::
@@ -1010,8 +1049,9 @@ dictionary, keyed by the name of the estimator.
     
     result_dict = {}
     for key, val in eval_dict.items():
-        the_eval = Evaluator.make_stage(name=f'{key}_eval', truth=truth)
+        the_eval = Evaluator.make_stage(name=f"{key}_eval", truth=truth)
         result_dict[key] = the_eval.evaluate(val, truth)
+
 
 
 .. parsed-literal::
@@ -1096,11 +1136,16 @@ dictionary, keyed by the name of the estimator.
 
 .. code:: ipython3
 
-    results_tables = {key:tables_io.convertObj(val.data, tables_io.types.PD_DATAFRAME) for key,val in result_dict.items()}
+    results_tables = {
+        key: tables_io.convertObj(val.data, tables_io.types.PD_DATAFRAME)
+        for key, val in result_dict.items()
+    }
+
 
 .. code:: ipython3
 
-    results_tables['knn']
+    results_tables["knn"]
+
 
 
 
@@ -1148,23 +1193,23 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>19.288725</td>
+          <td>19.094259</td>
           <td>None</td>
           <td>0.001</td>
-          <td>5.954441</td>
+          <td>5.898328</td>
           <td>None</td>
           <td>None</td>
-          <td>0.363699</td>
+          <td>0.362657</td>
           <td>None</td>
           <td>None</td>
           <td>None</td>
           <td>None</td>
           <td>None</td>
           <td>0.32706</td>
-          <td>-0.10984</td>
+          <td>-0.113542</td>
           <td>0.0</td>
-          <td>0.284233</td>
-          <td>-0.349735</td>
+          <td>0.281379</td>
+          <td>-0.357366</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1175,7 +1220,8 @@ dictionary, keyed by the name of the estimator.
 
 .. code:: ipython3
 
-    results_tables['fzboost']
+    results_tables["fzboost"]
+
 
 
 
@@ -1239,7 +1285,7 @@ dictionary, keyed by the name of the estimator.
           <td>-0.064512</td>
           <td>0.073333</td>
           <td>0.201216</td>
-          <td>0.815553</td>
+          <td>0.813565</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1250,7 +1296,8 @@ dictionary, keyed by the name of the estimator.
 
 .. code:: ipython3
 
-    results_tables['bpz']
+    results_tables["bpz"]
+
 
 
 
@@ -1298,13 +1345,13 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>14.375369</td>
+          <td>14.514278</td>
           <td>None</td>
           <td>0.001</td>
-          <td>2.970253</td>
+          <td>2.996804</td>
           <td>None</td>
           <td>None</td>
-          <td>0.219203</td>
+          <td>0.22587</td>
           <td>None</td>
           <td>None</td>
           <td>None</td>
@@ -1314,7 +1361,7 @@ dictionary, keyed by the name of the estimator.
           <td>-0.047307</td>
           <td>0.146667</td>
           <td>0.149275</td>
-          <td>12.004692</td>
+          <td>12.021751</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1332,13 +1379,15 @@ First we make the stages, then execute them, then plot the output.
 
 .. code:: ipython3
 
-    point_estimate_test = PointEstHistSummarizer.make_stage(name='point_estimate_test')
-    naive_stack_test = NaiveStackSummarizer.make_stage(name='naive_stack_test')
+    point_estimate_test = PointEstHistSummarizer.make_stage(name="point_estimate_test")
+    naive_stack_test = NaiveStackSummarizer.make_stage(name="naive_stack_test")
+
 
 .. code:: ipython3
 
-    point_estimate_ens = point_estimate_test.summarize(eval_dict['bpz'])
-    naive_stack_ens = naive_stack_test.summarize(eval_dict['bpz'])
+    point_estimate_ens = point_estimate_test.summarize(eval_dict["bpz"])
+    naive_stack_ens = naive_stack_test.summarize(eval_dict["bpz"])
+
 
 
 .. parsed-literal::
@@ -1351,20 +1400,22 @@ First we make the stages, then execute them, then plot the output.
 
 .. code:: ipython3
 
-    _ = naive_stack_ens.data.plot_native(xlim=(0,3))
+    _ = naive_stack_ens.data.plot_native(xlim=(0, 3))
 
 
 
-.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_42_0.png
+
+.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_44_0.png
 
 
 .. code:: ipython3
 
-    _ = point_estimate_ens.data.plot_native(xlim=(0,3))
+    _ = point_estimate_ens.data.plot_native(xlim=(0, 3))
 
 
 
-.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_43_0.png
+
+.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_45_0.png
 
 
 Convert this to a ``ceci`` Pipeline
@@ -1377,28 +1428,46 @@ objects between them, we can build a ``ceci`` Pipeline.
 .. code:: ipython3
 
     import ceci
+    
     pipe = ceci.Pipeline.interactive()
     stages = [
         # train the flow
         flow_modeler,
         # create the training catalog
-        flow_creator_train, lsst_error_model_train, inv_redshift,
-        line_confusion, quantity_cut, col_remapper_train, table_conv_train,
+        flow_creator_train,
+        lsst_error_model_train,
+        inv_redshift,
+        line_confusion,
+        quantity_cut,
+        col_remapper_train,
+        table_conv_train,
         # create the test catalog
-        flow_creator_test, lsst_error_model_test, col_remapper_test, table_conv_test,
+        flow_creator_test,
+        lsst_error_model_test,
+        col_remapper_test,
+        table_conv_test,
         # inform the estimators
-        inform_bpz, inform_knn, inform_fzboost,
+        inform_bpz,
+        inform_knn,
+        inform_fzboost,
         # estimate posteriors
-        estimate_bpz, estimate_knn, estimate_fzboost,
+        estimate_bpz,
+        estimate_knn,
+        estimate_fzboost,
         # estimate n(z), aka "summarize"
-        point_estimate_test, naive_stack_test,
+        point_estimate_test,
+        naive_stack_test,
     ]
     for stage in stages:
         pipe.add_stage(stage)
 
+
 .. code:: ipython3
 
-    pipe.initialize(dict(input=catalog_file), dict(output_dir='.', log_dir='.', resume=False), None)
+    pipe.initialize(
+        dict(input=catalog_file), dict(output_dir=".", log_dir=".", resume=False), None
+    )
+
 
 
 
@@ -1425,104 +1494,51 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fdb04537df0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7fdaa08afdf0>,
-       LSSTErrorModel parameters:
-       
-       Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
-       
-       Using error type point
-       Exposure time = 30.0 s
-       Number of years of observations = 10.0
-       Mean visits per year per band:
-          mag_u_lsst: 5.6, mag_g_lsst: 8.0, mag_r_lsst: 18.4, mag_i_lsst: 18.4, mag_z_lsst: 16.0, mag_y_lsst: 16.0
-       Airmass = 1.2
-       Irreducible system error = 0.005
-       Magnitudes dimmer than 30.0 are set to nan
-       gamma for each band:
-          mag_u_lsst: 0.038, mag_g_lsst: 0.039, mag_r_lsst: 0.039, mag_i_lsst: 0.039, mag_z_lsst: 0.039, mag_y_lsst: 0.039
-       
-       The coadded 5-sigma limiting magnitudes are:
-       mag_u_lsst: 26.04, mag_g_lsst: 27.29, mag_r_lsst: 27.31, mag_i_lsst: 26.87, mag_z_lsst: 26.23, mag_y_lsst: 25.30
-       
-       The following single-visit 5-sigma limiting magnitudes are
-       calculated using the parameters that follow them:
-          mag_u_lsst: 23.83, mag_g_lsst: 24.90, mag_r_lsst: 24.47, mag_i_lsst: 24.03, mag_z_lsst: 23.46, mag_y_lsst: 22.53
-       Cm for each band:
-          mag_u_lsst: 23.09, mag_g_lsst: 24.42, mag_r_lsst: 24.44, mag_i_lsst: 24.32, mag_z_lsst: 24.16, mag_y_lsst: 23.73
-       Median zenith sky brightness in each band:
-          mag_u_lsst: 22.99, mag_g_lsst: 22.26, mag_r_lsst: 21.2, mag_i_lsst: 20.48, mag_z_lsst: 19.6, mag_y_lsst: 18.61
-       Median zenith seeing FWHM (in arcseconds) for each band:
-          mag_u_lsst: 0.81, mag_g_lsst: 0.77, mag_r_lsst: 0.73, mag_i_lsst: 0.71, mag_z_lsst: 0.69, mag_y_lsst: 0.68
-       Extinction coefficient for each band:
-          mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7ff3514239a0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7ff2d35e0610>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7ff2d35e19c0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fdaa0ca9fc0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7fdaa08ae410>,
-       LSSTErrorModel parameters:
-       
-       Model for bands: mag_u_lsst, mag_g_lsst, mag_r_lsst, mag_i_lsst, mag_z_lsst, mag_y_lsst
-       
-       Using error type point
-       Exposure time = 30.0 s
-       Number of years of observations = 10.0
-       Mean visits per year per band:
-          mag_u_lsst: 5.6, mag_g_lsst: 8.0, mag_r_lsst: 18.4, mag_i_lsst: 18.4, mag_z_lsst: 16.0, mag_y_lsst: 16.0
-       Airmass = 1.2
-       Irreducible system error = 0.005
-       Magnitudes dimmer than 30.0 are set to nan
-       gamma for each band:
-          mag_u_lsst: 0.038, mag_g_lsst: 0.039, mag_r_lsst: 0.039, mag_i_lsst: 0.039, mag_z_lsst: 0.039, mag_y_lsst: 0.039
-       
-       The coadded 5-sigma limiting magnitudes are:
-       mag_u_lsst: 26.04, mag_g_lsst: 27.29, mag_r_lsst: 27.31, mag_i_lsst: 26.87, mag_z_lsst: 26.23, mag_y_lsst: 25.30
-       
-       The following single-visit 5-sigma limiting magnitudes are
-       calculated using the parameters that follow them:
-          mag_u_lsst: 23.83, mag_g_lsst: 24.90, mag_r_lsst: 24.47, mag_i_lsst: 24.03, mag_z_lsst: 23.46, mag_y_lsst: 22.53
-       Cm for each band:
-          mag_u_lsst: 23.09, mag_g_lsst: 24.42, mag_r_lsst: 24.44, mag_i_lsst: 24.32, mag_z_lsst: 24.16, mag_y_lsst: 23.73
-       Median zenith sky brightness in each band:
-          mag_u_lsst: 22.99, mag_g_lsst: 22.26, mag_r_lsst: 21.2, mag_i_lsst: 20.48, mag_z_lsst: 19.6, mag_y_lsst: 18.61
-       Median zenith seeing FWHM (in arcseconds) for each band:
-          mag_u_lsst: 0.81, mag_g_lsst: 0.77, mag_r_lsst: 0.73, mag_i_lsst: 0.71, mag_z_lsst: 0.69, mag_y_lsst: 0.68
-       Extinction coefficient for each band:
-          mag_u_lsst: 0.491, mag_g_lsst: 0.213, mag_r_lsst: 0.126, mag_i_lsst: 0.096, mag_z_lsst: 0.069, mag_y_lsst: 0.17,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fdaa08acdf0>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fdaa08ad420>,
+       <rail.core.utilStages.TableConverter at 0x7ff2d340db40>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7ff2d340eb00>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7ff2d340e5f0>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7ff2d340fee0>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7ff2d340e500>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fdaa08ace20>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fdaa0b12e30>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fdaa81a2d10>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fdaa81a2ce0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fdaa2ef9b70>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fdaa81a1f90>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fdaa2ef9750>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fdaa2ef93f0>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fdaa2ef92d0>]),
+       <rail.core.utilStages.TableConverter at 0x7ff2d398e050>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7ff2d3a6e380>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7ff2d3a6e2f0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7ff2d3a6e9e0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7ff2c0867100>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7ff2d3a6edd0>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7ff2c0866950>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7ff2d7233940>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7ff2d7231f30>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
 
 .. code:: ipython3
 
-    pipe.save('tmp_goldenspike.yml')
+    pipe.save("tmp_goldenspike.yml")
+
 
 Read back the pipeline and run it
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: ipython3
 
-    pr = ceci.Pipeline.read('tmp_goldenspike.yml')
+    pr = ceci.Pipeline.read("tmp_goldenspike.yml")
+
 
 .. code:: ipython3
 
     pr.run()
+
 
 
 .. parsed-literal::
@@ -1688,3 +1704,5 @@ delete the data files.
 .. code:: ipython3
 
     # TODO fix and add clean up scripts
+
+

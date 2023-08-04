@@ -3,7 +3,7 @@ Using a Creator to Calculate True Posteriors for a Galaxy Sample
 
 author: John Franklin Crenshaw, Sam Schmidt, Eric Charles, others…
 
-last run successfully: April 26, 2023
+last run successfully: August 2, 2023
 
 This notebook demonstrates how to use a RAIL Engine to calculate true
 posteriors for galaxy samples drawn from the same Engine. Note that this
@@ -41,11 +41,16 @@ This notebook will cover three scenarios of increasing complexity:
     from rail.core.stage import RailStage
     from rail.core.utilStages import ColumnMapper
 
+
 .. code:: ipython3
 
     import pzflow
     import os
-    flow_file = os.path.join(os.path.dirname(pzflow.__file__), 'example_files', 'example-flow.pzflow.pkl')
+    
+    flow_file = os.path.join(
+        os.path.dirname(pzflow.__file__), "example_files", "example-flow.pzflow.pkl"
+    )
+
 
 We’ll start by setting up the Rail data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
@@ -58,6 +63,7 @@ notebook for more details on the Data Store.
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
+
 
 1. Calculating posteriors without errors
 ----------------------------------------
@@ -72,11 +78,12 @@ rail stages to keep track of where their inputs are coming from.
 
 .. code:: ipython3
 
-    n_samples=6
+    n_samples = 6
     # create the FlowCreator
-    flowCreator = FlowCreator.make_stage(name='truth', model=flow_file, n_samples=n_samples)
+    flowCreator = FlowCreator.make_stage(name="truth", model=flow_file, n_samples=n_samples)
     # draw a few samples
     samples_truth = flowCreator.sample(6, seed=0)
+
 
 
 .. parsed-literal::
@@ -105,16 +112,19 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. code:: ipython3
 
-    flow_post = FlowPosterior.make_stage(name='truth_post', 
-                                                 column='redshift',
-                                                 grid = np.linspace(0, 2.5, 100),
-                                                 marg_rules=dict(flag=np.nan, 
-                                                                 u=lambda row: np.linspace(25, 31, 10)),
-                                                 flow=flow_file)
+    flow_post = FlowPosterior.make_stage(
+        name="truth_post",
+        column="redshift",
+        grid=np.linspace(0, 2.5, 100),
+        marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
+        flow=flow_file,
+    )
+
 
 .. code:: ipython3
 
-    pdfs = flow_post.get_posterior(samples_truth, column='redshift')
+    pdfs = flow_post.get_posterior(samples_truth, column="redshift")
+
 
 
 .. parsed-literal::
@@ -132,9 +142,10 @@ Note that Creator returns the pdfs as a
 
 
 
+
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fcf00374e50>
+    <qp.ensemble.Ensemble at 0x7f0e641e9e10>
 
 
 
@@ -145,7 +156,6 @@ Let’s plot these pdfs:
     fig, axes = plt.subplots(2, 3, constrained_layout=True, dpi=120)
     
     for i, ax in enumerate(axes.flatten()):
-    
         # plot the pdf
         pdfs.data[i].plot_native(axes=ax)
     
@@ -164,6 +174,7 @@ Let’s plot these pdfs:
 
 
 
+
 .. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_14_0.png
 
 
@@ -178,7 +189,7 @@ Degradation demo.
 
 I will make one change however: the LSST Error Model sometimes results
 in non-detections for faint galaxies. These non-detections are flagged
-with NaN. Calculating posteriors for galaxies with missing magnitudes is
+with inf. Calculating posteriors for galaxies with non-detections is
 more complicated, so for now, I will add one additional QuantityCut to
 remove any galaxies with missing magnitudes. To see how to calculate
 posteriors for galaxies with missing magnitudes, see `Section
@@ -190,27 +201,43 @@ Now let’s draw a degraded sample:
 
     # set up the error model
     
-    n_samples=20
+    n_samples = 30
     # create the FlowEngine
-    flowEngine_degr = FlowCreator.make_stage(name='degraded', flow_file=flow_file, n_samples=n_samples)
+    flowEngine_degr = FlowCreator.make_stage(
+        name="degraded", flow_file=flow_file, n_samples=n_samples
+    )
     # draw a few samples
-    samples_degr = flowEngine_degr.sample(20, seed=0)
-    errorModel = LSSTErrorModel.make_stage(name='lsst_errors', input='xx')
-    quantityCut = QuantityCut.make_stage(name='gold_cut',  input='xx', cuts={band: np.inf for band in "ugrizy"})
-    inv_incomplete = InvRedshiftIncompleteness.make_stage(name='incompleteness', pivot_redshift=0.8)
+    samples_degr = flowEngine_degr.sample(n_samples, seed=0)
+    errorModel = LSSTErrorModel.make_stage(name="lsst_errors", input="xx", sigLim=5)
+    quantityCut = QuantityCut.make_stage(
+        name="gold_cut", input="xx", cuts={band: np.inf for band in "ugrizy"}
+    )
+    inv_incomplete = InvRedshiftIncompleteness.make_stage(
+        name="incompleteness", pivot_redshift=0.8
+    )
     
     OII = 3727
     OIII = 5007
     
-    lc_2p_0II_0III = LineConfusion.make_stage(name='lc_2p_0II_0III', 
-                                              true_wavelen=OII, wrong_wavelen=OIII, frac_wrong=0.02)
-    lc_1p_0III_0II = LineConfusion.make_stage(name='lc_1p_0III_0II',
-                                              true_wavelen=OIII, wrong_wavelen=OII, frac_wrong=0.01)
-    detection = QuantityCut.make_stage(name='detection', cuts={"i": 25.3})
+    lc_2p_0II_0III = LineConfusion.make_stage(
+        name="lc_2p_0II_0III", true_wavelen=OII, wrong_wavelen=OIII, frac_wrong=0.02
+    )
+    lc_1p_0III_0II = LineConfusion.make_stage(
+        name="lc_1p_0III_0II", true_wavelen=OIII, wrong_wavelen=OII, frac_wrong=0.01
+    )
+    detection = QuantityCut.make_stage(name="detection", cuts={"i": 25.3})
     
     data = samples_degr
-    for degr in [errorModel, quantityCut, inv_incomplete, lc_2p_0II_0III, lc_1p_0III_0II, detection]:
+    for degr in [
+        errorModel,
+        quantityCut,
+        inv_incomplete,
+        lc_2p_0II_0III,
+        lc_1p_0III_0II,
+        detection,
+    ]:
         data = degr(data)
+
 
 
 .. parsed-literal::
@@ -228,6 +255,7 @@ Now let’s draw a degraded sample:
 
     samples_degraded_wo_nondetects = data.data
     samples_degraded_wo_nondetects
+
 
 
 
@@ -269,84 +297,116 @@ Now let’s draw a degraded sample:
       </thead>
       <tbody>
         <tr>
+          <th>0</th>
+          <td>0.803805</td>
+          <td>24.093753</td>
+          <td>0.036568</td>
+          <td>23.424399</td>
+          <td>0.008127</td>
+          <td>22.790889</td>
+          <td>0.006133</td>
+          <td>22.054347</td>
+          <td>0.005710</td>
+          <td>21.748304</td>
+          <td>0.006217</td>
+          <td>21.579654</td>
+          <td>0.008788</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>0.505439</td>
+          <td>25.826337</td>
+          <td>0.165635</td>
+          <td>24.975206</td>
+          <td>0.026070</td>
+          <td>23.996700</td>
+          <td>0.011510</td>
+          <td>23.695869</td>
+          <td>0.012809</td>
+          <td>23.566426</td>
+          <td>0.019362</td>
+          <td>23.377214</td>
+          <td>0.036827</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>0.547731</td>
+          <td>22.915303</td>
+          <td>0.013772</td>
+          <td>21.770088</td>
+          <td>0.005253</td>
+          <td>20.423988</td>
+          <td>0.005030</td>
+          <td>19.589757</td>
+          <td>0.005018</td>
+          <td>19.233866</td>
+          <td>0.005027</td>
+          <td>18.961002</td>
+          <td>0.005066</td>
+        </tr>
+        <tr>
           <th>3</th>
-          <td>0.330247</td>
-          <td>22.541234</td>
-          <td>0.010564</td>
-          <td>21.875726</td>
-          <td>0.005297</td>
-          <td>21.150399</td>
-          <td>0.005084</td>
-          <td>20.944225</td>
-          <td>0.005121</td>
-          <td>20.658345</td>
-          <td>0.005214</td>
-          <td>20.648385</td>
-          <td>0.005929</td>
+          <td>1.110475</td>
+          <td>25.068082</td>
+          <td>0.085983</td>
+          <td>24.977551</td>
+          <td>0.026123</td>
+          <td>24.928067</td>
+          <td>0.024553</td>
+          <td>24.602612</td>
+          <td>0.027216</td>
+          <td>24.045005</td>
+          <td>0.029250</td>
+          <td>23.912641</td>
+          <td>0.059211</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.708621</td>
-          <td>26.203844</td>
-          <td>0.227412</td>
-          <td>25.790755</td>
-          <td>0.053454</td>
-          <td>25.035502</td>
-          <td>0.026957</td>
-          <td>24.285051</td>
-          <td>0.020691</td>
-          <td>24.123581</td>
-          <td>0.031339</td>
-          <td>24.021898</td>
-          <td>0.065234</td>
+          <td>1.070354</td>
+          <td>25.966555</td>
+          <td>0.186508</td>
+          <td>25.164186</td>
+          <td>0.030738</td>
+          <td>24.178280</td>
+          <td>0.013194</td>
+          <td>23.530259</td>
+          <td>0.011322</td>
+          <td>22.768103</td>
+          <td>0.010394</td>
+          <td>22.458936</td>
+          <td>0.016692</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>0.246923</td>
+          <td>24.587485</td>
+          <td>0.056377</td>
+          <td>23.630751</td>
+          <td>0.009167</td>
+          <td>22.967479</td>
+          <td>0.006495</td>
+          <td>22.724737</td>
+          <td>0.007035</td>
+          <td>22.568565</td>
+          <td>0.009115</td>
+          <td>22.539906</td>
+          <td>0.017848</td>
         </tr>
         <tr>
           <th>7</th>
-          <td>0.804999</td>
-          <td>26.471887</td>
-          <td>0.283218</td>
-          <td>25.054919</td>
-          <td>0.027940</td>
-          <td>23.355602</td>
-          <td>0.007688</td>
-          <td>22.170113</td>
-          <td>0.005855</td>
-          <td>21.518421</td>
-          <td>0.005846</td>
-          <td>21.220781</td>
-          <td>0.007253</td>
-        </tr>
-        <tr>
-          <th>10</th>
-          <td>0.974927</td>
-          <td>26.613024</td>
-          <td>0.317200</td>
-          <td>25.659642</td>
-          <td>0.047591</td>
-          <td>24.771981</td>
-          <td>0.021466</td>
-          <td>24.109077</td>
-          <td>0.017840</td>
-          <td>23.492141</td>
-          <td>0.018192</td>
-          <td>23.204826</td>
-          <td>0.031632</td>
-        </tr>
-        <tr>
-          <th>12</th>
-          <td>0.626096</td>
-          <td>25.081285</td>
-          <td>0.086982</td>
-          <td>24.570988</td>
-          <td>0.018475</td>
-          <td>23.492089</td>
-          <td>0.008276</td>
-          <td>22.638918</td>
-          <td>0.006786</td>
-          <td>22.343938</td>
-          <td>0.007995</td>
-          <td>22.098511</td>
-          <td>0.012546</td>
+          <td>0.144237</td>
+          <td>24.346591</td>
+          <td>0.045622</td>
+          <td>23.324302</td>
+          <td>0.007710</td>
+          <td>22.806145</td>
+          <td>0.006161</td>
+          <td>22.512533</td>
+          <td>0.006469</td>
+          <td>22.373811</td>
+          <td>0.008127</td>
+          <td>22.283497</td>
+          <td>0.014484</td>
         </tr>
       </tbody>
     </table>
@@ -367,20 +427,30 @@ Let’s calculate posteriors with a variable number of error samples.
 .. code:: ipython3
 
     grid = np.linspace(0, 2.5, 100)
+    
+    
     def get_degr_post(key, data, **kwargs):
-        flow_degr_post = FlowPosterior.make_stage(name=f'degr_post_{key}', **kwargs) 
-        return flow_degr_post.get_posterior(data, column='redshift')
+        flow_degr_post = FlowPosterior.make_stage(name=f"degr_post_{key}", **kwargs)
+        return flow_degr_post.get_posterior(data, column="redshift")
+
 
 .. code:: ipython3
 
-    degr_kwargs = dict(column='redshift', flow_file=flow_file, 
-                       marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
-                       grid=grid, seed=0, batch_size=2)
+    degr_kwargs = dict(
+        column="redshift",
+        flow_file=flow_file,
+        marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
+        grid=grid,
+        seed=0,
+        batch_size=2,
+    )
     pdfs_errs_convolved = {
-        err_samples: get_degr_post(f'{str(err_samples)}', data,
-                                   err_samples=err_samples, **degr_kwargs)
+        err_samples: get_degr_post(
+            f"{str(err_samples)}", data, err_samples=err_samples, **degr_kwargs
+        )
         for err_samples in [1, 10, 100, 1000]
     }
+
 
 
 .. parsed-literal::
@@ -396,12 +466,10 @@ Let’s calculate posteriors with a variable number of error samples.
     fig, axes = plt.subplots(2, 3, dpi=120)
     
     for i, ax in enumerate(axes.flatten()):
-    
         # set dummy values for xlim
         xlim = [np.inf, -np.inf]
     
         for pdfs_ in pdfs_errs_convolved.values():
-    
             # plot the pdf
             pdfs_.data[i].plot_native(axes=ax)
     
@@ -409,15 +477,15 @@ Let’s calculate posteriors with a variable number of error samples.
             xmin = grid[np.argmax(pdfs_.data[i].pdf(grid)[0] > 2)]
             if xmin < xlim[0]:
                 xlim[0] = xmin
-                
-            # get the x value where the pdf finally falls below 2   
+    
+            # get the x value where the pdf finally falls below 2
             xmax = grid[-np.argmax(pdfs_.data[i].pdf(grid)[0, ::-1] > 2)]
             if xmax > xlim[1]:
                 xlim[1] = xmax
     
         # plot the true redshift
-        #z_true = samples_degraded_wo_nondetects["redshift"][i]
-        #ax.axvline(z_true, c="k", ls="--")
+        z_true = samples_degraded_wo_nondetects["redshift"].iloc[i]
+        ax.axvline(z_true, c="k", ls="--")
     
         # set x-label on bottom row
         if i >= 3:
@@ -436,12 +504,13 @@ Let’s calculate posteriors with a variable number of error samples.
     for i, n in enumerate([10, 100, 1000]):
         axes[0, 1].plot([], [], c=f"C{i+1}", label=f"{n} samples")
     axes[0, 1].legend(
-        bbox_to_anchor=(0.5, 1.3), 
+        bbox_to_anchor=(0.5, 1.3),
         loc="upper center",
         ncol=4,
     )
     
     plt.show()
+
 
 
 
@@ -458,87 +527,6 @@ Also notice how the posterior continues to change as you convolve more
 and more samples. This suggests that you need to do a little testing to
 ensure that you have convolved enough samples.
 
-Let’s plot these same posteriors with even more samples to make sure
-they have converged:
-
-**WARNING**: Running the next cell on your computer may exhaust your
-memory
-
-.. code:: ipython3
-
-    pdfs_errs_convolved_more_samples = {
-        err_samples: get_degr_post(f'{str(err_samples)}', data,
-                                   err_samples=err_samples, **degr_kwargs)
-    #    for err_samples in [1000, 2000, 5000, 10000]
-        for err_samples in [12]
-    }
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  output_degr_post_12: inprogress_output_degr_post_12.hdf5, degr_post_12
-
-
-.. code:: ipython3
-
-    fig, axes = plt.subplots(2, 3, dpi=120)
-    
-    for i, ax in enumerate(axes.flatten()):
-    
-        # set dummy values for xlim
-        xlim = [np.inf, -np.inf]
-    
-        for pdfs_ in pdfs_errs_convolved_more_samples.values():
-    
-            # plot the pdf
-            pdfs_.data[i].plot_native(axes=ax)
-    
-            # get the x value where the pdf first rises above 2
-            xmin = grid[np.argmax(pdfs_.data[i].pdf(grid)[0] > 2)]
-            if xmin < xlim[0]:
-                xlim[0] = xmin
-                
-            # get the x value where the pdf finally falls below 2
-            xmax = grid[-np.argmax(pdfs_.data[i].pdf(grid)[0, ::-1] > 2)]
-            if xmax > xlim[1]:
-                xlim[1] = xmax
-    
-        # plot the true redshift
-        #z_true = samples_degraded_wo_nondetects["redshift"][i]
-        #ax.axvline(z_true, c="k", ls="--")
-    
-        # set x-label on bottom row
-        if i >= 3:
-            ax.set(xlabel="redshift")
-        # set y-label on far left column
-        if i % 3 == 0:
-            ax.set(ylabel="p(z)")
-    
-        # set the x-limits so we can see more detail
-        xlim[0] -= 0.2
-        xlim[1] += 0.2
-        ax.set(xlim=xlim, yticks=[])
-    
-    # create the legend
-    for i, n in enumerate([1000, 2000, 5000, 10000]):
-        axes[0, 1].plot([], [], c=f"C{i}", label=f"{n} samples")
-    axes[0, 1].legend(
-        bbox_to_anchor=(0.5, 1.3), 
-        loc="upper center",
-        ncol=4,
-    )
-    
-    plt.show()
-
-
-
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_26_0.png
-
-
-Notice that two of these galaxies may take upwards of 10,000 samples to
-converge (convolving over 10,000 samples takes 0.5 seconds / galaxy on
-my computer)
-
 3. Calculating posteriors with missing bands
 --------------------------------------------
 
@@ -550,7 +538,8 @@ removed non-detections:
 
 .. code:: ipython3
 
-    samples_degraded = DS['output_lc_1p_0III_0II']
+    samples_degraded = DS["output_lc_1p_0III_0II"]
+
 
 You can see that galaxy 3 has a non-detection in the u band.
 ``FlowEngine`` can handle missing values by marginalizing over that
@@ -571,16 +560,16 @@ values of u to marginalize over.
 .. code:: ipython3
 
     # get true u band magnitudes
-    true_u = DS['output_degraded'].data["u"].to_numpy()
+    true_u = DS["output_degraded"].data["u"].to_numpy()
     # get the observed u band magnitudes
-    obs_u = DS['output_lsst_errors'].data["u"].to_numpy()
+    obs_u = DS["output_lsst_errors"].data["u"].to_numpy()
     
     # create the figure
     fig, ax = plt.subplots(constrained_layout=True, dpi=100)
     # plot the u band detections
-    ax.hist(true_u[~np.isnan(obs_u)], bins="fd", label="detected")
+    ax.hist(true_u[np.isfinite(obs_u)], bins=10, range=(23, 31), label="detected")
     # plot the u band non-detections
-    ax.hist(true_u[np.isnan(obs_u)], bins="fd", label="non-detected")
+    ax.hist(true_u[~np.isfinite(obs_u)], bins=10, range=(23, 31), label="non-detected")
     
     ax.legend()
     ax.set(xlabel="true u magnitude")
@@ -589,7 +578,8 @@ values of u to marginalize over.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_31_0.png
+
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_28_0.png
 
 
 Based on this histogram, I will marginalize over u band values from 27
@@ -614,32 +604,34 @@ grid.
 .. code:: ipython3
 
     from rail.core.utilStages import RowSelector
+    
     # dict to save the marginalized posteriors
     pdfs_u_marginalized = {}
     
-    row3_selector = RowSelector.make_stage(name='select_row3', start=3, stop=4)
+    row3_selector = RowSelector.make_stage(name="select_row3", start=3, stop=4)
     row3_degraded = row3_selector(samples_degraded)
     
-    degr_post_kwargs = dict(grid=grid, err_samples=10000, seed=0, flow_file=flow_file, column='redshift')
+    degr_post_kwargs = dict(
+        grid=grid, err_samples=10000, seed=0, flow_file=flow_file, column="redshift"
+    )
     
     # iterate over variable grid resolution
     for nbins in [10, 20, 50, 100]:
-    
         # set up the marginalization rules for this grid resolution
         marg_rules = {
             "flag": errorModel.config["ndFlag"],
-            "u": lambda row: np.linspace(27, 31, nbins)
+            "u": lambda row: np.linspace(27, 31, nbins),
         }
     
-        
         # calculate the posterior by marginalizing over u and sampling
         # from the error distributions of the other galaxies
-        pdfs_u_marginalized[nbins] = get_degr_post(f'degr_post_nbins_{nbins}',
-                                                   row3_degraded,
-                                                   marg_rules=marg_rules,
-                                                   **degr_post_kwargs)
-    
-        
+        pdfs_u_marginalized[nbins] = get_degr_post(
+            f"degr_post_nbins_{nbins}",
+            row3_degraded,
+            marg_rules=marg_rules,
+            **degr_post_kwargs,
+        )
+
 
 
 .. parsed-literal::
@@ -663,7 +655,8 @@ grid.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_34_0.png
+
+.. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_31_0.png
 
 
 Notice that the resolution with only 10 bins is sufficient for this
@@ -671,170 +664,5 @@ marginalization.
 
 In this example, only one of the bands featured a non-detection, but you
 can easily marginalize over more bands by including corresponding rules
-in the ``marg_rules`` dict. For example, let’s artificially force a
-non-detection in the y band as well:
-
-.. code:: ipython3
-
-    row3_degraded()
-
-
-
-
-.. raw:: html
-
-    <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-    
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-    
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>redshift</th>
-          <th>u</th>
-          <th>u_err</th>
-          <th>g</th>
-          <th>g_err</th>
-          <th>r</th>
-          <th>r_err</th>
-          <th>i</th>
-          <th>i_err</th>
-          <th>z</th>
-          <th>z_err</th>
-          <th>y</th>
-          <th>y_err</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>3</th>
-          <td>0.330247</td>
-          <td>22.541234</td>
-          <td>0.010564</td>
-          <td>21.875726</td>
-          <td>0.005297</td>
-          <td>21.150399</td>
-          <td>0.005084</td>
-          <td>20.944225</td>
-          <td>0.005121</td>
-          <td>20.658345</td>
-          <td>0.005214</td>
-          <td>20.648385</td>
-          <td>0.005929</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-
-
-.. code:: ipython3
-
-    sample_double_degraded = row3_degraded().copy()
-    sample_double_degraded.iloc[0, 11:] *= np.nan
-    DS.add_data('double_degr', sample_double_degraded, TableHandle)
-    sample_double_degraded
-
-
-
-
-.. raw:: html
-
-    <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-    
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-    
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>redshift</th>
-          <th>u</th>
-          <th>u_err</th>
-          <th>g</th>
-          <th>g_err</th>
-          <th>r</th>
-          <th>r_err</th>
-          <th>i</th>
-          <th>i_err</th>
-          <th>z</th>
-          <th>z_err</th>
-          <th>y</th>
-          <th>y_err</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>3</th>
-          <td>0.330247</td>
-          <td>22.541234</td>
-          <td>0.010564</td>
-          <td>21.875726</td>
-          <td>0.005297</td>
-          <td>21.150399</td>
-          <td>0.005084</td>
-          <td>20.944225</td>
-          <td>0.005121</td>
-          <td>20.658345</td>
-          <td>0.005214</td>
-          <td>NaN</td>
-          <td>NaN</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-
-
-.. code:: ipython3
-
-    # set up the marginalization rules for u and y marginalization
-    marg_rules = {
-        "flag": errorModel.config.ndFlag,
-        "u": lambda row: np.linspace(27, 31, 10),
-        "y": lambda row: np.linspace(21, 25, 10),
-    }
-    
-    # calculate the posterior by marginalizing over u and y, and sampling
-    # from the error distributions of the other galaxies
-    #pdf_double_marginalized = get_degr_post('double_degr', 
-    #                                        DS['double_degr'],
-    #                                        flow_file=flow_file,
-    #                                        input='xx',
-    #                                        column='redshift',
-    #                                        grid=grid, 
-    #                                        err_samples=10000, 
-    #                                        seed=0, 
-    #                                        marg_rules=marg_rules)
-
-.. code:: ipython3
-
-    #fig, ax = plt.subplots(dpi=100)
-    #pdf_double_marginalized.data[0].plot_native(axes=ax)
-    #ax.axvline(sample_double_degraded.iloc[0]["redshift"], label="True redshift", c="k")
-    #ax.legend()
-    #ax.set(xlabel="Redshift")
-    #plt.show()
-
-Note that marginalizing over multiple bands quickly gets expensive.
+in the ``marg_rules`` dict. Note that marginalizing over multiple bands
+quickly gets expensive.

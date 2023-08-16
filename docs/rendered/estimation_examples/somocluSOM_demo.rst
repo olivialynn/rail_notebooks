@@ -167,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 6min 8s, sys: 425 ms, total: 6min 8s
-    Wall time: 3min 9s
+    CPU times: user 5min 28s, sys: 531 ms, total: 5min 29s
+    Wall time: 2min 49s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fae11017e80>
+    <rail.core.data.ModelHandle at 0x7ff286eeff40>
 
 
 
@@ -244,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6997/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6959/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -361,12 +361,6 @@ actually output the uncovered galaxies in a separate file in the future.
 
     som_summarizer = SOMocluSummarizer.make_stage(name='SOMoclu_summarizer', **summ_dict)
 
-
-.. parsed-literal::
-
-    Inserting handle into data store.  model: output_SOMoclu_model.pkl, SOMoclu_summarizer
-
-
 .. code:: ipython3
 
     som_summarizer.summarize(test_data, spec_data)
@@ -374,6 +368,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model: output_SOMoclu_model.pkl, SOMoclu_summarizer
     Warning: number of clusters is not provided. The SOM will NOT be grouped into clusters.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
@@ -394,7 +389,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fadfa2ef730>
+    <rail.core.data.QPHandle at 0x7ff270326f20>
 
 
 
@@ -430,7 +425,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fadfddc9a50>
+    <matplotlib.legend.Legend at 0x7ff2703c07c0>
 
 
 
@@ -479,7 +474,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fadfdd8e530>
+    <rail.core.data.QPHandle at 0x7ff274466470>
 
 
 
@@ -506,7 +501,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fadfdd8f730>
+    <matplotlib.legend.Legend at 0x7ff274466650>
 
 
 
@@ -565,7 +560,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fadfa6643a0>
+    <matplotlib.legend.Legend at 0x7ff273c74430>
 
 
 

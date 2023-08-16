@@ -499,7 +499,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fca250ff1c0>
+    <rail.core.data.ModelHandle at 0x7fbcbf163700>
 
 
 
@@ -520,12 +520,6 @@ does have all our our needed photometry in a single hdf5 group named
     estimate_knn = KNearNeighEstimator.make_stage(name='estimate_knn', hdf5_groupname='photometry', nondetect_val=99.0,
                                             model='knnpz.pkl', output="KNNPZ_estimates.hdf5")
 
-
-.. parsed-literal::
-
-    Inserting handle into data store.  model: knnpz.pkl, estimate_knn
-
-
 Note that we have specified the name of the output file here with the
 kwarg ``output="KNNPZ_estimates.hdf5"`` *if no output is specified* then
 the DataStore will construct its own name based on the name of the
@@ -540,6 +534,7 @@ case of many of the estimator codes this is a FITS file titled
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model: knnpz.pkl, estimate_knn
     Process 0 running estimator on chunk 0 - 10000
     Process 0 estimating PZ PDF for rows 0 - 10,000
     Inserting handle into data store.  output_estimate_knn: inprogress_KNNPZ_estimates.hdf5, estimate_knn
@@ -579,7 +574,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fca251b92a0>
+    <matplotlib.legend.Legend at 0x7fbc76011360>
 
 
 
@@ -609,7 +604,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fca2212e9e0>
+    <matplotlib.legend.Legend at 0x7fbc72f0f3d0>
 
 
 

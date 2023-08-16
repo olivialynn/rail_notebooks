@@ -194,7 +194,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f2c438e1000>
+    <rail.tools.flow_handle.FlowHandle at 0x7fae5fc63fa0>
 
 
 
@@ -728,7 +728,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2c416e99c0>
+    <rail.core.data.ModelHandle at 0x7fade02fb910>
 
 
 
@@ -1063,71 +1063,17 @@ dictionary, keyed by the name of the estimator.
 .. parsed-literal::
 
     Inserting handle into data store.  output_bpz_eval: inprogress_output_bpz_eval.hdf5, bpz_eval
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
     Inserting handle into data store.  output_fzboost_eval: inprogress_output_fzboost_eval.hdf5, fzboost_eval
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
 
 
 .. parsed-literal::
 
-    WARNING:root:Removed 5 PITs from the sample.
+    WARNING:root:Removed 3 PITs from the sample.
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_knn_eval: inprogress_output_knn_eval.hdf5, knn_eval
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
 
 
 | The Pandas DataFrame output format conveniently makes human-readable
@@ -1193,18 +1139,18 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>19.094259</td>
-          <td>None</td>
+          <td>20.235138</td>
+          <td>NaN</td>
           <td>0.001</td>
           <td>5.898328</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.362657</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.32706</td>
           <td>-0.113542</td>
           <td>0.0</td>
@@ -1270,17 +1216,17 @@ dictionary, keyed by the name of the estimator.
         <tr>
           <th>0</th>
           <td>32.125709</td>
-          <td>None</td>
+          <td>NaN</td>
           <td>0.001</td>
           <td>7.3688</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.377307</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.196228</td>
           <td>-0.064512</td>
           <td>0.073333</td>
@@ -1346,17 +1292,17 @@ dictionary, keyed by the name of the estimator.
         <tr>
           <th>0</th>
           <td>14.514278</td>
-          <td>None</td>
+          <td>NaN</td>
           <td>0.001</td>
           <td>2.996804</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.22587</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.147649</td>
           <td>-0.047307</td>
           <td>0.146667</td>
@@ -1494,30 +1440,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f2cc0a43eb0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f2c42f63820>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f2c42f63490>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fae0f1f2da0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fade1ce2e30>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fade1ce2050>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f2c4347b9a0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f2c435960e0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f2c43597d90>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f2c43596d40>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f2c43595300>,
+       <rail.core.utilStages.TableConverter at 0x7fade1e2a2f0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fade1ce1c90>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fade1ce3e20>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fade1ce0c40>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fade1ce1cc0>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f2c43597af0>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f2cac5a3490>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f2c42f63880>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f2c4373fd90>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f2c303d66b0>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f2c4373eb30>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f2c303d69e0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f2c30455810>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f2c30456f80>]),
+       <rail.core.utilStages.TableConverter at 0x7fade1cd7160>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fade262f850>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fade1ce1fc0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fade1ce2fb0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fadceff06a0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fade1ed4520>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fadceff17b0>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fadcf058c70>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fadcf058f10>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

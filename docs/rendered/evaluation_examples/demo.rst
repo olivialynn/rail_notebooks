@@ -88,7 +88,7 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  39.8M      0  0:00:01  0:00:01 --:--:-- 39.8M
+    100 47.1M  100 47.1M    0     0  20.5M      0  0:00:02  0:00:02 --:--:-- 20.5M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -149,24 +149,6 @@ FlexZBoost results
 .. parsed-literal::
 
     Inserting handle into data store.  output_FZB_eval: inprogress_output_FZB_eval.hdf5, FZB_eval
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
-    Warning.  Failed to convert column 'list' object has no attribute 'dtype'
 
 
 We can view the results as a pandas dataframe:
@@ -224,17 +206,17 @@ We can view the results as a pandas dataframe:
         <tr>
           <th>0</th>
           <td>84.956236</td>
-          <td>None</td>
+          <td>NaN</td>
           <td>0.001</td>
           <td>9.623352</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.03359</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>0.020859</td>
           <td>0.00027</td>
           <td>0.106167</td>
@@ -302,7 +284,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff92a55f2b0>
+    <qp.ensemble.Ensemble at 0x7f5c069472b0>
 
 
 

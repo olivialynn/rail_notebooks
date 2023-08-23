@@ -167,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 28s, sys: 530 ms, total: 5min 29s
-    Wall time: 2min 49s
+    CPU times: user 6min 16s, sys: 605 ms, total: 6min 16s
+    Wall time: 3min 13s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fcdc75b3700>
+    <rail.core.data.ModelHandle at 0x7fcf549f3910>
 
 
 
@@ -244,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6661/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6687/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -389,7 +389,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fcd76b87a00>
+    <rail.core.data.QPHandle at 0x7fceffd17ee0>
 
 
 
@@ -425,7 +425,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcd76c28460>
+    <matplotlib.legend.Legend at 0x7fceffdc1ae0>
 
 
 
@@ -474,7 +474,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fcd76ca6650>
+    <rail.core.data.QPHandle at 0x7fcf04306470>
 
 
 
@@ -501,7 +501,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcd76ca7820>
+    <matplotlib.legend.Legend at 0x7fcf04306680>
 
 
 
@@ -560,7 +560,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcd76a1e4d0>
+    <matplotlib.legend.Legend at 0x7fcf0429b190>
 
 
 

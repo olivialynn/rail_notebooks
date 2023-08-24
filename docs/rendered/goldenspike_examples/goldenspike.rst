@@ -180,13 +180,36 @@ Now we will create the flow and train it
     Training 30 epochs 
     Loss:
     (0) 21.3266
-    (1) 4.1139
-    (2) 3.5145
-    (3) 1.8794
-    (4) -0.1582
-    (5) 1.3641
-    (6) inf
-    Training stopping after epoch 6 because training loss diverged.
+    (1) 4.1805
+    (2) 2.9966
+    (3) 2.0658
+    (4) 0.6698
+    (5) 0.7940
+    (6) 0.6846
+    (7) 0.3540
+    (8) -1.1601
+    (9) 3402823273761818485311871060541440.0000
+    (10) -1.4746
+    (11) 3402823273761818485311871060541440.0000
+    (12) -1.0880
+    (13) -2.4083
+    (14) 3402823273761818485311871060541440.0000
+    (15) -1.9668
+    (16) -2.6006
+    (17) -2.3457
+    (18) 3402823273761818485311871060541440.0000
+    (19) -1.9753
+    (20) -2.3087
+    (21) -1.1899
+    (22) -1.0707
+    (23) 3402823273761818485311871060541440.0000
+    (24) -3.3070
+    (25) -3.5133
+    (26) -3.3352
+    (27) 1.0717
+    (28) -3.4730
+    (29) -3.7733
+    (30) -2.1753
     Inserting handle into data store.  model_flow_modeler: /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/inprogress_trained_flow.pkl, flow_modeler
 
 
@@ -194,7 +217,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f78c0187e20>
+    <rail.tools.flow_handle.FlowHandle at 0x7fafca770190>
 
 
 
@@ -346,83 +369,83 @@ quick writeout of the columns:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.776368</td>
-          <td>27.096006</td>
-          <td>0.461011</td>
-          <td>26.555770</td>
-          <td>0.104944</td>
-          <td>25.347148</td>
-          <td>0.035449</td>
-          <td>24.179230</td>
-          <td>0.018918</td>
-          <td>23.598360</td>
-          <td>0.019891</td>
-          <td>23.441322</td>
-          <td>0.038977</td>
+          <td>0.917137</td>
+          <td>24.000203</td>
+          <td>0.033710</td>
+          <td>23.633588</td>
+          <td>0.009183</td>
+          <td>22.778617</td>
+          <td>0.006112</td>
+          <td>21.901047</td>
+          <td>0.005555</td>
+          <td>21.204654</td>
+          <td>0.005511</td>
+          <td>20.985054</td>
+          <td>0.006576</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.707868</td>
-          <td>26.408446</td>
-          <td>0.269012</td>
-          <td>26.318758</td>
-          <td>0.085249</td>
-          <td>25.584306</td>
-          <td>0.043736</td>
-          <td>24.988744</td>
-          <td>0.038232</td>
-          <td>24.598414</td>
-          <td>0.047699</td>
-          <td>24.638287</td>
-          <td>0.112221</td>
+          <td>0.307350</td>
+          <td>24.895957</td>
+          <td>0.073938</td>
+          <td>24.250821</td>
+          <td>0.014250</td>
+          <td>23.717795</td>
+          <td>0.009493</td>
+          <td>23.411529</td>
+          <td>0.010410</td>
+          <td>23.422329</td>
+          <td>0.017167</td>
+          <td>23.377751</td>
+          <td>0.036845</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.089314</td>
-          <td>25.139119</td>
-          <td>0.091495</td>
-          <td>24.467253</td>
-          <td>0.016957</td>
-          <td>23.384858</td>
-          <td>0.007806</td>
-          <td>22.341993</td>
-          <td>0.006124</td>
-          <td>8.789131</td>
-          <td>0.005000</td>
-          <td>6.992166</td>
-          <td>0.005000</td>
+          <td>1.097174</td>
+          <td>26.879045</td>
+          <td>0.390847</td>
+          <td>25.723538</td>
+          <td>0.050363</td>
+          <td>24.782990</td>
+          <td>0.021669</td>
+          <td>24.030434</td>
+          <td>0.016715</td>
+          <td>23.138710</td>
+          <td>0.013663</td>
+          <td>22.646210</td>
+          <td>0.019511</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.484889</td>
-          <td>25.979984</td>
-          <td>0.188629</td>
-          <td>25.557817</td>
-          <td>0.043487</td>
-          <td>25.104019</td>
-          <td>0.028621</td>
-          <td>24.368909</td>
-          <td>0.022229</td>
-          <td>24.368547</td>
-          <td>0.038904</td>
-          <td>24.071658</td>
-          <td>0.068173</td>
+          <td>1.244066</td>
+          <td>26.801174</td>
+          <td>0.367929</td>
+          <td>26.650822</td>
+          <td>0.114014</td>
+          <td>25.944484</td>
+          <td>0.060214</td>
+          <td>24.970787</td>
+          <td>0.037629</td>
+          <td>24.245606</td>
+          <td>0.034896</td>
+          <td>23.693271</td>
+          <td>0.048735</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.553523</td>
-          <td>25.291620</td>
-          <td>0.104513</td>
-          <td>24.187720</td>
-          <td>0.013566</td>
-          <td>23.348308</td>
-          <td>0.007660</td>
-          <td>22.705591</td>
-          <td>0.006977</td>
-          <td>22.343707</td>
-          <td>0.007994</td>
-          <td>22.300595</td>
-          <td>0.014683</td>
+          <td>0.624801</td>
+          <td>25.743152</td>
+          <td>0.154302</td>
+          <td>25.562501</td>
+          <td>0.043668</td>
+          <td>24.968763</td>
+          <td>0.025436</td>
+          <td>24.689150</td>
+          <td>0.029357</td>
+          <td>24.670050</td>
+          <td>0.050831</td>
+          <td>24.597154</td>
+          <td>0.108265</td>
         </tr>
       </tbody>
     </table>
@@ -552,83 +575,83 @@ For the test sample we will:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.182804</td>
-          <td>26.135859</td>
-          <td>0.214929</td>
-          <td>24.984569</td>
-          <td>0.026282</td>
-          <td>24.388399</td>
-          <td>0.015583</td>
-          <td>24.028153</td>
-          <td>0.016684</td>
-          <td>23.890909</td>
-          <td>0.025570</td>
-          <td>23.627875</td>
-          <td>0.045987</td>
+          <td>0.135296</td>
+          <td>24.479071</td>
+          <td>0.051251</td>
+          <td>23.294639</td>
+          <td>0.007596</td>
+          <td>22.522820</td>
+          <td>0.005739</td>
+          <td>22.192346</td>
+          <td>0.005886</td>
+          <td>22.073224</td>
+          <td>0.007008</td>
+          <td>21.978112</td>
+          <td>0.011473</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.539859</td>
-          <td>25.395984</td>
-          <td>0.114433</td>
-          <td>24.680702</td>
-          <td>0.020256</td>
-          <td>23.799778</td>
-          <td>0.010022</td>
-          <td>23.402364</td>
-          <td>0.010344</td>
-          <td>23.223785</td>
-          <td>0.014611</td>
-          <td>22.934286</td>
-          <td>0.024972</td>
+          <td>0.514087</td>
+          <td>25.324856</td>
+          <td>0.107579</td>
+          <td>24.649108</td>
+          <td>0.019724</td>
+          <td>23.731359</td>
+          <td>0.009577</td>
+          <td>23.315379</td>
+          <td>0.009754</td>
+          <td>23.151947</td>
+          <td>0.013805</td>
+          <td>22.995196</td>
+          <td>0.026329</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.629625</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.407328</td>
-          <td>0.217518</td>
-          <td>26.308056</td>
-          <td>0.083064</td>
-          <td>25.527529</td>
-          <td>0.061668</td>
-          <td>24.960131</td>
-          <td>0.065749</td>
-          <td>24.500825</td>
-          <td>0.099516</td>
+          <td>0.547426</td>
+          <td>25.037273</td>
+          <td>0.083694</td>
+          <td>24.028459</td>
+          <td>0.012027</td>
+          <td>22.826973</td>
+          <td>0.006200</td>
+          <td>22.220635</td>
+          <td>0.005927</td>
+          <td>21.972627</td>
+          <td>0.006723</td>
+          <td>21.706857</td>
+          <td>0.009516</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.402639</td>
-          <td>27.874355</td>
-          <td>0.796538</td>
-          <td>27.438832</td>
-          <td>0.223296</td>
-          <td>26.351841</td>
-          <td>0.086331</td>
-          <td>25.955206</td>
-          <td>0.089993</td>
-          <td>25.555003</td>
-          <td>0.110991</td>
-          <td>25.959948</td>
-          <td>0.339467</td>
+          <td>0.362263</td>
+          <td>27.936799</td>
+          <td>0.829425</td>
+          <td>27.647749</td>
+          <td>0.265230</td>
+          <td>26.515825</td>
+          <td>0.099709</td>
+          <td>26.115777</td>
+          <td>0.103606</td>
+          <td>25.708957</td>
+          <td>0.126890</td>
+          <td>26.398346</td>
+          <td>0.475503</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>2.036373</td>
-          <td>25.912178</td>
-          <td>0.178140</td>
-          <td>25.729358</td>
-          <td>0.050623</td>
-          <td>25.368662</td>
-          <td>0.036130</td>
-          <td>24.942092</td>
-          <td>0.036686</td>
-          <td>24.377120</td>
-          <td>0.039200</td>
-          <td>23.898813</td>
-          <td>0.058489</td>
+          <td>0.527744</td>
+          <td>22.936123</td>
+          <td>0.013990</td>
+          <td>22.903978</td>
+          <td>0.006453</td>
+          <td>22.226645</td>
+          <td>0.005458</td>
+          <td>21.867959</td>
+          <td>0.005526</td>
+          <td>21.783196</td>
+          <td>0.006285</td>
+          <td>21.497303</td>
+          <td>0.008372</td>
         </tr>
       </tbody>
     </table>
@@ -698,19 +721,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    using 61 galaxies in calculation
+    using 54 galaxies in calculation
     best values for fo and kt:
     [1.]
     [0.3]
     minimizing for type 0
-    best fit z0, alpha, km for type 0: [ 5.30299812e-01  1.72669318e+00 -7.57839184e-04]
+    best fit z0, alpha, km for type 0: [0.30565957 1.3498863  0.05004526]
     Inserting handle into data store.  model_inform_bpz: inprogress_bpz.pkl, inform_bpz
-    split into 46 training and 15 validation samples
+    split into 40 training and 14 validation samples
     finding best fit sigma and NNeigh...
     
     
     
-    best fit values are sigma=0.075 and numneigh=5
+    best fit values are sigma=0.075 and numneigh=7
     
     
     
@@ -728,7 +751,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f78958267a0>
+    <rail.core.data.ModelHandle at 0x7fafb75d3cd0>
 
 
 
@@ -1068,7 +1091,7 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
-    WARNING:root:Removed 3 PITs from the sample.
+    WARNING:root:Removed 1 PITs from the sample.
 
 
 .. parsed-literal::
@@ -1139,23 +1162,23 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>20.235138</td>
+          <td>6.461154</td>
           <td>NaN</td>
-          <td>0.001</td>
-          <td>5.898328</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>0.362657</td>
+          <td>0.001078</td>
+          <td>1.901392</td>
           <td>NaN</td>
           <td>NaN</td>
+          <td>0.171044</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>0.32706</td>
-          <td>-0.113542</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>0.24278</td>
+          <td>-0.046468</td>
           <td>0.0</td>
-          <td>0.281379</td>
-          <td>-0.357366</td>
+          <td>0.241741</td>
+          <td>-0.681775</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1215,23 +1238,23 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>32.125709</td>
+          <td>11.26575</td>
           <td>NaN</td>
           <td>0.001</td>
-          <td>7.3688</td>
+          <td>1.977448</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>0.377307</td>
+          <td>0.263703</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>0.196228</td>
-          <td>-0.064512</td>
-          <td>0.073333</td>
-          <td>0.201216</td>
-          <td>0.813565</td>
+          <td>0.210761</td>
+          <td>-0.04497</td>
+          <td>0.04</td>
+          <td>0.163144</td>
+          <td>-0.228429</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1291,23 +1314,23 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>14.514278</td>
+          <td>12.202536</td>
           <td>NaN</td>
           <td>0.001</td>
-          <td>2.996804</td>
+          <td>2.496183</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>0.22587</td>
+          <td>0.246437</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>0.147649</td>
-          <td>-0.047307</td>
+          <td>0.10122</td>
+          <td>-0.025102</td>
           <td>0.146667</td>
-          <td>0.149275</td>
-          <td>12.021751</td>
+          <td>0.093913</td>
+          <td>5.72337</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -1440,30 +1463,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f791344c130>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f7895c953f0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f7895c94d00>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7faff77f6ec0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fafca773a00>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fafca7733d0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f7895670100>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f78955d3dc0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f78955d2b60>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f78955d3280>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f78955d3d00>,
+       <rail.core.utilStages.TableConverter at 0x7fafd41f51b0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fafca770820>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fafca772260>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fafca773070>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fafca7722f0>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f7895972860>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f7895c2f0a0>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f7895b36da0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f78955d3b80>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f7882be6740>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f78955d3910>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f7882bb3a60>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f7882be54e0>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f78993ec730>]),
+       <rail.core.utilStages.TableConverter at 0x7fafca773400>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fafca802680>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fafcac88820>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fafca772b00>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fafb75d04c0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fafca773fd0>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fafb75d2290>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fafb762d4b0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fafb762e170>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1501,6 +1524,216 @@ Read back the pipeline and run it
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=.//home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/trained_flow.pkl   --name=flow_creator_test   --config=tmp_goldenspike_config.yml   --output=./output_flow_creator_test.pq 
     Output writing to ./flow_creator_test.out
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:19] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:20] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:26:28] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
     
     Job flow_creator_test has completed successfully!
     

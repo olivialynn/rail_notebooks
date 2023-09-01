@@ -86,7 +86,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7fe38bf20760>
+    <rail.core.data.PqHandle at 0x7f37d251ba90>
 
 
 
@@ -233,7 +233,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7fe3437cf130>
+    <rail.core.data.PqHandle at 0x7f3789dc6830>
 
 
 

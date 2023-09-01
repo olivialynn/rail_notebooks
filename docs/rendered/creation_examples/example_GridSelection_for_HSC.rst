@@ -216,8 +216,8 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, hsc_cutter
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 4.01 s, sys: 256 ms, total: 4.27 s
-    Wall time: 4.27 s
+    CPU times: user 3.59 s, sys: 168 ms, total: 3.76 s
+    Wall time: 3.76 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock

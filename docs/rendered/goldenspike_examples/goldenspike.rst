@@ -217,7 +217,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f9f0c034100>
+    <rail.tools.flow_handle.FlowHandle at 0x7f724b310430>
 
 
 
@@ -751,7 +751,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9f09f42b60>
+    <rail.core.data.ModelHandle at 0x7f72493c4a00>
 
 
 
@@ -1463,30 +1463,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f9f747e6c50>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f9f747e6290>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f9f0c037790>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f72c8b35d50>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f72c8b363b0>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f724b26c730>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f9f0cabdf60>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f9f0c036650>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f9f0c035990>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f9f0c036530>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f9f0c037a30>,
+       <rail.core.utilStages.TableConverter at 0x7f724b9fcbe0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f724b313d30>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f724b310d90>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f724b311c30>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f724b311f60>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f9f0c036770>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f9f0c316890>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f9f09e4fd90>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f9f0c317820>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f9f09e78160>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f9f0c317fa0>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f9f09e78250>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f9f09e7ba00>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f9f0fb317b0>]),
+       <rail.core.utilStages.TableConverter at 0x7f72b45b7010>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f724ade88b0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f724b23fe80>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f724b692c80>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f7248b8add0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f724bd0d0f0>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f7248b8ab30>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f7248bf2fe0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f7248bf3610>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1532,216 +1532,6 @@ Read back the pipeline and run it
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_creator_test.pq   --name=lsst_error_model_test   --config=tmp_goldenspike_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:41] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:49] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
-    [07:25:50] WARNING: ../src/learner.cc:767: 
-    Parameters: { "silent" } are not used.
-    
     Job lsst_error_model_test has completed successfully!
     
     Executing col_remapper_test
@@ -1769,6 +1559,216 @@ Read back the pipeline and run it
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_creator_train.pq   --name=lsst_error_model_train   --config=tmp_goldenspike_config.yml   --output=./output_lsst_error_model_train.pq 
     Output writing to ./lsst_error_model_train.out
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:17] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:18] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:25] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
+    
+    [07:24:26] WARNING: ../src/learner.cc:767: 
+    Parameters: { "silent" } are not used.
     
     Job lsst_error_model_train has completed successfully!
     

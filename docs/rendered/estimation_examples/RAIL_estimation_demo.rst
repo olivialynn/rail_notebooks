@@ -91,7 +91,7 @@ in this demo we only take advantage of two specific estimators):
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 49 fully formed stages to rail.stages
+    Attached 12 base classes and 50 fully formed stages to rail.stages
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
@@ -254,15 +254,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 12.8 s, sys: 3.39 s, total: 16.2 s
-    Wall time: 16.2 s
+    CPU times: user 19.5 s, sys: 5.86 s, total: 25.4 s
+    Wall time: 25.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2a50537790>
+    <rail.core.data.ModelHandle at 0x7fa50852ff10>
 
 
 
@@ -472,15 +472,15 @@ trained model for use with the estimation stage.
     finding best sharpen parameter...
     Retraining with full training set...
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 56.6 s, sys: 2.08 s, total: 58.6 s
-    Wall time: 2min
+    CPU times: user 1min 27s, sys: 2.9 s, total: 1min 30s
+    Wall time: 2min 51s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2aafe429e0>
+    <rail.core.data.ModelHandle at 0x7fa519bfdae0>
 
 
 
@@ -533,8 +533,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 239 µs, sys: 21 µs, total: 260 µs
-    Wall time: 264 µs
+    CPU times: user 260 µs, sys: 24 µs, total: 284 µs
+    Wall time: 290 µs
 
 
 
@@ -566,8 +566,8 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 14.9 s, sys: 259 ms, total: 15.2 s
-    Wall time: 15.9 s
+    CPU times: user 23.7 s, sys: 364 ms, total: 24.1 s
+    Wall time: 25.5 s
 
 
 We can calculate the median and mode values of the PDFs and plot their

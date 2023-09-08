@@ -80,8 +80,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f634a372bc0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f634a3731f0>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f8e8e8a77f0>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f8e8e8a5f90>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -106,14 +106,14 @@ Once the pipeline is saved, we execute it
     
     Executing NZDirInformer
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.nz_dir.NZDirInformer   --input=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5   --config=nzdir_config.yml   --model=./nzdir_model.pkl 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.nz_dir.NZDirInformer   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5   --config=nzdir_config.yml   --model=./nzdir_model.pkl 
     Output writing to ./NZDirInformer.out
     
     Job NZDirInformer has completed successfully!
     
     Executing NZDirSummarizer
     Command is:
-    OMP_NUM_THREADS=1  mpirun -n 2 python3 -m ceci rail.estimation.algos.nz_dir.NZDirSummarizer   --model=./nzdir_model.pkl   --input=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5   --config=nzdir_config.yml   --output=./NZDir_samples.hdf5   --single_NZ=./NZDir_NZ.hdf5 --mpi
+    OMP_NUM_THREADS=1  mpirun -n 2 python3 -m ceci rail.estimation.algos.nz_dir.NZDirSummarizer   --model=./nzdir_model.pkl   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5   --config=nzdir_config.yml   --output=./NZDir_samples.hdf5   --single_NZ=./NZDir_NZ.hdf5 --mpi
     Output writing to ./NZDirSummarizer.out
     
     Job NZDirSummarizer has failed with status 127
@@ -158,7 +158,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f63480e2830>
+    <matplotlib.legend.Legend at 0x7f8e44d2b250>
 
 
 

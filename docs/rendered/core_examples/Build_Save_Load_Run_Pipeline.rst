@@ -135,7 +135,7 @@ A couple of things are important:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
 
 
 .. code:: ipython3
@@ -299,7 +299,7 @@ doing.
 
 .. parsed-literal::
 
-    StageConfig{output_mode:default,n_samples:6,seed:0,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
+    StageConfig{output_mode:default,n_samples:6,seed:0,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
 
 
 
@@ -387,11 +387,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fa550873d00>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa5a1c05300>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3a9f2de9b0>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f3a9f2dfaf0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fa550905ab0>]),
+       <rail.core.utilStages.TableConverter at 0x7f3a4dc110f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -440,7 +440,7 @@ each case.
     
     Executing flow_engine_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl   --name=flow_engine_test   --config=pipe_saved_config.yml   --output=./output_flow_engine_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl   --name=flow_engine_test   --config=pipe_saved_config.yml   --output=./output_flow_engine_test.pq 
     Output writing to ./flow_engine_test.out
     
     Job flow_engine_test has completed successfully!

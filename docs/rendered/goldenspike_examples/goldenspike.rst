@@ -194,7 +194,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7fa9a73cc160>
+    <rail.tools.flow_handle.FlowHandle at 0x7fa9259584f0>
 
 
 
@@ -728,7 +728,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa9d3fe96c0>
+    <rail.core.data.ModelHandle at 0x7fa924271db0>
 
 
 
@@ -1440,30 +1440,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fa9d33db040>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7fa9a72ddcf0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa9a73fd360>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fa952116f80>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fa925bd4400>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa925bd40a0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fa9a73cfd00>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7fa9a79c42e0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa9a79c6e30>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fa9a79c7130>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fa9a79c7a60>,
+       <rail.core.utilStages.TableConverter at 0x7fa925d53ac0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fa92629d0f0>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa92595a440>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fa92629f910>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fa92629fd90>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fa9a79c6020>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fa9a7b67fd0>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fa9a72df9a0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fa9a72dd390>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fa9a5380f10>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fa9a73fd600>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fa9a53818a0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fa9ab22c160>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fa9ab22c940>]),
+       <rail.core.utilStages.TableConverter at 0x7fa925f3d930>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fa925ffa7a0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fa925da3dc0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fa925f17be0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fa923954790>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fa92595b370>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fa923954be0>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fa9239d0220>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fa9239d1e10>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

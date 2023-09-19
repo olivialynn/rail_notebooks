@@ -71,6 +71,8 @@ We then pass in the configuration parameters as arguments to
 
 .. parsed-literal::
 
+    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+    I0000 00:00:1695106615.545694    5284 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
@@ -92,7 +94,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f1fa0595690>
+    <pzflow.flow.Flow at 0x7f6535c5ef20>
 
 
 

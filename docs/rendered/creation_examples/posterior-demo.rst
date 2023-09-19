@@ -88,6 +88,8 @@ rail stages to keep track of where their inputs are coming from.
 
 .. parsed-literal::
 
+    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+    I0000 00:00:1695106661.899297    5666 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
@@ -145,7 +147,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fac608141c0>
+    <qp.ensemble.Ensemble at 0x7f597cb2c190>
 
 
 

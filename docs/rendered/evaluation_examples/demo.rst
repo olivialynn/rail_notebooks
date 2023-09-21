@@ -284,7 +284,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fd370b1da80>
+    <qp.ensemble.Ensemble at 0x7fde04a22fe0>
 
 
 

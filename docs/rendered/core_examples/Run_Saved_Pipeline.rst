@@ -38,7 +38,7 @@ with ``pipe_example.config.yml``:
 .. parsed-literal::
 
     WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695452140.269111    4457 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
+    I0000 00:00:1695538547.881694    4442 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 

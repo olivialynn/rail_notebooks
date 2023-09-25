@@ -108,7 +108,7 @@ We then pass in the configuration parameters as arguments to
 .. parsed-literal::
 
     WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695538619.866422    5060 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
+    I0000 00:00:1695625026.751995    5074 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
@@ -130,7 +130,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f4ed41de290>
+    <pzflow.flow.Flow at 0x7f148a9f2920>
 
 
 
@@ -214,7 +214,7 @@ using, you can just print the model:
 
 .. parsed-literal::
 
-    <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f4f25417b50>
+    <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f14dfbff550>
 
 
 

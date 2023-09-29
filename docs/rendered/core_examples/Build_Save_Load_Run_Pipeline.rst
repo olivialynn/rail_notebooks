@@ -131,7 +131,7 @@ A couple of things are important:
 .. parsed-literal::
 
     WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695884119.434060    4464 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
+    I0000 00:00:1695970517.701514    4333 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
@@ -389,11 +389,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc7f0f71c30>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fc80c902cb0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7f6487e110>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f7f79fe3b50>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fc7f0ff3460>]),
+       <rail.core.utilStages.TableConverter at 0x7f7f647074f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

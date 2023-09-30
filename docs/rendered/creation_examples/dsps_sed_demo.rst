@@ -47,7 +47,7 @@ required galaxy properties are:
 .. parsed-literal::
 
     WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695970771.873555    5331 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
+    I0000 00:00:1696056943.250158    4531 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
     No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
@@ -111,7 +111,7 @@ from NERSC.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 58.7M  100 58.7M    0     0  20.7M      0  0:00:02  0:00:02 --:--:-- 20.7M
+    100 58.7M  100 58.7M    0     0  40.1M      0  0:00:01  0:00:01 --:--:-- 40.1M
 
 
 .. code:: ipython3

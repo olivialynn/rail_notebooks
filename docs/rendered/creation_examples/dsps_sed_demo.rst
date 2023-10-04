@@ -43,14 +43,6 @@ required galaxy properties are:
     import numpy as np
     import h5py
 
-
-.. parsed-literal::
-
-    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1696316152.568150    4548 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
-    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
-
-
 .. code:: ipython3
 
     DS = RailStage.data_store
@@ -111,7 +103,7 @@ from NERSC.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 58.7M  100 58.7M    0     0  20.0M      0  0:00:02  0:00:02 --:--:-- 20.0M
+    100 58.7M  100 58.7M    0     0  21.8M      0  0:00:02  0:00:02 --:--:-- 21.8M
 
 
 .. code:: ipython3

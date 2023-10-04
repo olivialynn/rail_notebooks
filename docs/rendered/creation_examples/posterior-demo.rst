@@ -88,13 +88,6 @@ rail stages to keep track of where their inputs are coming from.
 
 .. parsed-literal::
 
-    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695970604.332937    4908 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
-    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
     Inserting handle into data store.  output_truth: inprogress_output_truth.pq, truth
 
@@ -147,7 +140,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff0748a37f0>
+    <qp.ensemble.Ensemble at 0x7f0848179030>
 
 
 

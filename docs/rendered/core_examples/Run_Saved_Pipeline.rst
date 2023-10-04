@@ -37,13 +37,6 @@ with ``pipe_example.config.yml``:
 
 .. parsed-literal::
 
-    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695970493.390493    4172 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
-    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
 
 

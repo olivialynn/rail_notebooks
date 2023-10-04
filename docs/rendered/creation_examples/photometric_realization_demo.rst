@@ -71,13 +71,6 @@ We then pass in the configuration parameters as arguments to
 
 .. parsed-literal::
 
-    WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-    I0000 00:00:1695970581.834645    4760 tfrt_cpu_pjrt_client.cc:349] TfrtCpuClient created.
-    No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
 
 
@@ -94,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7fd1701df790>
+    <pzflow.flow.Flow at 0x7f51d2c6fac0>
 
 
 

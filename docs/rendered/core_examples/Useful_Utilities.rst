@@ -80,6 +80,7 @@ imports.
 
     Imported rail.astro_tools
     Imported rail.bpz
+    Imported rail.cmnn
     Imported rail.core
     Imported rail.dsps
     Imported rail.flexzboost
@@ -90,7 +91,7 @@ imports.
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 52 fully formed stages to rail.stages
+    Attached 12 base classes and 54 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -187,6 +188,8 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.tools.utilPhotometry.Dereddener'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteInformer'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
+    <class 'rail.estimation.algos.cmnn.Inform_CMNNPDF'>
+    <class 'rail.estimation.algos.cmnn.CMNNPDF'>
     <class 'rail.creation.engines.dsps_photometry_creator.DSPSPhotometryCreator'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSSingleSedModeler'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
@@ -229,6 +232,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
+    <class 'rail.estimation.algos.cmnn.CMNNPDF'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetEstimator'>
@@ -550,7 +554,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1038b7a110>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb8e07cf7c0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -569,7 +573,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1038b7a110>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb8e07cf7c0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

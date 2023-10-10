@@ -140,7 +140,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f31bcb40430>
+    <qp.ensemble.Ensemble at 0x7f2bc0982ad0>
 
 
 

@@ -382,11 +382,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f06e8287b20>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f06e8287df0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1ae07bbe50>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f1ae07bb3d0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f06e816d120>]),
+       <rail.core.utilStages.TableConverter at 0x7f1ae06a5120>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -481,6 +481,5 @@ each case.
 .. parsed-literal::
 
     '/home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples'
-
 
 

@@ -34,6 +34,7 @@ jobs:
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
         pip install .[dev]
+        pip install pz-rail-cmnn
         
     # Render notebooks
     - run: python render_notebooks.py core

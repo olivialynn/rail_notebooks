@@ -48,6 +48,12 @@ and magnitude errors, which we want to convert to hyperbolic magnitudes.
     testFile = os.path.join(RAILDIR, 'rail', 'examples_data', 'testdata', 'test_dc2_training_9816.pq')
     test_mags = DS.read_file("test_data", TableHandle, testFile)
 
+
+.. parsed-literal::
+
+    column_list None
+
+
 Determining the smoothing parameters
 ------------------------------------
 
@@ -86,7 +92,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7ff4d51f2710>
+    <rail.core.data.PqHandle at 0x7f6351c039d0>
 
 
 
@@ -233,7 +239,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7ff4d51f2cb0>
+    <rail.core.data.PqHandle at 0x7f6351c3ba90>
 
 
 

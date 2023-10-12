@@ -22,6 +22,12 @@ last successfully run: Apr 26, 2023
     example_file = os.path.join(RAILDIR, "rail", "examples_data", "testdata", "rubin_dm_dc2_example.pq")
     test_data = DS.read_file("test_data", TableHandle, example_file)
 
+
+.. parsed-literal::
+
+    column_list None
+
+
 .. code:: ipython3
 
     test_data().info()
@@ -160,7 +166,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     62.4 MiB of 64.0 MiB |  32.1 MiB/s |################## |  97% | ETA:   0:00:00
+     63.2 MiB of 64.0 MiB |  24.6 MiB/s |################## |  98% | ETA:   0:00:00
 
 .. parsed-literal::
 
@@ -171,7 +177,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     63.2 MiB of 64.0 MiB |  32.7 MiB/s |################## |  98% | ETA:   0:00:00
+     64.0 MiB of 64.0 MiB |  23.6 MiB/s |###################| 100% | ETA:  00:00:00
 
 .. code:: ipython3
 

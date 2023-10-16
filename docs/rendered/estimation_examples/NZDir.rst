@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc65d9e14b0>
+    <rail.core.data.ModelHandle at 0x7f6a941db7f0>
 
 
 
@@ -197,8 +197,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 334 ms, sys: 15.8 ms, total: 350 ms
-    Wall time: 351 ms
+    CPU times: user 402 ms, sys: 16.4 ms, total: 419 ms
+    Wall time: 419 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -345,7 +345,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc65c070dc0>
+    <rail.core.data.ModelHandle at 0x7f6a90222470>
 
 
 
@@ -375,8 +375,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 129 ms, sys: 0 ns, total: 129 ms
-    Wall time: 129 ms
+    CPU times: user 152 ms, sys: 3.49 ms, total: 155 ms
+    Wall time: 156 ms
 
 
 .. code:: ipython3

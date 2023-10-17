@@ -37,8 +37,8 @@ function.
     import tables_io
     import pandas as pd
     #from rail.core.data import TableHandle
+    from rail.core.utils import find_rail_file
     from rail.core.stage import RailStage
-    from rail.core.utils import RAILDIR
     %matplotlib inline 
 
 .. code:: ipython3
@@ -201,8 +201,8 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, specselection_zCOSMOS
     Inserting handle into data store.  output: inprogress_output.pq, specselection_zCOSMOS
-    CPU times: user 2.4 s, sys: 83.3 ms, total: 2.48 s
-    Wall time: 2.47 s
+    CPU times: user 2.06 s, sys: 79.7 ms, total: 2.14 s
+    Wall time: 2.14 s
 
 
 .. code:: ipython3
@@ -237,7 +237,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 .. code:: ipython3
 
     # compare to sum of ratios * 100
-    ratio_file=os.path.join(RAILDIR, 'rail/examples_data/creation_data/data/success_rate_data/zCOSMOS_success.txt')
+    ratio_file=find_rail_file('examples_data/creation_data/data/success_rate_data/zCOSMOS_success.txt')
 
 .. code:: ipython3
 

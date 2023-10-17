@@ -37,8 +37,8 @@ Set up the path to the test data.
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
-    pdfs_file = os.path.join(RAILDIR, "rail/examples_data/testdata/test_dc2_training_9816.hdf5")
+    from rail.core.utils import find_rail_file
+    pdfs_file = find_rail_file("examples_data/testdata/test_dc2_training_9816.hdf5")
 
 Get access to the data directly, using the DataStore.read_file function.
 
@@ -89,7 +89,7 @@ chunks of data
 
 .. parsed-literal::
 
-    <generator object iterHdf5ToDict at 0x7f78f59b3df0>
+    <generator object iterHdf5ToDict at 0x7fe2de66fdf0>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -120,7 +120,7 @@ which can be use to iterate over that file.
 
 .. parsed-literal::
 
-    <generator object iterHdf5ToDict at 0x7f78f4fa80b0>
+    <generator object iterHdf5ToDict at 0x7fe2ddc640b0>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -166,4 +166,5 @@ over that file.
     8000 9000 8066223293
     9000 10000 8067729889
     10000 10225 8075587302
+
 

@@ -13,13 +13,13 @@ last successfully run: Apr 26, 2023
     import tempfile
     from rail.core.stage import RailStage
     from rail.core.data import TableHandle
-    from rail.core.utils import RAILDIR
+    from rail.core.utils import find_rail_file
     from rail.tools.utilPhotometry import LSSTFluxToMagConverter, Dereddener
 
 .. code:: ipython3
 
     DS = RailStage.data_store
-    example_file = os.path.join(RAILDIR, "rail", "examples_data", "testdata", "rubin_dm_dc2_example.pq")
+    example_file = find_rail_file("examples_data/testdata/rubin_dm_dc2_example.pq")
     test_data = DS.read_file("test_data", TableHandle, example_file)
 
 
@@ -166,7 +166,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     64.0 MiB of 64.0 MiB |  23.7 MiB/s |###################| 100% | ETA:  00:00:00
+     62.4 MiB of 64.0 MiB |  38.7 MiB/s |################## |  97% | ETA:   0:00:00
 
 .. parsed-literal::
 
@@ -177,7 +177,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     63.2 MiB of 64.0 MiB |  24.5 MiB/s |################## |  98% | ETA:   0:00:00
+     63.2 MiB of 64.0 MiB |  45.6 MiB/s |################## |  98% | ETA:   0:00:00
 
 .. code:: ipython3
 

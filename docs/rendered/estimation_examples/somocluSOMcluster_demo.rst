@@ -64,7 +64,7 @@ Let’s set up our dependencies:
     import tables_io
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utils import RAILDIR
+    from rail.core.utils import find_rail_file
     from rail.estimation.algos.somoclu_som import SOMocluInformer, SOMocluSummarizer
     from rail.estimation.algos.somoclu_som import get_bmus, plot_som
 
@@ -98,7 +98,7 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 9434k  100 9434k    0     0  18.9M      0 --:--:-- --:--:-- --:--:-- 18.9M
+    100 9434k  100 9434k    0     0  7959k      0  0:00:01  0:00:01 --:--:-- 7968k
 
 
 .. code:: ipython3
@@ -173,15 +173,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 6min 34s, sys: 456 ms, total: 6min 34s
-    Wall time: 3min 22s
+    CPU times: user 5min 25s, sys: 636 ms, total: 5min 25s
+    Wall time: 2min 50s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ffbec590340>
+    <rail.core.data.ModelHandle at 0x7f86f4f283a0>
 
 
 
@@ -305,7 +305,7 @@ SOM:
 
 .. code:: ipython3
 
-    testfile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
+    testfile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     data = tables_io.read(testfile)['photometry']
     mask = ((data['redshift'] > 0.2) & (data['redshift']<0.5))
     brightmask = ((mask) & (data['mag_i_lsst']<23.5))
@@ -322,7 +322,7 @@ SOM:
 
 .. code:: ipython3
 
-    specfile = os.path.join(RAILDIR, "rail/examples_data/testdata/test_dc2_validation_9816.hdf5")
+    specfile = find_rail_file("examples_data/testdata/test_dc2_validation_9816.hdf5")
     spec_data = tables_io.read(specfile)['photometry']
     smask = (spec_data['mag_i_lsst'] <23.5)
     trim_spec = {}
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ffb9b5bd780>
+    <rail.core.data.QPHandle at 0x7f86a3aa3820>
 
 
 
@@ -733,7 +733,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ffb9f431f30>
+    <matplotlib.legend.Legend at 0x7f86a39fc5e0>
 
 
 
@@ -782,7 +782,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ffb9846c610>
+    <rail.core.data.QPHandle at 0x7f86a0b11150>
 
 
 
@@ -809,7 +809,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ffb9f38f7f0>
+    <matplotlib.legend.Legend at 0x7f86a39fdc90>
 
 
 
@@ -868,7 +868,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ffb9843db40>
+    <matplotlib.legend.Legend at 0x7f86a0b12590>
 
 
 

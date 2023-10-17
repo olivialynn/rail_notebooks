@@ -72,9 +72,9 @@ the data that we’ll place in the DataStore in later steps:
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
-    trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
-    testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
+    from rail.core.utils import find_rail_file
+    trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
+    testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     
     traindata_io = tables_io.read(trainFile)["photometry"]
 
@@ -499,7 +499,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fe133d76f20>
+    <rail.core.data.ModelHandle at 0x7f303a214070>
 
 
 
@@ -574,7 +574,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe133db6e30>
+    <matplotlib.legend.Legend at 0x7f303a279540>
 
 
 
@@ -604,7 +604,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe130d626b0>
+    <matplotlib.legend.Legend at 0x7f303a0f61a0>
 
 
 
@@ -615,3 +615,4 @@ operate on the output files:
 That’s about it. For more usages, including how to chain together
 multiple stages, feeding results one into the other with the DataStore
 names, see goldenspike.ipynb in the examples/goldenspike directory.
+

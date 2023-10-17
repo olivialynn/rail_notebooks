@@ -44,8 +44,8 @@ and magnitude errors, which we want to convert to hyperbolic magnitudes.
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
-    testFile = os.path.join(RAILDIR, 'rail', 'examples_data', 'testdata', 'test_dc2_training_9816.pq')
+    from rail.core.utils import find_rail_file
+    testFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.pq')
     test_mags = DS.read_file("test_data", TableHandle, testFile)
 
 
@@ -92,7 +92,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f8de6e6bee0>
+    <rail.core.data.PqHandle at 0x7fb65ed74ee0>
 
 
 
@@ -239,7 +239,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f8d9f413c70>
+    <rail.core.data.PqHandle at 0x7fb65ed759c0>
 
 
 
@@ -497,4 +497,5 @@ turn-off point is determined by the value for :math:`b` estimated above.
 
 
 .. image:: ../../../docs/rendered/core_examples/hyperbolic_magnitude_test_files/../../../docs/rendered/core_examples/hyperbolic_magnitude_test_16_1.png
+
 

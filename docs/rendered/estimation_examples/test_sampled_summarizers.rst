@@ -62,9 +62,9 @@ that are included in the RAIL repo:
 .. code:: ipython3
 
     # Load up the example healpix 9816 data and stick in the DataStore
-    from rail.core.utils import RAILDIR
-    trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
-    testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
+    from rail.core.utils import find_rail_file
+    trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
+    testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
     test_data = DS.read_file("test_data", TableHandle, testFile)
 
@@ -92,7 +92,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff3fa13aa40>
+    <rail.core.data.ModelHandle at 0x7fe034b0b6d0>
 
 
 
@@ -174,7 +174,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff3fa138580>
+    <matplotlib.legend.Legend at 0x7fe034b087c0>
 
 
 
@@ -227,8 +227,8 @@ appears alpha is broken, so this plot is not the best:
 
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 16.6 ms, sys: 189 µs, total: 16.8 ms
-    Wall time: 16.8 ms
+    CPU times: user 13.5 ms, sys: 396 µs, total: 13.9 ms
+    Wall time: 13.9 ms
 
 
 .. code:: ipython3
@@ -249,7 +249,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff3f7f255a0>
+    <matplotlib.legend.Legend at 0x7fe0328f9630>
 
 
 
@@ -283,8 +283,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.68 s, sys: 112 ms, total: 1.79 s
-    Wall time: 1.79 s
+    CPU times: user 1.41 s, sys: 51.9 ms, total: 1.46 s
+    Wall time: 1.46 s
 
 
 .. code:: ipython3
@@ -297,7 +297,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff3f4ca9330>
+    <qp.ensemble.Ensemble at 0x7fe030686bc0>
 
 
 
@@ -356,7 +356,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff3fc10fc70>
+    <rail.core.data.ModelHandle at 0x7fe0306f1840>
 
 
 
@@ -401,7 +401,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff3f4d198d0>
+    <matplotlib.legend.Legend at 0x7fe030736680>
 
 
 
@@ -529,7 +529,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7ff3f4b62fe0>]
+    [<matplotlib.lines.Line2D at 0x7fe0302d3040>]
 
 
 
@@ -546,7 +546,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7ff3f4c1d0f0>]
+    [<matplotlib.lines.Line2D at 0x7fe0303c0fd0>]
 
 
 
@@ -563,7 +563,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7ff3f48877f0>]
+    [<matplotlib.lines.Line2D at 0x7fe0304ac5e0>]
 
 
 
@@ -598,7 +598,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff3f4ca9ab0>
+    <matplotlib.legend.Legend at 0x7fe0306855d0>
 
 
 
@@ -645,3 +645,4 @@ NZDir-derived distribution:
 
 Again, not a huge spread in predicted mean redshifts based solely on
 bootstraps, even with only ~20,000 galaxies.
+

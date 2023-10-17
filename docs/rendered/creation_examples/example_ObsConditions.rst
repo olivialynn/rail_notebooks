@@ -73,7 +73,7 @@ Analysis Framework (MAF).
 
     import rail
     from rail.core.stage import RailStage
-    from rail.core.utils import RAILDIR
+    from rail.core.utils import find_rail_file
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
@@ -233,8 +233,8 @@ Let’s run the code and see how long it takes:
     Inserting handle into data store.  input: None, ObsCondition
     Assigning pixels.
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 4.76 s, sys: 63.4 ms, total: 4.83 s
-    Wall time: 4.83 s
+    CPU times: user 3.87 s, sys: 24.2 ms, total: 3.89 s
+    Wall time: 3.89 s
 
 
 .. code:: ipython3
@@ -388,9 +388,10 @@ at the SNR at different area of the sky, and compare that with the
 
 .. code:: ipython3
 
-    mask = hp.read_map(os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits"))
-    weight = hp.read_map(os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits"))
-    Med_5sd_i = hp.read_map(os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits"))
+    mask = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits"))
+    weight = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits"))
+    Med_5sd_i = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits"))
+
 
 .. code:: ipython3
 
@@ -423,7 +424,7 @@ at the SNR at different area of the sky, and compare that with the
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_21_0.png
+.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_22_0.png
 
 
 Now if we want to change any of the default settings, we can supply them
@@ -436,7 +437,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
 .. code:: ipython3
 
     airmass_degrader = ObsCondition.make_stage(
-        map_dict={"airmass": os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits"),
+        map_dict={"airmass": find_rail_file("examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits"),
                  "nYrObs": 5.0}
     )
 
@@ -610,7 +611,7 @@ median airmass is more optimistic, thus reducing the magnitude errors.
 
 .. code:: ipython3
 
-    Med_airmass_i = hp.read_map(os.path.join(RAILDIR, "rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits"))
+    Med_airmass_i = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits"))
 
 Compute the average SNR in each pixel for i and r bands:
 
@@ -643,8 +644,9 @@ View the healpix map:
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_32_0.png
+.. image:: ../../../docs/rendered/creation_examples/example_ObsConditions_files/../../../docs/rendered/creation_examples/example_ObsConditions_33_0.png
 
 
 In both cases, we see a negative correlation between the airmass and the
 SNR in :math:`i` and :math:`r` bands, as expected.
+

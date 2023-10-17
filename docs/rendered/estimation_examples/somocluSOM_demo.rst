@@ -63,7 +63,7 @@ Let’s set up our dependencies:
     import tables_io
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utils import RAILDIR
+    from rail.core.utils import find_rail_file
 
 
 Next, let’s set up the Data Store, so that our RAIL module will know
@@ -167,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 6min 34s, sys: 554 ms, total: 6min 34s
-    Wall time: 3min 23s
+    CPU times: user 5min 36s, sys: 414 ms, total: 5min 36s
+    Wall time: 2min 56s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa0dfa2d630>
+    <rail.core.data.ModelHandle at 0x7f6523b3ec20>
 
 
 
@@ -244,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7109/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7982/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -290,7 +290,7 @@ SOM:
 
 .. code:: ipython3
 
-    testfile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
+    testfile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     data = tables_io.read(testfile)['photometry']
     mask = ((data['redshift'] > 0.2) & (data['redshift']<0.5))
     brightmask = ((mask) & (data['mag_i_lsst']<23.5))
@@ -307,7 +307,7 @@ SOM:
 
 .. code:: ipython3
 
-    specfile = os.path.join(RAILDIR, "rail/examples_data/testdata/test_dc2_validation_9816.hdf5")
+    specfile = find_rail_file("examples_data/testdata/test_dc2_validation_9816.hdf5")
     spec_data = tables_io.read(specfile)['photometry']
     smask = (spec_data['mag_i_lsst'] <23.5)
     trim_spec = {}
@@ -389,7 +389,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa0c9342320>
+    <rail.core.data.QPHandle at 0x7f64d1bbfa60>
 
 
 
@@ -425,7 +425,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa0c9340cd0>
+    <matplotlib.legend.Legend at 0x7f64d8e1b220>
 
 
 
@@ -474,7 +474,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa0c937d120>
+    <rail.core.data.QPHandle at 0x7f64d6a2d330>
 
 
 
@@ -501,7 +501,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa0c937df60>
+    <matplotlib.legend.Legend at 0x7f64d6a2ddb0>
 
 
 
@@ -560,7 +560,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa0ccfbafe0>
+    <matplotlib.legend.Legend at 0x7f64d6632e00>
 
 
 

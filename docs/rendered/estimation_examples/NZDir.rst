@@ -43,9 +43,9 @@ contains ~20,000 galaxies from this same healpix pixel.
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
-    trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
-    testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
+    from rail.core.utils import find_rail_file
+    trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
+    testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
 
 Let’s read test data in with tables_io, and then split it up into
@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6a941db7f0>
+    <rail.core.data.ModelHandle at 0x7f7b4cb672e0>
 
 
 
@@ -197,8 +197,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 402 ms, sys: 16.4 ms, total: 419 ms
-    Wall time: 419 ms
+    CPU times: user 349 ms, sys: 0 ns, total: 349 ms
+    Wall time: 350 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -345,7 +345,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6a90222470>
+    <rail.core.data.ModelHandle at 0x7f7b48a96020>
 
 
 
@@ -375,8 +375,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 152 ms, sys: 3.49 ms, total: 155 ms
-    Wall time: 156 ms
+    CPU times: user 128 ms, sys: 48 µs, total: 128 ms
+    Wall time: 129 ms
 
 
 .. code:: ipython3

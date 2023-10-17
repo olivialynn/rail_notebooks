@@ -70,11 +70,9 @@ Here we are defining:
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
+    from rail.core.utils import find_rail_file
     
-    flow_file = os.path.join(
-        RAILDIR, "rail/examples_data/goldenspike_data/data/pretrained_flow.pkl"
-    )
+    flow_file = find_rail_file("examples_data/goldenspike_data/data/pretrained_flow.pkl")
     bands = ["u", "g", "r", "i", "z", "y"]
     band_dict = {band: f"mag_{band}_lsst" for band in bands}
     rename_dict = {f"mag_{band}_lsst_err": f"mag_err_{band}_lsst" for band in bands}
@@ -382,11 +380,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7faa2c8675b0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7faa2c8672e0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4c30ad33d0>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f4c30ad3910>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7faa2c744a30>]),
+       <rail.core.utilStages.TableConverter at 0x7f4c309aca90>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

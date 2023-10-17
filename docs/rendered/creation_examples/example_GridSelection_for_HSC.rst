@@ -46,7 +46,7 @@ HSC.
     import pandas as pd
     #from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utils import RAILDIR, find_rail_file
+    from rail.core.utils import find_rail_file
     %matplotlib inline 
 
 .. code:: ipython3
@@ -216,8 +216,8 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, hsc_cutter
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 5.05 s, sys: 248 ms, total: 5.3 s
-    Wall time: 5.29 s
+    CPU times: user 3.92 s, sys: 221 ms, total: 4.14 s
+    Wall time: 4.15 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock

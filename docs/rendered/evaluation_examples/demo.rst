@@ -68,27 +68,25 @@ Next we need to set up some paths for the Data Store:
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
-    pdfs_file = os.path.join(RAILDIR, 'rail/examples_data/evaluation_data/data/output_fzboost.hdf5')
-    ztrue_file = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
-
-.. code:: ipython3
-
-    if not os.path.exists(pdfs_file):
+    from rail.core.utils import find_rail_file
+    try:
+        pdfs_file = find_rail_file('examples_data/evaluation_data/data/output_fzboost.hdf5')
+    except ValueError:
+        pdfs_file = 'examples_data/evaluation_data/data/output_fzboost.hdf5'
         try:
             os.makedirs(os.path.dirname(pdfs_file))
         except FileExistsError:
             pass
         curl_com = f"curl -o {pdfs_file} https://portal.nersc.gov/cfs/lsst/PZ/output_fzboost.hdf5"
         os.system(curl_com)
-
+    ztrue_file = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
 
 
 .. parsed-literal::
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  55.8M      0 --:--:-- --:--:-- --:--:-- 55.9M
+    100 47.1M  100 47.1M    0     0  26.5M      0  0:00:01  0:00:01 --:--:-- 26.5M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -284,7 +282,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f64774a0130>
+    <qp.ensemble.Ensemble at 0x7f46352bd000>
 
 
 
@@ -367,7 +365,7 @@ diagonal, the better is the PDFs calibration.
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_34_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_33_0.png
 
 
 The black horizontal line represents the ideal case where the PIT
@@ -419,7 +417,7 @@ Visual interpretation of the KS statistic:
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_40_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_39_0.png
 
 
 .. code:: ipython3
@@ -579,3 +577,4 @@ depending on the true conditional densities :math:`f(z | x)`.
 We note that all of the quantities as run individually are identical to
 the quantities in our summary table - a nice check that things have run
 properly.
+

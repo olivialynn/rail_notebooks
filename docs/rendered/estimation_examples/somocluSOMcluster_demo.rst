@@ -98,7 +98,7 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 9434k  100 9434k    0     0  7959k      0  0:00:01  0:00:01 --:--:-- 7968k
+    100 9434k  100 9434k    0     0  9569k      0 --:--:-- --:--:-- --:--:-- 9568k
 
 
 .. code:: ipython3
@@ -173,15 +173,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 25s, sys: 636 ms, total: 5min 25s
-    Wall time: 2min 50s
+    CPU times: user 5min 28s, sys: 480 ms, total: 5min 28s
+    Wall time: 2min 49s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f86f4f283a0>
+    <rail.core.data.ModelHandle at 0x7fdaa4988190>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f86a3aa3820>
+    <rail.core.data.QPHandle at 0x7fda509edf90>
 
 
 
@@ -733,7 +733,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f86a39fc5e0>
+    <matplotlib.legend.Legend at 0x7fda583c71c0>
 
 
 
@@ -782,7 +782,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f86a0b11150>
+    <rail.core.data.QPHandle at 0x7fda508dfd00>
 
 
 
@@ -809,7 +809,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f86a39fdc90>
+    <matplotlib.legend.Legend at 0x7fda508df310>
 
 
 
@@ -868,7 +868,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f86a0b12590>
+    <matplotlib.legend.Legend at 0x7fda58241c00>
 
 
 

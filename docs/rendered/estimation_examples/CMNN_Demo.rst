@@ -180,15 +180,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 2.85 ms, sys: 0 ns, total: 2.85 ms
-    Wall time: 4.11 ms
+    CPU times: user 2.23 ms, sys: 335 µs, total: 2.56 ms
+    Wall time: 2.41 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3561c90160>
+    <rail.core.data.ModelHandle at 0x7fced8fea2f0>
 
 
 
@@ -224,8 +224,8 @@ each galaxy as the redshift estimate:
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 1min 13s, sys: 22.5 ms, total: 1min 13s
-    Wall time: 1min 13s
+    CPU times: user 1min 6s, sys: 26.5 ms, total: 1min 6s
+    Wall time: 1min 6s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and

@@ -574,7 +574,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fda7a0ec040>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f23bec12650>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

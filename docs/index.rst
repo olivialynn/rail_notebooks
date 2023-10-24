@@ -14,7 +14,7 @@ Rail Notebooks
    :caption: Usage Demos
    :maxdepth: 2
 
-   Descriptions <../rail/docs/source/demonstrations>
+   Demonstration Descriptions <demonstrations>
    Core Notebooks <core_notebooks>
    Creation Notebooks <creation_notebooks>
    Estimation Notebooks <estimation_notebooks>

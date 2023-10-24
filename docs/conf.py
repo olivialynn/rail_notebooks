@@ -42,6 +42,13 @@ autoapi_add_toc_tree_entry = False
 autoapi_member_order = "bysource"
 """
 
+# -- Grab the demonstrations file from the main RAIL repo --------------------
+from urllib.request import urlretrieve
+
+urlretrieve (
+    "https://raw.githubusercontent.com/LSSTDESC/rail/main/docs/source/demonstrations.rst",
+    "demonstrations.rst"
+)
 
 # -- CSS ---------------------------------------------------------------------
 html_theme = "sphinx_rtd_theme"

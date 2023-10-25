@@ -87,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f026b6b8be0>
+    <pzflow.flow.Flow at 0x7f99639e4af0>
 
 
 
@@ -267,13 +267,13 @@ photometric errors.
           <td>inf</td>
           <td>28.038419</td>
           <td>0.362520</td>
-          <td>27.490723</td>
+          <td>27.490722</td>
           <td>0.229680</td>
           <td>28.102581</td>
           <td>0.525461</td>
           <td>26.066428</td>
           <td>0.172483</td>
-          <td>25.834954</td>
+          <td>25.834953</td>
           <td>0.307316</td>
           <td>0.008733</td>
           <td>0.007945</td>
@@ -285,7 +285,7 @@ photometric errors.
           <td>0.389236</td>
           <td>25.882633</td>
           <td>0.057988</td>
-          <td>24.797720</td>
+          <td>24.797719</td>
           <td>0.021944</td>
           <td>23.873355</td>
           <td>0.014716</td>
@@ -610,7 +610,7 @@ photometric errors.
         <tr>
           <th>99995</th>
           <td>2.147172</td>
-          <td>26.679935</td>
+          <td>26.679934</td>
           <td>0.434865</td>
           <td>26.162959</td>
           <td>0.102465</td>
@@ -781,7 +781,7 @@ photometric errors.
           <td>inf</td>
           <td>28.037851</td>
           <td>0.362986</td>
-          <td>27.490514</td>
+          <td>27.490513</td>
           <td>0.230109</td>
           <td>28.105745</td>
           <td>0.527673</td>
@@ -799,7 +799,7 @@ photometric errors.
           <td>0.459125</td>
           <td>25.873453</td>
           <td>0.067085</td>
-          <td>24.799593</td>
+          <td>24.799592</td>
           <td>0.025907</td>
           <td>23.873516</td>
           <td>0.017320</td>
@@ -841,7 +841,7 @@ photometric errors.
           <td>0.032739</td>
           <td>24.301492</td>
           <td>0.036797</td>
-          <td>23.575606</td>
+          <td>23.575605</td>
           <td>0.044069</td>
           <td>0.010929</td>
           <td>0.009473</td>
@@ -942,7 +942,7 @@ photometric errors.
           <td>27.607365</td>
           <td>0.703136</td>
           <td>26.435987</td>
-          <td>0.102014</td>
+          <td>0.102015</td>
           <td>26.228480</td>
           <td>0.084300</td>
           <td>25.717249</td>

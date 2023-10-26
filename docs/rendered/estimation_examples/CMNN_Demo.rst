@@ -19,41 +19,43 @@ deviation of this nearby set and returns a single Gaussian with a mean
 and width defined as such.
 
 The current version of the code consists of a training stage,
-``Inform_CMNNPDF``, that computes colors for a set of training data and
-an estimation stage ``CMNNPDF`` that calculates the Mahalanobis distance
-to each training galaxy for each test galaxy and returns a single
-Guassian PDF for each galaxy. The mean value of this Gaussian PDF can be
-estimated in one of three ways (see selection mode below), and the width
-is determined by the standard deviation of training galaxy redshifts
-within the threshold Mahalanobis distance. Future implementation
-improvements may change the output format to include multiple Gaussians.
+``CMNNInformer``, that computes colors for a set of training data and an
+estimation stage ``CMNNEstimator`` that calculates the Mahalanobis
+distance to each training galaxy for each test galaxy and returns a
+single Guassian PDF for each galaxy. The mean value of this Gaussian PDF
+can be estimated in one of three ways (see selection mode below), and
+the width is determined by the standard deviation of training galaxy
+redshifts within the threshold Mahalanobis distance. Future
+implementation improvements may change the output format to include
+multiple Gaussians.
 
 For the color calculation, there is an option for how to treat the
 “non-detections” in a band: the default choice is to ignore any colors
 that contain a non-detect magnitude and adjust the number of degrees of
 freedom in the Mahalanobis distance accordingly (this is how the CMNN
 algorithm was originally implemented). Or, if the configuration
-parameter ``nondetect_replace`` is set to ``True`` in
-``Inform_CMNNPDF``, the non-detected magnitudes will be replaced with
-the 1-sigma limiting magnitude in each band as supplied by the user via
-the ``mag_limits`` configuration parameter (or by the default 1-sigma
-limits if the user does not supply specific numbers). We have not done
-any exploration of the relative performance of these two choices, but
-note that there is not a significant performance difference in terms of
-runtime between the two methods.
+parameter ``nondetect_replace`` is set to ``True`` in ``CMNNInformer``,
+the non-detected magnitudes will be replaced with the 1-sigma limiting
+magnitude in each band as supplied by the user via the ``mag_limits``
+configuration parameter (or by the default 1-sigma limits if the user
+does not supply specific numbers). We have not done any exploration of
+the relative performance of these two choices, but note that there is
+not a significant performance difference in terms of runtime between the
+two methods.
 
 In addition to the Gaussian PDF for each test galaxy, two ancillary
 quantities are stored: ``zmode``: the mode of the redshift PDF and
 ``Ncm``, the integer number of “nearby” galaxies considered as neighbors
 for each galaxy.
 
-``Inform_CMNNPDF`` takes in a training data set and returns a model file
+``CMNNInformer`` takes in a training data set and returns a model file
 that simply consists of the computed colors and color errors (magnitude
 errors added in quadrature) for that dataset, the model to be used in
-the ``CMNNPDF`` stage. A modification of the original CMNN algorithm,
-“nondetections” are now replaced by the 1-sigma limiting magnitudes and
-the non-detect magnitude errors replaced with a value of 1.0. The config
-parameters that can be set by the user for ``Inform_CMNNPDF`` are:
+the ``CMNNEstimator`` stage. A modification of the original CMNN
+algorithm, “nondetections” are now replaced by the 1-sigma limiting
+magnitudes and the non-detect magnitude errors replaced with a value of
+1.0. The config parameters that can be set by the user for
+``CMNNInformer`` are:
 
 -  bands: list of the band names that should be present in the input
    data.
@@ -73,11 +75,11 @@ parameters that can be set by the user for ``Inform_CMNNPDF`` are:
    ``mag_limits`` (or default 1-sigma limits if not supplied), and will
    use all colors in the Mahalanobis distance calculation.
 
-The parameters that can be set via the config_params in ``CMNNPDF`` are
-described in brief below:
+The parameters that can be set via the config_params in
+``CMNNEstimator`` are described in brief below:
 
 -  bands, err_bands, redshift_col, mag_limits are all the same as
-   described above for Inform_CMNNPDF.
+   described above for CMNNInformer.
 -  ppf_value: float, usually 0.68 or 0.95, which sets the value of the
    PPF used in the Mahalanobis distance calculation.
 -  selection_mode: int, selects how the central value of the Gaussian
@@ -98,10 +100,10 @@ described in brief below:
    galaxies.
 
 Let’s grab some example data, train the model by running the
-``Inform_CMNNPDF`` ``inform`` method, then calculate a set of photo-z’s
-using ``CMNNPDF`` ``estimate``. Much of the following is copied from the
-``RAIL_estiation_demo.ipynb`` in the RAIL repo, so look at that notebook
-for general questions on setting up the RAIL infrastructure for
+``CMNNInformer`` ``inform`` method, then calculate a set of photo-z’s
+using ``CMNNEstimator`` ``estimate``. Much of the following is copied
+from the ``RAIL_estiation_demo.ipynb`` in the RAIL repo, so look at that
+notebook for general questions on setting up the RAIL infrastructure for
 estimators.
 
 .. code:: ipython3
@@ -136,9 +138,9 @@ The code-specific parameters
 ----------------------------
 
 As mentioned above, CMNN has particular configuration options that can
-be set when setting up an instance of our ``Inform_CMNNPDF`` stage,
-we’ll define those in a dictionary. Any parameters not specifically
-assigned will take on default values.
+be set when setting up an instance of our ``CMNNInformer`` stage, we’ll
+define those in a dictionary. Any parameters not specifically assigned
+will take on default values.
 
 .. code:: ipython3
 
@@ -149,8 +151,8 @@ rail object with a call to the base class.
 
 .. code:: ipython3
 
-    from rail.estimation.algos.cmnn import Inform_CMNNPDF, CMNNPDF
-    pz_train = Inform_CMNNPDF.make_stage(name='inform_CMNN', model='demo_cmnn_model.pkl', **cmnn_dict)
+    from rail.estimation.algos.cmnn import CMNNInformer, CMNNEstimator
+    pz_train = CMNNInformer.make_stage(name='inform_CMNN', model='demo_cmnn_model.pkl', **cmnn_dict)
 
 Now, let’s load our training data, which is stored in hdf5 format. We’ll
 load it into the Data Store so that the ceci stages are able to access
@@ -180,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 4.16 ms, sys: 15 µs, total: 4.17 ms
-    Wall time: 3.68 ms
+    CPU times: user 4.62 ms, sys: 114 µs, total: 4.73 ms
+    Wall time: 4.21 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f59d8859f00>
+    <rail.core.data.ModelHandle at 0x7fbfb47f62c0>
 
 
 
@@ -206,7 +208,7 @@ each galaxy as the redshift estimate:
 .. code:: ipython3
 
     %%time
-    pz = CMNNPDF.make_stage(name='CMNN', hdf5_groupname='photometry',
+    pz = CMNNEstimator.make_stage(name='CMNN', hdf5_groupname='photometry',
                             model=pz_train.get_handle('model'),
                             min_n=20,
                             selection_mode=1,
@@ -224,8 +226,8 @@ each galaxy as the redshift estimate:
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 1min 30s, sys: 42.3 ms, total: 1min 30s
-    Wall time: 1min 30s
+    CPU times: user 1min 36s, sys: 27.5 ms, total: 1min 36s
+    Wall time: 1min 36s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and
@@ -287,7 +289,7 @@ neighbor estimator:
 
 .. code:: ipython3
 
-    pz_rand = CMNNPDF.make_stage(name='CMNN_rand', hdf5_groupname='photometry',
+    pz_rand = CMNNEstimator.make_stage(name='CMNN_rand', hdf5_groupname='photometry',
                                  model=pz_train.get_handle('model'),
                                  min_n=20,
                                  selection_mode=0,
@@ -336,7 +338,7 @@ visually. Finally, we can try the weighted random selection by setting
 
 .. code:: ipython3
 
-    pz_weight = CMNNPDF.make_stage(name='CMNN_weight', hdf5_groupname='photometry',
+    pz_weight = CMNNEstimator.make_stage(name='CMNN_weight', hdf5_groupname='photometry',
                                    model=pz_train.get_handle('model'),
                                    min_n=20,
                                    selection_mode=2,

@@ -86,7 +86,7 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  30.9M      0  0:00:01  0:00:01 --:--:-- 31.0M
+    100 47.1M  100 47.1M    0     0  75.2M      0 --:--:-- --:--:-- --:--:-- 75.2M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -108,7 +108,7 @@ the data store
 .. code:: ipython3
 
     truth = DS.add_data('truth', ztrue_data()['photometry'], TableHandle)
-    ensemble = DS.add_data('ensemble', fzdata, QPHandle)
+    ensemble = DS.add_data('ensemble', fzdata(), QPHandle)
 
 .. code:: ipython3
 
@@ -136,6 +136,11 @@ FlexZBoost results
 .. code:: ipython3
 
     FZB_results = FZB_eval.evaluate(ensemble(), truth)
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  input: None, FZB_eval
 
 
 .. parsed-literal::
@@ -282,7 +287,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f34ce5cb4c0>
+    <qp.ensemble.Ensemble at 0x7f302648f370>
 
 
 

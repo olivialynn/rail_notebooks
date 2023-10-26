@@ -34,11 +34,15 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.core.utilStages.RowSelector'>
     <class 'rail.core.utilStages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
@@ -91,7 +95,7 @@ imports.
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 54 fully formed stages to rail.stages
+    Attached 12 base classes and 58 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -160,11 +164,15 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.core.utilStages.RowSelector'>
     <class 'rail.core.utilStages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
@@ -188,8 +196,8 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.tools.utilPhotometry.Dereddener'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteInformer'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
-    <class 'rail.estimation.algos.cmnn.Inform_CMNNPDF'>
-    <class 'rail.estimation.algos.cmnn.CMNNPDF'>
+    <class 'rail.estimation.algos.cmnn.CMNNInformer'>
+    <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.creation.engines.dsps_photometry_creator.DSPSPhotometryCreator'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSSingleSedModeler'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
@@ -232,7 +240,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
-    <class 'rail.estimation.algos.cmnn.CMNNPDF'>
+    <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetEstimator'>
@@ -574,7 +582,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fba1f7ef250>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f50099d3f70>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

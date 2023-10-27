@@ -28,7 +28,7 @@ This notebook shows how to:
     from rail.creation.engines.flowEngine import FlowCreator, FlowPosterior
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utilStages import ColumnMapper, TableConverter
+    from rail.core.util_stages import ColumnMapper, TableConverter
 
 
 We’ll start by setting up the RAIL data store. RAIL uses
@@ -380,11 +380,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb240a0cdc0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fb21512f8e0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f51ac5f9ba0>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f51c1cfbf10>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7fb240a76530>]),
+       <rail.core.util_stages.TableConverter at 0x7f51ac4624a0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -447,14 +447,14 @@ each case.
     
     Executing col_remapper_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
     Output writing to ./col_remapper_test.out
     
     Job col_remapper_test has completed successfully!
     
     Executing table_conv_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
     Output writing to ./table_conv_test.out
     
     Job table_conv_test has completed successfully!

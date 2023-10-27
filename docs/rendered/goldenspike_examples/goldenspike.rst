@@ -66,7 +66,7 @@ Imports
     from rail.creation.engines.flowEngine import FlowModeler, FlowCreator, FlowPosterior
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utilStages import ColumnMapper, TableConverter
+    from rail.core.util_stages import ColumnMapper, TableConverter
     
     from rail.estimation.algos.bpz_lite import BPZliteInformer, BPZliteEstimator
     from rail.estimation.algos.k_nearneigh import KNearNeighInformer, KNearNeighEstimator
@@ -210,7 +210,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f90337e3c10>
+    <rail.tools.flow_handle.FlowHandle at 0x7fb9a9dcccd0>
 
 
 
@@ -738,19 +738,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:17] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:26] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:17] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:26] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:18] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:27] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:18] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:27] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -765,11 +765,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:26] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:34] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:26] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:34] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:35] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:35:35] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -780,23 +788,11 @@ an SED template library for a template-fitting or hybrid estimator.
     Inserting handle into data store.  model_inform_FZBoost: inprogress_fzboost.pkl, inform_FZBoost
 
 
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:27] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:38:27] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f903150d9c0>
+    <rail.core.data.ModelHandle at 0x7fb9539c4e50>
 
 
 
@@ -1511,30 +1507,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f90a86aeaa0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f90a86aedd0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f904cd42080>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7fb9d6353190>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fb9565bb670>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fb955c72530>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f903c2aa3b0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f90336bf760>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f90336bfee0>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f90336bdcc0>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f90336bf820>,
+       <rail.core.util_stages.TableConverter at 0x7fb9565ba290>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7fb955fde410>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fb955fddae0>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7fb955fdc220>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7fb955fdffd0>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.utilStages.TableConverter at 0x7f90336bdc00>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f9032f9a980>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f903c29d270>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f903c2ab310>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f9017eebdf0>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f904cd439a0>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f9017ee83a0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f9013d799f0>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f9013d7b580>]),
+       <rail.core.util_stages.TableConverter at 0x7fb955fdf7c0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7fb956588b20>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7fb9565bad40>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7fb955c73760>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7fb95326eb00>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7fb955c70c40>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7fb95326e530>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7fb95329bdc0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7fb9532e7880>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1584,14 +1580,14 @@ Read back the pipeline and run it
     
     Executing col_remapper_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_test.pq 
     Output writing to ./col_remapper_test.out
     
     Job col_remapper_test has completed successfully!
     
     Executing table_conv_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_test.hdf5 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_test.hdf5 
     Output writing to ./table_conv_test.out
     
     Job table_conv_test has completed successfully!
@@ -1633,14 +1629,14 @@ Read back the pipeline and run it
     
     Executing col_remapper_train
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.ColumnMapper   --input=./output_quantity_cut.pq   --name=col_remapper_train   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_train.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_quantity_cut.pq   --name=col_remapper_train   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_train.pq 
     Output writing to ./col_remapper_train.out
     
     Job col_remapper_train has completed successfully!
     
     Executing table_conv_train
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.utilStages.TableConverter   --input=./output_col_remapper_train.pq   --name=table_conv_train   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_train.hdf5 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_train.pq   --name=table_conv_train   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_train.hdf5 
     Output writing to ./table_conv_train.out
     
     Job table_conv_train has completed successfully!

@@ -39,7 +39,7 @@ This notebook will cover three scenarios of increasing complexity:
     )
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utilStages import ColumnMapper
+    from rail.core.util_stages import ColumnMapper
 
 
 .. code:: ipython3
@@ -140,7 +140,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f2db0e8a110>
+    <qp.ensemble.Ensemble at 0x7f035abb6140>
 
 
 
@@ -598,7 +598,7 @@ grid.
 
 .. code:: ipython3
 
-    from rail.core.utilStages import RowSelector
+    from rail.core.util_stages import RowSelector
     
     # dict to save the marginalized posteriors
     pdfs_u_marginalized = {}

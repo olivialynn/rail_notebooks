@@ -30,9 +30,9 @@ be what we get by importing ``rail`` and ``rail.stages``.
 
 .. parsed-literal::
 
-    <class 'rail.core.utilStages.ColumnMapper'>
-    <class 'rail.core.utilStages.RowSelector'>
-    <class 'rail.core.utilStages.TableConverter'>
+    <class 'rail.core.util_stages.ColumnMapper'>
+    <class 'rail.core.util_stages.RowSelector'>
+    <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
@@ -107,12 +107,12 @@ To see this in action:
 
     # with prefix
     
-    print(rail.core.utilStages.ColumnMapper)
+    print(rail.core.util_stages.ColumnMapper)
 
 
 .. parsed-literal::
 
-    <class 'rail.core.utilStages.ColumnMapper'>
+    <class 'rail.core.util_stages.ColumnMapper'>
 
 
 .. code:: ipython3
@@ -141,7 +141,7 @@ To see this in action:
 
 .. parsed-literal::
 
-    <class 'rail.core.utilStages.ColumnMapper'>
+    <class 'rail.core.util_stages.ColumnMapper'>
 
 
 Listing imported stages (2/2)
@@ -160,9 +160,9 @@ Note that we can now just call ``RailStage`` instead of
 
 .. parsed-literal::
 
-    <class 'rail.core.utilStages.ColumnMapper'>
-    <class 'rail.core.utilStages.RowSelector'>
-    <class 'rail.core.utilStages.TableConverter'>
+    <class 'rail.core.util_stages.ColumnMapper'>
+    <class 'rail.core.util_stages.RowSelector'>
+    <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
@@ -582,7 +582,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f50099d3f70>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f35300dbeb0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

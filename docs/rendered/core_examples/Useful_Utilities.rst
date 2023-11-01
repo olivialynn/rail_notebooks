@@ -88,14 +88,14 @@ imports.
     Imported rail.core
     Imported rail.dsps
     Imported rail.flexzboost
-    Failed to import rail.gpz because: No module named 'rail.estimation.algos.gpz_v1'
+    Imported rail.gpz
     Imported rail.hub
     Imported rail.pipelines
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 58 fully formed stages to rail.stages
+    Attached 12 base classes and 60 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -203,6 +203,8 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostInformer'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
+    <class 'rail.estimation.algos.gpz.GPzInformer'>
+    <class 'rail.estimation.algos.gpz.GPzEstimator'>
     <class 'rail.creation.engines.flowEngine.FlowModeler'>
     <class 'rail.creation.engines.flowEngine.FlowCreator'>
     <class 'rail.creation.engines.flowEngine.FlowPosterior'>
@@ -242,6 +244,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
+    <class 'rail.estimation.algos.gpz.GPzEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetEstimator'>
     <class 'rail.estimation.algos.nz_dir.NZDirSummarizer'>
@@ -582,7 +585,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fafe3845b10>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f30ac0c8340>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

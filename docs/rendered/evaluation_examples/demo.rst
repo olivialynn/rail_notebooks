@@ -42,22 +42,6 @@ the golden spike example notebook in
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 Data
 ----
 
@@ -100,24 +84,9 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 47.1M  100 47.1M    0     0  61.8M      0 --:--:-- --:--:-- --:--:-- 61.9M
+    100 47.1M  100 47.1M    0     0  21.8M      0  0:00:02  0:00:02 --:--:-- 21.8M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -130,83 +99,20 @@ the data store
     fzdata = DS.read_file('pdfs_data', QPHandle, pdfs_file)
     ztrue_data = DS.read_file('ztrue_data', TableHandle, ztrue_file)
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 .. code:: ipython3
 
     ztrue = ztrue_data()['photometry']['redshift']
     zgrid = fzdata().metadata()['xvals'].ravel()
     photoz_mode = fzdata().mode(grid=zgrid)
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 .. code:: ipython3
 
     truth = DS.add_data('truth', ztrue_data()['photometry'], TableHandle)
     ensemble = DS.add_data('ensemble', fzdata(), QPHandle)
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 .. code:: ipython3
 
     DS.keys()
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 
@@ -227,40 +133,9 @@ FlexZBoost results
 
     FZB_eval = Evaluator.make_stage(name='FZB_eval', truth=truth)
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 .. code:: ipython3
 
     FZB_results = FZB_eval.evaluate(ensemble(), truth)
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::
@@ -286,21 +161,6 @@ We can view the results as a pandas dataframe:
     import tables_io
     results_df= tables_io.convertObj(FZB_results(), tables_io.types.PD_DATAFRAME)
     results_df
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 
@@ -409,21 +269,6 @@ the catalog.
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
     /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:26: UserWarning: p-value floored: true value smaller than 0.001
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
@@ -438,47 +283,17 @@ detailed below).
     quant_ens
 
 
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7feac3397bb0>
+    <qp.ensemble.Ensemble at 0x7f7922dc9270>
 
 
 
 .. code:: ipython3
 
     metamets
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 
@@ -498,21 +313,6 @@ PIT values
 
     pit_vals = np.array(pitobj.pit_samps)
     pit_vals
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 
@@ -543,21 +343,6 @@ PIT :math:`>0.9999`).
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
     PIT outlier rate of this sample: 0.058738
     PIT outlier rate of this sample: 0.058738
 
@@ -584,23 +369,8 @@ diagonal, the better is the PDFs calibration.
                     pit_out_rate=pit_out_rate, savefig=False)
 
 
-.. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_33_2.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_33_0.png
 
 
 The black horizontal line represents the ideal case where the PIT
@@ -640,21 +410,6 @@ class returns a named tuple with the statistic and p-value.
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
     PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
     PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
 
@@ -666,43 +421,13 @@ Visual interpretation of the KS statistic:
     ks_plot(pitobj)
 
 
-.. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-
-.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_39_2.png
+.. image:: ../../../docs/rendered/evaluation_examples/demo_files/../../../docs/rendered/evaluation_examples/demo_39_0.png
 
 
 .. code:: ipython3
 
     print(f"KS metric of this sample: {ks_stat_and_pval.statistic:.4f}") 
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::
@@ -732,21 +457,6 @@ are perfect.
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265037625993955e-10)
 
@@ -754,21 +464,6 @@ are perfect.
 .. code:: ipython3
 
     print(f"CvM metric of this sample: {cvm_stat_and_pval.statistic:.4f}") 
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::
@@ -795,21 +490,6 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
     PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
 
@@ -817,21 +497,6 @@ discrepancies in the tails of the distribution.
 .. code:: ipython3
 
     print(f"AD metric of this sample: {ad_stat_crit_sig.statistic:.4f}") 
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::
@@ -849,21 +514,6 @@ interval (0.01, 0.99).
     ad_stat_crit_sig_cut = pitobj.evaluate_PIT_anderson_ksamp(pit_min=0.01, pit_max=0.99)
     print(f"AD metric of this sample: {ad_stat_crit_sig.statistic:.4f}") 
     print(f"AD metric for 0.01 < PIT < 0.99: {ad_stat_crit_sig_cut.statistic:.4f}") 
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::
@@ -905,41 +555,10 @@ depending on the true conditional densities :math:`f(z | x)`.
 
     cdelossobj = CDELoss(fzdata.data, zgrid, ztrue)
 
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
-
-
 .. code:: ipython3
 
     cde_stat_and_pval = cdelossobj.evaluate()
     cde_stat_and_pval
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 
@@ -953,21 +572,6 @@ depending on the true conditional densities :math:`f(z | x)`.
 .. code:: ipython3
 
     print(f"CDE loss of this sample: {cde_stat_and_pval.statistic:.2f}") 
-
-
-.. parsed-literal::
-
-    Error in callback <bound method AutoreloadMagics.pre_run_cell of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7feac85ae200>> (for pre_run_cell):
-
-
-::
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    TypeError: AutoreloadMagics.pre_run_cell() takes 1 positional argument but 2 were given
 
 
 .. parsed-literal::

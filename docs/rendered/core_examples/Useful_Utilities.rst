@@ -88,6 +88,14 @@ imports.
     Imported rail.core
     Imported rail.dsps
     Imported rail.flexzboost
+    Install FSPS with the following commands:
+    pip uninstall fsps
+    git clone --recursive https://github.com/dfm/python-fsps.git
+    cd python-fsps
+    python -m pip install .
+    export SPS_HOME=$(pwd)/src/fsps/libfsps
+    
+    Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
     Imported rail.pipelines
@@ -95,7 +103,7 @@ imports.
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 60 fully formed stages to rail.stages
+    Attached 12 base classes and 62 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -203,6 +211,8 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostInformer'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
+    <class 'rail.creation.engines.fsps_photometry_creator.FSPSPhotometryCreator'>
+    <class 'rail.creation.engines.fsps_sed_modeler.FSPSSedModeler'>
     <class 'rail.estimation.algos.gpz.GPzInformer'>
     <class 'rail.estimation.algos.gpz.GPzEstimator'>
     <class 'rail.creation.engines.flowEngine.FlowModeler'>
@@ -585,7 +595,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f30ac0c8340>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd7ace30b50>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -232,9 +232,11 @@ Let’s run the code and see how long it takes:
 
     Inserting handle into data store.  input: None, ObsCondition
     Assigning pixels.
+    No ra, dec found in catalogue, randomly assign pixels with weights.
+    Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 6.29 s, sys: 39.7 ms, total: 6.33 s
-    Wall time: 6.33 s
+    CPU times: user 3.46 s, sys: 26 ms, total: 3.48 s
+    Wall time: 3.48 s
 
 
 .. code:: ipython3
@@ -277,6 +279,8 @@ Let’s run the code and see how long it takes:
           <th>z_err</th>
           <th>y</th>
           <th>y_err</th>
+          <th>ra</th>
+          <th>decl</th>
           <th>pixel</th>
         </tr>
       </thead>
@@ -296,6 +300,8 @@ Let’s run the code and see how long it takes:
           <td>0.016124</td>
           <td>22.967642</td>
           <td>0.035845</td>
+          <td>61.171875</td>
+          <td>-40.620185</td>
           <td>162135</td>
         </tr>
         <tr>
@@ -313,6 +319,8 @@ Let’s run the code and see how long it takes:
           <td>0.016389</td>
           <td>23.018049</td>
           <td>0.037475</td>
+          <td>63.632812</td>
+          <td>-34.953865</td>
           <td>154458</td>
         </tr>
         <tr>
@@ -330,6 +338,8 @@ Let’s run the code and see how long it takes:
           <td>0.016790</td>
           <td>23.013980</td>
           <td>0.037341</td>
+          <td>52.795276</td>
+          <td>-42.210370</td>
           <td>164170</td>
         </tr>
         <tr>
@@ -347,6 +357,8 @@ Let’s run the code and see how long it takes:
           <td>0.016714</td>
           <td>23.017984</td>
           <td>0.037473</td>
+          <td>53.789062</td>
+          <td>-39.450895</td>
           <td>160588</td>
         </tr>
         <tr>
@@ -364,6 +376,8 @@ Let’s run the code and see how long it takes:
           <td>0.016666</td>
           <td>22.964041</td>
           <td>0.035732</td>
+          <td>69.609375</td>
+          <td>-28.971532</td>
           <td>145763</td>
         </tr>
       </tbody>
@@ -466,6 +480,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
 .. parsed-literal::
 
     Assigning pixels.
+    No ra, dec found in catalogue, randomly assign pixels with weights.
+    Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
 
 
@@ -509,6 +525,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <th>z_err</th>
           <th>y</th>
           <th>y_err</th>
+          <th>ra</th>
+          <th>decl</th>
           <th>pixel</th>
         </tr>
       </thead>
@@ -528,6 +546,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <td>0.016085</td>
           <td>22.967855</td>
           <td>0.035617</td>
+          <td>61.171875</td>
+          <td>-40.620185</td>
           <td>162135</td>
         </tr>
         <tr>
@@ -545,6 +565,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <td>0.016306</td>
           <td>23.017796</td>
           <td>0.036954</td>
+          <td>63.632812</td>
+          <td>-34.953865</td>
           <td>154458</td>
         </tr>
         <tr>
@@ -562,6 +584,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <td>0.016710</td>
           <td>23.013801</td>
           <td>0.036869</td>
+          <td>52.795276</td>
+          <td>-42.210370</td>
           <td>164170</td>
         </tr>
         <tr>
@@ -579,6 +603,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <td>0.016629</td>
           <td>23.017736</td>
           <td>0.036960</td>
+          <td>53.789062</td>
+          <td>-39.450895</td>
           <td>160588</td>
         </tr>
         <tr>
@@ -596,6 +622,8 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
           <td>0.016566</td>
           <td>22.964613</td>
           <td>0.035182</td>
+          <td>69.609375</td>
+          <td>-28.971532</td>
           <td>145763</td>
         </tr>
       </tbody>

@@ -28,7 +28,7 @@ hyperbolical magnitudes using the pipeline stages
     import rail
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.tools.utilPhotometry import HyperbolicSmoothing, HyperbolicMagnitudes
+    from rail.tools.util_photometry import HyperbolicSmoothing, HyperbolicMagnitudes
 
 We first set up a data store for interactive usage of RAIL (see the
 ``examples/goldenspike_examples/goldenspike.ipynb`` for further
@@ -92,7 +92,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f92f80e2c80>
+    <rail.core.data.PqHandle at 0x7f4248013610>
 
 
 
@@ -239,7 +239,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f92f815b160>
+    <rail.core.data.PqHandle at 0x7f4248013df0>
 
 
 

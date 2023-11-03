@@ -14,7 +14,7 @@ last successfully run: Apr 26, 2023
     from rail.core.stage import RailStage
     from rail.core.data import TableHandle
     from rail.core.utils import find_rail_file
-    from rail.tools.utilPhotometry import LSSTFluxToMagConverter, Dereddener
+    from rail.tools.util_photometry import LSSTFluxToMagConverter, Dereddener
 
 .. code:: ipython3
 
@@ -95,7 +95,7 @@ is written out explicitly as an example:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/tools/utilPhotometry.py:379: RuntimeWarning: invalid value encountered in log10
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/tools/util_photometry.py:379: RuntimeWarning: invalid value encountered in log10
       return -2.5*np.log10(flux_vals) + self.config.mag_offset
 
 
@@ -166,7 +166,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     63.2 MiB of 64.0 MiB |  31.4 MiB/s |################## |  98% | ETA:   0:00:00
+     61.6 MiB of 64.0 MiB |  58.8 MiB/s |################## |  96% | ETA:   0:00:00
 
 .. parsed-literal::
 
@@ -177,7 +177,7 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     63.2 MiB of 64.0 MiB |  33.3 MiB/s |################## |  98% | ETA:   0:00:00
+     63.2 MiB of 64.0 MiB |  61.6 MiB/s |################## |  98% | ETA:   0:00:00
 
 .. code:: ipython3
 

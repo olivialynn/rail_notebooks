@@ -198,10 +198,10 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.degradation.spectroscopic_degraders.LineConfusion'>
     <class 'rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness'>
     <class 'rail.creation.degradation.lsst_error_model.LSSTErrorModel'>
-    <class 'rail.tools.utilPhotometry.HyperbolicSmoothing'>
-    <class 'rail.tools.utilPhotometry.HyperbolicMagnitudes'>
-    <class 'rail.tools.utilPhotometry.LSSTFluxToMagConverter'>
-    <class 'rail.tools.utilPhotometry.Dereddener'>
+    <class 'rail.tools.util_photometry.HyperbolicSmoothing'>
+    <class 'rail.tools.util_photometry.HyperbolicMagnitudes'>
+    <class 'rail.tools.util_photometry.LSSTFluxToMagConverter'>
+    <class 'rail.tools.util_photometry.Dereddener'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteInformer'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNInformer'>
@@ -595,7 +595,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd7ace30b50>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fecfe78d8d0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -98,7 +98,7 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 9434k  100 9434k    0     0  9521k      0 --:--:-- --:--:-- --:--:-- 9520k
+    100 9434k  100 9434k    0     0  7320k      0  0:00:01  0:00:01 --:--:-- 7319k
 
 
 .. code:: ipython3
@@ -173,15 +173,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 9min 8s, sys: 896 ms, total: 9min 9s
-    Wall time: 2min 20s
+    CPU times: user 7min 44s, sys: 732 ms, total: 7min 45s
+    Wall time: 3min 57s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f41c4c83cd0>
+    <rail.core.data.ModelHandle at 0x7f797ceab460>
 
 
 
@@ -386,8 +386,8 @@ compare it to the true tomographic bin file:
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {3584, 1, 1536, 2051, 1027, 3075, 2054, 7, 3080, 4105, 9, 3590, 12, 13, 1036, 1542, 2578, 3604, 3605, 537, 1563, 1052, 3614, 31, 1057, 546, 4643, 36, 1572, 38, 3620, 3622, 555, 3115, 2093, 3628, 1071, 560, 50, 2098, 565, 1590, 570, 2107, 1090, 2115, 579, 1606, 585, 588, 2125, 1100, 4176, 1617, 1619, 85, 1626, 91, 4188, 1627, 3677, 3680, 3171, 2149, 1126, 2151, 2663, 3175, 1637, 1638, 621, 2158, 1648, 625, 628, 2165, 123, 3196, 1659, 3708, 3200, 1666, 4227, 2691, 1667, 1161, 1673, 141, 655, 1685, 3222, 1687, 3736, 1689, 2205, 2206, 4768, 1697, 169, 2732, 173, 685, 688, 2225, 178, 2227, 691, 1202, 1712, 1716, 1719, 1721, 187, 1728, 1734, 1226, 2251, 3788, 2255, 208, 4305, 2258, 210, 724, 725, 726, 1231, 1749, 2266, 1757, 3296, 1762, 1251, 1254, 231, 1766, 1257, 235, 2284, 2285, 747, 748, 241, 2290, 753, 3314, 245, 1778, 1271, 1781, 1784, 4347, 1787, 2301, 1788, 1790, 2304, 1282, 1286, 3335, 1799, 2324, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1827, 1829, 1834, 1835, 1324, 814, 1839, 816, 817, 2867, 1846, 3897, 1849, 2881, 2370, 2371, 1857, 839, 4425, 330, 3915, 2380, 334, 2382, 1358, 849, 850, 339, 1872, 1367, 344, 3931, 2396, 860, 3428, 1894, 4967, 1384, 873, 1899, 879, 2416, 3440, 882, 2932, 3448, 900, 389, 903, 904, 393, 2442, 2951, 1416, 2957, 1927, 1931, 401, 915, 1940, 405, 1943, 2970, 411, 922, 1436, 1948, 419, 1956, 421, 4008, 426, 428, 3505, 4018, 1973, 442, 958, 2497, 963, 1988, 453, 1478, 455, 457, 971, 1484, 3021, 3533, 976, 2002, 2004, 1493, 3031, 983, 3035, 2014, 992, 3554, 2018, 2532, 999, 1512, 2023, 1515, 493, 1006, 496, 1009, 498, 4085, 2039, 509, 511}
-    516 out of 5041 have usable data
+    {1, 1025, 2051, 4611, 1028, 1537, 3586, 3080, 3594, 15, 16, 17, 530, 4625, 20, 3599, 1554, 1047, 24, 25, 541, 543, 545, 549, 1064, 41, 2092, 2095, 1073, 1074, 3636, 565, 569, 1593, 2107, 2109, 1597, 2111, 4673, 1603, 1606, 583, 1608, 1097, 76, 1100, 78, 2127, 592, 3662, 594, 83, 2131, 596, 4186, 91, 1114, 93, 3165, 3678, 3170, 611, 1635, 1127, 1128, 3180, 2160, 1136, 2165, 1654, 633, 1660, 125, 127, 2176, 642, 1668, 4229, 647, 1160, 652, 3216, 1169, 1682, 2195, 2196, 1683, 3224, 2203, 2204, 1691, 4768, 1702, 681, 171, 684, 1712, 692, 182, 188, 191, 2239, 4289, 3263, 708, 714, 4812, 1233, 210, 1234, 2260, 213, 3796, 1240, 3800, 2268, 222, 2271, 4831, 3297, 1252, 3302, 1769, 2794, 4331, 747, 1772, 1262, 1774, 241, 242, 753, 3313, 249, 1787, 2301, 1789, 2304, 2816, 4354, 2819, 1284, 3333, 778, 781, 3856, 2321, 3858, 787, 1810, 1812, 1814, 283, 799, 1311, 1824, 803, 1315, 1829, 2855, 808, 3367, 1833, 2859, 812, 3372, 1324, 1326, 3376, 1834, 3378, 1331, 1837, 1839, 823, 2872, 313, 1847, 1853, 2366, 831, 1854, 1858, 837, 1861, 4423, 1864, 329, 331, 1868, 334, 1358, 338, 4435, 2389, 1365, 344, 347, 863, 866, 3942, 1383, 1386, 365, 880, 885, 888, 377, 3966, 3970, 390, 904, 393, 2952, 1930, 1935, 916, 2965, 3478, 1941, 1943, 3992, 4506, 411, 3993, 3996, 1950, 929, 420, 422, 4007, 1449, 427, 1453, 1966, 2991, 4014, 4017, 2994, 2995, 948, 1459, 1971, 4019, 440, 441, 2491, 1980, 445, 4034, 1986, 2500, 4037, 969, 1996, 1997, 1486, 463, 975, 977, 3534, 2003, 2005, 985, 3035, 990, 480, 2016, 482, 1506, 999, 2025, 1515, 3054, 497, 2545, 1009, 1010, 3570, 2038, 1527, 2047}
+    520 out of 5041 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f416e190cd0>
+    <rail.core.data.QPHandle at 0x7f792d0117b0>
 
 
 
@@ -490,8 +490,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {89}
-    44 out of 100 have usable data
+    {85}
+    46 out of 100 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -507,8 +507,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {179}
-    82 out of 200 have usable data
+    {171}
+    78 out of 200 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -524,8 +524,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {359}
-    172 out of 500 have usable data
+    {493, 343}
+    174 out of 500 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -541,8 +541,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {738, 99, 573, 994, 542, 999, 623, 719, 949, 758, 509, 382, 286}
-    307 out of 1000 have usable data
+    {768, 995, 617, 749, 688, 274, 948, 246, 758, 828, 733}
+    308 out of 1000 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -558,8 +558,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {1280, 1286, 1418, 1294, 1181, 1439, 800, 1448, 1325, 46, 691, 949, 573, 1470, 581, 974, 1490, 1109, 1493, 602, 1247, 738, 994, 999, 1258, 500, 758, 1276, 637}
-    392 out of 1500 have usable data
+    {898, 1284, 1416, 650, 785, 1429, 413, 1448, 47, 688, 948, 1461, 1078, 1464, 1468, 1474, 1353, 585, 1488, 1105, 1235, 602, 739, 1253, 360, 1001, 497, 1270, 1399, 758, 636, 638}
+    391 out of 1500 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -575,8 +575,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {1280, 768, 769, 1286, 1542, 646, 1418, 396, 1294, 1807, 1936, 658, 276, 919, 666, 1948, 30, 1439, 416, 1695, 290, 547, 672, 1788, 1823, 172, 1325, 1844, 1589, 1591, 1847, 953, 318, 1470, 1601, 963, 70, 590, 974, 210, 1490, 723, 213, 1493, 857, 602, 988, 605, 1758, 1247, 738, 1891, 1510, 999, 1258, 1899, 1517, 878, 496, 1524, 1909, 247, 1656, 1529, 1276, 765}
-    443 out of 2000 have usable data
+    {636, 1665, 898, 643, 1284, 764, 771, 392, 1416, 1783, 1935, 145, 404, 21, 1429, 538, 796, 1694, 927, 161, 676, 1318, 552, 1704, 1835, 556, 939, 688, 1841, 50, 1842, 1971, 1461, 823, 1464, 1468, 701, 1474, 325, 1488, 850, 1235, 723, 343, 1753, 602, 1755, 1889, 739, 1253, 1254, 487, 1511, 361, 873, 1897, 1001, 1517, 497, 1269, 1270, 1399, 1525, 1401, 1786, 1148, 638}
+    442 out of 2000 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -592,7 +592,7 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {2566, 11, 17, 2067, 22, 535, 2073, 1050, 1052, 2087, 1576, 44, 562, 1591, 2105, 79, 87, 1624, 2649, 2653, 1630, 1633, 2663, 618, 118, 1142, 120, 2681, 1143, 1656, 1170, 2198, 1175, 1687, 2206, 165, 2726, 2216, 2735, 2225, 689, 696, 1722, 191, 2244, 200, 2255, 2258, 218, 1246, 1247, 2274, 2786, 2279, 1768, 233, 1258, 1267, 761, 1788, 1278, 768, 1286, 777, 1801, 2320, 273, 2324, 280, 794, 283, 1311, 800, 1823, 1827, 2343, 1322, 300, 1326, 2867, 1844, 310, 1847, 314, 2874, 319, 320, 2880, 322, 2881, 847, 1359, 851, 2388, 2900, 344, 2392, 1369, 2908, 1378, 1891, 1383, 1387, 1899, 2414, 2932, 1911, 376, 892, 903, 2951, 1416, 2954, 2957, 921, 410, 2970, 1435, 1948, 1452, 438, 2998, 2490, 954, 1470, 2497, 2501, 967, 2504, 2506, 459, 2510, 2516, 1493, 2520, 1502, 481, 999, 1517, 1011, 501, 2039, 1016, 1529, 1020}
+    {8, 2056, 2572, 18, 1564, 2083, 554, 1067, 44, 1582, 562, 59, 2114, 1603, 1096, 586, 74, 78, 1103, 2129, 87, 1116, 2654, 1122, 2147, 2664, 108, 626, 115, 1143, 2680, 1663, 641, 135, 2183, 1683, 2710, 2201, 2713, 157, 1694, 2211, 163, 676, 2728, 2733, 1209, 1210, 2239, 192, 1221, 2758, 1231, 2256, 2257, 211, 2773, 216, 1753, 730, 1755, 221, 2270, 2274, 2276, 2789, 1253, 2280, 1257, 1258, 755, 1779, 1273, 762, 251, 1276, 1786, 254, 770, 2321, 788, 2334, 286, 2338, 2339, 804, 2859, 1835, 2872, 836, 330, 1357, 335, 2386, 2900, 1880, 2908, 349, 1376, 1381, 2919, 1897, 1386, 1900, 1390, 374, 381, 898, 390, 2951, 2952, 1418, 397, 909, 1935, 2965, 1430, 920, 411, 2974, 929, 1956, 2471, 2991, 944, 2994, 1971, 1464, 445, 958, 2496, 1474, 2500, 2506, 459, 2001, 2003, 469, 471, 2016, 2534, 1004, 1517}
     501 out of 3000 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
@@ -609,8 +609,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {2048, 1536, 2051, 2052, 3075, 2566, 3590, 3080, 521, 3085, 15, 17, 18, 3604, 3605, 2073, 1057, 548, 1572, 3621, 3620, 40, 3622, 1576, 3115, 3628, 48, 2098, 1075, 3634, 3128, 571, 66, 1090, 1093, 1606, 1607, 585, 77, 3664, 1617, 1107, 3670, 2649, 3677, 3680, 1121, 3170, 99, 3171, 1633, 1635, 2663, 2152, 105, 3175, 1131, 1637, 1638, 3691, 3693, 1136, 1649, 1141, 1142, 119, 3196, 125, 3708, 3200, 130, 2691, 1667, 3716, 1671, 1161, 1673, 3212, 655, 1680, 145, 1169, 1172, 3222, 1687, 1178, 2206, 3745, 1699, 164, 1193, 1709, 2735, 1712, 2225, 2227, 1715, 3254, 2744, 1721, 1722, 3262, 3788, 2255, 2258, 2770, 1748, 1749, 1757, 1247, 3296, 1759, 2786, 3298, 1254, 2279, 1766, 1258, 2283, 1772, 241, 3314, 1781, 3320, 1784, 3835, 1790, 257, 262, 3334, 3335, 1286, 1799, 779, 1801, 2320, 2321, 2324, 3864, 1818, 3869, 286, 1829, 1832, 811, 3372, 1835, 1326, 3375, 1839, 2867, 3379, 311, 3897, 826, 2874, 1340, 2880, 2881, 2371, 3396, 3910, 3915, 2380, 845, 847, 1359, 850, 1362, 2900, 2392, 1369, 347, 2908, 3931, 1378, 3428, 1894, 1383, 1387, 1899, 3440, 882, 883, 2932, 3448, 3973, 903, 2951, 1416, 2954, 1927, 2957, 3470, 911, 3981, 1940, 1943, 2970, 1435, 1948, 928, 1956, 1452, 1968, 945, 3505, 1969, 1973, 2490, 1470, 2497, 963, 1988, 3525, 967, 2504, 2506, 3018, 971, 461, 3021, 1484, 3533, 2516, 1493, 3031, 1498, 3035, 988, 477, 3554, 1508, 3557, 998, 999, 1515, 1006, 2544, 498, 3576, 3577, 1019, 509}
-    516 out of 4000 have usable data
+    {0, 512, 513, 3586, 2052, 3076, 1539, 8, 3080, 3594, 12, 2572, 3599, 529, 1554, 1557, 1047, 25, 1564, 543, 3621, 3622, 1577, 3626, 557, 3630, 2095, 561, 3636, 566, 55, 3127, 1593, 571, 65, 3659, 3662, 2127, 3151, 2129, 1617, 3668, 3669, 3670, 89, 2649, 604, 3165, 2654, 3680, 3170, 2147, 1122, 2661, 1635, 2664, 1131, 3180, 3695, 1136, 1139, 628, 1654, 3196, 1663, 2176, 3202, 131, 3716, 3717, 1668, 2183, 3207, 137, 3723, 3213, 1168, 3217, 3218, 1683, 2196, 3224, 2201, 2713, 2203, 2204, 669, 3737, 1694, 2211, 676, 678, 1190, 2728, 2217, 2732, 2733, 2739, 1715, 3253, 2239, 1727, 194, 2256, 2257, 2768, 3796, 2773, 3800, 737, 3297, 3298, 2276, 2789, 3302, 1761, 2794, 1772, 1774, 752, 3313, 756, 758, 1273, 3322, 1787, 2816, 2305, 259, 2819, 3333, 2312, 1295, 2321, 3858, 275, 790, 3352, 1306, 1824, 290, 2339, 804, 3366, 2855, 3367, 297, 2859, 3883, 1837, 304, 3376, 3378, 2872, 3384, 315, 1853, 3390, 1854, 3906, 1859, 2374, 846, 1358, 3406, 2900, 2389, 855, 346, 1376, 866, 1378, 3426, 1381, 3942, 1897, 1386, 881, 885, 2934, 892, 3966, 384, 3970, 2952, 1418, 1930, 1935, 2449, 2965, 3478, 1430, 1943, 3992, 3996, 1950, 417, 1956, 2470, 2471, 939, 1453, 1966, 2991, 2994, 1459, 1971, 1972, 1463, 1464, 2491, 445, 1981, 962, 1986, 2500, 965, 3014, 969, 2506, 459, 3018, 973, 1486, 3534, 2001, 2003, 3540, 2008, 3035, 995, 3555, 2020, 2025, 2538, 1515, 3054, 1007, 3055, 2545, 3570, 3579}
+    517 out of 4000 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -626,8 +626,8 @@ photometric sample.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {3584, 1, 1536, 2051, 1027, 3075, 2054, 7, 3080, 4105, 9, 3590, 12, 13, 1036, 1542, 2578, 3604, 3605, 537, 1563, 1052, 3614, 31, 1057, 546, 4643, 36, 1572, 38, 3620, 3622, 555, 3115, 2093, 3628, 1071, 560, 50, 2098, 565, 1590, 570, 2107, 1090, 2115, 579, 1606, 585, 588, 2125, 1100, 4176, 1617, 1619, 85, 1626, 91, 4188, 1627, 3677, 3680, 3171, 2149, 1126, 2151, 2663, 3175, 1637, 1638, 621, 2158, 1648, 625, 628, 2165, 123, 3196, 1659, 3708, 3200, 1666, 4227, 2691, 1667, 1161, 1673, 141, 655, 1685, 3222, 1687, 3736, 1689, 2205, 2206, 4768, 1697, 169, 2732, 173, 685, 688, 2225, 178, 2227, 691, 1202, 1712, 1716, 1719, 1721, 187, 1728, 1734, 1226, 2251, 3788, 2255, 208, 4305, 2258, 210, 724, 725, 726, 1231, 1749, 2266, 1757, 3296, 1762, 1251, 1254, 231, 1766, 1257, 235, 2284, 2285, 747, 748, 241, 2290, 753, 3314, 245, 1778, 1271, 1781, 1784, 4347, 1787, 2301, 1788, 1790, 2304, 1282, 1286, 3335, 1799, 2324, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1827, 1829, 1834, 1835, 1324, 814, 1839, 816, 817, 2867, 1846, 3897, 1849, 2881, 2370, 2371, 1857, 839, 4425, 330, 3915, 2380, 334, 2382, 1358, 849, 850, 339, 1872, 1367, 344, 3931, 2396, 860, 3428, 1894, 4967, 1384, 873, 1899, 879, 2416, 3440, 882, 2932, 3448, 900, 389, 903, 904, 393, 2442, 2951, 1416, 2957, 1927, 1931, 401, 915, 1940, 405, 1943, 2970, 411, 922, 1436, 1948, 419, 1956, 421, 4008, 426, 428, 3505, 4018, 1973, 442, 958, 2497, 963, 1988, 453, 1478, 455, 457, 971, 1484, 3021, 3533, 976, 2002, 2004, 1493, 3031, 983, 3035, 2014, 992, 3554, 2018, 2532, 999, 1512, 2023, 1515, 493, 1006, 496, 1009, 498, 4085, 2039, 509, 511}
-    516 out of 5041 have usable data
+    {1, 1025, 2051, 4611, 1028, 1537, 3586, 3080, 3594, 15, 16, 17, 530, 4625, 20, 3599, 1554, 1047, 24, 25, 541, 543, 545, 549, 1064, 41, 2092, 2095, 1073, 1074, 3636, 565, 569, 1593, 2107, 2109, 1597, 2111, 4673, 1603, 1606, 583, 1608, 1097, 76, 1100, 78, 2127, 592, 3662, 594, 83, 2131, 596, 4186, 91, 1114, 93, 3165, 3678, 3170, 611, 1635, 1127, 1128, 3180, 2160, 1136, 2165, 1654, 633, 1660, 125, 127, 2176, 642, 1668, 4229, 647, 1160, 652, 3216, 1169, 1682, 2195, 2196, 1683, 3224, 2203, 2204, 1691, 4768, 1702, 681, 171, 684, 1712, 692, 182, 188, 191, 2239, 4289, 3263, 708, 714, 4812, 1233, 210, 1234, 2260, 213, 3796, 1240, 3800, 2268, 222, 2271, 4831, 3297, 1252, 3302, 1769, 2794, 4331, 747, 1772, 1262, 1774, 241, 242, 753, 3313, 249, 1787, 2301, 1789, 2304, 2816, 4354, 2819, 1284, 3333, 778, 781, 3856, 2321, 3858, 787, 1810, 1812, 1814, 283, 799, 1311, 1824, 803, 1315, 1829, 2855, 808, 3367, 1833, 2859, 812, 3372, 1324, 1326, 3376, 1834, 3378, 1331, 1837, 1839, 823, 2872, 313, 1847, 1853, 2366, 831, 1854, 1858, 837, 1861, 4423, 1864, 329, 331, 1868, 334, 1358, 338, 4435, 2389, 1365, 344, 347, 863, 866, 3942, 1383, 1386, 365, 880, 885, 888, 377, 3966, 3970, 390, 904, 393, 2952, 1930, 1935, 916, 2965, 3478, 1941, 1943, 3992, 4506, 411, 3993, 3996, 1950, 929, 420, 422, 4007, 1449, 427, 1453, 1966, 2991, 4014, 4017, 2994, 2995, 948, 1459, 1971, 4019, 440, 441, 2491, 1980, 445, 4034, 1986, 2500, 4037, 969, 1996, 1997, 1486, 463, 975, 977, 3534, 2003, 2005, 985, 3035, 990, 480, 2016, 482, 1506, 999, 2025, 1515, 3054, 497, 2545, 1009, 1010, 3570, 2038, 1527, 2047}
+    520 out of 5041 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -707,8 +707,8 @@ minimize the bias in average and standard deviation of galaxy redshifts.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {738, 99, 573, 994, 542, 999, 623, 719, 949, 758, 509, 382, 286}
-    307 out of 1000 have usable data
+    {768, 995, 617, 749, 688, 274, 948, 246, 758, 828, 733}
+    308 out of 1000 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -733,7 +733,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f41657b28f0>
+    <matplotlib.legend.Legend at 0x7f792d7e31f0>
 
 
 
@@ -766,8 +766,8 @@ bright dataset that we made?
     Process 0 running summarizer on chunk 0 - 645
     Inserting handle into data store.  cellid_output_bright_summarizer: inprogress_BRIGHT_output_cellIDs.hdf5, bright_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {994, 99, 542, 999, 623, 949, 382, 286}
-    230 out of 1000 have usable data
+    {768, 995, 617, 749, 274, 948}
+    231 out of 1000 have usable data
     Inserting handle into data store.  output_bright_summarizer: inprogress_BRIGHT_SOMoclu_ensemble.hdf5, bright_summarizer
     Inserting handle into data store.  single_NZ_bright_summarizer: inprogress_BRIGHT_fiducial_SOMoclu_NZ.hdf5, bright_summarizer
     Inserting handle into data store.  uncovered_cluster_file_bright_summarizer: inprogress_uncovered_cluster_file_bright_summarizer, bright_summarizer
@@ -782,7 +782,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f416498bd00>
+    <rail.core.data.QPHandle at 0x7f792c1a7b50>
 
 
 
@@ -809,7 +809,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f416498bb80>
+    <matplotlib.legend.Legend at 0x7f792c1a7c70>
 
 
 
@@ -868,7 +868,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f41654d3f40>
+    <matplotlib.legend.Legend at 0x7f79348797b0>
 
 
 
@@ -916,9 +916,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3634+-0.0041
+    The mean redshift of the SOM ensemble is: 0.3646+-0.004
     The mean redshift of the real data is: 0.3547
-    The bias of mean redshift is:0.0087+-0.0041
+    The bias of mean redshift is:0.0099+-0.004
 
 
 .. code:: ipython3
@@ -943,9 +943,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3517+-0.0029
+    The mean redshift of the SOM ensemble is: 0.3534+-0.003
     The mean redshift of the real data is: 0.3493
-    The bias of mean redshift is:0.0024+-0.0029
+    The bias of mean redshift is:0.0041+-0.003
 
 
 .. code:: ipython3

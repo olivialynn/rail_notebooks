@@ -210,7 +210,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f3abf13fd90>
+    <rail.tools.flow_handle.FlowHandle at 0x7f3f5dbd44c0>
 
 
 
@@ -756,6 +756,10 @@ an SED template library for a template-fitting or hybrid estimator.
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:16:45] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
@@ -783,6 +787,22 @@ an SED template library for a template-fitting or hybrid estimator.
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:16:49] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:16:49] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:16:49] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:16:49] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
@@ -794,7 +814,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3a60ef5ae0>
+    <rail.core.data.ModelHandle at 0x7f3f020c19c0>
 
 
 
@@ -859,246 +879,6 @@ using the training data. See `Izbicki & Lee
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
     Inserting handle into data store.  output_test_FZBoost: inprogress_output_test_FZBoost.hdf5, test_FZBoost
-      Generating new AB file El_B2004a.DC2LSST_u.AB....
-    El_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_u.AB
-      Generating new AB file El_B2004a.DC2LSST_g.AB....
-    El_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_g.AB
-      Generating new AB file El_B2004a.DC2LSST_r.AB....
-    El_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_r.AB
-      Generating new AB file El_B2004a.DC2LSST_i.AB....
-    El_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_i.AB
-      Generating new AB file El_B2004a.DC2LSST_z.AB....
-    El_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_z.AB
-      Generating new AB file El_B2004a.DC2LSST_y.AB....
-    El_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_y.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_u.AB....
-    Sbc_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_u.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_g.AB....
-    Sbc_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_g.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_r.AB....
-    Sbc_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_r.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_i.AB....
-    Sbc_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_i.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_z.AB....
-    Sbc_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_z.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_y.AB....
-    Sbc_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_y.AB
-      Generating new AB file Scd_B2004a.DC2LSST_u.AB....
-    Scd_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_u.AB
-      Generating new AB file Scd_B2004a.DC2LSST_g.AB....
-    Scd_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_g.AB
-      Generating new AB file Scd_B2004a.DC2LSST_r.AB....
-    Scd_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_r.AB
-      Generating new AB file Scd_B2004a.DC2LSST_i.AB....
-    Scd_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_i.AB
-      Generating new AB file Scd_B2004a.DC2LSST_z.AB....
-    Scd_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_z.AB
-      Generating new AB file Scd_B2004a.DC2LSST_y.AB....
-    Scd_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_y.AB
-      Generating new AB file Im_B2004a.DC2LSST_u.AB....
-    Im_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_u.AB
-      Generating new AB file Im_B2004a.DC2LSST_g.AB....
-    Im_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_g.AB
-      Generating new AB file Im_B2004a.DC2LSST_r.AB....
-    Im_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_r.AB
-      Generating new AB file Im_B2004a.DC2LSST_i.AB....
-    Im_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_i.AB
-      Generating new AB file Im_B2004a.DC2LSST_z.AB....
-    Im_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_z.AB
-      Generating new AB file Im_B2004a.DC2LSST_y.AB....
-    Im_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_y.AB
-      Generating new AB file SB3_B2004a.DC2LSST_u.AB....
-    SB3_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_u.AB
-      Generating new AB file SB3_B2004a.DC2LSST_g.AB....
-    SB3_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_g.AB
-      Generating new AB file SB3_B2004a.DC2LSST_r.AB....
-    SB3_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_r.AB
-      Generating new AB file SB3_B2004a.DC2LSST_i.AB....
-    SB3_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_i.AB
-      Generating new AB file SB3_B2004a.DC2LSST_z.AB....
-    SB3_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_z.AB
-      Generating new AB file SB3_B2004a.DC2LSST_y.AB....
-    SB3_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_y.AB
-      Generating new AB file SB2_B2004a.DC2LSST_u.AB....
-    SB2_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_u.AB
-      Generating new AB file SB2_B2004a.DC2LSST_g.AB....
-    SB2_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_g.AB
-      Generating new AB file SB2_B2004a.DC2LSST_r.AB....
-    SB2_B2004a DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_r.AB
-      Generating new AB file SB2_B2004a.DC2LSST_i.AB....
-    SB2_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_i.AB
-      Generating new AB file SB2_B2004a.DC2LSST_z.AB....
-    SB2_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_z.AB
-      Generating new AB file SB2_B2004a.DC2LSST_y.AB....
-    SB2_B2004a DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_y.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_u.AB....
-    ssp_25Myr_z008 DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_u.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_g.AB....
-    ssp_25Myr_z008 DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_g.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_r.AB....
-    ssp_25Myr_z008 DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_r.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_i.AB....
-    ssp_25Myr_z008 DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_i.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_z.AB....
-    ssp_25Myr_z008 DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_z.AB
-      Generating new AB file ssp_25Myr_z008.DC2LSST_y.AB....
-    ssp_25Myr_z008 DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_y.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_u.AB....
-    ssp_5Myr_z008 DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_u.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_g.AB....
-    ssp_5Myr_z008 DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_g.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_r.AB....
-    ssp_5Myr_z008 DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_r.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_i.AB....
-    ssp_5Myr_z008 DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_i.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_z.AB....
-    ssp_5Myr_z008 DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_z.AB
-      Generating new AB file ssp_5Myr_z008.DC2LSST_y.AB....
-    ssp_5Myr_z008 DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_y.AB
     Process 0 running estimator on chunk 0 - 150
     Inserting handle into data store.  output_estimate_bpz: inprogress_output_estimate_bpz.hdf5, estimate_bpz
 
@@ -1512,30 +1292,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f3ac172e470>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f3a934daec0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f3a934dadd0>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f3fc0327eb0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f3f5d6eec20>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f3f5d6ee7d0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7f3abec21540>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f3a934db940>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f3a934da020>,
-       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f3a934d95d0>,
-       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f3a934d9330>,
+       <rail.core.util_stages.TableConverter at 0x7f3f2c4f6b00>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f3f2c4f6980>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f3f2c4f59c0>,
+       <rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f3f2c4f40a0>,
+       <rail.creation.degradation.spectroscopic_degraders.LineConfusion at 0x7f3f2c4f6650>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7f3a934dba30>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f3a93721b70>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f3a60bafac0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f3a93499270>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f3a93433460>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f3a9349b460>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f3af3f0b4f0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f3af3f0a740>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f3af3fa4790>]),
+       <rail.core.util_stages.TableConverter at 0x7f3f2c4f54b0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f3f2c4a6260>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f3f44db48e0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f3f2c4f6350>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f3f01330490>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f3f5d6eedd0>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f3f01333670>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f3f012f7700>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f3f01363ac0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

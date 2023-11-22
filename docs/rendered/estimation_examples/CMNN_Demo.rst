@@ -1,5 +1,5 @@
-CMNN Demo
-=========
+RAIL CMNN Tutorial Notebook
+===========================
 
 **Author:** Sam Schmidt
 
@@ -160,9 +160,9 @@ it.
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
-    trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
-    testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
+    from rail.core.utils import RAILDIR
+    trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
+    testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
     test_data = DS.read_file("test_data", TableHandle, testFile)
 
@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 3.1 ms, sys: 0 ns, total: 3.1 ms
-    Wall time: 2.71 ms
+    CPU times: user 0 ns, sys: 3.13 ms, total: 3.13 ms
+    Wall time: 2.68 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f45fbbc4430>
+    <rail.core.data.ModelHandle at 0x7f95a2edf0a0>
 
 
 
@@ -226,8 +226,8 @@ each galaxy as the redshift estimate:
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 57.4 s, sys: 17.6 ms, total: 57.4 s
-    Wall time: 57.4 s
+    CPU times: user 56.5 s, sys: 21.3 ms, total: 56.5 s
+    Wall time: 56.5 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and

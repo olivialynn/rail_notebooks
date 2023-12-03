@@ -375,7 +375,7 @@ for the SEDs and filters.
     Inserting handle into data store.  output_bpz_def_prior: inprogress_bpz_results_defaultprior.hdf5, bpz_def_prior
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 24.5 s, sys: 131 ms, total: 24.7 s
+    CPU times: user 24.5 s, sys: 126 ms, total: 24.7 s
     Wall time: 24.6 s
 
 
@@ -383,7 +383,7 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f123275be80>
+    <rail.core.data.QPHandle at 0x7ffb52d6fe20>
 
 
 
@@ -463,7 +463,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f123253cc70>
+    <matplotlib.legend.Legend at 0x7ffba90a2530>
 
 
 
@@ -500,7 +500,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f12326e81c0>
+    <matplotlib.legend.Legend at 0x7ffb52cfc100>
 
 
 
@@ -609,7 +609,7 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557221   1.92425072 0.11125762]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 15.8 s, sys: 8.19 ms, total: 15.8 s
+    CPU times: user 15.8 s, sys: 4.07 ms, total: 15.8 s
     Wall time: 15.8 s
 
 
@@ -617,7 +617,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f128591ef80>
+    <rail.core.data.ModelHandle at 0x7ffb52bff790>
 
 
 
@@ -727,7 +727,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f122d4a1840>
+    <matplotlib.legend.Legend at 0x7ffb4da256c0>
 
 
 
@@ -801,15 +801,15 @@ results are any different:
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_rerun.hdf5, rerun_bpz
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 14.6 s, sys: 104 ms, total: 14.7 s
-    Wall time: 14.7 s
+    CPU times: user 14.7 s, sys: 83.9 ms, total: 14.8 s
+    Wall time: 14.8 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f12325d04c0>
+    <rail.core.data.QPHandle at 0x7ffb79de7f70>
 
 
 
@@ -836,7 +836,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f12326bdc60>
+    <matplotlib.legend.Legend at 0x7ffb52b90280>
 
 
 
@@ -926,7 +926,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1232675e10>
+    <matplotlib.legend.Legend at 0x7ffb52bfda50>
 
 
 

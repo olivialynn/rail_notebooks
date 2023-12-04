@@ -103,7 +103,7 @@ from NERSC.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 58.7M  100 58.7M    0     0   129M      0 --:--:-- --:--:-- --:--:--  129M
+    100 58.7M  100 58.7M    0     0  57.0M      0  0:00:01  0:00:01 --:--:-- 57.1M
 
 
 .. code:: ipython3

@@ -45,13 +45,13 @@ for bpz demo data:
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100  450k  100  450k    0     0  1389k      0 --:--:-- --:--:-- --:--:-- 1393k
+    100  450k  100  450k    0     0  1431k      0 --:--:-- --:--:-- --:--:-- 1428k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0  1053k      0 --:--:-- --:--:-- --:--:-- 1063k
+    100 83848  100 83848    0     0   836k      0 --:--:-- --:--:-- --:--:--  844k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0  1260k      0 --:--:-- --:--:-- --:--:-- 1279k
+    100 83848  100 83848    0     0   164k      0 --:--:-- --:--:-- --:--:--  164k
 
 
 The files must be untarred and moved, as well:
@@ -186,15 +186,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 16.3 s, sys: 4.55 ms, total: 16.3 s
-    Wall time: 16.3 s
+    CPU times: user 15.7 s, sys: 0 ns, total: 15.7 s
+    Wall time: 15.7 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f741e3f6ef0>
+    <rail.core.data.ModelHandle at 0x7fc5bb6802b0>
 
 
 
@@ -304,7 +304,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f73d131fc40>
+    <matplotlib.legend.Legend at 0x7fc56b3afc40>
 
 
 
@@ -629,15 +629,15 @@ later use) for the first time.
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_customprior.hdf5, rerun_bpz
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 27 s, sys: 120 ms, total: 27.1 s
-    Wall time: 27.1 s
+    CPU times: user 27.1 s, sys: 120 ms, total: 27.2 s
+    Wall time: 27.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f73d0f71bd0>
+    <rail.core.data.QPHandle at 0x7fc565ca9bd0>
 
 
 
@@ -667,7 +667,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f73cbb377c0>
+    <matplotlib.legend.Legend at 0x7fc565c0b220>
 
 
 
@@ -798,7 +798,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f73d0fe0ac0>
+    <matplotlib.legend.Legend at 0x7fc56b088a90>
 
 
 

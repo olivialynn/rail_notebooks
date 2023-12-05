@@ -96,7 +96,7 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 9434k  100 9434k    0     0  23.0M      0 --:--:-- --:--:-- --:--:-- 23.0M
+    100 9434k  100 9434k    0     0  9102k      0  0:00:01  0:00:01 --:--:-- 9106k
 
 
 .. code:: ipython3
@@ -175,7 +175,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 17s, sys: 892 ms, total: 8min 18s
+    CPU times: user 8min 15s, sys: 1.12 s, total: 8min 16s
     Wall time: 2min 7s
 
 
@@ -183,7 +183,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ffa0a77d420>
+    <rail.core.data.ModelHandle at 0x7f2fa425ba30>
 
 
 
@@ -252,7 +252,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7309/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7292/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -397,7 +397,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff9b4f73190>
+    <rail.core.data.QPHandle at 0x7f2f9a40f880>
 
 
 
@@ -433,7 +433,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff9b4f71930>
+    <matplotlib.legend.Legend at 0x7f2fa0cc35b0>
 
 
 
@@ -482,7 +482,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff9b286cf70>
+    <rail.core.data.QPHandle at 0x7f2f9a8b9210>
 
 
 
@@ -509,7 +509,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff9b286d990>
+    <matplotlib.legend.Legend at 0x7f2f9a8b9990>
 
 
 
@@ -568,7 +568,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff9b280ed10>
+    <matplotlib.legend.Legend at 0x7f2f9aa56bf0>
 
 
 

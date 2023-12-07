@@ -45,13 +45,13 @@ for bpz demo data:
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100  450k  100  450k    0     0   481k      0 --:--:-- --:--:-- --:--:--  481k
+    100  450k  100  450k    0     0   497k      0 --:--:-- --:--:-- --:--:--  497k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0   163k      0 --:--:-- --:--:-- --:--:--  163k
+    100 83848  100 83848    0     0   154k      0 --:--:-- --:--:-- --:--:--  154k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0   195k      0 --:--:-- --:--:-- --:--:--  195k
+    100 83848  100 83848    0     0   135k      0 --:--:-- --:--:-- --:--:--  135k
 
 
 The files must be untarred and moved, as well:
@@ -187,14 +187,14 @@ specify those numbers of the three broad types.
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
     CPU times: user 15.5 s, sys: 0 ns, total: 15.5 s
-    Wall time: 15.5 s
+    Wall time: 15.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f5ec8dfcd30>
+    <rail.core.data.ModelHandle at 0x7f40ed1386a0>
 
 
 
@@ -304,7 +304,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5e7ac9bb80>
+    <matplotlib.legend.Legend at 0x7f40c17a7b20>
 
 
 
@@ -629,15 +629,15 @@ later use) for the first time.
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_customprior.hdf5, rerun_bpz
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 26.9 s, sys: 135 ms, total: 27 s
-    Wall time: 27 s
+    CPU times: user 26.7 s, sys: 103 ms, total: 26.8 s
+    Wall time: 26.8 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f5e7558dcc0>
+    <rail.core.data.QPHandle at 0x7f40c13fdab0>
 
 
 
@@ -667,7 +667,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5e7ac19e40>
+    <matplotlib.legend.Legend at 0x7f40bbfbf100>
 
 
 
@@ -798,7 +798,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5e7a970af0>
+    <matplotlib.legend.Legend at 0x7f40c1462890>
 
 
 

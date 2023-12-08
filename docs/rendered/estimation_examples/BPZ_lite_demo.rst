@@ -375,15 +375,15 @@ for the SEDs and filters.
     Inserting handle into data store.  output_bpz_def_prior: inprogress_bpz_results_defaultprior.hdf5, bpz_def_prior
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 24.5 s, sys: 100 ms, total: 24.6 s
-    Wall time: 24.6 s
+    CPU times: user 24.4 s, sys: 117 ms, total: 24.6 s
+    Wall time: 24.5 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f666bdefd90>
+    <rail.core.data.QPHandle at 0x7f64847bbdf0>
 
 
 
@@ -463,7 +463,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f666bb87670>
+    <matplotlib.legend.Legend at 0x7f6484614850>
 
 
 
@@ -500,7 +500,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f666bd503d0>
+    <matplotlib.legend.Legend at 0x7f648474c2b0>
 
 
 
@@ -617,7 +617,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f666bd17c70>
+    <rail.core.data.ModelHandle at 0x7f6484660b80>
 
 
 
@@ -727,7 +727,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f669df11840>
+    <matplotlib.legend.Legend at 0x7f64b5f04dc0>
 
 
 
@@ -801,15 +801,15 @@ results are any different:
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_rerun.hdf5, rerun_bpz
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 14.6 s, sys: 80.1 ms, total: 14.7 s
-    Wall time: 14.7 s
+    CPU times: user 14.5 s, sys: 75.9 ms, total: 14.6 s
+    Wall time: 14.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f6668ac0070>
+    <rail.core.data.QPHandle at 0x7f64b5e0be80>
 
 
 
@@ -836,7 +836,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6668a1f730>
+    <matplotlib.legend.Legend at 0x7f6484721c00>
 
 
 
@@ -926,7 +926,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6668ac24a0>
+    <matplotlib.legend.Legend at 0x7f64b5f92d10>
 
 
 

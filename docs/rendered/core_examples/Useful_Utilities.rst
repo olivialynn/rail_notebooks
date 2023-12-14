@@ -569,17 +569,16 @@ Just add a ``resume=True`` to do so.
     )
 
 
-.. parsed-literal::
-
-    Skipping stage flow_engine_test because its outputs exist already
-    Skipping stage col_remapper_test because its outputs exist already
-
-
 
 
 .. parsed-literal::
 
-    (({}, []), {'output_dir': '.', 'log_dir': '.', 'resume': True})
+    (({'flow_engine_test': <Job flow_engine_test>,
+       'col_remapper_test': <Job col_remapper_test>},
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7f70db7b20>,
+       Stage that applies remaps the following column names in a pandas DataFrame:
+       f{str(self.config.columns)}]),
+     {'output_dir': '.', 'log_dir': '.', 'resume': True})
 
 
 
@@ -595,7 +594,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f050a2f9d80>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7f70db7b20>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

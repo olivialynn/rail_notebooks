@@ -375,15 +375,15 @@ for the SEDs and filters.
     Inserting handle into data store.  output_bpz_def_prior: inprogress_bpz_results_defaultprior.hdf5, bpz_def_prior
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 24.3 s, sys: 112 ms, total: 24.4 s
-    Wall time: 24.4 s
+    CPU times: user 24.5 s, sys: 96.9 ms, total: 24.6 s
+    Wall time: 24.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7efdb5b17e50>
+    <rail.core.data.QPHandle at 0x7fbfc70cfe80>
 
 
 
@@ -463,7 +463,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efdb5ac3820>
+    <matplotlib.legend.Legend at 0x7fbfc7adf940>
 
 
 
@@ -500,7 +500,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efdb06dc6d0>
+    <matplotlib.legend.Legend at 0x7fbfc6f8b5e0>
 
 
 
@@ -583,13 +583,13 @@ First, as mentioned in the above cell, we must download the file containing the 
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100  450k  100  450k    0     0   807k      0 --:--:-- --:--:-- --:--:--  806k
+    100  450k  100  450k    0     0   757k      0 --:--:-- --:--:-- --:--:--  757k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0   275k      0 --:--:-- --:--:-- --:--:--  276k
+    100 83848  100 83848    0     0   147k      0 --:--:-- --:--:-- --:--:--  148k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 83848  100 83848    0     0   273k      0 --:--:-- --:--:-- --:--:--  273k
+    100 83848  100 83848    0     0   194k      0 --:--:-- --:--:-- --:--:--  194k
 
 
 .. code:: ipython3
@@ -618,15 +618,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557221   1.92425072 0.11125762]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 15.8 s, sys: 7.3 ms, total: 15.8 s
-    Wall time: 15.8 s
+    CPU times: user 16.2 s, sys: 2 µs, total: 16.2 s
+    Wall time: 16.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7efdb639b940>
+    <rail.core.data.ModelHandle at 0x7fbfc6e941f0>
 
 
 
@@ -736,7 +736,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efddbf2d8a0>
+    <matplotlib.legend.Legend at 0x7fbfc1d89720>
 
 
 
@@ -810,15 +810,15 @@ results are any different:
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_rerun.hdf5, rerun_bpz
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 running estimator on chunk 20000 - 20449
-    CPU times: user 14.4 s, sys: 107 ms, total: 14.5 s
-    Wall time: 14.5 s
+    CPU times: user 14.7 s, sys: 91.9 ms, total: 14.8 s
+    Wall time: 14.8 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7efdb074efe0>
+    <rail.core.data.QPHandle at 0x7fbff9a2b730>
 
 
 
@@ -845,7 +845,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efdb595c1f0>
+    <matplotlib.legend.Legend at 0x7fbfc6ea6da0>
 
 
 
@@ -935,7 +935,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efdb5833280>
+    <matplotlib.legend.Legend at 0x7fbfc6f891b0>
 
 
 

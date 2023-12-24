@@ -3,7 +3,7 @@ Build, Save, Load, and Run a Pipeline
 
 **Author:** Eric Charles
 
-**Last Run Successfully:** August 2, 2023
+**Last Run Successfully:** December 22, 2023
 
 This notebook shows how to:
 
@@ -30,7 +30,6 @@ This notebook shows how to:
     from rail.core.stage import RailStage
     from rail.core.util_stages import ColumnMapper, TableConverter
 
-
 We’ll start by setting up the RAIL data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
 pipelines rather than interactive notebooks; the data store will work
@@ -46,7 +45,6 @@ notebook for more details on the Data Store.
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
-
 
 Build the pipeline
 ------------------
@@ -77,7 +75,6 @@ Here we are defining:
     band_dict = {band: f"mag_{band}_lsst" for band in bands}
     rename_dict = {f"mag_{band}_lsst_err": f"mag_err_{band}_lsst" for band in bands}
     post_grid = [float(x) for x in np.linspace(0.0, 5, 21)]
-
 
 Define the pipeline stages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +122,6 @@ A couple of things are important:
     )
 
 
-
 .. parsed-literal::
 
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
@@ -134,7 +130,6 @@ A couple of things are important:
 .. code:: ipython3
 
     flow_engine_test.sample(6, seed=0).data
-
 
 
 .. parsed-literal::
@@ -254,7 +249,6 @@ mechanisms built into ``ceci``), and add the stages to that pipeline.
     for stage in stages:
         pipe.add_stage(stage)
 
-
 Interactive introspection
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -267,7 +261,6 @@ doing.
 
     # Get the names of the stages
     pipe.stage_names
-
 
 
 
@@ -289,7 +282,6 @@ doing.
 
 
 
-
 .. parsed-literal::
 
     StageConfig{output_mode:default,n_samples:6,seed:0,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
@@ -305,7 +297,6 @@ doing.
 
 
 
-
 .. parsed-literal::
 
     [('output', rail.core.data.PqHandle)]
@@ -317,7 +308,6 @@ doing.
     # Get the list of outputs 'aliased tags'
     # These are how the pipeline things of the outputs, as a unique key that points to a particular file
     pipe.flow_engine_test._outputs
-
 
 
 
@@ -341,7 +331,6 @@ to another. By default, this will connect the output data product called
     col_remapper_test.connect_input(lsst_error_model_test)
     # flow_post_test.connect_input(col_remapper_test, inputTag='input')
     table_conv_test.connect_input(col_remapper_test)
-
 
 
 .. parsed-literal::
@@ -373,18 +362,17 @@ This will do a few things:
 
 
 
-
 .. parsed-literal::
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0b35c5acb0>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f0b35c5a530>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fa4a6225c30>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fa504125540>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7f0ad4aed090>]),
+       <rail.core.util_stages.TableConverter at 0x7fa4a40f50f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -406,14 +394,12 @@ This will actually write two files (as this is what ``ceci`` wants)
 
     pipe.save("pipe_saved.yml")
 
-
 Read the saved pipeline
 -----------------------
 
 .. code:: ipython3
 
     pr = ceci.Pipeline.read("pipe_saved.yml")
-
 
 Run the newly read pipeline
 ---------------------------
@@ -425,7 +411,6 @@ each case.
 .. code:: ipython3
 
     pr.run()
-
 
 
 .. parsed-literal::
@@ -468,16 +453,35 @@ each case.
 
 
 
+Running saved pipelines from the command line
+---------------------------------------------
+
+Once you’ve saved a pipeline and have the ``pipeline_name.yml`` and
+``pipeline_name_config.yml`` file pair, you can go ahead and run the
+pipeline from the command line instead, if you prefer. With
+`ceci <https://github.com/LSSTDESC/ceci>`__ installed in your
+environment, just run ``ceci path/to/the/pipeline.yml``. Running the
+pipeline we’ve just made would look like:
+
 .. code:: ipython3
 
-    pwd
-
-
-
+    ! ceci pipe_saved.yml
 
 
 .. parsed-literal::
 
-    '/home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples'
-
+    Traceback (most recent call last):
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/bin/ceci", line 8, in <module>
+        sys.exit(main())
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/main.py", line 111, in main
+        status = run_pipeline(pipe_config)
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/main.py", line 52, in run_pipeline
+        with prepare_for_pipeline(pipe_config):
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/contextlib.py", line 135, in __enter__
+        return next(self.gen)
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/main.py", line 78, in prepare_for_pipeline
+        load(launcher_config, [site_config])
+      File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/sites/__init__.py", line 73, in load
+        site_name = site_config["name"]
+    KeyError: 'name'
 

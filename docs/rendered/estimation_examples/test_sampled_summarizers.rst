@@ -92,7 +92,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3815e36080>
+    <rail.core.data.ModelHandle at 0x7fe5d098f490>
 
 
 
@@ -177,7 +177,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f37be7b0fd0>
+    <matplotlib.legend.Legend at 0x7fe5d09e04f0>
 
 
 
@@ -233,8 +233,8 @@ appears alpha is broken, so this plot is not the best:
     Process 0 running estimator on chunk 20000 - 20449
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 53.4 ms, sys: 1.39 ms, total: 54.8 ms
-    Wall time: 50.5 ms
+    CPU times: user 50.5 ms, sys: 0 ns, total: 50.5 ms
+    Wall time: 50.2 ms
 
 
 .. code:: ipython3
@@ -255,7 +255,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f37be2fa9b0>
+    <matplotlib.legend.Legend at 0x7fe5d052b5b0>
 
 
 
@@ -290,8 +290,8 @@ bins. Again let’s generate 20 samples and plot a few:
     Process 0 running estimator on chunk 0 - 20449
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.05 s, sys: 63.2 ms, total: 1.12 s
-    Wall time: 1.12 s
+    CPU times: user 1.05 s, sys: 44.7 ms, total: 1.1 s
+    Wall time: 1.1 s
 
 
 .. code:: ipython3
@@ -304,7 +304,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f37be21aad0>
+    <qp.ensemble.Ensemble at 0x7fe5d0455510>
 
 
 
@@ -363,7 +363,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f37be219b40>
+    <rail.core.data.ModelHandle at 0x7fe5d0460610>
 
 
 
@@ -408,7 +408,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f37be012440>
+    <matplotlib.legend.Legend at 0x7fe5d0252530>
 
 
 
@@ -535,7 +535,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f37b8cc3490>]
+    [<matplotlib.lines.Line2D at 0x7fe5ccec7550>]
 
 
 
@@ -552,7 +552,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f37b8d8ce80>]
+    [<matplotlib.lines.Line2D at 0x7fe5cce20eb0>]
 
 
 
@@ -569,7 +569,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f37be219f90>]
+    [<matplotlib.lines.Line2D at 0x7fe5d0681a50>]
 
 
 
@@ -604,7 +604,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f37b8d8dab0>
+    <matplotlib.legend.Legend at 0x7fe5cce214b0>
 
 
 

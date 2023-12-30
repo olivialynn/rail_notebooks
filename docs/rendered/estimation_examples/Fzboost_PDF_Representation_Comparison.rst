@@ -157,6 +157,18 @@ file name ``demo_FZB_model.pkl``.
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [06:59:28] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [06:59:28] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [06:59:28] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
@@ -248,12 +260,28 @@ file name ``demo_FZB_model.pkl``.
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:00:23] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:00:23] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:00:23] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:00:23] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 48.9 s, sys: 10.8 s, total: 59.7 s
+    CPU times: user 49.2 s, sys: 10.6 s, total: 59.9 s
     Wall time: 1min 1s
 
 
@@ -261,7 +289,7 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f23d46ee4a0>
+    <rail.core.data.ModelHandle at 0x7f44ff2df700>
 
 
 
@@ -309,8 +337,8 @@ basis functions.
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
     File Size is : 2870476 bytes
-    CPU times: user 610 ms, sys: 64.2 ms, total: 674 ms
-    Wall time: 1.38 s
+    CPU times: user 623 ms, sys: 53.9 ms, total: 677 ms
+    Wall time: 1.36 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -333,8 +361,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 8.98 s, sys: 285 ms, total: 9.27 s
-    Wall time: 8.92 s
+    CPU times: user 9.06 s, sys: 325 ms, total: 9.39 s
+    Wall time: 9.03 s
 
 
 .. code:: ipython3
@@ -345,8 +373,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 11 s, sys: 324 ms, total: 11.3 s
-    Wall time: 11 s
+    CPU times: user 11.2 s, sys: 294 ms, total: 11.5 s
+    Wall time: 11.1 s
 
 
 Plotting median values.
@@ -376,7 +404,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    8.3 s ± 32.2 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    8.51 s ± 29.1 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 Now we’ll repeat the experiment using ``qp.interp`` storage. Again,
@@ -426,8 +454,8 @@ experiment, we used 35 basis functions.
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
     File Size is : 49248094 bytes
-    CPU times: user 11.6 s, sys: 907 ms, total: 12.5 s
-    Wall time: 12.3 s
+    CPU times: user 11.8 s, sys: 939 ms, total: 12.7 s
+    Wall time: 12.4 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -450,7 +478,7 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    846 ms ± 6.13 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    861 ms ± 5.63 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 .. code:: ipython3
@@ -461,8 +489,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 370 ms, sys: 67.8 ms, total: 438 ms
-    Wall time: 437 ms
+    CPU times: user 370 ms, sys: 76.2 ms, total: 446 ms
+    Wall time: 449 ms
 
 
 Plotting median values.
@@ -498,7 +526,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    42.1 ms ± 556 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+    40.7 ms ± 402 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 
 
 We’ll clean up the files that were produced: the model pickle file, and

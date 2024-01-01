@@ -235,8 +235,8 @@ Let’s run the code and see how long it takes:
     No ra, dec found in catalogue, randomly assign pixels with weights.
     Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.35 s, sys: 45.9 ms, total: 3.4 s
-    Wall time: 3.39 s
+    CPU times: user 3.34 s, sys: 55.4 ms, total: 3.39 s
+    Wall time: 3.38 s
 
 
 .. code:: ipython3

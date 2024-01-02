@@ -96,7 +96,11 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-    100 9434k  100 9434k    0     0  27.0M      0 --:--:-- --:--:-- --:--:-- 27.1M
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  26.1M      0 --:--:-- --:--:-- --:--:-- 26.1M
 
 
 .. code:: ipython3
@@ -175,7 +179,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 930 ms, total: 8min 2s
+    CPU times: user 8min 1s, sys: 1.05 s, total: 8min 2s
     Wall time: 2min 3s
 
 
@@ -183,7 +187,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff272573fd0>
+    <rail.core.data.ModelHandle at 0x7fa2ac6b2530>
 
 
 
@@ -252,7 +256,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7052/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6984/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -378,8 +382,16 @@ actually output the uncovered galaxies in a separate file in the future.
 
     Inserting handle into data store.  model: output_SOMoclu_model.pkl, SOMoclu_summarizer
     Warning: number of clusters is not provided. The SOM will NOT be grouped into clusters.
+
+
+.. parsed-literal::
+
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
+
+
+.. parsed-literal::
+
     the following clusters contain photometric data but not spectroscopic data:
     {3584, 1, 1536, 2051, 1027, 3075, 2054, 7, 3080, 4105, 9, 3590, 12, 13, 1036, 1542, 2578, 3604, 3605, 537, 1563, 1052, 3614, 31, 1057, 546, 4643, 36, 1572, 38, 3620, 3622, 555, 3115, 2093, 3628, 1071, 560, 50, 2098, 565, 1590, 570, 2107, 1090, 2115, 579, 1606, 585, 588, 2125, 1100, 4176, 1617, 1619, 85, 1626, 91, 4188, 1627, 3677, 3680, 3171, 2149, 1126, 2151, 2663, 3175, 1637, 1638, 621, 2158, 1648, 625, 628, 2165, 123, 3196, 1659, 3708, 3200, 1666, 4227, 2691, 1667, 1161, 1673, 141, 655, 1685, 3222, 1687, 3736, 1689, 2205, 2206, 4768, 1697, 169, 2732, 173, 685, 688, 2225, 178, 2227, 691, 1202, 1712, 1716, 1719, 1721, 187, 1728, 1734, 1226, 2251, 3788, 2255, 208, 4305, 2258, 210, 724, 725, 726, 1231, 1749, 2266, 1757, 3296, 1762, 1251, 1254, 231, 1766, 1257, 235, 2284, 2285, 747, 748, 241, 2290, 753, 3314, 245, 1778, 1271, 1781, 1784, 4347, 1787, 2301, 1788, 1790, 2304, 1282, 1286, 3335, 1799, 2324, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1827, 1829, 1834, 1835, 1324, 814, 1839, 816, 817, 2867, 1846, 3897, 1849, 2881, 2370, 2371, 1857, 839, 4425, 330, 3915, 2380, 334, 2382, 1358, 849, 850, 339, 1872, 1367, 344, 3931, 2396, 860, 3428, 1894, 4967, 1384, 873, 1899, 879, 2416, 3440, 882, 2932, 3448, 900, 389, 903, 904, 393, 2442, 2951, 1416, 2957, 1927, 1931, 401, 915, 1940, 405, 1943, 2970, 411, 922, 1436, 1948, 419, 1956, 421, 4008, 426, 428, 3505, 4018, 1973, 442, 958, 2497, 963, 1988, 453, 1478, 455, 457, 971, 1484, 3021, 3533, 976, 2002, 2004, 1493, 3031, 983, 3035, 2014, 992, 3554, 2018, 2532, 999, 1512, 2023, 1515, 493, 1006, 496, 1009, 498, 4085, 2039, 509, 511}
     516 out of 5041 have usable data
@@ -397,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff257996740>
+    <rail.core.data.QPHandle at 0x7fa24b082bf0>
 
 
 
@@ -433,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff25796c7f0>
+    <matplotlib.legend.Legend at 0x7fa24b168760>
 
 
 
@@ -463,8 +475,16 @@ bright dataset that we made?
 .. parsed-literal::
 
     Warning: number of clusters is not provided. The SOM will NOT be grouped into clusters.
+
+
+.. parsed-literal::
+
     Process 0 running summarizer on chunk 0 - 645
     Inserting handle into data store.  cellid_output_bright_summarizer: inprogress_BRIGHT_output_cellIDs.hdf5, bright_summarizer
+
+
+.. parsed-literal::
+
     the following clusters contain photometric data but not spectroscopic data:
     {1536, 3075, 3080, 1036, 2578, 3604, 3605, 1057, 1572, 3620, 38, 3622, 555, 1071, 560, 50, 2098, 570, 1090, 2115, 579, 1606, 585, 1100, 85, 91, 3171, 2149, 1638, 2663, 621, 2158, 1648, 625, 628, 1659, 3196, 1666, 2691, 141, 1685, 1687, 3736, 1689, 1697, 688, 178, 691, 1716, 1719, 187, 1728, 1734, 1231, 208, 210, 726, 1757, 3296, 1251, 748, 3314, 1778, 1271, 1784, 4347, 1788, 3335, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1829, 1835, 1324, 814, 1839, 816, 817, 1846, 1849, 2881, 2370, 330, 2380, 334, 1358, 849, 850, 1367, 860, 1894, 4967, 1384, 873, 1899, 882, 900, 903, 2951, 1927, 401, 1940, 405, 1943, 922, 411, 1436, 1948, 1956, 421, 4008, 426, 1973, 442, 958, 2497, 963, 453, 1478, 455, 457, 1484, 3533, 3021, 2002, 2004, 983, 2018, 999, 2023, 1515, 493, 496, 1009}
     322 out of 5041 have usable data
@@ -482,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff25d49a290>
+    <rail.core.data.QPHandle at 0x7fa24b136350>
 
 
 
@@ -509,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff25d49acb0>
+    <matplotlib.legend.Legend at 0x7fa24b136ec0>
 
 
 
@@ -568,7 +588,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff25796c220>
+    <matplotlib.legend.Legend at 0x7fa24b2c7fd0>
 
 
 

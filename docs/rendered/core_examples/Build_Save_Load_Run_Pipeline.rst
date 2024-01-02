@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fec227aa560>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fec8383e290>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f135c3f1c60>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f13bb2e2dd0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7fec2267d090>]),
+       <rail.core.util_stages.TableConverter at 0x7f135c2c1150>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -421,27 +421,55 @@ each case.
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl   --name=flow_engine_test   --config=pipe_saved_config.yml   --output=./output_flow_engine_test.pq 
     Output writing to ./flow_engine_test.out
     
+
+
+.. parsed-literal::
+
     Job flow_engine_test has completed successfully!
+
+
+.. parsed-literal::
+
     
     Executing lsst_error_model_test
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
+
+
+.. parsed-literal::
+
     Job lsst_error_model_test has completed successfully!
+
+
+.. parsed-literal::
+
     
     Executing col_remapper_test
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
     Output writing to ./col_remapper_test.out
     
+
+
+.. parsed-literal::
+
     Job col_remapper_test has completed successfully!
+
+
+.. parsed-literal::
+
     
     Executing table_conv_test
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
     Output writing to ./table_conv_test.out
     
+
+
+.. parsed-literal::
+
     Job table_conv_test has completed successfully!
 
 

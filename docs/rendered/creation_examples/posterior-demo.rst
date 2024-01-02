@@ -89,6 +89,10 @@ rail stages to keep track of where their inputs are coming from.
 .. parsed-literal::
 
     Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_truth: inprogress_output_truth.pq, truth
 
 
@@ -140,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff3a4ec0550>
+    <qp.ensemble.Ensemble at 0x7f344fe3b820>
 
 
 
@@ -451,8 +455,20 @@ Let’s calculate posteriors with a variable number of error samples.
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1: inprogress_output_degr_post_1.hdf5, degr_post_1
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_10: inprogress_output_degr_post_10.hdf5, degr_post_10
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_100: inprogress_output_degr_post_100.hdf5, degr_post_100
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_1000: inprogress_output_degr_post_1000.hdf5, degr_post_1000
 
 
@@ -632,9 +648,25 @@ grid.
 .. parsed-literal::
 
     Inserting handle into data store.  output_select_row3: inprogress_output_select_row3.pq, select_row3
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_degr_post_nbins_10: inprogress_output_degr_post_degr_post_nbins_10.hdf5, degr_post_degr_post_nbins_10
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_degr_post_nbins_20: inprogress_output_degr_post_degr_post_nbins_20.hdf5, degr_post_degr_post_nbins_20
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_degr_post_nbins_50: inprogress_output_degr_post_degr_post_nbins_50.hdf5, degr_post_degr_post_nbins_50
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_degr_post_nbins_100: inprogress_output_degr_post_degr_post_nbins_100.hdf5, degr_post_degr_post_nbins_100
 
 

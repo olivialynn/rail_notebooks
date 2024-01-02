@@ -200,9 +200,13 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, specselection_zCOSMOS
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.pq, specselection_zCOSMOS
-    CPU times: user 1.41 s, sys: 55.5 ms, total: 1.46 s
-    Wall time: 1.44 s
+    CPU times: user 1.4 s, sys: 62.2 ms, total: 1.46 s
+    Wall time: 1.45 s
 
 
 .. code:: ipython3

@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.61 ms, sys: 963 µs, total: 2.57 ms
-    Wall time: 2.31 ms
+    CPU times: user 2.04 ms, sys: 1.18 ms, total: 3.22 ms
+    Wall time: 2.74 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9fe07f8970>
+    <rail.core.data.ModelHandle at 0x7f8a3963cd30>
 
 
 
@@ -221,13 +221,25 @@ each galaxy as the redshift estimate:
 
     Process 0 running estimator on chunk 0 - 10000
     Process 0 estimating PZ PDF for rows 0 - 10,000
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_CMNN: inprogress_output_CMNN.hdf5, CMNN
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-    CPU times: user 57.3 s, sys: 22.4 ms, total: 57.3 s
-    Wall time: 57.3 s
+
+
+.. parsed-literal::
+
+    CPU times: user 56.7 s, sys: 27.7 ms, total: 56.8 s
+    Wall time: 56.7 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and
@@ -302,9 +314,17 @@ neighbor estimator:
 
     Process 0 running estimator on chunk 0 - 10000
     Process 0 estimating PZ PDF for rows 0 - 10,000
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_CMNN_rand: inprogress_output_CMNN_rand.hdf5, CMNN_rand
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
@@ -351,9 +371,17 @@ visually. Finally, we can try the weighted random selection by setting
 
     Process 0 running estimator on chunk 0 - 10000
     Process 0 estimating PZ PDF for rows 0 - 10,000
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_CMNN_weight: inprogress_output_CMNN_weight.hdf5, CMNN_weight
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 

@@ -485,6 +485,10 @@ algorithm with the train_data:
 
     split into 7669 training and 2556 validation samples
     finding best fit sigma and NNeigh...
+
+
+.. parsed-literal::
+
     
     
     
@@ -499,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff6fd633940>
+    <rail.core.data.ModelHandle at 0x7fa5c0bd7b80>
 
 
 
@@ -537,9 +541,17 @@ case of many of the estimator codes this is a FITS file titled
     Inserting handle into data store.  model: knnpz.pkl, estimate_knn
     Process 0 running estimator on chunk 0 - 10000
     Process 0 estimating PZ PDF for rows 0 - 10,000
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_estimate_knn: inprogress_KNNPZ_estimates.hdf5, estimate_knn
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
@@ -574,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff6fc036710>
+    <matplotlib.legend.Legend at 0x7fa5c05ee800>
 
 
 
@@ -604,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff6f7002bc0>
+    <matplotlib.legend.Legend at 0x7fa5bb5b6c20>
 
 
 

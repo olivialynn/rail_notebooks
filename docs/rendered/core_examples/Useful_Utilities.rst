@@ -86,6 +86,10 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
+
+
+.. parsed-literal::
+
     Imported rail.dsps
     Imported rail.flexzboost
     Install FSPS with the following commands:
@@ -96,11 +100,19 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+
+
+.. parsed-literal::
+
     Imported rail.gpz
     Imported rail.hub
     Imported rail.pipelines
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Attached 12 base classes and 62 fully formed stages to rail.stages
@@ -575,7 +587,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f73e1bcf1c0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fe3a437ce20>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -594,7 +606,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f73e1bcf1c0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fe3a437ce20>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

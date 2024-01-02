@@ -234,9 +234,13 @@ Let’s run the code and see how long it takes:
     Assigning pixels.
     No ra, dec found in catalogue, randomly assign pixels with weights.
     Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.34 s, sys: 55.4 ms, total: 3.39 s
-    Wall time: 3.38 s
+    CPU times: user 3.4 s, sys: 19.6 ms, total: 3.42 s
+    Wall time: 3.42 s
 
 
 .. code:: ipython3
@@ -482,6 +486,10 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
     Assigning pixels.
     No ra, dec found in catalogue, randomly assign pixels with weights.
     Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
 
 

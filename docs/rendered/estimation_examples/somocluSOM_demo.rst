@@ -100,7 +100,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  26.1M      0 --:--:-- --:--:-- --:--:-- 26.1M
+      2 9434k    2  219k    0     0   374k      0  0:00:25 --:--:--  0:00:25  374k
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  9625k      0 --:--:-- --:--:-- --:--:-- 9627k
 
 
 .. code:: ipython3
@@ -179,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 1.05 s, total: 8min 2s
+    CPU times: user 8min 2s, sys: 756 ms, total: 8min 2s
     Wall time: 2min 3s
 
 
@@ -187,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa2ac6b2530>
+    <rail.core.data.ModelHandle at 0x7fa3ff76a9e0>
 
 
 
@@ -256,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6984/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7049/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -409,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa24b082bf0>
+    <rail.core.data.QPHandle at 0x7fa39e2ca530>
 
 
 
@@ -445,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa24b168760>
+    <matplotlib.legend.Legend at 0x7fa39e2c9450>
 
 
 
@@ -502,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa24b136350>
+    <rail.core.data.QPHandle at 0x7fa39e6d3a00>
 
 
 
@@ -529,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa24b136ec0>
+    <matplotlib.legend.Legend at 0x7fa39e6d33d0>
 
 
 
@@ -588,7 +592,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa24b2c7fd0>
+    <matplotlib.legend.Legend at 0x7fa39e6a1720>
 
 
 

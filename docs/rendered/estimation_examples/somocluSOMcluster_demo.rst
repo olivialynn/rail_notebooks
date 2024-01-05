@@ -165,15 +165,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 14s, sys: 873 ms, total: 8min 15s
-    Wall time: 2min 10s
+    CPU times: user 8min 1s, sys: 982 ms, total: 8min 2s
+    Wall time: 2min 3s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa64af6b0a0>
+    <rail.core.data.ModelHandle at 0x7fac469603d0>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa5f2ae18a0>
+    <rail.core.data.QPHandle at 0x7fabe59d59f0>
 
 
 
@@ -765,7 +765,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa5e98d63b0>
+    <matplotlib.legend.Legend at 0x7fabe5b4e770>
 
 
 
@@ -818,7 +818,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa5e8d01cf0>
+    <rail.core.data.QPHandle at 0x7fabe485a080>
 
 
 
@@ -845,7 +845,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa5e8d02770>
+    <matplotlib.legend.Legend at 0x7fabe5b4ead0>
 
 
 
@@ -904,7 +904,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa5e8ac4790>
+    <matplotlib.legend.Legend at 0x7fabe48594e0>
 
 
 

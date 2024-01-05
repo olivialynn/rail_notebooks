@@ -51,3 +51,7 @@ jobs:
     # Commit changes
     - uses: stefanzweifel/git-auto-commit-action@v4
       if: always()
+      with: 
+        commit_user_name: GitHub Actions Bot 
+        commit_user_email: github-actions-bot@example.org
+        commit_author: Author <actions@github.com>

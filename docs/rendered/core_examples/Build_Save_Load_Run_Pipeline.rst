@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0446d21b70>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f04a7d83880>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd785fae200>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fd7e6fef0d0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7f0446bf1090>]),
+       <rail.core.util_stages.TableConverter at 0x7fd785e7d060>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -506,10 +506,6 @@ pipeline we’ve just made would look like:
       File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/main.py", line 52, in run_pipeline
         with prepare_for_pipeline(pipe_config):
       File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/contextlib.py", line 135, in __enter__
-
-
-.. parsed-literal::
-
         return next(self.gen)
       File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/main.py", line 78, in prepare_for_pipeline
         load(launcher_config, [site_config])

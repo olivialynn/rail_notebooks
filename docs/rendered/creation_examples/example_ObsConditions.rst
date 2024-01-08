@@ -239,7 +239,7 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.36 s, sys: 46.9 ms, total: 3.4 s
+    CPU times: user 3.38 s, sys: 25.9 ms, total: 3.4 s
     Wall time: 3.4 s
 
 

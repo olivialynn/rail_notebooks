@@ -100,11 +100,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      4 9434k    4  415k    0     0   439k      0  0:00:21 --:--:--  0:00:21  439k
+      0 9434k    0 52977    0     0  63446      0  0:02:32 --:--:--  0:02:32 63445
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  7256k      0  0:00:01  0:00:01 --:--:-- 7257k
+    100 9434k  100 9434k    0     0  6893k      0  0:00:01  0:00:01 --:--:-- 6896k
 
 
 .. code:: ipython3
@@ -183,15 +183,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 853 ms, total: 8min 2s
-    Wall time: 2min 3s
+    CPU times: user 8min 15s, sys: 1.18 s, total: 8min 16s
+    Wall time: 2min 6s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3124c46d70>
+    <rail.core.data.ModelHandle at 0x7f1169810c10>
 
 
 
@@ -260,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7099/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7094/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f30c3be1cc0>
+    <rail.core.data.QPHandle at 0x7f114e595f30>
 
 
 
@@ -449,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30c3ba24a0>
+    <matplotlib.legend.Legend at 0x7f114e595180>
 
 
 
@@ -506,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f30c3c6be80>
+    <rail.core.data.QPHandle at 0x7f114e57fa90>
 
 
 
@@ -533,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30c3c6bb20>
+    <matplotlib.legend.Legend at 0x7f114e57efb0>
 
 
 
@@ -592,7 +592,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30c3ca1600>
+    <matplotlib.legend.Legend at 0x7f114e9e5720>
 
 
 

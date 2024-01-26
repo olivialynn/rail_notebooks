@@ -158,12 +158,12 @@ for the SEDs and filters.
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_z.AB
+      Generating new AB file El_B2004a.DC2LSST_y.AB....
+    El_B2004a DC2LSST_y
 
 
 .. parsed-literal::
 
-      Generating new AB file El_B2004a.DC2LSST_y.AB....
-    El_B2004a DC2LSST_y
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_y.AB
@@ -543,15 +543,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 24.2 s, sys: 121 ms, total: 24.3 s
-    Wall time: 24.3 s
+    CPU times: user 24 s, sys: 126 ms, total: 24.1 s
+    Wall time: 24.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f2205de18d0>
+    <rail.core.data.QPHandle at 0x7fbd35415810>
 
 
 
@@ -631,7 +631,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2205d20880>
+    <matplotlib.legend.Legend at 0x7fbd89b6b010>
 
 
 
@@ -668,7 +668,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2205c589a0>
+    <matplotlib.legend.Legend at 0x7fbd2bf085b0>
 
 
 
@@ -781,15 +781,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557221   1.92425072 0.11125762]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 15.8 s, sys: 19.6 ms, total: 15.8 s
-    Wall time: 15.8 s
+    CPU times: user 16 s, sys: 3.86 ms, total: 16 s
+    Wall time: 16 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f225c6e3070>
+    <rail.core.data.ModelHandle at 0x7fbd353bc370>
 
 
 
@@ -899,7 +899,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f222dd0f7f0>
+    <matplotlib.legend.Legend at 0x7fbd5bf23820>
 
 
 
@@ -981,15 +981,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 14.5 s, sys: 84 ms, total: 14.5 s
-    Wall time: 14.5 s
+    CPU times: user 14.5 s, sys: 87.7 ms, total: 14.6 s
+    Wall time: 14.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f222dc59fc0>
+    <rail.core.data.QPHandle at 0x7fbd5be71d80>
 
 
 
@@ -1016,7 +1016,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2205d22b60>
+    <matplotlib.legend.Legend at 0x7fbd35172440>
 
 
 
@@ -1106,7 +1106,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2205be3eb0>
+    <matplotlib.legend.Legend at 0x7fbd5be73d00>
 
 
 

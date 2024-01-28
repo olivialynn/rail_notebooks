@@ -220,7 +220,7 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.38 s, sys: 123 ms, total: 2.51 s
+    CPU times: user 2.39 s, sys: 122 ms, total: 2.51 s
     Wall time: 2.5 s
 
 

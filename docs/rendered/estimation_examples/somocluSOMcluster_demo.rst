@@ -98,11 +98,11 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 9434k    1 98042    0     0   684k      0  0:00:13 --:--:--  0:00:13  683k
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  31.9M      0 --:--:-- --:--:-- --:--:-- 31.9M
+    100 9434k  100 9434k    0     0  34.3M      0 --:--:-- --:--:-- --:--:-- 34.3M
 
 
 .. code:: ipython3
@@ -177,7 +177,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 1.12 s, total: 8min 2s
+    CPU times: user 8min 1s, sys: 919 ms, total: 8min 2s
     Wall time: 2min 3s
 
 
@@ -185,7 +185,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc1f2ac6770>
+    <rail.core.data.ModelHandle at 0x7fb3a520f610>
 
 
 
@@ -414,7 +414,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc190956c50>
+    <rail.core.data.QPHandle at 0x7fb3435b4cd0>
 
 
 
@@ -777,7 +777,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc199c17a60>
+    <matplotlib.legend.Legend at 0x7fb349899000>
 
 
 
@@ -830,7 +830,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc1900a4dc0>
+    <rail.core.data.QPHandle at 0x7fb340891030>
 
 
 
@@ -857,7 +857,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc199c14310>
+    <matplotlib.legend.Legend at 0x7fb3498998d0>
 
 
 
@@ -916,7 +916,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc1900a66b0>
+    <matplotlib.legend.Legend at 0x7fb3408792a0>
 
 
 

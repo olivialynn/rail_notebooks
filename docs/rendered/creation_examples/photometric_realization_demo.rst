@@ -87,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f2593c49ba0>
+    <pzflow.flow.Flow at 0x7f8fc4e89c30>
 
 
 

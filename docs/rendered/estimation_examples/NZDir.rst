@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb73265b5b0>
+    <rail.core.data.ModelHandle at 0x7f7f38a57910>
 
 
 
@@ -192,17 +192,17 @@ calculation, so this should run very fast:
     Inserting handle into data store.  single_NZ_nzsumm_low: inprogress_single_NZ_nzsumm_low.hdf5, nzsumm_low
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
     Process 0 running estimator on chunk 0 - 8513
-    Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
 
 
 .. parsed-literal::
 
+    Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 306 ms, sys: 3.82 ms, total: 310 ms
-    Wall time: 308 ms
+    CPU times: user 325 ms, sys: 7.25 ms, total: 332 ms
+    Wall time: 331 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -349,7 +349,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb72dc41390>
+    <rail.core.data.ModelHandle at 0x7f7f3719ece0>
 
 
 
@@ -379,7 +379,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 109 ms, sys: 918 µs, total: 110 ms
+    CPU times: user 111 ms, sys: 0 ns, total: 111 ms
     Wall time: 110 ms
 
 

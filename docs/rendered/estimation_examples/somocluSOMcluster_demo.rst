@@ -93,22 +93,6 @@ on galaxies with particularly high S/N rates.
     if not os.path.exists(training_file):
       os.system('curl -O https://portal.nersc.gov/cfs/lsst/PZ/healpix_10326_bright_data.hdf5')
 
-
-.. parsed-literal::
-
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-      0 9434k    0 16095    0     0  32959      0  0:04:53 --:--:--  0:04:53 32914
-
-.. parsed-literal::
-
-    100 9434k  100 9434k    0     0  8256k      0  0:00:01  0:00:01 --:--:-- 8261k
-
-
 .. code:: ipython3
 
     # way to get big data file
@@ -181,15 +165,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 2s, sys: 945 ms, total: 8min 3s
-    Wall time: 2min 3s
+    CPU times: user 8min, sys: 671 ms, total: 8min
+    Wall time: 2min 2s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f5fcd499690>
+    <rail.core.data.ModelHandle at 0x7fa39cc11240>
 
 
 
@@ -418,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f5f743854b0>
+    <rail.core.data.QPHandle at 0x7fa3a1d43e20>
 
 
 
@@ -781,7 +765,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5f6b229cf0>
+    <matplotlib.legend.Legend at 0x7fa348c69cf0>
 
 
 
@@ -834,7 +818,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f5f68a95a80>
+    <rail.core.data.QPHandle at 0x7fa3404d3d30>
 
 
 
@@ -861,7 +845,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5f74377100>
+    <matplotlib.legend.Legend at 0x7fa340497430>
 
 
 
@@ -920,7 +904,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5f68b13f70>
+    <matplotlib.legend.Legend at 0x7fa33ba9bca0>
 
 
 

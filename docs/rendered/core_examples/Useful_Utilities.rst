@@ -90,12 +90,8 @@ imports.
 
 .. parsed-literal::
 
-    Failed to import rail.dsps because: module 'jax.numpy' has no attribute 'trapz'
+    Imported rail.dsps
     Imported rail.flexzboost
-
-
-.. parsed-literal::
-
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -104,6 +100,10 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+
+
+.. parsed-literal::
+
     Imported rail.gpz
     Imported rail.hub
     Imported rail.pipelines
@@ -115,7 +115,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 59 fully formed stages to rail.stages
+    Attached 12 base classes and 62 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -218,6 +218,9 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNInformer'>
     <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
+    <class 'rail.creation.engines.dsps_photometry_creator.DSPSPhotometryCreator'>
+    <class 'rail.creation.engines.dsps_sed_modeler.DSPSSingleSedModeler'>
+    <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostInformer'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.creation.engines.fsps_photometry_creator.FSPSPhotometryCreator'>
@@ -604,7 +607,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f96be36e380>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f37b6cd2440>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

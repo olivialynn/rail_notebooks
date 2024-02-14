@@ -55,6 +55,10 @@ Author: Sam Schmidt Last successfully run: April 26, 2023
     Inserting handle into data store.  single_NZ: inprogress_NZDir_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_NZDir_samples.hdf5, NZDirSummarizer
     Process 0 running estimator on chunk 10000 - 20000
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 20000 - 20449
 
 
@@ -80,8 +84,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f4ccac3e5c0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f4ccac3fc40>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fa773681f00>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fa773680d00>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -109,13 +113,25 @@ Once the pipeline is saved, we execute it
     OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.nz_dir.NZDirInformer   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5   --config=nzdir_config.yml   --model=./nzdir_model.pkl 
     Output writing to ./NZDirInformer.out
     
+
+
+.. parsed-literal::
+
     Job NZDirInformer has completed successfully!
+
+
+.. parsed-literal::
+
     
     Executing NZDirSummarizer
     Command is:
     OMP_NUM_THREADS=1  mpirun -n 2 python3 -m ceci rail.estimation.algos.nz_dir.NZDirSummarizer   --model=./nzdir_model.pkl   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5   --config=nzdir_config.yml   --output=./NZDir_samples.hdf5   --single_NZ=./NZDir_NZ.hdf5 --mpi
     Output writing to ./NZDirSummarizer.out
     
+
+
+.. parsed-literal::
+
     Job NZDirSummarizer has failed with status 127
 
 
@@ -158,7 +174,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4c7309bbe0>
+    <matplotlib.legend.Legend at 0x7fa71b2758d0>
 
 
 

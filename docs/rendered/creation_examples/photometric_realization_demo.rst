@@ -87,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7fbb0cbe8460>
+    <pzflow.flow.Flow at 0x7fe675b4d0c0>
 
 
 
@@ -714,10 +714,6 @@ photometric errors.
 .. parsed-literal::
 
     Inserting handle into data store.  output_error_model_auto: inprogress_output_error_model_auto.pq, error_model_auto
-
-.. parsed-literal::
-
-    
 
 
 

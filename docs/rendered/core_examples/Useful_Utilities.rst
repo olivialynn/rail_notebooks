@@ -109,6 +109,10 @@ imports.
     Imported rail.pipelines
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Attached 12 base classes and 62 fully formed stages to rail.stages
@@ -603,7 +607,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3b51f51360>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f02f9281ae0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

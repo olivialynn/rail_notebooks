@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.82 ms, sys: 1.04 ms, total: 2.86 ms
-    Wall time: 2.68 ms
+    CPU times: user 0 ns, sys: 2.73 ms, total: 2.73 ms
+    Wall time: 2.47 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f85c884bfa0>
+    <rail.core.data.ModelHandle at 0x7f8d20437880>
 
 
 
@@ -238,7 +238,7 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    CPU times: user 55.5 s, sys: 10 ms, total: 55.5 s
+    CPU times: user 55.5 s, sys: 6.04 ms, total: 55.5 s
     Wall time: 55.5 s
 
 

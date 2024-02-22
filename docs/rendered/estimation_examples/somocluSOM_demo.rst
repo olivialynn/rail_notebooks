@@ -100,11 +100,7 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      2 9434k    2  267k    0     0   588k      0  0:00:16 --:--:--  0:00:16  588k
-
-.. parsed-literal::
-
-     67 9434k   67 6383k    0     0  4380k      0  0:00:02  0:00:01  0:00:01 4381k100 9434k  100 9434k    0     0  5899k      0  0:00:01  0:00:01 --:--:-- 5900k
+     69 9434k   69 6586k    0     0  11.9M      0 --:--:-- --:--:-- --:--:-- 11.9M100 9434k  100 9434k    0     0  15.2M      0 --:--:-- --:--:-- --:--:-- 15.2M
 
 
 .. code:: ipython3
@@ -183,15 +179,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 727 ms, total: 8min 2s
-    Wall time: 2min 2s
+    CPU times: user 8min 16s, sys: 916 ms, total: 8min 17s
+    Wall time: 2min 6s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f42184052a0>
+    <rail.core.data.ModelHandle at 0x7f7527383cd0>
 
 
 
@@ -260,7 +256,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6663/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6645/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f41bec0c940>
+    <rail.core.data.QPHandle at 0x7f74ce0dd930>
 
 
 
@@ -449,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f41bec0d720>
+    <matplotlib.legend.Legend at 0x7f74ce0ddab0>
 
 
 
@@ -506,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f41b8713b80>
+    <rail.core.data.QPHandle at 0x7f74cb44b7c0>
 
 
 
@@ -533,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f41b87139a0>
+    <matplotlib.legend.Legend at 0x7f74cb44acb0>
 
 
 
@@ -592,7 +588,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f41bec7dae0>
+    <matplotlib.legend.Legend at 0x7f74c56ca800>
 
 
 

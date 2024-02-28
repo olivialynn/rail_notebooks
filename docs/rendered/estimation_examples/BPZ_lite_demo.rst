@@ -220,24 +220,24 @@ for the SEDs and filters.
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_u.AB
       Generating new AB file Scd_B2004a.DC2LSST_g.AB....
     Scd_B2004a DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_g.AB
       Generating new AB file Scd_B2004a.DC2LSST_r.AB....
     Scd_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_r.AB
+      Generating new AB file Scd_B2004a.DC2LSST_i.AB....
+    Scd_B2004a DC2LSST_i
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_r.AB
-      Generating new AB file Scd_B2004a.DC2LSST_i.AB....
-    Scd_B2004a DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_i.AB
@@ -280,85 +280,89 @@ for the SEDs and filters.
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_r.AB
       Generating new AB file Im_B2004a.DC2LSST_i.AB....
     Im_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_i.AB
       Generating new AB file Im_B2004a.DC2LSST_z.AB....
     Im_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_z.AB
       Generating new AB file Im_B2004a.DC2LSST_y.AB....
     Im_B2004a DC2LSST_y
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_y.AB
       Generating new AB file SB3_B2004a.DC2LSST_u.AB....
     SB3_B2004a DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_u.AB
       Generating new AB file SB3_B2004a.DC2LSST_g.AB....
     SB3_B2004a DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_g.AB
       Generating new AB file SB3_B2004a.DC2LSST_r.AB....
     SB3_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_r.AB
       Generating new AB file SB3_B2004a.DC2LSST_i.AB....
     SB3_B2004a DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_i.AB
       Generating new AB file SB3_B2004a.DC2LSST_z.AB....
     SB3_B2004a DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_z.AB
       Generating new AB file SB3_B2004a.DC2LSST_y.AB....
     SB3_B2004a DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_y.AB
       Generating new AB file SB2_B2004a.DC2LSST_u.AB....
     SB2_B2004a DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_u.AB
       Generating new AB file SB2_B2004a.DC2LSST_g.AB....
     SB2_B2004a DC2LSST_g
@@ -535,15 +539,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.9 s, sys: 93.8 ms, total: 24 s
-    Wall time: 24 s
+    CPU times: user 24 s, sys: 114 ms, total: 24.1 s
+    Wall time: 24.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f4d1067fe50>
+    <rail.core.data.QPHandle at 0x7fec59af7f70>
 
 
 
@@ -623,7 +627,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4d66fe02b0>
+    <matplotlib.legend.Legend at 0x7fec59ab7d60>
 
 
 
@@ -660,7 +664,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4d106309d0>
+    <matplotlib.legend.Legend at 0x7fec599a8c40>
 
 
 
@@ -773,15 +777,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557221   1.92425072 0.11125762]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 15.5 s, sys: 16.1 ms, total: 15.5 s
-    Wall time: 15.5 s
+    CPU times: user 16.2 s, sys: 3 µs, total: 16.2 s
+    Wall time: 16.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f4d10565c90>
+    <rail.core.data.ModelHandle at 0x7fec59a4cc70>
 
 
 
@@ -891,7 +895,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4d0c375c90>
+    <matplotlib.legend.Legend at 0x7fec547e9c60>
 
 
 
@@ -973,7 +977,7 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 14.4 s, sys: 88 ms, total: 14.5 s
+    CPU times: user 14.4 s, sys: 71.8 ms, total: 14.5 s
     Wall time: 14.5 s
 
 
@@ -981,7 +985,7 @@ results are any different:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f4d5c451c00>
+    <rail.core.data.QPHandle at 0x7fec947da3b0>
 
 
 
@@ -1008,7 +1012,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4d10608f70>
+    <matplotlib.legend.Legend at 0x7fec599a8670>
 
 
 
@@ -1098,7 +1102,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4d5c452f50>
+    <matplotlib.legend.Legend at 0x7fec5475f670>
 
 
 

@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.4 s, sys: 142 ms, total: 2.55 s
-    Wall time: 2.54 s
+    CPU times: user 2.35 s, sys: 87.5 ms, total: 2.44 s
+    Wall time: 2.44 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -235,7 +235,7 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Int64Index: 181814 entries, 224150 to 917985
+    Index: 181814 entries, 224150 to 917985
     Data columns (total 6 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  

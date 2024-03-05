@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f5790caeb60>
+    <rail.core.data.ModelHandle at 0x7f81a1607a90>
 
 
 
@@ -192,21 +192,21 @@ calculation, so this should run very fast:
     Inserting handle into data store.  single_NZ_nzsumm_low: inprogress_single_NZ_nzsumm_low.hdf5, nzsumm_low
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
     Process 0 running estimator on chunk 0 - 8513
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 318 ms, sys: 0 ns, total: 318 ms
-    Wall time: 317 ms
+    CPU times: user 301 ms, sys: 203 µs, total: 302 ms
+    Wall time: 300 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -353,7 +353,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f578cadd780>
+    <rail.core.data.ModelHandle at 0x7f81a1d63c40>
 
 
 
@@ -383,8 +383,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 96.7 ms, sys: 16.3 ms, total: 113 ms
-    Wall time: 113 ms
+    CPU times: user 108 ms, sys: 2.43 ms, total: 110 ms
+    Wall time: 110 ms
 
 
 .. code:: ipython3

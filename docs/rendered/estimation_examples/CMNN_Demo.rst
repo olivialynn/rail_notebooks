@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.68 ms, sys: 839 µs, total: 2.52 ms
-    Wall time: 2.27 ms
+    CPU times: user 3.33 ms, sys: 0 ns, total: 3.33 ms
+    Wall time: 3.04 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa210566aa0>
+    <rail.core.data.ModelHandle at 0x7f8653197df0>
 
 
 
@@ -238,8 +238,8 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    CPU times: user 55.6 s, sys: 26.3 ms, total: 55.6 s
-    Wall time: 55.6 s
+    CPU times: user 55.8 s, sys: 6.95 ms, total: 55.8 s
+    Wall time: 55.8 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and
@@ -274,7 +274,7 @@ look:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_18_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_19_1.png
 
 
 Very nice! Not many outliers and a fairly small scatter without much
@@ -290,7 +290,7 @@ minimum number of 20, so we should see a large peak at that value:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_20_0.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_21_0.png
 
 
 As mentioned previously, we can change the method for how we select the
@@ -349,7 +349,7 @@ neighbor estimator:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_23_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_24_1.png
 
 
 Slightly worse, but not dramatically so, a few more outliers are visible
@@ -406,7 +406,7 @@ visually. Finally, we can try the weighted random selection by setting
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_26_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_27_1.png
 
 
 Again, not a dramatic difference, but it can make a difference if there
@@ -432,7 +432,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_29_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_30_1.png
 
 
 .. code:: ipython3
@@ -449,7 +449,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_30_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_31_1.png
 
 
 .. code:: ipython3
@@ -466,7 +466,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_31_1.png
+.. image:: ../../../docs/rendered/estimation_examples/CMNN_Demo_files/../../../docs/rendered/estimation_examples/CMNN_Demo_32_1.png
 
 
 We see a wide variety of widths, as expected for a single Gaussian

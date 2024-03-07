@@ -1,7 +1,9 @@
 NZDir as a Pipeline
 ===================
 
-Author: Sam Schmidt Last successfully run: April 26, 2023
+**Author:** Sam Schmidt
+
+**Last successfully run:** April 26, 2023
 
 .. code:: ipython3
 
@@ -84,8 +86,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f2f265a2ce0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f2f26c83cd0>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fb620943250>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fb620943220>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -174,11 +176,10 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2f7cfc2890>
+    <matplotlib.legend.Legend at 0x7fb61e93c640>
 
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/nzdir_as_pipeline_files/../../../docs/rendered/estimation_examples/nzdir_as_pipeline_16_1.png
-
+.. image:: ../../../docs/rendered/estimation_examples/nzdir_as_pipeline_files/../../../docs/rendered/estimation_examples/nzdir_as_pipeline_15_1.png
 

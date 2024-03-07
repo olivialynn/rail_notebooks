@@ -1,9 +1,9 @@
 Somoclu SOM Summarizer Demo
 ===========================
 
-Author: Ziang Yan, Sam Schmidt
+**Author:** Ziang Yan, Sam Schmidt
 
-Last successfully run: June 16, 2023
+**Last successfully run:** June 16, 2023
 
 This notebook shows a quick demonstration of the use of the
 ``SOMocluSummarizer`` summarization module. Algorithmically, this module
@@ -91,18 +91,6 @@ on galaxies with particularly high S/N rates.
     if not os.path.exists(training_file):
       os.system('curl -O https://portal.nersc.gov/cfs/lsst/PZ/healpix_10326_bright_data.hdf5')
 
-
-.. parsed-literal::
-
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 9434k  100 9434k    0     0  29.4M      0 --:--:-- --:--:-- --:--:-- 29.5M
-
-
 .. code:: ipython3
 
     # way to get big data file
@@ -179,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 7min 58s, sys: 797 ms, total: 7min 59s
-    Wall time: 2min 2s
+    CPU times: user 8min 16s, sys: 653 ms, total: 8min 16s
+    Wall time: 2min 6s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8168b417e0>
+    <rail.core.data.ModelHandle at 0x7f6538f0b6a0>
 
 
 
@@ -256,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6219/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_13638/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -409,7 +397,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f8109e8a2c0>
+    <rail.core.data.QPHandle at 0x7f64e036a590>
 
 
 
@@ -445,7 +433,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8109e89a50>
+    <matplotlib.legend.Legend at 0x7f64e036a0b0>
 
 
 
@@ -502,7 +490,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f8109e27730>
+    <rail.core.data.QPHandle at 0x7f64e03af970>
 
 
 
@@ -529,7 +517,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8109e26ce0>
+    <matplotlib.legend.Legend at 0x7f64e03afbb0>
 
 
 
@@ -588,7 +576,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8109c86a70>
+    <matplotlib.legend.Legend at 0x7f64e87a9030>
 
 
 
@@ -596,7 +584,7 @@ bootstrap samples:
 .. image:: ../../../docs/rendered/estimation_examples/somocluSOM_demo_files/../../../docs/rendered/estimation_examples/somocluSOM_demo_50_2.png
 
 
-quantitative metrics
+Quantitative metrics
 --------------------
 
 Let’s look at how we’ve done at estimating the mean redshift and “width”

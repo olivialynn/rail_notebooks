@@ -1,9 +1,9 @@
 Somoclu SOM Summarizer Cluster Demo
 ===================================
 
-Author: Ziang Yan, Sam Schmidt
+**Author:** Ziang Yan, Sam Schmidt
 
-Last successfully run: June 16, 2023
+**Last successfully run:** June 16, 2023
 
 This notebook shows a quick demonstration of the use of the
 ``SOMocluSummarizer`` summarization module. Algorithmically, this module
@@ -93,6 +93,18 @@ on galaxies with particularly high S/N rates.
     if not os.path.exists(training_file):
       os.system('curl -O https://portal.nersc.gov/cfs/lsst/PZ/healpix_10326_bright_data.hdf5')
 
+
+.. parsed-literal::
+
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  8200k      0  0:00:01  0:00:01 --:--:-- 8203k
+
+
 .. code:: ipython3
 
     # way to get big data file
@@ -165,15 +177,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 16s, sys: 998 ms, total: 8min 17s
-    Wall time: 2min 6s
+    CPU times: user 8min 1s, sys: 590 ms, total: 8min 2s
+    Wall time: 2min 3s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f954e0b1390>
+    <rail.core.data.ModelHandle at 0x7f61b4bc7b80>
 
 
 
@@ -402,7 +414,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f954e1173a0>
+    <rail.core.data.QPHandle at 0x7f615f653e50>
 
 
 
@@ -765,7 +777,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f94e7ee15a0>
+    <matplotlib.legend.Legend at 0x7f6156787ca0>
 
 
 
@@ -818,7 +830,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f94f4e398a0>
+    <rail.core.data.QPHandle at 0x7f6156221b10>
 
 
 
@@ -845,7 +857,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f94e7ee3d30>
+    <matplotlib.legend.Legend at 0x7f6156222f80>
 
 
 
@@ -904,7 +916,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f94e7ee1d50>
+    <matplotlib.legend.Legend at 0x7f61561afeb0>
 
 
 
@@ -912,7 +924,7 @@ bootstrap samples:
 .. image:: ../../../docs/rendered/estimation_examples/somocluSOMcluster_demo_files/../../../docs/rendered/estimation_examples/somocluSOMcluster_demo_54_2.png
 
 
-quantitative metrics
+Quantitative metrics
 --------------------
 
 Let’s look at how we’ve done at estimating the mean redshift and “width”

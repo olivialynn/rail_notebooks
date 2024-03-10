@@ -98,11 +98,11 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  12.6M      0 --:--:-- --:--:-- --:--:-- 12.7M
+     64 9434k   64 6123k    0     0  5234k      0  0:00:01  0:00:01 --:--:-- 5234k100 9434k  100 9434k    0     0  7580k      0  0:00:01  0:00:01 --:--:-- 7577k
 
 
 .. code:: ipython3
@@ -177,15 +177,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 1s, sys: 870 ms, total: 8min 2s
-    Wall time: 2min 2s
+    CPU times: user 8min 2s, sys: 720 ms, total: 8min 3s
+    Wall time: 2min 3s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fcce7b50490>
+    <rail.core.data.ModelHandle at 0x7f10927809d0>
 
 
 
@@ -414,7 +414,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fcc857a38b0>
+    <rail.core.data.QPHandle at 0x7f102ba70c40>
 
 
 
@@ -777,7 +777,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcc855f4580>
+    <matplotlib.legend.Legend at 0x7f1030b7f910>
 
 
 
@@ -830,7 +830,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fcc84da9b10>
+    <rail.core.data.QPHandle at 0x7f1030225d20>
 
 
 
@@ -857,7 +857,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcc84daa5c0>
+    <matplotlib.legend.Legend at 0x7f10303f4040>
 
 
 
@@ -916,7 +916,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fcc84d97160>
+    <matplotlib.legend.Legend at 0x7f10302582e0>
 
 
 

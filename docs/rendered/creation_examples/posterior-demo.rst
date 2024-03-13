@@ -3,7 +3,7 @@ Using a Creator to Calculate True Posteriors for a Galaxy Sample
 
 author: John Franklin Crenshaw, Sam Schmidt, Eric Charles, others…
 
-last run successfully: August 2, 2023
+last run successfully: March 7, 2024
 
 This notebook demonstrates how to use a RAIL Engine to calculate true
 posteriors for galaxy samples drawn from the same Engine. Note that this
@@ -144,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f471063c6d0>
+    <qp.ensemble.Ensemble at 0x7f53fcfadab0>
 
 
 
@@ -200,7 +200,7 @@ Now let’s draw a degraded sample:
 
     # set up the error model
     
-    n_samples = 30
+    n_samples = 50
     # create the FlowEngine
     flowEngine_degr = FlowCreator.make_stage(
         name="degraded", flow_file=flow_file, n_samples=n_samples
@@ -297,115 +297,147 @@ Now let’s draw a degraded sample:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.803805</td>
-          <td>24.093753</td>
-          <td>0.036568</td>
-          <td>23.424399</td>
-          <td>0.008127</td>
-          <td>22.790889</td>
-          <td>0.006133</td>
-          <td>22.054347</td>
-          <td>0.005710</td>
-          <td>21.748304</td>
-          <td>0.006217</td>
-          <td>21.579654</td>
-          <td>0.008788</td>
+          <td>1.008050</td>
+          <td>23.936981</td>
+          <td>0.042606</td>
+          <td>23.882311</td>
+          <td>0.014348</td>
+          <td>23.635338</td>
+          <td>0.010623</td>
+          <td>23.124297</td>
+          <td>0.010943</td>
+          <td>22.607378</td>
+          <td>0.012849</td>
+          <td>22.334488</td>
+          <td>0.021795</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.505439</td>
-          <td>25.826337</td>
-          <td>0.165635</td>
-          <td>24.975206</td>
-          <td>0.026070</td>
-          <td>23.996700</td>
-          <td>0.011510</td>
-          <td>23.695869</td>
-          <td>0.012809</td>
-          <td>23.566426</td>
-          <td>0.019362</td>
-          <td>23.377214</td>
-          <td>0.036827</td>
+          <td>0.264244</td>
+          <td>24.188130</td>
+          <td>0.053126</td>
+          <td>24.036792</td>
+          <td>0.016232</td>
+          <td>23.955366</td>
+          <td>0.013465</td>
+          <td>24.137941</td>
+          <td>0.024818</td>
+          <td>23.859648</td>
+          <td>0.036994</td>
+          <td>24.070680</td>
+          <td>0.100555</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.547731</td>
-          <td>22.915303</td>
-          <td>0.013772</td>
-          <td>21.770088</td>
-          <td>0.005253</td>
-          <td>20.423988</td>
-          <td>0.005030</td>
-          <td>19.589757</td>
-          <td>0.005018</td>
-          <td>19.233866</td>
-          <td>0.005027</td>
-          <td>18.961002</td>
-          <td>0.005066</td>
+          <td>0.260134</td>
+          <td>24.577568</td>
+          <td>0.074831</td>
+          <td>24.002964</td>
+          <td>0.015794</td>
+          <td>23.491983</td>
+          <td>0.009639</td>
+          <td>23.354827</td>
+          <td>0.012982</td>
+          <td>23.121116</td>
+          <td>0.019470</td>
+          <td>23.178847</td>
+          <td>0.045700</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.110475</td>
-          <td>25.068082</td>
-          <td>0.085983</td>
-          <td>24.977551</td>
-          <td>0.026123</td>
-          <td>24.928067</td>
-          <td>0.024553</td>
-          <td>24.602612</td>
-          <td>0.027216</td>
-          <td>24.045005</td>
-          <td>0.029250</td>
-          <td>23.912641</td>
-          <td>0.059211</td>
+          <td>0.236191</td>
+          <td>25.554217</td>
+          <td>0.174331</td>
+          <td>24.276667</td>
+          <td>0.019792</td>
+          <td>23.179313</td>
+          <td>0.007990</td>
+          <td>22.753453</td>
+          <td>0.008587</td>
+          <td>22.499207</td>
+          <td>0.011845</td>
+          <td>22.321407</td>
+          <td>0.021553</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.070354</td>
-          <td>25.966555</td>
-          <td>0.186508</td>
-          <td>25.164186</td>
-          <td>0.030738</td>
-          <td>24.178280</td>
-          <td>0.013194</td>
-          <td>23.530259</td>
-          <td>0.011322</td>
-          <td>22.768103</td>
-          <td>0.010394</td>
-          <td>22.458936</td>
-          <td>0.016692</td>
+          <td>0.829715</td>
+          <td>25.346007</td>
+          <td>0.145985</td>
+          <td>25.167999</td>
+          <td>0.042949</td>
+          <td>24.631576</td>
+          <td>0.023566</td>
+          <td>23.856584</td>
+          <td>0.019501</td>
+          <td>23.628316</td>
+          <td>0.030170</td>
+          <td>23.593437</td>
+          <td>0.066021</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>0.639659</td>
+          <td>23.467008</td>
+          <td>0.028308</td>
+          <td>23.327923</td>
+          <td>0.009617</td>
+          <td>22.743494</td>
+          <td>0.006555</td>
+          <td>22.116522</td>
+          <td>0.006385</td>
+          <td>21.893522</td>
+          <td>0.008000</td>
+          <td>21.692578</td>
+          <td>0.012894</td>
         </tr>
         <tr>
           <th>6</th>
-          <td>0.246923</td>
-          <td>24.587485</td>
-          <td>0.056377</td>
-          <td>23.630751</td>
-          <td>0.009167</td>
-          <td>22.967479</td>
-          <td>0.006495</td>
-          <td>22.724737</td>
-          <td>0.007035</td>
-          <td>22.568565</td>
-          <td>0.009115</td>
-          <td>22.539906</td>
-          <td>0.017848</td>
+          <td>1.241072</td>
+          <td>25.146250</td>
+          <td>0.122915</td>
+          <td>25.170704</td>
+          <td>0.043052</td>
+          <td>25.000453</td>
+          <td>0.032523</td>
+          <td>24.513028</td>
+          <td>0.034474</td>
+          <td>23.957926</td>
+          <td>0.040357</td>
+          <td>23.394319</td>
+          <td>0.055333</td>
         </tr>
         <tr>
           <th>7</th>
-          <td>0.144237</td>
-          <td>24.346591</td>
-          <td>0.045622</td>
-          <td>23.324302</td>
-          <td>0.007710</td>
-          <td>22.806145</td>
-          <td>0.006161</td>
-          <td>22.512533</td>
-          <td>0.006469</td>
-          <td>22.373811</td>
-          <td>0.008127</td>
-          <td>22.283497</td>
-          <td>0.014484</td>
+          <td>0.214016</td>
+          <td>24.299064</td>
+          <td>0.058574</td>
+          <td>23.539510</td>
+          <td>0.011098</td>
+          <td>23.088066</td>
+          <td>0.007617</td>
+          <td>22.875409</td>
+          <td>0.009253</td>
+          <td>22.842651</td>
+          <td>0.015463</td>
+          <td>22.764609</td>
+          <td>0.031681</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>0.357573</td>
+          <td>24.642177</td>
+          <td>0.079198</td>
+          <td>23.735321</td>
+          <td>0.012810</td>
+          <td>22.757510</td>
+          <td>0.006589</td>
+          <td>22.501309</td>
+          <td>0.007490</td>
+          <td>22.204173</td>
+          <td>0.009638</td>
+          <td>22.237867</td>
+          <td>0.020073</td>
         </tr>
       </tbody>
     </table>
@@ -593,7 +625,7 @@ values of u to marginalize over.
 .. image:: ../../../docs/rendered/creation_examples/posterior-demo_files/../../../docs/rendered/creation_examples/posterior-demo_28_0.png
 
 
-Based on this histogram, I will marginalize over u band values from 27
+Based on this histogram, I will marginalize over u band values from 25
 to 31. Like how I tested different numbers of error samples above, here
 I will test different resolutions for the u band grid.
 
@@ -631,7 +663,7 @@ grid.
         # set up the marginalization rules for this grid resolution
         marg_rules = {
             "flag": errorModel.config["ndFlag"],
-            "u": lambda row: np.linspace(27, 31, nbins),
+            "u": lambda row: np.linspace(25, 31, nbins),
         }
     
         # calculate the posterior by marginalizing over u and sampling

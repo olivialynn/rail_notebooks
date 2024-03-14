@@ -1,9 +1,9 @@
 Test Sampled Summarizers
 ========================
 
-Author: Sam Schmidt
+**Author:** Sam Schmidt
 
-Last successfully run: April 26, 2023
+**Last successfully run:** April 26, 2023
 
 June 28 update: I modified the summarizers to output not just N sample
 N(z) distributions (saved to the file specified via the ``output``
@@ -112,7 +112,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1255a3bdf0>
+    <rail.core.data.ModelHandle at 0x7211503cfd30>
 
 
 
@@ -261,7 +261,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1255a3bd90>
+    <matplotlib.legend.Legend at 0x7211525cee00>
 
 
 
@@ -317,8 +317,8 @@ appears alpha is broken, so this plot is not the best:
     Process 0 running estimator on chunk 20000 - 20449
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 49.6 ms, sys: 403 µs, total: 50 ms
-    Wall time: 49.6 ms
+    CPU times: user 46.5 ms, sys: 3.59 ms, total: 50.1 ms
+    Wall time: 49.7 ms
 
 
 .. code:: ipython3
@@ -339,7 +339,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f12501601c0>
+    <matplotlib.legend.Legend at 0x72114e1acd00>
 
 
 
@@ -378,8 +378,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.05 s, sys: 56.1 ms, total: 1.11 s
-    Wall time: 1.11 s
+    CPU times: user 1.05 s, sys: 43.7 ms, total: 1.1 s
+    Wall time: 1.1 s
 
 
 .. code:: ipython3
@@ -392,7 +392,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f12500fd8d0>
+    <qp.ensemble.Ensemble at 0x721146e83b50>
 
 
 
@@ -451,7 +451,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f12552b5810>
+    <rail.core.data.ModelHandle at 0x72114e1ad3c0>
 
 
 
@@ -500,7 +500,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f124beaa6e0>
+    <matplotlib.legend.Legend at 0x721146c41d80>
 
 
 
@@ -627,7 +627,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f124bf2f670>]
+    [<matplotlib.lines.Line2D at 0x721146ae7a30>]
 
 
 
@@ -644,7 +644,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f124bf0d0f0>]
+    [<matplotlib.lines.Line2D at 0x721146a45900>]
 
 
 
@@ -661,7 +661,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f1255272e30>]
+    [<matplotlib.lines.Line2D at 0x72114e172380>]
 
 
 
@@ -696,7 +696,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f124bf0f100>
+    <matplotlib.legend.Legend at 0x721146ea8af0>
 
 
 
@@ -743,4 +743,3 @@ NZDir-derived distribution:
 
 Again, not a huge spread in predicted mean redshifts based solely on
 bootstraps, even with only ~20,000 galaxies.
-

@@ -123,7 +123,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x727bb91c65f0>
+    <pzflow.flow.Flow at 0x77f449691c90>
 
 
 
@@ -207,7 +207,7 @@ using, you can just print the model:
 
 .. parsed-literal::
 
-    <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x727c183f1840>
+    <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x77f4aca093f0>
 
 
 
@@ -647,10 +647,6 @@ this scenario is!)
 .. parsed-literal::
 
     Inserting handle into data store.  output_lc_2p_0II_0III: inprogress_output_lc_2p_0II_0III.pq, lc_2p_0II_0III
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_lc_1p_0III_0II: inprogress_output_lc_1p_0III_0II.pq, lc_1p_0III_0II
 
 

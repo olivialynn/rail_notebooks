@@ -45,29 +45,33 @@ for bpz demo data:
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   503k      0 --:--:-- --:--:-- --:--:--  503k
+     45  450k   45  203k    0     0   272k      0  0:00:01 --:--:--  0:00:01  272k
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0   550k      0 --:--:-- --:--:-- --:--:--  550k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   140k      0 --:--:-- --:--:-- --:--:--  140k
+    100 83848  100 83848    0     0   138k      0 --:--:-- --:--:-- --:--:--  138k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     55 83848   55 46235    0     0  78583      0  0:00:01 --:--:--  0:00:01 78497100 83848  100 83848    0     0   138k      0 --:--:-- --:--:-- --:--:--  138k
+     19 83848   19 16151    0     0  50178      0  0:00:01 --:--:--  0:00:01 50158
+
+.. parsed-literal::
+
+    100 83848  100 83848    0     0   207k      0 --:--:-- --:--:-- --:--:--  207k
 
 
 The files must be untarred and moved, as well:
@@ -206,15 +210,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 15.4 s, sys: 0 ns, total: 15.4 s
-    Wall time: 15.4 s
+    CPU times: user 15.3 s, sys: 2.33 ms, total: 15.3 s
+    Wall time: 15.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7c1da5bf1de0>
+    <rail.core.data.ModelHandle at 0x760064025060>
 
 
 
@@ -324,7 +328,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7c1dd0f6dc90>
+    <matplotlib.legend.Legend at 0x76004c349f60>
 
 
 
@@ -369,11 +373,11 @@ later use) for the first time.
     DC2_DONOTUSE_El1 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_u.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_g.AB....
     DC2_DONOTUSE_El1 DC2LSST_g
     x_res[0] 3000.0
@@ -873,15 +877,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.3 s, sys: 105 ms, total: 26.4 s
-    Wall time: 26.4 s
+    CPU times: user 26.5 s, sys: 108 ms, total: 26.6 s
+    Wall time: 26.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7c1da4be8580>
+    <rail.core.data.QPHandle at 0x760011b8c850>
 
 
 
@@ -911,7 +915,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7c1da4dc7af0>
+    <matplotlib.legend.Legend at 0x76001710bd60>
 
 
 
@@ -1042,7 +1046,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7c1da4c727a0>
+    <matplotlib.legend.Legend at 0x760016fb6380>
 
 
 

@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc4127f6e00>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fc474770e50>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fcd0691b700>,
+       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7fcd64745b40>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7fc4128b60e0>]),
+       <rail.core.util_stages.TableConverter at 0x7fcd069da1d0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -498,12 +498,6 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/pty.py:89: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
-      pid, fd = os.forkpty()
-
-
-.. parsed-literal::
-
     Traceback (most recent call last):
       File "/opt/hostedtoolcache/Python/3.10.13/x64/bin/ceci", line 8, in <module>
         sys.exit(main())
@@ -518,4 +512,10 @@ pipeline we’ve just made would look like:
       File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/ceci/sites/__init__.py", line 73, in load
         site_name = site_config["name"]
     KeyError: 'name'
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/pty.py:89: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+      pid, fd = os.forkpty()
 

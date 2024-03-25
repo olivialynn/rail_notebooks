@@ -96,11 +96,11 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  9930k      0 --:--:-- --:--:-- --:--:-- 9931k
+    100 9434k  100 9434k    0     0  18.2M      0 --:--:-- --:--:-- --:--:-- 18.3M
 
 
 .. code:: ipython3
@@ -179,15 +179,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 15s, sys: 975 ms, total: 8min 16s
-    Wall time: 2min 6s
+    CPU times: user 8min 2s, sys: 988 ms, total: 8min 3s
+    Wall time: 2min 3s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3cdc6b5c00>
+    <rail.core.data.ModelHandle at 0x7ff18c2e5780>
 
 
 
@@ -256,7 +256,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_15082/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_15055/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -409,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3c7a3d27d0>
+    <rail.core.data.QPHandle at 0x7ff12fb709d0>
 
 
 
@@ -445,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3c7a3d2800>
+    <matplotlib.legend.Legend at 0x7ff12fb71870>
 
 
 
@@ -502,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3c7a723b80>
+    <rail.core.data.QPHandle at 0x7ff12fb137c0>
 
 
 
@@ -529,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3c7a723460>
+    <matplotlib.legend.Legend at 0x7ff12fb13fd0>
 
 
 
@@ -588,7 +588,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3c82b9d1b0>
+    <matplotlib.legend.Legend at 0x7ff12fcb10c0>
 
 
 

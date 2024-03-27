@@ -107,6 +107,10 @@ imports.
     Imported rail.gpz
     Imported rail.hub
     Imported rail.pipelines
+
+
+.. parsed-literal::
+
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
 
@@ -313,6 +317,7 @@ If we already know its path, we can just point directly to the file
 
 .. code:: ipython3
 
+    import os
     from rail.core.utils import RAILDIR
     
     flow_file = os.path.join(
@@ -587,7 +592,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fe2d1508b80>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8614ee5840>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -606,7 +611,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fe2d1508b80>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8614ee5840>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

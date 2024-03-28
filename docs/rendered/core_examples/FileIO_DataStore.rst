@@ -288,7 +288,7 @@ Let’s list the data abailable to us in the DataStore:
 
     DataStore
     {  train_data:<class 'rail.core.data.TableHandle'> None, (d)
-      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
+      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
     }
 
 
@@ -483,17 +483,17 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
@@ -519,7 +519,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb10b30da20>
+    <rail.core.data.ModelHandle at 0x7fe9b9e96920>
 
 
 
@@ -561,17 +561,17 @@ case of many of the estimator codes this is a FITS file titled
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
@@ -584,17 +584,17 @@ case of many of the estimator codes this is a FITS file titled
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
@@ -606,17 +606,17 @@ case of many of the estimator codes this is a FITS file titled
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
@@ -650,7 +650,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb10b3927d0>
+    <matplotlib.legend.Legend at 0x7fe9b7cca500>
 
 
 
@@ -680,7 +680,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb10634e3b0>
+    <matplotlib.legend.Legend at 0x7fe9b825f4c0>
 
 
 

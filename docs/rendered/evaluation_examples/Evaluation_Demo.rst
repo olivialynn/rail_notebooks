@@ -90,11 +90,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      6 47.1M    6 3315k    0     0  4475k      0  0:00:10 --:--:--  0:00:10 4474k
+      1 47.1M    1  507k    0     0   715k      0  0:01:07 --:--:--  0:01:07  715k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  29.1M      0  0:00:01  0:00:01 --:--:-- 29.2M
+     93 47.1M   93 44.2M    0     0  25.8M      0  0:00:01  0:00:01 --:--:-- 25.8M100 47.1M  100 47.1M    0     0  26.6M      0  0:00:01  0:00:01 --:--:-- 26.6M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -153,7 +153,7 @@ FlexZBoost results
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -277,7 +277,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -295,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f14723f2260>
+    <qp.ensemble.Ensemble at 0x7fa9d73616c0>
 
 
 

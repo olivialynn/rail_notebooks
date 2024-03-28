@@ -86,8 +86,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fd3a02f5ab0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fd3495c5000>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f19b71b7070>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f1a088ed990>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -112,7 +112,7 @@ Once the pipeline is saved, we execute it
     
     Executing NZDirInformer
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.nz_dir.NZDirInformer   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5   --config=nzdir_config.yml   --model=./nzdir_model.pkl 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.nz_dir.NZDirInformer   --input=/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5   --config=nzdir_config.yml   --model=./nzdir_model.pkl 
     Output writing to ./NZDirInformer.out
     
 
@@ -127,7 +127,7 @@ Once the pipeline is saved, we execute it
     
     Executing NZDirSummarizer
     Command is:
-    OMP_NUM_THREADS=1  mpirun -n 2 python3 -m ceci rail.estimation.algos.nz_dir.NZDirSummarizer   --model=./nzdir_model.pkl   --input=/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5   --config=nzdir_config.yml   --output=./NZDir_samples.hdf5   --single_NZ=./NZDir_NZ.hdf5 --mpi
+    OMP_NUM_THREADS=1  mpirun -n 2 python3 -m ceci rail.estimation.algos.nz_dir.NZDirSummarizer   --model=./nzdir_model.pkl   --input=/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5   --config=nzdir_config.yml   --output=./NZDir_samples.hdf5   --single_NZ=./NZDir_NZ.hdf5 --mpi
     Output writing to ./NZDirSummarizer.out
     
 
@@ -176,7 +176,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd347a9bdf0>
+    <matplotlib.legend.Legend at 0x7f19b52cab00>
 
 
 

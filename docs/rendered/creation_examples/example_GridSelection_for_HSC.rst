@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.34 s, sys: 108 ms, total: 2.45 s
-    Wall time: 2.44 s
+    CPU times: user 2.37 s, sys: 117 ms, total: 2.49 s
+    Wall time: 2.48 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock

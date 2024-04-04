@@ -34,6 +34,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.core.util_stages.RowSelector'>
     <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
@@ -46,13 +47,6 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_GAMA'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_BOSS'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_DEEP2'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_VVDSf02'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_zCOSMOS'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_HSC'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
     <class 'rail.evaluation.evaluator.Evaluator'>
 
@@ -115,7 +109,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 62 fully formed stages to rail.stages
+    Attached 11 base classes and 63 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -184,6 +178,7 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.core.util_stages.RowSelector'>
     <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
@@ -196,6 +191,12 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.creation.degradation.quantityCut.QuantityCut'>
+    <class 'rail.evaluation.evaluator.Evaluator'>
+    <class 'rail.creation.degradation.grid_selection.GridSelection'>
+    <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
+    <class 'rail.creation.degradation.spectroscopic_degraders.LineConfusion'>
+    <class 'rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness'>
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection'>
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_GAMA'>
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_BOSS'>
@@ -203,12 +204,6 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_VVDSf02'>
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_zCOSMOS'>
     <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_HSC'>
-    <class 'rail.creation.degradation.quantityCut.QuantityCut'>
-    <class 'rail.evaluation.evaluator.Evaluator'>
-    <class 'rail.creation.degradation.grid_selection.GridSelection'>
-    <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
-    <class 'rail.creation.degradation.spectroscopic_degraders.LineConfusion'>
-    <class 'rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness'>
     <class 'rail.creation.degradation.lsst_error_model.LSSTErrorModel'>
     <class 'rail.tools.util_photometry.HyperbolicSmoothing'>
     <class 'rail.tools.util_photometry.HyperbolicMagnitudes'>
@@ -588,7 +583,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f63ddf64c40>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd2dbea0df0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -607,7 +602,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f63ddf64c40>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd2dbea0df0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

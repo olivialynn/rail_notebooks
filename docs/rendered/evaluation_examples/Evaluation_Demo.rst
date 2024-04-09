@@ -23,7 +23,7 @@ more info.
 
     import rail
     from rail.evaluation.metrics.cdeloss import *
-    from rail.evaluation.evaluator import Evaluator
+    from rail.evaluation.evaluator import OldEvaluator
     from rail.core.data import QPHandle, TableHandle
     from rail.core.stage import RailStage
     from utils import plot_pit_qq, ks_plot
@@ -90,15 +90,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+     15 47.1M   15 7465k    0     0  8989k      0  0:00:05 --:--:--  0:00:05 8984k
 
 .. parsed-literal::
 
-     23 47.1M   23 11.2M    0     0  7635k      0  0:00:06  0:00:01  0:00:05 7635k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  19.4M      0  0:00:02  0:00:02 --:--:-- 19.4M
+    100 47.1M  100 47.1M    0     0  28.9M      0  0:00:01  0:00:01 --:--:-- 28.9M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -143,7 +139,7 @@ FlexZBoost results
 
 .. code:: ipython3
 
-    FZB_eval = Evaluator.make_stage(name='FZB_eval', truth=truth)
+    FZB_eval = OldEvaluator.make_stage(name='FZB_eval', truth=truth)
 
 .. code:: ipython3
 
@@ -299,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f0aa86dd270>
+    <qp.ensemble.Ensemble at 0x7fc06cbe73d0>
 
 
 

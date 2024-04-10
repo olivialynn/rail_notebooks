@@ -47,6 +47,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
 
 
@@ -108,7 +109,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 11 base classes and 62 fully formed stages to rail.stages
+    Attached 11 base classes and 63 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -190,6 +191,7 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
     <class 'rail.creation.degradation.grid_selection.GridSelection'>
     <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
@@ -601,7 +603,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5d34915150>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3ec1cb0820>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -73,11 +73,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0  243k    0     0   369k      0  0:02:10 --:--:--  0:02:10  369k
+      0 47.1M    0 44756    0     0  53962      0  0:15:15 --:--:--  0:15:15 53922
 
 .. parsed-literal::
 
-     79 47.1M   79 37.5M    0     0  22.9M      0  0:00:02  0:00:01  0:00:01 22.9M100 47.1M  100 47.1M    0     0  25.9M      0  0:00:01  0:00:01 --:--:-- 25.9M
+     52 47.1M   52 24.8M    0     0  13.4M      0  0:00:03  0:00:01  0:00:02 13.4M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  19.9M      0  0:00:02  0:00:02 --:--:-- 19.9M
 
 
 .. code:: ipython3
@@ -918,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f6494595090>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f46848df670>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1002,14 +1006,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 7000 - 8000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 8000 - 9000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1038,14 +1042,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 15000 - 16000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 16000 - 17000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1231,7 +1235,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f6451393a90>
+    <qp.ensemble.Ensemble at 0x7f46515ae5f0>
 
 
 

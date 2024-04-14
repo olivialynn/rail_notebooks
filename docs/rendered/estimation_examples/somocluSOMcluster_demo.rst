@@ -173,7 +173,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f5194409ba0>
+    <rail.core.data.ModelHandle at 0x7f0b04088e50>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f5136b8d3c0>
+    <rail.core.data.QPHandle at 0x7f0aa5c100d0>
 
 
 
@@ -765,7 +765,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5136d70520>
+    <matplotlib.legend.Legend at 0x7f0aa5aa0e80>
 
 
 
@@ -818,7 +818,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f5136f20eb0>
+    <rail.core.data.QPHandle at 0x7f0aa41f9000>
 
 
 
@@ -845,7 +845,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5136c32c80>
+    <matplotlib.legend.Legend at 0x7f0aa5aa1090>
 
 
 
@@ -904,7 +904,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5136d35fc0>
+    <matplotlib.legend.Legend at 0x7f0aa5aa0fa0>
 
 
 

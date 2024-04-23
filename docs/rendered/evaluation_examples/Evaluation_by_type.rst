@@ -902,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fab74ff3d60>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f990cc2fd60>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -954,10 +954,6 @@ forced to run on a single node for exact results.
     This is not a qp file because 'meta'
     Unsupported metric requested: 'omega'.  Available metrics are: ['ad', 'brier', 'cdeloss', 'cvm', 'kld', 'ks', 'moment', 'outlier', 'pit', 'point_bias', 'point_outlier_rate', 'point_stats_ez', 'point_stats_iqr', 'point_stats_sigma_mad', 'rbpe', 'rmse']
     Requested metrics: ['cvm', 'ks', 'kld', 'cdeloss', 'point_stats_ez', 'point_stats_iqr']
-
-
-.. parsed-literal::
-
     This is not a qp file because 'meta'
     This is not a qp file because 'meta'
     This is not a qp file because 'meta'
@@ -1030,14 +1026,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-    Processing 0 running evaluator on chunk 16000 - 17000.
-    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
-    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
-    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
 
 
 .. parsed-literal::
 
+    Processing 0 running evaluator on chunk 16000 - 17000.
+    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
+    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
+    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
     Processing 0 running evaluator on chunk 17000 - 18000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1219,7 +1215,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fab75c00430>
+    <qp.ensemble.Ensemble at 0x7f98c44ca5c0>
 
 
 

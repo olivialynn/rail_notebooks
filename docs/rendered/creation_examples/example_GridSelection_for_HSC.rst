@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.37 s, sys: 116 ms, total: 2.49 s
-    Wall time: 2.48 s
+    CPU times: user 2.73 s, sys: 155 ms, total: 2.88 s
+    Wall time: 2.88 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -235,8 +235,8 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 181814 entries, 224150 to 917985
-    Data columns (total 6 columns):
+    Index: 181814 entries, 84300 to 927787
+    Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
      0   i          181814 non-null  float64
@@ -244,9 +244,12 @@ galaxies.
      2   g          181814 non-null  float64
      3   z          181814 non-null  float64
      4   redshift   181814 non-null  float64
-     5   max_specz  181814 non-null  float64
-    dtypes: float64(6)
-    memory usage: 9.7 MB
+     5   x_vals     181814 non-null  float64
+     6   y_vals     181814 non-null  float64
+     7   ratios     181814 non-null  float64
+     8   max_specz  181814 non-null  float64
+    dtypes: float64(9)
+    memory usage: 13.9 MB
 
 
 And we see that we’ve kept 625,677 out of the 4,000,000 galaxies in the
@@ -267,6 +270,17 @@ a visual indication of how many galaxies in each cell we’ve kept.
 .. code:: ipython3
 
     trim_data()['color'] = trim_data()['g'] - trim_data()['z']
+
+
+.. parsed-literal::
+
+    /tmp/ipykernel_7532/1938339790.py:1: SettingWithCopyWarning: 
+    A value is trying to be set on a copy of a slice from a DataFrame.
+    Try using .loc[row_indexer,col_indexer] = value instead
+    
+    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+      trim_data()['color'] = trim_data()['g'] - trim_data()['z']
+
 
 .. code:: ipython3
 

@@ -100,7 +100,6 @@ imports.
     Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
-    Imported rail.pipelines
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
 
@@ -109,7 +108,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 11 base classes and 63 fully formed stages to rail.stages
+    Attached 11 base classes and 64 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -194,6 +193,7 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
     <class 'rail.creation.degradation.grid_selection.GridSelection'>
+    <class 'rail.creation.noisifier.Noisifier'>
     <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
     <class 'rail.creation.degradation.spectroscopic_degraders.LineConfusion'>
     <class 'rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness'>
@@ -603,7 +603,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f75acb6a7a0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff805fa1c60>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

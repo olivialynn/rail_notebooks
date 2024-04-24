@@ -205,8 +205,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, specselection_zCOSMOS
-    CPU times: user 1.38 s, sys: 70.2 ms, total: 1.45 s
-    Wall time: 1.43 s
+    CPU times: user 1.39 s, sys: 67.8 ms, total: 1.45 s
+    Wall time: 1.44 s
 
 
 .. code:: ipython3
@@ -217,17 +217,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 504375 entries, 0 to 1999999
+    Index: 504606 entries, 0 to 1999999
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         504375 non-null  float64
-     1   g         504375 non-null  float64
-     2   r         504375 non-null  float64
-     3   i         504375 non-null  float64
-     4   z         504375 non-null  float64
-     5   y         504375 non-null  float64
-     6   redshift  504375 non-null  float64
+     0   u         504606 non-null  float64
+     1   g         504606 non-null  float64
+     2   r         504606 non-null  float64
+     3   i         504606 non-null  float64
+     4   z         504606 non-null  float64
+     5   y         504606 non-null  float64
+     6   redshift  504606 non-null  float64
     dtypes: float64(7)
     memory usage: 30.8 MB
 
@@ -322,16 +322,6 @@ a visual indication of how many galaxies in each cell we’ve kept.
           <td>0.125606</td>
         </tr>
         <tr>
-          <th>5</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>22.155690</td>
-          <td>14.762925</td>
-          <td>20.0</td>
-          <td>1.201553</td>
-        </tr>
-        <tr>
           <th>7</th>
           <td>20.0</td>
           <td>20.0</td>
@@ -340,6 +330,16 @@ a visual indication of how many galaxies in each cell we’ve kept.
           <td>20.662582</td>
           <td>20.0</td>
           <td>0.401905</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.617996</td>
+          <td>15.141906</td>
+          <td>20.0</td>
+          <td>0.986451</td>
         </tr>
         <tr>
           <th>...</th>
@@ -352,24 +352,24 @@ a visual indication of how many galaxies in each cell we’ve kept.
           <td>...</td>
         </tr>
         <tr>
-          <th>1999978</th>
+          <th>1999987</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.503473</td>
-          <td>21.386000</td>
+          <td>22.324742</td>
+          <td>19.864208</td>
           <td>20.0</td>
-          <td>0.293330</td>
+          <td>1.347066</td>
         </tr>
         <tr>
-          <th>1999980</th>
+          <th>1999988</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.321786</td>
-          <td>16.921940</td>
+          <td>19.926459</td>
+          <td>16.944734</td>
           <td>20.0</td>
-          <td>1.232539</td>
+          <td>0.957800</td>
         </tr>
         <tr>
           <th>1999989</th>
@@ -403,7 +403,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
         </tr>
       </tbody>
     </table>
-    <p>504375 rows × 7 columns</p>
+    <p>504606 rows × 7 columns</p>
     </div>
 
 

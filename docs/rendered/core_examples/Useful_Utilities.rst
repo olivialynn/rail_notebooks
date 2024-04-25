@@ -49,6 +49,11 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
+    <class 'rail.evaluation.evaluator.OldEvaluator'>
+    <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
+    <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
+    <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
+    <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
 
 
 Import and attach all
@@ -86,10 +91,6 @@ imports.
 
     Imported rail.dsps
     Imported rail.flexzboost
-
-
-.. parsed-literal::
-
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -98,6 +99,10 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+
+
+.. parsed-literal::
+
     Imported rail.gpz
     Imported rail.hub
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
@@ -108,7 +113,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 11 base classes and 64 fully formed stages to rail.stages
+    Attached 12 base classes and 69 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -192,6 +197,11 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degradation.quantityCut.QuantityCut'>
+    <class 'rail.evaluation.evaluator.OldEvaluator'>
+    <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
+    <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
+    <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
+    <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
     <class 'rail.creation.degradation.grid_selection.GridSelection'>
     <class 'rail.creation.noisifier.Noisifier'>
     <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
@@ -603,7 +613,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff805fa1c60>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f51912cead0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

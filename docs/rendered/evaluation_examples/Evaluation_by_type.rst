@@ -902,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f0d4e4cbb20>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f18055fbcd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1215,7 +1215,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f0d8087ba00>
+    <qp.ensemble.Ensemble at 0x7f1840a12230>
 
 
 

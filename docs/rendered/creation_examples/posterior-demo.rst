@@ -129,6 +129,7 @@ Let’s calculate posteriors for every galaxy in our sample:
 .. parsed-literal::
 
     Inserting handle into data store.  output_truth_post: inprogress_output_truth_post.hdf5, truth_post
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 Note that Creator returns the pdfs as a
@@ -144,7 +145,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fefc47cfe50>
+    <qp.ensemble.Ensemble at 0x7fe274f74070>
 
 
 
@@ -393,6 +394,22 @@ Now let’s draw a degraded sample:
         </tr>
         <tr>
           <th>6</th>
+          <td>1.241072</td>
+          <td>25.146250</td>
+          <td>0.122915</td>
+          <td>25.170704</td>
+          <td>0.043052</td>
+          <td>25.000453</td>
+          <td>0.032523</td>
+          <td>24.513028</td>
+          <td>0.034474</td>
+          <td>23.957926</td>
+          <td>0.040357</td>
+          <td>23.394319</td>
+          <td>0.055333</td>
+        </tr>
+        <tr>
+          <th>7</th>
           <td>0.214016</td>
           <td>24.299064</td>
           <td>0.058574</td>
@@ -408,7 +425,7 @@ Now let’s draw a degraded sample:
           <td>0.031681</td>
         </tr>
         <tr>
-          <th>7</th>
+          <th>8</th>
           <td>0.357573</td>
           <td>24.642177</td>
           <td>0.079198</td>
@@ -471,21 +488,25 @@ Let’s calculate posteriors with a variable number of error samples.
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1: inprogress_output_degr_post_1.hdf5, degr_post_1
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_10: inprogress_output_degr_post_10.hdf5, degr_post_10
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_100: inprogress_output_degr_post_100.hdf5, degr_post_100
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1000: inprogress_output_degr_post_1000.hdf5, degr_post_1000
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. code:: ipython3
@@ -669,21 +690,25 @@ grid.
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_10: inprogress_output_degr_post_degr_post_nbins_10.hdf5, degr_post_degr_post_nbins_10
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_20: inprogress_output_degr_post_degr_post_nbins_20.hdf5, degr_post_degr_post_nbins_20
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_50: inprogress_output_degr_post_degr_post_nbins_50.hdf5, degr_post_degr_post_nbins_50
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_100: inprogress_output_degr_post_degr_post_nbins_100.hdf5, degr_post_degr_post_nbins_100
+    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. code:: ipython3

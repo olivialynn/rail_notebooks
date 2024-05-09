@@ -30,9 +30,6 @@ be what we get by importing ``rail`` and ``rail.stages``.
 
 .. parsed-literal::
 
-    <class 'rail.core.util_stages.ColumnMapper'>
-    <class 'rail.core.util_stages.RowSelector'>
-    <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
@@ -48,12 +45,15 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
     <class 'rail.creation.selector.Selector'>
-    <class 'rail.creation.degradation.quantityCut.QuantityCut'>
+    <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
     <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
     <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
+    <class 'rail.tools.table_tools.ColumnMapper'>
+    <class 'rail.tools.table_tools.RowSelector'>
+    <class 'rail.tools.table_tools.TableConverter'>
 
 
 Import and attach all
@@ -125,12 +125,12 @@ To see this in action:
 
     # with prefix
     
-    print(rail.core.util_stages.ColumnMapper)
+    print(rail.tools.table_tools.ColumnMapper)
 
 
 .. parsed-literal::
 
-    <class 'rail.core.util_stages.ColumnMapper'>
+    <class 'rail.tools.table_tools.ColumnMapper'>
 
 
 .. code:: ipython3
@@ -159,7 +159,7 @@ To see this in action:
 
 .. parsed-literal::
 
-    <class 'rail.core.util_stages.ColumnMapper'>
+    <class 'rail.tools.table_tools.ColumnMapper'>
 
 
 Listing imported stages (2/2)
@@ -178,9 +178,6 @@ Note that we can now just call ``RailStage`` instead of
 
 .. parsed-literal::
 
-    <class 'rail.core.util_stages.ColumnMapper'>
-    <class 'rail.core.util_stages.RowSelector'>
-    <class 'rail.core.util_stages.TableConverter'>
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
@@ -196,29 +193,32 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
     <class 'rail.creation.selector.Selector'>
-    <class 'rail.creation.degradation.quantityCut.QuantityCut'>
+    <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
     <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
     <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
-    <class 'rail.creation.degradation.grid_selection.GridSelection'>
+    <class 'rail.tools.table_tools.ColumnMapper'>
+    <class 'rail.tools.table_tools.RowSelector'>
+    <class 'rail.tools.table_tools.TableConverter'>
+    <class 'rail.creation.degraders.grid_selection.GridSelection'>
     <class 'rail.creation.noisifier.Noisifier'>
-    <class 'rail.creation.degradation.observing_condition_degrader.ObsCondition'>
-    <class 'rail.creation.degradation.spectroscopic_degraders.LineConfusion'>
-    <class 'rail.creation.degradation.spectroscopic_degraders.InvRedshiftIncompleteness'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_GAMA'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_BOSS'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_DEEP2'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_VVDSf02'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_zCOSMOS'>
-    <class 'rail.creation.degradation.spectroscopic_selections.SpecSelection_HSC'>
-    <class 'rail.creation.degradation.lsst_error_model.LSSTErrorModel'>
-    <class 'rail.tools.util_photometry.HyperbolicSmoothing'>
-    <class 'rail.tools.util_photometry.HyperbolicMagnitudes'>
-    <class 'rail.tools.util_photometry.LSSTFluxToMagConverter'>
-    <class 'rail.tools.util_photometry.Dereddener'>
+    <class 'rail.creation.degraders.observing_condition_degrader.ObsCondition'>
+    <class 'rail.creation.degraders.spectroscopic_degraders.LineConfusion'>
+    <class 'rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_GAMA'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_BOSS'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_DEEP2'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_VVDSf02'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_zCOSMOS'>
+    <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_HSC'>
+    <class 'rail.creation.degraders.lsst_error_model.LSSTErrorModel'>
+    <class 'rail.tools.photometry_tools.HyperbolicSmoothing'>
+    <class 'rail.tools.photometry_tools.HyperbolicMagnitudes'>
+    <class 'rail.tools.photometry_tools.LSSTFluxToMagConverter'>
+    <class 'rail.tools.photometry_tools.Dereddener'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteInformer'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNInformer'>
@@ -319,7 +319,7 @@ If we already know its path, we can just point directly to the file
 .. code:: ipython3
 
     import os
-    from rail.core.utils import RAILDIR
+    from rail.utils.path_utils import RAILDIR
     
     flow_file = os.path.join(
         RAILDIR, "rail/examples_data/goldenspike_data/data/pretrained_flow.pkl"
@@ -333,7 +333,7 @@ out, and some rail modules are located separately from others.
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     
     flow_file = find_rail_file('examples_data/goldenspike_data/data/pretrained_flow.pkl')
 
@@ -613,7 +613,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8b99715660>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5adef09510>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

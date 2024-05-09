@@ -46,7 +46,7 @@ HSC.
     import pandas as pd
     #from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     %matplotlib inline 
 
 .. code:: ipython3
@@ -189,7 +189,7 @@ to write our incomplete catalog to “test_hsc.pq”.
 
 .. code:: ipython3
 
-    from rail.creation.degradation.grid_selection import GridSelection
+    from rail.creation.degraders.grid_selection import GridSelection
 
 .. code:: ipython3
 
@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.71 s, sys: 127 ms, total: 2.83 s
-    Wall time: 2.83 s
+    CPU times: user 2.74 s, sys: 102 ms, total: 2.84 s
+    Wall time: 2.84 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -274,7 +274,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7526/1938339790.py:1: SettingWithCopyWarning: 
+    /tmp/ipykernel_7458/1938339790.py:1: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

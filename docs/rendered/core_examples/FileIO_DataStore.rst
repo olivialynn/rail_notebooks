@@ -72,7 +72,7 @@ the data that we’ll place in the DataStore in later steps:
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     
@@ -519,7 +519,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6e2d33a860>
+    <rail.core.data.ModelHandle at 0x7f227a9ce1d0>
 
 
 
@@ -650,7 +650,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6e2caa3b50>
+    <matplotlib.legend.Legend at 0x7f227a07bac0>
 
 
 
@@ -680,7 +680,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6e2d08cbb0>
+    <matplotlib.legend.Legend at 0x7f227a658d90>
 
 
 

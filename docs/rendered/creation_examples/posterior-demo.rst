@@ -31,15 +31,15 @@ This notebook will cover three scenarios of increasing complexity:
     import pandas as pd
     from pzflow.examples import get_example_flow
     from rail.creation.engines.flowEngine import FlowCreator, FlowPosterior
-    from rail.creation.degradation.lsst_error_model import LSSTErrorModel
-    from rail.creation.degradation.quantityCut import QuantityCut
-    from rail.creation.degradation.spectroscopic_degraders import (
+    from rail.creation.degraders.lsst_error_model import LSSTErrorModel
+    from rail.creation.degraders.quantityCut import QuantityCut
+    from rail.creation.degraders.spectroscopic_degraders import (
         InvRedshiftIncompleteness,
         LineConfusion,
     )
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.util_stages import ColumnMapper
+    from rail.tools.table_tools import ColumnMapper
 
 
 .. code:: ipython3
@@ -145,7 +145,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fe274f74070>
+    <qp.ensemble.Ensemble at 0x7f85943ac100>
 
 
 
@@ -394,22 +394,6 @@ Now let’s draw a degraded sample:
         </tr>
         <tr>
           <th>6</th>
-          <td>1.241072</td>
-          <td>25.146250</td>
-          <td>0.122915</td>
-          <td>25.170704</td>
-          <td>0.043052</td>
-          <td>25.000453</td>
-          <td>0.032523</td>
-          <td>24.513028</td>
-          <td>0.034474</td>
-          <td>23.957926</td>
-          <td>0.040357</td>
-          <td>23.394319</td>
-          <td>0.055333</td>
-        </tr>
-        <tr>
-          <th>7</th>
           <td>0.214016</td>
           <td>24.299064</td>
           <td>0.058574</td>
@@ -425,7 +409,7 @@ Now let’s draw a degraded sample:
           <td>0.031681</td>
         </tr>
         <tr>
-          <th>8</th>
+          <th>7</th>
           <td>0.357573</td>
           <td>24.642177</td>
           <td>0.079198</td>
@@ -651,7 +635,7 @@ grid.
 
 .. code:: ipython3
 
-    from rail.core.util_stages import RowSelector
+    from rail.tools.table_tools import RowSelector
     
     # dict to save the marginalized posteriors
     pdfs_u_marginalized = {}

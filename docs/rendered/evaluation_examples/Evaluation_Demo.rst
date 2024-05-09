@@ -68,7 +68,7 @@ Next we need to set up some paths for the Data Store:
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     try:
         pdfs_file = find_rail_file('examples_data/evaluation_data/data/output_fzboost.hdf5')
     except ValueError:
@@ -90,11 +90,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-     51 47.1M   51 24.2M    0     0  33.2M      0  0:00:01 --:--:--  0:00:01 33.2M
+      0 47.1M    0  263k    0     0  1122k      0  0:00:42 --:--:--  0:00:42 1122k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  46.8M      0  0:00:01  0:00:01 --:--:-- 46.9M
+    100 47.1M  100 47.1M    0     0  72.0M      0 --:--:-- --:--:-- --:--:-- 71.9M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -295,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff373fe7d00>
+    <qp.ensemble.Ensemble at 0x7f42e44af1c0>
 
 
 

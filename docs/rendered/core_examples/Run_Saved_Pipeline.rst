@@ -15,7 +15,7 @@ This notebook shows how to:
 
     import os
     import ceci
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     
     # To create a catalog, you need a model of what the distrubutions of the colors 
     # are--that's what this flow file is:
@@ -65,7 +65,7 @@ with ``pipe_example.config.yml``:
     
     Executing lsst_error_model_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_example_config.yml   --output=./output_lsst_error_model_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_example_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
 
@@ -80,7 +80,7 @@ with ``pipe_example.config.yml``:
     
     Executing col_remapper_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_example_config.yml   --output=./output_col_remapper_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_example_config.yml   --output=./output_col_remapper_test.pq 
     Output writing to ./col_remapper_test.out
     
 
@@ -95,7 +95,7 @@ with ``pipe_example.config.yml``:
     
     Executing table_conv_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_example_config.yml   --output=./output_table_conv_test.hdf5 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_example_config.yml   --output=./output_table_conv_test.hdf5 
     Output writing to ./table_conv_test.out
     
 

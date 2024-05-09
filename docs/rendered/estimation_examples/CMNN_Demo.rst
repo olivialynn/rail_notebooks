@@ -160,7 +160,7 @@ it.
 
 .. code:: ipython3
 
-    from rail.core.utils import RAILDIR
+    from rail.utils.path_utils import RAILDIR
     trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 2.25 ms, sys: 599 µs, total: 2.85 ms
-    Wall time: 2.55 ms
+    CPU times: user 2.45 ms, sys: 681 µs, total: 3.13 ms
+    Wall time: 2.77 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f785872bcd0>
+    <rail.core.data.ModelHandle at 0x7f059036b8e0>
 
 
 
@@ -238,8 +238,8 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    CPU times: user 57.6 s, sys: 22.8 ms, total: 57.6 s
-    Wall time: 57.6 s
+    CPU times: user 57.4 s, sys: 3.16 ms, total: 57.4 s
+    Wall time: 57.4 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and

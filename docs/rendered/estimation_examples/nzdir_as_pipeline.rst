@@ -26,7 +26,7 @@ NZDir as a Pipeline
 .. code:: ipython3
 
     # Load up the example healpix 9816 data and stick in the DataStore
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
@@ -86,8 +86,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fb915a12fb0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fb915a13130>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f9a9a052f20>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f9a9a052ef0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -176,7 +176,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb913be9fc0>
+    <matplotlib.legend.Legend at 0x7f9a9856b790>
 
 
 

@@ -37,7 +37,7 @@ function.
     import tables_io
     import pandas as pd
     #from rail.core.data import TableHandle
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     from rail.core.stage import RailStage
     %matplotlib inline 
 
@@ -180,9 +180,9 @@ to write our incomplete catalog to “test_hsc.pq”.
 .. code:: ipython3
 
     import sys
-    from rail.creation.degradation import spectroscopic_selections
+    from rail.creation.degraders import spectroscopic_selections
     from importlib import reload
-    from rail.creation.degradation.spectroscopic_selections import SpecSelection_zCOSMOS
+    from rail.creation.degraders.spectroscopic_selections import SpecSelection_zCOSMOS
 
 .. code:: ipython3
 
@@ -205,8 +205,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, specselection_zCOSMOS
-    CPU times: user 1.38 s, sys: 65.5 ms, total: 1.45 s
-    Wall time: 1.43 s
+    CPU times: user 1.41 s, sys: 25.3 ms, total: 1.43 s
+    Wall time: 1.42 s
 
 
 .. code:: ipython3

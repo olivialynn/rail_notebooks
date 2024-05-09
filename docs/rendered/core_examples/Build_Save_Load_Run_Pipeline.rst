@@ -22,13 +22,13 @@ This notebook shows how to:
     import ceci
     import rail
     from rail.core.stage import RailStage
-    from rail.creation.degradation.spectroscopic_degraders import LineConfusion
-    from rail.creation.degradation.quantityCut import QuantityCut
-    from rail.creation.degradation.lsst_error_model import LSSTErrorModel
+    from rail.creation.degraders.spectroscopic_degraders import LineConfusion
+    from rail.creation.degraders.quantityCut import QuantityCut
+    from rail.creation.degraders.lsst_error_model import LSSTErrorModel
     from rail.creation.engines.flowEngine import FlowCreator, FlowPosterior
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.util_stages import ColumnMapper, TableConverter
+    from rail.tools.table_tools import ColumnMapper, TableConverter
 
 We’ll start by setting up the RAIL data store. RAIL uses
 `ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
@@ -68,7 +68,7 @@ Here we are defining:
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     
     flow_file = find_rail_file("examples_data/goldenspike_data/data/pretrained_flow.pkl")
     bands = ["u", "g", "r", "i", "z", "y"]
@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f75a969dd50>,
-       <rail.creation.degradation.lsst_error_model.LSSTErrorModel at 0x7f76085090c0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f514e4b11e0>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f514e4b2440>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.core.util_stages.TableConverter at 0x7f75a0d60160>]),
+       <rail.tools.table_tools.TableConverter at 0x7f514e38c370>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -433,7 +433,7 @@ each case.
     
     Executing lsst_error_model_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degradation.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
 
@@ -448,7 +448,7 @@ each case.
     
     Executing col_remapper_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
     Output writing to ./col_remapper_test.out
     
 
@@ -463,7 +463,7 @@ each case.
     
     Executing table_conv_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.core.util_stages.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
     Output writing to ./table_conv_test.out
     
 
@@ -512,6 +512,10 @@ pipeline we’ve just made would look like:
       File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/main.py", line 52, in run_pipeline
         with prepare_for_pipeline(pipe_config):
       File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/contextlib.py", line 135, in __enter__
+
+
+.. parsed-literal::
+
         return next(self.gen)
       File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/main.py", line 78, in prepare_for_pipeline
         load(launcher_config, [site_config])

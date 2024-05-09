@@ -14,7 +14,7 @@ different magnitude error models. For more completed degrader demo, see
     import matplotlib.pyplot as plt
     from pzflow.examples import get_example_flow
     from rail.creation.engines.flowEngine import FlowCreator
-    from rail.creation.degradation.lsst_error_model import LSSTErrorModel
+    from rail.creation.degraders.lsst_error_model import LSSTErrorModel
     from rail.core.stage import RailStage
 
 
@@ -87,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f5fcf216500>
+    <pzflow.flow.Flow at 0x7f3be8e54550>
 
 
 

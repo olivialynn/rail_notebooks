@@ -64,7 +64,7 @@ Let’s set up our dependencies:
     import tables_io
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     from rail.estimation.algos.somoclu_som import SOMocluInformer, SOMocluSummarizer
     from rail.estimation.algos.somoclu_som import get_bmus, plot_som
 
@@ -165,15 +165,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 2s, sys: 873 ms, total: 8min 2s
-    Wall time: 2min 3s
+    CPU times: user 8min 1s, sys: 586 ms, total: 8min 2s
+    Wall time: 2min 2s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff488641150>
+    <rail.core.data.ModelHandle at 0x7efdccf61120>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff42d8373d0>
+    <rail.core.data.QPHandle at 0x7efd86686680>
 
 
 
@@ -765,7 +765,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff430c10130>
+    <matplotlib.legend.Legend at 0x7efd7d59efe0>
 
 
 
@@ -818,7 +818,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff430b66350>
+    <rail.core.data.QPHandle at 0x7efd8611d360>
 
 
 
@@ -845,7 +845,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff423a1a440>
+    <matplotlib.legend.Legend at 0x7efd86391f60>
 
 
 
@@ -904,7 +904,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff423a3faf0>
+    <matplotlib.legend.Legend at 0x7efd7c9455d0>
 
 
 

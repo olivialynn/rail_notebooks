@@ -43,7 +43,7 @@ contains ~20,000 galaxies from this same healpix pixel.
 
 .. code:: ipython3
 
-    from rail.core.utils import find_rail_file
+    from rail.utils.path_utils import find_rail_file
     trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
     training_data = DS.read_file("training_data", TableHandle, trainFile)
@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6786abfa90>
+    <rail.core.data.ModelHandle at 0x7f0ee191b940>
 
 
 
@@ -201,8 +201,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 320 ms, sys: 387 µs, total: 321 ms
-    Wall time: 320 ms
+    CPU times: user 313 ms, sys: 0 ns, total: 313 ms
+    Wall time: 312 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -257,14 +257,14 @@ RAIL’s degradation modules to do just that: place incorrect redshifts
 for percentage of the training data, and we can make a magnitude cut
 that will limite the redshift and color range of our training data:
 
-Let’s import the necessary modules from rail.creation.degradation, we
-will put in “line confusion” for 5% of our sample, and then cut the
-sample at magnitude 23.5:
+Let’s import the necessary modules from rail.creation.degraders, we will
+put in “line confusion” for 5% of our sample, and then cut the sample at
+magnitude 23.5:
 
 .. code:: ipython3
 
-    from rail.creation.degradation.spectroscopic_degraders import LineConfusion
-    from rail.creation.degradation.quantityCut import QuantityCut
+    from rail.creation.degraders.spectroscopic_degraders import LineConfusion
+    from rail.creation.degraders.quantityCut import QuantityCut
     from rail.core.data import PqHandle
 
 .. code:: ipython3
@@ -349,7 +349,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6782ca82e0>
+    <rail.core.data.ModelHandle at 0x7f0edd6f1e10>
 
 
 
@@ -379,8 +379,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 120 ms, sys: 12 µs, total: 120 ms
-    Wall time: 119 ms
+    CPU times: user 118 ms, sys: 222 µs, total: 118 ms
+    Wall time: 117 ms
 
 
 .. code:: ipython3

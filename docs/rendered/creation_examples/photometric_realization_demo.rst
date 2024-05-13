@@ -87,7 +87,7 @@ object:
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7fb3a168b760>
+    <pzflow.flow.Flow at 0x7fa6d74eb730>
 
 
 
@@ -457,10 +457,6 @@ photometric errors.
 .. parsed-literal::
 
     Inserting handle into data store.  output_error_model_gaap: inprogress_output_error_model_gaap.pq, error_model_gaap
-
-.. parsed-literal::
-
-    
 
 
 

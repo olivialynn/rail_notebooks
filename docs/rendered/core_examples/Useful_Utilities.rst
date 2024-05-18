@@ -104,20 +104,16 @@ imports.
     
     Imported rail.fsps
     Imported rail.gpz
+    Imported rail.hub
 
 
 .. parsed-literal::
 
-    Imported rail.hub
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
-
-
-.. parsed-literal::
-
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 69 fully formed stages to rail.stages
+    Attached 12 base classes and 71 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -222,7 +218,9 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.tools.photometry_tools.HyperbolicSmoothing'>
     <class 'rail.tools.photometry_tools.HyperbolicMagnitudes'>
     <class 'rail.tools.photometry_tools.LSSTFluxToMagConverter'>
+    <class 'rail.tools.photometry_tools.DustMapBase'>
     <class 'rail.tools.photometry_tools.Dereddener'>
+    <class 'rail.tools.photometry_tools.Reddener'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteInformer'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNInformer'>
@@ -617,7 +615,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff17763b310>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9a681db760>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

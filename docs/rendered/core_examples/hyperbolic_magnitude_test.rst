@@ -90,17 +90,17 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hyperbolic/magnitudes.py:285: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using DataFrameGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       stats = df.groupby(Keys.field).agg(np.nanmedian)
 
 
@@ -108,7 +108,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f5e5e5be950>
+    <rail.core.data.PqHandle at 0x7f942d1d2050>
 
 
 
@@ -253,7 +253,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/tools/photometry_tools.py:294: FutureWarning: The provided callable <function nanmedian at 0x7f5ea41dc820> is currently using SeriesGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/tools/photometry_tools.py:294: FutureWarning: The provided callable <function nanmedian at 0x7f947c3e4820> is currently using SeriesGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "median" instead.
       hyperbolic.Keys.filter).agg(np.nanmedian)
 
 
@@ -261,7 +261,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7f5e5e5bff10>
+    <rail.core.data.PqHandle at 0x7f942d1d18d0>
 
 
 

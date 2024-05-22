@@ -100,7 +100,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  13.4M      0 --:--:-- --:--:-- --:--:-- 13.4M
+      0 9434k    0 24278    0     0  59603      0  0:02:42 --:--:--  0:02:42 59504
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  10.3M      0 --:--:-- --:--:-- --:--:-- 10.3M
 
 
 .. code:: ipython3
@@ -179,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 3s, sys: 599 ms, total: 8min 4s
+    CPU times: user 8min 3s, sys: 748 ms, total: 8min 4s
     Wall time: 2min 3s
 
 
@@ -187,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc730b93040>
+    <rail.core.data.ModelHandle at 0x7ff73818dc60>
 
 
 
@@ -256,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_12789/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_14523/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -393,8 +397,8 @@ actually output the uncovered galaxies in a separate file in the future.
 .. parsed-literal::
 
     the following clusters contain photometric data but not spectroscopic data:
-    {3584, 1, 1536, 2051, 1027, 3075, 2054, 7, 3080, 4105, 9, 3590, 12, 13, 1036, 1542, 2578, 3604, 3605, 537, 1563, 1052, 3614, 31, 1057, 546, 4643, 36, 1572, 38, 3620, 3622, 555, 3115, 2093, 3628, 1071, 560, 50, 2098, 565, 1590, 570, 2107, 1090, 2115, 579, 1606, 585, 588, 2125, 1100, 4176, 1617, 1619, 85, 1626, 91, 4188, 1627, 3677, 3680, 3171, 2149, 1126, 2151, 2663, 3175, 1637, 1638, 621, 2158, 1648, 625, 628, 2165, 123, 3196, 1659, 3708, 3200, 1666, 4227, 2691, 1667, 1161, 1673, 141, 655, 1685, 3222, 1687, 3736, 1689, 2205, 2206, 4768, 1697, 169, 2732, 173, 685, 688, 2225, 178, 2227, 691, 1202, 1712, 1716, 1719, 1721, 187, 1728, 1734, 1226, 2251, 3788, 2255, 208, 4305, 2258, 210, 724, 725, 726, 1231, 1749, 2266, 1757, 3296, 1762, 1251, 1254, 231, 1766, 1257, 235, 2284, 2285, 747, 748, 241, 2290, 753, 3314, 245, 1778, 1271, 1781, 1784, 4347, 1787, 2301, 1788, 1790, 2304, 1282, 1286, 3335, 1799, 2324, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1827, 1829, 1834, 1835, 1324, 814, 1839, 816, 817, 2867, 1846, 3897, 1849, 2881, 2370, 2371, 1857, 839, 4425, 330, 3915, 2380, 334, 2382, 1358, 849, 850, 339, 1872, 1367, 344, 3931, 2396, 860, 3428, 1894, 4967, 1384, 873, 1899, 879, 2416, 3440, 882, 2932, 3448, 900, 389, 903, 904, 393, 2442, 2951, 1416, 2957, 1927, 1931, 401, 915, 1940, 405, 1943, 2970, 411, 922, 1436, 1948, 419, 1956, 421, 4008, 426, 428, 3505, 4018, 1973, 442, 958, 2497, 963, 1988, 453, 1478, 455, 457, 971, 1484, 3021, 3533, 976, 2002, 2004, 1493, 3031, 983, 3035, 2014, 992, 3554, 2018, 2532, 999, 1512, 2023, 1515, 493, 1006, 496, 1009, 498, 4085, 2039, 509, 511}
-    516 out of 5041 have usable data
+    {2561, 4099, 8, 2057, 4106, 4616, 2569, 4618, 2571, 2063, 16, 522, 3593, 2067, 3600, 2581, 3601, 2073, 4633, 4123, 27, 4125, 3609, 2592, 3619, 3108, 4133, 4135, 4647, 3113, 2603, 3629, 2606, 4655, 3631, 4149, 4662, 3641, 3132, 4670, 4671, 4672, 4163, 3652, 3142, 2635, 2638, 3152, 4692, 4693, 2647, 2648, 2137, 2649, 4697, 4698, 1629, 4088, 4193, 2146, 4196, 3172, 3690, 4204, 2669, 3180, 2159, 4719, 4721, 2162, 3694, 1649, 3703, 1146, 4733, 1662, 2688, 4226, 2182, 4743, 1160, 4235, 4748, 2189, 3723, 4239, 4240, 2704, 4242, 2708, 1688, 4766, 4768, 4769, 4772, 4265, 4266, 4778, 4268, 3245, 1199, 3248, 4785, 3762, 2227, 1206, 4281, 2237, 4797, 3264, 3781, 2247, 4807, 3274, 3786, 1742, 4305, 2769, 3282, 2776, 4316, 2272, 2785, 4839, 2284, 1772, 4335, 4339, 3315, 2293, 4342, 2805, 4855, 3842, 2819, 4356, 4358, 4359, 3847, 1289, 4874, 4875, 4364, 2829, 4878, 1295, 4368, 1296, 2323, 2325, 2326, 2327, 4885, 3862, 2330, 3869, 3870, 4896, 2339, 1317, 4392, 3883, 4909, 2862, 3888, 4915, 1333, 4406, 310, 4408, 4921, 4922, 3383, 2364, 1338, 1339, 3391, 2371, 4420, 4933, 3912, 2381, 2382, 3920, 4434, 3924, 3413, 3927, 2906, 3418, 1882, 3933, 3423, 4449, 4961, 2915, 4452, 2919, 4968, 4967, 3432, 4971, 3436, 1900, 3441, 4468, 1396, 3958, 2424, 1912, 2428, 1404, 1918, 3459, 3972, 1924, 4486, 2438, 1929, 5002, 4493, 5006, 3982, 3472, 4497, 4498, 1426, 5014, 5016, 3996, 4509, 2463, 2975, 5024, 4000, 4515, 2980, 4517, 1445, 4004, 2476, 1966, 5039, 4015, 2997, 2487, 2494, 3519, 4031, 3010, 4037, 4550, 3528, 1482, 2507, 4557, 4559, 4047, 4561, 1999, 3028, 4569, 3033, 3546, 2526, 1503, 2534, 4584, 3560, 3050, 4074, 2027, 2026, 2031, 3568, 2035, 4596, 3060, 3574, 4084, 4086, 3577, 4090, 4091, 4093}
+    515 out of 5041 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -409,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc724ceefb0>
+    <rail.core.data.QPHandle at 0x7ff6e3353d00>
 
 
 
@@ -445,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc724ca0730>
+    <matplotlib.legend.Legend at 0x7ff6e33528f0>
 
 
 
@@ -486,8 +490,8 @@ bright dataset that we made?
 .. parsed-literal::
 
     the following clusters contain photometric data but not spectroscopic data:
-    {1536, 3075, 3080, 1036, 2578, 3604, 3605, 1057, 1572, 3620, 38, 3622, 555, 1071, 560, 50, 2098, 570, 1090, 2115, 579, 1606, 585, 1100, 85, 91, 3171, 2149, 1638, 2663, 621, 2158, 1648, 625, 628, 1659, 3196, 1666, 2691, 141, 1685, 1687, 3736, 1689, 1697, 688, 178, 691, 1716, 1719, 187, 1728, 1734, 1231, 208, 210, 726, 1757, 3296, 1251, 748, 3314, 1778, 1271, 1784, 4347, 1788, 3335, 791, 1816, 283, 3867, 3869, 802, 2339, 292, 1829, 1835, 1324, 814, 1839, 816, 817, 1846, 1849, 2881, 2370, 330, 2380, 334, 1358, 849, 850, 1367, 860, 1894, 4967, 1384, 873, 1899, 882, 900, 903, 2951, 1927, 401, 1940, 405, 1943, 922, 411, 1436, 1948, 1956, 421, 4008, 426, 1973, 442, 958, 2497, 963, 453, 1478, 455, 457, 1484, 3533, 3021, 2002, 2004, 983, 2018, 999, 2023, 1515, 493, 496, 1009}
-    322 out of 5041 have usable data
+    {4616, 2569, 4106, 4618, 3593, 3600, 4633, 3609, 2592, 3619, 4133, 4647, 2603, 3631, 4149, 4670, 4672, 4163, 3652, 3142, 2638, 3152, 4692, 2647, 2137, 4697, 4193, 4196, 3172, 3690, 4204, 3694, 4721, 2162, 3703, 4733, 1662, 2688, 4226, 2182, 4743, 1160, 3723, 4748, 2189, 4240, 2704, 2708, 4768, 4266, 3248, 4785, 2237, 4797, 3781, 4807, 3274, 3786, 2769, 2776, 2272, 2785, 4839, 4339, 3315, 2293, 4342, 2805, 4855, 3842, 2819, 4359, 4874, 4364, 4878, 1295, 2323, 3862, 2327, 3870, 4896, 2339, 3883, 3888, 4915, 1333, 3383, 4408, 2364, 4933, 3912, 3920, 4434, 2906, 3933, 3423, 4449, 2919, 3432, 4968, 4468, 1396, 3958, 1912, 2428, 1918, 1924, 5002, 5006, 3982, 3472, 5014, 3996, 4509, 2463, 2975, 5024, 4000, 4515, 2980, 4517, 5039, 2487, 3519, 4031, 3010, 4037, 4557, 4559, 4047, 4561, 4569, 3033, 1503, 4584, 4074, 2027, 3568, 3574, 3577, 4091, 4093}
+    321 out of 5041 have usable data
     Inserting handle into data store.  output_bright_summarizer: inprogress_BRIGHT_SOMoclu_ensemble.hdf5, bright_summarizer
     Inserting handle into data store.  single_NZ_bright_summarizer: inprogress_BRIGHT_fiducial_SOMoclu_NZ.hdf5, bright_summarizer
     Inserting handle into data store.  uncovered_cluster_file_bright_summarizer: inprogress_uncovered_cluster_file_bright_summarizer, bright_summarizer
@@ -502,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc724f7abc0>
+    <rail.core.data.QPHandle at 0x7ff6e053cf70>
 
 
 
@@ -529,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc724f78340>
+    <matplotlib.legend.Legend at 0x7ff6e053d9f0>
 
 
 
@@ -581,7 +585,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_12789/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_14523/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -589,7 +593,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc724a76920>
+    <matplotlib.legend.Legend at 0x7ff6e048f280>
 
 
 
@@ -637,9 +641,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3594+-0.0053
+    The mean redshift of the SOM ensemble is: 0.3589+-0.0053
     The mean redshift of the real data is: 0.3547
-    The bias of mean redshift is:0.0047+-0.0053
+    The bias of mean redshift is:0.0042+-0.0053
 
 
 .. code:: ipython3
@@ -664,9 +668,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3454+-0.0035
+    The mean redshift of the SOM ensemble is: 0.3445+-0.0035
     The mean redshift of the real data is: 0.3493
-    The bias of mean redshift is:-0.0039+-0.0035
+    The bias of mean redshift is:-0.0048+-0.0035
 
 
 .. code:: ipython3

@@ -1,11 +1,11 @@
 Demo of SED and photometry calculations with DSPS
 =================================================
 
-author: Luca Tortorelli, Andrew Hearin
+author: Luca Tortorelli
 
-last run successfully: Aug 1, 2023
+last run successfully: May 10, 2024
 
-This notebook demonstrates some basic usage of the DSPS library. In
+This notebook demonstrates some basic usage of the rail_dsps library. In
 particular, for a galaxy with some arbitrary star formation history,
 we’ll see how to calculate its restframe SED, and its absolute and
 apparent magnitude in some band.
@@ -16,11 +16,14 @@ scope of the DSPS package, and so they will need to be retrieved from
 some other library. For example, the FSPS library supplies such
 templates in a convenient form.
 
+In case the user is not aware of how to generate these templates, the
+code automatically downloads a pre-defined library from NERSC.
+
 SingleSedModeler
 ~~~~~~~~~~~~~~~~
 
 The SingleSedModeler class allows the user to generate a single
-rest-frame SED at the time with DSPS.
+rest-frame SED at the time with rail_dsps.
 
 Some example galaxy properties that are required to create a single SED
 model are generated via this notebook and stored into an hdf5 table. The
@@ -39,7 +42,7 @@ required galaxy properties are:
     import os
     import rail.dsps
     from rail.core.stage import RailStage
-    from rail.core.data import TableHandle
+    from rail.core.data import Hdf5Handle
     import numpy as np
     import h5py
 
@@ -48,10 +51,9 @@ required galaxy properties are:
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
     
-    RAIL_DSPS_DIR = os.path.abspath(os.path.join(os.path.dirname(rail.dsps.__file__), '..', '..'))
-    default_rail_fsps_files_folder = os.path.join(RAIL_DSPS_DIR, 'rail', 'examples_data', 'creation_data',
-                                                  'data', 'dsps_default_data')
-    input_file = os.path.join(default_rail_fsps_files_folder, 'input_galaxy_properties_dsps.hdf5')
+    RAIL_DSPS_DIR = os.path.abspath(os.path.join(os.path.dirname(rail.dsps.__file__), '..'))
+    default_rail_fsps_files_folder = os.path.join(RAIL_DSPS_DIR, 'examples_data/creation_data/data/dsps_default_data')
+    trainFile = os.path.join(default_rail_fsps_files_folder, 'input_galaxy_properties_dsps.hdf5')
 
 .. code:: ipython3
 
@@ -70,7 +72,7 @@ required galaxy properties are:
     stellar_metallicity = np.full(n_galaxies, gal_lgmet)
     stellar_metallicity_scatter = np.full(n_galaxies, gal_lgmet_scatter)
     
-    with h5py.File(input_file, 'w') as h5table:
+    with h5py.File(trainFile, 'w') as h5table:
         h5table.create_dataset(name='redshifts', data=redshift)
         h5table.create_dataset(name='cosmic_time_grid', data=cosmic_time_grid)
         h5table.create_dataset(name='star_formation_history', data=star_formation_history)
@@ -79,8 +81,7 @@ required galaxy properties are:
 
 .. code:: ipython3
 
-    trainFile = os.path.join(input_file)
-    training_data = DS.read_file("training_data", TableHandle, trainFile)
+    training_data = DS.read_file("training_data", Hdf5Handle, trainFile)
 
 The user is also required to provide the template SSPs with which
 rail_dsps generates its rest-frame SEDs. Leaving it blank or to a
@@ -90,28 +91,25 @@ from NERSC.
 .. code:: ipython3
 
     dspssinglesedmodeler = rail.dsps.DSPSSingleSedModeler.make_stage(name='DSPSSingleSedModeler',
-                                                                     ssp_templates_file=os.path.join(RAIL_DSPS_DIR,'rail/examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
+                                                                     ssp_templates_file=os.path.join(RAIL_DSPS_DIR,'examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
                                                                      redshift_key='redshifts',
                                                                      cosmic_time_grid_key='cosmic_time_grid',
                                                                      star_formation_history_key='star_formation_history',
                                                                      stellar_metallicity_key='stellar_metallicity',
                                                                      stellar_metallicity_scatter_key='stellar_metallicity_scatter',
-                                                                     restframe_sed_key='restframe_seds', default_cosmology=True)
+                                                                     restframe_sed_key='restframe_seds', default_cosmology=True,
+                                                                     min_wavelength=250, max_wavelength=12000)
 
 
 .. parsed-literal::
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     10 58.7M   10 6513k    0     0  5919k      0  0:00:10  0:00:01  0:00:09 5915k
-
-.. parsed-literal::
-
-    100 58.7M  100 58.7M    0     0  27.9M      0  0:00:02  0:00:02 --:--:-- 27.9M
+     73 58.7M   73 43.2M    0     0  72.7M      0 --:--:-- --:--:-- --:--:-- 72.7M100 58.7M  100 58.7M    0     0  84.5M      0 --:--:-- --:--:-- --:--:-- 84.5M
 
 
 .. code:: ipython3
@@ -181,7 +179,7 @@ rest-frame SEDs using the native parallelization capabilities of jax.
     import os
     import rail.dsps
     from rail.core.stage import RailStage
-    from rail.core.data import TableHandle
+    from rail.core.data import Hdf5Handle
     import numpy as np
     import h5py
 
@@ -190,9 +188,8 @@ rest-frame SEDs using the native parallelization capabilities of jax.
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
     
-    default_rail_fsps_files_folder = os.path.join(RAIL_DSPS_DIR, 'rail', 'examples_data', 'creation_data',
-                                                  'data', 'dsps_default_data')
-    input_file = os.path.join(default_rail_fsps_files_folder, 'input_galaxy_properties_dsps.hdf5')
+    default_rail_fsps_files_folder = os.path.join(RAIL_DSPS_DIR, 'examples_data/creation_data/data/dsps_default_data')
+    trainFile = os.path.join(default_rail_fsps_files_folder, 'input_galaxy_properties_dsps.hdf5')
 
 .. code:: ipython3
 
@@ -211,7 +208,7 @@ rest-frame SEDs using the native parallelization capabilities of jax.
     stellar_metallicity = np.full(n_galaxies, gal_lgmet)
     stellar_metallicity_scatter = np.full(n_galaxies, gal_lgmet_scatter)
     
-    with h5py.File(input_file, 'w') as h5table:
+    with h5py.File(trainFile, 'w') as h5table:
         h5table.create_dataset(name='redshifts', data=redshift)
         h5table.create_dataset(name='cosmic_time_grid', data=cosmic_time_grid)
         h5table.create_dataset(name='star_formation_history', data=star_formation_history)
@@ -220,20 +217,20 @@ rest-frame SEDs using the native parallelization capabilities of jax.
 
 .. code:: ipython3
 
-    trainFile = os.path.join(input_file)
-    training_data = DS.read_file("training_data", TableHandle, trainFile)
+    training_data = DS.read_file("training_data", Hdf5Handle, trainFile)
 
 .. code:: ipython3
 
     dspspopulationsedmodeler = rail.dsps.DSPSPopulationSedModeler.make_stage(name='DSPSPopulationSedModeler',
                                                                              ssp_templates_file=os.path.join(RAIL_DSPS_DIR,
-                                                                             'rail/examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
+                                                                             'examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
                                                                              redshift_key='redshifts',
                                                                              cosmic_time_grid_key='cosmic_time_grid',
                                                                              star_formation_history_key='star_formation_history',
                                                                              stellar_metallicity_key='stellar_metallicity',
                                                                              stellar_metallicity_scatter_key='stellar_metallicity_scatter',
-                                                                             restframe_sed_key='restframe_seds', default_cosmology=True)
+                                                                             restframe_sed_key='restframe_seds', default_cosmology=True,
+                                                                             min_wavelength=250, max_wavelength=12000)
 
 .. code:: ipython3
 
@@ -307,8 +304,9 @@ hdf5 table containing the rest-frame SEDs output from the
 DSPSPopulationSedModeler - the absolute and apparent magnitudes dataset
 keyword of the output hdf5 table - the folder path containing the filter
 bands - the name of the filter bands in order of increasing wavelength -
-the path to the SSP template files - a boolean keyword to use (True) the
-default cosmology in DSPS.
+the minimum and maximum wavelength used in the DSPSPopulationSedModeler
+class to generate the rest-frame SEDs - the path to the SSP template
+files - a boolean keyword to use (True) the default cosmology in DSPS.
 
 If the latter keyword is set to False, then the user has to manually
 provide the values of Om0, w0, wa and h in the .sample function.
@@ -318,19 +316,18 @@ provide the values of Om0, w0, wa and h in the .sample function.
     import os
     import rail.dsps
     from rail.core.stage import RailStage
-    from rail.core.data import TableHandle
+    from rail.core.data import Hdf5Handle
 
 .. code:: ipython3
 
     DS = RailStage.data_store
     DS.__class__.allow_overwrite = True
     
-    input_file = 'model_DSPSPopulationSedModeler.hdf5'
+    trainFile = 'model_DSPSPopulationSedModeler.hdf5'
 
 .. code:: ipython3
 
-    trainFile = os.path.join(input_file)
-    training_data = DS.read_file("training_data", TableHandle, trainFile)
+    training_data = DS.read_file("training_data", Hdf5Handle, trainFile)
 
 .. code:: ipython3
 
@@ -340,11 +337,12 @@ provide the values of Om0, w0, wa and h in the .sample function.
                                                              absolute_mags_key='rest_frame_absolute_mags',
                                                              apparent_mags_key='apparent_mags',
                                                              filter_folder=os.path.join(RAIL_DSPS_DIR,
-                                                             'rail/examples_data/creation_data/data/dsps_default_data/filters'),
+                                                             'examples_data/creation_data/data/dsps_default_data/filters'),
                                                              instrument_name='lsst',
                                                              wavebands='u,g,r,i,z,y',
+                                                             min_wavelength=250, max_wavelength=12000,
                                                              ssp_templates_file=os.path.join(RAIL_DSPS_DIR,
-                                                             'rail/examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
+                                                             'examples_data/creation_data/data/dsps_default_data/ssp_data_fsps_v3.2_lgmet_age.h5'),
                                                              default_cosmology=True)
 
 .. code:: ipython3

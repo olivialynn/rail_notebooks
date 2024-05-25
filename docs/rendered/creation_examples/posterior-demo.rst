@@ -129,7 +129,6 @@ Let’s calculate posteriors for every galaxy in our sample:
 .. parsed-literal::
 
     Inserting handle into data store.  output_truth_post: inprogress_output_truth_post.hdf5, truth_post
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 Note that Creator returns the pdfs as a
@@ -145,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f603ca3d6f0>
+    <qp.ensemble.Ensemble at 0x7f1f16a08730>
 
 
 
@@ -298,22 +297,6 @@ Now let’s draw a degraded sample:
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.008050</td>
-          <td>23.936981</td>
-          <td>0.042606</td>
-          <td>23.882311</td>
-          <td>0.014348</td>
-          <td>23.635338</td>
-          <td>0.010623</td>
-          <td>23.124297</td>
-          <td>0.010943</td>
-          <td>22.607378</td>
-          <td>0.012849</td>
-          <td>22.334488</td>
-          <td>0.021795</td>
-        </tr>
-        <tr>
-          <th>1</th>
           <td>0.264244</td>
           <td>24.188130</td>
           <td>0.053126</td>
@@ -329,7 +312,7 @@ Now let’s draw a degraded sample:
           <td>0.100555</td>
         </tr>
         <tr>
-          <th>2</th>
+          <th>1</th>
           <td>0.260134</td>
           <td>24.577568</td>
           <td>0.074831</td>
@@ -345,7 +328,7 @@ Now let’s draw a degraded sample:
           <td>0.045700</td>
         </tr>
         <tr>
-          <th>3</th>
+          <th>2</th>
           <td>0.236191</td>
           <td>25.554217</td>
           <td>0.174331</td>
@@ -361,7 +344,7 @@ Now let’s draw a degraded sample:
           <td>0.021553</td>
         </tr>
         <tr>
-          <th>4</th>
+          <th>3</th>
           <td>0.829715</td>
           <td>25.346007</td>
           <td>0.145985</td>
@@ -377,7 +360,7 @@ Now let’s draw a degraded sample:
           <td>0.066021</td>
         </tr>
         <tr>
-          <th>5</th>
+          <th>4</th>
           <td>0.639659</td>
           <td>23.467008</td>
           <td>0.028308</td>
@@ -393,23 +376,7 @@ Now let’s draw a degraded sample:
           <td>0.012894</td>
         </tr>
         <tr>
-          <th>6</th>
-          <td>1.241072</td>
-          <td>25.146250</td>
-          <td>0.122915</td>
-          <td>25.170704</td>
-          <td>0.043052</td>
-          <td>25.000453</td>
-          <td>0.032523</td>
-          <td>24.513028</td>
-          <td>0.034474</td>
-          <td>23.957926</td>
-          <td>0.040357</td>
-          <td>23.394319</td>
-          <td>0.055333</td>
-        </tr>
-        <tr>
-          <th>7</th>
+          <th>5</th>
           <td>0.214016</td>
           <td>24.299064</td>
           <td>0.058574</td>
@@ -425,7 +392,7 @@ Now let’s draw a degraded sample:
           <td>0.031681</td>
         </tr>
         <tr>
-          <th>8</th>
+          <th>6</th>
           <td>0.357573</td>
           <td>24.642177</td>
           <td>0.079198</td>
@@ -488,25 +455,21 @@ Let’s calculate posteriors with a variable number of error samples.
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1: inprogress_output_degr_post_1.hdf5, degr_post_1
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_10: inprogress_output_degr_post_10.hdf5, degr_post_10
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_100: inprogress_output_degr_post_100.hdf5, degr_post_100
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1000: inprogress_output_degr_post_1000.hdf5, degr_post_1000
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. code:: ipython3
@@ -690,25 +653,21 @@ grid.
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_10: inprogress_output_degr_post_degr_post_nbins_10.hdf5, degr_post_degr_post_nbins_10
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_20: inprogress_output_degr_post_degr_post_nbins_20.hdf5, degr_post_degr_post_nbins_20
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_50: inprogress_output_degr_post_degr_post_nbins_50.hdf5, degr_post_degr_post_nbins_50
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_100: inprogress_output_degr_post_degr_post_nbins_100.hdf5, degr_post_degr_post_nbins_100
-    Warning.  Failed to convert column arr.device_buffer has been deprecated. Use arr.addressable_data(0)
 
 
 .. code:: ipython3

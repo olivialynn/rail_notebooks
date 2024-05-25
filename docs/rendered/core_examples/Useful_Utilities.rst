@@ -91,10 +91,6 @@ imports.
 
     Imported rail.dsps
     Imported rail.flexzboost
-
-
-.. parsed-literal::
-
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -103,14 +99,18 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
-    Imported rail.gpz
-    Imported rail.hub
-    Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
 
 
 .. parsed-literal::
 
+    Imported rail.gpz
+    Imported rail.hub
+    Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Attached 12 base classes and 71 fully formed stages to rail.stages
@@ -615,7 +615,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f64c615d7b0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9714788a00>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -91,6 +91,10 @@ imports.
 
     Imported rail.dsps
     Imported rail.flexzboost
+
+
+.. parsed-literal::
+
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -615,7 +619,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9714788a00>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7febc5344610>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

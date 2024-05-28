@@ -189,7 +189,7 @@ specify those numbers of the three broad types.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f233c64c190>
+    <rail.core.data.ModelHandle at 0x7fd9f4e5fca0>
 
 
 
@@ -299,7 +299,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f22f5d85630>
+    <matplotlib.legend.Legend at 0x7fd9b3567040>
 
 
 
@@ -374,21 +374,21 @@ later use) for the first time.
     Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_z.AB....
     DC2_DONOTUSE_El1 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_y.AB....
     DC2_DONOTUSE_El1 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_u.AB....
     DC2_DONOTUSE_El2 DC2LSST_u
@@ -844,7 +844,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.6 s, sys: 112 ms, total: 26.7 s
+    CPU times: user 26.6 s, sys: 128 ms, total: 26.7 s
     Wall time: 26.7 s
 
 
@@ -852,7 +852,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f22f5c45f30>
+    <rail.core.data.QPHandle at 0x7fd9b344a680>
 
 
 
@@ -882,7 +882,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f22f5c44a90>
+    <matplotlib.legend.Legend at 0x7fd9b2e36b00>
 
 
 
@@ -1013,7 +1013,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f22f5ab9d50>
+    <matplotlib.legend.Legend at 0x7fd9b332d000>
 
 
 

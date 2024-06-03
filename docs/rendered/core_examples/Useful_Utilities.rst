@@ -103,11 +103,11 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+    Imported rail.gpz
 
 
 .. parsed-literal::
 
-    Imported rail.gpz
     Imported rail.hub
     Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
     Imported rail.sklearn
@@ -619,7 +619,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5e6dc5a200>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f951511aef0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -181,15 +181,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 15.9 s, sys: 3.54 ms, total: 15.9 s
-    Wall time: 15.9 s
+    CPU times: user 15.8 s, sys: 0 ns, total: 15.8 s
+    Wall time: 15.8 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f14445e24a0>
+    <rail.core.data.ModelHandle at 0x7f321cdca920>
 
 
 
@@ -299,7 +299,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f13fdd83220>
+    <matplotlib.legend.Legend at 0x7f31db55f1c0>
 
 
 
@@ -407,37 +407,33 @@ later use) for the first time.
     DC2_DONOTUSE_El2 DC2LSST_g
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_g.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_g.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_r.AB....
     DC2_DONOTUSE_El2 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_i.AB....
     DC2_DONOTUSE_El2 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_z.AB....
     DC2_DONOTUSE_El2 DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_y.AB....
     DC2_DONOTUSE_El2 DC2LSST_y
@@ -848,15 +844,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 27 s, sys: 132 ms, total: 27.1 s
-    Wall time: 27.1 s
+    CPU times: user 26.6 s, sys: 111 ms, total: 26.7 s
+    Wall time: 26.7 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f13fd5f33a0>
+    <rail.core.data.QPHandle at 0x7f31db442830>
 
 
 
@@ -886,7 +882,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f13fd6523e0>
+    <matplotlib.legend.Legend at 0x7f31dae2eda0>
 
 
 
@@ -1017,7 +1013,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f13fdad96f0>
+    <matplotlib.legend.Legend at 0x7f31db2d5150>
 
 
 

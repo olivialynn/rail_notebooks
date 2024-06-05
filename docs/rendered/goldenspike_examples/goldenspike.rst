@@ -336,7 +336,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f110547ac50>
+    <rail.tools.flow_handle.FlowHandle at 0x7f6d70853dc0>
 
 
 
@@ -866,14 +866,14 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    using 60 galaxies in calculation
+    using 59 galaxies in calculation
     best values for fo and kt:
     [1.]
     [0.3]
     minimizing for type 0
-    best fit z0, alpha, km for type 0: [0.26797158 1.39125088 0.06189019]
+    best fit z0, alpha, km for type 0: [0.26565075 1.37201049 0.05680291]
     Inserting handle into data store.  model_inform_bpz: inprogress_bpz.pkl, inform_bpz
-    split into 45 training and 15 validation samples
+    split into 44 training and 15 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -882,7 +882,7 @@ an SED template library for a template-fitting or hybrid estimator.
     
     
     
-    best fit values are sigma=0.075 and numneigh=6
+    best fit values are sigma=0.075 and numneigh=7
     
     
     
@@ -900,15 +900,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:50] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:27:59] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:50] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:27:59] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:50] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:27:59] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:27:59] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -916,7 +920,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:50] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:00] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:00] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:00] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:00] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -939,19 +955,35 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:54] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:03] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:54] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:03] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:54] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:03] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:54] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:03] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:04] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:04] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:04] WARNING: /workspace/src/learner.cc:742: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:04] WARNING: /workspace/src/learner.cc:742: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -966,7 +998,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f10979aa470>
+    <rail.core.data.ModelHandle at 0x7f6d685650c0>
 
 
 
@@ -1043,10 +1075,6 @@ using the training data. See `Izbicki & Lee
 .. parsed-literal::
 
     Process 0 running estimator on chunk 0 - 150
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_estimate_bpz: inprogress_output_estimate_bpz.hdf5, estimate_bpz
 
 
@@ -1096,26 +1124,22 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
+    WARNING:root:Input predictions do not sum to 1.
+
+
+.. parsed-literal::
+
+    WARNING:root:Input predictions do not sum to 1.
+
+
+.. parsed-literal::
+
     Requested metrics: ['cdeloss', 'pit', 'brier']
     Inserting handle into data store.  output_bpz_dist_to_point: inprogress_output_bpz_dist_to_point.hdf5, bpz_dist_to_point
     Inserting handle into data store.  summary_bpz_dist_to_point: inprogress_summary_bpz_dist_to_point.hdf5, bpz_dist_to_point
     Inserting handle into data store.  single_distribution_summary_bpz_dist_to_point: inprogress_single_distribution_summary_bpz_dist_to_point.hdf5, bpz_dist_to_point
     Warning.  Failed to convert column No conversion path for dtype: dtype('<U16')
     Requested metrics: ['cdeloss', 'pit', 'brier']
-
-
-.. parsed-literal::
-
-    WARNING:root:Input predictions do not sum to 1.
-
-
-.. parsed-literal::
-
-    WARNING:root:Input predictions do not sum to 1.
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_fzboost_dist_to_point: inprogress_output_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
     Inserting handle into data store.  summary_fzboost_dist_to_point: inprogress_summary_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
     Inserting handle into data store.  single_distribution_summary_fzboost_dist_to_point: inprogress_single_distribution_summary_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
@@ -1136,15 +1160,15 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
-    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f10f613ffd0>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f1129d5ee30>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f1129d5e5c0>},
-     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f10973419c0>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f1129d5fc10>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f1129d5fbe0>},
-     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f10a4c64220>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f10b87dfac0>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f1129d5eda0>}}
+    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f6db30e98d0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f6df1f2fbe0>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f6df1f2db10>},
+     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f6d685944c0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f6d6a9dde40>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f6df1f2d810>},
+     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f6df1f2dae0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f6df1f2dff0>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f6d685648e0>}}
 
 
 
@@ -1195,8 +1219,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.307572</td>
-          <td>156.566285</td>
+          <td>-0.499043</td>
+          <td>138.450143</td>
         </tr>
       </tbody>
     </table>
@@ -1239,8 +1263,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.434909</td>
-          <td>334.71362</td>
+          <td>-0.680284</td>
+          <td>222.737429</td>
         </tr>
       </tbody>
     </table>
@@ -1422,30 +1446,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'estimate_bpz': <Job estimate_bpz>,
        'naive_stack_test': <Job naive_stack_test>,
        'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f11051d7130>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f10a4c65a50>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f10a4c65d50>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f6e106ceef0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f6d704f5150>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f6d704f5390>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f10a4c11f90>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f10b8167100>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f10b8167880>,
-       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f10b81660b0>,
-       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f10b81668c0>,
+       <rail.tools.table_tools.TableConverter at 0x7f6d704c3eb0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f6d70535de0>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f6d70535780>,
+       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f6d705378e0>,
+       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f6d705361d0>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f10b8164910>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f10a59e3670>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f10973427d0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f10b8167490>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f10972d73d0>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f10a4c66dd0>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f10972d7df0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f1129d5f610>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f1129d5dae0>]),
+       <rail.tools.table_tools.TableConverter at 0x7f6d70535a80>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f6d6a9dece0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f6d704f5e10>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f6d6a9dec80>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f6d685971f0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f6d6a9deb00>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f6d68597f70>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f6df1f2e470>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f6df1f2e6e0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

@@ -182,15 +182,15 @@ cell below:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 2.46 ms, sys: 668 μs, total: 3.13 ms
-    Wall time: 2.68 ms
+    CPU times: user 2.9 ms, sys: 0 ns, total: 2.9 ms
+    Wall time: 2.58 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f23a81e7d90>
+    <rail.core.data.ModelHandle at 0x7fe8d0cb6e90>
 
 
 
@@ -238,8 +238,8 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    CPU times: user 58.7 s, sys: 5.98 ms, total: 58.7 s
-    Wall time: 58.7 s
+    CPU times: user 58.8 s, sys: 14.6 ms, total: 58.8 s
+    Wall time: 58.8 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and

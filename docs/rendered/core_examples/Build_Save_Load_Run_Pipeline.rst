@@ -173,39 +173,39 @@ A couple of things are important:
           <th>0</th>
           <td>22.734173</td>
           <td>22.580509</td>
-          <td>24.027838</td>
+          <td>24.027840</td>
           <td>22.996883</td>
           <td>0.739296</td>
-          <td>25.822559</td>
-          <td>25.088482</td>
+          <td>25.822563</td>
+          <td>25.088484</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.666662</td>
-          <td>22.415173</td>
-          <td>23.995964</td>
-          <td>23.025356</td>
+          <td>22.666660</td>
+          <td>22.415169</td>
+          <td>23.995960</td>
+          <td>23.025354</td>
           <td>0.644894</td>
-          <td>27.391766</td>
-          <td>25.447912</td>
+          <td>27.391764</td>
+          <td>25.447910</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>21.013424</td>
-          <td>20.779907</td>
-          <td>21.757727</td>
-          <td>21.298744</td>
+          <td>21.013422</td>
+          <td>20.779903</td>
+          <td>21.757725</td>
+          <td>21.298742</td>
           <td>0.348834</td>
-          <td>23.999670</td>
-          <td>22.884045</td>
+          <td>23.999668</td>
+          <td>22.884043</td>
         </tr>
         <tr>
           <th>3</th>
           <td>24.050123</td>
           <td>23.818220</td>
-          <td>24.271828</td>
+          <td>24.271830</td>
           <td>24.152014</td>
-          <td>1.623728</td>
+          <td>1.623727</td>
           <td>24.338676</td>
           <td>24.272142</td>
         </tr>
@@ -222,12 +222,12 @@ A couple of things are important:
         <tr>
           <th>5</th>
           <td>21.022926</td>
-          <td>20.927563</td>
+          <td>20.927565</td>
           <td>22.416426</td>
-          <td>21.435766</td>
+          <td>21.435768</td>
           <td>0.839687</td>
-          <td>23.225254</td>
-          <td>23.068542</td>
+          <td>23.225256</td>
+          <td>23.068544</td>
         </tr>
       </tbody>
     </table>
@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd95391bac0>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7fd95391b6d0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fabb89df8b0>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7fabb89de8c0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7fd9539de020>]),
+       <rail.tools.table_tools.TableConverter at 0x7fab5b22ff40>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

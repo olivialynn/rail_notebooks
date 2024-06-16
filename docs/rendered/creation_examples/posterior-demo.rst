@@ -144,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f4c7eec0dc0>
+    <qp.ensemble.Ensemble at 0x7f77dc71cbb0>
 
 
 
@@ -297,6 +297,22 @@ Now let’s draw a degraded sample:
       <tbody>
         <tr>
           <th>0</th>
+          <td>1.008050</td>
+          <td>23.936983</td>
+          <td>0.042606</td>
+          <td>23.882311</td>
+          <td>0.014348</td>
+          <td>23.635338</td>
+          <td>0.010623</td>
+          <td>23.124295</td>
+          <td>0.010943</td>
+          <td>22.607378</td>
+          <td>0.012849</td>
+          <td>22.334490</td>
+          <td>0.021795</td>
+        </tr>
+        <tr>
+          <th>1</th>
           <td>0.264244</td>
           <td>24.188128</td>
           <td>0.053126</td>
@@ -312,7 +328,7 @@ Now let’s draw a degraded sample:
           <td>0.100555</td>
         </tr>
         <tr>
-          <th>1</th>
+          <th>2</th>
           <td>0.260134</td>
           <td>24.577568</td>
           <td>0.074831</td>
@@ -328,7 +344,7 @@ Now let’s draw a degraded sample:
           <td>0.045700</td>
         </tr>
         <tr>
-          <th>2</th>
+          <th>3</th>
           <td>0.236191</td>
           <td>25.554217</td>
           <td>0.174331</td>
@@ -344,7 +360,7 @@ Now let’s draw a degraded sample:
           <td>0.021553</td>
         </tr>
         <tr>
-          <th>3</th>
+          <th>4</th>
           <td>0.829715</td>
           <td>25.346007</td>
           <td>0.145985</td>
@@ -360,7 +376,7 @@ Now let’s draw a degraded sample:
           <td>0.066021</td>
         </tr>
         <tr>
-          <th>4</th>
+          <th>5</th>
           <td>0.639660</td>
           <td>23.467008</td>
           <td>0.028308</td>
@@ -376,7 +392,7 @@ Now let’s draw a degraded sample:
           <td>0.012894</td>
         </tr>
         <tr>
-          <th>5</th>
+          <th>6</th>
           <td>0.214016</td>
           <td>24.299061</td>
           <td>0.058574</td>
@@ -392,7 +408,7 @@ Now let’s draw a degraded sample:
           <td>0.031681</td>
         </tr>
         <tr>
-          <th>6</th>
+          <th>7</th>
           <td>0.357573</td>
           <td>24.642175</td>
           <td>0.079198</td>

@@ -76,22 +76,6 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     split into 7669 training and 2556 validation samples
     finding best fit sigma and NNeigh...
 
@@ -112,7 +96,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fed80d8e500>
+    <rail.core.data.ModelHandle at 0x7f618d79ef20>
 
 
 
@@ -131,22 +115,6 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_KNN: inprogress_output_KNN.hdf5, KNN
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
@@ -154,40 +122,8 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
 So, ``qp_data`` now contains the 20,000 PDFs from KNearNeighEstimator,
@@ -261,7 +197,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fed3abad7e0>
+    <matplotlib.legend.Legend at 0x7f618d0fee30>
 
 
 
@@ -317,8 +253,8 @@ appears alpha is broken, so this plot is not the best:
     Process 0 running estimator on chunk 20000 - 20449
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 52.5 ms, sys: 25.1 ms, total: 77.6 ms
-    Wall time: 49.7 ms
+    CPU times: user 32.2 ms, sys: 4.04 ms, total: 36.2 ms
+    Wall time: 35.8 ms
 
 
 .. code:: ipython3
@@ -339,7 +275,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fed35a37d60>
+    <matplotlib.legend.Legend at 0x7f6188ef3b80>
 
 
 
@@ -378,8 +314,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.05 s, sys: 60.7 ms, total: 1.11 s
-    Wall time: 1.11 s
+    CPU times: user 991 ms, sys: 58.3 ms, total: 1.05 s
+    Wall time: 1.05 s
 
 
 .. code:: ipython3
@@ -392,7 +328,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fed3595dcc0>
+    <qp.ensemble.Ensemble at 0x7f6188eb6e30>
 
 
 
@@ -451,7 +387,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fed359463b0>
+    <rail.core.data.ModelHandle at 0x7f618b033f70>
 
 
 
@@ -500,7 +436,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fed3577add0>
+    <matplotlib.legend.Legend at 0x7f6188d9f6d0>
 
 
 
@@ -587,7 +523,7 @@ then use the std dev of any of these to estimate a 1 sigma “shift”, etc…
             0.9  , 0.9  , 0.975, 0.975, 0.975, 0.975, 0.9  , 0.975, 0.975,
             0.975, 0.975]),
      'varinf_means': array([0.88854022, 0.89158319, 0.89110634, 0.89315605, 0.89387354,
-            0.89097531, 0.89294196, 0.89228821, 0.88712166, 0.88899743,
+            0.89097531, 0.89294196, 0.89228821, 0.88712167, 0.88899743,
             0.88741712, 0.88722119, 0.89265368, 0.89404193, 0.89334961,
             0.89796394, 0.89413918, 0.88890824, 0.89510198, 0.88763958]),
      'varinf_std': array([0.41459107, 0.41830515, 0.41732654, 0.41270001, 0.41330109,
@@ -627,7 +563,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fed357d04f0>]
+    [<matplotlib.lines.Line2D at 0x7f61889fa290>]
 
 
 
@@ -644,7 +580,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fed35619d80>]
+    [<matplotlib.lines.Line2D at 0x7f6188a6c640>]
 
 
 
@@ -661,7 +597,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fed3580fee0>]
+    [<matplotlib.lines.Line2D at 0x7f618b0d78e0>]
 
 
 
@@ -696,7 +632,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fed3abadb40>
+    <matplotlib.legend.Legend at 0x7f6188b16ad0>
 
 
 
@@ -737,7 +673,7 @@ NZDir-derived distribution:
 
 .. parsed-literal::
 
-    0.005498408843907339
+    np.float64(0.005498408843907339)
 
 
 

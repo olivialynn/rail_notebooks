@@ -165,15 +165,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 4s, sys: 268 ms, total: 8min 4s
-    Wall time: 2min 3s
+    CPU times: user 8min 6s, sys: 264 ms, total: 8min 6s
+    Wall time: 2min 4s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f19a81e2620>
+    <rail.core.data.ModelHandle at 0x7fa39c182140>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f19470966b0>
+    <rail.core.data.QPHandle at 0x7fa35d37c0a0>
 
 
 
@@ -523,13 +523,13 @@ photometric sample.
 
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
+    the following clusters contain photometric data but not spectroscopic data:
+    {np.int64(413), np.int64(94)}
+    123 out of 500 have usable data
 
 
 .. parsed-literal::
 
-    the following clusters contain photometric data but not spectroscopic data:
-    {np.int64(413), np.int64(94)}
-    123 out of 500 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -765,7 +765,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f19505eb760>
+    <matplotlib.legend.Legend at 0x7fa35c48fe50>
 
 
 
@@ -818,7 +818,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f19445e11e0>
+    <rail.core.data.QPHandle at 0x7fa35c4ac670>
 
 
 
@@ -845,7 +845,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f19505b6470>
+    <matplotlib.legend.Legend at 0x7fa35c46fd00>
 
 
 
@@ -897,7 +897,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6842/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_6760/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -905,7 +905,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1944592230>
+    <matplotlib.legend.Legend at 0x7fa35c2d74f0>
 
 
 

@@ -86,11 +86,55 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  61.8M      0 --:--:-- --:--:-- --:--:-- 61.8M
+      0 47.1M    0 11979    0     0  10640      0  1:17:24  0:00:01  1:17:23 10638
+
+.. parsed-literal::
+
+      0 47.1M    0  209k    0     0  97479      0  0:08:26  0:00:02  0:08:24 97491
+
+.. parsed-literal::
+
+      0 47.1M    0  384k    0     0   124k      0  0:06:28  0:00:03  0:06:25  124k
+
+.. parsed-literal::
+
+      4 47.1M    4 2136k    0     0   526k      0  0:01:31  0:00:04  0:01:27  526k
+
+.. parsed-literal::
+
+     15 47.1M   15 7360k    0     0  1457k      0  0:00:33  0:00:05  0:00:28 1473k
+
+.. parsed-literal::
+
+     16 47.1M   16 7793k    0     0  1254k      0  0:00:38  0:00:06  0:00:32 1529k
+
+.. parsed-literal::
+
+     17 47.1M   17 8550k    0     0  1213k      0  0:00:39  0:00:07  0:00:32 1720k
+
+.. parsed-literal::
+
+     33 47.1M   33 15.7M    0     0  2002k      0  0:00:24  0:00:08  0:00:16 3174k
+
+.. parsed-literal::
+
+     52 47.1M   52 24.9M    0     0  2824k      0  0:00:17  0:00:09  0:00:08 4692k
+
+.. parsed-literal::
+
+     56 47.1M   56 26.6M    0     0  2707k      0  0:00:17  0:00:10  0:00:07 3968k
+
+.. parsed-literal::
+
+     80 47.1M   80 37.7M    0     0  3495k      0  0:00:13  0:00:11  0:00:02 6375k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  4098k      0  0:00:11  0:00:11 --:--:-- 8401k
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -291,7 +335,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f4bc04c3b20>
+    <qp.ensemble.Ensemble at 0x7f5b5149bd00>
 
 
 

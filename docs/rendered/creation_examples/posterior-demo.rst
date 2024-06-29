@@ -144,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fca0ce7ada0>
+    <qp.ensemble.Ensemble at 0x7f84a47f2e30>
 
 
 
@@ -393,22 +393,6 @@ Now let’s draw a degraded sample:
         </tr>
         <tr>
           <th>6</th>
-          <td>1.241073</td>
-          <td>25.146248</td>
-          <td>0.122915</td>
-          <td>25.170702</td>
-          <td>0.043052</td>
-          <td>25.000453</td>
-          <td>0.032523</td>
-          <td>24.513026</td>
-          <td>0.034474</td>
-          <td>23.957926</td>
-          <td>0.040357</td>
-          <td>23.394317</td>
-          <td>0.055333</td>
-        </tr>
-        <tr>
-          <th>7</th>
           <td>0.214016</td>
           <td>24.299061</td>
           <td>0.058574</td>
@@ -424,7 +408,7 @@ Now let’s draw a degraded sample:
           <td>0.031681</td>
         </tr>
         <tr>
-          <th>8</th>
+          <th>7</th>
           <td>0.357573</td>
           <td>24.642175</td>
           <td>0.079198</td>

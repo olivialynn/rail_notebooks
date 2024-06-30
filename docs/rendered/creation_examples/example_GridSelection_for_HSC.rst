@@ -220,7 +220,7 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.94 s, sys: 99.5 ms, total: 3.04 s
+    CPU times: user 2.95 s, sys: 91.3 ms, total: 3.05 s
     Wall time: 3.04 s
 
 
@@ -274,7 +274,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 .. parsed-literal::
 
-    /tmp/ipykernel_5196/1938339790.py:1: SettingWithCopyWarning: 
+    /tmp/ipykernel_5149/1938339790.py:1: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

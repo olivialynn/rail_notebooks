@@ -144,7 +144,7 @@ Note that Creator returns the pdfs as a
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f0b1019a1a0>
+    <qp.ensemble.Ensemble at 0x7fcd4991ba00>
 
 
 
@@ -297,6 +297,22 @@ Now let’s draw a degraded sample:
       <tbody>
         <tr>
           <th>0</th>
+          <td>1.008050</td>
+          <td>23.936983</td>
+          <td>0.042606</td>
+          <td>23.882311</td>
+          <td>0.014348</td>
+          <td>23.635338</td>
+          <td>0.010623</td>
+          <td>23.124295</td>
+          <td>0.010943</td>
+          <td>22.607378</td>
+          <td>0.012849</td>
+          <td>22.334490</td>
+          <td>0.021795</td>
+        </tr>
+        <tr>
+          <th>1</th>
           <td>0.264244</td>
           <td>24.188128</td>
           <td>0.053126</td>
@@ -312,7 +328,7 @@ Now let’s draw a degraded sample:
           <td>0.100555</td>
         </tr>
         <tr>
-          <th>1</th>
+          <th>2</th>
           <td>0.260134</td>
           <td>24.577568</td>
           <td>0.074831</td>
@@ -328,7 +344,7 @@ Now let’s draw a degraded sample:
           <td>0.045700</td>
         </tr>
         <tr>
-          <th>2</th>
+          <th>3</th>
           <td>0.236191</td>
           <td>25.554217</td>
           <td>0.174331</td>
@@ -344,7 +360,7 @@ Now let’s draw a degraded sample:
           <td>0.021553</td>
         </tr>
         <tr>
-          <th>3</th>
+          <th>4</th>
           <td>0.829715</td>
           <td>25.346007</td>
           <td>0.145985</td>
@@ -360,7 +376,7 @@ Now let’s draw a degraded sample:
           <td>0.066021</td>
         </tr>
         <tr>
-          <th>4</th>
+          <th>5</th>
           <td>0.639660</td>
           <td>23.467008</td>
           <td>0.028308</td>
@@ -374,22 +390,6 @@ Now let’s draw a degraded sample:
           <td>0.008000</td>
           <td>21.692578</td>
           <td>0.012894</td>
-        </tr>
-        <tr>
-          <th>5</th>
-          <td>1.241073</td>
-          <td>25.146248</td>
-          <td>0.122915</td>
-          <td>25.170702</td>
-          <td>0.043052</td>
-          <td>25.000453</td>
-          <td>0.032523</td>
-          <td>24.513026</td>
-          <td>0.034474</td>
-          <td>23.957926</td>
-          <td>0.040357</td>
-          <td>23.394317</td>
-          <td>0.055333</td>
         </tr>
         <tr>
           <th>6</th>

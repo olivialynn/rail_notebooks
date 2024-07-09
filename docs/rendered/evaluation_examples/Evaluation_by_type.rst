@@ -81,27 +81,19 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0  159k    0     0  70019      0  0:11:45  0:00:02  0:11:43 70008
+      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
 
 .. parsed-literal::
 
-      5 47.1M    5 2467k    0     0   763k      0  0:01:03  0:00:03  0:01:00  763k
+      0 47.1M    0 40660    0     0  12128      0  1:07:54  0:00:03  1:07:51 12126
 
 .. parsed-literal::
 
-     32 47.1M   32 15.1M    0     0  3583k      0  0:00:13  0:00:04  0:00:09 3583k
+     38 47.1M   38 18.0M    0     0  4276k      0  0:00:11  0:00:04  0:00:07 4276k
 
 .. parsed-literal::
 
-     55 47.1M   55 26.2M    0     0  5141k      0  0:00:09  0:00:05  0:00:04 5373k
-
-.. parsed-literal::
-
-     84 47.1M   84 40.0M    0     0  6553k      0  0:00:07  0:00:06  0:00:01 8415k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  7201k      0  0:00:06  0:00:06 --:--:-- 10.7M
+    100 47.1M  100 47.1M    0     0  9239k      0  0:00:05  0:00:05 --:--:-- 9988k
 
 
 .. code:: ipython3
@@ -942,7 +934,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f35a4858250>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fe060dfdbd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1086,10 +1078,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1253,7 +1241,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f3583d809a0>
+    <qp.ensemble.Ensemble at 0x7fe05de49840>
 
 
 
@@ -1412,10 +1400,6 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
-
-
-.. parsed-literal::
-
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 
@@ -1449,6 +1433,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

@@ -73,71 +73,19 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 11979    0     0  16304      0  0:50:30 --:--:--  0:50:30 16297
+      1 47.1M    1  519k    0     0   693k      0  0:01:09 --:--:--  0:01:09  693k
 
 .. parsed-literal::
 
-      0 47.1M    0  273k    0     0   104k      0  0:07:41  0:00:02  0:07:39  104k
+      7 47.1M    7 3551k    0     0  2028k      0  0:00:23  0:00:01  0:00:22 2028k
 
 .. parsed-literal::
 
-      0 47.1M    0  285k    0     0  81799      0  0:10:04  0:00:03  0:10:01 81814
+     32 47.1M   32 15.4M    0     0  5761k      0  0:00:08  0:00:02  0:00:06 5761k
 
 .. parsed-literal::
 
-      1 47.1M    1  630k    0     0   163k      0  0:04:55  0:00:03  0:04:52  163k
-
-.. parsed-literal::
-
-      2 47.1M    2 1351k    0     0   274k      0  0:02:55  0:00:04  0:02:51  274k
-
-.. parsed-literal::
-
-      2 47.1M    2 1367k    0     0   238k      0  0:03:22  0:00:05  0:03:17  270k
-
-.. parsed-literal::
-
-      6 47.1M    6 2939k    0     0   431k      0  0:01:51  0:00:06  0:01:45  636k
-
-.. parsed-literal::
-
-      6 47.1M    6 3219k    0     0   407k      0  0:01:58  0:00:07  0:01:51  678k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.6M    0     0  1170k      0  0:00:41  0:00:09  0:00:32 1883k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.6M    0     0  1056k      0  0:00:45  0:00:10  0:00:35 1771k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.6M    0     0   963k      0  0:00:50  0:00:11  0:00:39 1710k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.6M    0     0   884k      0  0:00:54  0:00:12  0:00:42 1445k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.6M    0     0   849k      0  0:00:56  0:00:12  0:00:44 1558k
-
-.. parsed-literal::
-
-     28 47.1M   28 13.3M    0     0   994k      0  0:00:48  0:00:13  0:00:35  624k
-
-.. parsed-literal::
-
-     46 47.1M   46 21.7M    0     0  1513k      0  0:00:31  0:00:14  0:00:17 2574k
-
-.. parsed-literal::
-
-     78 47.1M   78 36.9M    0     0  2403k      0  0:00:20  0:00:15  0:00:05 6088k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  2951k      0  0:00:16  0:00:16 --:--:-- 9246k
+    100 47.1M  100 47.1M    0     0  13.4M      0  0:00:03  0:00:03 --:--:-- 13.4M
 
 
 .. code:: ipython3
@@ -978,7 +926,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fa7872225f0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f9932351f60>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1285,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fa787c47790>
+    <qp.ensemble.Ensemble at 0x7f993445e890>
 
 
 

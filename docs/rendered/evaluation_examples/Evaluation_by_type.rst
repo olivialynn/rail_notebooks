@@ -69,67 +69,15 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+      0 47.1M    0 48852    0     0   137k      0  0:05:50 --:--:--  0:05:50  137k
 
 .. parsed-literal::
 
-      0 47.1M    0 48852    0     0  22978      0  0:35:50  0:00:02  0:35:48 22978
-
-.. parsed-literal::
-
-      0 47.1M    0 48852    0     0  15621      0  0:52:43  0:00:03  0:52:40 15622
-
-.. parsed-literal::
-
-      0 47.1M    0  374k    0     0  88184      0  0:09:20  0:00:04  0:09:16 88170
-
-.. parsed-literal::
-
-      1 47.1M    1  603k    0     0   112k      0  0:07:07  0:00:05  0:07:02  115k
-
-.. parsed-literal::
-
-      1 47.1M    1  603k    0     0  97337      0  0:08:27  0:00:06  0:08:21  121k
-
-.. parsed-literal::
-
-      2 47.1M    2 1133k    0     0   148k      0  0:05:24  0:00:07  0:05:17  197k
-
-.. parsed-literal::
-
-      2 47.1M    2 1133k    0     0   131k      0  0:06:07  0:00:08  0:05:59  197k
-
-.. parsed-literal::
-
-      2 47.1M    2 1133k    0     0   117k      0  0:06:49  0:00:09  0:06:40  143k
-
-.. parsed-literal::
-
-      2 47.1M    2 1142k    0     0   106k      0  0:07:34  0:00:10  0:07:24   99k
-
-.. parsed-literal::
-
-      2 47.1M    2 1142k    0     0  99535      0  0:08:16  0:00:11  0:08:05   99k
-
-.. parsed-literal::
-
-      2 47.1M    2 1142k    0     0  91723      0  0:08:58  0:00:12  0:08:46  1733
-
-.. parsed-literal::
-
-      3 47.1M    3 1563k    0     0   119k      0  0:06:45  0:00:13  0:06:32 97664
-
-.. parsed-literal::
-
-     34 47.1M   34 16.1M    0     0  1166k      0  0:00:41  0:00:14  0:00:27 3389k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  3231k      0  0:00:14  0:00:14 --:--:-- 11.0M
+    100 47.1M  100 47.1M    0     0  44.1M      0  0:00:01  0:00:01 --:--:-- 44.2M
 
 
 .. code:: ipython3
@@ -970,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fadbb11a560>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f1689cea590>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1066,14 +1014,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-    Processing 0 running evaluator on chunk 10000 - 11000.
-    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
-    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
-    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
 
 
 .. parsed-literal::
 
+    Processing 0 running evaluator on chunk 10000 - 11000.
+    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
+    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
+    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1277,7 +1225,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fadbccbe5f0>
+    <qp.ensemble.Ensemble at 0x7f16aa6ad930>
 
 
 
@@ -1469,10 +1417,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

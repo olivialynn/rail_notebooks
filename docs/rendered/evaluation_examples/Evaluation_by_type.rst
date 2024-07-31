@@ -73,11 +73,23 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 48852    0     0   137k      0  0:05:50 --:--:--  0:05:50  137k
+      1 47.1M    1  595k    0     0  1203k      0  0:00:40 --:--:--  0:00:40 1203k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  44.1M      0  0:00:01  0:00:01 --:--:-- 44.2M
+     18 47.1M   18 8903k    0     0  5949k      0  0:00:08  0:00:01  0:00:07 5947k
+
+.. parsed-literal::
+
+     45 47.1M   45 21.4M    0     0  8762k      0  0:00:05  0:00:02  0:00:03 8761k
+
+.. parsed-literal::
+
+     72 47.1M   72 33.9M    0     0  9963k      0  0:00:04  0:00:03  0:00:01 9961k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  10.9M      0  0:00:04  0:00:04 --:--:-- 10.9M
 
 
 .. code:: ipython3
@@ -867,7 +879,7 @@ value is correct.
 
 .. parsed-literal::
 
-    np.float64(0.02084700447796729)
+    0.02084700447796729
 
 
 
@@ -918,7 +930,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f1689cea590>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f52b0c3c220>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1002,6 +1014,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 7000 - 8000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1014,10 +1030,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 10000 - 11000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1038,6 +1050,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 15000 - 16000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1225,7 +1241,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f16aa6ad930>
+    <qp.ensemble.Ensemble at 0x7f52dc962e00>
 
 
 
@@ -1238,10 +1254,10 @@ detailed below).
 
 .. parsed-literal::
 
-    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
+    {'ad': Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001),
      'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
-     'ks': KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1)),
-     'outlier_rate': np.float64(0.05873797877466336)}
+     'ks': KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1),
+     'outlier_rate': 0.05873797877466336}
 
 
 
@@ -1338,8 +1354,8 @@ class returns a named tuple with the statistic and p-value.
 
 .. parsed-literal::
 
-    PIT KS stat and pval: KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1))
-    PIT KS stat and pval: KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1))
+    PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
+    PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
 
 
 .. code:: ipython3
@@ -1416,8 +1432,8 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
+    PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
 
 
 .. parsed-literal::
@@ -1498,7 +1514,7 @@ depending on the true conditional densities :math:`f(z | x)`.
 
 .. parsed-literal::
 
-    stat_and_pval(statistic=np.float64(-6.725602928688286), p_value=nan)
+    stat_and_pval(statistic=-6.725602928688286, p_value=nan)
 
 
 

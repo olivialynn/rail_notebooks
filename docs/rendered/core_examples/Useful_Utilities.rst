@@ -24,7 +24,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
 .. code:: ipython3
 
     import rail.stages
-    for val in rail.core.RailStage.pipeline_stages.values():
+    for val in rail.core.stage.RailStage.pipeline_stages.values():
         print(val[0])
 
 
@@ -34,16 +34,21 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
     <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
+    <class 'rail.creation.noisifier.Noisifier'>
+    <class 'rail.creation.degraders.addRandom.AddColumnOfRandom'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
@@ -78,7 +83,6 @@ imports.
     rail.stages.import_and_attach_all()
 
 
-
 .. parsed-literal::
 
     Imported rail.astro_tools
@@ -91,6 +95,10 @@ imports.
 
     Imported rail.dsps
     Imported rail.flexzboost
+
+
+.. parsed-literal::
+
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -99,13 +107,14 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+    Imported rail.gpz
+    Imported rail.hub
+    Imported rail.interfaces
 
 
 .. parsed-literal::
 
-    Imported rail.gpz
-    Imported rail.hub
-    Failed to import rail.pzflow because: No module named 'rail.estimation.algos.pzflow'
+    Imported rail.pzflow
     Imported rail.sklearn
 
 
@@ -113,7 +122,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 71 fully formed stages to rail.stages
+    Attached 12 base classes and 77 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -165,14 +174,12 @@ To see this in action:
 Listing imported stages (2/2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now, let’s try listing imported stages again.
-
-Note that we can now just call ``RailStage`` instead of
-``rail.core.RailStage``.
+Now, let’s try listing imported stages again, and notice how many more
+we get.
 
 .. code:: ipython3
 
-    for val in RailStage.pipeline_stages.values():
+    for val in rail.core.stage.RailStage.pipeline_stages.values():
         print(val[0])
 
 
@@ -182,16 +189,21 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
     <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
     <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
     <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
+    <class 'rail.creation.noisifier.Noisifier'>
+    <class 'rail.creation.degraders.addRandom.AddColumnOfRandom'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
@@ -203,7 +215,6 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.tools.table_tools.RowSelector'>
     <class 'rail.tools.table_tools.TableConverter'>
     <class 'rail.creation.degraders.grid_selection.GridSelection'>
-    <class 'rail.creation.noisifier.Noisifier'>
     <class 'rail.creation.degraders.observing_condition_degrader.ObsCondition'>
     <class 'rail.creation.degraders.spectroscopic_degraders.LineConfusion'>
     <class 'rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness'>
@@ -237,6 +248,8 @@ Note that we can now just call ``RailStage`` instead of
     <class 'rail.creation.engines.flowEngine.FlowModeler'>
     <class 'rail.creation.engines.flowEngine.FlowCreator'>
     <class 'rail.creation.engines.flowEngine.FlowPosterior'>
+    <class 'rail.estimation.algos.pzflow_nf.PZFlowInformer'>
+    <class 'rail.estimation.algos.pzflow_nf.PZFlowEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighInformer'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetInformer'>
@@ -260,7 +273,7 @@ all estimators available in RAIL.
 
 .. code:: ipython3
 
-    for val in RailStage.pipeline_stages.values():
+    for val in rail.core.stage.RailStage.pipeline_stages.values():
         if issubclass(val[0], rail.estimation.estimator.CatEstimator):
             print(val[0])
 
@@ -274,6 +287,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.estimation.algos.gpz.GPzEstimator'>
+    <class 'rail.estimation.algos.pzflow_nf.PZFlowEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetEstimator'>
     <class 'rail.estimation.algos.nz_dir.NZDirSummarizer'>
@@ -289,7 +303,7 @@ First, we must set up the Data Store:
 
 .. code:: ipython3
 
-    DS = RailStage.data_store
+    DS = rail.core.stage.RailStage.data_store
     DS.__class__.allow_overwrite = True
 
 And because we’ve only just created the store, as you may have guessed,
@@ -348,12 +362,12 @@ We can set our FLOWDIR based on the location of our flow file, too.
 .. code:: ipython3
 
     # Now, we have to set up some other variables for our pipeline:
+    import numpy as np
     
     bands = ["u", "g", "r", "i", "z", "y"]
     band_dict = {band: f"mag_{band}_lsst" for band in bands}
     rename_dict = {f"mag_{band}_lsst_err": f"mag_err_{band}_lsst" for band in bands}
     post_grid = [float(x) for x in np.linspace(0.0, 5, 21)]
-
 
 Creating the Pipeline
 ---------------------
@@ -453,7 +467,7 @@ Let’s take a look a the config of the first stage we just listed above.
 
 .. parsed-literal::
 
-    StageConfig{output_mode:default,n_samples:50,seed:12345,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
+    StageConfig{output_mode:default,n_samples:50,seed:12345,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,}
 
 
 
@@ -474,7 +488,7 @@ give it a try.
 
 .. parsed-literal::
 
-    StageConfig{output_mode:default,n_samples:50,seed:42,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
+    StageConfig{output_mode:default,n_samples:50,seed:42,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,}
 
 
 
@@ -538,11 +552,14 @@ use ``dir(pipe)`` to list out available methods and parameters.
     build_stage
     callback
     create
+    data_registry
+    data_registry_lookup
     enqueue_job
     find_all_outputs
-    get_stage_aliases
+    generate_stage_command
     global_config
     initialize
+    initialize_stages
     initiate_run
     interactive
     launcher_config
@@ -553,6 +570,7 @@ use ``dir(pipe)`` to list out available methods and parameters.
     pipeline_files
     pipeline_outputs
     print_stages
+    process_overall_inputs
     read
     remove_stage
     run
@@ -560,6 +578,7 @@ use ``dir(pipe)`` to list out available methods and parameters.
     run_info
     run_jobs
     save
+    setup_data_registry
     should_skip_stage
     sleep
     stage_config_data
@@ -589,17 +608,16 @@ Just add a ``resume=True`` to do so.
     )
 
 
-.. parsed-literal::
-
-    Skipping stage flow_engine_test because its outputs exist already
-    Skipping stage col_remapper_test because its outputs exist already
-
-
 
 
 .. parsed-literal::
 
-    (({}, []), {'output_dir': '.', 'log_dir': '.', 'resume': True})
+    (({'flow_engine_test': <Job flow_engine_test>,
+       'col_remapper_test': <Job col_remapper_test>},
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd8e1648f10>,
+       Stage that applies remaps the following column names in a pandas DataFrame:
+       f{str(self.config.columns)}]),
+     {'output_dir': '.', 'log_dir': '.', 'resume': True})
 
 
 
@@ -615,7 +633,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd3d8ea88b0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd8e1648f10>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

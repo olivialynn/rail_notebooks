@@ -183,152 +183,152 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    (1) 5.7028
+    (1) 5.2449
 
 
 .. parsed-literal::
 
-    (2) 2.3836
+    (2) 3.3295
 
 
 .. parsed-literal::
 
-    (3) 2.3301
+    (3) 2.0386
 
 
 .. parsed-literal::
 
-    (4) 0.7801
+    (4) -0.5743
 
 
 .. parsed-literal::
 
-    (5) -0.6593
+    (5) -0.0965
 
 
 .. parsed-literal::
 
-    (6) -0.8418
+    (6) 0.2187
 
 
 .. parsed-literal::
 
-    (7) -0.4294
+    (7) -0.8406
 
 
 .. parsed-literal::
 
-    (8) -1.2531
+    (8) -1.2236
 
 
 .. parsed-literal::
 
-    (9) -0.4364
+    (9) -1.2393
 
 
 .. parsed-literal::
 
-    (10) -1.4783
+    (10) -1.7110
 
 
 .. parsed-literal::
 
-    (11) -1.6259
+    (11) -1.7557
 
 
 .. parsed-literal::
 
-    (12) -1.9850
+    (12) -1.2808
 
 
 .. parsed-literal::
 
-    (13) -2.6685
+    (13) -0.6698
 
 
 .. parsed-literal::
 
-    (14) -1.0689
+    (14) -2.7405
 
 
 .. parsed-literal::
 
-    (15) -2.6151
+    (15) -2.6874
 
 
 .. parsed-literal::
 
-    (16) -2.3497
+    (16) -1.4010
 
 
 .. parsed-literal::
 
-    (17) -1.6327
+    (17) -2.7131
 
 
 .. parsed-literal::
 
-    (18) -3.1133
+    (18) -2.2422
 
 
 .. parsed-literal::
 
-    (19) -2.0459
+    (19) -1.9770
 
 
 .. parsed-literal::
 
-    (20) -2.7822
+    (20) -1.3173
 
 
 .. parsed-literal::
 
-    (21) -1.8139
+    (21) -0.4368
 
 
 .. parsed-literal::
 
-    (22) -3.1855
+    (22) -2.1433
 
 
 .. parsed-literal::
 
-    (23) -1.4522
+    (23) -2.6517
 
 
 .. parsed-literal::
 
-    (24) -3.0892
+    (24) -3.3043
 
 
 .. parsed-literal::
 
-    (25) -3.5274
+    (25) -1.6357
 
 
 .. parsed-literal::
 
-    (26) -2.0667
+    (26) -2.9331
 
 
 .. parsed-literal::
 
-    (27) -2.5267
+    (27) -1.8108
 
 
 .. parsed-literal::
 
-    (28) -2.6490
+    (28) -3.1526
 
 
 .. parsed-literal::
 
-    (29) -3.4818
+    (29) -3.6577
 
 
 .. parsed-literal::
 
-    (30) -3.2864
+    (30) -4.2410
     Inserting handle into data store.  model_flow_modeler: /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/inprogress_trained_flow.pkl, flow_modeler
 
 
@@ -336,7 +336,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f32e6a4c310>
+    <rail.tools.flow_handle.FlowHandle at 0x7f35a8a55a80>
 
 
 
@@ -489,83 +489,83 @@ quick writeout of the columns:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.859998</td>
-          <td>26.916685</td>
-          <td>0.516448</td>
-          <td>26.523965</td>
-          <td>0.141380</td>
-          <td>25.724087</td>
-          <td>0.061762</td>
-          <td>24.724815</td>
-          <td>0.041581</td>
-          <td>24.208473</td>
-          <td>0.050403</td>
-          <td>24.066111</td>
-          <td>0.100154</td>
+          <td>0.831240</td>
+          <td>26.585936</td>
+          <td>0.402909</td>
+          <td>26.035440</td>
+          <td>0.092434</td>
+          <td>24.827467</td>
+          <td>0.027940</td>
+          <td>23.712691</td>
+          <td>0.017289</td>
+          <td>23.108116</td>
+          <td>0.019257</td>
+          <td>22.904551</td>
+          <td>0.035842</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.147220</td>
-          <td>25.307752</td>
-          <td>0.141272</td>
-          <td>24.888938</td>
-          <td>0.033578</td>
-          <td>24.310808</td>
-          <td>0.017944</td>
-          <td>23.538876</td>
-          <td>0.015002</td>
-          <td>22.429637</td>
-          <td>0.011258</td>
-          <td>21.913762</td>
-          <td>0.015345</td>
+          <td>1.130516</td>
+          <td>25.684467</td>
+          <td>0.194579</td>
+          <td>24.929354</td>
+          <td>0.034793</td>
+          <td>23.935784</td>
+          <td>0.013262</td>
+          <td>23.112760</td>
+          <td>0.010854</td>
+          <td>22.080541</td>
+          <td>0.008912</td>
+          <td>21.596383</td>
+          <td>0.011992</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.577307</td>
-          <td>26.421513</td>
-          <td>0.354622</td>
-          <td>25.713641</td>
-          <td>0.069618</td>
-          <td>25.090431</td>
-          <td>0.035210</td>
-          <td>24.680040</td>
-          <td>0.039963</td>
-          <td>24.530541</td>
-          <td>0.067072</td>
-          <td>24.306038</td>
-          <td>0.123465</td>
+          <td>0.725424</td>
+          <td>25.900969</td>
+          <td>0.233052</td>
+          <td>25.897163</td>
+          <td>0.081854</td>
+          <td>25.567525</td>
+          <td>0.053750</td>
+          <td>24.932885</td>
+          <td>0.050015</td>
+          <td>24.926190</td>
+          <td>0.095089</td>
+          <td>24.601710</td>
+          <td>0.159289</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.555897</td>
-          <td>24.021253</td>
-          <td>0.045876</td>
-          <td>23.472637</td>
-          <td>0.010592</td>
-          <td>22.866984</td>
-          <td>0.006880</td>
-          <td>22.379893</td>
-          <td>0.007076</td>
-          <td>22.311589</td>
-          <td>0.010359</td>
-          <td>22.144010</td>
-          <td>0.018547</td>
+          <td>0.773942</td>
+          <td>25.228076</td>
+          <td>0.131913</td>
+          <td>24.223101</td>
+          <td>0.018924</td>
+          <td>23.327332</td>
+          <td>0.008694</td>
+          <td>22.443670</td>
+          <td>0.007285</td>
+          <td>22.021649</td>
+          <td>0.008602</td>
+          <td>21.870298</td>
+          <td>0.014819</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.914961</td>
-          <td>27.987421</td>
-          <td>1.050642</td>
-          <td>26.139248</td>
-          <td>0.101235</td>
-          <td>25.574538</td>
-          <td>0.054086</td>
-          <td>24.924915</td>
-          <td>0.049662</td>
-          <td>24.286844</td>
-          <td>0.054035</td>
-          <td>24.362795</td>
-          <td>0.129690</td>
+          <td>0.601639</td>
+          <td>25.175620</td>
+          <td>0.126076</td>
+          <td>24.228938</td>
+          <td>0.019016</td>
+          <td>23.063888</td>
+          <td>0.007526</td>
+          <td>22.398394</td>
+          <td>0.007135</td>
+          <td>22.233053</td>
+          <td>0.009823</td>
+          <td>22.040701</td>
+          <td>0.017020</td>
         </tr>
       </tbody>
     </table>
@@ -718,83 +718,83 @@ For the test sample we will:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.187449</td>
-          <td>23.539797</td>
-          <td>0.030141</td>
-          <td>22.523901</td>
-          <td>0.006457</td>
-          <td>21.775876</td>
-          <td>0.005331</td>
-          <td>21.420487</td>
-          <td>0.005455</td>
-          <td>21.288021</td>
-          <td>0.006199</td>
-          <td>21.179448</td>
-          <td>0.009014</td>
+          <td>0.081767</td>
+          <td>25.167951</td>
+          <td>0.125243</td>
+          <td>24.159809</td>
+          <td>0.017954</td>
+          <td>23.873610</td>
+          <td>0.012644</td>
+          <td>23.644324</td>
+          <td>0.016342</td>
+          <td>23.653787</td>
+          <td>0.030853</td>
+          <td>23.619611</td>
+          <td>0.067569</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.487594</td>
-          <td>23.858748</td>
-          <td>0.039783</td>
-          <td>22.999426</td>
-          <td>0.007932</td>
-          <td>21.960287</td>
-          <td>0.005446</td>
-          <td>21.451105</td>
-          <td>0.005478</td>
-          <td>21.205364</td>
-          <td>0.006053</td>
-          <td>21.021341</td>
-          <td>0.008211</td>
+          <td>0.203397</td>
+          <td>23.868760</td>
+          <td>0.040133</td>
+          <td>23.138891</td>
+          <td>0.008567</td>
+          <td>22.666548</td>
+          <td>0.006380</td>
+          <td>22.493484</td>
+          <td>0.007461</td>
+          <td>22.460162</td>
+          <td>0.011510</td>
+          <td>22.447283</td>
+          <td>0.024016</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.250633</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.123733</td>
-          <td>0.234706</td>
-          <td>25.104752</td>
-          <td>0.035658</td>
-          <td>24.188726</td>
-          <td>0.025937</td>
-          <td>23.633049</td>
-          <td>0.030296</td>
-          <td>22.926795</td>
-          <td>0.036553</td>
+          <td>0.495480</td>
+          <td>26.521034</td>
+          <td>0.383230</td>
+          <td>25.428170</td>
+          <td>0.054075</td>
+          <td>24.248755</td>
+          <td>0.017043</td>
+          <td>23.803431</td>
+          <td>0.018647</td>
+          <td>23.580394</td>
+          <td>0.028929</td>
+          <td>23.244698</td>
+          <td>0.048451</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.495239</td>
-          <td>27.717297</td>
-          <td>0.891282</td>
-          <td>27.486588</td>
-          <td>0.315267</td>
-          <td>26.237576</td>
-          <td>0.097184</td>
-          <td>25.743839</td>
-          <td>0.102415</td>
-          <td>25.334537</td>
-          <td>0.135711</td>
-          <td>25.987774</td>
-          <td>0.486758</td>
+          <td>0.526716</td>
+          <td>27.255525</td>
+          <td>0.657271</td>
+          <td>26.808079</td>
+          <td>0.180202</td>
+          <td>25.654259</td>
+          <td>0.058052</td>
+          <td>25.175414</td>
+          <td>0.062029</td>
+          <td>24.893704</td>
+          <td>0.092414</td>
+          <td>25.192138</td>
+          <td>0.261197</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>2.075444</td>
-          <td>29.506144</td>
-          <td>2.203092</td>
-          <td>26.907924</td>
-          <td>0.196042</td>
-          <td>26.994498</td>
-          <td>0.186736</td>
-          <td>26.678396</td>
-          <td>0.227829</td>
-          <td>25.603319</td>
-          <td>0.170878</td>
-          <td>25.099555</td>
-          <td>0.242073</td>
+          <td>1.985718</td>
+          <td>28.029497</td>
+          <td>1.076912</td>
+          <td>26.292044</td>
+          <td>0.115669</td>
+          <td>25.886484</td>
+          <td>0.071319</td>
+          <td>25.465211</td>
+          <td>0.080163</td>
+          <td>24.574358</td>
+          <td>0.069725</td>
+          <td>24.077895</td>
+          <td>0.101193</td>
         </tr>
       </tbody>
     </table>
@@ -866,14 +866,14 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    using 56 galaxies in calculation
+    using 55 galaxies in calculation
     best values for fo and kt:
     [1.]
     [0.3]
     minimizing for type 0
-    best fit z0, alpha, km for type 0: [0.33066195 1.43273459 0.0535289 ]
+    best fit z0, alpha, km for type 0: [0.40272207 2.17092997 0.08070325]
     Inserting handle into data store.  model_inform_bpz: inprogress_bpz.pkl, inform_bpz
-    split into 42 training and 14 validation samples
+    split into 41 training and 14 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -882,7 +882,7 @@ an SED template library for a template-fitting or hybrid estimator.
     
     
     
-    best fit values are sigma=0.075 and numneigh=5
+    best fit values are sigma=0.075 and numneigh=6
     
     
     
@@ -900,39 +900,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:37] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:37] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:37] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:37] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:38] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:38] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:38] WARNING: /workspace/src/learner.cc:742: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:38] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -955,19 +935,19 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:42] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:42] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:42] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:160: UserWarning: [07:28:42] WARNING: /workspace/src/learner.cc:742: 
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:21:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -982,7 +962,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f32d768f340>
+    <rail.core.data.ModelHandle at 0x7f35647b0400>
 
 
 
@@ -1049,6 +1029,10 @@ using the training data. See `Izbicki & Lee
 
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_test_FZBoost: inprogress_output_test_FZBoost.hdf5, test_FZBoost
 
 
@@ -1140,15 +1124,15 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
-    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f32a42ba170>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f3315f5f3d0>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3315f5ec20>},
-     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f3273a1df00>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f328cea40a0>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3315f5f9a0>},
-     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f328cea7b50>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f328c7aecb0>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3315f5d6c0>}}
+    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f3564d6dea0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f3564d6c6d0>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3564d6f4c0>},
+     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f356479b2b0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f357850bac0>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3564d6e7d0>},
+     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f35a8a9c9a0>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f357850ab30>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f3564d6da80>}}
 
 
 
@@ -1199,8 +1183,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.320438</td>
-          <td>153.47757</td>
+          <td>-0.510636</td>
+          <td>144.49928</td>
         </tr>
       </tbody>
     </table>
@@ -1243,8 +1227,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.179504</td>
-          <td>205.674175</td>
+          <td>-0.555743</td>
+          <td>332.648594</td>
         </tr>
       </tbody>
     </table>
@@ -1287,8 +1271,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>3.061575</td>
-          <td>1114.985836</td>
+          <td>3.23565</td>
+          <td>857.312345</td>
         </tr>
       </tbody>
     </table>
@@ -1407,49 +1391,49 @@ objects between them, we can build a ``ceci`` Pipeline.
 .. parsed-literal::
 
     (({'flow_modeler': <Job flow_modeler>,
-       'flow_creator_test': <Job flow_creator_test>,
-       'lsst_error_model_test': <Job lsst_error_model_test>,
-       'col_remapper_test': <Job col_remapper_test>,
-       'table_conv_test': <Job table_conv_test>,
        'flow_creator_train': <Job flow_creator_train>,
+       'flow_creator_test': <Job flow_creator_test>,
        'lsst_error_model_train': <Job lsst_error_model_train>,
+       'lsst_error_model_test': <Job lsst_error_model_test>,
        'inv_redshift': <Job inv_redshift>,
+       'col_remapper_test': <Job col_remapper_test>,
        'line_confusion': <Job line_confusion>,
+       'table_conv_test': <Job table_conv_test>,
        'quantity_cut': <Job quantity_cut>,
        'col_remapper_train': <Job col_remapper_train>,
        'table_conv_train': <Job table_conv_train>,
-       'inform_FZBoost': <Job inform_FZBoost>,
-       'test_FZBoost': <Job test_FZBoost>,
-       'inform_knn': <Job inform_knn>,
-       'estimate_knn': <Job estimate_knn>,
        'inform_bpz': <Job inform_bpz>,
+       'inform_knn': <Job inform_knn>,
+       'inform_FZBoost': <Job inform_FZBoost>,
        'estimate_bpz': <Job estimate_bpz>,
-       'naive_stack_test': <Job naive_stack_test>,
-       'point_estimate_test': <Job point_estimate_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f32d768ee30>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f32a4be28f0>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f32a4be18a0>,
+       'estimate_knn': <Job estimate_knn>,
+       'test_FZBoost': <Job test_FZBoost>,
+       'point_estimate_test': <Job point_estimate_test>,
+       'naive_stack_test': <Job naive_stack_test>},
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f35aa5afac0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f35a8a9d180>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f35784b73d0>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f35a8a9ce80>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f3578697d90>,
+       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f35a8a9d0f0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f32a4be3c70>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f328cea7e80>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f328cea5390>,
-       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f328cea6fb0>,
-       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f328cea7490>,
+       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f35a8a9d570>,
+       <rail.tools.table_tools.TableConverter at 0x7f35784b75b0>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f328cea7520>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f328c6f7490>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f32a4be01c0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f32a42b9fc0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f3273a1c580>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f32a42ba350>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f32739f25c0>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f3315f5dba0>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f3315f5dfc0>]),
+       <rail.tools.table_tools.TableConverter at 0x7f35a8a9c6a0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f357850add0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f35aa5afb50>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f357850b220>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f3564799ab0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f356479a3b0>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f35a8a9fbb0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f35645a1ff0>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f35645a1750>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1491,66 +1475,6 @@ Read back the pipeline and run it
 .. parsed-literal::
 
     
-    Executing flow_creator_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=.//home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/trained_flow.pkl   --name=flow_creator_test   --config=tmp_goldenspike_config.yml   --output=./output_flow_creator_test.pq 
-    Output writing to ./flow_creator_test.out
-    
-
-
-.. parsed-literal::
-
-    Job flow_creator_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing lsst_error_model_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_creator_test.pq   --name=lsst_error_model_test   --config=tmp_goldenspike_config.yml   --output=./output_lsst_error_model_test.pq 
-    Output writing to ./lsst_error_model_test.out
-    
-
-
-.. parsed-literal::
-
-    Job lsst_error_model_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing col_remapper_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_test.pq 
-    Output writing to ./col_remapper_test.out
-    
-
-
-.. parsed-literal::
-
-    Job col_remapper_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing table_conv_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_test.hdf5 
-    Output writing to ./table_conv_test.out
-    
-
-
-.. parsed-literal::
-
-    Job table_conv_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
     Executing flow_creator_train
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=.//home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/trained_flow.pkl   --name=flow_creator_train   --config=tmp_goldenspike_config.yml   --output=./output_flow_creator_train.pq 
@@ -1560,224 +1484,24 @@ Read back the pipeline and run it
 
 .. parsed-literal::
 
-    Job flow_creator_train has completed successfully!
+    Job flow_creator_train has failed with status 1
 
 
 .. parsed-literal::
 
     
-    Executing lsst_error_model_train
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_creator_train.pq   --name=lsst_error_model_train   --config=tmp_goldenspike_config.yml   --output=./output_lsst_error_model_train.pq 
-    Output writing to ./lsst_error_model_train.out
+    *************************************************
+    Error running pipeline stage flow_creator_train.
     
+    Standard output and error streams in ./flow_creator_train.out
+    *************************************************
+
+
 
 
 .. parsed-literal::
 
-    Job lsst_error_model_train has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing inv_redshift
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness   --input=./output_lsst_error_model_train.pq   --name=inv_redshift   --config=tmp_goldenspike_config.yml   --output=./output_inv_redshift.pq 
-    Output writing to ./inv_redshift.out
-    
-
-
-.. parsed-literal::
-
-    Job inv_redshift has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing line_confusion
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.spectroscopic_degraders.LineConfusion   --input=./output_inv_redshift.pq   --name=line_confusion   --config=tmp_goldenspike_config.yml   --output=./output_line_confusion.pq 
-    Output writing to ./line_confusion.out
-    
-
-
-.. parsed-literal::
-
-    Job line_confusion has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing quantity_cut
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.quantityCut.QuantityCut   --input=./output_line_confusion.pq   --name=quantity_cut   --config=tmp_goldenspike_config.yml   --output=./output_quantity_cut.pq 
-    Output writing to ./quantity_cut.out
-    
-
-
-.. parsed-literal::
-
-    Job quantity_cut has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing col_remapper_train
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_quantity_cut.pq   --name=col_remapper_train   --config=tmp_goldenspike_config.yml   --output=./output_col_remapper_train.pq 
-    Output writing to ./col_remapper_train.out
-    
-
-
-.. parsed-literal::
-
-    Job col_remapper_train has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing table_conv_train
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_train.pq   --name=table_conv_train   --config=tmp_goldenspike_config.yml   --output=./output_table_conv_train.hdf5 
-    Output writing to ./table_conv_train.out
-    
-
-
-.. parsed-literal::
-
-    Job table_conv_train has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing inform_FZBoost
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.flexzboost.FlexZBoostInformer   --input=./output_table_conv_train.hdf5   --name=inform_FZBoost   --config=tmp_goldenspike_config.yml   --model=./fzboost.pkl 
-    Output writing to ./inform_FZBoost.out
-    
-
-
-.. parsed-literal::
-
-    Job inform_FZBoost has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing test_FZBoost
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.flexzboost.FlexZBoostEstimator   --model=./fzboost.pkl   --input=./output_table_conv_test.hdf5   --name=test_FZBoost   --config=tmp_goldenspike_config.yml   --output=./output_test_FZBoost.hdf5 
-    Output writing to ./test_FZBoost.out
-    
-
-
-.. parsed-literal::
-
-    Job test_FZBoost has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing inform_knn
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.k_nearneigh.KNearNeighInformer   --input=./output_table_conv_train.hdf5   --name=inform_knn   --config=tmp_goldenspike_config.yml   --model=./knnpz.pkl 
-    Output writing to ./inform_knn.out
-    
-
-
-.. parsed-literal::
-
-    Job inform_knn has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing estimate_knn
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.k_nearneigh.KNearNeighEstimator   --model=./knnpz.pkl   --input=./output_table_conv_test.hdf5   --name=estimate_knn   --config=tmp_goldenspike_config.yml   --output=./output_estimate_knn.hdf5 
-    Output writing to ./estimate_knn.out
-    
-
-
-.. parsed-literal::
-
-    Job estimate_knn has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing inform_bpz
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.bpz_lite.BPZliteInformer   --input=./output_table_conv_train.hdf5   --name=inform_bpz   --config=tmp_goldenspike_config.yml   --model=./bpz.pkl 
-    Output writing to ./inform_bpz.out
-    
-
-
-.. parsed-literal::
-
-    Job inform_bpz has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing estimate_bpz
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.bpz_lite.BPZliteEstimator   --model=./bpz.pkl   --input=./output_table_conv_test.hdf5   --name=estimate_bpz   --config=tmp_goldenspike_config.yml   --output=./output_estimate_bpz.hdf5 
-    Output writing to ./estimate_bpz.out
-    
-
-
-.. parsed-literal::
-
-    Job estimate_bpz has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing naive_stack_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.naive_stack.NaiveStackSummarizer   --input=./output_estimate_bpz.hdf5   --name=naive_stack_test   --config=tmp_goldenspike_config.yml   --output=./output_naive_stack_test.hdf5   --single_NZ=./single_NZ_naive_stack_test.hdf5 
-    Output writing to ./naive_stack_test.out
-    
-
-
-.. parsed-literal::
-
-    Job naive_stack_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing point_estimate_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.estimation.algos.point_est_hist.PointEstHistSummarizer   --input=./output_estimate_bpz.hdf5   --name=point_estimate_test   --config=tmp_goldenspike_config.yml   --output=./output_point_estimate_test.hdf5   --single_NZ=./single_NZ_point_estimate_test.hdf5 
-    Output writing to ./point_estimate_test.out
-    
-
-
-.. parsed-literal::
-
-    Job point_estimate_test has completed successfully!
-
-
-
-
-.. parsed-literal::
-
-    0
+    1
 
 
 

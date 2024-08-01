@@ -284,7 +284,7 @@ doing.
 
 .. parsed-literal::
 
-    StageConfig{output_mode:default,n_samples:6,seed:0,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,aliases:{'output': 'output_flow_engine_test'},}
+    StageConfig{output_mode:default,n_samples:6,seed:0,name:flow_engine_test,model:/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl,config:None,}
 
 
 
@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f592cd16b30>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f5988bf2350>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f830d036a10>,
+       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f830d037640>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f59283ce320>]),
+       <rail.tools.table_tools.TableConverter at 0x7f830d0369e0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -498,24 +498,64 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Traceback (most recent call last):
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/bin/ceci", line 8, in <module>
-        sys.exit(main())
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/main.py", line 111, in main
-        status = run_pipeline(pipe_config)
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/main.py", line 52, in run_pipeline
-        with prepare_for_pipeline(pipe_config):
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/contextlib.py", line 135, in __enter__
-        return next(self.gen)
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/main.py", line 78, in prepare_for_pipeline
-        load(launcher_config, [site_config])
-      File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/ceci/sites/__init__.py", line 73, in load
-        site_name = site_config["name"]
-    KeyError: 'name'
+    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/pty.py:89: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+      pid, fd = os.forkpty()
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/pty.py:89: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
-      pid, fd = os.forkpty()
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
+
+
+.. parsed-literal::
+
+    
+    Executing flow_engine_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.engines.flowEngine.FlowCreator   --model=/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl   --name=flow_engine_test   --config=pipe_saved_config.yml   --output=./output_flow_engine_test.pq 
+    Output writing to ./flow_engine_test.out
+    
+
+
+.. parsed-literal::
+
+    Job flow_engine_test has completed successfully!
+    
+    Executing lsst_error_model_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
+    Output writing to ./lsst_error_model_test.out
+    
+
+
+.. parsed-literal::
+
+    Job lsst_error_model_test has completed successfully!
+    
+    Executing col_remapper_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+    Output writing to ./col_remapper_test.out
+    
+
+
+.. parsed-literal::
+
+    Job col_remapper_test has completed successfully!
+    
+    Executing table_conv_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+    Output writing to ./table_conv_test.out
+    
+
+
+.. parsed-literal::
+
+    Job table_conv_test has completed successfully!
+
+
+.. parsed-literal::
+
+    Pipeline successful.  Joy is sparked.
 

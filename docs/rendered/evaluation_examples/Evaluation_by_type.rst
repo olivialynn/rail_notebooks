@@ -73,15 +73,43 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+      0 47.1M    0 11979    0     0   8991      0  1:31:35  0:00:01  1:31:34  8986
 
 .. parsed-literal::
 
-     33 47.1M   33 15.6M    0     0  7503k      0  0:00:06  0:00:02  0:00:04 7502k
+      0 47.1M    0 29784    0     0  10469      0  1:18:39  0:00:02  1:18:37 10468
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  17.2M      0  0:00:02  0:00:02 --:--:-- 17.2M
+      0 47.1M    0 29784    0     0   7744      0  1:46:20  0:00:03  1:46:17  7744
+
+.. parsed-literal::
+
+      0 47.1M    0 57044    0     0  12146      0  1:07:48  0:00:04  1:07:44 12144
+
+.. parsed-literal::
+
+      0 47.1M    0  263k    0     0  46400      0  0:17:44  0:00:05  0:17:39 47248
+
+.. parsed-literal::
+
+      0 47.1M    0  369k    0     0  54821      0  0:15:01  0:00:06  0:14:55 65797
+
+.. parsed-literal::
+
+      0 47.1M    0  445k    0     0  58567      0  0:14:03  0:00:07  0:13:56 86258
+
+.. parsed-literal::
+
+     10 47.1M   10 4909k    0     0   607k      0  0:01:19  0:00:08  0:01:11 1153k
+
+.. parsed-literal::
+
+     13 47.1M   13 6360k    0     0   690k      0  0:01:09  0:00:09  0:01:00 1394k
+
+.. parsed-literal::
+
+     87 47.1M   87 41.0M    0     0  4173k      0  0:00:11  0:00:10  0:00:01 9814k100 47.1M  100 47.1M    0     0  4715k      0  0:00:10  0:00:10 --:--:-- 14.0M
 
 
 .. code:: ipython3
@@ -922,7 +950,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fcb843e6500>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f84901bc250>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1006,14 +1034,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 7000 - 8000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 8000 - 9000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1042,14 +1070,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 15000 - 16000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 16000 - 17000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1233,7 +1261,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fcb4221ad10>
+    <qp.ensemble.Ensemble at 0x7f844d2c9540>
 
 
 
@@ -1392,10 +1420,6 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
-
-.. parsed-literal::
-
-    
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 

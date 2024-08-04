@@ -69,47 +69,39 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0 47.1M    0 11979    0     0   8991      0  1:31:35  0:00:01  1:31:34  8986
+      3 47.1M    3 1923k    0     0  1941k      0  0:00:24 --:--:--  0:00:24 1941k
 
 .. parsed-literal::
 
-      0 47.1M    0 29784    0     0  10469      0  1:18:39  0:00:02  1:18:37 10468
+     16 47.1M   16 8137k    0     0  4133k      0  0:00:11  0:00:01  0:00:10 4132k
 
 .. parsed-literal::
 
-      0 47.1M    0 29784    0     0   7744      0  1:46:20  0:00:03  1:46:17  7744
+     31 47.1M   31 14.7M    0     0  5015k      0  0:00:09  0:00:03  0:00:06 5015k
 
 .. parsed-literal::
 
-      0 47.1M    0 57044    0     0  12146      0  1:07:48  0:00:04  1:07:44 12144
+     45 47.1M   45 21.3M    0     0  5502k      0  0:00:08  0:00:03  0:00:05 5502k
 
 .. parsed-literal::
 
-      0 47.1M    0  263k    0     0  46400      0  0:17:44  0:00:05  0:17:39 47248
+     59 47.1M   59 28.1M    0     0  5813k      0  0:00:08  0:00:04  0:00:04 5813k
 
 .. parsed-literal::
 
-      0 47.1M    0  369k    0     0  54821      0  0:15:01  0:00:06  0:14:55 65797
+     75 47.1M   75 35.5M    0     0  6084k      0  0:00:07  0:00:05  0:00:02 6907k
 
 .. parsed-literal::
 
-      0 47.1M    0  445k    0     0  58567      0  0:14:03  0:00:07  0:13:56 86258
+     91 47.1M   91 43.0M    0     0  6340k      0  0:00:07  0:00:06  0:00:01 7211k
 
 .. parsed-literal::
 
-     10 47.1M   10 4909k    0     0   607k      0  0:01:19  0:00:08  0:01:11 1153k
-
-.. parsed-literal::
-
-     13 47.1M   13 6360k    0     0   690k      0  0:01:09  0:00:09  0:01:00 1394k
-
-.. parsed-literal::
-
-     87 47.1M   87 41.0M    0     0  4173k      0  0:00:11  0:00:10  0:00:01 9814k100 47.1M  100 47.1M    0     0  4715k      0  0:00:10  0:00:10 --:--:-- 14.0M
+    100 47.1M  100 47.1M    0     0  6504k      0  0:00:07  0:00:07 --:--:-- 7520k
 
 
 .. code:: ipython3
@@ -950,7 +942,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f84901bc250>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f729038bac0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1261,7 +1253,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f844d2c9540>
+    <qp.ensemble.Ensemble at 0x7f728a2c7b20>
 
 
 

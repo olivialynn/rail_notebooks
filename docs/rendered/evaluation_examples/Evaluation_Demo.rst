@@ -90,67 +90,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+      0 47.1M    0  111k    0     0   241k      0  0:03:19 --:--:--  0:03:19  241k
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
-
-.. parsed-literal::
-
-      0 47.1M    0  155k    0     0  25835      0  0:31:52  0:00:06  0:31:46 33915
-
-.. parsed-literal::
-
-      0 47.1M    0  289k    0     0  43064      0  0:19:07  0:00:06  0:19:01 67161
-
-.. parsed-literal::
-
-      1 47.1M    1  670k    0     0  86226      0  0:09:33  0:00:07  0:09:26  149k
-
-.. parsed-literal::
-
-      8 47.1M    8 3872k    0     0   447k      0  0:01:47  0:00:08  0:01:39  917k
-
-.. parsed-literal::
-
-     22 47.1M   22 10.7M    0     0  1131k      0  0:00:42  0:00:09  0:00:33 2194k
-
-.. parsed-literal::
-
-     36 47.1M   36 17.2M    0     0  1658k      0  0:00:29  0:00:10  0:00:19 3903k
-
-.. parsed-literal::
-
-     47 47.1M   47 22.3M    0     0  1960k      0  0:00:24  0:00:11  0:00:13 4720k
-
-.. parsed-literal::
-
-     61 47.1M   61 29.1M    0     0  2359k      0  0:00:20  0:00:12  0:00:08 6215k
-
-.. parsed-literal::
-
-     77 47.1M   77 36.6M    0     0  2739k      0  0:00:17  0:00:13  0:00:04 6692k
-
-.. parsed-literal::
-
-     93 47.1M   93 44.0M    0     0  3072k      0  0:00:15  0:00:14  0:00:01 6848k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  3207k      0  0:00:15  0:00:15 --:--:-- 6974k
+     82 47.1M   82 39.0M    0     0  26.2M      0  0:00:01  0:00:01 --:--:-- 26.2M100 47.1M  100 47.1M    0     0  28.9M      0  0:00:01  0:00:01 --:--:-- 28.9M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -351,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f0c6c6f1a80>
+    <qp.ensemble.Ensemble at 0x7fd0ff5fff10>
 
 
 

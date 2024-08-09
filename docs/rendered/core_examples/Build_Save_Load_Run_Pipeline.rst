@@ -24,7 +24,7 @@ This notebook shows how to:
     from rail.core.stage import RailStage
     from rail.creation.degraders.spectroscopic_degraders import LineConfusion
     from rail.creation.degraders.quantityCut import QuantityCut
-    from rail.creation.degraders.lsst_error_model import LSSTErrorModel
+    from rail.creation.degraders.photometric_errors import LSSTErrorModel
     from rail.creation.engines.flowEngine import FlowCreator, FlowPosterior
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f014431a050>,
-       <rail.creation.degraders.lsst_error_model.LSSTErrorModel at 0x7f014431b370>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7efdff2b4520>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7efe5cf7a410>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f014431b670>]),
+       <rail.tools.table_tools.TableConverter at 0x7efe5cf7bb80>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -433,7 +433,7 @@ each case.
     
     Executing lsst_error_model_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.photometric_errors.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
 
@@ -523,7 +523,7 @@ pipeline we’ve just made would look like:
     
     Executing lsst_error_model_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.photometric_errors.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
 

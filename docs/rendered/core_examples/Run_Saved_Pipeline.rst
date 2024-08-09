@@ -65,51 +65,31 @@ with ``pipe_example.config.yml``:
     
     Executing lsst_error_model_test
     Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.lsst_error_model.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_example_config.yml   --output=./output_lsst_error_model_test.pq 
+    OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.photometric_errors.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_example_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     
 
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully!
+    Job lsst_error_model_test has failed with status 1
 
 
 .. parsed-literal::
 
     
-    Executing col_remapper_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_example_config.yml   --output=./output_col_remapper_test.pq 
-    Output writing to ./col_remapper_test.out
+    *************************************************
+    Error running pipeline stage lsst_error_model_test.
     
-
-
-.. parsed-literal::
-
-    Job col_remapper_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing table_conv_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_example_config.yml   --output=./output_table_conv_test.hdf5 
-    Output writing to ./table_conv_test.out
-    
-
-
-.. parsed-literal::
-
-    Job table_conv_test has completed successfully!
+    Standard output and error streams in ./lsst_error_model_test.out
+    *************************************************
 
 
 
 
 .. parsed-literal::
 
-    0
+    1
 
 
 

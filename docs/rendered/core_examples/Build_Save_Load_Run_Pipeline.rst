@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9e23c88730>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f9e23c89cf0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7feb49d3d1b0>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7feb49de3910>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f9e23c89ed0>]),
+       <rail.tools.table_tools.TableConverter at 0x7feb49de3880>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -440,44 +440,24 @@ each case.
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully!
+    Job lsst_error_model_test has failed with status 1
 
 
 .. parsed-literal::
 
     
-    Executing col_remapper_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
-    Output writing to ./col_remapper_test.out
+    *************************************************
+    Error running pipeline stage lsst_error_model_test.
     
-
-
-.. parsed-literal::
-
-    Job col_remapper_test has completed successfully!
-
-
-.. parsed-literal::
-
-    
-    Executing table_conv_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
-    Output writing to ./table_conv_test.out
-    
-
-
-.. parsed-literal::
-
-    Job table_conv_test has completed successfully!
+    Standard output and error streams in ./lsst_error_model_test.out
+    *************************************************
 
 
 
 
 .. parsed-literal::
 
-    0
+    1
 
 
 
@@ -530,32 +510,12 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully!
+    Job lsst_error_model_test has failed with status 1
     
-    Executing col_remapper_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
-    Output writing to ./col_remapper_test.out
+    *************************************************
+    Error running pipeline stage lsst_error_model_test.
     
-
-
-.. parsed-literal::
-
-    Job col_remapper_test has completed successfully!
-    
-    Executing table_conv_test
-    Command is:
-    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
-    Output writing to ./table_conv_test.out
-    
-
-
-.. parsed-literal::
-
-    Job table_conv_test has completed successfully!
-
-
-.. parsed-literal::
-
-    Pipeline successful.  Joy is sparked.
+    Standard output and error streams in ./lsst_error_model_test.out
+    *************************************************
+    Pipeline failed.  No joy sparked.
 

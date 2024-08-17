@@ -76,22 +76,6 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:96: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knndf.loc[np.isclose(knndf[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     split into 7669 training and 2556 validation samples
     finding best fit sigma and NNeigh...
 
@@ -101,7 +85,7 @@ that are included in the RAIL repo:
     
     
     
-    best fit values are sigma=0.03 and numneigh=7
+    best fit values are sigma=0.023333333333333334 and numneigh=7
     
     
     
@@ -112,7 +96,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f4b31fff4f0>
+    <rail.core.data.ModelHandle at 0x7f0f7be26a70>
 
 
 
@@ -131,22 +115,6 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_KNN: inprogress_output_KNN.hdf5, KNN
     Process 0 running estimator on chunk 10000 - 20000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
@@ -154,40 +122,8 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/k_nearneigh.py:189: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
-      knn_df.loc[np.isclose(knn_df[col], self.config.nondetect_val), col] = self.config.mag_limits[col]
 
 
 So, ``qp_data`` now contains the 20,000 PDFs from KNearNeighEstimator,
@@ -261,7 +197,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4b31fff130>
+    <matplotlib.legend.Legend at 0x7f0f7be27490>
 
 
 
@@ -325,8 +261,8 @@ appears alpha is broken, so this plot is not the best:
     Process 0 running estimator on chunk 20000 - 20449
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 58 s, sys: 5.32 s, total: 1min 3s
-    Wall time: 1min 3s
+    CPU times: user 57.3 s, sys: 5.44 s, total: 1min 2s
+    Wall time: 1min 2s
 
 
 .. code:: ipython3
@@ -347,7 +283,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4b2ca83040>
+    <matplotlib.legend.Legend at 0x7f0f7bd33b20>
 
 
 
@@ -386,8 +322,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.08 s, sys: 51.5 ms, total: 1.13 s
-    Wall time: 1.13 s
+    CPU times: user 1.06 s, sys: 31.6 ms, total: 1.09 s
+    Wall time: 1.09 s
 
 
 .. code:: ipython3
@@ -400,7 +336,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f4b2c8160b0>
+    <qp.ensemble.Ensemble at 0x7f0f789a2530>
 
 
 
@@ -459,7 +395,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f4b3414b070>
+    <rail.core.data.ModelHandle at 0x7f0f7be27220>
 
 
 
@@ -508,7 +444,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4b2c85e260>
+    <matplotlib.legend.Legend at 0x7f0f786d9510>
 
 
 
@@ -573,35 +509,35 @@ then use the std dev of any of these to estimate a 1 sigma “shift”, etc…
 
     {'naive_modes': array([0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9,
             0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9]),
-     'naive_means': array([0.90466319, 0.90808662, 0.91142591, 0.91025969, 0.91334596,
-            0.91436324, 0.91004371, 0.90641685, 0.91063218, 0.90977915,
-            0.91467547, 0.90759744, 0.9077199 , 0.91190098, 0.90683993,
-            0.91347291, 0.91154951, 0.91145289, 0.89933163, 0.91593682]),
-     'naive_std': array([0.45811289, 0.45691054, 0.4584982 , 0.4567423 , 0.45711268,
-            0.46104718, 0.45740653, 0.45488031, 0.45501202, 0.45903232,
-            0.45728706, 0.45478522, 0.45702295, 0.45511305, 0.45395568,
-            0.45735034, 0.45499865, 0.4584766 , 0.4546972 , 0.45656556]),
+     'naive_means': array([0.90186015, 0.90594959, 0.90998413, 0.90789723, 0.91061713,
+            0.91218896, 0.90767783, 0.90533378, 0.90791096, 0.90745548,
+            0.91191782, 0.90432094, 0.90620407, 0.9087479 , 0.90410093,
+            0.91160362, 0.90904143, 0.90900628, 0.89714565, 0.9139707 ]),
+     'naive_std': array([0.45914047, 0.45888175, 0.45996851, 0.45790462, 0.45714307,
+            0.46346092, 0.45902071, 0.45676502, 0.45571704, 0.45996679,
+            0.45816316, 0.4557761 , 0.45894757, 0.45615512, 0.45516466,
+            0.45840581, 0.4548986 , 0.4602565 , 0.45546553, 0.45910612]),
      'point_modes': array([0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9,
             0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9]),
-     'point_means': array([0.88137628, 0.88450327, 0.88605231, 0.88586977, 0.89117044,
-            0.88925042, 0.88765075, 0.88385616, 0.88789803, 0.88597783,
-            0.88965568, 0.88567855, 0.88438949, 0.88806674, 0.88372033,
-            0.89183466, 0.88852834, 0.88768576, 0.87827532, 0.8902272 ]),
-     'point_std': array([0.41690276, 0.41501087, 0.41809722, 0.41430315, 0.41584534,
-            0.4188247 , 0.41596185, 0.41418406, 0.41487696, 0.41623531,
-            0.41281888, 0.41612909, 0.41415505, 0.41260574, 0.41209643,
-            0.41736477, 0.41403664, 0.41662792, 0.41663672, 0.41332842]),
-     'varinf_modes': array([0.975, 0.975, 0.9  , 0.9  , 0.975, 0.975, 0.975, 0.9  , 0.9  ,
-            0.9  , 0.9  , 0.975, 0.975, 0.975, 0.975, 0.9  , 0.975, 0.975,
-            0.975, 0.975]),
-     'varinf_means': array([0.88854022, 0.89158319, 0.89110634, 0.89315605, 0.89387354,
-            0.89097531, 0.89294196, 0.89228821, 0.88712166, 0.88899743,
-            0.88741712, 0.88722119, 0.89265368, 0.89404193, 0.89334961,
-            0.89796394, 0.89413918, 0.88890824, 0.89510198, 0.88763958]),
-     'varinf_std': array([0.41459107, 0.41830515, 0.41732654, 0.41270001, 0.41330109,
-            0.41402322, 0.41774209, 0.41649308, 0.41708491, 0.41661354,
-            0.41329181, 0.417675  , 0.41721839, 0.41584016, 0.41277957,
-            0.41845365, 0.41651765, 0.41395451, 0.41459264, 0.4135    ]),
+     'point_means': array([0.87747268, 0.87966422, 0.88390687, 0.88292592, 0.88652242,
+            0.88416824, 0.88270433, 0.88085392, 0.88398525, 0.88127683,
+            0.88581149, 0.88120195, 0.88141923, 0.88272697, 0.87882182,
+            0.88615408, 0.88490508, 0.88213304, 0.87551255, 0.88610463]),
+     'point_std': array([0.41965477, 0.41628602, 0.41871585, 0.41564559, 0.41745585,
+            0.4206483 , 0.41603666, 0.41589367, 0.41726652, 0.41629308,
+            0.41392928, 0.41791324, 0.41622493, 0.41328677, 0.41322766,
+            0.4182433 , 0.41442477, 0.41762939, 0.41780264, 0.41593474]),
+     'varinf_modes': array([0.9  , 0.9  , 0.9  , 0.9  , 0.975, 0.9  , 0.9  , 0.9  , 0.9  ,
+            0.9  , 0.9  , 0.9  , 0.9  , 0.9  , 0.9  , 0.9  , 0.9  , 0.9  ,
+            0.9  , 0.9  ]),
+     'varinf_means': array([0.89007742, 0.89393137, 0.89348035, 0.89529006, 0.89632515,
+            0.89304711, 0.89470237, 0.89476074, 0.88891055, 0.89065612,
+            0.88963285, 0.88927123, 0.89480197, 0.89551207, 0.8947679 ,
+            0.90084125, 0.89603184, 0.89083602, 0.89697313, 0.88937301]),
+     'varinf_std': array([0.42671129, 0.43096865, 0.43001351, 0.42473237, 0.42611894,
+            0.42608757, 0.42984578, 0.4286463 , 0.42915316, 0.42875199,
+            0.42553345, 0.43073474, 0.42927409, 0.42736479, 0.42435752,
+            0.43133787, 0.42896748, 0.42596593, 0.4269107 , 0.42523812]),
      'nzdir_modes': array([0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9,
             0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9]),
      'nzdir_means': array([0.91527627, 0.92144451, 0.92166271, 0.92410584, 0.92118734,
@@ -635,7 +571,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f4b2c801510>]
+    [<matplotlib.lines.Line2D at 0x7f0f7887dab0>]
 
 
 
@@ -652,7 +588,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f4b2c613550>]
+    [<matplotlib.lines.Line2D at 0x7f0f787afa60>]
 
 
 
@@ -669,7 +605,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f4b2ca41a20>]
+    [<matplotlib.lines.Line2D at 0x7f0f789eded0>]
 
 
 
@@ -704,7 +640,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4b2c657550>
+    <matplotlib.legend.Legend at 0x7f0f787d7be0>
 
 
 

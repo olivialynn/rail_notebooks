@@ -107,13 +107,13 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
-    Imported rail.gpz
-    Imported rail.hub
-    Imported rail.interfaces
 
 
 .. parsed-literal::
 
+    Imported rail.gpz
+    Imported rail.hub
+    Imported rail.interfaces
     Imported rail.pzflow
     Imported rail.sklearn
 
@@ -122,7 +122,7 @@ imports.
 
     Imported rail.som
     Imported rail.stages
-    Attached 12 base classes and 76 fully formed stages to rail.stages
+    Attached 12 base classes and 81 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -225,6 +225,11 @@ we get.
     <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_VVDSf02'>
     <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_zCOSMOS'>
     <class 'rail.creation.degraders.spectroscopic_selections.SpecSelection_HSC'>
+    <class 'rail.creation.degraders.photometric_errors.PhotoErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.LSSTErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.RomanErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.EuclidErrorModel'>
+    <class 'rail.creation.degraders.unrec_bl_model.UnrecBlModel'>
     <class 'rail.tools.photometry_tools.HyperbolicSmoothing'>
     <class 'rail.tools.photometry_tools.HyperbolicMagnitudes'>
     <class 'rail.tools.photometry_tools.LSSTFluxToMagConverter'>
@@ -613,7 +618,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7faf889337f0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f422331e9b0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -632,7 +637,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7faf889337f0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f422331e9b0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

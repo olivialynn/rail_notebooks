@@ -902,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f47603f8460>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f5f781dace0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1213,7 +1213,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f4760241cf0>
+    <qp.ensemble.Ensemble at 0x7f5f781db6a0>
 
 
 
@@ -1372,6 +1372,10 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+
+
+.. parsed-literal::
+
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 

@@ -89,7 +89,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f0e2ff8eef0>
+    <rail.tools.flow_handle.FlowHandle at 0x7fb6d4362ec0>
 
 
 
@@ -131,16 +131,6 @@ Author: Tianqing Zhang
 
     /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  output_estimate_pzflow: inprogress_output_estimate_pzflow.hdf5, estimate_pzflow
-    Process 0 running estimator on chunk 20000 - 20449
-
-
-.. parsed-literal::
-
     /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
     /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
@@ -153,6 +143,12 @@ Author: Tianqing Zhang
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
     /opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output_estimate_pzflow: inprogress_output_estimate_pzflow.hdf5, estimate_pzflow
+    Process 0 running estimator on chunk 20000 - 20449
 
 
 .. parsed-literal::

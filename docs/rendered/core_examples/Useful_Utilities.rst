@@ -107,14 +107,14 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
-
-
-.. parsed-literal::
-
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
     Imported rail.pzflow
+
+
+.. parsed-literal::
+
     Imported rail.sklearn
 
 
@@ -618,7 +618,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7d7bd3a140>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8688c7dde0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -637,7 +637,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7d7bd3a140>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8688c7dde0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

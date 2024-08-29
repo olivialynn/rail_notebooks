@@ -95,6 +95,10 @@ imports.
 
     Imported rail.dsps
     Imported rail.flexzboost
+
+
+.. parsed-literal::
+
     Install FSPS with the following commands:
     pip uninstall fsps
     git clone --recursive https://github.com/dfm/python-fsps.git
@@ -102,10 +106,6 @@ imports.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-
-
-.. parsed-literal::
-
     Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
@@ -618,7 +618,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f36902cfa30>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f667e9c2230>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -637,7 +637,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f36902cfa30>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f667e9c2230>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

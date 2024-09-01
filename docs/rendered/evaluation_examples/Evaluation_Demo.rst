@@ -86,15 +86,11 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-     36 47.1M   36 17.4M    0     0  13.0M      0  0:00:03  0:00:01  0:00:02 13.0M
+     19 47.1M   19 9335k    0     0  8687k      0  0:00:05  0:00:01  0:00:04 8684k
 
 .. parsed-literal::
 
@@ -299,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f3f98949e40>
+    <qp.ensemble.Ensemble at 0x7f9ddf65b490>
 
 
 

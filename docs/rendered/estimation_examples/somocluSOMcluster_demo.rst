@@ -102,11 +102,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      5 9434k    5  499k    0     0   677k      0  0:00:13 --:--:--  0:00:13  677k
+      0 9434k    0 16086    0     0  21892      0  0:07:21 --:--:--  0:07:21 21885
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  8552k      0  0:00:01  0:00:01 --:--:-- 8553k
+    100 9434k  100 9434k    0     0  6809k      0  0:00:01  0:00:01 --:--:-- 6811k
 
 
 .. code:: ipython3
@@ -181,15 +181,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 20s, sys: 1.1 s, total: 8min 21s
-    Wall time: 2min 8s
+    CPU times: user 8min 6s, sys: 907 ms, total: 8min 7s
+    Wall time: 2min 4s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc33c9231f0>
+    <rail.core.data.ModelHandle at 0x7fd6edff72b0>
 
 
 
@@ -418,7 +418,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc2d9034d60>
+    <rail.core.data.QPHandle at 0x7fd6ed25c280>
 
 
 
@@ -539,6 +539,10 @@ photometric sample.
 
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
+
+
+.. parsed-literal::
+
     the following clusters contain photometric data but not spectroscopic data:
     {94, 270}
     124 out of 500 have usable data
@@ -777,7 +781,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc2d90957b0>
+    <matplotlib.legend.Legend at 0x7fd6e43d3610>
 
 
 
@@ -830,7 +834,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc2d80d8cd0>
+    <rail.core.data.QPHandle at 0x7fd6ea870d90>
 
 
 
@@ -857,7 +861,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc2d80d9570>
+    <matplotlib.legend.Legend at 0x7fd6ed25d210>
 
 
 
@@ -909,7 +913,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6536/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_6513/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -917,7 +921,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc2d87e3670>
+    <matplotlib.legend.Legend at 0x7fd6ea833820>
 
 
 

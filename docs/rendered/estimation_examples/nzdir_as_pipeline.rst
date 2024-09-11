@@ -86,8 +86,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f6315c83100>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f6315c830d0>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fd94f63bb80>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fd94f63bb50>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -176,7 +176,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6314452440>
+    <matplotlib.legend.Legend at 0x7fd93807dfc0>
 
 
 

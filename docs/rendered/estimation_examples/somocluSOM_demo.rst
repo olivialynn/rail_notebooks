@@ -100,11 +100,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      4 9434k    4  427k    0     0   536k      0  0:00:17 --:--:--  0:00:17  535k
 
 .. parsed-literal::
 
-     63 9434k   63 6027k    0     0  4755k      0  0:00:01  0:00:01 --:--:-- 4753k100 9434k  100 9434k    0     0  6984k      0  0:00:01  0:00:01 --:--:-- 6983k
+    100 9434k  100 9434k    0     0  8200k      0  0:00:01  0:00:01 --:--:-- 8203k
 
 
 .. code:: ipython3
@@ -183,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 20s, sys: 949 ms, total: 8min 21s
+    CPU times: user 8min 21s, sys: 731 ms, total: 8min 22s
     Wall time: 2min 7s
 
 
@@ -191,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fd7951d7fd0>
+    <rail.core.data.ModelHandle at 0x7f78a4f64d00>
 
 
 
@@ -260,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6638/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6692/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fd79219f610>
+    <rail.core.data.QPHandle at 0x7f785193ef20>
 
 
 
@@ -449,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd792164700>
+    <matplotlib.legend.Legend at 0x7f78519586d0>
 
 
 
@@ -506,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fd79458e620>
+    <rail.core.data.QPHandle at 0x7f78519fa590>
 
 
 
@@ -533,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd79458fe20>
+    <matplotlib.legend.Legend at 0x7f78519fb670>
 
 
 
@@ -585,7 +585,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6638/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_6692/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -593,7 +593,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd7944ac880>
+    <matplotlib.legend.Legend at 0x7f784f1849d0>
 
 
 

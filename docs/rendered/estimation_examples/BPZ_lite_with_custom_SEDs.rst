@@ -181,15 +181,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 15.9 s, sys: 4.9 ms, total: 15.9 s
-    Wall time: 15.9 s
+    CPU times: user 15.2 s, sys: 3.61 ms, total: 15.2 s
+    Wall time: 15.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa4a4f3fb20>
+    <rail.core.data.ModelHandle at 0x7fb9e80503a0>
 
 
 
@@ -299,7 +299,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa453f356f0>
+    <matplotlib.legend.Legend at 0x7fb9c5b051b0>
 
 
 
@@ -831,7 +831,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:476: RuntimeWarning: overflow encountered in cast
+    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:478: RuntimeWarning: overflow encountered in cast
       flux_err[unobserved] = 1e108
 
 
@@ -848,7 +848,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.9 s, sys: 96 ms, total: 27 s
+    CPU times: user 26.8 s, sys: 105 ms, total: 26.9 s
     Wall time: 26.9 s
 
 
@@ -856,7 +856,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa452105630>
+    <rail.core.data.QPHandle at 0x7fb9c4fdb970>
 
 
 
@@ -886,7 +886,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa452d69480>
+    <matplotlib.legend.Legend at 0x7fb9c4f347c0>
 
 
 
@@ -1017,7 +1017,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa452038670>
+    <matplotlib.legend.Legend at 0x7fb9c4d06170>
 
 
 

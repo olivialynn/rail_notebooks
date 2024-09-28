@@ -165,7 +165,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 11s, sys: 462 ms, total: 8min 11s
+    CPU times: user 8min 9s, sys: 496 ms, total: 8min 10s
     Wall time: 2min 5s
 
 
@@ -173,7 +173,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2f513a10f0>
+    <rail.core.data.ModelHandle at 0x7fa0f959f3a0>
 
 
 
@@ -402,7 +402,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f2ef6e66c80>
+    <rail.core.data.QPHandle at 0x7fa0962ba050>
 
 
 
@@ -761,7 +761,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2ef6e64fd0>
+    <matplotlib.legend.Legend at 0x7fa094018af0>
 
 
 
@@ -814,7 +814,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f2eede2dd20>
+    <rail.core.data.QPHandle at 0x7fa08fffe1d0>
 
 
 
@@ -841,7 +841,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eede2e860>
+    <matplotlib.legend.Legend at 0x7fa08fffed70>
 
 
 
@@ -893,7 +893,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7477/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_7431/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -901,7 +901,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eedf7ee90>
+    <matplotlib.legend.Legend at 0x7fa0964d0af0>
 
 
 

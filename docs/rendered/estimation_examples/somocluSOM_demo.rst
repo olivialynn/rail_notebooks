@@ -100,11 +100,7 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      8 9434k    8  827k    0     0   862k      0  0:00:10 --:--:--  0:00:10  862k
-
-.. parsed-literal::
-
-    100 9434k  100 9434k    0     0  7791k      0  0:00:01  0:00:01 --:--:-- 7797k
+    100 9434k  100 9434k    0     0  22.2M      0 --:--:-- --:--:-- --:--:-- 22.3M
 
 
 .. code:: ipython3
@@ -183,15 +179,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 10s, sys: 508 ms, total: 8min 10s
-    Wall time: 2min 5s
+    CPU times: user 8min 9s, sys: 482 ms, total: 8min 9s
+    Wall time: 2min 4s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f274058d030>
+    <rail.core.data.ModelHandle at 0x7f0f50e9f8e0>
 
 
 
@@ -413,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f26dd5e1270>
+    <rail.core.data.QPHandle at 0x7f0ef2c450f0>
 
 
 
@@ -449,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f26dd5e22f0>
+    <matplotlib.legend.Legend at 0x7f0ef2c455a0>
 
 
 
@@ -506,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f26dd5a7dc0>
+    <rail.core.data.QPHandle at 0x7f0ef2ea3d30>
 
 
 
@@ -533,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f26dd5a7ac0>
+    <matplotlib.legend.Legend at 0x7f0ef2ea1c00>
 
 
 
@@ -593,7 +589,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f26e5fd1e70>
+    <matplotlib.legend.Legend at 0x7f0ef2de9cf0>
 
 
 

@@ -902,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f228c4a0ee0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7ff1442a0ee0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -951,15 +951,15 @@ forced to run on a single node for exact results.
 .. parsed-literal::
 
     This is not a qp file because 'meta'
+
+
+.. parsed-literal::
+
     This is not a qp file because 'meta'
     Unsupported metric requested: 'omega'.  Available metrics are: ['ad', 'brier', 'cdeloss', 'cvm', 'kld', 'ks', 'moment', 'outlier', 'pit', 'point_bias', 'point_outlier_rate', 'point_stats_ez', 'point_stats_iqr', 'point_stats_sigma_mad', 'rbpe', 'rmse']
     Requested metrics: ['cvm', 'ks', 'kld', 'cdeloss', 'point_stats_ez', 'point_stats_iqr']
     This is not a qp file because 'meta'
     This is not a qp file because 'meta'
-
-
-.. parsed-literal::
-
     This is not a qp file because 'meta'
     Processing 0 running evaluator on chunk 0 - 1000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
@@ -1217,7 +1217,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f228c65a650>
+    <qp.ensemble.Ensemble at 0x7ff10e6cb970>
 
 
 

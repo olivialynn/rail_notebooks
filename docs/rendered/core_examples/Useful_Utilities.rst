@@ -102,11 +102,11 @@ imports.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    Imported rail.fsps
 
 
 .. parsed-literal::
 
+    Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
@@ -636,7 +636,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fdee5f7fc70>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fde958d93f0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

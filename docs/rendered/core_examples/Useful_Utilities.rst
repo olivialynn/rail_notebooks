@@ -102,11 +102,11 @@ imports.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
+    Imported rail.fsps
 
 
 .. parsed-literal::
 
-    Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
@@ -116,6 +116,10 @@ imports.
 
     Imported rail.pzflow
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Attached 12 base classes and 81 fully formed stages to rail.stages
@@ -614,7 +618,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1d0c3a59f0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f2cb37e1db0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -633,7 +637,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1d0c3a59f0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f2cb37e1db0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

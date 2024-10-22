@@ -102,7 +102,67 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  10.6M      0 --:--:-- --:--:-- --:--:-- 10.6M
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+     11 9434k   11 1123k    0     0   744k      0  0:00:12  0:00:01  0:00:11  744k
+
+.. parsed-literal::
+
+     13 9434k   13 1238k    0     0   480k      0  0:00:19  0:00:02  0:00:17  480k
+
+.. parsed-literal::
+
+     13 9434k   13 1238k    0     0   345k      0  0:00:27  0:00:03  0:00:24  345k
+
+.. parsed-literal::
+
+     16 9434k   16 1562k    0     0   359k      0  0:00:26  0:00:04  0:00:22  359k
+
+.. parsed-literal::
+
+     21 9434k   21 2028k    0     0   366k      0  0:00:25  0:00:05  0:00:20  380k
+
+.. parsed-literal::
+
+     25 9434k   25 2397k    0     0   376k      0  0:00:25  0:00:06  0:00:19  262k
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   334k      0  0:00:28  0:00:07  0:00:21  264k
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   297k      0  0:00:31  0:00:08  0:00:23  264k
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   267k      0  0:00:35  0:00:09  0:00:26  195k
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   242k      0  0:00:38  0:00:10  0:00:28  115k
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   222k      0  0:00:42  0:00:11  0:00:31 47190
+
+.. parsed-literal::
+
+     28 9434k   28 2654k    0     0   205k      0  0:00:45  0:00:12  0:00:33     0
+
+.. parsed-literal::
+
+     28 9434k   28 2666k    0     0   194k      0  0:00:48  0:00:13  0:00:35  2564
+
+.. parsed-literal::
+
+     51 9434k   51 4866k    0     0   338k      0  0:00:27  0:00:14  0:00:13  499k
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0   631k      0  0:00:14  0:00:14 --:--:-- 1692k
 
 
 .. code:: ipython3
@@ -177,15 +237,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 19s, sys: 931 ms, total: 8min 20s
-    Wall time: 2min 7s
+    CPU times: user 8min 21s, sys: 923 ms, total: 8min 22s
+    Wall time: 2min 8s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f14a0fa58d0>
+    <rail.core.data.ModelHandle at 0x7f0e807df940>
 
 
 
@@ -414,7 +474,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f143c6b00d0>
+    <rail.core.data.QPHandle at 0x7f0e286840d0>
 
 
 
@@ -535,10 +595,6 @@ photometric sample.
 
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
-
-
-.. parsed-literal::
-
     the following clusters contain photometric data but not spectroscopic data:
     {94, 270}
     124 out of 500 have usable data
@@ -777,7 +833,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f144ce41f30>
+    <matplotlib.legend.Legend at 0x7f0e1b637eb0>
 
 
 
@@ -830,7 +886,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f143fc8bcd0>
+    <rail.core.data.QPHandle at 0x7f0e200cbcd0>
 
 
 
@@ -857,7 +913,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f143fc20f70>
+    <matplotlib.legend.Legend at 0x7f0e2008db40>
 
 
 
@@ -909,7 +965,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7077/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_7138/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -917,7 +973,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f143fc46c50>
+    <matplotlib.legend.Legend at 0x7f0e18e9eaa0>
 
 
 

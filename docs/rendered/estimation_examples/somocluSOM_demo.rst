@@ -167,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 19s, sys: 780 ms, total: 8min 20s
-    Wall time: 2min 7s
+    CPU times: user 8min 4s, sys: 775 ms, total: 8min 5s
+    Wall time: 2min 3s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa3801493c0>
+    <rail.core.data.ModelHandle at 0x7faea8211300>
 
 
 
@@ -244,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7464/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7364/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -397,7 +397,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa321ef9030>
+    <rail.core.data.QPHandle at 0x7fae4d897850>
 
 
 
@@ -433,7 +433,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa321eac8e0>
+    <matplotlib.legend.Legend at 0x7fae4d9488e0>
 
 
 
@@ -490,7 +490,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fa321e722c0>
+    <rail.core.data.QPHandle at 0x7fae4d8ca3e0>
 
 
 
@@ -517,7 +517,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa321e73d00>
+    <matplotlib.legend.Legend at 0x7fae4d8cae90>
 
 
 
@@ -569,7 +569,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7464/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_7364/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -577,7 +577,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa322434850>
+    <matplotlib.legend.Legend at 0x7fae4d58c730>
 
 
 

@@ -69,11 +69,19 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  73.8M      0 --:--:-- --:--:-- --:--:-- 73.8M
+      3 47.1M    3 1563k    0     0  1498k      0  0:00:32  0:00:01  0:00:31 1497k
+
+.. parsed-literal::
+
+     76 47.1M   76 36.1M    0     0  17.9M      0  0:00:02  0:00:02 --:--:-- 17.9M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  20.2M      0  0:00:02  0:00:02 --:--:-- 20.2M
 
 
 .. code:: ipython3
@@ -914,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f301bbebdf0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fc6526a5300>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -998,14 +1006,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 7000 - 8000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 8000 - 9000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1034,14 +1042,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 15000 - 16000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 16000 - 17000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1225,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f302998d780>
+    <qp.ensemble.Ensemble at 0x7fc64e1c78e0>
 
 
 
@@ -1384,6 +1392,10 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+
+
+.. parsed-literal::
+
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 

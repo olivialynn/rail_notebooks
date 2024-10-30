@@ -167,15 +167,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 20s, sys: 912 ms, total: 8min 21s
-    Wall time: 2min 7s
+    CPU times: user 8min 24s, sys: 684 ms, total: 8min 24s
+    Wall time: 2min 8s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fda5c610940>
+    <rail.core.data.ModelHandle at 0x7f6b7d9d3df0>
 
 
 
@@ -397,7 +397,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fda03e7b760>
+    <rail.core.data.QPHandle at 0x7f6b74a27640>
 
 
 
@@ -433,7 +433,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fda03eac3a0>
+    <matplotlib.legend.Legend at 0x7f6b7ce2c3d0>
 
 
 
@@ -490,7 +490,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fda03f42b00>
+    <rail.core.data.QPHandle at 0x7f6b7ce3abf0>
 
 
 
@@ -517,7 +517,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fda03f43f10>
+    <matplotlib.legend.Legend at 0x7f6b7ce28460>
 
 
 
@@ -577,7 +577,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fda016ccd90>
+    <matplotlib.legend.Legend at 0x7f6b7a800dc0>
 
 
 

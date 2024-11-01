@@ -77,11 +77,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-     40 47.1M   40 19.1M    0     0  10.7M      0  0:00:04  0:00:01  0:00:03 10.7M
+      4 47.1M    4 1931k    0     0  1558k      0  0:00:30  0:00:01  0:00:29 1557k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  19.1M      0  0:00:02  0:00:02 --:--:-- 19.1M
+     76 47.1M   76 36.1M    0     0  16.0M      0  0:00:02  0:00:02 --:--:-- 16.0M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  18.8M      0  0:00:02  0:00:02 --:--:-- 18.8M
 
 
 .. code:: ipython3
@@ -922,7 +926,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f3800c83550>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f5340c14cd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1233,7 +1237,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f37ceb57f40>
+    <qp.ensemble.Ensemble at 0x7f53229a9090>
 
 
 

@@ -110,12 +110,12 @@ imports.
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
+    Imported rail.pzflow
+    Imported rail.sklearn
 
 
 .. parsed-literal::
 
-    Imported rail.pzflow
-    Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
     Attached 12 base classes and 81 fully formed stages to rail.stages
@@ -614,7 +614,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb9c0145630>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f2538ece590>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -633,7 +633,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb9c0145630>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f2538ece590>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

@@ -503,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6304c0ee60>
+    <rail.core.data.ModelHandle at 0x7f4a526cecb0>
 
 
 
@@ -586,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f63049ecb50>
+    <matplotlib.legend.Legend at 0x7f4a52764b50>
 
 
 
@@ -616,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6304ab2710>
+    <matplotlib.legend.Legend at 0x7f4a4f6b2740>
 
 
 

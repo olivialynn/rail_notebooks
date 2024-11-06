@@ -90,11 +90,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-     26 47.1M   26 12.6M    0     0  12.9M      0  0:00:03 --:--:--  0:00:03 12.9M
+      2 47.1M    2 1143k    0     0  1546k      0  0:00:31 --:--:--  0:00:31 1545k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  27.6M      0  0:00:01  0:00:01 --:--:-- 27.6M
+    100 47.1M  100 47.1M    0     0  27.3M      0  0:00:01  0:00:01 --:--:-- 27.3M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -295,7 +295,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7faa1b866fb0>
+    <qp.ensemble.Ensemble at 0x7f788a572f20>
 
 
 

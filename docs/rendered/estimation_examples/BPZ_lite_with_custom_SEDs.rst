@@ -43,35 +43,35 @@ for bpz demo data:
 
     Downloading BPZ demo data...
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
-
+      % Total    % Rec
 
 .. parsed-literal::
 
+    eived % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0   884k      0 --:--:-- --:--:-- --:--:--  885k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     25  450k   25  115k    0     0   134k      0  0:00:03 --:--:--  0:00:03  134k
+      9 83848    9  7896    0     0  23411      0  0:00:03 --:--:--  0:00:03 23360
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   462k      0 --:--:-- --:--:-- --:--:--  462k
+    100 83848  100 83848    0     0   218k      0 --:--:-- --:--:-- --:--:--  218k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   167k      0 --:--:-- --:--:-- --:--:--  167k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   251k      0 --:--:-- --:--:-- --:--:--  251k
+    100 83848  100 83848    0     0   597k      0 --:--:-- --:--:-- --:--:--  602k
 
 
 The files must be untarred and moved, as well:
@@ -210,7 +210,7 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 15 s, sys: 984 μs, total: 15 s
+    CPU times: user 15 s, sys: 2.3 ms, total: 15 s
     Wall time: 15 s
 
 
@@ -218,7 +218,7 @@ specify those numbers of the three broad types.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9f491430d0>
+    <rail.core.data.ModelHandle at 0x7f32b4b00160>
 
 
 
@@ -328,7 +328,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f18e30eb0>
+    <matplotlib.legend.Legend at 0x7f3263020f40>
 
 
 
@@ -391,20 +391,20 @@ later use) for the first time.
     DC2_DONOTUSE_El1 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_i.AB....
     DC2_DONOTUSE_El1 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_i.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_z.AB....
     DC2_DONOTUSE_El1 DC2LSST_z
     x_res[0] 3000.0
@@ -436,56 +436,56 @@ later use) for the first time.
     DC2_DONOTUSE_El2 DC2LSST_g
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_g.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_g.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_r.AB....
     DC2_DONOTUSE_El2 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_i.AB....
     DC2_DONOTUSE_El2 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_i.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_z.AB....
     DC2_DONOTUSE_El2 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_z.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_El2.DC2LSST_y.AB....
     DC2_DONOTUSE_El2 DC2LSST_y
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_y.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El2.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Sp1.DC2LSST_u.AB....
     DC2_DONOTUSE_Sp1 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_u.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_Sp1.DC2LSST_g.AB....
     DC2_DONOTUSE_Sp1 DC2LSST_g
     x_res[0] 3000.0
@@ -499,46 +499,42 @@ later use) for the first time.
     DC2_DONOTUSE_Sp1 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_Sp1.DC2LSST_i.AB....
     DC2_DONOTUSE_Sp1 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_Sp1.DC2LSST_z.AB....
     DC2_DONOTUSE_Sp1 DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_Sp1.DC2LSST_y.AB....
     DC2_DONOTUSE_Sp1 DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp1.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Sp2.DC2LSST_u.AB....
     DC2_DONOTUSE_Sp2 DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp2.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_Sp2.DC2LSST_g.AB....
     DC2_DONOTUSE_Sp2 DC2LSST_g
@@ -562,28 +558,24 @@ later use) for the first time.
     DC2_DONOTUSE_Sp2 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp2.DC2LSST_i.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp2.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_Sp2.DC2LSST_z.AB....
     DC2_DONOTUSE_Sp2 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp2.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_Sp2.DC2LSST_y.AB....
     DC2_DONOTUSE_Sp2 DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp2.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Sp3.DC2LSST_u.AB....
     DC2_DONOTUSE_Sp3 DC2LSST_u
@@ -598,46 +590,42 @@ later use) for the first time.
     DC2_DONOTUSE_Sp3 DC2LSST_g
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_g.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_g.AB
       Generating new AB file DC2_DONOTUSE_Sp3.DC2LSST_r.AB....
     DC2_DONOTUSE_Sp3 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_Sp3.DC2LSST_i.AB....
     DC2_DONOTUSE_Sp3 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_Sp3.DC2LSST_z.AB....
     DC2_DONOTUSE_Sp3 DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_Sp3.DC2LSST_y.AB....
     DC2_DONOTUSE_Sp3 DC2LSST_y
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Sp3.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Im1.DC2LSST_u.AB....
     DC2_DONOTUSE_Im1 DC2LSST_u
@@ -679,28 +667,24 @@ later use) for the first time.
     DC2_DONOTUSE_Im1 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im1.DC2LSST_z.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im1.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_Im1.DC2LSST_y.AB....
     DC2_DONOTUSE_Im1 DC2LSST_y
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im1.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Im2.DC2LSST_u.AB....
     DC2_DONOTUSE_Im2 DC2LSST_u
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_Im2.DC2LSST_g.AB....
     DC2_DONOTUSE_Im2 DC2LSST_g
@@ -715,22 +699,22 @@ later use) for the first time.
     DC2_DONOTUSE_Im2 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_Im2.DC2LSST_i.AB....
     DC2_DONOTUSE_Im2 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_i.AB
+      Generating new AB file DC2_DONOTUSE_Im2.DC2LSST_z.AB....
+    DC2_DONOTUSE_Im2 DC2LSST_z
 
 
 .. parsed-literal::
 
-      Generating new AB file DC2_DONOTUSE_Im2.DC2LSST_z.AB....
-    DC2_DONOTUSE_Im2 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_z.AB
@@ -745,17 +729,13 @@ later use) for the first time.
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im2.DC2LSST_y.AB
       Generating new AB file DC2_DONOTUSE_Im3.DC2LSST_u.AB....
     DC2_DONOTUSE_Im3 DC2LSST_u
-
-
-.. parsed-literal::
-
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_u.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_Im3.DC2LSST_g.AB....
     DC2_DONOTUSE_Im3 DC2LSST_g
     x_res[0] 3000.0
@@ -769,29 +749,29 @@ later use) for the first time.
     DC2_DONOTUSE_Im3 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_r.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_Im3.DC2LSST_i.AB....
     DC2_DONOTUSE_Im3 DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_i.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_i.AB
       Generating new AB file DC2_DONOTUSE_Im3.DC2LSST_z.AB....
     DC2_DONOTUSE_Im3 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_z.AB
 
 
 .. parsed-literal::
 
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im3.DC2LSST_z.AB
       Generating new AB file DC2_DONOTUSE_Im3.DC2LSST_y.AB....
     DC2_DONOTUSE_Im3 DC2LSST_y
     x_res[0] 3000.0
@@ -805,28 +785,24 @@ later use) for the first time.
     DC2_DONOTUSE_Im4 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im4.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_Im4.DC2LSST_g.AB....
     DC2_DONOTUSE_Im4 DC2LSST_g
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im4.DC2LSST_g.AB
       Generating new AB file DC2_DONOTUSE_Im4.DC2LSST_r.AB....
     DC2_DONOTUSE_Im4 DC2LSST_r
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_Im4.DC2LSST_r.AB
       Generating new AB file DC2_DONOTUSE_Im4.DC2LSST_i.AB....
     DC2_DONOTUSE_Im4 DC2LSST_i
@@ -877,15 +853,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.7 s, sys: 105 ms, total: 26.8 s
-    Wall time: 26.8 s
+    CPU times: user 26.2 s, sys: 116 ms, total: 26.3 s
+    Wall time: 26.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f13773e80>
+    <rail.core.data.QPHandle at 0x7f325d2ba170>
 
 
 
@@ -915,7 +891,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f13771060>
+    <matplotlib.legend.Legend at 0x7f325d2b9810>
 
 
 
@@ -1046,7 +1022,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f18bb8130>
+    <matplotlib.legend.Legend at 0x7f3262e2c310>
 
 
 

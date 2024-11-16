@@ -295,18 +295,18 @@ The LSST error model adds noise to the optical bands
       <tbody>
         <tr>
           <th>0</th>
-          <td>22.615959</td>
-          <td>0.014086</td>
-          <td>22.978069</td>
-          <td>0.007844</td>
-          <td>25.964147</td>
-          <td>0.076389</td>
-          <td>18.280341</td>
+          <td>22.581262</td>
+          <td>0.013720</td>
+          <td>22.970118</td>
+          <td>0.007812</td>
+          <td>25.829002</td>
+          <td>0.067781</td>
+          <td>18.276204</td>
           <td>0.005006</td>
-          <td>23.011173</td>
-          <td>0.017756</td>
-          <td>23.590372</td>
-          <td>0.065842</td>
+          <td>23.016116</td>
+          <td>0.017829</td>
+          <td>23.702615</td>
+          <td>0.072720</td>
           <td>24.988174</td>
           <td>17.297281</td>
           <td>25.691319</td>
@@ -314,18 +314,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>1</th>
-          <td>24.421716</td>
-          <td>0.065250</td>
-          <td>20.918550</td>
-          <td>0.005129</td>
-          <td>24.390566</td>
-          <td>0.019184</td>
-          <td>22.922377</td>
-          <td>0.009536</td>
-          <td>26.326017</td>
-          <td>0.310742</td>
-          <td>23.188881</td>
-          <td>0.046109</td>
+          <td>24.335106</td>
+          <td>0.060462</td>
+          <td>20.929438</td>
+          <td>0.005131</td>
+          <td>24.345222</td>
+          <td>0.018467</td>
+          <td>22.928559</td>
+          <td>0.009574</td>
+          <td>26.221509</td>
+          <td>0.285676</td>
+          <td>23.281507</td>
+          <td>0.050060</td>
           <td>24.175778</td>
           <td>24.107270</td>
           <td>22.120187</td>
@@ -333,18 +333,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>2</th>
-          <td>22.008177</td>
-          <td>0.009280</td>
-          <td>25.416321</td>
-          <td>0.053510</td>
-          <td>22.978259</td>
-          <td>0.007224</td>
-          <td>23.427445</td>
-          <td>0.013734</td>
-          <td>24.930981</td>
-          <td>0.095489</td>
-          <td>25.806693</td>
-          <td>0.424788</td>
+          <td>22.013061</td>
+          <td>0.009307</td>
+          <td>25.444319</td>
+          <td>0.054854</td>
+          <td>22.976527</td>
+          <td>0.007218</td>
+          <td>23.450809</td>
+          <td>0.013988</td>
+          <td>24.778461</td>
+          <td>0.083501</td>
+          <td>25.393491</td>
+          <td>0.307455</td>
           <td>24.365248</td>
           <td>22.986236</td>
           <td>22.927064</td>
@@ -352,18 +352,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>3</th>
-          <td>19.610526</td>
-          <td>0.005169</td>
-          <td>18.621101</td>
+          <td>19.612368</td>
+          <td>0.005170</td>
+          <td>18.612759</td>
           <td>0.005008</td>
-          <td>22.602583</td>
-          <td>0.006248</td>
-          <td>25.078226</td>
-          <td>0.056904</td>
-          <td>22.216711</td>
-          <td>0.009718</td>
-          <td>23.078985</td>
-          <td>0.041826</td>
+          <td>22.603762</td>
+          <td>0.006250</td>
+          <td>25.110015</td>
+          <td>0.058533</td>
+          <td>22.220262</td>
+          <td>0.009740</td>
+          <td>23.034131</td>
+          <td>0.040196</td>
           <td>19.541318</td>
           <td>22.305423</td>
           <td>24.290190</td>
@@ -371,18 +371,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>4</th>
-          <td>27.494522</td>
-          <td>0.772270</td>
-          <td>22.868649</td>
-          <td>0.007429</td>
-          <td>23.065514</td>
-          <td>0.007532</td>
-          <td>22.887529</td>
-          <td>0.009324</td>
-          <td>16.986099</td>
+          <td>26.372882</td>
+          <td>0.341313</td>
+          <td>22.857427</td>
+          <td>0.007390</td>
+          <td>23.058772</td>
+          <td>0.007507</td>
+          <td>22.881324</td>
+          <td>0.009287</td>
+          <td>16.976000</td>
           <td>0.005003</td>
-          <td>24.584326</td>
-          <td>0.156938</td>
+          <td>25.079409</td>
+          <td>0.238081</td>
           <td>24.519918</td>
           <td>26.603928</td>
           <td>28.264883</td>
@@ -409,18 +409,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>995</th>
-          <td>22.499612</td>
-          <td>0.012911</td>
-          <td>19.348160</td>
+          <td>22.479829</td>
+          <td>0.012724</td>
+          <td>19.353826</td>
           <td>0.005018</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>17.297279</td>
+          <td>27.866026</td>
+          <td>0.379541</td>
+          <td>17.290453</td>
           <td>0.005002</td>
-          <td>25.293667</td>
-          <td>0.131001</td>
-          <td>21.287600</td>
-          <td>0.009656</td>
+          <td>25.197547</td>
+          <td>0.120525</td>
+          <td>21.258795</td>
+          <td>0.009477</td>
           <td>23.401882</td>
           <td>20.084787</td>
           <td>17.316507</td>
@@ -428,18 +428,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>996</th>
-          <td>23.149319</td>
-          <td>0.021615</td>
-          <td>23.245833</td>
-          <td>0.009132</td>
-          <td>23.946292</td>
-          <td>0.013370</td>
-          <td>26.103913</td>
-          <td>0.140045</td>
-          <td>24.467407</td>
-          <td>0.063423</td>
-          <td>24.142330</td>
-          <td>0.107060</td>
+          <td>23.125941</td>
+          <td>0.021197</td>
+          <td>23.233407</td>
+          <td>0.009063</td>
+          <td>23.977463</td>
+          <td>0.013699</td>
+          <td>26.005166</td>
+          <td>0.128591</td>
+          <td>24.526025</td>
+          <td>0.066804</td>
+          <td>24.268297</td>
+          <td>0.119483</td>
           <td>21.691973</td>
           <td>25.383890</td>
           <td>22.249757</td>
@@ -447,18 +447,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>997</th>
-          <td>17.266907</td>
-          <td>0.005014</td>
-          <td>20.083683</td>
+          <td>17.249663</td>
+          <td>0.005013</td>
+          <td>20.079581</td>
           <td>0.005042</td>
-          <td>23.749041</td>
-          <td>0.011523</td>
-          <td>19.037791</td>
+          <td>23.759492</td>
+          <td>0.011611</td>
+          <td>19.031047</td>
           <td>0.005014</td>
-          <td>23.079907</td>
-          <td>0.018806</td>
-          <td>24.742577</td>
-          <td>0.179581</td>
+          <td>23.051694</td>
+          <td>0.018366</td>
+          <td>25.056240</td>
+          <td>0.233563</td>
           <td>20.307481</td>
           <td>25.088338</td>
           <td>25.547408</td>
@@ -466,18 +466,18 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>998</th>
-          <td>19.512906</td>
-          <td>0.005150</td>
-          <td>18.700038</td>
+          <td>19.505347</td>
+          <td>0.005149</td>
+          <td>18.686972</td>
           <td>0.005009</td>
-          <td>19.688120</td>
+          <td>19.688466</td>
           <td>0.005016</td>
-          <td>23.661915</td>
-          <td>0.016579</td>
-          <td>22.692222</td>
-          <td>0.013720</td>
-          <td>22.615741</td>
-          <td>0.027804</td>
+          <td>23.665271</td>
+          <td>0.016625</td>
+          <td>22.705023</td>
+          <td>0.013858</td>
+          <td>22.690440</td>
+          <td>0.029683</td>
           <td>23.722045</td>
           <td>21.819881</td>
           <td>20.238721</td>
@@ -485,17 +485,17 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>999</th>
-          <td>19.827692</td>
-          <td>0.005222</td>
-          <td>24.475965</td>
-          <td>0.023445</td>
-          <td>24.473312</td>
-          <td>0.020576</td>
-          <td>23.463732</td>
-          <td>0.014131</td>
-          <td>21.232698</td>
-          <td>0.006099</td>
-          <td>16.847022</td>
+          <td>19.822055</td>
+          <td>0.005220</td>
+          <td>24.458941</td>
+          <td>0.023106</td>
+          <td>24.463534</td>
+          <td>0.020406</td>
+          <td>23.470094</td>
+          <td>0.014202</td>
+          <td>21.232155</td>
+          <td>0.006098</td>
+          <td>16.849582</td>
           <td>0.005008</td>
           <td>25.834554</td>
           <td>20.236373</td>
@@ -561,6 +561,10 @@ The Roman error model adds noise to the infrared bands
 
     Inserting handle into data store.  output_error_model: inprogress_output_error_model.pq, error_model
 
+.. parsed-literal::
+
+    
+
 
 
 
@@ -609,14 +613,14 @@ The Roman error model adds noise to the infrared bands
           <td>18.274340</td>
           <td>23.027885</td>
           <td>23.638181</td>
-          <td>25.024690</td>
-          <td>0.034992</td>
-          <td>17.296334</td>
+          <td>24.987266</td>
+          <td>0.033848</td>
+          <td>17.291792</td>
           <td>0.005000</td>
-          <td>25.657317</td>
-          <td>0.067191</td>
-          <td>22.679937</td>
-          <td>0.009487</td>
+          <td>25.692693</td>
+          <td>0.069336</td>
+          <td>22.673764</td>
+          <td>0.009449</td>
         </tr>
         <tr>
           <th>1</th>
@@ -626,14 +630,14 @@ The Roman error model adds noise to the infrared bands
           <td>22.927275</td>
           <td>26.444150</td>
           <td>23.246999</td>
-          <td>24.169395</td>
-          <td>0.016652</td>
-          <td>24.120116</td>
-          <td>0.016662</td>
-          <td>22.124464</td>
-          <td>0.005664</td>
-          <td>23.398100</td>
-          <td>0.016360</td>
+          <td>24.199799</td>
+          <td>0.017080</td>
+          <td>24.122152</td>
+          <td>0.016690</td>
+          <td>22.119547</td>
+          <td>0.005658</td>
+          <td>23.408046</td>
+          <td>0.016495</td>
         </tr>
         <tr>
           <th>2</th>
@@ -643,14 +647,14 @@ The Roman error model adds noise to the infrared bands
           <td>23.444323</td>
           <td>24.789983</td>
           <td>25.735875</td>
-          <td>24.337946</td>
-          <td>0.019193</td>
-          <td>22.986983</td>
-          <td>0.007521</td>
-          <td>22.916818</td>
-          <td>0.007445</td>
-          <td>27.589378</td>
-          <td>0.567619</td>
+          <td>24.370612</td>
+          <td>0.019736</td>
+          <td>22.989643</td>
+          <td>0.007532</td>
+          <td>22.934262</td>
+          <td>0.007511</td>
+          <td>27.278188</td>
+          <td>0.451470</td>
         </tr>
         <tr>
           <th>3</th>
@@ -660,13 +664,13 @@ The Roman error model adds noise to the infrared bands
           <td>25.217366</td>
           <td>22.214593</td>
           <td>23.033418</td>
-          <td>19.538547</td>
+          <td>19.549572</td>
           <td>0.005005</td>
-          <td>22.309189</td>
-          <td>0.005837</td>
-          <td>24.302569</td>
-          <td>0.020283</td>
-          <td>12.206486</td>
+          <td>22.314458</td>
+          <td>0.005845</td>
+          <td>24.270073</td>
+          <td>0.019726</td>
+          <td>12.205748</td>
           <td>0.005000</td>
         </tr>
         <tr>
@@ -677,14 +681,14 @@ The Roman error model adds noise to the infrared bands
           <td>22.879641</td>
           <td>16.979636</td>
           <td>24.984402</td>
-          <td>24.555858</td>
-          <td>0.023155</td>
-          <td>26.510560</td>
-          <td>0.136063</td>
-          <td>27.673844</td>
-          <td>0.371460</td>
-          <td>24.164234</td>
-          <td>0.031726</td>
+          <td>24.561770</td>
+          <td>0.023275</td>
+          <td>26.579195</td>
+          <td>0.144367</td>
+          <td>27.874711</td>
+          <td>0.433572</td>
+          <td>24.173169</td>
+          <td>0.031978</td>
         </tr>
         <tr>
           <th>...</th>
@@ -711,14 +715,14 @@ The Roman error model adds noise to the infrared bands
           <td>17.298766</td>
           <td>25.278388</td>
           <td>21.281571</td>
-          <td>23.407936</td>
-          <td>0.009351</td>
-          <td>20.081231</td>
+          <td>23.415013</td>
+          <td>0.009394</td>
+          <td>20.077457</td>
           <td>0.005015</td>
-          <td>17.323599</td>
+          <td>17.311051</td>
           <td>0.005000</td>
-          <td>20.847304</td>
-          <td>0.005218</td>
+          <td>20.855830</td>
+          <td>0.005222</td>
         </tr>
         <tr>
           <th>996</th>
@@ -728,14 +732,14 @@ The Roman error model adds noise to the infrared bands
           <td>25.918791</td>
           <td>24.586021</td>
           <td>24.115220</td>
-          <td>21.689239</td>
-          <td>0.005258</td>
-          <td>25.377521</td>
-          <td>0.050095</td>
-          <td>22.249303</td>
-          <td>0.005823</td>
-          <td>20.798618</td>
-          <td>0.005200</td>
+          <td>21.693914</td>
+          <td>0.005260</td>
+          <td>25.387662</td>
+          <td>0.050549</td>
+          <td>22.255701</td>
+          <td>0.005832</td>
+          <td>20.793249</td>
+          <td>0.005198</td>
         </tr>
         <tr>
           <th>997</th>
@@ -745,13 +749,13 @@ The Roman error model adds noise to the infrared bands
           <td>19.030635</td>
           <td>23.078506</td>
           <td>25.476684</td>
-          <td>20.306407</td>
+          <td>20.311164</td>
           <td>0.005021</td>
-          <td>25.170260</td>
-          <td>0.041644</td>
-          <td>25.530112</td>
-          <td>0.060004</td>
-          <td>18.308890</td>
+          <td>25.048518</td>
+          <td>0.037366</td>
+          <td>25.498370</td>
+          <td>0.058332</td>
+          <td>18.303646</td>
           <td>0.005002</td>
         </tr>
         <tr>
@@ -762,14 +766,14 @@ The Roman error model adds noise to the infrared bands
           <td>23.657409</td>
           <td>22.711747</td>
           <td>22.648712</td>
-          <td>23.727619</td>
-          <td>0.011717</td>
-          <td>21.814759</td>
-          <td>0.005353</td>
-          <td>20.236315</td>
+          <td>23.709648</td>
+          <td>0.011560</td>
+          <td>21.829035</td>
+          <td>0.005362</td>
+          <td>20.244565</td>
           <td>0.005022</td>
-          <td>25.311246</td>
-          <td>0.087942</td>
+          <td>25.134409</td>
+          <td>0.075212</td>
         </tr>
         <tr>
           <th>999</th>
@@ -779,14 +783,14 @@ The Roman error model adds noise to the infrared bands
           <td>23.454620</td>
           <td>21.239060</td>
           <td>16.850985</td>
-          <td>25.735666</td>
-          <td>0.065911</td>
-          <td>20.238915</td>
+          <td>25.854671</td>
+          <td>0.073256</td>
+          <td>20.245430</td>
           <td>0.005020</td>
-          <td>24.302248</td>
-          <td>0.020278</td>
-          <td>22.904391</td>
-          <td>0.011098</td>
+          <td>24.306507</td>
+          <td>0.020352</td>
+          <td>22.887966</td>
+          <td>0.010966</td>
         </tr>
       </tbody>
     </table>
@@ -882,12 +886,12 @@ The Euclid error model adds noise to YJH bands
           <td>18.274340</td>
           <td>23.027885</td>
           <td>23.638181</td>
-          <td>26.997900</td>
-          <td>1.548690</td>
-          <td>17.303041</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>17.301420</td>
           <td>0.005014</td>
-          <td>25.952923</td>
-          <td>0.916037</td>
+          <td>inf</td>
+          <td>inf</td>
           <td>22.682690</td>
         </tr>
         <tr>
@@ -898,12 +902,12 @@ The Euclid error model adds noise to YJH bands
           <td>22.927275</td>
           <td>26.444150</td>
           <td>23.246999</td>
-          <td>24.250431</td>
-          <td>0.243948</td>
-          <td>23.862095</td>
-          <td>0.148514</td>
-          <td>22.106777</td>
-          <td>0.041147</td>
+          <td>24.136066</td>
+          <td>0.221890</td>
+          <td>24.116461</td>
+          <td>0.184521</td>
+          <td>22.090634</td>
+          <td>0.040559</td>
           <td>23.411418</td>
         </tr>
         <tr>
@@ -914,12 +918,12 @@ The Euclid error model adds noise to YJH bands
           <td>23.444323</td>
           <td>24.789983</td>
           <td>25.735875</td>
-          <td>24.039016</td>
-          <td>0.204600</td>
-          <td>22.884055</td>
-          <td>0.062954</td>
-          <td>22.988145</td>
-          <td>0.090053</td>
+          <td>24.272578</td>
+          <td>0.248439</td>
+          <td>22.984593</td>
+          <td>0.068839</td>
+          <td>22.887893</td>
+          <td>0.082426</td>
           <td>28.331736</td>
         </tr>
         <tr>
@@ -930,12 +934,12 @@ The Euclid error model adds noise to YJH bands
           <td>25.217366</td>
           <td>22.214593</td>
           <td>23.033418</td>
-          <td>19.537895</td>
-          <td>0.006132</td>
-          <td>22.279559</td>
-          <td>0.036741</td>
-          <td>24.438346</td>
-          <td>0.308327</td>
+          <td>19.542262</td>
+          <td>0.006140</td>
+          <td>22.380452</td>
+          <td>0.040193</td>
+          <td>23.840891</td>
+          <td>0.188374</td>
           <td>12.204110</td>
         </tr>
         <tr>
@@ -946,12 +950,12 @@ The Euclid error model adds noise to YJH bands
           <td>22.879641</td>
           <td>16.979636</td>
           <td>24.984402</td>
-          <td>24.875536</td>
-          <td>0.401913</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>25.310707</td>
-          <td>0.597226</td>
+          <td>24.888336</td>
+          <td>0.405889</td>
+          <td>26.434847</td>
+          <td>1.023415</td>
+          <td>25.952186</td>
+          <td>0.915617</td>
           <td>24.168218</td>
         </tr>
         <tr>
@@ -978,11 +982,11 @@ The Euclid error model adds noise to YJH bands
           <td>17.298766</td>
           <td>25.278388</td>
           <td>21.281571</td>
-          <td>23.400812</td>
-          <td>0.118447</td>
-          <td>20.079463</td>
-          <td>0.006973</td>
-          <td>17.309429</td>
+          <td>23.548313</td>
+          <td>0.134630</td>
+          <td>20.076054</td>
+          <td>0.006963</td>
+          <td>17.309526</td>
           <td>0.005025</td>
           <td>20.853307</td>
         </tr>
@@ -994,12 +998,12 @@ The Euclid error model adds noise to YJH bands
           <td>25.918791</td>
           <td>24.586021</td>
           <td>24.115220</td>
-          <td>21.737747</td>
-          <td>0.027149</td>
-          <td>24.872275</td>
-          <td>0.343000</td>
-          <td>22.269459</td>
-          <td>0.047567</td>
+          <td>21.719826</td>
+          <td>0.026725</td>
+          <td>24.942998</td>
+          <td>0.362613</td>
+          <td>22.242115</td>
+          <td>0.046422</td>
           <td>20.794577</td>
         </tr>
         <tr>
@@ -1010,12 +1014,12 @@ The Euclid error model adds noise to YJH bands
           <td>19.030635</td>
           <td>23.078506</td>
           <td>25.476684</td>
-          <td>20.295936</td>
-          <td>0.008708</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>24.715732</td>
-          <td>0.383762</td>
+          <td>20.302533</td>
+          <td>0.008743</td>
+          <td>25.139143</td>
+          <td>0.421991</td>
+          <td>25.152102</td>
+          <td>0.532929</td>
           <td>18.303647</td>
         </tr>
         <tr>
@@ -1026,12 +1030,12 @@ The Euclid error model adds noise to YJH bands
           <td>23.657409</td>
           <td>22.711747</td>
           <td>22.648712</td>
-          <td>23.944545</td>
-          <td>0.188956</td>
-          <td>21.833859</td>
-          <td>0.024785</td>
-          <td>20.235055</td>
-          <td>0.008922</td>
+          <td>23.451152</td>
+          <td>0.123751</td>
+          <td>21.832680</td>
+          <td>0.024759</td>
+          <td>20.251831</td>
+          <td>0.009018</td>
           <td>25.211479</td>
         </tr>
         <tr>
@@ -1042,12 +1046,12 @@ The Euclid error model adds noise to YJH bands
           <td>23.454620</td>
           <td>21.239060</td>
           <td>16.850985</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>20.240005</td>
-          <td>0.007533</td>
-          <td>24.210856</td>
-          <td>0.256376</td>
+          <td>27.386482</td>
+          <td>1.855840</td>
+          <td>20.230379</td>
+          <td>0.007496</td>
+          <td>24.607005</td>
+          <td>0.352516</td>
           <td>22.891500</td>
         </tr>
       </tbody>

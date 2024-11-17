@@ -73,15 +73,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+     21 47.1M   21 10.3M    0     0  8948k      0  0:00:05  0:00:01  0:00:04 8957k
 
 .. parsed-literal::
 
-     12 47.1M   12 6099k    0     0  4957k      0  0:00:09  0:00:01  0:00:08 4955k
+     32 47.1M   32 15.2M    0     0  7887k      0  0:00:06  0:00:01  0:00:05 7887k
 
 .. parsed-literal::
 
-     92 47.1M   92 43.6M    0     0  19.6M      0  0:00:02  0:00:02 --:--:-- 19.6M100 47.1M  100 47.1M    0     0  20.4M      0  0:00:02  0:00:02 --:--:-- 20.4M
+    100 47.1M  100 47.1M    0     0  19.9M      0  0:00:02  0:00:02 --:--:-- 19.9M
 
 
 .. code:: ipython3
@@ -922,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f7e94bf9090>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f5affbf5030>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -971,10 +971,6 @@ forced to run on a single node for exact results.
 .. parsed-literal::
 
     This is not a qp file because 'meta'
-
-
-.. parsed-literal::
-
     This is not a qp file because 'meta'
     Unsupported metric requested: 'omega'.  Available metrics are: ['ad', 'brier', 'cdeloss', 'cvm', 'kld', 'ks', 'moment', 'outlier', 'pit', 'point_bias', 'point_outlier_rate', 'point_stats_ez', 'point_stats_iqr', 'point_stats_sigma_mad', 'rbpe', 'rmse']
     Requested metrics: ['cvm', 'ks', 'kld', 'cdeloss', 'point_stats_ez', 'point_stats_iqr']
@@ -1010,10 +1006,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 7000 - 8000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1050,10 +1042,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 15000 - 16000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1245,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f7e949ef5b0>
+    <qp.ensemble.Ensemble at 0x7f5affa52620>
 
 
 

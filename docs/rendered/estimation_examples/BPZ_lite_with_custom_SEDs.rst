@@ -49,29 +49,53 @@ for bpz demo data:
 
 .. parsed-literal::
 
-     18  450k   18 85686    0     0  93367      0  0:00:04 --:--:--  0:00:04 93339
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   393k      0  0:00:01  0:00:01 --:--:--  394k
+      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+
+.. parsed-literal::
+
+      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+
+.. parsed-literal::
+
+      0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
+
+.. parsed-literal::
+
+      0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
+
+.. parsed-literal::
+
+      0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+
+.. parsed-literal::
+
+      2  450k    2 11949    0     0   1789      0  0:04:17  0:00:06  0:04:11  2397
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0  65469      0  0:00:07  0:00:07 --:--:--  103k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   186k      0 --:--:-- --:--:-- --:--:--  186k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100 83848  100 83848    0     0   130k      0 --:--:-- --:--:-- --:--:--  130k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   130k      0 --:--:-- --:--:-- --:--:--  129k
+    100 83848  100 83848    0     0   129k      0 --:--:-- --:--:-- --:--:--  129k
 
 
 The files must be untarred and moved, as well:
@@ -210,15 +234,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 14.9 s, sys: 6.76 ms, total: 14.9 s
-    Wall time: 14.9 s
+    CPU times: user 15 s, sys: 4.97 ms, total: 15 s
+    Wall time: 15 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f0bd81aff70>
+    <rail.core.data.ModelHandle at 0x7f7af1d733d0>
 
 
 
@@ -328,7 +352,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f0b876f4fd0>
+    <matplotlib.legend.Legend at 0x7f7af1b8cf70>
 
 
 
@@ -877,15 +901,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.7 s, sys: 99.5 ms, total: 26.8 s
-    Wall time: 26.8 s
+    CPU times: user 26.6 s, sys: 96.3 ms, total: 26.7 s
+    Wall time: 26.7 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f0b81cdffa0>
+    <rail.core.data.QPHandle at 0x7f7aec4c7f40>
 
 
 
@@ -915,7 +939,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f0b87631ed0>
+    <matplotlib.legend.Legend at 0x7f7aec4c53f0>
 
 
 
@@ -1046,7 +1070,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f0b874102e0>
+    <matplotlib.legend.Legend at 0x7f7af197c2b0>
 
 
 

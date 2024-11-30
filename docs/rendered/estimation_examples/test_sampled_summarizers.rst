@@ -96,7 +96,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9c797f6d70>
+    <rail.core.data.ModelHandle at 0x7f8110717f10>
 
 
 
@@ -197,7 +197,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9c79462fb0>
+    <matplotlib.legend.Legend at 0x7f811076b4c0>
 
 
 
@@ -283,7 +283,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9c793e4fa0>
+    <matplotlib.legend.Legend at 0x7f810c4df5e0>
 
 
 
@@ -322,8 +322,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 1.06 s, sys: 40 ms, total: 1.1 s
-    Wall time: 1.1 s
+    CPU times: user 1.08 s, sys: 27.9 ms, total: 1.11 s
+    Wall time: 1.11 s
 
 
 .. code:: ipython3
@@ -336,7 +336,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f9c7b86aef0>
+    <qp.ensemble.Ensemble at 0x7f810c2c1cc0>
 
 
 
@@ -395,7 +395,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9c741ec970>
+    <rail.core.data.ModelHandle at 0x7f811064e5c0>
 
 
 
@@ -444,7 +444,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9c6ffc1db0>
+    <matplotlib.legend.Legend at 0x7f810c097b20>
 
 
 
@@ -571,7 +571,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f9c6fd8f4c0>]
+    [<matplotlib.lines.Line2D at 0x7f810c0a50c0>]
 
 
 
@@ -588,7 +588,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f9c6fe49540>]
+    [<matplotlib.lines.Line2D at 0x7f810c233160>]
 
 
 
@@ -605,7 +605,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f9c6ffe5660>]
+    [<matplotlib.lines.Line2D at 0x7f810c29a800>]
 
 
 
@@ -640,7 +640,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9c6fe4a530>
+    <matplotlib.legend.Legend at 0x7f810c1f35e0>
 
 
 

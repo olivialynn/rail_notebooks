@@ -86,19 +86,19 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      1 47.1M    1  579k    0     0   538k      0  0:01:29  0:00:01  0:01:28  537k
+      0 47.1M    0  251k    0     0   290k      0  0:02:46 --:--:--  0:02:46  290k
 
 .. parsed-literal::
 
-     76 47.1M   76 36.0M    0     0  17.2M      0  0:00:02  0:00:02 --:--:-- 17.2M
+     64 47.1M   64 30.5M    0     0  16.4M      0  0:00:02  0:00:01  0:00:01 16.4M
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  20.1M      0  0:00:02  0:00:02 --:--:-- 20.1M
+    100 47.1M  100 47.1M    0     0  20.5M      0  0:00:02  0:00:02 --:--:-- 20.5M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -202,19 +202,14 @@ We can view the results as a pandas dataframe:
           <th>PIT_AD_significance_level</th>
           <th>PIT_CvM_stat</th>
           <th>PIT_CvM_pval</th>
-          <th>PIT_CvM_significance_level</th>
           <th>PIT_KS_stat</th>
           <th>PIT_KS_pval</th>
-          <th>PIT_KS_significance_level</th>
           <th>PIT_OutRate_stat</th>
-          <th>PIT_OutRate_pval</th>
-          <th>PIT_OutRate_significance_level</th>
           <th>POINT_SimgaIQR</th>
           <th>POINT_Bias</th>
           <th>POINT_OutlierRate</th>
           <th>POINT_SigmaMAD</th>
           <th>CDE_stat</th>
-          <th>CDE_pval</th>
         </tr>
       </thead>
       <tbody>
@@ -225,19 +220,14 @@ We can view the results as a pandas dataframe:
           <td>0.001</td>
           <td>9.623352</td>
           <td>NaN</td>
-          <td>NaN</td>
           <td>0.03359</td>
           <td>NaN</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>NaN</td>
+          <td>0.058738</td>
           <td>0.020859</td>
           <td>0.00027</td>
           <td>0.106167</td>
           <td>0.020891</td>
           <td>-6.74027</td>
-          <td>NaN</td>
         </tr>
       </tbody>
     </table>
@@ -299,7 +289,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fddff6d3b20>
+    <qp.ensemble.Ensemble at 0x7ff04cd7ed70>
 
 
 

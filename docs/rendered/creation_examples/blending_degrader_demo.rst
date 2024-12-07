@@ -29,12 +29,13 @@ Create a random catalog with ugrizy+YJHF bands as the the true input
 
 .. code:: ipython3
 
-    data = np.random.normal(23, 3, size = (1000,12))
+    data = np.random.normal(24, 3, size = (1000,13))
     data[:, 0] = np.random.uniform(low=0, high=0.03, size=1000)
     data[:, 1] = np.random.uniform(low=0, high=0.03, size=1000)
+    data[:, 2] = np.random.uniform(low=0, high=2, size=1000)
     
     data_df = pd.DataFrame(data=data,    # values
-                columns=['ra', 'dec', 'u', 'g', 'r', 'i', 'z', 'y', 'Y', 'J', 'H', 'F'])
+                columns=['ra', 'dec', 'z_true', 'u', 'g', 'r', 'i', 'z', 'y', 'Y', 'J', 'H', 'F'])
     
     data_truth_handle = DS.add_data('input', data_df, PqHandle)
     data_truth = data_truth_handle.data
@@ -63,8 +64,10 @@ The blending model
 
     ## model configuration; linking length is in arcsecs
     
+    lsst_zp_dict = {'u':12.65, 'g':14.69, 'r':14.56, 'i': 14.38, 'z':13.99, 'y': 13.02}
     blModel = UnrecBlModel.make_stage(name='unrec_bl_model', ra_label='ra', dec_label='dec', linking_lengths=1.0, \
-                                      bands='ugrizy')
+                                      bands='ugrizy', zp_dict=lsst_zp_dict, 
+                                      ref_band = 'i', redshift_col = 'z_true')
     blModel.get_config_dict()
 
 
@@ -78,7 +81,9 @@ The blending model
      'ra_label': 'ra',
      'dec_label': 'dec',
      'linking_lengths': 1.0,
-     'bands': 'ugrizy',
+     'bands': ['u', 'g', 'r', 'i', 'z', 'y'],
+     'ref_band': 'i',
+     'redshift_col': 'z_true',
      'match_size': False,
      'match_shape': False,
      'obj_size': 'obj_size',
@@ -86,6 +91,12 @@ The blending model
      'b': 'semi_minor',
      'theta': 'orientation',
      'name': 'unrec_bl_model',
+     'zp_dict': {'u': 12.65,
+      'g': 14.69,
+      'r': 14.56,
+      'i': 14.38,
+      'z': 13.99,
+      'y': 13.02},
      'config': None}
 
 
@@ -128,7 +139,7 @@ The blending model
 
 .. code:: ipython3
 
-    b = 'r'
+    b = 'i'
     plt.hist(data_truth[b], bins=np.linspace(10, 30, 20), label='Original')
     plt.hist(samples_w_bl[b], bins=np.linspace(10, 30, 20),  fill=False, label='w. Unrec-BL')
     
@@ -144,14 +155,11 @@ The blending model
 
 .. code:: ipython3
 
-    flux = 10**(-(data_truth[b]-28.10)/2.5)       # r band zp for lsst is 28.10
-    flux_bl = 10**(-(samples_w_bl[b]-28.10)/2.5)
     
-    plt.hist(flux, bins=np.linspace(0, 10000, 40), label='Original')
-    plt.hist(flux_bl, bins=np.linspace(0, 10000, 40), fill=False, label='w. Unrec-BL')
+    plt.hist(data_truth['z_true'], bins=20, label='True Redshift')
+    plt.hist(samples_w_bl['z_weighted'], bins=20,  fill=False, label='Weighted Mean')
     
-    plt.xlabel(fr'Flux ${b}$', fontsize=14)
-    plt.yscale('log')
+    plt.xlabel(fr'Rdshift', fontsize=14)
     plt.legend(fontsize=12)
     plt.show()
 
@@ -174,8 +182,9 @@ Study one BL case
         rand_ind = np.random.randint(len(samples_w_bl))
         this_bl = samples_w_bl.iloc[rand_ind]
         group_id = this_bl['group_id']
-        
-        FoF_group = component_ind.query(f"group_id == {group_id}")
+    
+        mask = (component_ind['group_id'] == group_id)
+        FoF_group = component_ind[mask]
         group_size = len(FoF_group)
     
     truth_comp = data_truth.iloc[FoF_group.index]
@@ -198,28 +207,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.0200558  0.02029998] / 0.02017789268461808
+    [0.02388757 0.02376291] / 0.02382524010479834
     
     Truth DEC / Blended DEC:
-    [0.02758961 0.02750847] / 0.02754903710062099
+    [0.00357097 0.0035673 ] / 0.003569132125408952
     
     Truth mag u / Blended mag u:
-    [27.80013286 24.9100882 ] / 24.836811044430853
+    [23.12467992 27.43355146] / 23.10435149502577
     
     Truth mag g / Blended mag g:
-    [28.64682467 19.20418358] / 19.204002183643933
+    [26.39370779 19.88464395] / 19.881942741966597
     
     Truth mag r / Blended mag r:
-    [21.59410809 23.34540471] / 21.396799285333323
+    [25.81503995 28.68416307] / 25.74038501513187
     
     Truth mag i / Blended mag i:
-    [21.06857667 22.45407615] / 20.80129339889516
+    [23.53444254 25.84007306] / 23.41178087442284
     
     Truth mag z / Blended mag z:
-    [21.09781216 20.8760019 ] / 20.228677528714712
+    [24.0223827  20.39059976] / 20.35297579436854
     
     Truth mag y / Blended mag y:
-    [20.30613921 23.82998838] / 20.26465701164023
+    [25.24358454 27.0856115 ] / 25.06083701907503
     
 
 

@@ -69,15 +69,19 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     32 47.1M   32 15.2M    0     0  14.4M      0  0:00:03  0:00:01  0:00:02 14.4M
+      0 47.1M    0  194k    0     0   238k      0  0:03:22 --:--:--  0:03:22  238k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  28.2M      0  0:00:01  0:00:01 --:--:-- 28.2M
+     54 47.1M   54 25.8M    0     0  14.3M      0  0:00:03  0:00:01  0:00:02 14.3M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  19.8M      0  0:00:02  0:00:02 --:--:-- 19.8M
 
 
 .. code:: ipython3
@@ -918,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f99fd409c00>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7efc6ccd5bd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1229,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f99fd338f40>
+    <qp.ensemble.Ensemble at 0x7efc6ca26b00>
 
 
 
@@ -1388,10 +1392,6 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
-
-
-.. parsed-literal::
-
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 

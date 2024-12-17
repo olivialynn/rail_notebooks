@@ -43,39 +43,27 @@ for bpz demo data:
 
     Downloading BPZ demo data...
     (Note: you can run get-data without the bpz-demo-data flag to download standard data.)
-
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
+    100  450k  100  450k    0     0   638k      0 --:--:-- --:--:-- --:--:--  638k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     41  450k   41  187k    0     0   203k      0  0:00:02 --:--:--  0:00:02  203k
-
-.. parsed-literal::
-
-    100  450k  100  450k    0     0   442k      0  0:00:01  0:00:01 --:--:--  442k
+    100 83848  100 83848    0     0   308k      0 --:--:-- --:--:-- --:--:--  308k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   130k      0 --:--:-- --:--:-- --:--:--  130k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   199k      0 --:--:-- --:--:-- --:--:--  199k
+    100 83848  100 83848    0     0   188k      0 --:--:-- --:--:-- --:--:--  188k
 
 
 The files must be untarred and moved, as well:
@@ -214,15 +202,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 14.9 s, sys: 3.76 ms, total: 14.9 s
-    Wall time: 14.9 s
+    CPU times: user 16.1 s, sys: 3.41 ms, total: 16.1 s
+    Wall time: 16.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3989e87d60>
+    <rail.core.data.ModelHandle at 0x7f4110a2e5f0>
 
 
 
@@ -332,7 +320,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f397d552da0>
+    <matplotlib.legend.Legend at 0x7f40bef36da0>
 
 
 
@@ -377,20 +365,20 @@ later use) for the first time.
     DC2_DONOTUSE_El1 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_u.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_u.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_g.AB....
     DC2_DONOTUSE_El1 DC2LSST_g
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_g.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/DC2_DONOTUSE_El1.DC2LSST_g.AB
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_r.AB....
     DC2_DONOTUSE_El1 DC2LSST_r
     x_res[0] 3000.0
@@ -881,7 +869,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.6 s, sys: 192 ms, total: 26.8 s
+    CPU times: user 26.6 s, sys: 204 ms, total: 26.8 s
     Wall time: 26.8 s
 
 
@@ -889,7 +877,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3977e0df60>
+    <rail.core.data.QPHandle at 0x7f40b97fa1d0>
 
 
 
@@ -919,7 +907,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f397d36d7b0>
+    <matplotlib.legend.Legend at 0x7f40beda2680>
 
 
 
@@ -1050,7 +1038,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f397d16c2b0>
+    <matplotlib.legend.Legend at 0x7f40bec380d0>
 
 
 

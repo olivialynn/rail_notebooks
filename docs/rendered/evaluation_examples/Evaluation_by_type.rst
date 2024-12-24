@@ -69,11 +69,23 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  44.3M      0  0:00:01  0:00:01 --:--:-- 44.3M
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+      5 47.1M    5 2685k    0     0  1793k      0  0:00:26  0:00:01  0:00:25 1792k
+
+.. parsed-literal::
+
+      6 47.1M    6 3121k    0     0  1330k      0  0:00:36  0:00:02  0:00:34 1330k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  16.7M      0  0:00:02  0:00:02 --:--:-- 16.7M
 
 
 .. code:: ipython3
@@ -914,7 +926,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f973974ef50>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f4537582dd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1225,7 +1237,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f97456a6c80>
+    <qp.ensemble.Ensemble at 0x7f4537357dc0>
 
 
 

@@ -77,11 +77,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-     59 47.1M   59 28.1M    0     0  21.3M      0  0:00:02  0:00:01  0:00:01 21.3M
+     43 47.1M   43 20.4M    0     0  16.6M      0  0:00:02  0:00:01  0:00:01 16.6M
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  28.4M      0  0:00:01  0:00:01 --:--:-- 28.4M
+    100 47.1M  100 47.1M    0     0  25.5M      0  0:00:01  0:00:01 --:--:-- 25.5M
 
 
 .. code:: ipython3
@@ -922,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f3b0f0edc30>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f5c0c466fb0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1233,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f3b0ee84b50>
+    <qp.ensemble.Ensemble at 0x7f5c0c21d120>
 
 
 
@@ -1392,6 +1392,10 @@ are perfect.
 .. parsed-literal::
 
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+
+
+.. parsed-literal::
+
     PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 

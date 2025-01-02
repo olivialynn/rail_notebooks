@@ -111,6 +111,10 @@ imports.
     Imported rail.hub
     Imported rail.interfaces
     Imported rail.pzflow
+
+
+.. parsed-literal::
+
     Imported rail.sklearn
 
 
@@ -614,7 +618,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc206517ca0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1ea092bfa0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -633,7 +637,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc206517ca0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1ea092bfa0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

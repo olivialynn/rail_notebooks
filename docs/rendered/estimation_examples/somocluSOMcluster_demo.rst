@@ -98,11 +98,15 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  10.5M      0 --:--:-- --:--:-- --:--:-- 10.5M
+      5 9434k    5  499k    0     0   675k      0  0:00:13 --:--:--  0:00:13  675k
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  8548k      0  0:00:01  0:00:01 --:--:-- 8553k
 
 
 .. code:: ipython3
@@ -177,15 +181,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 8min 6s, sys: 656 ms, total: 8min 7s
-    Wall time: 2min 4s
+    CPU times: user 8min 22s, sys: 645 ms, total: 8min 22s
+    Wall time: 2min 8s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f57382f3f70>
+    <rail.core.data.ModelHandle at 0x7efcf896b7f0>
 
 
 
@@ -414,7 +418,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f56cbdb3eb0>
+    <rail.core.data.QPHandle at 0x7efc901669e0>
 
 
 
@@ -773,7 +777,7 @@ minimize the bias in average and standard deviation of galaxy redshifts.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f56dd958ac0>
+    <matplotlib.legend.Legend at 0x7efc906f4790>
 
 
 
@@ -826,7 +830,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f56de336bc0>
+    <rail.core.data.QPHandle at 0x7efc9062f4f0>
 
 
 
@@ -853,7 +857,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f56de336590>
+    <matplotlib.legend.Legend at 0x7efc9062ec50>
 
 
 
@@ -905,7 +909,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7121/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_7077/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       ax.legend(loc='upper right', fontsize=13);
 
 
@@ -913,7 +917,7 @@ bootstrap samples:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f56cbef14e0>
+    <matplotlib.legend.Legend at 0x7efc9030feb0>
 
 
 

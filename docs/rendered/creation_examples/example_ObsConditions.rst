@@ -212,12 +212,12 @@ Now let’s import the ObsCondition from rail.
 
     Loaded observing conditions from configuration file: 
     nside = 128, 
-    mask file:  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
-    weight file:  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
+    mask file:  /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
+    weight file:  /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
     tot_nVis_flag = True, 
     random_seed = 42, 
     map_dict contains the following items: 
-    {'m5': {'i': '/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits'}, 'nYrObs': 5.0}
+    {'m5': {'i': '/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits'}, 'nYrObs': 5.0}
 
 
 Let’s run the code and see how long it takes:
@@ -239,8 +239,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.16 s, sys: 75.2 ms, total: 3.23 s
-    Wall time: 3.23 s
+    CPU times: user 3.25 s, sys: 43 ms, total: 3.3 s
+    Wall time: 3.29 s
 
 
 .. code:: ipython3
@@ -468,12 +468,12 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
 
     Loaded observing conditions from configuration file: 
     nside = 128, 
-    mask file:  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
-    weight file:  /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
+    mask file:  /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
+    weight file:  /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
     tot_nVis_flag = True, 
     random_seed = 42, 
     map_dict contains the following items: 
-    {'airmass': '/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits', 'nYrObs': 5.0}
+    {'airmass': '/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits', 'nYrObs': 5.0}
 
 
 .. code:: ipython3

@@ -53,17 +53,17 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:134: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flowdf.loc[np.isclose(flowdf[col], 99.), col] = self.config.mag_limits[col]
 
 
@@ -89,7 +89,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f39245e69b0>
+    <rail.tools.flow_handle.FlowHandle at 0x7f611159dde0>
 
 
 
@@ -113,23 +113,23 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
 
 
@@ -141,23 +141,23 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.79' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.04' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '29.06' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '28.62' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.98' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/estimation/algos/pzflow_nf.py:214: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '27.05' has dtype incompatible with float32, please explicitly cast to a compatible dtype first.
       flow_df.loc[np.isclose(flow_df[col], 99.), col] = self.config.mag_limits[col]
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
 
 

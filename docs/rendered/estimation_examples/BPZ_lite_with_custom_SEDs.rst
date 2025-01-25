@@ -49,11 +49,18 @@ for bpz demo data:
 
 .. parsed-literal::
 
+     11  450k   11 52918    0     0  64584      0  0:00:07 --:--:--  0:00:07 64534
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0   429k      0  0:00:01  0:00:01 --:--:--  430k
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   503k      0 --:--:-- --:--:-- --:--:--  503k
+    100 83848  100 83848    0     0   128k      0 --:--:-- --:--:-- --:--:--  128k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -64,14 +71,7 @@ for bpz demo data:
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   125k      0 --:--:-- --:--:-- --:--:--  125k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   148k      0 --:--:-- --:--:-- --:--:--  148k100 83848  100 83848    0     0   148k      0 --:--:-- --:--:-- --:--:--  148k
+    100 83848  100 83848    0     0   198k      0 --:--:-- --:--:-- --:--:--  198k
 
 
 The files must be untarred and moved, as well:
@@ -204,21 +204,21 @@ specify those numbers of the three broad types.
     [0.5538811  0.41290803]
     [0.42501231 0.0116699 ]
     minimizing for type 0
-    best fit z0, alpha, km for type 0: [0.28096725 1.68903607 0.06555195]
+    best fit z0, alpha, km for type 0: [0.28089894 1.68880761 0.0655626 ]
     minimizing for type 1
-    best fit z0, alpha, km for type 1: [0.34551908 1.73734685 0.06583956]
+    best fit z0, alpha, km for type 1: [0.34557593 1.73745454 0.06583076]
     minimizing for type 2
-    best fit z0, alpha, km for type 2: [0.56781658 2.2350086  0.11552398]
+    best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 15.3 s, sys: 0 ns, total: 15.3 s
-    Wall time: 15.3 s
+    CPU times: user 9.49 s, sys: 689 μs, total: 9.49 s
+    Wall time: 9.49 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ff01c16bd60>
+    <rail.core.data.ModelHandle at 0x7fde1c2c5a20>
 
 
 
@@ -270,9 +270,9 @@ https://ui.adsabs.harvard.edu/abs/2000ApJ…536..571B/abstract
 
     {'fo_arr': array([0.5538811 , 0.41290803]),
      'kt_arr': array([0.42501231, 0.0116699 ]),
-     'zo_arr': array([0.28096725, 0.34551908, 0.56781658]),
-     'km_arr': array([0.06555195, 0.06583956, 0.11552398]),
-     'a_arr': array([1.68903607, 1.73734685, 2.2350086 ]),
+     'zo_arr': array([0.28089894, 0.34557593, 0.5679393 ]),
+     'km_arr': array([0.0655626 , 0.06583076, 0.11549469]),
+     'a_arr': array([1.68880761, 1.73745454, 2.23510956]),
      'mo': 20.0,
      'nt_array': [2, 3, 4]}
 
@@ -328,7 +328,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff014328190>
+    <matplotlib.legend.Legend at 0x7fddc9b37880>
 
 
 
@@ -877,15 +877,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26.8 s, sys: 164 ms, total: 27 s
-    Wall time: 26.9 s
+    CPU times: user 25.3 s, sys: 156 ms, total: 25.5 s
+    Wall time: 25.5 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ff00ebb2a10>
+    <rail.core.data.QPHandle at 0x7fddc8b16c80>
 
 
 
@@ -915,7 +915,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff01417f760>
+    <matplotlib.legend.Legend at 0x7fddc9bb38b0>
 
 
 
@@ -1046,7 +1046,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ff0140accd0>
+    <matplotlib.legend.Legend at 0x7fddc9376e90>
 
 
 

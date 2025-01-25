@@ -86,19 +86,15 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      1 47.1M    1  855k    0     0   827k      0  0:00:58  0:00:01  0:00:57  826k
 
 .. parsed-literal::
 
-     26 47.1M   26 12.7M    0     0  9046k      0  0:00:05  0:00:01  0:00:04 9042k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  20.4M      0  0:00:02  0:00:02 --:--:-- 20.4M
+     96 47.1M   96 45.5M    0     0  22.1M      0  0:00:02  0:00:02 --:--:-- 22.1M100 47.1M  100 47.1M    0     0  22.8M      0  0:00:02  0:00:02 --:--:-- 22.7M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -289,7 +285,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ff40299ffa0>
+    <qp.ensemble.Ensemble at 0x7f39ec6a7430>
 
 
 
@@ -302,10 +298,10 @@ detailed below).
 
 .. parsed-literal::
 
-    {'ad': Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001),
+    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
      'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
-     'ks': KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1),
-     'outlier_rate': 0.05873797877466336}
+     'ks': KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1)),
+     'outlier_rate': np.float64(0.05873797877466336)}
 
 
 
@@ -322,7 +318,7 @@ PIT values
 .. parsed-literal::
 
     array([0.19392947, 0.36675619, 0.52017547, ..., 1.        , 0.93189232,
-           0.4674437 ])
+           0.4674437 ], shape=(20449,))
 
 
 
@@ -412,8 +408,8 @@ class returns a named tuple with the statistic and p-value.
 
 .. parsed-literal::
 
-    PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
-    PIT KS stat and pval: KstestResult(statistic=0.033590049370962216, pvalue=1.7621068075751534e-20, statistic_location=0.9921210288809627, statistic_sign=-1)
+    PIT KS stat and pval: KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1))
+    PIT KS stat and pval: KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1))
 
 
 Visual interpretation of the KS statistic:
@@ -492,8 +488,8 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
-    PIT AD stat and pval: Anderson_ksampResult(statistic=84.95623553609381, critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=0.001)
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 
 .. code:: ipython3
@@ -567,7 +563,7 @@ depending on the true conditional densities :math:`f(z | x)`.
 
 .. parsed-literal::
 
-    stat_and_pval(statistic=-6.725602928688286, p_value=nan)
+    stat_and_pval(statistic=np.float64(-6.725602928688286), p_value=nan)
 
 
 

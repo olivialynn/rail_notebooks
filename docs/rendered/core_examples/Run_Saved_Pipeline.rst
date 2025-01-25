@@ -72,16 +72,31 @@ with ``pipe_example.config.yml``:
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has failed with status 1
+    Job lsst_error_model_test has completed successfully!
+
+
+.. parsed-literal::
+
+    
+    Executing col_remapper_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_example_config.yml   --output=./output_col_remapper_test.pq 
+    Output writing to ./col_remapper_test.out
+    
+
+
+.. parsed-literal::
+
+    Job col_remapper_test has failed with status 1
 
 
 .. parsed-literal::
 
     
     *************************************************
-    Error running pipeline stage lsst_error_model_test.
+    Error running pipeline stage col_remapper_test.
     
-    Standard output and error streams in ./lsst_error_model_test.out
+    Standard output and error streams in ./col_remapper_test.out
     *************************************************
 
 

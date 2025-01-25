@@ -82,6 +82,12 @@ The blending model
      'dec_label': 'dec',
      'linking_lengths': 1.0,
      'bands': ['u', 'g', 'r', 'i', 'z', 'y'],
+     'zp_dict': {'u': 12.65,
+      'g': 14.69,
+      'r': 14.56,
+      'i': 14.38,
+      'z': 13.99,
+      'y': 13.02},
      'ref_band': 'i',
      'redshift_col': 'z_true',
      'match_size': False,
@@ -91,12 +97,6 @@ The blending model
      'b': 'semi_minor',
      'theta': 'orientation',
      'name': 'unrec_bl_model',
-     'zp_dict': {'u': 12.65,
-      'g': 14.69,
-      'r': 14.56,
-      'i': 14.38,
-      'z': 13.99,
-      'y': 13.02},
      'config': None}
 
 
@@ -213,7 +213,7 @@ Study one BL case
     [0.00357097 0.0035673 ] / 0.003569132125408952
     
     Truth mag u / Blended mag u:
-    [23.12467992 27.43355146] / 23.10435149502577
+    [23.12467992 27.43355146] / 23.104351495025767
     
     Truth mag g / Blended mag g:
     [26.39370779 19.88464395] / 19.881942741966597
@@ -222,7 +222,7 @@ Study one BL case
     [25.81503995 28.68416307] / 25.74038501513187
     
     Truth mag i / Blended mag i:
-    [23.53444254 25.84007306] / 23.41178087442284
+    [23.53444254 25.84007306] / 23.411780874422835
     
     Truth mag z / Blended mag z:
     [24.0223827  20.39059976] / 20.35297579436854

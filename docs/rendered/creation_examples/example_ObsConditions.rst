@@ -17,7 +17,7 @@ each pixel. The degrader takes the following arguments:
 -  ``mask``: Path to the mask covering the survey footprint in HEALPIX
    format. Notice that all negative values will be set to zero.
 -  ``weight``: Path to the weights HEALPIX format, used to assign sample
-   galaxies in pixels. Default is weight="", which uniform weighting.
+   galaxies in pixels. Default is weight=““, which uniform weighting.
 -  ``tot_nVis_flag``: If ``nVisYr`` is provided in ``map_dict`` (see
    below), this flag indicates whether the map shows the total number of
    visits in nYrObs (``tot_nVis_flag=True``), or the average number of
@@ -239,8 +239,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.18 s, sys: 63.6 ms, total: 3.25 s
-    Wall time: 3.24 s
+    CPU times: user 3.13 s, sys: 43.1 ms, total: 3.17 s
+    Wall time: 3.17 s
 
 
 .. code:: ipython3

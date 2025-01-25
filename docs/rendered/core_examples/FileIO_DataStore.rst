@@ -503,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1c98f28d60>
+    <rail.core.data.ModelHandle at 0x7f9da5291fc0>
 
 
 
@@ -529,7 +529,7 @@ kwarg ``output="KNNPZ_estimates.hdf5"`` *if no output is specified* then
 the DataStore will construct its own name based on the name of the
 stage, and it will also default to a particular storage format, in the
 case of many of the estimator codes this is a FITS file titled
-“output_[stage name].fits”.
+“output\_[stage name].fits”.
 
 .. code:: ipython3
 
@@ -586,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1c4ac1dc00>
+    <matplotlib.legend.Legend at 0x7f9da5293490>
 
 
 
@@ -616,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1c4b232500>
+    <matplotlib.legend.Legend at 0x7f9da4f85450>
 
 
 

@@ -171,63 +171,63 @@ A couple of things are important:
       <tbody>
         <tr>
           <th>0</th>
-          <td>22.734173</td>
-          <td>22.580509</td>
-          <td>24.027840</td>
-          <td>22.996883</td>
-          <td>0.739296</td>
-          <td>25.822563</td>
-          <td>25.088484</td>
+          <td>24.594986</td>
+          <td>24.570778</td>
+          <td>25.783264</td>
+          <td>24.938288</td>
+          <td>0.936011</td>
+          <td>26.480864</td>
+          <td>26.258892</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.666660</td>
-          <td>22.415169</td>
-          <td>23.995960</td>
-          <td>23.025354</td>
-          <td>0.644894</td>
-          <td>27.391764</td>
-          <td>25.447910</td>
+          <td>24.684788</td>
+          <td>24.592598</td>
+          <td>25.261061</td>
+          <td>24.813164</td>
+          <td>0.533285</td>
+          <td>27.151110</td>
+          <td>26.398909</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>21.013422</td>
-          <td>20.779903</td>
-          <td>21.757725</td>
-          <td>21.298742</td>
-          <td>0.348834</td>
-          <td>23.999668</td>
-          <td>22.884043</td>
+          <td>23.247032</td>
+          <td>22.965092</td>
+          <td>24.729795</td>
+          <td>23.638914</td>
+          <td>0.681911</td>
+          <td>28.184904</td>
+          <td>26.186884</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>24.050123</td>
-          <td>23.818220</td>
-          <td>24.271830</td>
-          <td>24.152014</td>
-          <td>1.623727</td>
-          <td>24.338676</td>
-          <td>24.272142</td>
+          <td>23.275984</td>
+          <td>23.122801</td>
+          <td>23.863182</td>
+          <td>23.495565</td>
+          <td>0.253598</td>
+          <td>26.024168</td>
+          <td>24.765564</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>23.140982</td>
-          <td>23.095510</td>
-          <td>23.577923</td>
-          <td>23.190630</td>
-          <td>0.551647</td>
-          <td>25.136570</td>
-          <td>24.586559</td>
+          <td>24.266459</td>
+          <td>24.178432</td>
+          <td>25.198423</td>
+          <td>24.424181</td>
+          <td>0.751606</td>
+          <td>25.833294</td>
+          <td>25.687542</td>
         </tr>
         <tr>
           <th>5</th>
-          <td>21.022926</td>
-          <td>20.927565</td>
-          <td>22.416426</td>
-          <td>21.435768</td>
-          <td>0.839687</td>
-          <td>23.225256</td>
-          <td>23.068544</td>
+          <td>24.207100</td>
+          <td>24.205320</td>
+          <td>25.288635</td>
+          <td>24.442965</td>
+          <td>0.892297</td>
+          <td>25.842955</td>
+          <td>25.672916</td>
         </tr>
       </tbody>
     </table>
@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fd593fd1780>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7fd593fd2bf0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fe8fb466530>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7fe8fb467d90>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7fd593fd1d80>]),
+       <rail.tools.table_tools.TableConverter at 0x7fe8fb4665f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -440,24 +440,44 @@ each case.
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has failed with status 1
+    Job lsst_error_model_test has completed successfully!
 
 
 .. parsed-literal::
 
     
-    *************************************************
-    Error running pipeline stage lsst_error_model_test.
+    Executing col_remapper_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+    Output writing to ./col_remapper_test.out
     
-    Standard output and error streams in ./lsst_error_model_test.out
-    *************************************************
+
+
+.. parsed-literal::
+
+    Job col_remapper_test has completed successfully!
+
+
+.. parsed-literal::
+
+    
+    Executing table_conv_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+    Output writing to ./table_conv_test.out
+    
+
+
+.. parsed-literal::
+
+    Job table_conv_test has completed successfully!
 
 
 
 
 .. parsed-literal::
 
-    1
+    0
 
 
 
@@ -510,12 +530,32 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has failed with status 1
+    Job lsst_error_model_test has completed successfully!
     
-    *************************************************
-    Error running pipeline stage lsst_error_model_test.
+    Executing col_remapper_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.ColumnMapper   --input=./output_lsst_error_model_test.pq   --name=col_remapper_test   --config=pipe_saved_config.yml   --output=./output_col_remapper_test.pq 
+    Output writing to ./col_remapper_test.out
     
-    Standard output and error streams in ./lsst_error_model_test.out
-    *************************************************
-    Pipeline failed.  No joy sparked.
+
+
+.. parsed-literal::
+
+    Job col_remapper_test has completed successfully!
+    
+    Executing table_conv_test
+    Command is:
+    OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
+    Output writing to ./table_conv_test.out
+    
+
+
+.. parsed-literal::
+
+    Job table_conv_test has completed successfully!
+
+
+.. parsed-literal::
+
+    Pipeline successful.  Joy is sparked.
 

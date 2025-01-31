@@ -167,7 +167,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 12s, sys: 363 ms, total: 5min 12s
+    CPU times: user 5min 12s, sys: 189 ms, total: 5min 12s
     Wall time: 1min 20s
 
 
@@ -175,7 +175,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f651c9e7130>
+    <rail.core.data.ModelHandle at 0x7fd8f80e7820>
 
 
 
@@ -244,7 +244,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7284/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7469/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -397,7 +397,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f64bda21270>
+    <rail.core.data.QPHandle at 0x7fd8992d84c0>
 
 
 
@@ -433,7 +433,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f64bda20d90>
+    <matplotlib.legend.Legend at 0x7fd8992d9d80>
 
 
 
@@ -490,7 +490,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f64bdabfe20>
+    <rail.core.data.QPHandle at 0x7fd899073d30>
 
 
 
@@ -517,7 +517,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f64bdabf550>
+    <matplotlib.legend.Legend at 0x7fd899072ef0>
 
 
 
@@ -547,42 +547,48 @@ bootstrap samples:
 
 .. code:: ipython3
 
-    fig, ax=plt.subplots(1,1,figsize=(12, 8))
+    fig, ax=plt.subplots(1,1,figsize=(8, 8))
     ax.set_xlim((0,1))
-    ax.set_xlabel("redshift", fontsize=15)
-    ax.set_ylabel("bootstrap N(z)", fontsize=15)
-    ax.legend(loc='upper right', fontsize=13);
+    ax.set_xlabel("redshift", fontsize=20)
+    ax.set_ylabel("N(z)", fontsize=20)
     
-    ax.plot(zbin, bright_nz_hist, label='True N(z), bright', color='C1', zorder=1)
-    ax.plot(zbin, bright_som_nz_hist, label='SOM mean N(z), bright', color='k', zorder=2)
+    ax.plot(zbin, bright_nz_hist, lw=2, label='True N(z)', color='C1', zorder=1)
+    ax.plot(zbin, bright_som_nz_hist, lw=2, label='SOM mean N(z)', color='k', zorder=2)
     
     for i in range(boot_ens.npdf):
         #ax = plt.subplot(2,3,i+1)
         pdf = np.squeeze(boot_ens[i].pdf(zbin))
         if i == 0:        
-            ax.plot(zbin, pdf, color='C2',zorder=0, alpha=0.5, label='SOM bootstrap N(z) samples, bright')
+            ax.plot(zbin, pdf, color='C2',zorder=0, lw=2, alpha=0.5, label='SOM N(z) samples')
         else:
-            ax.plot(zbin, pdf, color='C2',zorder=0, alpha=0.5)
+            ax.plot(zbin, pdf, color='C2',zorder=0, lw=2, alpha=0.5)
         #boot_ens[i].plot_native(axes=ax, label=f'SOM bootstrap {i}')
-    plt.legend(fontsize=15)
+    plt.legend(fontsize=20)
+    plt.xlim(0, 1.5)
+    
+    plt.xticks(fontsize=18)
+    plt.yticks(fontsize=18)
+
+
+
 
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7284/4031386170.py:5: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
-      ax.legend(loc='upper right', fontsize=13);
+    (array([-1.,  0.,  1.,  2.,  3.,  4.,  5.,  6.]),
+     [Text(0, -1.0, '−1'),
+      Text(0, 0.0, '0'),
+      Text(0, 1.0, '1'),
+      Text(0, 2.0, '2'),
+      Text(0, 3.0, '3'),
+      Text(0, 4.0, '4'),
+      Text(0, 5.0, '5'),
+      Text(0, 6.0, '6')])
 
 
 
 
-.. parsed-literal::
-
-    <matplotlib.legend.Legend at 0x7f64bd695450>
-
-
-
-
-.. image:: ../../../docs/rendered/estimation_examples/somocluSOM_demo_files/../../../docs/rendered/estimation_examples/somocluSOM_demo_50_2.png
+.. image:: ../../../docs/rendered/estimation_examples/somocluSOM_demo_files/../../../docs/rendered/estimation_examples/somocluSOM_demo_50_1.png
 
 
 Quantitative metrics
@@ -696,3 +702,29 @@ However, we have not consider the photometric error in magnitudes and
 colors, as well as additional color selections. Our sample is also
 limited. This demo only serves as a preliminary implementation of SOM in
 RAIL.
+
+.. code:: ipython3
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    clgg = {}
+    for i in range(5):
+        clgg['tomo_bin'+str(i+1)] = np.random.random(100)
+        
+    for i in range(5):
+        plt.plot(np.arange(100), clgg['tomo_bin'+str(i+1)], label='tomo_bin'+str(i+1))
+    plt.legend()
+
+
+
+
+.. parsed-literal::
+
+    <matplotlib.legend.Legend at 0x7fd892343460>
+
+
+
+
+.. image:: ../../../docs/rendered/estimation_examples/somocluSOM_demo_files/../../../docs/rendered/estimation_examples/somocluSOM_demo_60_1.png
+

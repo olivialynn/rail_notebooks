@@ -819,8 +819,8 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    array([1.07182461, 1.35668927, 1.56375463, 4.83102594, 2.48537537,
-           3.28650675, 2.64576631, 2.38672804])
+    array([0.99751831, 2.37893624, 2.14804959, 7.20831464, 2.18093417,
+           5.07480432, 2.19060571, 2.21372888])
 
 
 
@@ -852,7 +852,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f85e1d95660>
+    <matplotlib.legend.Legend at 0x7f180c951450>
 
 
 

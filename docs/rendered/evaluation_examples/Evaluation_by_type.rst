@@ -73,11 +73,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0  199k    0     0   398k      0  0:02:01 --:--:--  0:02:01  397k
+      0 47.1M    0 44755    0     0  54850      0  0:15:00 --:--:--  0:15:00 54846
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  35.3M      0  0:00:01  0:00:01 --:--:-- 35.3M
+     74 47.1M   74 35.2M    0     0  19.4M      0  0:00:02  0:00:01  0:00:01 19.4M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  23.2M      0  0:00:02  0:00:02 --:--:-- 23.2M
 
 
 .. code:: ipython3
@@ -517,6 +521,10 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 .. parsed-literal::
 
     Requested metrics: ['cdeloss', 'pit', 'brier']
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 0 - 10000.
 
 
@@ -918,7 +926,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f0e6abf3460>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f27b007a3e0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1014,14 +1022,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 10000 - 11000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1225,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f0e73e22770>
+    <qp.ensemble.Ensemble at 0x7f27b00ee620>
 
 
 

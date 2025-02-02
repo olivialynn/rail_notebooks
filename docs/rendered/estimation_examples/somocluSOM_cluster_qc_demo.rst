@@ -78,11 +78,11 @@ First read the target and spec catalogue from a pre-trained pzflow stage.
 
 .. parsed-literal::
 
-      0 9434k    0 11989    0     0  19150      0  0:08:24 --:--:--  0:08:24 19151
+      0 9434k    0 44757    0     0   111k      0  0:01:24 --:--:--  0:01:24  110k
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  7696k      0  0:00:01  0:00:01 --:--:-- 7701k
+    100 9434k  100 9434k    0     0  14.4M      0 --:--:-- --:--:-- --:--:-- 14.4M
 
 
 .. code:: ipython3
@@ -199,7 +199,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f0c1fa27f10>
+    <rail.core.data.QPHandle at 0x7ffb20b95a50>
 
 
 
@@ -222,7 +222,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f0c1fa7eb90>
+    <rail.core.data.QPHandle at 0x7ffb20bf2110>
 
 
 
@@ -331,7 +331,7 @@ cut the data to make a tomographic bin
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f0c1d6925f0>
+    <matplotlib.legend.Legend at 0x7ffb1e7aa5f0>
 
 
 
@@ -395,15 +395,15 @@ colors in this example notebook.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 2min 8s, sys: 95.7 ms, total: 2min 8s
-    Wall time: 33.6 s
+    CPU times: user 2min 11s, sys: 63.5 ms, total: 2min 11s
+    Wall time: 33.7 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f0c1d65ed40>
+    <rail.core.data.ModelHandle at 0x7ffb7c8d69b0>
 
 
 
@@ -464,7 +464,7 @@ Summarize the SOM with target data and spectroscopic reference
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f0c1d6f7fd0>
+    <rail.core.data.QPHandle at 0x7ffb1e60faf0>
 
 
 

@@ -78,11 +78,11 @@ First read the target and spec catalogue from a pre-trained pzflow stage.
 
 .. parsed-literal::
 
-      0 9434k    0 44757    0     0   111k      0  0:01:24 --:--:--  0:01:24  110k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  14.4M      0 --:--:-- --:--:-- --:--:-- 14.4M
+    100 9434k  100 9434k    0     0  7289k      0  0:00:01  0:00:01 --:--:-- 7290k
 
 
 .. code:: ipython3
@@ -199,7 +199,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ffb20b95a50>
+    <rail.core.data.QPHandle at 0x7f971afcd9c0>
 
 
 
@@ -222,7 +222,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ffb20bf2110>
+    <rail.core.data.QPHandle at 0x7f971b026b90>
 
 
 
@@ -331,7 +331,7 @@ cut the data to make a tomographic bin
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7ffb1e7aa5f0>
+    <matplotlib.legend.Legend at 0x7f9718bb6710>
 
 
 
@@ -395,15 +395,15 @@ colors in this example notebook.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 2min 11s, sys: 63.5 ms, total: 2min 11s
-    Wall time: 33.7 s
+    CPU times: user 2min 11s, sys: 57.7 ms, total: 2min 11s
+    Wall time: 33.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7ffb7c8d69b0>
+    <rail.core.data.ModelHandle at 0x7f9718b9fa30>
 
 
 
@@ -464,7 +464,7 @@ Summarize the SOM with target data and spectroscopic reference
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7ffb1e60faf0>
+    <rail.core.data.QPHandle at 0x7f9718a37bb0>
 
 
 
@@ -779,11 +779,11 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7159/1549956096.py:3: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/1549956096.py:3: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)], np.linspace(0,3,101))
-    /tmp/ipykernel_7159/1549956096.py:11: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/1549956096.py:11: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)])
-    /tmp/ipykernel_7159/1549956096.py:12: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/1549956096.py:12: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)])
 
 
@@ -857,11 +857,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qc1 was not generated.
-    /tmp/ipykernel_7159/4069415879.py:19: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/4069415879.py:19: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qc1_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)], np.linspace(0,3,101))
-    /tmp/ipykernel_7159/4069415879.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/4069415879.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qc1 = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)])
-    /tmp/ipykernel_7159/4069415879.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/4069415879.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qc1 = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)])
 
 
@@ -936,11 +936,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qc2 was not generated.
-    /tmp/ipykernel_7159/2860531574.py:20: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2860531574.py:20: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qc2_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)], np.linspace(0,3,101))
-    /tmp/ipykernel_7159/2860531574.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2860531574.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qc2 = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)])
-    /tmp/ipykernel_7159/2860531574.py:26: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2860531574.py:26: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qc2 = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)])
 
 
@@ -1013,11 +1013,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qccombined was not generated.
-    /tmp/ipykernel_7159/2929519640.py:18: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2929519640.py:18: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qccombined_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)], np.linspace(0,3,101))
-    /tmp/ipykernel_7159/2929519640.py:23: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2929519640.py:23: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qccombined = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)])
-    /tmp/ipykernel_7159/2929519640.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7156/2929519640.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qccombined = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)])
 
 
@@ -1118,7 +1118,7 @@ for the four cases
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7159/2502127049.py:8: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+    /tmp/ipykernel_7156/2502127049.py:8: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
       ax.set_yticklabels(['SOM N(z), QC1+QC2', 'SOM N(z), QC2','SOM N(z), QC1', 'SOM N(z)'])
 
 

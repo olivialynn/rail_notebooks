@@ -619,15 +619,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.4 s, sys: 162 ms, total: 23.5 s
-    Wall time: 23.5 s
+    CPU times: user 23.2 s, sys: 148 ms, total: 23.4 s
+    Wall time: 23.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f1485e8f640>
+    <rail.core.data.QPHandle at 0x7f892541b490>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1485c23bb0>
+    <matplotlib.legend.Legend at 0x7f89252a3ee0>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1485abc940>
+    <matplotlib.legend.Legend at 0x7f8922f349a0>
 
 
 
@@ -2503,7 +2503,7 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 1min 17s, sys: 185 ms, total: 1min 17s
+    CPU times: user 1min 17s, sys: 184 ms, total: 1min 17s
     Wall time: 1min 17s
 
 
@@ -2641,15 +2641,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.74 s, sys: 3 ms, total: 9.74 s
-    Wall time: 9.74 s
+    CPU times: user 9.76 s, sys: 4.98 ms, total: 9.76 s
+    Wall time: 9.76 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1483921e70>
+    <rail.core.data.ModelHandle at 0x7f8922fbd4e0>
 
 
 
@@ -2759,7 +2759,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1482781180>
+    <matplotlib.legend.Legend at 0x7f8921ddd180>
 
 
 
@@ -2835,7 +2835,7 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 13 s, sys: 123 ms, total: 13.1 s
+    CPU times: user 12.9 s, sys: 128 ms, total: 13.1 s
     Wall time: 13.1 s
 
 
@@ -2843,7 +2843,7 @@ results are any different:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f14839693f0>
+    <rail.core.data.QPHandle at 0x7f895dd22ec0>
 
 
 
@@ -2870,7 +2870,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f14827f1d80>
+    <matplotlib.legend.Legend at 0x7f8920b45540>
 
 
 
@@ -2960,7 +2960,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f14b1dd36a0>
+    <matplotlib.legend.Legend at 0x7f895ddaa4d0>
 
 
 

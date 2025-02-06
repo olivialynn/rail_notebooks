@@ -107,23 +107,23 @@ imports.
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
     Imported rail.fsps
+
+
+.. parsed-literal::
+
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
-
-
-.. parsed-literal::
-
     Imported rail.pzflow
-    Imported rail.sklearn
 
 
 .. parsed-literal::
 
+    Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 12 base classes and 81 fully formed stages to rail.stages
+    Attached 12 base classes and 82 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -267,6 +267,7 @@ we get.
     <class 'rail.estimation.algos.minisom_som.MiniSOMSummarizer'>
     <class 'rail.estimation.algos.somoclu_som.SOMocluInformer'>
     <class 'rail.estimation.algos.somoclu_som.SOMocluSummarizer'>
+    <class 'rail.creation.degraders.specz_som.SOMSpecSelector'>
 
 
 We can use this list of imported stages to browse for specifics, such as
@@ -619,7 +620,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb96f40beb0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f90404e2d10>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -638,7 +639,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb96f40beb0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f90404e2d10>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

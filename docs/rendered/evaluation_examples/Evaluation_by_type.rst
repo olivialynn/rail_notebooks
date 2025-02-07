@@ -73,11 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 11978    0     0  27030      0  0:30:28 --:--:--  0:30:28 26977
+     17 47.1M   17 8535k    0     0  8567k      0  0:00:05 --:--:--  0:00:05 8561k
 
 .. parsed-literal::
 
-     79 47.1M   79 37.5M    0     0  27.6M      0  0:00:01  0:00:01 --:--:-- 27.6M100 47.1M  100 47.1M    0     0  31.2M      0  0:00:01  0:00:01 --:--:-- 31.2M
+    100 47.1M  100 47.1M    0     0  30.9M      0  0:00:01  0:00:01 --:--:-- 30.9M
 
 
 .. code:: ipython3
@@ -918,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f9fc078a3e0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f261176a470>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1062,6 +1062,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1225,7 +1229,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f9fc8b0dcf0>
+    <qp.ensemble.Ensemble at 0x7f261176a4a0>
 
 
 

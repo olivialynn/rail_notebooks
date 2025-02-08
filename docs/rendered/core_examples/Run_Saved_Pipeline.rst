@@ -57,7 +57,7 @@ with ``pipe_example.config.yml``:
 
 .. parsed-literal::
 
-    Job flow_engine_test has completed successfully!
+    Job flow_engine_test has completed successfully in 6.0 seconds seconds !
 
 
 .. parsed-literal::
@@ -72,7 +72,7 @@ with ``pipe_example.config.yml``:
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully!
+    Job lsst_error_model_test has completed successfully in 3.0 seconds seconds !
 
 
 .. parsed-literal::
@@ -95,6 +95,7 @@ with ``pipe_example.config.yml``:
     
     *************************************************
     Error running pipeline stage col_remapper_test.
+    Failed after 3.0 seconds.
     
     Standard output and error streams in ./col_remapper_test.out
     *************************************************

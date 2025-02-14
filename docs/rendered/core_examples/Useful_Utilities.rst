@@ -30,27 +30,28 @@ be what we get by importing ``rail`` and ``rail.stages``.
 
 .. parsed-literal::
 
-    <class 'rail.estimation.estimator.CatEstimator'>
-    <class 'rail.estimation.classifier.PZClassifier'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
-    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
-    <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
-    <class 'rail.estimation.algos.train_z.TrainZInformer'>
-    <class 'rail.estimation.algos.train_z.TrainZEstimator'>
-    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
-    <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
-    <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
-    <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
-    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
     <class 'rail.creation.noisifier.Noisifier'>
     <class 'rail.creation.degraders.addRandom.AddColumnOfRandom'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
+    <class 'rail.estimation.classifier.PZClassifier'>
+    <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
+    <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
+    <class 'rail.estimation.algos.train_z.TrainZInformer'>
+    <class 'rail.estimation.algos.train_z.TrainZEstimator'>
+    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
+    <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
+    <class 'rail.evaluation.evaluator.Evaluator'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
@@ -111,16 +112,16 @@ imports.
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
+    Imported rail.pzflow
 
 
 .. parsed-literal::
 
-    Imported rail.pzflow
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 12 base classes and 84 fully formed stages to rail.stages
+    Attached 11 base classes and 85 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -183,27 +184,28 @@ we get.
 
 .. parsed-literal::
 
-    <class 'rail.estimation.estimator.CatEstimator'>
-    <class 'rail.estimation.classifier.PZClassifier'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
-    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
-    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
-    <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
-    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
-    <class 'rail.estimation.algos.train_z.TrainZInformer'>
-    <class 'rail.estimation.algos.train_z.TrainZEstimator'>
-    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
-    <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
-    <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
-    <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
-    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
     <class 'rail.creation.noisifier.Noisifier'>
     <class 'rail.creation.degraders.addRandom.AddColumnOfRandom'>
     <class 'rail.creation.selector.Selector'>
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
+    <class 'rail.estimation.classifier.PZClassifier'>
+    <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
+    <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistInformer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
+    <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
+    <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
+    <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
+    <class 'rail.estimation.algos.train_z.TrainZInformer'>
+    <class 'rail.estimation.algos.train_z.TrainZEstimator'>
+    <class 'rail.estimation.algos.true_nz.TrueNZHistogrammer'>
+    <class 'rail.estimation.algos.uniform_binning.UniformBinningClassifier'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackInformer'>
+    <class 'rail.estimation.algos.var_inf.VarInfStackSummarizer'>
+    <class 'rail.evaluation.evaluator.Evaluator'>
     <class 'rail.evaluation.evaluator.OldEvaluator'>
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
@@ -620,7 +622,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7ffab2bf3d30>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4acb0adba0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -639,7 +641,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ffab2bf3d30>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4acb0adba0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

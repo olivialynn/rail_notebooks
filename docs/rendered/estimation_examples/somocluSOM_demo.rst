@@ -104,7 +104,7 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  7661k      0  0:00:01  0:00:01 --:--:-- 7664k
+     18 9434k   18 1711k    0     0  1482k      0  0:00:06  0:00:01  0:00:05 1481k100 9434k  100 9434k    0     0  7166k      0  0:00:01  0:00:01 --:--:-- 7163k
 
 
 .. code:: ipython3
@@ -183,15 +183,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 12s, sys: 145 ms, total: 5min 12s
-    Wall time: 1min 19s
+    CPU times: user 5min 12s, sys: 383 ms, total: 5min 13s
+    Wall time: 1min 20s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7efe7b150ac0>
+    <rail.core.data.ModelHandle at 0x7f7c1c4e7e80>
 
 
 
@@ -260,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_5930/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_5949/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7efe674466e0>
+    <rail.core.data.QPHandle at 0x7f7bbd61a320>
 
 
 
@@ -449,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efe67444640>
+    <matplotlib.legend.Legend at 0x7f7bbd619c60>
 
 
 
@@ -506,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7efe67211270>
+    <rail.core.data.QPHandle at 0x7f7bbd6e5750>
 
 
 
@@ -533,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efe672106a0>
+    <matplotlib.legend.Legend at 0x7f7bbd6e5fc0>
 
 
 
@@ -737,7 +737,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efe66e6cfa0>
+    <matplotlib.legend.Legend at 0x7f7bb67963e0>
 
 
 

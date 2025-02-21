@@ -118,10 +118,14 @@ imports.
 
     Imported rail.pzflow
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 11 base classes and 85 fully formed stages to rail.stages
+    Attached 15 base classes and 80 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -622,7 +626,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4c06eb9d20>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4a37157a60>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -641,7 +645,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4c06eb9d20>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4a37157a60>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

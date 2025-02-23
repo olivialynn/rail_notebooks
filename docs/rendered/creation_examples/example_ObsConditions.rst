@@ -239,8 +239,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.24 s, sys: 57.3 ms, total: 3.3 s
-    Wall time: 3.29 s
+    CPU times: user 3.16 s, sys: 44.9 ms, total: 3.21 s
+    Wall time: 3.2 s
 
 
 .. code:: ipython3

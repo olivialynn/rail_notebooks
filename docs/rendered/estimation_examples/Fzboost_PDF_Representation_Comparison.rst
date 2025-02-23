@@ -77,23 +77,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:01] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -101,35 +97,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:03] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:52] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -137,39 +117,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:04] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:53] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:04] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:53] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:04] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:53] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:04] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:05] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:05] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:05] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:05] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:53] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -177,23 +137,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -201,23 +157,15 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:07] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:07] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:07] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:07] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -225,23 +173,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:08] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:08] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:08] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:08] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -249,11 +193,43 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:09] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:56] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:09] WARNING: /workspace/src/learner.cc:740: 
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:57] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:57] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:57] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:57] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:58] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:00:58] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -276,39 +252,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:59] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:47] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:59] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:47] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:59] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:47] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:02:59] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:00] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:00] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:00] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:00] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:47] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -316,27 +272,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:48] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:48] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:01] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:48] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:01] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:48] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -344,35 +292,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:49] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:49] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:02] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:49] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:03] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:03] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:49] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -380,19 +312,11 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:04] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:50] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:04] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:04] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:04] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:50] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -400,19 +324,15 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:05] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:50] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:05] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:50] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:05] WARNING: /workspace/src/learner.cc:740: 
-    Parameters: { "silent" } are not used.
-    
-      warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:05] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -420,11 +340,71 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:51] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:03:06] WARNING: /workspace/src/learner.cc:740: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:51] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:51] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:52] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:52] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:52] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:52] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:53] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:53] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:53] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:53] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:54] WARNING: /workspace/src/learner.cc:740: 
+    Parameters: { "silent" } are not used.
+    
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:01:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
       warnings.warn(smsg, UserWarning)
@@ -433,15 +413,15 @@ file name ``demo_FZB_model.pkl``.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 57 s, sys: 1.04 s, total: 58.1 s
-    Wall time: 1min 7s
+    CPU times: user 55.8 s, sys: 1 s, total: 56.8 s
+    Wall time: 1min 5s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f7e27e3b040>
+    <rail.core.data.ModelHandle at 0x7fa2fbf4f850>
 
 
 
@@ -496,13 +476,9 @@ basis functions.
 
     Process 0 running estimator on chunk 20000 - 20449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-
-
-.. parsed-literal::
-
     File Size is : 2870476 bytes
-    CPU times: user 561 ms, sys: 67.2 ms, total: 628 ms
-    Wall time: 1.37 s
+    CPU times: user 521 ms, sys: 72.4 ms, total: 593 ms
+    Wall time: 1.33 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -525,8 +501,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 8.92 s, sys: 16.4 ms, total: 8.93 s
-    Wall time: 8.58 s
+    CPU times: user 8.7 s, sys: 12.5 ms, total: 8.71 s
+    Wall time: 8.37 s
 
 
 .. code:: ipython3
@@ -537,8 +513,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 10.9 s, sys: 43.7 ms, total: 11 s
-    Wall time: 10.6 s
+    CPU times: user 10.7 s, sys: 45.8 ms, total: 10.8 s
+    Wall time: 10.4 s
 
 
 Plotting median values.
@@ -568,7 +544,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    8.06 s ± 60.3 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    7.82 s ± 49.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 Now we’ll repeat the experiment using ``qp.interp`` storage. Again,
@@ -630,8 +606,8 @@ experiment, we used 35 basis functions.
 .. parsed-literal::
 
     File Size is : 49248094 bytes
-    CPU times: user 12.3 s, sys: 171 ms, total: 12.4 s
-    Wall time: 12.2 s
+    CPU times: user 12 s, sys: 163 ms, total: 12.2 s
+    Wall time: 11.9 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -654,7 +630,7 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    829 ms ± 4.52 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    843 ms ± 3.99 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 .. code:: ipython3
@@ -665,8 +641,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 205 ms, sys: 76.3 ms, total: 282 ms
-    Wall time: 281 ms
+    CPU times: user 201 ms, sys: 78.3 ms, total: 280 ms
+    Wall time: 280 ms
 
 
 Plotting median values.
@@ -702,7 +678,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    38.5 ms ± 453 μs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+    37.3 ms ± 365 μs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 
 
 We’ll clean up the files that were produced: the model pickle file, and

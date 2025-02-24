@@ -311,7 +311,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  24.4M      0  0:00:01  0:00:01 --:--:-- 24.4M
+     95 32.6M   95 31.0M    0     0  25.9M      0  0:00:01  0:00:01 --:--:-- 25.9M100 32.6M  100 32.6M    0     0  27.0M      0  0:00:01  0:00:01 --:--:-- 27.0M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

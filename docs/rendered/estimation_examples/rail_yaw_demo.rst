@@ -388,10 +388,6 @@ deterministic. We can see in the log messages that the code reports
 
     Inserting handle into data store.  output_cache_unk: inprogress_output_cache_unk.path, cache_unk
 
-.. parsed-literal::
-
-    
-
 
 3. Computing the autocorrelation / bias correction
 --------------------------------------------------
@@ -856,7 +852,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f81b65c0070>
+    <matplotlib.legend.Legend at 0x7f94440c4970>
 
 
 

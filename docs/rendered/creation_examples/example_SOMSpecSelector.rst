@@ -305,13 +305,13 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-    romandesc_spec_data_37k.hdf5
-    romandesc_deep_data_75k.hdf5
+     66 32.6M   66 21.8M    0     0  14.0M      0  0:00:02  0:00:01  0:00:01 14.0M100 32.6M  100 32.6M    0     0  18.6M      0  0:00:01  0:00:01 --:--:-- 18.6M
 
 
 .. parsed-literal::
 
-     80 32.6M   80 26.4M    0     0  21.6M      0  0:00:01  0:00:01 --:--:-- 21.6M100 32.6M  100 32.6M    0     0  25.1M      0  0:00:01  0:00:01 --:--:-- 25.1M
+    romandesc_spec_data_37k.hdf5
+    romandesc_deep_data_75k.hdf5
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -563,16 +563,16 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
-    Warning: data was not float32. A 32-bit copy was made
-
-
-.. parsed-literal::
-
     /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       data.loc[mask, val] = np.float32(lim)
+
+
+.. parsed-literal::
+
+    Warning: data was not float32. A 32-bit copy was made
 
 
 .. parsed-literal::

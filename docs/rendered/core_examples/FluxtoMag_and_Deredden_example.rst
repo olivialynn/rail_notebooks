@@ -149,11 +149,6 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-    Downloading SFD data file to /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits
-
-
-.. parsed-literal::
-
     /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/dustmaps/config.py:74: ConfigWarning: Configuration file not found:
     
         /home/runner/.dustmapsrc
@@ -169,6 +164,11 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
+    Downloading SFD data file to /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits
+
+
+.. parsed-literal::
+
     Downloading data to '/home/runner/work/rail_notebooks/rail_notebooks/rail/examples/core_examples/sfd/SFD_dust_4096_ngp.fits' ...
     Downloading https://dataverse.harvard.edu/api/access/datafile/2902687 ...
 
@@ -179,115 +179,79 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     68.0 KiB of 64.0 MiB | 665.7 KiB/s |                   | [38;2;255;0;0m  0%[39m | ETA:   0:01:38
+      2.4 MiB of 64.0 MiB |  42.0 MiB/s |                   | [38;2;255;25;0m  3%[39m | ETA:  00:00:00
 
 .. parsed-literal::
 
-    323.0 KiB of 64.0 MiB |   1.5 MiB/s |                   | [38;2;255;3;0m  0%[39m | ETA:   0:00:41
+      6.5 MiB of 64.0 MiB |  57.4 MiB/s |#                  | [38;2;255;83;0m 10%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-    830.0 KiB of 64.0 MiB |   1.5 MiB/s |                   | [38;2;255;8;0m  1%[39m | ETA:   0:00:41
+      8.1 MiB of 64.0 MiB |  57.4 MiB/s |##                 | [38;2;255;90;0m 12%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-      1.6 MiB of 64.0 MiB |   5.1 MiB/s |                   | [38;2;255;16;0m  2%[39m | ETA:   0:00:12
+     12.2 MiB of 64.0 MiB |  53.9 MiB/s |###                | [38;2;255;108;0m 18%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-      3.2 MiB of 64.0 MiB |   5.1 MiB/s |                   | [38;2;255;33;0m  5%[39m | ETA:   0:00:11
+     13.0 MiB of 64.0 MiB |  53.9 MiB/s |###                | [38;2;255;111;0m 20%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-      5.7 MiB of 64.0 MiB |  13.3 MiB/s |#                  | [38;2;255;79;0m  8%[39m | ETA:   0:00:04
+     15.8 MiB of 64.0 MiB |  33.3 MiB/s |####               | [38;2;255;124;0m 24%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-      8.1 MiB of 64.0 MiB |  13.3 MiB/s |##                 | [38;2;255;90;0m 12%[39m | ETA:   0:00:04
+     16.2 MiB of 64.0 MiB |  33.3 MiB/s |####               | [38;2;255;125;0m 25%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-     10.5 MiB of 64.0 MiB |  19.7 MiB/s |###                | [38;2;255;101;0m 16%[39m | ETA:   0:00:02
+     20.3 MiB of 64.0 MiB |  32.3 MiB/s |######             | [38;2;255;143;0m 31%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-     13.0 MiB of 64.0 MiB |  19.7 MiB/s |###                | [38;2;255;111;0m 20%[39m | ETA:   0:00:02
+     24.3 MiB of 64.0 MiB |  32.3 MiB/s |#######            | [38;2;255;161;0m 37%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-     15.4 MiB of 64.0 MiB |  24.1 MiB/s |####               | [38;2;255;122;0m 24%[39m | ETA:   0:00:02
+     28.4 MiB of 64.0 MiB |  36.8 MiB/s |########           | [38;2;255;183;0m 44%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     17.8 MiB of 64.0 MiB |  24.1 MiB/s |#####              | [38;2;255;132;0m 27%[39m | ETA:   0:00:01
+     32.4 MiB of 64.0 MiB |  36.8 MiB/s |#########          | [38;2;255;218;0m 50%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     20.3 MiB of 64.0 MiB |  27.2 MiB/s |######             | [38;2;255;143;0m 31%[39m | ETA:   0:00:01
+     36.5 MiB of 64.0 MiB |  41.1 MiB/s |##########         | [38;2;255;253;0m 56%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     22.7 MiB of 64.0 MiB |  27.2 MiB/s |######             | [38;2;255;154;0m 35%[39m | ETA:   0:00:01
+     40.5 MiB of 64.0 MiB |  41.1 MiB/s |############       | [38;2;237;255;0m 63%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     25.1 MiB of 64.0 MiB |  29.6 MiB/s |#######            | [38;2;255;164;0m 39%[39m | ETA:   0:00:01
+     42.1 MiB of 64.0 MiB |  40.3 MiB/s |############       | [38;2;230;255;0m 65%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     27.5 MiB of 64.0 MiB |  29.6 MiB/s |########           | [38;2;255;176;0m 43%[39m | ETA:   0:00:01
+     46.2 MiB of 64.0 MiB |  40.3 MiB/s |#############      | [38;2;212;255;0m 72%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     30.0 MiB of 64.0 MiB |  31.4 MiB/s |########           | [38;2;255;197;0m 46%[39m | ETA:   0:00:01
+     48.6 MiB of 64.0 MiB |  41.1 MiB/s |##############     | [38;2;202;255;0m 75%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     32.4 MiB of 64.0 MiB |  31.4 MiB/s |#########          | [38;2;255;218;0m 50%[39m | ETA:   0:00:01
+     52.7 MiB of 64.0 MiB |  41.1 MiB/s |###############    | [38;2;184;255;0m 82%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     34.8 MiB of 64.0 MiB |  32.9 MiB/s |##########         | [38;2;255;239;0m 54%[39m | ETA:   0:00:00
+     56.7 MiB of 64.0 MiB |  43.0 MiB/s |################   | [38;2;166;255;0m 88%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     37.3 MiB of 64.0 MiB |  32.9 MiB/s |###########        | [38;2;255;261;0m 58%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     40.5 MiB of 64.0 MiB |  33.8 MiB/s |############       | [38;2;237;255;0m 63%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     43.8 MiB of 64.0 MiB |  33.8 MiB/s |############       | [38;2;223;255;0m 68%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     46.2 MiB of 64.0 MiB |  35.1 MiB/s |#############      | [38;2;212;255;0m 72%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     49.4 MiB of 64.0 MiB |  35.1 MiB/s |##############     | [38;2;198;255;0m 77%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     51.9 MiB of 64.0 MiB |  36.2 MiB/s |###############    | [38;2;188;255;0m 81%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     55.1 MiB of 64.0 MiB |  36.2 MiB/s |################   | [38;2;173;255;0m 86%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     58.3 MiB of 64.0 MiB |  37.1 MiB/s |#################  | [38;2;159;255;0m 91%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     60.8 MiB of 64.0 MiB |  37.1 MiB/s |################## | [38;2;62;255;0m 94%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     64.0 MiB of 64.0 MiB |  37.5 MiB/s |###################| [38;2;0;255;0m100%[39m | ETA:  00:00:00
+     60.8 MiB of 64.0 MiB |  43.0 MiB/s |################## | [38;2;62;255;0m 94%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
@@ -306,99 +270,75 @@ present working directory with the command above, that directory is just
 
 .. parsed-literal::
 
-     68.0 KiB of 64.0 MiB | 657.1 KiB/s |                   | [38;2;255;0;0m  0%[39m | ETA:   0:01:39
+      2.4 MiB of 64.0 MiB |  42.9 MiB/s |                   | [38;2;255;25;0m  3%[39m | ETA:  00:00:00
 
 .. parsed-literal::
 
-    357.0 KiB of 64.0 MiB |   1.7 MiB/s |                   | [38;2;255;3;0m  0%[39m | ETA:   0:00:37
+      6.5 MiB of 64.0 MiB |  56.2 MiB/s |#                  | [38;2;255;83;0m 10%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-    830.0 KiB of 64.0 MiB |   1.7 MiB/s |                   | [38;2;255;8;0m  1%[39m | ETA:   0:00:37
+      8.1 MiB of 64.0 MiB |  56.2 MiB/s |##                 | [38;2;255;90;0m 12%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-      1.6 MiB of 64.0 MiB |   5.1 MiB/s |                   | [38;2;255;16;0m  2%[39m | ETA:   0:00:12
+     11.3 MiB of 64.0 MiB |  45.9 MiB/s |###                | [38;2;255;104;0m 17%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-      3.2 MiB of 64.0 MiB |   5.1 MiB/s |                   | [38;2;255;33;0m  5%[39m | ETA:   0:00:11
+     14.6 MiB of 64.0 MiB |  45.9 MiB/s |####               | [38;2;255;118;0m 22%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-      6.5 MiB of 64.0 MiB |  15.1 MiB/s |#                  | [38;2;255;83;0m 10%[39m | ETA:   0:00:03
+     16.0 MiB of 64.0 MiB |  33.5 MiB/s |####               | [38;2;255;124;0m 24%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-      9.7 MiB of 64.0 MiB |  15.1 MiB/s |##                 | [38;2;255;97;0m 15%[39m | ETA:   0:00:03
+     20.3 MiB of 64.0 MiB |  33.5 MiB/s |######             | [38;2;255;143;0m 31%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-     13.0 MiB of 64.0 MiB |  23.8 MiB/s |###                | [38;2;255;111;0m 20%[39m | ETA:   0:00:02
+     24.3 MiB of 64.0 MiB |  39.0 MiB/s |#######            | [38;2;255;161;0m 37%[39m | ETA:   0:00:01
 
 .. parsed-literal::
 
-     16.2 MiB of 64.0 MiB |  23.8 MiB/s |####               | [38;2;255;125;0m 25%[39m | ETA:   0:00:02
+     28.4 MiB of 64.0 MiB |  39.0 MiB/s |########           | [38;2;255;183;0m 44%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     19.4 MiB of 64.0 MiB |  29.1 MiB/s |#####              | [38;2;255;140;0m 30%[39m | ETA:   0:00:01
+     32.4 MiB of 64.0 MiB |  43.5 MiB/s |#########          | [38;2;255;218;0m 50%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     22.7 MiB of 64.0 MiB |  29.1 MiB/s |######             | [38;2;255;154;0m 35%[39m | ETA:   0:00:01
+     36.5 MiB of 64.0 MiB |  43.5 MiB/s |##########         | [38;2;255;253;0m 56%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     25.9 MiB of 64.0 MiB |  33.0 MiB/s |#######            | [38;2;255;168;0m 40%[39m | ETA:   0:00:01
+     40.5 MiB of 64.0 MiB |  46.8 MiB/s |############       | [38;2;237;255;0m 63%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     29.2 MiB of 64.0 MiB |  33.0 MiB/s |########           | [38;2;255;190;0m 45%[39m | ETA:   0:00:01
+     44.6 MiB of 64.0 MiB |  46.8 MiB/s |#############      | [38;2;220;255;0m 69%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     32.4 MiB of 64.0 MiB |  36.1 MiB/s |#########          | [38;2;255;218;0m 50%[39m | ETA:   0:00:00
+     48.6 MiB of 64.0 MiB |  49.3 MiB/s |##############     | [38;2;202;255;0m 75%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     34.8 MiB of 64.0 MiB |  36.1 MiB/s |##########         | [38;2;255;239;0m 54%[39m | ETA:   0:00:00
+     52.7 MiB of 64.0 MiB |  49.3 MiB/s |###############    | [38;2;184;255;0m 82%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     38.1 MiB of 64.0 MiB |  37.7 MiB/s |###########        | [38;2;248;255;0m 59%[39m | ETA:   0:00:00
+     56.7 MiB of 64.0 MiB |  51.3 MiB/s |################   | [38;2;166;255;0m 88%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     41.3 MiB of 64.0 MiB |  37.7 MiB/s |############       | [38;2;234;255;0m 64%[39m | ETA:   0:00:00
+     60.8 MiB of 64.0 MiB |  51.3 MiB/s |################## | [38;2;62;255;0m 94%[39m | ETA:   0:00:00
 
 .. parsed-literal::
 
-     44.6 MiB of 64.0 MiB |  39.4 MiB/s |#############      | [38;2;220;255;0m 69%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     47.8 MiB of 64.0 MiB |  39.4 MiB/s |##############     | [38;2;205;255;0m 74%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     51.9 MiB of 64.0 MiB |  41.3 MiB/s |###############    | [38;2;188;255;0m 81%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     55.1 MiB of 64.0 MiB |  41.3 MiB/s |################   | [38;2;173;255;0m 86%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     56.7 MiB of 64.0 MiB |  40.7 MiB/s |################   | [38;2;166;255;0m 88%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     60.0 MiB of 64.0 MiB |  40.7 MiB/s |#################  | [38;2;77;255;0m 93%[39m | ETA:   0:00:00
-
-.. parsed-literal::
-
-     62.4 MiB of 64.0 MiB |  41.6 MiB/s |################## | [38;2;30;255;0m 97%[39m | ETA:   0:00:00
+     63.2 MiB of 64.0 MiB |  52.0 MiB/s |################## | [38;2;15;255;0m 98%[39m | ETA:   0:00:00
 
 .. code:: ipython3
 

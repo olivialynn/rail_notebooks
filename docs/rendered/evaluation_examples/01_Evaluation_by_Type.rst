@@ -77,11 +77,35 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-     40 47.1M   40 19.3M    0     0  14.9M      0  0:00:03  0:00:01  0:00:02 14.9M
+      7 47.1M    7 3403k    0     0  2495k      0  0:00:19  0:00:01  0:00:18 2493k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  26.0M      0  0:00:01  0:00:01 --:--:-- 26.0M
+     18 47.1M   18 9003k    0     0  3833k      0  0:00:12  0:00:02  0:00:10 3832k
+
+.. parsed-literal::
+
+     31 47.1M   31 14.9M    0     0  4546k      0  0:00:10  0:00:03  0:00:07 4546k
+
+.. parsed-literal::
+
+     45 47.1M   45 21.3M    0     0  5018k      0  0:00:09  0:00:04  0:00:05 5018k
+
+.. parsed-literal::
+
+     59 47.1M   59 28.0M    0     0  5372k      0  0:00:08  0:00:05  0:00:03 5805k
+
+.. parsed-literal::
+
+     73 47.1M   73 34.8M    0     0  5604k      0  0:00:08  0:00:06  0:00:02 6452k
+
+.. parsed-literal::
+
+     87 47.1M   87 41.4M    0     0  5774k      0  0:00:08  0:00:07  0:00:01 6685k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  5891k      0  0:00:08  0:00:08 --:--:-- 6830k
 
 
 .. code:: ipython3
@@ -922,7 +946,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fbaa55ad210>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fecddbb5240>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1066,6 +1090,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1229,7 +1257,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fbaa5573a90>
+    <qp.ensemble.Ensemble at 0x7fecdda2ba90>
 
 
 
@@ -1421,10 +1449,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

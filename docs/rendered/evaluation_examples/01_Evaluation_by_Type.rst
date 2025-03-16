@@ -73,11 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      1 47.1M    1  847k    0     0   975k      0  0:00:49 --:--:--  0:00:49  974k
+      1 47.1M    1  879k    0     0   936k      0  0:00:51 --:--:--  0:00:51  936k
 
 .. parsed-literal::
 
-     93 47.1M   93 44.1M    0     0  23.8M      0  0:00:01  0:00:01 --:--:-- 23.8M100 47.1M  100 47.1M    0     0  24.7M      0  0:00:01  0:00:01 --:--:-- 24.7M
+     99 47.1M   99 46.9M    0     0  24.4M      0  0:00:01  0:00:01 --:--:-- 24.4M100 47.1M  100 47.1M    0     0  24.4M      0  0:00:01  0:00:01 --:--:-- 24.4M
 
 
 .. code:: ipython3
@@ -918,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7ffa8e3b36a0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fd4b13cd1e0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1225,7 +1225,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7ffa8df64190>
+    <qp.ensemble.Ensemble at 0x7fd4ba603640>
 
 
 
@@ -1417,10 +1417,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

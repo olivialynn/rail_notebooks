@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc6150e32b0>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7fc6150e3d60>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0fe5fd25c0>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f0fe5fd3490>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7fc6150e3280>]),
+       <rail.tools.table_tools.TableConverter at 0x7f0fe5fd3550>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -523,10 +523,6 @@ pipeline we’ve just made would look like:
     
     Executing lsst_error_model_test
     Command is:
-
-
-.. parsed-literal::
-
     OMP_NUM_THREADS=1   python3 -m ceci rail.creation.degraders.photometric_errors.LSSTErrorModel   --input=./output_flow_engine_test.pq   --name=lsst_error_model_test   --config=pipe_saved_config.yml   --output=./output_lsst_error_model_test.pq 
     Output writing to ./lsst_error_model_test.out
     

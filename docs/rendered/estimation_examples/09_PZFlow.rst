@@ -64,152 +64,152 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    (1) 12.0242
+    (1) 11.9689
 
 
 .. parsed-literal::
 
-    (2) 9.4423
+    (2) 9.4665
 
 
 .. parsed-literal::
 
-    (3) 7.3982
+    (3) 7.6701
 
 
 .. parsed-literal::
 
-    (4) 6.4297
+    (4) 6.4975
 
 
 .. parsed-literal::
 
-    (5) 5.7484
+    (5) 4.8184
 
 
 .. parsed-literal::
 
-    (6) 4.6116
+    (6) 4.9988
 
 
 .. parsed-literal::
 
-    (7) 4.3536
+    (7) 3.6832
 
 
 .. parsed-literal::
 
-    (8) 3.5748
+    (8) 3.3320
 
 
 .. parsed-literal::
 
-    (9) 2.6921
+    (9) 2.6474
 
 
 .. parsed-literal::
 
-    (10) 2.3854
+    (10) 2.4241
 
 
 .. parsed-literal::
 
-    (11) 2.3675
+    (11) 2.0601
 
 
 .. parsed-literal::
 
-    (12) 1.9321
+    (12) 1.7141
 
 
 .. parsed-literal::
 
-    (13) 1.4860
+    (13) 1.6782
 
 
 .. parsed-literal::
 
-    (14) 1.2622
+    (14) 1.4572
 
 
 .. parsed-literal::
 
-    (15) 1.4139
+    (15) 1.2378
 
 
 .. parsed-literal::
 
-    (16) 1.4904
+    (16) 1.1748
 
 
 .. parsed-literal::
 
-    (17) 1.2055
+    (17) 1.0077
 
 
 .. parsed-literal::
 
-    (18) 1.0023
+    (18) 1.2034
 
 
 .. parsed-literal::
 
-    (19) 0.7046
+    (19) 1.0326
 
 
 .. parsed-literal::
 
-    (20) 0.8779
+    (20) 0.9658
 
 
 .. parsed-literal::
 
-    (21) 0.5411
+    (21) 0.7357
 
 
 .. parsed-literal::
 
-    (22) 0.8552
+    (22) 0.3684
 
 
 .. parsed-literal::
 
-    (23) 0.3945
+    (23) 0.4813
 
 
 .. parsed-literal::
 
-    (24) 0.4846
+    (24) 0.6877
 
 
 .. parsed-literal::
 
-    (25) 0.2626
+    (25) 0.3737
 
 
 .. parsed-literal::
 
-    (26) 0.0515
+    (26) 0.1206
 
 
 .. parsed-literal::
 
-    (27) 0.6957
+    (27) 0.5171
 
 
 .. parsed-literal::
 
-    (28) 0.2324
+    (28) 0.3822
 
 
 .. parsed-literal::
 
-    (29) 1.9027
+    (29) 0.6297
 
 
 .. parsed-literal::
 
-    (30) 0.6244
+    (30) 0.0781
     Inserting handle into data store.  model_inform_pzflow: inprogress_demo_pzflow.pkl, inform_pzflow
 
 
@@ -217,7 +217,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7fec08bd3850>
+    <rail.tools.flow_handle.FlowHandle at 0x7f8110ceb7f0>
 
 
 

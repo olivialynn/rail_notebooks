@@ -297,7 +297,11 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+      4 32.6M    4 1594k    0     0  1416k      0  0:00:23  0:00:01  0:00:22 1416k
 
 .. parsed-literal::
 
@@ -307,7 +311,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-     80 32.6M   80 26.2M    0     0  33.0M      0 --:--:-- --:--:-- --:--:-- 33.0M100 32.6M  100 32.6M    0     0  38.6M      0 --:--:-- --:--:-- --:--:-- 38.6M
+    100 32.6M  100 32.6M    0     0  18.4M      0  0:00:01  0:00:01 --:--:-- 18.3M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -559,16 +563,16 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
-    Warning: data was not float32. A 32-bit copy was made
-
-
-.. parsed-literal::
-
     /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       data.loc[mask, val] = np.float32(lim)
+
+
+.. parsed-literal::
+
+    Warning: data was not float32. A 32-bit copy was made
 
 
 .. parsed-literal::

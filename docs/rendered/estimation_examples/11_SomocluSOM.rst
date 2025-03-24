@@ -96,27 +96,15 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      9 9434k    9  860k    0     0   794k      0  0:00:11  0:00:01  0:00:10  793k
 
 .. parsed-literal::
 
-     38 9434k   38 3662k    0     0  1624k      0  0:00:05  0:00:02  0:00:03 1624k
-
-.. parsed-literal::
-
-     38 9434k   38 3671k    0     0  1423k      0  0:00:06  0:00:02  0:00:04 1422k
-
-.. parsed-literal::
-
-     39 9434k   39 3697k    0     0  1004k      0  0:00:09  0:00:03  0:00:06 1004k
-
-.. parsed-literal::
-
-     51 9434k   51 4861k    0     0  1082k      0  0:00:08  0:00:04  0:00:04 1082k100 9434k  100 9434k    0     0  2037k      0  0:00:04  0:00:04 --:--:-- 2287k
+    100 9434k  100 9434k    0     0  6995k      0  0:00:01  0:00:01 --:--:-- 6993k
 
 
 .. code:: ipython3
@@ -195,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 13s, sys: 267 ms, total: 5min 13s
+    CPU times: user 5min 12s, sys: 170 ms, total: 5min 12s
     Wall time: 1min 20s
 
 
@@ -203,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f611cbef7c0>
+    <rail.core.data.ModelHandle at 0x7f28a39f64d0>
 
 
 
@@ -272,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6770/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6821/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -425,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f60be68b490>
+    <rail.core.data.QPHandle at 0x7f288d50f1c0>
 
 
 
@@ -461,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f60be680dc0>
+    <matplotlib.legend.Legend at 0x7f288d51e8f0>
 
 
 
@@ -518,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f60be6fa1a0>
+    <rail.core.data.QPHandle at 0x7f288d5d2290>
 
 
 
@@ -545,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f60be6fac20>
+    <matplotlib.legend.Legend at 0x7f288d5d1ff0>
 
 
 
@@ -749,7 +737,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f60be6891e0>
+    <matplotlib.legend.Legend at 0x7f288d373a90>
 
 
 

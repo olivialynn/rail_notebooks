@@ -217,7 +217,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f1251e6ad10>
+    <rail.tools.flow_handle.FlowHandle at 0x7fe9d2f6eda0>
 
 
 
@@ -236,6 +236,10 @@ Author: Tianqing Zhang
 .. parsed-literal::
 
     Inserting handle into data store.  model: demo_pzflow.pkl, estimate_pzflow
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 0 - 20000
 
 

@@ -297,11 +297,11 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0 32.6M    0 11945    0     0  12451      0  0:45:50 --:--:--  0:45:50 12442
+      6 32.6M    6 2267k    0     0  2060k      0  0:00:16  0:00:01  0:00:15 2059k
 
 .. parsed-literal::
 
@@ -311,7 +311,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-     45 32.6M   45 14.8M    0     0  10.9M      0  0:00:02  0:00:01  0:00:01 10.9M100 32.6M  100 32.6M    0     0  22.0M      0  0:00:01  0:00:01 --:--:-- 22.0M
+    100 32.6M  100 32.6M    0     0  18.8M      0  0:00:01  0:00:01 --:--:-- 18.8M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -563,6 +563,10 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
+    Warning: data was not float32. A 32-bit copy was made
+
+.. parsed-literal::
+
     /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
@@ -572,7 +576,7 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
-    Warning: data was not float32. A 32-bit copy was made
+    
 
 
 .. parsed-literal::

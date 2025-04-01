@@ -59,157 +59,161 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    (0) 19.3210
+    (0) 37.3273
 
 
 .. parsed-literal::
 
-    (1) 11.9689
+    (1) 9.1676
 
 
 .. parsed-literal::
 
-    (2) 9.4665
+    (2) 6.4447
 
 
 .. parsed-literal::
 
-    (3) 7.6701
+    (3) 4.6352
 
 
 .. parsed-literal::
 
-    (4) 6.4975
+    (4) 3.6721
 
 
 .. parsed-literal::
 
-    (5) 4.8184
+    (5) 2.7108
 
 
 .. parsed-literal::
 
-    (6) 4.9988
+    (6) 2.1987
 
 
 .. parsed-literal::
 
-    (7) 3.6832
+    (7) 1.9756
 
 
 .. parsed-literal::
 
-    (8) 3.3320
+    (8) 2.0567
 
 
 .. parsed-literal::
 
-    (9) 2.6474
+    (9) 1.3983
 
 
 .. parsed-literal::
 
-    (10) 2.4241
+    (10) 0.8625
 
 
 .. parsed-literal::
 
-    (11) 2.0601
+    (11) 1.4191
 
 
 .. parsed-literal::
 
-    (12) 1.7141
+    (12) 1.0998
 
 
 .. parsed-literal::
 
-    (13) 1.6782
+    (13) 1.0022
 
 
 .. parsed-literal::
 
-    (14) 1.4572
+    (14) 0.6951
 
 
 .. parsed-literal::
 
-    (15) 1.2378
+    (15) 0.5534
 
 
 .. parsed-literal::
 
-    (16) 1.1748
+    (16) 0.2914
 
 
 .. parsed-literal::
 
-    (17) 1.0077
+    (17) 0.0675
 
 
 .. parsed-literal::
 
-    (18) 1.2034
+    (18) 0.6496
 
 
 .. parsed-literal::
 
-    (19) 1.0326
+    (19) 0.4512
 
 
 .. parsed-literal::
 
-    (20) 0.9658
+    (20) -0.1057
 
 
 .. parsed-literal::
 
-    (21) 0.7357
+    (21) -0.0546
 
 
 .. parsed-literal::
 
-    (22) 0.3684
+    (22) -0.2515
 
 
 .. parsed-literal::
 
-    (23) 0.4813
+    (23) -0.3659
 
 
 .. parsed-literal::
 
-    (24) 0.6877
+    (24) -0.1334
 
 
 .. parsed-literal::
 
-    (25) 0.3737
+    (25) -0.2298
 
 
 .. parsed-literal::
 
-    (26) 0.1206
+    (26) 0.2135
 
 
 .. parsed-literal::
 
-    (27) 0.5171
+    (27) -0.4265
 
 
 .. parsed-literal::
 
-    (28) 0.3822
+    (28) -0.1709
 
 
 .. parsed-literal::
 
-    (29) 0.6297
+    (29) 0.4959
 
 
 .. parsed-literal::
 
-    (30) 0.0781
+    (30) -0.2889
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_pzflow: inprogress_demo_pzflow.pkl, inform_pzflow
 
 
@@ -217,7 +221,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7fc4fcfcbe50>
+    <rail.tools.flow_handle.FlowHandle at 0x7f42bee8e740>
 
 
 

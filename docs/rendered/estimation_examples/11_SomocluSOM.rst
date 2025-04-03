@@ -100,7 +100,7 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-      0 9434k    0 11980    0     0  55620      0  0:02:53 --:--:--  0:02:53 55462100 9434k  100 9434k    0     0  23.3M      0 --:--:-- --:--:-- --:--:-- 23.3M
+    100 9434k  100 9434k    0     0  21.4M      0 --:--:-- --:--:-- --:--:-- 21.5M
 
 
 .. code:: ipython3
@@ -179,15 +179,15 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 8s, sys: 271 ms, total: 5min 9s
-    Wall time: 1min 19s
+    CPU times: user 5min 12s, sys: 233 ms, total: 5min 12s
+    Wall time: 1min 20s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1f8c1cc340>
+    <rail.core.data.ModelHandle at 0x7fecc15da5c0>
 
 
 
@@ -256,7 +256,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6539/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6802/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -409,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f1f275e4310>
+    <rail.core.data.QPHandle at 0x7fec65b4a6e0>
 
 
 
@@ -445,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1f30628ee0>
+    <matplotlib.legend.Legend at 0x7fec65b742e0>
 
 
 
@@ -502,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f1f306cb6a0>
+    <rail.core.data.QPHandle at 0x7fec65c02b90>
 
 
 
@@ -529,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1f306f4670>
+    <matplotlib.legend.Legend at 0x7fec65c24280>
 
 
 
@@ -733,7 +733,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1f313c65f0>
+    <matplotlib.legend.Legend at 0x7fec65c021d0>
 
 
 

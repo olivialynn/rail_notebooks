@@ -53,21 +53,29 @@ for bpz demo data:
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   778k      0 --:--:-- --:--:-- --:--:--  778k
+    100  450k  100  450k    0     0   792k      0 --:--:-- --:--:-- --:--:--  792k
+      % Total    % 
+
+.. parsed-literal::
+
+    Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100 83848  100 83848    0     0   223k      0 --:--:-- --:--:-- --:--:--  223k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   231k      0 --:--:-- --:--:-- --:--:--  232k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      9 83848    9  7896    0     0  29477      0  0:00:02 --:--:--  0:00:02 29462
 
 .. parsed-literal::
 
-     53 83848   53 44760    0     0   154k      0 --:--:-- --:--:-- --:--:--  154k100 83848  100 83848    0     0   272k      0 --:--:-- --:--:-- --:--:--  272k
+    100 83848  100 83848    0     0   217k      0 --:--:-- --:--:-- --:--:--  216k
 
 
 The files must be untarred and moved, as well:
@@ -206,15 +214,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.79 s, sys: 556 μs, total: 9.79 s
-    Wall time: 9.79 s
+    CPU times: user 9.97 s, sys: 649 μs, total: 9.97 s
+    Wall time: 9.97 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc15e956980>
+    <rail.core.data.ModelHandle at 0x7ff053f769e0>
 
 
 
@@ -324,7 +332,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc15e1fee30>
+    <matplotlib.legend.Legend at 0x7ff050386da0>
 
 
 
@@ -873,15 +881,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 24.8 s, sys: 160 ms, total: 25 s
-    Wall time: 25 s
+    CPU times: user 25 s, sys: 178 ms, total: 25.2 s
+    Wall time: 25.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fc15df097b0>
+    <rail.core.data.QPHandle at 0x7ff0502c71f0>
 
 
 
@@ -911,7 +919,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc15e070790>
+    <matplotlib.legend.Legend at 0x7ff050231750>
 
 
 
@@ -1042,7 +1050,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc15deb4250>
+    <matplotlib.legend.Legend at 0x7ff04ff9f880>
 
 
 

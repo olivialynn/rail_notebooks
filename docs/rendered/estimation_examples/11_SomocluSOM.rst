@@ -104,7 +104,7 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-    100 9434k  100 9434k    0     0  6950k      0  0:00:01  0:00:01 --:--:-- 6952k
+     71 9434k   71 6719k    0     0  5187k      0  0:00:01  0:00:01 --:--:-- 5184k100 9434k  100 9434k    0     0  7019k      0  0:00:01  0:00:01 --:--:-- 7019k
 
 
 .. code:: ipython3
@@ -183,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 12s, sys: 322 ms, total: 5min 12s
+    CPU times: user 5min 13s, sys: 369 ms, total: 5min 13s
     Wall time: 1min 20s
 
 
@@ -191,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f97385c6410>
+    <rail.core.data.ModelHandle at 0x7f692d3cca00>
 
 
 
@@ -260,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6798/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6848/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f97289e7340>
+    <rail.core.data.QPHandle at 0x7f68d0116c80>
 
 
 
@@ -449,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f97289b1900>
+    <matplotlib.legend.Legend at 0x7f68d0128eb0>
 
 
 
@@ -506,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9728972fe0>
+    <rail.core.data.QPHandle at 0x7f68d01cf700>
 
 
 
@@ -533,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9728973df0>
+    <matplotlib.legend.Legend at 0x7f68d01cf040>
 
 
 
@@ -737,7 +737,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f972bfaace0>
+    <matplotlib.legend.Legend at 0x7f68d365e080>
 
 
 

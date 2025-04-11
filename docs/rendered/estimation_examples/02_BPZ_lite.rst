@@ -619,15 +619,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 22.7 s, sys: 161 ms, total: 22.9 s
-    Wall time: 22.9 s
+    CPU times: user 23 s, sys: 173 ms, total: 23.2 s
+    Wall time: 23.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f98b1c02980>
+    <rail.core.data.QPHandle at 0x7f31769caad0>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f98b18a3460>
+    <matplotlib.legend.Legend at 0x7f317673bd30>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f98af7536a0>
+    <matplotlib.legend.Legend at 0x7f317457c0d0>
 
 
 
@@ -823,8 +823,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.8 s, sys: 128 ms, total: 32.9 s
-    Wall time: 32.9 s
+    CPU times: user 33 s, sys: 139 ms, total: 33.2 s
+    Wall time: 33.2 s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -961,15 +961,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 10 s, sys: 3.98 ms, total: 10 s
-    Wall time: 10 s
+    CPU times: user 10.4 s, sys: 3.99 ms, total: 10.4 s
+    Wall time: 10.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f98b1902c50>
+    <rail.core.data.ModelHandle at 0x7f317687cd30>
 
 
 
@@ -1079,7 +1079,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f98ae584370>
+    <matplotlib.legend.Legend at 0x7f31733b4340>
 
 
 
@@ -1155,15 +1155,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.8 s, sys: 128 ms, total: 12.9 s
-    Wall time: 12.9 s
+    CPU times: user 13 s, sys: 123 ms, total: 13.1 s
+    Wall time: 13.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f98b19019c0>
+    <rail.core.data.QPHandle at 0x7f3199dd8640>
 
 
 
@@ -1190,7 +1190,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f98ddd91a20>
+    <matplotlib.legend.Legend at 0x7f31745fd300>
 
 
 
@@ -1280,7 +1280,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f98af7e12a0>
+    <matplotlib.legend.Legend at 0x7f31745fdb40>
 
 
 

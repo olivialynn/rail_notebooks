@@ -73,11 +73,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      2 47.1M    2 1123k    0     0  1428k      0  0:00:33 --:--:--  0:00:33 1427k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  27.4M      0  0:00:01  0:00:01 --:--:-- 27.4M
+     39 47.1M   39 18.6M    0     0  11.9M      0  0:00:03  0:00:01  0:00:02 11.9M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  21.8M      0  0:00:02  0:00:02 --:--:-- 21.8M
 
 
 .. code:: ipython3
@@ -918,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fe6f8b88a00>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f7173443400>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1014,14 +1018,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-    Processing 0 running evaluator on chunk 10000 - 11000.
-    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
-    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
-    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
 
 
 .. parsed-literal::
 
+    Processing 0 running evaluator on chunk 10000 - 11000.
+    skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
+    skipping ks PdfOrValue.both MetricInputType.dist_to_dist
+    skipping kld PdfOrValue.both MetricInputType.dist_to_dist
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1225,7 +1229,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fe6f43dc280>
+    <qp.ensemble.Ensemble at 0x7f7173264370>
 
 
 

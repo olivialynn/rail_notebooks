@@ -69,19 +69,15 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+     30 47.1M   30 14.6M    0     0  13.2M      0  0:00:03  0:00:01  0:00:02 13.2M
 
 .. parsed-literal::
 
-     39 47.1M   39 18.6M    0     0  11.9M      0  0:00:03  0:00:01  0:00:02 11.9M
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  21.8M      0  0:00:02  0:00:02 --:--:-- 21.8M
+    100 47.1M  100 47.1M    0     0  30.6M      0  0:00:01  0:00:01 --:--:-- 30.6M
 
 
 .. code:: ipython3
@@ -922,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f7173443400>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f7822c92140>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -971,6 +967,10 @@ forced to run on a single node for exact results.
 .. parsed-literal::
 
     This is not a qp file because 'meta'
+
+
+.. parsed-literal::
+
     This is not a qp file because 'meta'
     Unsupported metric requested: 'omega'.  Available metrics are: ['ad', 'brier', 'cdeloss', 'cvm', 'kld', 'ks', 'moment', 'outlier', 'pit', 'point_bias', 'point_outlier_rate', 'point_stats_ez', 'point_stats_iqr', 'point_stats_sigma_mad', 'rbpe', 'rmse']
     Requested metrics: ['cvm', 'ks', 'kld', 'cdeloss', 'point_stats_ez', 'point_stats_iqr']
@@ -1026,6 +1026,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1229,7 +1233,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f7173264370>
+    <qp.ensemble.Ensemble at 0x7f782ca534c0>
 
 
 
@@ -1421,6 +1425,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

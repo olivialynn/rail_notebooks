@@ -100,7 +100,11 @@ on galaxies with particularly high S/N rates.
 
 .. parsed-literal::
 
-     54 9434k   54 5096k    0     0  5670k      0  0:00:01 --:--:--  0:00:01 5668k100 9434k  100 9434k    0     0  9870k      0 --:--:-- --:--:-- --:--:-- 9868k
+      0 9434k    0 36565    0     0  49747      0  0:03:14 --:--:--  0:03:14 49748
+
+.. parsed-literal::
+
+    100 9434k  100 9434k    0     0  7061k      0  0:00:01  0:00:01 --:--:-- 7067k
 
 
 .. code:: ipython3
@@ -179,7 +183,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 13s, sys: 314 ms, total: 5min 13s
+    CPU times: user 5min 12s, sys: 236 ms, total: 5min 12s
     Wall time: 1min 20s
 
 
@@ -187,7 +191,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fe89a5ff4c0>
+    <rail.core.data.ModelHandle at 0x7f72382dbe50>
 
 
 
@@ -256,7 +260,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6820/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_6591/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -409,7 +413,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fe886b6cfd0>
+    <rail.core.data.QPHandle at 0x7f71d25fd360>
 
 
 
@@ -445,7 +449,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe886b6c880>
+    <matplotlib.legend.Legend at 0x7f71d92a95d0>
 
 
 
@@ -502,7 +506,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fe886c177f0>
+    <rail.core.data.QPHandle at 0x7f71d922be80>
 
 
 
@@ -529,7 +533,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe886654670>
+    <matplotlib.legend.Legend at 0x7f71d922b220>
 
 
 
@@ -733,7 +737,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe886694bb0>
+    <matplotlib.legend.Legend at 0x7f71db8c2bc0>
 
 
 

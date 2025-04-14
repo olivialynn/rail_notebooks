@@ -852,7 +852,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb8d72ae2c0>
+    <matplotlib.legend.Legend at 0x7f4ab1d906d0>
 
 
 

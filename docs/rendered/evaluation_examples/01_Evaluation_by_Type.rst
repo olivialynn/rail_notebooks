@@ -73,15 +73,31 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      3 47.1M    3 1653k    0     0  2138k      0  0:00:22 --:--:--  0:00:22 2136k
 
 .. parsed-literal::
 
-      3 47.1M    3 1591k    0     0  1309k      0  0:00:36  0:00:01  0:00:35 1308k
+     19 47.1M   19 9609k    0     0  5430k      0  0:00:08  0:00:01  0:00:07 5429k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  21.7M      0  0:00:02  0:00:02 --:--:-- 21.7M
+     36 47.1M   36 17.3M    0     0  6442k      0  0:00:07  0:00:02  0:00:05 6440k
+
+.. parsed-literal::
+
+     54 47.1M   54 25.6M    0     0  6958k      0  0:00:06  0:00:03  0:00:03 6957k
+
+.. parsed-literal::
+
+     72 47.1M   72 34.3M    0     0  7359k      0  0:00:06  0:00:04  0:00:02 7359k
+
+.. parsed-literal::
+
+     91 47.1M   91 42.9M    0     0  7629k      0  0:00:06  0:00:05  0:00:01 8479k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  7747k      0  0:00:06  0:00:06 --:--:-- 8668k
 
 
 .. code:: ipython3
@@ -922,7 +938,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f645cd0b7f0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f8b0c817700>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1018,14 +1034,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 10000 - 11000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1229,7 +1245,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f645cd7a4d0>
+    <qp.ensemble.Ensemble at 0x7f8b15ded7b0>
 
 
 
@@ -1421,6 +1437,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

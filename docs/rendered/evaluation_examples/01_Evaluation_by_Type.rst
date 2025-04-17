@@ -73,31 +73,7 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      3 47.1M    3 1653k    0     0  2138k      0  0:00:22 --:--:--  0:00:22 2136k
-
-.. parsed-literal::
-
-     19 47.1M   19 9609k    0     0  5430k      0  0:00:08  0:00:01  0:00:07 5429k
-
-.. parsed-literal::
-
-     36 47.1M   36 17.3M    0     0  6442k      0  0:00:07  0:00:02  0:00:05 6440k
-
-.. parsed-literal::
-
-     54 47.1M   54 25.6M    0     0  6958k      0  0:00:06  0:00:03  0:00:03 6957k
-
-.. parsed-literal::
-
-     72 47.1M   72 34.3M    0     0  7359k      0  0:00:06  0:00:04  0:00:02 7359k
-
-.. parsed-literal::
-
-     91 47.1M   91 42.9M    0     0  7629k      0  0:00:06  0:00:05  0:00:01 8479k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  7747k      0  0:00:06  0:00:06 --:--:-- 8668k
+     73 47.1M   73 34.6M    0     0  85.5M      0 --:--:-- --:--:-- --:--:-- 85.4M100 47.1M  100 47.1M    0     0  95.4M      0 --:--:-- --:--:-- --:--:-- 95.3M
 
 
 .. code:: ipython3
@@ -938,7 +914,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f8b0c817700>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f9afad137f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1227,7 +1203,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -1245,7 +1221,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f8b15ded7b0>
+    <qp.ensemble.Ensemble at 0x7f9b04a434c0>
 
 
 
@@ -1446,7 +1422,7 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 

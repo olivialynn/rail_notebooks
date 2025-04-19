@@ -49,29 +49,29 @@ for bpz demo data:
 
 .. parsed-literal::
 
-     62  450k   62  282k    0     0   306k      0  0:00:01 --:--:--  0:00:01  306k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   457k      0 --:--:-- --:--:-- --:--:--  457k
+    100  450k  100  450k    0     0   576k      0 --:--:-- --:--:-- --:--:--  576k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   140k      0 --:--:-- --:--:-- --:--:--  140k
+     53 83848   53 44760    0     0  79593      0  0:00:01 --:--:--  0:00:01 79502100 83848  100 83848    0     0   144k      0 --:--:-- --:--:-- --:--:--  144k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+    100 83848  100 83848 
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0  89610      0 --:--:-- --:--:-- --:--:-- 89581
+       0     0   177k      0 --:--:-- --:--:-- --:--:--  177k
 
 
 The files must be untarred and moved, as well:
@@ -210,15 +210,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.84 s, sys: 0 ns, total: 9.84 s
-    Wall time: 9.84 s
+    CPU times: user 9.83 s, sys: 2.43 ms, total: 9.83 s
+    Wall time: 9.83 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f77a6d6e6b0>
+    <rail.core.data.ModelHandle at 0x7f2bc846c070>
 
 
 
@@ -328,7 +328,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f7759b6b6a0>
+    <matplotlib.legend.Legend at 0x7f2b748a7610>
 
 
 
@@ -860,7 +860,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:482: RuntimeWarning: overflow encountered in cast
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:483: RuntimeWarning: overflow encountered in cast
       flux_err[unobserved] = 1e108
 
 
@@ -877,15 +877,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 25 s, sys: 160 ms, total: 25.2 s
-    Wall time: 25.2 s
+    CPU times: user 24.8 s, sys: 173 ms, total: 25 s
+    Wall time: 25 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f7759aa7d90>
+    <rail.core.data.QPHandle at 0x7f2b74102140>
 
 
 
@@ -915,7 +915,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f775a1f1600>
+    <matplotlib.legend.Legend at 0x7f2bc8406b00>
 
 
 
@@ -964,7 +964,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED sigma: 0.0438
+    custom SED sigma: 0.0490
 
 
 .. code:: ipython3
@@ -979,7 +979,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED bias: 0.0082
+    custom SED bias: 0.0068
 
 
 Indeed, we see an improvement in the sigma from 0.057-0.059 with the
@@ -999,7 +999,7 @@ the other notebook to see these numbers)!
 
 .. parsed-literal::
 
-    custom SED outlier rate: 0.1049
+    custom SED outlier rate: 0.0915
 
 
 We see a higher outlier rate here; however, our ourlier rate is defined
@@ -1020,7 +1020,7 @@ compute the fraction of galaxies with (zmode - specz) / (1 + specz) >
 
 .. parsed-literal::
 
-    fraction of catastrophic outliers: 0.0911
+    fraction of catastrophic outliers: 0.0894
 
 
 So, our catastrophic outlier fraction remains similar but slightly
@@ -1046,7 +1046,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f77598548b0>
+    <matplotlib.legend.Legend at 0x7f2b745bc580>
 
 
 

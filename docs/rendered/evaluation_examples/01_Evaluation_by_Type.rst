@@ -73,15 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      2 47.1M    2 1111k    0     0  1963k      0  0:00:24 --:--:--  0:00:24 1960k
 
 .. parsed-literal::
 
-     65 47.1M   65 30.8M    0     0  25.0M      0  0:00:01  0:00:01 --:--:-- 25.0M
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  32.9M      0  0:00:01  0:00:01 --:--:-- 32.9M
+    100 47.1M  100 47.1M    0     0  36.5M      0  0:00:01  0:00:01 --:--:-- 36.5M
 
 
 .. code:: ipython3
@@ -922,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f8e69ea1000>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7feb82572590>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1018,14 +1014,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 10000 - 11000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1229,7 +1225,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f8e71799570>
+    <qp.ensemble.Ensemble at 0x7feb837fba90>
 
 
 
@@ -1421,6 +1417,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

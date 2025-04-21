@@ -188,74 +188,74 @@ for the SEDs and filters.
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_r.AB
-      Generating new AB file El_B2004a.DC2LSST_i.AB....
-    El_B2004a DC2LSST_i
 
 
 .. parsed-literal::
 
+      Generating new AB file El_B2004a.DC2LSST_i.AB....
+    El_B2004a DC2LSST_i
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_i.AB
       Generating new AB file El_B2004a.DC2LSST_z.AB....
     El_B2004a DC2LSST_z
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_z.AB
       Generating new AB file El_B2004a.DC2LSST_y.AB....
     El_B2004a DC2LSST_y
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_y.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_y.AB
       Generating new AB file Sbc_B2004a.DC2LSST_u.AB....
     Sbc_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_u.AB
-      Generating new AB file Sbc_B2004a.DC2LSST_g.AB....
-    Sbc_B2004a DC2LSST_g
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_u.AB
+      Generating new AB file Sbc_B2004a.DC2LSST_g.AB....
+    Sbc_B2004a DC2LSST_g
     x_res[0] 3000.0
     x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_g.AB
+
+
+.. parsed-literal::
+
       Generating new AB file Sbc_B2004a.DC2LSST_r.AB....
     Sbc_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
-
-
-.. parsed-literal::
-
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_r.AB
       Generating new AB file Sbc_B2004a.DC2LSST_i.AB....
     Sbc_B2004a DC2LSST_i
-    x_res[0] 3000.0
-    x_res[-1] 11500.0
 
 
 .. parsed-literal::
 
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_i.AB
       Generating new AB file Sbc_B2004a.DC2LSST_z.AB....
     Sbc_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
-    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_z.AB
 
 
 .. parsed-literal::
 
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_z.AB
       Generating new AB file Sbc_B2004a.DC2LSST_y.AB....
     Sbc_B2004a DC2LSST_y
     x_res[0] 3000.0
@@ -599,15 +599,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 22.3 s, sys: 158 ms, total: 22.5 s
-    Wall time: 22.5 s
+    CPU times: user 22.3 s, sys: 150 ms, total: 22.5 s
+    Wall time: 22.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f7316e1d0>
+    <rail.core.data.QPHandle at 0x7f2ece1177f0>
 
 
 
@@ -687,7 +687,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f72ecc790>
+    <matplotlib.legend.Legend at 0x7f2ecd60feb0>
 
 
 
@@ -724,7 +724,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f72d305b0>
+    <matplotlib.legend.Legend at 0x7f2ecb37c1f0>
 
 
 
@@ -803,7 +803,7 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.1 s, sys: 123 ms, total: 32.2 s
+    CPU times: user 32.1 s, sys: 127 ms, total: 32.2 s
     Wall time: 32.2 s
 
 
@@ -941,15 +941,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.87 s, sys: 4.96 ms, total: 9.87 s
-    Wall time: 9.87 s
+    CPU times: user 9.83 s, sys: 5 ms, total: 9.84 s
+    Wall time: 9.84 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9f70b56740>
+    <rail.core.data.ModelHandle at 0x7f2ecd6ff5b0>
 
 
 
@@ -1059,7 +1059,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f95d30dc0>
+    <matplotlib.legend.Legend at 0x7f2ef9d24e20>
 
 
 
@@ -1135,15 +1135,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.6 s, sys: 131 ms, total: 12.7 s
-    Wall time: 12.7 s
+    CPU times: user 12.5 s, sys: 125 ms, total: 12.6 s
+    Wall time: 12.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f72ce3160>
+    <rail.core.data.QPHandle at 0x7f2ef9c57e80>
 
 
 
@@ -1170,7 +1170,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f95c17a60>
+    <matplotlib.legend.Legend at 0x7f2ef9d75180>
 
 
 
@@ -1233,7 +1233,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f72f91570>
+    <matplotlib.legend.Legend at 0x7f2ef9cdb820>
 
 
 
@@ -1365,6 +1365,10 @@ fraction of galaxies that have a delta(zmode - specz) larger than
     HDFN catastrophic outlier frac is: 0.0861
     new sed outlier frac: 0.0519
     custom prior catastrophic oulier frac is: 0.0793
+
+.. parsed-literal::
+
+    
 
 
 We see that the COSMOS SED has a smaller fraction of absolute outliers

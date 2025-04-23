@@ -90,6 +90,10 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
+
+
+.. parsed-literal::
+
     Imported rail.dnf
 
 
@@ -642,7 +646,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc82060c880>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fb8d822a350>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

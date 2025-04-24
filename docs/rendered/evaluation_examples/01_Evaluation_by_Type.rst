@@ -64,18 +64,6 @@ This will load (and download if needed) two files:
     
     ztrue_file = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
 
-
-.. parsed-literal::
-
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-     30 47.1M   30 14.4M    0     0  41.1M      0  0:00:01 --:--:--  0:00:01 41.0M100 47.1M  100 47.1M    0     0  91.0M      0 --:--:-- --:--:-- --:--:-- 90.9M
-
-
 .. code:: ipython3
 
     ensemble = DS.read_file(key='pdfs_data', handle_class=QPHandle, path=pdfs_file)
@@ -914,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f4f775aa7a0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f93a1ebb7f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1221,7 +1209,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f4f7646ada0>
+    <qp.ensemble.Ensemble at 0x7f93a1c7c2b0>
 
 
 

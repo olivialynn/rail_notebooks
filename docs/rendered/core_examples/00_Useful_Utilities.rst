@@ -118,10 +118,14 @@ imports.
 .. parsed-literal::
 
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 15 base classes and 80 fully formed stages to rail.stages
+    Attached 15 base classes and 86 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -228,7 +232,13 @@ we get.
     <class 'rail.creation.degraders.photometric_errors.PhotoErrorModel'>
     <class 'rail.creation.degraders.photometric_errors.LSSTErrorModel'>
     <class 'rail.creation.degraders.photometric_errors.RomanErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.RomanWideErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.RomanMediumErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.RomanDeepErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.RomanUltraDeepErrorModel'>
     <class 'rail.creation.degraders.photometric_errors.EuclidErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.EuclidWideErrorModel'>
+    <class 'rail.creation.degraders.photometric_errors.EuclidDeepErrorModel'>
     <class 'rail.creation.degraders.unrec_bl_model.UnrecBlModel'>
     <class 'rail.tools.photometry_tools.HyperbolicSmoothing'>
     <class 'rail.tools.photometry_tools.HyperbolicMagnitudes'>
@@ -622,7 +632,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f425fd93c40>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fdee1d630a0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -641,7 +651,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f425fd93c40>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fdee1d630a0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

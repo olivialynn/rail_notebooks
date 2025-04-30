@@ -56,6 +56,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
     <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
+    <class 'rail.evaluation.point_to_point_evaluator.PointToPointBinnedEvaluator'>
     <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
     <class 'rail.tools.table_tools.ColumnMapper'>
     <class 'rail.tools.table_tools.RowSelector'>
@@ -90,6 +91,10 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
+
+
+.. parsed-literal::
+
     Imported rail.dnf
 
 
@@ -112,20 +117,16 @@ imports.
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
+
+
+.. parsed-literal::
+
     Imported rail.pzflow
-
-
-.. parsed-literal::
-
     Imported rail.sklearn
-
-
-.. parsed-literal::
-
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 15 base classes and 86 fully formed stages to rail.stages
+    Attached 15 base classes and 87 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -214,6 +215,7 @@ we get.
     <class 'rail.evaluation.dist_to_dist_evaluator.DistToDistEvaluator'>
     <class 'rail.evaluation.dist_to_point_evaluator.DistToPointEvaluator'>
     <class 'rail.evaluation.point_to_point_evaluator.PointToPointEvaluator'>
+    <class 'rail.evaluation.point_to_point_evaluator.PointToPointBinnedEvaluator'>
     <class 'rail.evaluation.single_evaluator.SingleEvaluator'>
     <class 'rail.tools.table_tools.ColumnMapper'>
     <class 'rail.tools.table_tools.RowSelector'>
@@ -632,7 +634,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fdee1d630a0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc373d1bee0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -651,7 +653,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fdee1d630a0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fc373d1bee0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

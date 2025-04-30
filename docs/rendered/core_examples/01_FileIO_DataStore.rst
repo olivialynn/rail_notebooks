@@ -503,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8b6cc1e290>
+    <rail.core.data.ModelHandle at 0x7fbbc9cae8f0>
 
 
 
@@ -539,20 +539,20 @@ case of many of the estimator codes this is a FITS file titled
 .. parsed-literal::
 
     Inserting handle into data store.  model: knnpz.pkl, estimate_knn
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
     Process 0 estimating PZ PDF for rows 0 - 10,000
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_estimate_knn: inprogress_KNNPZ_estimates.hdf5, estimate_knn
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
 
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
 
@@ -586,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8b22988df0>
+    <matplotlib.legend.Legend at 0x7fbbc85f87c0>
 
 
 
@@ -616,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f8b1f935f90>
+    <matplotlib.legend.Legend at 0x7fbbc55ed9f0>
 
 
 

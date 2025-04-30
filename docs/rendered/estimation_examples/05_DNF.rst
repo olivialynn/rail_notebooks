@@ -148,15 +148,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 8.95 ms, sys: 2 ms, total: 11 ms
-    Wall time: 12.2 ms
+    CPU times: user 8.17 ms, sys: 2.13 ms, total: 10.3 ms
+    Wall time: 10.9 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7effa76b9450>
+    <rail.core.data.ModelHandle at 0x7fdaaff6d180>
 
 
 
@@ -191,7 +191,7 @@ the angular distance:
 .. parsed-literal::
 
     using metric ANF
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
     Process 0 estimating PZ PDF for rows 0 - 10,000
 
 
@@ -220,7 +220,7 @@ the angular distance:
 .. parsed-literal::
 
     Inserting handle into data store.  output_DNF_estimate: inprogress_output_DNF_estimate.hdf5, DNF_estimate
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
 
 
@@ -248,14 +248,14 @@ the angular distance:
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
 
 .. parsed-literal::
 
-    CPU times: user 16.5 s, sys: 414 ms, total: 16.9 s
-    Wall time: 16.8 s
+    CPU times: user 16.4 s, sys: 411 ms, total: 16.8 s
+    Wall time: 16.7 s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -413,27 +413,27 @@ distance, and compare both the mode results and PDF results:
 .. parsed-literal::
 
     using metric ENF
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
     Process 0 estimating PZ PDF for rows 0 - 10,000
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_DNF_estimate2: inprogress_output_DNF_estimate2.hdf5, DNF_estimate2
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
     Process 0 estimating PZ PDF for rows 10,000 - 20,000
 
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
 
 .. parsed-literal::
 
-    CPU times: user 13.4 s, sys: 366 ms, total: 13.8 s
-    Wall time: 13.7 s
+    CPU times: user 13.1 s, sys: 359 ms, total: 13.5 s
+    Wall time: 13.4 s
 
 
 .. code:: ipython3
@@ -558,7 +558,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7eff7d1a5240>
+    <matplotlib.legend.Legend at 0x7fda92f5fdc0>
 
 
 

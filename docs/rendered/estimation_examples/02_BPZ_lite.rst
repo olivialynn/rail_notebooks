@@ -597,7 +597,7 @@ for the SEDs and filters.
 .. parsed-literal::
 
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_y.AB
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
 
 
 .. parsed-literal::
@@ -609,25 +609,25 @@ for the SEDs and filters.
 .. parsed-literal::
 
     Inserting handle into data store.  output_bpz_def_prior: inprogress_bpz_results_defaultprior.hdf5, bpz_def_prior
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
 
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
 
 
 .. parsed-literal::
 
-    CPU times: user 22.7 s, sys: 175 ms, total: 22.9 s
-    Wall time: 22.8 s
+    CPU times: user 23 s, sys: 167 ms, total: 23.1 s
+    Wall time: 23.1 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3d978300a0>
+    <rail.core.data.QPHandle at 0x7f34effb7f70>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3d984602b0>
+    <matplotlib.legend.Legend at 0x7f34f0bd0b20>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3d978d0640>
+    <matplotlib.legend.Legend at 0x7f34efe81330>
 
 
 
@@ -2487,23 +2487,23 @@ used and stored for future runs).
 .. parsed-literal::
 
     Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_y.AB
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_bpz_newseds: inprogress_bpz_results_COSMOS_SEDs.hdf5, bpz_newseds
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
 
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
 
 
 .. parsed-literal::
 
-    CPU times: user 1min 15s, sys: 227 ms, total: 1min 15s
+    CPU times: user 1min 15s, sys: 216 ms, total: 1min 15s
     Wall time: 1min 15s
 
 
@@ -2641,15 +2641,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.98 s, sys: 3 ms, total: 9.98 s
-    Wall time: 9.98 s
+    CPU times: user 10.3 s, sys: 4.99 ms, total: 10.3 s
+    Wall time: 10.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3d9751dd80>
+    <rail.core.data.ModelHandle at 0x7f34efe32590>
 
 
 
@@ -2759,7 +2759,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3d94229b10>
+    <matplotlib.legend.Legend at 0x7f34ec9e9d80>
 
 
 
@@ -2819,31 +2819,31 @@ results are any different:
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 0 - 10000
+    Process 0 running estimator on chunk 0 - 10,000
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_rerun_bpz: inprogress_bpz_results_rerun.hdf5, rerun_bpz
-    Process 0 running estimator on chunk 10000 - 20000
+    Process 0 running estimator on chunk 10,000 - 20,000
 
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 20000 - 20449
+    Process 0 running estimator on chunk 20,000 - 20,449
 
 
 .. parsed-literal::
 
-    CPU times: user 12.7 s, sys: 131 ms, total: 12.8 s
-    Wall time: 12.8 s
+    CPU times: user 13.1 s, sys: 140 ms, total: 13.3 s
+    Wall time: 13.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3d943f6620>
+    <rail.core.data.QPHandle at 0x7f34ecaf7010>
 
 
 
@@ -2870,7 +2870,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3d94394c40>
+    <matplotlib.legend.Legend at 0x7f34ec9c0760>
 
 
 
@@ -2933,7 +2933,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3dc9967d60>
+    <matplotlib.legend.Legend at 0x7f351696b0a0>
 
 
 

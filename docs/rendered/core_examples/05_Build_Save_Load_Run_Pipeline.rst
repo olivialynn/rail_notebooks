@@ -368,11 +368,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3f8f5c9690>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f3f8f5c9b40>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0c31a11e40>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f0c949462f0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f3f8f5cafb0>]),
+       <rail.tools.table_tools.TableConverter at 0x7f0c949477c0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

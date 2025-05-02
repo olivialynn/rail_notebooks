@@ -96,7 +96,7 @@ that are included in the RAIL repo:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1141f0cb50>
+    <rail.core.data.ModelHandle at 0x7f91abc3ca60>
 
 
 
@@ -197,7 +197,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1141f0f3a0>
+    <matplotlib.legend.Legend at 0x7f91abc3f6d0>
 
 
 
@@ -261,8 +261,8 @@ appears alpha is broken, so this plot is not the best:
     Process 0 running estimator on chunk 20,000 - 20,449
     Inserting handle into data store.  output: inprogress_point_samples.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_point_NZ.hdf5, PointEstHistSummarizer
-    CPU times: user 16 s, sys: 5.42 s, total: 21.4 s
-    Wall time: 21.4 s
+    CPU times: user 16.2 s, sys: 5.37 s, total: 21.5 s
+    Wall time: 21.5 s
 
 
 .. code:: ipython3
@@ -283,7 +283,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1141d06e60>
+    <matplotlib.legend.Legend at 0x7f91a894bc40>
 
 
 
@@ -322,8 +322,8 @@ bins. Again let’s generate 20 samples and plot a few:
 
     Inserting handle into data store.  output_test_varinf: inprogress_sampletest.hdf5, test_varinf
     Inserting handle into data store.  single_NZ_test_varinf: inprogress_varinf_NZ.hdf5, test_varinf
-    CPU times: user 989 ms, sys: 49.1 ms, total: 1.04 s
-    Wall time: 1.04 s
+    CPU times: user 973 ms, sys: 46 ms, total: 1.02 s
+    Wall time: 1.02 s
 
 
 .. code:: ipython3
@@ -336,7 +336,7 @@ bins. Again let’s generate 20 samples and plot a few:
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f113ca2ed10>
+    <qp.ensemble.Ensemble at 0x7f91a8716e90>
 
 
 
@@ -395,7 +395,7 @@ of samples
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1142665a50>
+    <rail.core.data.ModelHandle at 0x7f91a892c790>
 
 
 
@@ -415,10 +415,6 @@ of samples
     Inserting handle into data store.  single_NZ: inprogress_NZDir_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_NZDir_samples.hdf5, NZDirSummarizer
     Process 0 running estimator on chunk 10000 - 20000
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 20000 - 20449
 
 
@@ -444,7 +440,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f113ca9dc30>
+    <matplotlib.legend.Legend at 0x7f91a8846860>
 
 
 
@@ -571,7 +567,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f113c90ff70>]
+    [<matplotlib.lines.Line2D at 0x7f91a85f3fd0>]
 
 
 
@@ -588,7 +584,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f1141ce96c0>]
+    [<matplotlib.lines.Line2D at 0x7f920406e6b0>]
 
 
 
@@ -605,7 +601,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f113c83ee60>]
+    [<matplotlib.lines.Line2D at 0x7f91a83ef010>]
 
 
 
@@ -640,7 +636,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f113c6f2410>
+    <matplotlib.legend.Legend at 0x7f91a8646590>
 
 
 

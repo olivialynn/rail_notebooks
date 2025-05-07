@@ -36,6 +36,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.informer.PzInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
@@ -43,6 +44,7 @@ be what we get by importing ``rail`` and ``rail.stages``.
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.estimator.PzEstimator'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
@@ -91,10 +93,6 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
-
-
-.. parsed-literal::
-
     Imported rail.dnf
 
 
@@ -126,7 +124,7 @@ imports.
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 15 base classes and 87 fully formed stages to rail.stages
+    Attached 15 base classes and 88 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -195,6 +193,7 @@ we get.
     <class 'rail.creation.degraders.quantityCut.QuantityCut'>
     <class 'rail.estimation.classifier.PZClassifier'>
     <class 'rail.estimation.algos.equal_count.EqualCountClassifier'>
+    <class 'rail.estimation.informer.PzInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackInformer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackSummarizer'>
     <class 'rail.estimation.algos.naive_stack.NaiveStackMaskedSummarizer'>
@@ -202,6 +201,7 @@ we get.
     <class 'rail.estimation.algos.point_est_hist.PointEstHistSummarizer'>
     <class 'rail.estimation.algos.point_est_hist.PointEstHistMaskedSummarizer'>
     <class 'rail.estimation.estimator.CatEstimator'>
+    <class 'rail.estimation.estimator.PzEstimator'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussInformer'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZInformer'>
@@ -634,7 +634,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1f9b1eb880>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9faca79120>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -653,7 +653,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1f9b1eb880>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f9faca79120>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

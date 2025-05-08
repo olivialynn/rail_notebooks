@@ -201,7 +201,7 @@ realistic setup this number should be much larger**.
 
 .. parsed-literal::
 
-    YAW | yet_another_wizz v3.1.1
+    YAW | yet_another_wizz v3.1.2
 
 
 .. parsed-literal::
@@ -227,7 +227,7 @@ realistic setup this number should be much larger**.
 
 .. parsed-literal::
 
-    INF | computing patch centers from subset of 224K records
+    INF | computing 5 patch centers from subset of 224K records
 
 
 .. parsed-literal::
@@ -340,7 +340,7 @@ deterministic. We can see in the log messages that the code reports
 
 .. parsed-literal::
 
-    YAW | yet_another_wizz v3.1.1
+    YAW | yet_another_wizz v3.1.2
 
 
 .. parsed-literal::
@@ -446,7 +446,7 @@ the cache (handle) of the reference dataset.
 
 .. parsed-literal::
 
-    YAW | yet_another_wizz v3.1.1
+    YAW | yet_another_wizz v3.1.2
 
 
 .. parsed-literal::
@@ -586,7 +586,7 @@ the cache (handles) of the reference and the unknown data.
 
 .. parsed-literal::
 
-    YAW | yet_another_wizz v3.1.1
+    YAW | yet_another_wizz v3.1.2
 
 
 .. parsed-literal::
@@ -745,7 +745,7 @@ practice since the exact redshifts of the unknown objects are not known.
 
 .. parsed-literal::
 
-    YAW | yet_another_wizz v3.1.1
+    YAW | yet_another_wizz v3.1.2
 
 
 .. parsed-literal::
@@ -819,8 +819,8 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    array([1.07182461, 1.35668927, 1.56375463, 4.83102594, 2.48537537,
-           3.28650675, 2.64576631, 2.38672804])
+    array([0.99751831, 2.37893624, 2.14804959, 7.20831464, 2.18093417,
+           5.07480432, 2.19060571, 2.21372888])
 
 
 
@@ -852,7 +852,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fbb0c1df520>
+    <matplotlib.legend.Legend at 0x7f9b48b5f940>
 
 
 

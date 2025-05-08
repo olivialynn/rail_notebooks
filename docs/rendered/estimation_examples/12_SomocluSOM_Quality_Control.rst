@@ -165,6 +165,1686 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
+      Generating new AB file Ell1_A_0.DC2LSST_u.AB....
+    Ell1_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/desc_bpz/useful_py3.py:436: RuntimeWarning: invalid value encountered in divide
+      d=(yg[1:]-yg[0:-1])/(xg[1:]-xg[0:-1])
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_u.AB
+      Generating new AB file Ell1_A_0.DC2LSST_g.AB....
+    Ell1_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_g.AB
+      Generating new AB file Ell1_A_0.DC2LSST_r.AB....
+    Ell1_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_r.AB
+      Generating new AB file Ell1_A_0.DC2LSST_i.AB....
+    Ell1_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_i.AB
+      Generating new AB file Ell1_A_0.DC2LSST_z.AB....
+    Ell1_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_z.AB
+      Generating new AB file Ell1_A_0.DC2LSST_y.AB....
+    Ell1_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell1_A_0.DC2LSST_y.AB
+      Generating new AB file Ell2_A_0.DC2LSST_u.AB....
+    Ell2_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_u.AB
+      Generating new AB file Ell2_A_0.DC2LSST_g.AB....
+    Ell2_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_g.AB
+      Generating new AB file Ell2_A_0.DC2LSST_r.AB....
+    Ell2_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_r.AB
+      Generating new AB file Ell2_A_0.DC2LSST_i.AB....
+    Ell2_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_i.AB
+      Generating new AB file Ell2_A_0.DC2LSST_z.AB....
+    Ell2_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_z.AB
+      Generating new AB file Ell2_A_0.DC2LSST_y.AB....
+    Ell2_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell2_A_0.DC2LSST_y.AB
+      Generating new AB file Ell3_A_0.DC2LSST_u.AB....
+    Ell3_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_u.AB
+      Generating new AB file Ell3_A_0.DC2LSST_g.AB....
+    Ell3_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_g.AB
+      Generating new AB file Ell3_A_0.DC2LSST_r.AB....
+    Ell3_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_r.AB
+      Generating new AB file Ell3_A_0.DC2LSST_i.AB....
+    Ell3_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_i.AB
+      Generating new AB file Ell3_A_0.DC2LSST_z.AB....
+    Ell3_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_z.AB
+      Generating new AB file Ell3_A_0.DC2LSST_y.AB....
+    Ell3_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell3_A_0.DC2LSST_y.AB
+      Generating new AB file Ell4_A_0.DC2LSST_u.AB....
+    Ell4_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_u.AB
+      Generating new AB file Ell4_A_0.DC2LSST_g.AB....
+    Ell4_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_g.AB
+      Generating new AB file Ell4_A_0.DC2LSST_r.AB....
+    Ell4_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_r.AB
+      Generating new AB file Ell4_A_0.DC2LSST_i.AB....
+    Ell4_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_i.AB
+      Generating new AB file Ell4_A_0.DC2LSST_z.AB....
+    Ell4_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_z.AB
+      Generating new AB file Ell4_A_0.DC2LSST_y.AB....
+    Ell4_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell4_A_0.DC2LSST_y.AB
+      Generating new AB file Ell5_A_0.DC2LSST_u.AB....
+    Ell5_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_u.AB
+      Generating new AB file Ell5_A_0.DC2LSST_g.AB....
+    Ell5_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_g.AB
+      Generating new AB file Ell5_A_0.DC2LSST_r.AB....
+    Ell5_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_r.AB
+      Generating new AB file Ell5_A_0.DC2LSST_i.AB....
+    Ell5_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_i.AB
+      Generating new AB file Ell5_A_0.DC2LSST_z.AB....
+    Ell5_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_z.AB
+      Generating new AB file Ell5_A_0.DC2LSST_y.AB....
+    Ell5_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell5_A_0.DC2LSST_y.AB
+      Generating new AB file Ell6_A_0.DC2LSST_u.AB....
+    Ell6_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_u.AB
+      Generating new AB file Ell6_A_0.DC2LSST_g.AB....
+    Ell6_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_g.AB
+      Generating new AB file Ell6_A_0.DC2LSST_r.AB....
+    Ell6_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_r.AB
+      Generating new AB file Ell6_A_0.DC2LSST_i.AB....
+    Ell6_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_i.AB
+      Generating new AB file Ell6_A_0.DC2LSST_z.AB....
+    Ell6_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_z.AB
+      Generating new AB file Ell6_A_0.DC2LSST_y.AB....
+    Ell6_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell6_A_0.DC2LSST_y.AB
+      Generating new AB file Ell7_A_0.DC2LSST_u.AB....
+    Ell7_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_u.AB
+      Generating new AB file Ell7_A_0.DC2LSST_g.AB....
+    Ell7_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_g.AB
+      Generating new AB file Ell7_A_0.DC2LSST_r.AB....
+    Ell7_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_r.AB
+      Generating new AB file Ell7_A_0.DC2LSST_i.AB....
+    Ell7_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_i.AB
+      Generating new AB file Ell7_A_0.DC2LSST_z.AB....
+    Ell7_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_z.AB
+      Generating new AB file Ell7_A_0.DC2LSST_y.AB....
+    Ell7_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Ell7_A_0.DC2LSST_y.AB
+      Generating new AB file S0_A_0.DC2LSST_u.AB....
+    S0_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_u.AB
+      Generating new AB file S0_A_0.DC2LSST_g.AB....
+    S0_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_g.AB
+      Generating new AB file S0_A_0.DC2LSST_r.AB....
+    S0_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_r.AB
+      Generating new AB file S0_A_0.DC2LSST_i.AB....
+    S0_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_i.AB
+      Generating new AB file S0_A_0.DC2LSST_z.AB....
+    S0_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_z.AB
+      Generating new AB file S0_A_0.DC2LSST_y.AB....
+    S0_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/S0_A_0.DC2LSST_y.AB
+      Generating new AB file Sa_A_0.DC2LSST_u.AB....
+    Sa_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_u.AB
+      Generating new AB file Sa_A_0.DC2LSST_g.AB....
+    Sa_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_g.AB
+      Generating new AB file Sa_A_0.DC2LSST_r.AB....
+    Sa_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_r.AB
+      Generating new AB file Sa_A_0.DC2LSST_i.AB....
+    Sa_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_i.AB
+      Generating new AB file Sa_A_0.DC2LSST_z.AB....
+    Sa_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_z.AB
+      Generating new AB file Sa_A_0.DC2LSST_y.AB....
+    Sa_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_0.DC2LSST_y.AB
+      Generating new AB file Sa_A_1.DC2LSST_u.AB....
+    Sa_A_1 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_u.AB
+      Generating new AB file Sa_A_1.DC2LSST_g.AB....
+    Sa_A_1 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_g.AB
+      Generating new AB file Sa_A_1.DC2LSST_r.AB....
+    Sa_A_1 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_r.AB
+      Generating new AB file Sa_A_1.DC2LSST_i.AB....
+    Sa_A_1 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_i.AB
+      Generating new AB file Sa_A_1.DC2LSST_z.AB....
+    Sa_A_1 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_z.AB
+      Generating new AB file Sa_A_1.DC2LSST_y.AB....
+    Sa_A_1 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sa_A_1.DC2LSST_y.AB
+      Generating new AB file Sb_A_0.DC2LSST_u.AB....
+    Sb_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_u.AB
+      Generating new AB file Sb_A_0.DC2LSST_g.AB....
+    Sb_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_g.AB
+      Generating new AB file Sb_A_0.DC2LSST_r.AB....
+    Sb_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_r.AB
+      Generating new AB file Sb_A_0.DC2LSST_i.AB....
+    Sb_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_i.AB
+      Generating new AB file Sb_A_0.DC2LSST_z.AB....
+    Sb_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_z.AB
+      Generating new AB file Sb_A_0.DC2LSST_y.AB....
+    Sb_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_0.DC2LSST_y.AB
+      Generating new AB file Sb_A_1.DC2LSST_u.AB....
+    Sb_A_1 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_u.AB
+      Generating new AB file Sb_A_1.DC2LSST_g.AB....
+    Sb_A_1 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_g.AB
+      Generating new AB file Sb_A_1.DC2LSST_r.AB....
+    Sb_A_1 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_r.AB
+      Generating new AB file Sb_A_1.DC2LSST_i.AB....
+    Sb_A_1 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_i.AB
+      Generating new AB file Sb_A_1.DC2LSST_z.AB....
+    Sb_A_1 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_z.AB
+      Generating new AB file Sb_A_1.DC2LSST_y.AB....
+    Sb_A_1 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sb_A_1.DC2LSST_y.AB
+      Generating new AB file Sc_A_0.DC2LSST_u.AB....
+    Sc_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_u.AB
+      Generating new AB file Sc_A_0.DC2LSST_g.AB....
+    Sc_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_g.AB
+      Generating new AB file Sc_A_0.DC2LSST_r.AB....
+    Sc_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_r.AB
+      Generating new AB file Sc_A_0.DC2LSST_i.AB....
+    Sc_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_i.AB
+      Generating new AB file Sc_A_0.DC2LSST_z.AB....
+    Sc_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_z.AB
+      Generating new AB file Sc_A_0.DC2LSST_y.AB....
+    Sc_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_0.DC2LSST_y.AB
+      Generating new AB file Sc_A_1.DC2LSST_u.AB....
+    Sc_A_1 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_u.AB
+      Generating new AB file Sc_A_1.DC2LSST_g.AB....
+    Sc_A_1 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_g.AB
+      Generating new AB file Sc_A_1.DC2LSST_r.AB....
+    Sc_A_1 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_r.AB
+      Generating new AB file Sc_A_1.DC2LSST_i.AB....
+    Sc_A_1 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_i.AB
+      Generating new AB file Sc_A_1.DC2LSST_z.AB....
+    Sc_A_1 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_z.AB
+      Generating new AB file Sc_A_1.DC2LSST_y.AB....
+    Sc_A_1 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_1.DC2LSST_y.AB
+      Generating new AB file Sc_A_2.DC2LSST_u.AB....
+    Sc_A_2 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_u.AB
+      Generating new AB file Sc_A_2.DC2LSST_g.AB....
+    Sc_A_2 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_g.AB
+      Generating new AB file Sc_A_2.DC2LSST_r.AB....
+    Sc_A_2 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_r.AB
+      Generating new AB file Sc_A_2.DC2LSST_i.AB....
+    Sc_A_2 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_i.AB
+      Generating new AB file Sc_A_2.DC2LSST_z.AB....
+    Sc_A_2 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_z.AB
+      Generating new AB file Sc_A_2.DC2LSST_y.AB....
+    Sc_A_2 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sc_A_2.DC2LSST_y.AB
+      Generating new AB file Sd_A_0.DC2LSST_u.AB....
+    Sd_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_u.AB
+      Generating new AB file Sd_A_0.DC2LSST_g.AB....
+    Sd_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_g.AB
+      Generating new AB file Sd_A_0.DC2LSST_r.AB....
+    Sd_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_r.AB
+      Generating new AB file Sd_A_0.DC2LSST_i.AB....
+    Sd_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_i.AB
+      Generating new AB file Sd_A_0.DC2LSST_z.AB....
+    Sd_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_z.AB
+      Generating new AB file Sd_A_0.DC2LSST_y.AB....
+    Sd_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_0.DC2LSST_y.AB
+      Generating new AB file Sd_A_1.DC2LSST_u.AB....
+    Sd_A_1 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_u.AB
+      Generating new AB file Sd_A_1.DC2LSST_g.AB....
+    Sd_A_1 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_g.AB
+      Generating new AB file Sd_A_1.DC2LSST_r.AB....
+    Sd_A_1 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_r.AB
+      Generating new AB file Sd_A_1.DC2LSST_i.AB....
+    Sd_A_1 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_i.AB
+      Generating new AB file Sd_A_1.DC2LSST_z.AB....
+    Sd_A_1 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_z.AB
+      Generating new AB file Sd_A_1.DC2LSST_y.AB....
+    Sd_A_1 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_1.DC2LSST_y.AB
+      Generating new AB file Sd_A_2.DC2LSST_u.AB....
+    Sd_A_2 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_u.AB
+      Generating new AB file Sd_A_2.DC2LSST_g.AB....
+    Sd_A_2 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_g.AB
+      Generating new AB file Sd_A_2.DC2LSST_r.AB....
+    Sd_A_2 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_r.AB
+      Generating new AB file Sd_A_2.DC2LSST_i.AB....
+    Sd_A_2 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_i.AB
+      Generating new AB file Sd_A_2.DC2LSST_z.AB....
+    Sd_A_2 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_z.AB
+      Generating new AB file Sd_A_2.DC2LSST_y.AB....
+    Sd_A_2 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sd_A_2.DC2LSST_y.AB
+      Generating new AB file Sdm_A_0.DC2LSST_u.AB....
+    Sdm_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_u.AB
+      Generating new AB file Sdm_A_0.DC2LSST_g.AB....
+    Sdm_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_g.AB
+      Generating new AB file Sdm_A_0.DC2LSST_r.AB....
+    Sdm_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_r.AB
+      Generating new AB file Sdm_A_0.DC2LSST_i.AB....
+    Sdm_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_i.AB
+      Generating new AB file Sdm_A_0.DC2LSST_z.AB....
+    Sdm_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_z.AB
+      Generating new AB file Sdm_A_0.DC2LSST_y.AB....
+    Sdm_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sdm_A_0.DC2LSST_y.AB
+      Generating new AB file SB0_A_0.DC2LSST_u.AB....
+    SB0_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_u.AB
+      Generating new AB file SB0_A_0.DC2LSST_g.AB....
+    SB0_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_g.AB
+      Generating new AB file SB0_A_0.DC2LSST_r.AB....
+    SB0_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_r.AB
+      Generating new AB file SB0_A_0.DC2LSST_i.AB....
+    SB0_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_i.AB
+      Generating new AB file SB0_A_0.DC2LSST_z.AB....
+    SB0_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_z.AB
+      Generating new AB file SB0_A_0.DC2LSST_y.AB....
+    SB0_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB0_A_0.DC2LSST_y.AB
+      Generating new AB file SB1_A_0.DC2LSST_u.AB....
+    SB1_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_u.AB
+      Generating new AB file SB1_A_0.DC2LSST_g.AB....
+    SB1_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_g.AB
+      Generating new AB file SB1_A_0.DC2LSST_r.AB....
+    SB1_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_r.AB
+      Generating new AB file SB1_A_0.DC2LSST_i.AB....
+    SB1_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_i.AB
+      Generating new AB file SB1_A_0.DC2LSST_z.AB....
+    SB1_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_z.AB
+      Generating new AB file SB1_A_0.DC2LSST_y.AB....
+    SB1_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB1_A_0.DC2LSST_y.AB
+      Generating new AB file SB2_A_0.DC2LSST_u.AB....
+    SB2_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_u.AB
+      Generating new AB file SB2_A_0.DC2LSST_g.AB....
+    SB2_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_g.AB
+      Generating new AB file SB2_A_0.DC2LSST_r.AB....
+    SB2_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_r.AB
+      Generating new AB file SB2_A_0.DC2LSST_i.AB....
+    SB2_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_i.AB
+      Generating new AB file SB2_A_0.DC2LSST_z.AB....
+    SB2_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_z.AB
+      Generating new AB file SB2_A_0.DC2LSST_y.AB....
+    SB2_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_A_0.DC2LSST_y.AB
+      Generating new AB file SB3_A_0.DC2LSST_u.AB....
+    SB3_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_u.AB
+      Generating new AB file SB3_A_0.DC2LSST_g.AB....
+    SB3_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_g.AB
+      Generating new AB file SB3_A_0.DC2LSST_r.AB....
+    SB3_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_r.AB
+      Generating new AB file SB3_A_0.DC2LSST_i.AB....
+    SB3_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_i.AB
+      Generating new AB file SB3_A_0.DC2LSST_z.AB....
+    SB3_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_z.AB
+      Generating new AB file SB3_A_0.DC2LSST_y.AB....
+    SB3_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_A_0.DC2LSST_y.AB
+      Generating new AB file SB4_A_0.DC2LSST_u.AB....
+    SB4_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_u.AB
+      Generating new AB file SB4_A_0.DC2LSST_g.AB....
+    SB4_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_g.AB
+      Generating new AB file SB4_A_0.DC2LSST_r.AB....
+    SB4_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_r.AB
+      Generating new AB file SB4_A_0.DC2LSST_i.AB....
+    SB4_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_i.AB
+      Generating new AB file SB4_A_0.DC2LSST_z.AB....
+    SB4_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_z.AB
+      Generating new AB file SB4_A_0.DC2LSST_y.AB....
+    SB4_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB4_A_0.DC2LSST_y.AB
+      Generating new AB file SB5_A_0.DC2LSST_u.AB....
+    SB5_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_u.AB
+      Generating new AB file SB5_A_0.DC2LSST_g.AB....
+    SB5_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_g.AB
+      Generating new AB file SB5_A_0.DC2LSST_r.AB....
+    SB5_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_r.AB
+      Generating new AB file SB5_A_0.DC2LSST_i.AB....
+    SB5_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_i.AB
+      Generating new AB file SB5_A_0.DC2LSST_z.AB....
+    SB5_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_z.AB
+      Generating new AB file SB5_A_0.DC2LSST_y.AB....
+    SB5_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB5_A_0.DC2LSST_y.AB
+      Generating new AB file SB6_A_0.DC2LSST_u.AB....
+    SB6_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_u.AB
+      Generating new AB file SB6_A_0.DC2LSST_g.AB....
+    SB6_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_g.AB
+      Generating new AB file SB6_A_0.DC2LSST_r.AB....
+    SB6_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_r.AB
+      Generating new AB file SB6_A_0.DC2LSST_i.AB....
+    SB6_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_i.AB
+      Generating new AB file SB6_A_0.DC2LSST_z.AB....
+    SB6_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_z.AB
+      Generating new AB file SB6_A_0.DC2LSST_y.AB....
+    SB6_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB6_A_0.DC2LSST_y.AB
+      Generating new AB file SB7_A_0.DC2LSST_u.AB....
+    SB7_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_u.AB
+      Generating new AB file SB7_A_0.DC2LSST_g.AB....
+    SB7_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_g.AB
+      Generating new AB file SB7_A_0.DC2LSST_r.AB....
+    SB7_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_r.AB
+      Generating new AB file SB7_A_0.DC2LSST_i.AB....
+    SB7_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_i.AB
+      Generating new AB file SB7_A_0.DC2LSST_z.AB....
+    SB7_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_z.AB
+      Generating new AB file SB7_A_0.DC2LSST_y.AB....
+    SB7_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB7_A_0.DC2LSST_y.AB
+      Generating new AB file SB8_A_0.DC2LSST_u.AB....
+    SB8_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_u.AB
+      Generating new AB file SB8_A_0.DC2LSST_g.AB....
+    SB8_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_g.AB
+      Generating new AB file SB8_A_0.DC2LSST_r.AB....
+    SB8_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_r.AB
+      Generating new AB file SB8_A_0.DC2LSST_i.AB....
+    SB8_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_i.AB
+      Generating new AB file SB8_A_0.DC2LSST_z.AB....
+    SB8_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_z.AB
+      Generating new AB file SB8_A_0.DC2LSST_y.AB....
+    SB8_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB8_A_0.DC2LSST_y.AB
+      Generating new AB file SB9_A_0.DC2LSST_u.AB....
+    SB9_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_u.AB
+      Generating new AB file SB9_A_0.DC2LSST_g.AB....
+    SB9_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_g.AB
+      Generating new AB file SB9_A_0.DC2LSST_r.AB....
+    SB9_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_r.AB
+      Generating new AB file SB9_A_0.DC2LSST_i.AB....
+    SB9_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_i.AB
+      Generating new AB file SB9_A_0.DC2LSST_z.AB....
+    SB9_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_z.AB
+      Generating new AB file SB9_A_0.DC2LSST_y.AB....
+    SB9_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB9_A_0.DC2LSST_y.AB
+      Generating new AB file SB10_A_0.DC2LSST_u.AB....
+    SB10_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_u.AB
+      Generating new AB file SB10_A_0.DC2LSST_g.AB....
+    SB10_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_g.AB
+      Generating new AB file SB10_A_0.DC2LSST_r.AB....
+    SB10_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_r.AB
+      Generating new AB file SB10_A_0.DC2LSST_i.AB....
+    SB10_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_i.AB
+      Generating new AB file SB10_A_0.DC2LSST_z.AB....
+    SB10_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_z.AB
+      Generating new AB file SB10_A_0.DC2LSST_y.AB....
+    SB10_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB10_A_0.DC2LSST_y.AB
+      Generating new AB file SB11_A_0.DC2LSST_u.AB....
+    SB11_A_0 DC2LSST_u
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_u.AB
+      Generating new AB file SB11_A_0.DC2LSST_g.AB....
+    SB11_A_0 DC2LSST_g
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_g.AB
+      Generating new AB file SB11_A_0.DC2LSST_r.AB....
+    SB11_A_0 DC2LSST_r
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_r.AB
+      Generating new AB file SB11_A_0.DC2LSST_i.AB....
+    SB11_A_0 DC2LSST_i
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_i.AB
+      Generating new AB file SB11_A_0.DC2LSST_z.AB....
+    SB11_A_0 DC2LSST_z
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_z.AB
+      Generating new AB file SB11_A_0.DC2LSST_y.AB....
+    SB11_A_0 DC2LSST_y
+    x_res[0] 3000.0
+    x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
+    Writing AB file  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB11_A_0.DC2LSST_y.AB
     Process 0 running estimator on chunk 0 - 150,818
 
 
@@ -183,7 +1863,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f4e372ddc30>
+    <rail.core.data.QPHandle at 0x7f6d199cf130>
 
 
 
@@ -206,7 +1886,7 @@ Now measure the photometric redshifts using the ``bpz_lite``
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f4e373b0130>
+    <rail.core.data.QPHandle at 0x7f6d198b01c0>
 
 
 
@@ -315,7 +1995,7 @@ cut the data to make a tomographic bin
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4e34e66aa0>
+    <matplotlib.legend.Legend at 0x7f6d175a71c0>
 
 
 
@@ -379,7 +2059,7 @@ colors in this example notebook.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 2min 28s, sys: 98.4 ms, total: 2min 29s
+    CPU times: user 2min 29s, sys: 54.5 ms, total: 2min 29s
     Wall time: 38.1 s
 
 
@@ -387,7 +2067,7 @@ colors in this example notebook.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f4e34e66b60>
+    <rail.core.data.ModelHandle at 0x7f6d74860e80>
 
 
 
@@ -453,7 +2133,7 @@ Summarize the SOM with target data and spectroscopic reference
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f4e34d03eb0>
+    <rail.core.data.QPHandle at 0x7f6d1743ff70>
 
 
 
@@ -768,11 +2448,11 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    /tmp/ipykernel_8589/1549956096.py:3: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/1549956096.py:3: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)], np.linspace(0,3,101))
-    /tmp/ipykernel_8589/1549956096.py:11: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/1549956096.py:11: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)])
-    /tmp/ipykernel_8589/1549956096.py:12: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/1549956096.py:12: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good)])
 
 
@@ -846,11 +2526,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qc1 was not generated.
-    /tmp/ipykernel_8589/4069415879.py:19: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/4069415879.py:19: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qc1_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)], np.linspace(0,3,101))
-    /tmp/ipykernel_8589/4069415879.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/4069415879.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qc1 = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)])
-    /tmp/ipykernel_8589/4069415879.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/4069415879.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qc1 = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc1)])
 
 
@@ -925,11 +2605,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qc2 was not generated.
-    /tmp/ipykernel_8589/2860531574.py:20: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2860531574.py:20: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qc2_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)], np.linspace(0,3,101))
-    /tmp/ipykernel_8589/2860531574.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2860531574.py:25: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qc2 = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)])
-    /tmp/ipykernel_8589/2860531574.py:26: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2860531574.py:26: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qc2 = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qc2)])
 
 
@@ -1002,11 +2682,11 @@ compare it to the true tomographic bin file:
 .. parsed-literal::
 
     NOTE/WARNING: Expected output file uncovered_cluster_file_SOMoclu_summarizer_qccombined was not generated.
-    /tmp/ipykernel_8589/2929519640.py:18: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2929519640.py:18: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       target_nz_hist_qccombined_true, zbin = get_cont_hist(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)], np.linspace(0,3,101))
-    /tmp/ipykernel_8589/2929519640.py:23: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2929519640.py:23: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_mean_qccombined = np.mean(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)])
-    /tmp/ipykernel_8589/2929519640.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+    /tmp/ipykernel_7592/2929519640.py:24: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
       true_full_std_qccombined = np.std(target_data.data['photometry']['redshift'][np.in1d(target_som_clusterind, cluster_ind_good_qccombined)])
 
 
@@ -1107,7 +2787,7 @@ for the four cases
 
 .. parsed-literal::
 
-    /tmp/ipykernel_8589/2502127049.py:8: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+    /tmp/ipykernel_7592/2502127049.py:8: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
       ax.set_yticklabels(['SOM N(z), QC1+QC2', 'SOM N(z), QC2','SOM N(z), QC1', 'SOM N(z)'])
 
 

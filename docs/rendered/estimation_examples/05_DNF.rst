@@ -148,15 +148,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.83 ms, sys: 1.07 ms, total: 10.9 ms
-    Wall time: 10.5 ms
+    CPU times: user 6.66 ms, sys: 3.89 ms, total: 10.5 ms
+    Wall time: 10.3 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa46cb6a950>
+    <rail.core.data.ModelHandle at 0x7f16f7b990c0>
 
 
 
@@ -246,8 +246,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 9.28 s, sys: 416 ms, total: 9.69 s
-    Wall time: 9.67 s
+    CPU times: user 9.5 s, sys: 382 ms, total: 9.88 s
+    Wall time: 9.86 s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -424,8 +424,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 9.24 s, sys: 314 ms, total: 9.56 s
-    Wall time: 9.53 s
+    CPU times: user 9.35 s, sys: 308 ms, total: 9.65 s
+    Wall time: 9.65 s
 
 
 .. code:: ipython3
@@ -550,7 +550,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fa41c5f8f40>
+    <matplotlib.legend.Legend at 0x7f16cd772500>
 
 
 

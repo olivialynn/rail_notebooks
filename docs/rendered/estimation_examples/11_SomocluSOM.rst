@@ -96,15 +96,11 @@ on galaxies with particularly high S/N rates.
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0 9434k    0 32469    0     0   109k      0  0:01:26 --:--:--  0:01:26  109k
-
-.. parsed-literal::
-
-    100 9434k  100 9434k    0     0  13.1M      0 --:--:-- --:--:-- --:--:-- 13.1M
+      2 9434k    2  221k    0     0   217k      0  0:00:43  0:00:01  0:00:42  217k100 9434k  100 9434k    0     0  8421k      0  0:00:01  0:00:01 --:--:-- 8416k
 
 
 .. code:: ipython3
@@ -183,7 +179,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 5min 13s, sys: 146 ms, total: 5min 13s
+    CPU times: user 5min 13s, sys: 258 ms, total: 5min 13s
     Wall time: 1min 20s
 
 
@@ -191,7 +187,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9fa4b39ea0>
+    <rail.core.data.ModelHandle at 0x7f01a4ff3370>
 
 
 
@@ -260,7 +256,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_7234/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_7310/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -413,7 +409,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f4d22bdf0>
+    <rail.core.data.QPHandle at 0x7f0157643100>
 
 
 
@@ -449,7 +445,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f4d26c340>
+    <matplotlib.legend.Legend at 0x7f01576884c0>
 
 
 
@@ -506,7 +502,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f4d2fd7b0>
+    <rail.core.data.QPHandle at 0x7f01575156f0>
 
 
 
@@ -533,7 +529,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f4d2fc190>
+    <matplotlib.legend.Legend at 0x7f0157515f00>
 
 
 
@@ -737,7 +733,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f509f7c10>
+    <matplotlib.legend.Legend at 0x7f015acbf730>
 
 
 

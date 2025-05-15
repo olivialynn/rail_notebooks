@@ -93,10 +93,6 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
-
-
-.. parsed-literal::
-
     Imported rail.dnf
 
 
@@ -632,16 +628,17 @@ Just add a ``resume=True`` to do so.
     )
 
 
+.. parsed-literal::
+
+    Skipping stage flow_engine_test because its outputs exist already
+    Skipping stage col_remapper_test because its outputs exist already
+
+
 
 
 .. parsed-literal::
 
-    (({'flow_engine_test': <Job flow_engine_test>,
-       'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7faee21ebd30>,
-       Stage that applies remaps the following column names in a pandas DataFrame:
-       f{str(self.config.columns)}]),
-     {'output_dir': '.', 'log_dir': '.', 'resume': True})
+    (({}, []), {'output_dir': '.', 'log_dir': '.', 'resume': True})
 
 
 
@@ -657,7 +654,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7faee21ebd30>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fcdd0e24d30>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

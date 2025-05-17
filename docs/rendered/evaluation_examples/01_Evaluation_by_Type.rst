@@ -73,15 +73,27 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 52947    0     0  76687      0  0:10:44 --:--:--  0:10:44 76623
+      0 47.1M    0 52947    0     0  67896      0  0:12:07 --:--:--  0:12:07 67880
 
 .. parsed-literal::
 
-     56 47.1M   56 26.6M    0     0  15.6M      0  0:00:03  0:00:01  0:00:02 15.6M
+      2 47.1M    2 1345k    0     0   729k      0  0:01:06  0:00:01  0:01:05  729k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  22.5M      0  0:00:02  0:00:02 --:--:-- 22.5M
+     28 47.1M   28 13.3M    0     0  4866k      0  0:00:09  0:00:02  0:00:07 4865k
+
+.. parsed-literal::
+
+     55 47.1M   55 26.3M    0     0  7158k      0  0:00:06  0:00:03  0:00:03 7157k
+
+.. parsed-literal::
+
+     83 47.1M   83 39.5M    0     0  8491k      0  0:00:05  0:00:04  0:00:01 8490k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  9110k      0  0:00:05  0:00:05 --:--:-- 10.4M
 
 
 .. code:: ipython3
@@ -922,7 +934,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f67cdf23ee0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fc474aea7a0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1229,7 +1241,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f67d5e26aa0>
+    <qp.ensemble.Ensemble at 0x7fc47c84aad0>
 
 
 
@@ -1421,6 +1433,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

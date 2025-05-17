@@ -115,16 +115,22 @@ imports.
     Imported rail.gpz
     Imported rail.hub
     Imported rail.interfaces
-    Imported rail.pzflow
+    LEPHAREDIR is being set to the default cache directory which is being created at:
+    /home/runner/.cache/lephare/data
+    More than 1Gb may be written there.
+    LEPHAREWORK is being set to the default cache directory:
+    /home/runner/.cache/lephare/work
+    Imported rail.lephare
 
 
 .. parsed-literal::
 
+    Imported rail.pzflow
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 15 base classes and 88 fully formed stages to rail.stages
+    Attached 15 base classes and 90 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -263,6 +269,8 @@ we get.
     <class 'rail.creation.engines.fsps_sed_modeler.FSPSSedModeler'>
     <class 'rail.estimation.algos.gpz.GPzInformer'>
     <class 'rail.estimation.algos.gpz.GPzEstimator'>
+    <class 'rail.estimation.algos.lephare.LephareInformer'>
+    <class 'rail.estimation.algos.lephare.LephareEstimator'>
     <class 'rail.creation.engines.flowEngine.FlowModeler'>
     <class 'rail.creation.engines.flowEngine.FlowCreator'>
     <class 'rail.creation.engines.flowEngine.FlowPosterior'>
@@ -307,6 +315,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.dnf.DNFEstimator'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.estimation.algos.gpz.GPzEstimator'>
+    <class 'rail.estimation.algos.lephare.LephareEstimator'>
     <class 'rail.estimation.algos.pzflow_nf.PZFlowEstimator'>
     <class 'rail.estimation.algos.k_nearneigh.KNearNeighEstimator'>
     <class 'rail.estimation.algos.sklearn_neurnet.SklNeurNetEstimator'>
@@ -654,7 +663,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1b9f9bbdc0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fbaad6cbd00>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

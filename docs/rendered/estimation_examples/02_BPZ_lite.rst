@@ -619,7 +619,7 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 22.8 s, sys: 184 ms, total: 22.9 s
+    CPU times: user 22.8 s, sys: 169 ms, total: 22.9 s
     Wall time: 22.9 s
 
 
@@ -627,7 +627,7 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f69b320cbb0>
+    <rail.core.data.QPHandle at 0x7f27782dcd30>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f69b30aa4d0>
+    <matplotlib.legend.Legend at 0x7f277807d7b0>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f69b2fac310>
+    <matplotlib.legend.Legend at 0x7f2777efce50>
 
 
 
@@ -2503,7 +2503,7 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 1min 15s, sys: 312 ms, total: 1min 15s
+    CPU times: user 1min 15s, sys: 223 ms, total: 1min 15s
     Wall time: 1min 15s
 
 
@@ -2619,7 +2619,11 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   455k      0 --:--:-- --:--:-- --:--:--  455k
+     35  450k   35  160k    0     0   103k      0  0:00:04  0:00:01  0:00:03  103k
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0   253k      0  0:00:01  0:00:01 --:--:--  253k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -2630,7 +2634,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   132k      0 --:--:-- --:--:-- --:--:--  132k
+    100 83848  100 83848    0     0   109k      0 --:--:-- --:--:-- --:--:--  109k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -2641,7 +2645,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   118k      0 --:--:-- --:--:-- --:--:--  118k
+    100 83848  100 83848    0     0  75491      0  0:00:01  0:00:01 --:--:-- 75538
 
 
 .. code:: ipython3
@@ -2674,15 +2678,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.89 s, sys: 998 μs, total: 9.89 s
-    Wall time: 9.89 s
+    CPU times: user 9.98 s, sys: 2.99 ms, total: 9.98 s
+    Wall time: 9.98 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f69b2f77460>
+    <rail.core.data.ModelHandle at 0x7f2778136290>
 
 
 
@@ -2792,7 +2796,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f69adc969b0>
+    <matplotlib.legend.Legend at 0x7f2774d1e8c0>
 
 
 
@@ -2868,7 +2872,7 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.8 s, sys: 136 ms, total: 12.9 s
+    CPU times: user 12.7 s, sys: 143 ms, total: 12.9 s
     Wall time: 12.9 s
 
 
@@ -2876,7 +2880,7 @@ results are any different:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f69b3297070>
+    <rail.core.data.QPHandle at 0x7f2774ceea40>
 
 
 
@@ -2903,7 +2907,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f69add56320>
+    <matplotlib.legend.Legend at 0x7f2777f6e110>
 
 
 
@@ -2966,7 +2970,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f69adce2bc0>
+    <matplotlib.legend.Legend at 0x7f2777f8f280>
 
 
 

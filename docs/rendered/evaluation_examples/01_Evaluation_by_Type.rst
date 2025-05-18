@@ -69,31 +69,11 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0 47.1M    0 52947    0     0  67896      0  0:12:07 --:--:--  0:12:07 67880
-
-.. parsed-literal::
-
-      2 47.1M    2 1345k    0     0   729k      0  0:01:06  0:00:01  0:01:05  729k
-
-.. parsed-literal::
-
-     28 47.1M   28 13.3M    0     0  4866k      0  0:00:09  0:00:02  0:00:07 4865k
-
-.. parsed-literal::
-
-     55 47.1M   55 26.3M    0     0  7158k      0  0:00:06  0:00:03  0:00:03 7157k
-
-.. parsed-literal::
-
-     83 47.1M   83 39.5M    0     0  8491k      0  0:00:05  0:00:04  0:00:01 8490k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  9110k      0  0:00:05  0:00:05 --:--:-- 10.4M
+    100 47.1M  100 47.1M    0     0  55.3M      0 --:--:-- --:--:-- --:--:-- 55.3M
 
 
 .. code:: ipython3
@@ -934,7 +914,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fc474aea7a0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f8be7d7e050>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1030,14 +1010,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 10000 - 11000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 11000 - 12000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1241,7 +1221,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fc47c84aad0>
+    <qp.ensemble.Ensemble at 0x7f8be7268c40>
 
 
 

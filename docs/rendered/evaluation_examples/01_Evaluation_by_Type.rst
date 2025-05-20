@@ -73,11 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0  423k    0     0   503k      0  0:01:35 --:--:--  0:01:35  503k
+      0 47.1M    0  256k    0     0   444k      0  0:01:48 --:--:--  0:01:48  444k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  29.0M      0  0:00:01  0:00:01 --:--:-- 29.0M
+    100 47.1M  100 47.1M    0     0  33.0M      0  0:00:01  0:00:01 --:--:-- 33.0M
 
 
 .. code:: ipython3
@@ -918,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f06f584e830>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7ffb5c76e050>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1062,6 +1062,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1225,7 +1229,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7f074416f1c0>
+    <qp.ensemble.Ensemble at 0x7ffb5c72e620>
 
 
 
@@ -1417,6 +1421,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

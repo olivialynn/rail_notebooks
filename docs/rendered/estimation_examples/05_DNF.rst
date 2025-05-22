@@ -148,15 +148,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.92 ms, sys: 2 ms, total: 11.9 ms
-    Wall time: 11.6 ms
+    CPU times: user 8.37 ms, sys: 2.03 ms, total: 10.4 ms
+    Wall time: 10.1 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f71ca86f040>
+    <rail.core.data.ModelHandle at 0x7fe1a4433580>
 
 
 
@@ -207,10 +207,16 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/interp_pdf.py:88: RuntimeWarning: invalid value encountered in divide
-      self._yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [  50   87  169  542  649  669  849 1225 1447 1460 1558 1808 2100 2164
+     2244 2465 2484 2537 2576 2796 4107 4425 5088 5252 6302 6729 7123 7464
+     7503 7942 8706 9500 9679 9962] have an integral of 0.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
+      new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([  50,   50,   50, ..., 9962, 9962, 9962], shape=(10234,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(10234,)))
+      warnings.warn(
 
 
 .. parsed-literal::
@@ -232,10 +238,17 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/interp_pdf.py:88: RuntimeWarning: invalid value encountered in divide
-      self._yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 204  272  279  742  928 1397 1460 1610 1718 2133 2254 2415 3107 3174
+     3177 3207 3687 3704 4028 4101 4181 4195 4364 4449 4467 4623 4643 4988
+     5012 5251 5337 5501 5515 5568 5574 5730 5784 5836 5852 5884 5950 5973
+     6376 6516 6675 6988 7019 7067 7203 7488 8152 8260 8369 8626 8694 9649] have an integral of 0.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
+      new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 204,  204,  204, ..., 9649, 9649, 9649], shape=(16856,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(16856,)))
+      warnings.warn(
 
 
 .. parsed-literal::
@@ -246,8 +259,14 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 9.71 s, sys: 386 ms, total: 10.1 s
-    Wall time: 10.1 s
+    CPU times: user 9.55 s, sys: 387 ms, total: 9.93 s
+    Wall time: 9.9 s
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([   50,    50,    50, ..., 19649, 19649, 19649], shape=(27090,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(27090,)))
+      warnings.warn(
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -424,8 +443,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 9.58 s, sys: 330 ms, total: 9.91 s
-    Wall time: 9.91 s
+    CPU times: user 9.44 s, sys: 304 ms, total: 9.75 s
+    Wall time: 9.72 s
 
 
 .. code:: ipython3
@@ -550,7 +569,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f71b0f13520>
+    <matplotlib.legend.Legend at 0x7fe145b72f50>
 
 
 

@@ -86,15 +86,15 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      3 47.1M    3 1799k    0     0  1755k      0  0:00:27  0:00:01  0:00:26 1754k
+      0 47.1M    0  431k    0     0   844k      0  0:00:57 --:--:--  0:00:57  843k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  27.9M      0  0:00:01  0:00:01 --:--:-- 27.9M
+    100 47.1M  100 47.1M    0     0  48.1M      0 --:--:-- --:--:-- --:--:-- 48.1M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -110,7 +110,7 @@ the data store
 .. code:: ipython3
 
     ztrue = ztrue_data()['photometry']['redshift']
-    zgrid = fzdata().metadata()['xvals'].ravel()
+    zgrid = fzdata().metadata['xvals'].ravel()
     photoz_mode = fzdata().mode(grid=zgrid)
 
 .. code:: ipython3
@@ -285,7 +285,7 @@ detailed below).
 
 .. parsed-literal::
 
-    <qp.ensemble.Ensemble at 0x7fef1826fc10>
+    Ensemble(the_class=quant,shape=(1, 96))
 
 
 
@@ -362,7 +362,7 @@ diagonal, the better is the PDFs calibration.
 
 .. code:: ipython3
 
-    pdfs = fzdata.data.objdata()['yvals']
+    pdfs = fzdata.data.objdata['yvals']
     plot_pit_qq(pdfs, zgrid, ztrue, title="PIT-QQ - toy data", code="FlexZBoost",
                     pit_out_rate=pit_out_rate, savefig=False)
 

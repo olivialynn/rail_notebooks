@@ -305,17 +305,13 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-     10 32.6M   10 3554k    0     0  2295k      0  0:00:14  0:00:01  0:00:13 2294k
-
-.. parsed-literal::
-
     romandesc_spec_data_37k.hdf5
     romandesc_deep_data_75k.hdf5
 
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  15.3M      0  0:00:02  0:00:02 --:--:-- 15.3M
+    100 32.6M  100 32.6M    0     0  47.3M      0 --:--:-- --:--:-- --:--:-- 47.2M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -567,6 +563,10 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
+    Warning: data was not float32. A 32-bit copy was made
+
+.. parsed-literal::
+
     /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
@@ -576,7 +576,7 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
-    Warning: data was not float32. A 32-bit copy was made
+    
 
 
 .. parsed-literal::

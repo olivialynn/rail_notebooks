@@ -127,6 +127,10 @@ imports.
 
     Imported rail.pzflow
     Imported rail.sklearn
+
+
+.. parsed-literal::
+
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
@@ -660,7 +664,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5d1ddd3940>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f8b9b2c3bb0>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

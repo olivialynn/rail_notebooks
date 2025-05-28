@@ -35,7 +35,7 @@ you must both update the config and the values.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250527T065628
+    /home/runner/.cache/lephare/runs/20250528T065538
 
 
 Here we load previously created synthetic data
@@ -65,12 +65,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -135,26 +135,27 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/examples
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
-    Created directory: /home/runner/.cache/lephare/data/ext
-    Created directory: /home/runner/.cache/lephare/data/filt/hsc
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
-    Created directory: /home/runner/.cache/lephare/data/filt/vista
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
-    Checking/downloading 445 files...
+    Downloading file 'opa/tau12.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau12.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau12.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau12.out' to '/home/runner/.cache/lephare/data'.
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/ext
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/filt/vista
+    Created directory: /home/runner/.cache/lephare/data/filt/hsc
+    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -519,12 +520,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'vega/a0v.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/vega/a0v.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'vega/a0v_n.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/vega/a0v_n.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'vega/a0v_n.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/vega/a0v_n.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'vega/a0v.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/vega/a0v.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1104,12 +1105,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/rk0v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/rk0v.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/k1iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k1iii.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/k1iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k1iii.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/rk0v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/rk0v.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2427,6 +2428,10 @@ redshifts, extinction parameters, and reddening values.
     irac_ch3.lowres               29            5.7873      5.6765      1.3509    3.7537  -99.0000  -29.9581    7.0472       1      5.7592      1.0050
     irac_ch4.lowres               30            8.0442      7.7033      2.8394    4.3959  -99.0000  -31.2962    7.6701       1      7.9590      1.0110
     {'star_sed': '/home/runner/.cache/lephare/data/sed/STAR/STAR_MOD_ALL.list'}
+
+
+.. parsed-literal::
+
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -2456,7 +2461,7 @@ redshifts, extinction parameters, and reddening values.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/STAR_COSMOS(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Tue May 27 07:00:10 2025
+    # CREATION_DATE Wed May 28 06:59:26 2025
     #############################################
 
 
@@ -2494,7 +2499,7 @@ redshifts, extinction parameters, and reddening values.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Tue May 27 07:00:11 2025
+    # CREATION_DATE Wed May 28 06:59:26 2025
     #############################################
 
 
@@ -2526,7 +2531,7 @@ redshifts, extinction parameters, and reddening values.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Tue May 27 07:04:20 2025
+    # CREATION_DATE Wed May 28 07:03:36 2025
     #############################################
 
 
@@ -2539,7 +2544,7 @@ redshifts, extinction parameters, and reddening values.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1878f25cc0>
+    <rail.core.data.ModelHandle at 0x7f28b84e62c0>
 
 
 
@@ -2594,7 +2599,7 @@ data.
 
 .. parsed-literal::
 
-              : 1.500000 
+    AUTO_ADAPT set to NO. Using zero offsets.          : 1.500000 
     # GLB_CONTEXT            : 0
     # FORB_CONTEXT           : -1
     # DZ_WIN                 : 1.000000
@@ -2680,11 +2685,7 @@ data.
     irac_ch2.lowres               28            4.5290      4.4610      1.0100    3.2630  -28.9400       1      1.0040
     irac_ch3.lowres               29            5.7870      5.6760      1.3510    3.7540  -29.9600       1      1.0050
     irac_ch4.lowres               30            8.0440      7.7030      2.8390    4.3960  -31.3000       1      1.0110
-    AUTO_ADAPT set to NO. Using zero offsets.
-
-
-.. parsed-literal::
-
+    
     Inserting handle into data store.  output_test_Lephare_COSMOS: inprogress_output_test_Lephare_COSMOS.hdf5, test_Lephare_COSMOS
 
 

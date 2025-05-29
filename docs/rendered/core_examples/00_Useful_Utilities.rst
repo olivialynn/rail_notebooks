@@ -99,7 +99,7 @@ imports.
 .. parsed-literal::
 
     Imported rail.dsps
-    Failed to import rail.flexzboost because: No module named 'qp.factory'
+    Imported rail.flexzboost
 
 
 .. parsed-literal::
@@ -130,7 +130,7 @@ imports.
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 15 base classes and 88 fully formed stages to rail.stages
+    Attached 15 base classes and 90 fully formed stages to rail.stages
 
 
 Now that we’ve attached all available stages to rail.stages, we can use
@@ -263,6 +263,8 @@ we get.
     <class 'rail.creation.engines.dsps_photometry_creator.DSPSPhotometryCreator'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSSingleSedModeler'>
     <class 'rail.creation.engines.dsps_sed_modeler.DSPSPopulationSedModeler'>
+    <class 'rail.estimation.algos.flexzboost.FlexZBoostInformer'>
+    <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.creation.engines.fsps_photometry_creator.FSPSPhotometryCreator'>
     <class 'rail.creation.engines.fsps_sed_modeler.FSPSSedModeler'>
     <class 'rail.estimation.algos.gpz.GPzInformer'>
@@ -311,6 +313,7 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.estimation.algos.dnf.DNFEstimator'>
+    <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
     <class 'rail.estimation.algos.gpz.GPzEstimator'>
     <class 'rail.estimation.algos.lephare.LephareEstimator'>
     <class 'rail.estimation.algos.pzflow_nf.PZFlowEstimator'>
@@ -660,7 +663,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3a60671060>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fa1e7ea1b10>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

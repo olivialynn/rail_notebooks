@@ -297,11 +297,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-     11 32.6M   11 3797k    0     0  3585k      0  0:00:09  0:00:01  0:00:08 3585k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
@@ -311,7 +307,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  22.3M      0  0:00:01  0:00:01 --:--:-- 22.3M
+     81 32.6M   81 26.6M    0     0  44.5M      0 --:--:-- --:--:-- --:--:-- 44.5M100 32.6M  100 32.6M    0     0  52.3M      0 --:--:-- --:--:-- --:--:-- 52.3M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

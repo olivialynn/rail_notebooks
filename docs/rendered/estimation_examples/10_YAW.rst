@@ -33,7 +33,7 @@ poor.
 
     import matplotlib.pyplot as plt
     
-    from rail.core.data import TableHandle
+    from rail.core.data import TableHandle, Hdf5Handle
     
     # configure RAIL datastore to allow overwriting data
     from rail.core.stage import RailStage
@@ -79,7 +79,7 @@ containing 100k objects on a limited redshift range of
     n_data = len(test_data)
     print(f"N={n_data}, {zmin:.1f}<z<{zmax:.1f}")
     
-    handle_test_data = DS.add_data("input_data", test_data, TableHandle)
+    handle_test_data = DS.add_data("input_data", test_data, Hdf5Handle)
 
 
 .. parsed-literal::
@@ -105,7 +105,7 @@ handle to the datastore.
     test_rand = generator.generate_dataframe(n_data * 10)
     test_rand.rename(columns=dict(redshifts="z"), inplace=True)
     
-    handle_test_rand = DS.add_data("input_rand", test_rand, TableHandle)
+    handle_test_rand = DS.add_data("input_rand", test_rand, Hdf5Handle)
 
 2. Splitting and caching the data
 ---------------------------------
@@ -852,7 +852,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f042099e470>
+    <matplotlib.legend.Legend at 0x7f4e46a2c040>
 
 
 
@@ -876,4 +876,6 @@ estimte error, samples and covariance matrix produced by
 
 
 .. image:: ../../../docs/rendered/estimation_examples/10_YAW_files/../../../docs/rendered/estimation_examples/10_YAW_36_1.png
+
+
 

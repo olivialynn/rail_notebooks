@@ -24,7 +24,7 @@ more info.
     import rail
     from rail.evaluation.metrics.cdeloss import *
     from rail.evaluation.evaluator import OldEvaluator
-    from rail.core.data import QPHandle, TableHandle
+    from rail.core.data import QPHandle, TableHandle, Hdf5Handle
     from rail.core.stage import RailStage
     from utils import plot_pit_qq, ks_plot
     import qp 
@@ -86,11 +86,19 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     58 47.1M   58 27.8M    0     0  26.8M      0  0:00:01  0:00:01 --:--:-- 26.8M100 47.1M  100 47.1M    0     0  41.4M      0  0:00:01  0:00:01 --:--:-- 41.4M
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+     60 47.1M   60 28.4M    0     0  18.9M      0  0:00:02  0:00:01  0:00:01 18.9M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  26.0M      0  0:00:01  0:00:01 --:--:-- 26.0M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -111,21 +119,8 @@ the data store
 
 .. code:: ipython3
 
-    truth = DS.add_data('truth', ztrue_data()['photometry'], TableHandle)
+    truth = DS.add_data('truth', ztrue_data()['photometry'], Hdf5Handle)
     ensemble = DS.add_data('ensemble', fzdata(), QPHandle)
-
-.. code:: ipython3
-
-    DS.keys()
-
-
-
-
-.. parsed-literal::
-
-    dict_keys(['pdfs_data', 'ztrue_data', 'truth', 'ensemble'])
-
-
 
 Make an evaulator stage
 -----------------------
@@ -364,7 +359,7 @@ diagonal, the better is the PDFs calibration.
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/00_Single_Evaluation_files/../../../docs/rendered/evaluation_examples/00_Single_Evaluation_33_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/00_Single_Evaluation_files/../../../docs/rendered/evaluation_examples/00_Single_Evaluation_32_0.png
 
 
 The black horizontal line represents the ideal case where the PIT
@@ -416,7 +411,7 @@ Visual interpretation of the KS statistic:
 
 
 
-.. image:: ../../../docs/rendered/evaluation_examples/00_Single_Evaluation_files/../../../docs/rendered/evaluation_examples/00_Single_Evaluation_39_0.png
+.. image:: ../../../docs/rendered/evaluation_examples/00_Single_Evaluation_files/../../../docs/rendered/evaluation_examples/00_Single_Evaluation_38_0.png
 
 
 .. code:: ipython3
@@ -576,3 +571,4 @@ depending on the true conditional densities :math:`f(z | x)`.
 We note that all of the quantities as run individually are identical to
 the quantities in our summary table - a nice check that things have run
 properly.
+

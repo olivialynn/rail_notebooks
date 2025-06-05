@@ -40,7 +40,7 @@ This notebook will cover three scenarios of increasing complexity:
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
     from rail.tools.table_tools import ColumnMapper
-
+    from rail.tools.flow_handle import FlowHandle
 
 .. code:: ipython3
 
@@ -111,12 +111,29 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. code:: ipython3
 
+    flow=DS.read_file('flow', FlowHandle, flow_file)
+
+.. code:: ipython3
+
+    flow.path
+
+
+
+
+.. parsed-literal::
+
+    '/opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl'
+
+
+
+.. code:: ipython3
+
     flow_post = FlowPosterior.make_stage(
         name="truth_post",
         column="redshift",
         grid=np.linspace(0, 2.5, 100),
         marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
-        flow=flow_file,
+        model=flow.path
     )
 
 
@@ -174,7 +191,7 @@ Let’s plot these pdfs:
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_14_0.png
+.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_16_0.png
 
 
 The true posteriors are in blue, and the true redshifts are marked by
@@ -203,7 +220,7 @@ Now let’s draw a degraded sample:
     n_samples = 50
     # create the FlowEngine
     flowEngine_degr = FlowCreator.make_stage(
-        name="degraded", flow_file=flow_file, n_samples=n_samples
+        name="degraded", model=flow, n_samples=n_samples
     )
     # draw a few samples
     samples_degr = flowEngine_degr.sample(n_samples, seed=0)
@@ -298,194 +315,146 @@ Now let’s draw a degraded sample:
         <tr>
           <th>0</th>
           <td>0.857864</td>
-          <td>25.021801</td>
-          <td>0.110345</td>
-          <td>24.295419</td>
-          <td>0.020107</td>
-          <td>23.330387</td>
-          <td>0.008710</td>
-          <td>22.353996</td>
-          <td>0.006997</td>
-          <td>21.853584</td>
-          <td>0.007831</td>
-          <td>21.695224</td>
-          <td>0.012920</td>
+          <td>25.092579</td>
+          <td>0.117335</td>
+          <td>24.304156</td>
+          <td>0.020256</td>
+          <td>23.307606</td>
+          <td>0.008592</td>
+          <td>22.356408</td>
+          <td>0.007004</td>
+          <td>21.850916</td>
+          <td>0.007820</td>
+          <td>21.686139</td>
+          <td>0.012831</td>
         </tr>
         <tr>
           <th>1</th>
           <td>0.456452</td>
-          <td>25.196723</td>
-          <td>0.128394</td>
-          <td>23.617436</td>
-          <td>0.011737</td>
-          <td>22.146087</td>
-          <td>0.005602</td>
-          <td>21.482697</td>
-          <td>0.005503</td>
-          <td>21.126864</td>
-          <td>0.005929</td>
-          <td>20.875042</td>
-          <td>0.007597</td>
+          <td>25.393553</td>
+          <td>0.152050</td>
+          <td>23.602975</td>
+          <td>0.011614</td>
+          <td>22.152990</td>
+          <td>0.005609</td>
+          <td>21.475200</td>
+          <td>0.005497</td>
+          <td>21.131021</td>
+          <td>0.005935</td>
+          <td>20.842944</td>
+          <td>0.007477</td>
         </tr>
         <tr>
           <th>2</th>
           <td>0.214385</td>
-          <td>24.945107</td>
-          <td>0.103222</td>
-          <td>24.378471</td>
-          <td>0.021572</td>
-          <td>23.996221</td>
-          <td>0.013901</td>
-          <td>23.811933</td>
-          <td>0.018781</td>
-          <td>23.825231</td>
-          <td>0.035885</td>
-          <td>23.728048</td>
-          <td>0.074374</td>
+          <td>24.926843</td>
+          <td>0.101593</td>
+          <td>24.396462</td>
+          <td>0.021905</td>
+          <td>23.986886</td>
+          <td>0.013800</td>
+          <td>23.822520</td>
+          <td>0.018949</td>
+          <td>23.822745</td>
+          <td>0.035807</td>
+          <td>23.785855</td>
+          <td>0.078270</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.239338</td>
-          <td>24.895706</td>
-          <td>0.098871</td>
-          <td>24.701406</td>
-          <td>0.028495</td>
-          <td>24.393200</td>
-          <td>0.019227</td>
-          <td>23.960860</td>
-          <td>0.021307</td>
-          <td>23.391961</td>
-          <td>0.024549</td>
-          <td>22.871372</td>
-          <td>0.034807</td>
+          <td>0.314718</td>
+          <td>24.324177</td>
+          <td>0.059883</td>
+          <td>23.222642</td>
+          <td>0.009003</td>
+          <td>22.218407</td>
+          <td>0.005677</td>
+          <td>21.887517</td>
+          <td>0.005965</td>
+          <td>21.585085</td>
+          <td>0.006899</td>
+          <td>21.514712</td>
+          <td>0.011295</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.314718</td>
-          <td>24.384314</td>
-          <td>0.063138</td>
-          <td>23.230681</td>
-          <td>0.009047</td>
-          <td>22.218708</td>
-          <td>0.005677</td>
-          <td>21.880188</td>
-          <td>0.005953</td>
-          <td>21.590939</td>
-          <td>0.006916</td>
-          <td>21.511856</td>
-          <td>0.011272</td>
+          <td>0.707498</td>
+          <td>24.226494</td>
+          <td>0.054950</td>
+          <td>23.555442</td>
+          <td>0.011224</td>
+          <td>22.777339</td>
+          <td>0.006638</td>
+          <td>22.004521</td>
+          <td>0.006162</td>
+          <td>21.691253</td>
+          <td>0.007228</td>
+          <td>21.475494</td>
+          <td>0.010982</td>
         </tr>
         <tr>
           <th>5</th>
-          <td>0.707498</td>
-          <td>24.208512</td>
-          <td>0.054087</td>
-          <td>23.565281</td>
-          <td>0.011303</td>
-          <td>22.789528</td>
-          <td>0.006669</td>
-          <td>21.988882</td>
-          <td>0.006133</td>
-          <td>21.721191</td>
-          <td>0.007330</td>
-          <td>21.444049</td>
-          <td>0.010740</td>
+          <td>0.780216</td>
+          <td>25.603241</td>
+          <td>0.181712</td>
+          <td>25.347950</td>
+          <td>0.050366</td>
+          <td>24.777566</td>
+          <td>0.026749</td>
+          <td>24.036474</td>
+          <td>0.022735</td>
+          <td>23.717464</td>
+          <td>0.032630</td>
+          <td>23.581429</td>
+          <td>0.065322</td>
         </tr>
         <tr>
           <th>6</th>
-          <td>0.419468</td>
-          <td>25.527779</td>
-          <td>0.170467</td>
-          <td>24.724176</td>
-          <td>0.029067</td>
-          <td>23.684231</td>
-          <td>0.010996</td>
-          <td>23.411838</td>
-          <td>0.013567</td>
-          <td>23.226336</td>
-          <td>0.021289</td>
-          <td>22.993007</td>
-          <td>0.038759</td>
+          <td>0.370970</td>
+          <td>23.251339</td>
+          <td>0.023551</td>
+          <td>23.165095</td>
+          <td>0.008699</td>
+          <td>22.911175</td>
+          <td>0.007010</td>
+          <td>23.028060</td>
+          <td>0.010232</td>
+          <td>22.853778</td>
+          <td>0.015603</td>
+          <td>23.147065</td>
+          <td>0.044430</td>
         </tr>
         <tr>
           <th>7</th>
-          <td>0.370970</td>
-          <td>23.177745</td>
-          <td>0.022135</td>
-          <td>23.171880</td>
-          <td>0.008733</td>
-          <td>22.919433</td>
-          <td>0.007035</td>
-          <td>23.015599</td>
-          <td>0.010146</td>
-          <td>22.835278</td>
-          <td>0.015372</td>
-          <td>23.085073</td>
-          <td>0.042053</td>
+          <td>1.165920</td>
+          <td>24.590072</td>
+          <td>0.075658</td>
+          <td>24.453027</td>
+          <td>0.022989</td>
+          <td>24.022247</td>
+          <td>0.014189</td>
+          <td>23.659946</td>
+          <td>0.016553</td>
+          <td>23.037089</td>
+          <td>0.018144</td>
+          <td>22.755435</td>
+          <td>0.031426</td>
         </tr>
         <tr>
           <th>8</th>
-          <td>1.165920</td>
-          <td>24.772152</td>
-          <td>0.088753</td>
-          <td>24.463120</td>
-          <td>0.023188</td>
-          <td>24.023644</td>
-          <td>0.014205</td>
-          <td>23.679339</td>
-          <td>0.016819</td>
-          <td>23.016240</td>
-          <td>0.017831</td>
-          <td>22.727143</td>
-          <td>0.030655</td>
-        </tr>
-        <tr>
-          <th>9</th>
-          <td>1.794070</td>
-          <td>25.574182</td>
-          <td>0.177303</td>
-          <td>25.686650</td>
-          <td>0.067977</td>
-          <td>25.297368</td>
-          <td>0.042289</td>
-          <td>25.089695</td>
-          <td>0.057486</td>
-          <td>24.888770</td>
-          <td>0.092014</td>
-          <td>24.450847</td>
-          <td>0.139940</td>
-        </tr>
-        <tr>
-          <th>10</th>
-          <td>0.351819</td>
-          <td>25.695228</td>
-          <td>0.196345</td>
-          <td>25.158151</td>
-          <td>0.042577</td>
-          <td>24.458392</td>
-          <td>0.020317</td>
-          <td>24.359942</td>
-          <td>0.030126</td>
-          <td>24.268666</td>
-          <td>0.053170</td>
-          <td>24.249665</td>
-          <td>0.117562</td>
-        </tr>
-        <tr>
-          <th>11</th>
           <td>0.601109</td>
-          <td>25.045962</td>
-          <td>0.112685</td>
-          <td>24.629471</td>
-          <td>0.026767</td>
-          <td>24.050827</td>
-          <td>0.014515</td>
-          <td>23.607251</td>
-          <td>0.015855</td>
-          <td>23.500135</td>
-          <td>0.026969</td>
-          <td>23.346046</td>
-          <td>0.053012</td>
+          <td>24.824261</td>
+          <td>0.092892</td>
+          <td>24.717719</td>
+          <td>0.028903</td>
+          <td>24.049872</td>
+          <td>0.014504</td>
+          <td>23.604965</td>
+          <td>0.015825</td>
+          <td>23.506441</td>
+          <td>0.027118</td>
+          <td>23.392198</td>
+          <td>0.055229</td>
         </tr>
       </tbody>
     </table>
@@ -517,7 +486,7 @@ Let’s calculate posteriors with a variable number of error samples.
 
     degr_kwargs = dict(
         column="redshift",
-        flow_file=flow_file,
+        model=flow,
         marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
         grid=grid,
         seed=0,
@@ -605,7 +574,7 @@ Let’s calculate posteriors with a variable number of error samples.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_23_0.png
+.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_25_0.png
 
 
 You can see the effect of convolving the errors. In particular, notice
@@ -629,7 +598,7 @@ removed non-detections:
 
 .. code:: ipython3
 
-    samples_degraded = DS["output_lc_1p_0III_0II"]
+    samples_degraded = lc_1p_0III_0II.get_handle('output')
 
 
 You can see that galaxy 3 has a non-detection in the u band.
@@ -651,9 +620,9 @@ values of u to marginalize over.
 .. code:: ipython3
 
     # get true u band magnitudes
-    true_u = DS["output_degraded"].data["u"].to_numpy()
+    true_u = flowEngine_degr.get_handle('output').data["u"].to_numpy()
     # get the observed u band magnitudes
-    obs_u = DS["output_lsst_errors"].data["u"].to_numpy()
+    obs_u = errorModel.get_handle('output').data["u"].to_numpy()
     
     # create the figure
     fig, ax = plt.subplots(constrained_layout=True, dpi=100)
@@ -670,7 +639,7 @@ values of u to marginalize over.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_28_0.png
+.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_30_0.png
 
 
 Based on this histogram, I will marginalize over u band values from 25
@@ -703,7 +672,7 @@ grid.
     row3_degraded = row3_selector(samples_degraded)
     
     degr_post_kwargs = dict(
-        grid=grid, err_samples=10000, seed=0, flow_file=flow_file, column="redshift"
+        grid=grid, err_samples=10000, seed=0, model=flow, column="redshift"
     )
     
     # iterate over variable grid resolution
@@ -763,7 +732,7 @@ grid.
 
 
 
-.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_31_0.png
+.. image:: ../../../docs/rendered/creation_examples/05_True_Posterior_files/../../../docs/rendered/creation_examples/05_True_Posterior_33_0.png
 
 
 Notice that the resolution with only 10 bins is sufficient for this

@@ -322,36 +322,13 @@ all estimators available in RAIL.
     <class 'rail.estimation.algos.nz_dir.NZDirSummarizer'>
 
 
-Listing keys in the Data Store (1/2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Let’s list out the keys in the Data Store to see what data we have
-stored.
-
-First, we must set up the Data Store:
+Setting up the dataset to allow you to overwrite files (i.e., when re-running cells in a notebook)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: ipython3
 
     DS = rail.core.stage.RailStage.data_store
     DS.__class__.allow_overwrite = True
-
-And because we’ve only just created the store, as you may have guessed,
-it is empty.
-
-We’ll come back to this in a bit.
-
-.. code:: ipython3
-
-    DS.keys()
-
-
-
-
-.. parsed-literal::
-
-    dict_keys([])
-
-
 
 Finding data files with find_rail_file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -446,25 +423,6 @@ Creating the Pipeline
 
 Introspecting the Pipeline
 --------------------------
-
-Listing keys in the Data Store (2/2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now that we have a some data in the Data Store, let’s take another look
-at it.
-
-.. code:: ipython3
-
-    DS.keys()
-
-
-
-
-.. parsed-literal::
-
-    dict_keys(['model', 'output_flow_engine_test'])
-
-
 
 Getting names of stages in the pipeline
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -663,7 +621,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1c9df2a020>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3dddbad900>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 
@@ -688,3 +646,4 @@ Then, create a ``.gitattributes`` file in your directory with notebooks
 and add the following line:
 
 *.ipynb filter=strip-notebook-output
+

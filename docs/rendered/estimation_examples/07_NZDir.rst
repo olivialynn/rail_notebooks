@@ -24,7 +24,7 @@ First off, let’s load the relevant packages from RAIL:
 .. code:: ipython3
 
     from rail.estimation.algos.nz_dir import NZDirSummarizer, NZDirInformer
-    from rail.core.data import TableHandle
+    from rail.core.data import TableHandle, Hdf5Handle
     from rail.core.stage import RailStage
 
 Next, let’s set up the Data Store, so that our RAIL module will know
@@ -69,9 +69,9 @@ all weights to one):
     lowzdata = df[lowmask]
     midzdata = df[midmask]
     hizdata = df[himask]
-    low_bin = DS.add_data("lowz_bin", lowzdata, TableHandle)
-    mid_bin = DS.add_data("midz_bin", midzdata, TableHandle)
-    hi_bin = DS.add_data("hiz_bin", hizdata, TableHandle)
+    low_bin = DS.add_data("lowz_bin", lowzdata, Hdf5Handle)
+    mid_bin = DS.add_data("midz_bin", midzdata, Hdf5Handle)
+    hi_bin = DS.add_data("hiz_bin", hizdata, Hdf5Handle)
 
 The algorithm:
 --------------
@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f7aa8f3b8e0>
+    <rail.core.data.ModelHandle at 0x7f14eacef7c0>
 
 
 
@@ -193,10 +193,6 @@ calculation, so this should run very fast:
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
     Process 0 running estimator on chunk 0 - 8513
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
 
 
@@ -205,8 +201,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 289 ms, sys: 5.02 ms, total: 294 ms
-    Wall time: 294 ms
+    CPU times: user 287 ms, sys: 5.92 ms, total: 293 ms
+    Wall time: 293 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -353,7 +349,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f7aa754e2c0>
+    <rail.core.data.ModelHandle at 0x7f14e927b730>
 
 
 
@@ -383,7 +379,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 126 ms, sys: 12 μs, total: 126 ms
+    CPU times: user 125 ms, sys: 986 μs, total: 126 ms
     Wall time: 126 ms
 
 
@@ -417,3 +413,5 @@ incomplete, looks particularly bad, as expected. Bins 1 and 2 look
 surprisingly good, which is a promising sign that, even when a brighter
 magnitude cut is enforced, this method is sometimes still able to
 produce reasonable results.
+
+

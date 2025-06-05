@@ -26,6 +26,7 @@ This notebook shows how to:
     from rail.creation.degraders.quantityCut import QuantityCut
     from rail.creation.degraders.photometric_errors import LSSTErrorModel
     from rail.creation.engines.flowEngine import FlowCreator, FlowPosterior
+    from rail.tools.flow_handle import FlowHandle
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
     from rail.tools.table_tools import ColumnMapper, TableConverter
@@ -101,8 +102,12 @@ A couple of things are important:
 
 .. code:: ipython3
 
+    flow_handle = DS.read_file("model", FlowHandle, flow_file)
+
+.. code:: ipython3
+
     flow_engine_test = FlowCreator.make_stage(
-        name="flow_engine_test", model=flow_file, n_samples=50
+        name="flow_engine_test", model=flow_handle, n_samples=50
     )
     
     lsst_error_model_test = LSSTErrorModel.make_stage(
@@ -120,12 +125,6 @@ A couple of things are important:
     table_conv_test = TableConverter.make_stage(
         name="table_conv_test", output_format="numpyDict", seed=12345
     )
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/goldenspike_data/data/pretrained_flow.pkl, flow_engine_test
-
 
 .. code:: ipython3
 
@@ -368,11 +367,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f004027f400>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f004027ebf0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f7859f02d70>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f785a07bac0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f004027eb00>]),
+       <rail.tools.table_tools.TableConverter at 0x7f785a07ba30>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

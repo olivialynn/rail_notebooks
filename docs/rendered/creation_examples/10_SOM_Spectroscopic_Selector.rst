@@ -88,7 +88,7 @@ the reference/specz file (more on that below):
                                          trainpq['mag_g_lsst'] - trainpq['mag_r_lsst'] < 1.0))
     cutpq = trainpq[mask]
     
-    ref_data = DS.add_data("spec_data", cutpq, PqHandle)
+    ref_data = DS.add_data("spec_data", cutpq, PqHandle, path="spec_data.pq")
 
 Let’s plot our two samples in redshift and color to compare:
 
@@ -201,7 +201,12 @@ For colors we’ll just put 0.0 for all colors.
 
 .. code:: ipython3
 
-    som_degrade = SOMSpecSelector.make_stage(name="som_degrader", output="specz_mock_sample.pq", **som_dict)
+    som_degrade = SOMSpecSelector.make_stage(
+        name="som_degrader",
+        output="specz_mock_sample.pq",
+        spec_data=ref_data.path,
+        **som_dict,
+    )
 
 .. code:: ipython3
 
@@ -301,13 +306,21 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+     56 32.6M   56 18.6M    0     0  10.8M      0  0:00:03  0:00:01  0:00:02 10.8M
+
+.. parsed-literal::
+
     romandesc_spec_data_37k.hdf5
     romandesc_deep_data_75k.hdf5
 
 
 .. parsed-literal::
 
-     81 32.6M   81 26.6M    0     0  44.5M      0 --:--:-- --:--:-- --:--:-- 44.5M100 32.6M  100 32.6M    0     0  52.3M      0 --:--:-- --:--:-- --:--:-- 52.3M
+    100 32.6M  100 32.6M    0     0  16.4M      0  0:00:01  0:00:01 --:--:-- 16.4M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -320,8 +333,7 @@ as we did in the example above, and then add the files to the datastore
     
     rdtest = tables_io.read(rdtestfile)
     rdtestpq = tables_io.convert(rdtest, tables_io.types.PD_DATAFRAME)
-    big_test_data = DS.add_data("big_input", rdtestpq, PqHandle)
-    
+    big_test_data = DS.add_data("big_input", rdtestpq, PqHandle, path="big_input.pq")
     
     rdspec = tables_io.read(rdspecfile)
     rdspecpq = tables_io.convert(rdspec, tables_io.types.PD_DATAFRAME)
@@ -330,8 +342,7 @@ as we did in the example above, and then add the files to the datastore
                           np.logical_and(rdspecpq['i'] < 24.4, 
                                          rdspecpq['g'] - rdspecpq['r'] < 1.0))
     rdspecpqcut = rdspecpq[mask]
-    big_spec_data = DS.add_data("big_spec", rdspecpqcut, PqHandle)
-
+    big_spec_data = DS.add_data("big_spec", rdspecpqcut, PqHandle, path="big_spec.pq")
 
 Let’s take a look at the columns available, this file should contain
 both the magnitudes and colors for the Roman-DESC sims:
@@ -549,7 +560,7 @@ to use as the reference/spec data.
     # note that 
     roman_som_degrade = SOMSpecSelector.make_stage(name="roman_som_degrader", 
                                                    output="roman_specz_mock_sample.pq", 
-                                                   aliases = dict(spec_data="big_spec"),
+                                                   aliases=dict(spec_data="big_spec"),
                                                    **som_dict)
 
 .. code:: ipython3
@@ -628,4 +639,5 @@ We again see good agreement on the redshift and i-band magnitude
 distributions, and good but not perfect agreement on magnitude-color and
 color-color distributions. So, it appears that our mock specz selection
 algorithm is working as expected.
+
 

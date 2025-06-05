@@ -243,7 +243,7 @@ overwrite data files and not throw errors while in our jupyter notebook:
 .. code:: ipython3
 
     #import RailStage stuff
-    from rail.core.data import TableHandle
+    from rail.core.data import TableHandle, PqHandle
     from rail.core.stage import RailStage
 
 .. code:: ipython3
@@ -264,7 +264,7 @@ and you can see the specific code and DataHandles there.
 .. code:: ipython3
 
     #add data that is already read in
-    train_data = DS.add_data("train_data", traindata_io, TableHandle )
+    train_data = DS.add_data("train_data", traindata_io, PqHandle)
 
 To read in data from file, we can use ``DS.read_file``, once again we
 want a TableHandle, and we can feed it the ``testFile`` path defined in
@@ -287,7 +287,7 @@ Let’s list the data abailable to us in the DataStore:
 .. parsed-literal::
 
     DataStore
-    {  train_data:<class 'rail.core.data.TableHandle'> None, (d)
+    {  train_data:<class 'rail.core.data.PqHandle'> None, (d)
       test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
     }
 
@@ -503,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3a946bef80>
+    <rail.core.data.ModelHandle at 0x7f2669dca740>
 
 
 
@@ -586,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3a360d0820>
+    <matplotlib.legend.Legend at 0x7f2669dc9e40>
 
 
 
@@ -616,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3a32eec760>
+    <matplotlib.legend.Legend at 0x7f26696111b0>
 
 
 
@@ -627,4 +627,5 @@ operate on the output files:
 That’s about it. For more usages, including how to chain together
 multiple stages, feeding results one into the other with the DataStore
 names, see goldenspike.ipynb in the examples/goldenspike directory.
+
 

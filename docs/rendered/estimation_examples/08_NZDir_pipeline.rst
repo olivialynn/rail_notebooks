@@ -57,10 +57,6 @@ NZDir as a Pipeline
     Inserting handle into data store.  single_NZ: inprogress_NZDir_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_NZDir_samples.hdf5, NZDirSummarizer
     Process 0 running estimator on chunk 10000 - 20000
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 20000 - 20449
 
 
@@ -86,8 +82,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f7b4c39cfd0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f7b4c39cb50>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7fb4d0132f50>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7fb4d01319f0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -177,7 +173,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f7af3ee83d0>
+    <matplotlib.legend.Legend at 0x7fb474c47190>
 
 
 

@@ -35,7 +35,7 @@ you must both update the config and the values.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250608T065436
+    /home/runner/.cache/lephare/runs/20250609T065654
 
 
 Here we load previously created synthetic data
@@ -60,17 +60,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/u_cfht.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_cfht.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/hsc/iHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/iHSC.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
     Downloading file 'filt/cosmos/u_new.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_new.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/hsc/iHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/iHSC.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -90,7 +85,7 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/vista/Y.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/vista/Y.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/u_cfht.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_cfht.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -100,10 +95,7 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Created directory: /home/runner/.cache/lephare/data/filt/vista
-    Created directory: /home/runner/.cache/lephare/data/filt/hsc
-    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
-    Checking/downloading 445 files...
+    Downloading file 'filt/vista/Y.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/vista/Y.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -134,6 +126,14 @@ Retrieve all the required filter and template files
 .. parsed-literal::
 
     Downloading file 'filt/cosmos/IB484.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB484.lowres' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
+    Created directory: /home/runner/.cache/lephare/data/filt/vista
+    Created directory: /home/runner/.cache/lephare/data/filt/hsc
+    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -208,12 +208,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/irac_ch3.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/irac_ch3.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/irac_ch4.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/irac_ch4.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/irac_ch4.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/irac_ch4.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/irac_ch3.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/irac_ch3.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -358,11 +358,11 @@ redshifts, extinction parameters, and reddening values.
     Number of SED in the list 254
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
+    Use default value 0,0 for all filters 
 
 
 .. parsed-literal::
 
-    Use default value 0,0 for all filters 
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -374,7 +374,7 @@ redshifts, extinction parameters, and reddening values.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/STAR_COSMOS(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Sun Jun  8 07:07:07 2025
+    # CREATION_DATE Mon Jun  9 07:09:26 2025
     #############################################
     {'gal_sed': '/home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED/COSMOS_MOD.list'}
     #######################################
@@ -408,7 +408,7 @@ redshifts, extinction parameters, and reddening values.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Sun Jun  8 07:07:07 2025
+    # CREATION_DATE Mon Jun  9 07:09:26 2025
     #############################################
 
 
@@ -426,6 +426,10 @@ redshifts, extinction parameters, and reddening values.
     # QSO_FSCALE :1.0000
     #######################################
     Number of SED in the list 30
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -440,12 +444,8 @@ redshifts, extinction parameters, and reddening values.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Sun Jun  8 07:11:16 2025
+    # CREATION_DATE Mon Jun  9 07:13:36 2025
     #############################################
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model_inform_COSMOS: inprogress_lephare.pkl, inform_COSMOS
 
 
@@ -453,7 +453,7 @@ redshifts, extinction parameters, and reddening values.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc9d0e36ad0>
+    <rail.core.data.ModelHandle at 0x7ffa998d70a0>
 
 
 
@@ -504,11 +504,7 @@ data.
     # FIR_FREESCALE          : YES
     # FIR_SUBSTELLAR         : NO
     # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.100000 0.200000 0.300000 
-    # ERR_FACTOR   
-
-.. parsed-literal::
-
-              : 1.500000 
+    # ERR_FACTOR             : 1.500000 
     # GLB_CONTEXT            : 0
     # FORB_CONTEXT           : -1
     # DZ_WIN                 : 1.000000
@@ -536,8 +532,7 @@ data.
     Read lib 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /hoAUTO_ADAPT set to NO. Using zero offsets.
-    me/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -555,7 +550,11 @@ data.
      Done with the library reading with 36374 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/CE_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lep
+
+.. parsed-literal::
+
+    hare/runs/inform_COSMOS/lib_mag/CE_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -595,6 +594,7 @@ data.
     irac_ch2.lowres               28            4.5290      4.4610      1.0100    3.2630  -28.9400       1      1.0040
     irac_ch3.lowres               29            5.7870      5.6760      1.3510    3.7540  -29.9600       1      1.0050
     irac_ch4.lowres               30            8.0440      7.7030      2.8390    4.3960  -31.3000       1      1.0110
+    AUTO_ADAPT set to NO. Using zero offsets.
 
 
 .. parsed-literal::

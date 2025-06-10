@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250609T065654
+    /home/runner/.cache/lephare/runs/20250610T065602
 
 
 Here we load previously created synthetic data
@@ -69,12 +69,7 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -84,12 +79,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -99,7 +94,7 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau03.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau03.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -109,7 +104,29 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Downloading file 'opa/tau03.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau03.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'opa/tau05.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau05.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/ext
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/filt/lsst
+    Checking/downloading 421 files...
 
 
 .. parsed-literal::
@@ -145,23 +162,6 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Downloading file 'opa/tau12.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau12.out' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
-    Created directory: /home/runner/.cache/lephare/data/filt/lsst
-    Created directory: /home/runner/.cache/lephare/data/examples
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/ext
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Checking/downloading 421 files...
 
 
 .. parsed-literal::
@@ -366,12 +366,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau54.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau54.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau53.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau53.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau53.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau53.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau54.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau54.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2101,12 +2101,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/I22491_70_TQSO1_30.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/I22491_70_TQSO1_30.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/I22491_80_TQSO1_20.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/I22491_80_TQSO1_20.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/I22491_80_TQSO1_20.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/I22491_80_TQSO1_20.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/I22491_70_TQSO1_30.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/I22491_70_TQSO1_30.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2171,12 +2171,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'ext/SB_calzetti.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/ext/SB_calzetti.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'ext/SB_calzetti_bump1.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/ext/SB_calzetti_bump1.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'ext/SB_calzetti_bump1.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/ext/SB_calzetti_bump1.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'ext/SB_calzetti.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/ext/SB_calzetti.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2258,7 +2258,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Jun  9 07:01:07 2025
+    # CREATION_DATE Tue Jun 10 07:00:21 2025
     #############################################
     {'gal_sed': '/home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED/COSMOS_MOD.list'}
     #######################################
@@ -2296,12 +2296,12 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
+    # CREATION_DATE Tue Jun 10 07:00:21 2025
+    #############################################
 
 
 .. parsed-literal::
 
-    # CREATION_DATE Mon Jun  9 07:01:07 2025
-    #############################################
     {'qso_sed': '/home/runner/.cache/lephare/data/sed/QSO/SALVATO09/AGN_MOD.list'}
     #######################################
     # It s translating SEDs to binary library #
@@ -2332,7 +2332,7 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon Jun  9 07:01:31 2025
+    # CREATION_DATE Tue Jun 10 07:00:45 2025
     #############################################
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
@@ -2341,7 +2341,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f59a3d49630>
+    <rail.core.data.ModelHandle at 0x7fcaf0047f10>
 
 
 

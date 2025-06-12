@@ -288,7 +288,7 @@ Let’s list the data abailable to us in the DataStore:
 
     DataStore
     {  train_data:<class 'rail.core.data.PqHandle'> None, (d)
-      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
+      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
     }
 
 
@@ -503,7 +503,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f73a5fe3130>
+    <rail.core.data.ModelHandle at 0x7f5796cfba90>
 
 
 
@@ -586,7 +586,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f73a5fe1ae0>
+    <matplotlib.legend.Legend at 0x7f5796cfab60>
 
 
 
@@ -616,7 +616,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f73a3000d90>
+    <matplotlib.legend.Legend at 0x7f5793d71240>
 
 
 

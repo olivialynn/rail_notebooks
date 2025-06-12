@@ -107,7 +107,7 @@ We then pass in the configuration parameters as arguments to
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
 
 
 Let’s check that the Engine correctly read the underlying PZ Flow object
@@ -123,7 +123,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f0c092697b0>
+    <pzflow.flow.Flow at 0x7f32ddcf5900>
 
 
 
@@ -207,7 +207,7 @@ using, you can just print the model:
 
 .. parsed-literal::
 
-    <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f0c09268670>
+    <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f32ddcf4340>
 
 
 
@@ -267,82 +267,82 @@ photometric errors.
         <tr>
           <th>0</th>
           <td>1.398944</td>
-          <td>27.103819</td>
-          <td>0.591046</td>
-          <td>26.697524</td>
-          <td>0.164046</td>
-          <td>25.992581</td>
-          <td>0.078332</td>
-          <td>25.164916</td>
-          <td>0.061454</td>
-          <td>24.769267</td>
-          <td>0.082827</td>
-          <td>24.037663</td>
-          <td>0.097688</td>
+          <td>26.532700</td>
+          <td>0.386707</td>
+          <td>26.717097</td>
+          <td>0.166804</td>
+          <td>25.954590</td>
+          <td>0.075747</td>
+          <td>25.075749</td>
+          <td>0.056779</td>
+          <td>24.676514</td>
+          <td>0.076317</td>
+          <td>24.371022</td>
+          <td>0.130617</td>
         </tr>
         <tr>
           <th>1</th>
           <td>2.285624</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>27.406306</td>
-          <td>0.295610</td>
-          <td>26.666475</td>
-          <td>0.141134</td>
-          <td>26.495685</td>
-          <td>0.195562</td>
-          <td>25.836205</td>
-          <td>0.207994</td>
-          <td>25.579688</td>
-          <td>0.356387</td>
+          <td>27.280285</td>
+          <td>0.668576</td>
+          <td>27.912522</td>
+          <td>0.439217</td>
+          <td>26.791085</td>
+          <td>0.157073</td>
+          <td>26.203235</td>
+          <td>0.152529</td>
+          <td>25.767482</td>
+          <td>0.196338</td>
+          <td>25.096476</td>
+          <td>0.241459</td>
         </tr>
         <tr>
           <th>2</th>
           <td>1.495132</td>
-          <td>29.122571</td>
-          <td>1.878409</td>
-          <td>27.991516</td>
-          <td>0.466124</td>
-          <td>28.844333</td>
-          <td>0.768739</td>
-          <td>25.867684</td>
-          <td>0.114114</td>
-          <td>25.051473</td>
-          <td>0.106117</td>
-          <td>24.243543</td>
-          <td>0.116938</td>
+          <td>27.179843</td>
+          <td>0.623581</td>
+          <td>29.220648</td>
+          <td>1.063287</td>
+          <td>28.954750</td>
+          <td>0.826154</td>
+          <td>26.035691</td>
+          <td>0.132034</td>
+          <td>24.883348</td>
+          <td>0.091577</td>
+          <td>24.164178</td>
+          <td>0.109122</td>
         </tr>
         <tr>
           <th>3</th>
           <td>0.842594</td>
-          <td>27.771121</td>
-          <td>0.921734</td>
-          <td>28.195972</td>
-          <td>0.541893</td>
-          <td>27.345529</td>
-          <td>0.250226</td>
-          <td>26.236263</td>
-          <td>0.156906</td>
-          <td>25.903908</td>
-          <td>0.220088</td>
-          <td>25.156893</td>
-          <td>0.253764</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>28.098166</td>
+          <td>0.504527</td>
+          <td>28.053774</td>
+          <td>0.438349</td>
+          <td>26.409979</td>
+          <td>0.181914</td>
+          <td>26.378018</td>
+          <td>0.323909</td>
+          <td>25.557718</td>
+          <td>0.350288</td>
         </tr>
         <tr>
           <th>4</th>
           <td>1.588960</td>
-          <td>26.004261</td>
-          <td>0.253723</td>
-          <td>26.133063</td>
-          <td>0.100689</td>
-          <td>26.052580</td>
-          <td>0.082591</td>
-          <td>25.876175</td>
-          <td>0.114961</td>
-          <td>25.487389</td>
-          <td>0.154778</td>
-          <td>25.280344</td>
-          <td>0.280649</td>
+          <td>26.270250</td>
+          <td>0.314622</td>
+          <td>26.319534</td>
+          <td>0.118467</td>
+          <td>25.910774</td>
+          <td>0.072869</td>
+          <td>25.599269</td>
+          <td>0.090213</td>
+          <td>25.464099</td>
+          <td>0.151719</td>
+          <td>25.300614</td>
+          <td>0.285296</td>
         </tr>
         <tr>
           <th>...</th>
@@ -363,82 +363,82 @@ photometric errors.
         <tr>
           <th>99995</th>
           <td>0.389450</td>
-          <td>27.971866</td>
-          <td>1.041028</td>
-          <td>26.533381</td>
-          <td>0.142530</td>
-          <td>25.388933</td>
-          <td>0.045869</td>
-          <td>25.084659</td>
-          <td>0.057230</td>
-          <td>24.734176</td>
-          <td>0.080303</td>
-          <td>24.794484</td>
-          <td>0.187642</td>
+          <td>26.859299</td>
+          <td>0.495105</td>
+          <td>26.416560</td>
+          <td>0.128864</td>
+          <td>25.314003</td>
+          <td>0.042918</td>
+          <td>25.023133</td>
+          <td>0.054188</td>
+          <td>24.877188</td>
+          <td>0.091083</td>
+          <td>24.739420</td>
+          <td>0.179101</td>
         </tr>
         <tr>
           <th>99996</th>
           <td>1.481047</td>
-          <td>27.844350</td>
-          <td>0.964213</td>
-          <td>26.821267</td>
-          <td>0.182224</td>
-          <td>26.123502</td>
-          <td>0.087915</td>
-          <td>25.180701</td>
-          <td>0.062321</td>
-          <td>24.830819</td>
-          <td>0.087442</td>
-          <td>24.161239</td>
-          <td>0.108843</td>
+          <td>27.173317</td>
+          <td>0.620737</td>
+          <td>26.516917</td>
+          <td>0.140524</td>
+          <td>26.048270</td>
+          <td>0.082277</td>
+          <td>25.162596</td>
+          <td>0.061328</td>
+          <td>24.923438</td>
+          <td>0.094859</td>
+          <td>24.243493</td>
+          <td>0.116933</td>
         </tr>
         <tr>
           <th>99997</th>
           <td>2.023548</td>
-          <td>27.510510</td>
-          <td>0.780431</td>
-          <td>27.081204</td>
-          <td>0.226581</td>
-          <td>26.343101</td>
-          <td>0.106591</td>
-          <td>26.099799</td>
-          <td>0.139549</td>
-          <td>25.661093</td>
-          <td>0.179469</td>
-          <td>27.241873</td>
-          <td>1.116002</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>26.900417</td>
+          <td>0.194808</td>
+          <td>26.451192</td>
+          <td>0.117128</td>
+          <td>26.197736</td>
+          <td>0.151811</td>
+          <td>25.491196</td>
+          <td>0.155283</td>
+          <td>25.608353</td>
+          <td>0.364479</td>
         </tr>
         <tr>
           <th>99998</th>
           <td>1.548204</td>
-          <td>26.349485</td>
-          <td>0.335063</td>
-          <td>26.045137</td>
-          <td>0.093224</td>
-          <td>25.999831</td>
-          <td>0.078835</td>
-          <td>25.938824</td>
-          <td>0.121400</td>
-          <td>25.906553</td>
-          <td>0.220573</td>
-          <td>25.600971</td>
-          <td>0.362380</td>
+          <td>26.249937</td>
+          <td>0.309558</td>
+          <td>26.037603</td>
+          <td>0.092610</td>
+          <td>26.101964</td>
+          <td>0.086264</td>
+          <td>25.779329</td>
+          <td>0.105644</td>
+          <td>25.639091</td>
+          <td>0.176151</td>
+          <td>25.133876</td>
+          <td>0.249012</td>
         </tr>
         <tr>
           <th>99999</th>
           <td>1.739491</td>
-          <td>27.083494</td>
-          <td>0.582568</td>
-          <td>26.851368</td>
-          <td>0.186919</td>
-          <td>26.487513</td>
-          <td>0.120886</td>
-          <td>26.617101</td>
-          <td>0.216503</td>
-          <td>26.489161</td>
-          <td>0.353662</td>
-          <td>25.701503</td>
-          <td>0.391849</td>
+          <td>27.635566</td>
+          <td>0.846300</td>
+          <td>26.723063</td>
+          <td>0.167654</td>
+          <td>26.529400</td>
+          <td>0.125362</td>
+          <td>26.182266</td>
+          <td>0.149809</td>
+          <td>25.575328</td>
+          <td>0.166854</td>
+          <td>25.026256</td>
+          <td>0.227831</td>
         </tr>
       </tbody>
     </table>

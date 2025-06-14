@@ -602,7 +602,7 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:483: RuntimeWarning: overflow encountered in cast
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:490: RuntimeWarning: overflow encountered in cast
       flux_err[unobserved] = 1e108
 
 
@@ -619,15 +619,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.1 s, sys: 162 ms, total: 23.3 s
-    Wall time: 23.3 s
+    CPU times: user 23.4 s, sys: 162 ms, total: 23.5 s
+    Wall time: 23.5 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f42a9247a30>
+    <rail.core.data.QPHandle at 0x7f6a84e1a740>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f42f0e39150>
+    <matplotlib.legend.Legend at 0x7f6a3ce30ca0>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f42a8e5b880>
+    <matplotlib.legend.Legend at 0x7f6a38d1f880>
 
 
 
@@ -823,8 +823,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.3 s, sys: 128 ms, total: 32.4 s
-    Wall time: 32.4 s
+    CPU times: user 32.5 s, sys: 130 ms, total: 32.6 s
+    Wall time: 32.6 s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -946,30 +946,16 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    using 10213 galaxies in calculation
-
-
-.. parsed-literal::
-
-    best values for fo and kt:
-    [0.47289716 0.51295654]
-    [ 0.44992085 -0.01323466]
-    minimizing for type 0
-    best fit z0, alpha, km for type 0: [0.28011776 1.86228103 0.09894587]
-    minimizing for type 1
-    best fit z0, alpha, km for type 1: [0.39341294 2.04677095 0.07633585]
-    minimizing for type 2
-    best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.8 s, sys: 3.99 ms, total: 9.8 s
-    Wall time: 9.8 s
+    CPU times: user 1.51 ms, sys: 5 μs, total: 1.52 ms
+    Wall time: 1.29 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f42a920acb0>
+    <rail.core.data.ModelHandle at 0x7f6a38c61c90>
 
 
 
@@ -1019,11 +1005,11 @@ https://ui.adsabs.harvard.edu/abs/2000ApJ…536..571B/abstract
 
 .. parsed-literal::
 
-    {'fo_arr': array([0.47289716, 0.51295654]),
-     'kt_arr': array([ 0.44992085, -0.01323466]),
-     'zo_arr': array([0.28011776, 0.39341294, 0.557186  ]),
-     'km_arr': array([0.09894587, 0.07633585, 0.11126791]),
-     'a_arr': array([1.86228103, 2.04677095, 1.92439164]),
+    {'fo_arr': array([0.35, 0.5 ]),
+     'kt_arr': array([0.45 , 0.147]),
+     'zo_arr': array([0.431 , 0.39  , 0.0626]),
+     'km_arr': array([0.0913, 0.0636, 0.123 ]),
+     'a_arr': array([2.465, 1.806, 0.906]),
      'mo': 20.0,
      'nt_array': [1, 2, 5]}
 
@@ -1079,7 +1065,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f42d9b39720>
+    <matplotlib.legend.Legend at 0x7f6a38cf5480>
 
 
 
@@ -1155,7 +1141,7 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.6 s, sys: 139 ms, total: 12.8 s
+    CPU times: user 12.7 s, sys: 147 ms, total: 12.8 s
     Wall time: 12.8 s
 
 
@@ -1163,7 +1149,7 @@ results are any different:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f42d9a8dfc0>
+    <rail.core.data.QPHandle at 0x7f6a3cef7820>
 
 
 
@@ -1190,7 +1176,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f42a4db5ff0>
+    <matplotlib.legend.Legend at 0x7f6a38d1c100>
 
 
 
@@ -1228,14 +1214,9 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    5 gals have large shift in mode with indices:
+    0 gals have large shift in mode with indices:
     
     
-    44
-    65
-    108
-    240
-    20400
 
 
 .. code:: ipython3
@@ -1253,7 +1234,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f42d9aea980>
+    <matplotlib.legend.Legend at 0x7f6a6da47520>
 
 
 
@@ -1299,7 +1280,7 @@ use the mode) and the true redshifts.
 
     hdfn sigma: 0.0566 
     newsed sigma: 0.0434
-    custom prior sigma: 0.0554
+    custom prior sigma: 0.0566
 
 
 .. code:: ipython3
@@ -1354,7 +1335,7 @@ let’s check this:
 
     hdfn outlier rate: 0.0724
     newsed outlier rate: 0.0647
-    custom prior outlier rate: 0.0668
+    custom prior outlier rate: 0.0724
 
 
 Not a dramatic effect, but a definite reduction in the number of
@@ -1384,7 +1365,7 @@ fraction of galaxies that have a delta(zmode - specz) larger than
 
     HDFN catastrophic outlier frac is: 0.0861
     new sed outlier frac: 0.0519
-    custom prior catastrophic oulier frac is: 0.0793
+    custom prior catastrophic oulier frac is: 0.0861
 
 
 We see that the COSMOS SED has a smaller fraction of absolute outliers

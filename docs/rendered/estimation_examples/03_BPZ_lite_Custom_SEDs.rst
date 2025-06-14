@@ -49,11 +49,11 @@ for bpz demo data:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+     11  450k   11 52918    0     0  64552      0  0:00:07 --:--:--  0:00:07 64534
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   508k      0 --:--:-- --:--:-- --:--:--  508k
+    100  450k  100  450k    0     0   432k      0  0:00:01  0:00:01 --:--:--  432k
 
 
 .. parsed-literal::
@@ -64,18 +64,18 @@ for bpz demo data:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0    98k      0 --:--:-- --:--:-- --:--:--   98k
+    100 83848  100 83848    0     0   146k      0 --:--:-- --:--:-- --:--:--  147k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   148k      0 --:--:-- --:--:-- --:--:--  148k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+    100 83848  100 83848    0     0   169k      0 --:--:-- --:--:-- --:--:--  168k
 
 
 The files must be untarred and moved, as well:
@@ -199,30 +199,16 @@ specify those numbers of the three broad types.
 
 .. parsed-literal::
 
-    using 10213 galaxies in calculation
-
-
-.. parsed-literal::
-
-    best values for fo and kt:
-    [0.5538811  0.41290803]
-    [0.42501231 0.0116699 ]
-    minimizing for type 0
-    best fit z0, alpha, km for type 0: [0.28089894 1.68880761 0.0655626 ]
-    minimizing for type 1
-    best fit z0, alpha, km for type 1: [0.34557593 1.73745454 0.06583076]
-    minimizing for type 2
-    best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.73 s, sys: 1.12 ms, total: 9.73 s
-    Wall time: 9.73 s
+    CPU times: user 1.45 ms, sys: 50 μs, total: 1.5 ms
+    Wall time: 1.19 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fd708960b50>
+    <rail.core.data.ModelHandle at 0x7f83a628f0a0>
 
 
 
@@ -272,11 +258,11 @@ https://ui.adsabs.harvard.edu/abs/2000ApJ…536..571B/abstract
 
 .. parsed-literal::
 
-    {'fo_arr': array([0.5538811 , 0.41290803]),
-     'kt_arr': array([0.42501231, 0.0116699 ]),
-     'zo_arr': array([0.28089894, 0.34557593, 0.5679393 ]),
-     'km_arr': array([0.0655626 , 0.06583076, 0.11549469]),
-     'a_arr': array([1.68880761, 1.73745454, 2.23510956]),
+    {'fo_arr': array([0.35, 0.5 ]),
+     'kt_arr': array([0.45 , 0.147]),
+     'zo_arr': array([0.431 , 0.39  , 0.0626]),
+     'km_arr': array([0.0913, 0.0636, 0.123 ]),
+     'a_arr': array([2.465, 1.806, 0.906]),
      'mo': 20.0,
      'nt_array': [2, 3, 4]}
 
@@ -332,7 +318,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd6b5b6c1c0>
+    <matplotlib.legend.Legend at 0x7f83a60ec0a0>
 
 
 
@@ -864,7 +850,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:483: RuntimeWarning: overflow encountered in cast
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:490: RuntimeWarning: overflow encountered in cast
       flux_err[unobserved] = 1e108
 
 
@@ -881,15 +867,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 25.6 s, sys: 170 ms, total: 25.8 s
-    Wall time: 25.8 s
+    CPU times: user 25.4 s, sys: 174 ms, total: 25.6 s
+    Wall time: 25.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fd6b54064d0>
+    <rail.core.data.QPHandle at 0x7f83a59efc40>
 
 
 
@@ -919,7 +905,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd6b599a1a0>
+    <matplotlib.legend.Legend at 0x7f83a5f74850>
 
 
 
@@ -968,7 +954,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED sigma: 0.0490
+    custom SED sigma: 0.0528
 
 
 .. code:: ipython3
@@ -983,7 +969,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED bias: 0.0068
+    custom SED bias: 0.0098
 
 
 Indeed, we see an improvement in the sigma from 0.057-0.059 with the
@@ -1003,7 +989,7 @@ the other notebook to see these numbers)!
 
 .. parsed-literal::
 
-    custom SED outlier rate: 0.0915
+    custom SED outlier rate: 0.1014
 
 
 We see a higher outlier rate here; however, our ourlier rate is defined
@@ -1024,7 +1010,7 @@ compute the fraction of galaxies with (zmode - specz) / (1 + specz) >
 
 .. parsed-literal::
 
-    fraction of catastrophic outliers: 0.0894
+    fraction of catastrophic outliers: 0.1078
 
 
 So, our catastrophic outlier fraction remains similar but slightly
@@ -1050,7 +1036,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd6b57dc5e0>
+    <matplotlib.legend.Legend at 0x7f83a5f501c0>
 
 
 

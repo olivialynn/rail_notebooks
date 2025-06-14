@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250613T065559
+    /home/runner/.cache/lephare/runs/20250614T065335
 
 
 Here we load previously created synthetic data
@@ -60,16 +60,7 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Number of keywords read in the config file: 86
-
-
-.. parsed-literal::
-
     Registry file downloaded and saved as data_registry.txt.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -79,17 +70,22 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -101,10 +97,6 @@ One could add or take out bandpasses by editing the configuration file.
 
     Created directory: /home/runner/.cache/lephare/data/filt/lsst
     Checking/downloading 421 files...
-
-
-.. parsed-literal::
-
     421 completed.
     All files downloaded successfully and are non-empty.
 
@@ -135,6 +127,10 @@ takes ~3-4 minutes.
     auxiliary data being present at /home/runner/.cache/lephare/data.
     User defined LEPHAREWORK is set. All intermediate files will be written to:
      /home/runner/.cache/lephare/runs/inform_Lephare
+
+
+.. parsed-literal::
+
     # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor    TG-cor      VEGA M_sun(AB)   CALIB      Lb_eff    Fac_corr
     total_u.pb                    1             0.3664      0.3720      0.0458    0.7023   -0.2237  -20.9207    6.3126       0      0.3643      1.0000
     total_g.pb                    2             0.4842      0.4744      0.1395   -0.0845   -0.2511  -20.7220    5.0903       0      0.4763      1.0000
@@ -172,7 +168,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Fri Jun 13 07:21:05 2025
+    # CREATION_DATE Sat Jun 14 07:18:40 2025
     #############################################
     {'gal_sed': '/home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED/COSMOS_MOD.list'}
     #######################################
@@ -210,7 +206,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Fri Jun 13 07:21:05 2025
+    # CREATION_DATE Sat Jun 14 07:18:40 2025
     #############################################
     {'qso_sed': '/home/runner/.cache/lephare/data/sed/QSO/SALVATO09/AGN_MOD.list'}
     #######################################
@@ -233,17 +229,17 @@ takes ~3-4 minutes.
     # Magnitude type     : AB
     # QSO_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_QSO_BIN(.doc & .bin)
     # QSO_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG(.doc & .bin)
-
-
-.. parsed-literal::
-
     # Z_STEP   :0.1000 0.0000 3.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Fri Jun 13 07:21:29 2025
+    # CREATION_DATE Sat Jun 14 07:19:04 2025
     #############################################
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
@@ -251,7 +247,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fdba03a08b0>
+    <rail.core.data.ModelHandle at 0x7f5f3dd13e80>
 
 
 
@@ -281,6 +277,10 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Process 0 running estimator on chunk 0 - 1,500
     Using user columns from input table assuming they are in the standard order.
     Processing 1500 objects with 6 bands
+
+
+.. parsed-literal::
+
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -361,10 +361,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7562      0.7497      0.1297    0.3697  -22.1600       0      1.0000
     total_z.pb                    5             0.8693      0.8670      0.1010    0.5172  -22.6200       0      1.0000
     total_y3.pb                   6             1.0080      1.0050      0.0577    0.5864  -23.0100       0      1.0000
-
-
-.. parsed-literal::
-
     AUTO_ADAPT set to NO. Using zero offsets.
     Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1704.6216 471.2869
 

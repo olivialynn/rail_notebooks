@@ -619,15 +619,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.4 s, sys: 162 ms, total: 23.5 s
-    Wall time: 23.5 s
+    CPU times: user 23.2 s, sys: 166 ms, total: 23.3 s
+    Wall time: 23.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f6a84e1a740>
+    <rail.core.data.QPHandle at 0x7f8776d378e0>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6a3ce30ca0>
+    <matplotlib.legend.Legend at 0x7f8776b53fa0>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6a38d1f880>
+    <matplotlib.legend.Legend at 0x7f877193b8e0>
 
 
 
@@ -823,8 +823,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.5 s, sys: 130 ms, total: 32.6 s
-    Wall time: 32.6 s
+    CPU times: user 32.4 s, sys: 139 ms, total: 32.5 s
+    Wall time: 32.5 s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -867,7 +867,20 @@ BPZliteInformer: training a custom prior
 If you want to go beyond the default prior, there is an
 ``BPZliteInformer`` stage that allows you to use a training dataset to
 fit a custom parameterized prior that better matches the magnitude and
-type distributions of the training set.
+type distributions of the training set. As a major caveat, this inform
+stage does not always converge to sensible results, and **should ouly be
+run on a representative set of training data**. As such, we do not
+anticipate that this will be run in full very often, and the *default*
+behavior of this method will be to simply return the default Hubble Deep
+Field North (HDFN) prior normalized to the type mix specified via the
+``nt_array`` configuration parameter.
+
+The ``BPZliteInformer`` configuration parameter ``output_hdfn`` controls
+the behavior of the ``inform`` stage. By default it is set to ``True``,
+which, as stated above, will not perform a fit, but instead just returns
+the HDFN prior parameters. If ``output_hdfn`` is set to ``False``, and a
+broad type file is supplied, then a full fit to new prior parameters is
+performed, as described below:
 
 ``bpz-1.99.3`` and our local fork, ``DESC_BPZ`` both parameterize the
 Bayesian prior using the form described in Benitez (2000), where the
@@ -935,7 +948,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
     train_dict = dict(hdf5_groupname="photometry", model="test_9816_demo_prior.pkl",
                      type_file=os.path.join(RAILDIR, "rail/examples_data/estimation_data/data/test_dc2_training_9816_broadtypes.hdf5"),
-                     nt_array=[1,2,5])
+                     nt_array=[1,2,5], output_hdfn=False)
     run_bpz_train = BPZliteInformer.make_stage(name="bpz_new_prior", **train_dict)
 
 .. code:: ipython3
@@ -946,16 +959,30 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
+    using 10213 galaxies in calculation
+
+
+.. parsed-literal::
+
+    best values for fo and kt:
+    [0.47289716 0.51295654]
+    [ 0.44992085 -0.01323466]
+    minimizing for type 0
+    best fit z0, alpha, km for type 0: [0.28011776 1.86228103 0.09894587]
+    minimizing for type 1
+    best fit z0, alpha, km for type 1: [0.39341294 2.04677095 0.07633585]
+    minimizing for type 2
+    best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 1.51 ms, sys: 5 μs, total: 1.52 ms
-    Wall time: 1.29 ms
+    CPU times: user 9.77 s, sys: 3.99 ms, total: 9.77 s
+    Wall time: 9.77 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6a38c61c90>
+    <rail.core.data.ModelHandle at 0x7f8776b96e00>
 
 
 
@@ -1005,11 +1032,11 @@ https://ui.adsabs.harvard.edu/abs/2000ApJ…536..571B/abstract
 
 .. parsed-literal::
 
-    {'fo_arr': array([0.35, 0.5 ]),
-     'kt_arr': array([0.45 , 0.147]),
-     'zo_arr': array([0.431 , 0.39  , 0.0626]),
-     'km_arr': array([0.0913, 0.0636, 0.123 ]),
-     'a_arr': array([2.465, 1.806, 0.906]),
+    {'fo_arr': array([0.47289716, 0.51295654]),
+     'kt_arr': array([ 0.44992085, -0.01323466]),
+     'zo_arr': array([0.28011776, 0.39341294, 0.557186  ]),
+     'km_arr': array([0.09894587, 0.07633585, 0.11126791]),
+     'a_arr': array([1.86228103, 2.04677095, 1.92439164]),
      'mo': 20.0,
      'nt_array': [1, 2, 5]}
 
@@ -1065,7 +1092,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6a38cf5480>
+    <matplotlib.legend.Legend at 0x7f87a5f19630>
 
 
 
@@ -1141,15 +1168,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.7 s, sys: 147 ms, total: 12.8 s
-    Wall time: 12.8 s
+    CPU times: user 12.8 s, sys: 136 ms, total: 12.9 s
+    Wall time: 12.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f6a3cef7820>
+    <rail.core.data.QPHandle at 0x7f87a5e47340>
 
 
 
@@ -1176,7 +1203,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6a38d1c100>
+    <matplotlib.legend.Legend at 0x7f87a5f6e650>
 
 
 
@@ -1214,9 +1241,14 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    0 gals have large shift in mode with indices:
+    5 gals have large shift in mode with indices:
     
     
+    44
+    65
+    108
+    240
+    20400
 
 
 .. code:: ipython3
@@ -1234,7 +1266,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6a6da47520>
+    <matplotlib.legend.Legend at 0x7f87a5eb7310>
 
 
 
@@ -1280,7 +1312,7 @@ use the mode) and the true redshifts.
 
     hdfn sigma: 0.0566 
     newsed sigma: 0.0434
-    custom prior sigma: 0.0566
+    custom prior sigma: 0.0554
 
 
 .. code:: ipython3
@@ -1335,7 +1367,7 @@ let’s check this:
 
     hdfn outlier rate: 0.0724
     newsed outlier rate: 0.0647
-    custom prior outlier rate: 0.0724
+    custom prior outlier rate: 0.0668
 
 
 Not a dramatic effect, but a definite reduction in the number of
@@ -1365,7 +1397,7 @@ fraction of galaxies that have a delta(zmode - specz) larger than
 
     HDFN catastrophic outlier frac is: 0.0861
     new sed outlier frac: 0.0519
-    custom prior catastrophic oulier frac is: 0.0861
+    custom prior catastrophic oulier frac is: 0.0793
 
 
 We see that the COSMOS SED has a smaller fraction of absolute outliers

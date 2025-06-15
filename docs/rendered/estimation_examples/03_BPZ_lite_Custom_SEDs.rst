@@ -49,11 +49,30 @@ for bpz demo data:
 
 .. parsed-literal::
 
-     11  450k   11 52918    0     0  64552      0  0:00:07 --:--:--  0:00:07 64534
+      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   432k      0  0:00:01  0:00:01 --:--:--  432k
+      2  450k    2 11949    0     0   6064      0  0:01:15  0:00:01  0:01:14  6062
+
+.. parsed-literal::
+
+     20  450k   20 93878    0     0  32388      0  0:00:14  0:00:02  0:00:12 32382
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0   140k      0  0:00:03  0:00:03 --:--:--  140k
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+      9 83848    9  7896    0     0  22281      0  0:00:03 --:--:--  0:00:03 22242
+
+.. parsed-literal::
+
+    100 83848  100 83848    0     0   176k      0 --:--:-- --:--:-- --:--:--  176k
 
 
 .. parsed-literal::
@@ -64,18 +83,7 @@ for bpz demo data:
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   146k      0 --:--:-- --:--:-- --:--:--  147k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   169k      0 --:--:-- --:--:-- --:--:--  168k
+    100 83848  100 83848    0     0   126k      0 --:--:-- --:--:-- --:--:--  126k
 
 
 The files must be untarred and moved, as well:
@@ -188,7 +196,7 @@ specify those numbers of the three broad types.
                       spectra_file="baddc2templates.list",
                       type_file=os.path.join(RAILDIR, "rail/examples_data/estimation_data/data/test_dc2_train_customtemp_broadttypes.hdf5"),
                       prior_band="mag_i_lsst",
-                      nt_array=[2,3,4])
+                      nt_array=[2,3,4], output_hdfn=False)
     run_bpz_train = BPZliteInformer.make_stage(name="bpz_custom_sed_prior", **train_dict)
 
 .. code:: ipython3
@@ -199,16 +207,30 @@ specify those numbers of the three broad types.
 
 .. parsed-literal::
 
+    using 10213 galaxies in calculation
+
+
+.. parsed-literal::
+
+    best values for fo and kt:
+    [0.5538811  0.41290803]
+    [0.42501231 0.0116699 ]
+    minimizing for type 0
+    best fit z0, alpha, km for type 0: [0.28089894 1.68880761 0.0655626 ]
+    minimizing for type 1
+    best fit z0, alpha, km for type 1: [0.34557593 1.73745454 0.06583076]
+    minimizing for type 2
+    best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 1.45 ms, sys: 50 μs, total: 1.5 ms
-    Wall time: 1.19 ms
+    CPU times: user 9.58 s, sys: 660 μs, total: 9.58 s
+    Wall time: 9.58 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f83a628f0a0>
+    <rail.core.data.ModelHandle at 0x7fccc088d030>
 
 
 
@@ -258,11 +280,11 @@ https://ui.adsabs.harvard.edu/abs/2000ApJ…536..571B/abstract
 
 .. parsed-literal::
 
-    {'fo_arr': array([0.35, 0.5 ]),
-     'kt_arr': array([0.45 , 0.147]),
-     'zo_arr': array([0.431 , 0.39  , 0.0626]),
-     'km_arr': array([0.0913, 0.0636, 0.123 ]),
-     'a_arr': array([2.465, 1.806, 0.906]),
+    {'fo_arr': array([0.5538811 , 0.41290803]),
+     'kt_arr': array([0.42501231, 0.0116699 ]),
+     'zo_arr': array([0.28089894, 0.34557593, 0.5679393 ]),
+     'km_arr': array([0.0655626 , 0.06583076, 0.11549469]),
+     'a_arr': array([1.68880761, 1.73745454, 2.23510956]),
      'mo': 20.0,
      'nt_array': [2, 3, 4]}
 
@@ -318,7 +340,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f83a60ec0a0>
+    <matplotlib.legend.Legend at 0x7fcc6fa17670>
 
 
 
@@ -867,7 +889,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 25.4 s, sys: 174 ms, total: 25.6 s
+    CPU times: user 25.4 s, sys: 175 ms, total: 25.6 s
     Wall time: 25.6 s
 
 
@@ -875,7 +897,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f83a59efc40>
+    <rail.core.data.QPHandle at 0x7fcc6f02a290>
 
 
 
@@ -905,7 +927,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f83a5f74850>
+    <matplotlib.legend.Legend at 0x7fcc6fc2d450>
 
 
 
@@ -954,7 +976,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED sigma: 0.0528
+    custom SED sigma: 0.0490
 
 
 .. code:: ipython3
@@ -969,7 +991,7 @@ use the mode) and the true redshifts.
 
 .. parsed-literal::
 
-    custom SED bias: 0.0098
+    custom SED bias: 0.0068
 
 
 Indeed, we see an improvement in the sigma from 0.057-0.059 with the
@@ -989,7 +1011,7 @@ the other notebook to see these numbers)!
 
 .. parsed-literal::
 
-    custom SED outlier rate: 0.1014
+    custom SED outlier rate: 0.0915
 
 
 We see a higher outlier rate here; however, our ourlier rate is defined
@@ -1010,7 +1032,7 @@ compute the fraction of galaxies with (zmode - specz) / (1 + specz) >
 
 .. parsed-literal::
 
-    fraction of catastrophic outliers: 0.1078
+    fraction of catastrophic outliers: 0.0894
 
 
 So, our catastrophic outlier fraction remains similar but slightly
@@ -1036,7 +1058,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f83a5f501c0>
+    <matplotlib.legend.Legend at 0x7fcc6f805690>
 
 
 

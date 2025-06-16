@@ -148,15 +148,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.38 ms, sys: 1.03 ms, total: 10.4 ms
-    Wall time: 10 ms
+    CPU times: user 8.5 ms, sys: 1.96 ms, total: 10.5 ms
+    Wall time: 10.1 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1c20112bf0>
+    <rail.core.data.ModelHandle at 0x7fa7606f3700>
 
 
 
@@ -259,8 +259,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 9.56 s, sys: 381 ms, total: 9.94 s
-    Wall time: 9.92 s
+    CPU times: user 9.42 s, sys: 347 ms, total: 9.77 s
+    Wall time: 9.74 s
 
 
 .. parsed-literal::
@@ -443,8 +443,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 9.48 s, sys: 377 ms, total: 9.86 s
-    Wall time: 9.8 s
+    CPU times: user 9.3 s, sys: 341 ms, total: 9.64 s
+    Wall time: 9.62 s
 
 
 .. code:: ipython3
@@ -569,7 +569,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f1be6b65660>
+    <matplotlib.legend.Legend at 0x7fa7020085e0>
 
 
 

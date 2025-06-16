@@ -306,17 +306,13 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
     romandesc_spec_data_37k.hdf5
     romandesc_deep_data_75k.hdf5
 
 
 .. parsed-literal::
 
-     69 32.6M   69 22.5M    0     0  17.8M      0  0:00:01  0:00:01 --:--:-- 17.8M100 32.6M  100 32.6M    0     0  23.3M      0  0:00:01  0:00:01 --:--:-- 23.3M
+    100 32.6M  100 32.6M    0     0  45.7M      0 --:--:-- --:--:-- --:--:-- 45.7M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

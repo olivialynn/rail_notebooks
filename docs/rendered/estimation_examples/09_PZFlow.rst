@@ -74,142 +74,142 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    (3) 4.8480
+    (3) 4.7060
 
 
 .. parsed-literal::
 
-    (4) 3.4721
+    (4) 3.4757
 
 
 .. parsed-literal::
 
-    (5) 2.9689
+    (5) 3.0395
 
 
 .. parsed-literal::
 
-    (6) 2.3072
+    (6) 2.4205
 
 
 .. parsed-literal::
 
-    (7) 2.0255
+    (7) 1.8210
 
 
 .. parsed-literal::
 
-    (8) 1.4623
+    (8) 1.7583
 
 
 .. parsed-literal::
 
-    (9) 1.2311
+    (9) 1.2419
 
 
 .. parsed-literal::
 
-    (10) 1.4429
+    (10) 0.9476
 
 
 .. parsed-literal::
 
-    (11) 0.9199
+    (11) 0.7195
 
 
 .. parsed-literal::
 
-    (12) 0.5458
+    (12) 0.6141
 
 
 .. parsed-literal::
 
-    (13) 0.6246
+    (13) 0.4739
 
 
 .. parsed-literal::
 
-    (14) 0.3234
+    (14) 0.3886
 
 
 .. parsed-literal::
 
-    (15) 0.3933
+    (15) 0.3899
 
 
 .. parsed-literal::
 
-    (16) 0.3243
+    (16) 0.1482
 
 
 .. parsed-literal::
 
-    (17) 0.1322
+    (17) 0.1622
 
 
 .. parsed-literal::
 
-    (18) -0.0270
+    (18) 0.4439
 
 
 .. parsed-literal::
 
-    (19) -0.2153
+    (19) 0.0236
 
 
 .. parsed-literal::
 
-    (20) 0.5040
+    (20) 0.4557
 
 
 .. parsed-literal::
 
-    (21) 0.3016
+    (21) 0.5141
 
 
 .. parsed-literal::
 
-    (22) -0.0715
+    (22) 0.0444
 
 
 .. parsed-literal::
 
-    (23) 0.3749
+    (23) 0.1235
 
 
 .. parsed-literal::
 
-    (24) 0.0178
+    (24) -0.2529
 
 
 .. parsed-literal::
 
-    (25) -0.2740
+    (25) -0.2421
 
 
 .. parsed-literal::
 
-    (26) -0.0818
+    (26) -0.3549
 
 
 .. parsed-literal::
 
-    (27) -0.4086
+    (27) -0.3631
 
 
 .. parsed-literal::
 
-    (28) -0.5210
+    (28) -0.3917
 
 
 .. parsed-literal::
 
-    (29) -0.2745
+    (29) -0.4974
 
 
 .. parsed-literal::
 
-    (30) -0.5829
+    (30) -0.5397
 
 
 .. parsed-literal::
@@ -221,7 +221,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f6162f41510>
+    <rail.tools.flow_handle.FlowHandle at 0x7f3620696e90>
 
 
 

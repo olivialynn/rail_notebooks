@@ -306,7 +306,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-      0 32.6M    0  151k    0     0   205k      0  0:02:42 --:--:--  0:02:42  205k
+      6 32.6M    6 2339k    0     0  2553k      0  0:00:13 --:--:--  0:00:13 2551k
 
 .. parsed-literal::
 

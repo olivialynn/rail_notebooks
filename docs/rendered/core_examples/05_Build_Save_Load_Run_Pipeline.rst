@@ -367,11 +367,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f133a2e9960>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f133a2ea530>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f780dde6a40>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f780dde62c0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f133a2e9c00>]),
+       <rail.tools.table_tools.TableConverter at 0x7f780dde63e0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -545,10 +545,6 @@ pipeline we’ve just made would look like:
     Executing table_conv_test
     Command is:
     OMP_NUM_THREADS=1   python3 -m ceci rail.tools.table_tools.TableConverter   --input=./output_col_remapper_test.pq   --name=table_conv_test   --config=pipe_saved_config.yml   --output=./output_table_conv_test.hdf5 
-
-
-.. parsed-literal::
-
     Output writing to ./table_conv_test.out
     
 

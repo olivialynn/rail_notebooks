@@ -86,15 +86,15 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     20 47.1M   20 9845k    0     0  9034k      0  0:00:05  0:00:01  0:00:04 9032k
+      2 47.1M    2 1279k    0     0  1647k      0  0:00:29 --:--:--  0:00:29 1646k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  29.3M      0  0:00:01  0:00:01 --:--:-- 29.3M
+    100 47.1M  100 47.1M    0     0  27.0M      0  0:00:01  0:00:01 --:--:-- 27.1M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -140,7 +140,7 @@ FlexZBoost results
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -254,7 +254,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 

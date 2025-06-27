@@ -136,7 +136,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.022889</td>
+          <td>1.195015</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -146,7 +146,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>0.832232</td>
+          <td>1.421741</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -156,7 +156,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.177199</td>
+          <td>1.712093</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -166,7 +166,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>0.600264</td>
+          <td>0.052385</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -176,7 +176,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>1.489338</td>
+          <td>0.747223</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -212,12 +212,12 @@ Now let’s import the ObsCondition from rail.
 
     Loaded observing conditions from configuration file: 
     nside = 128, 
-    mask file:  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
-    weight file:  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
+    mask file:  /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
+    weight file:  /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
     tot_nVis_flag = True, 
     random_seed = 42, 
     map_dict contains the following items: 
-    {'m5': {'i': '/opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits'}, 'nYrObs': 5.0}
+    {'m5': {'i': '/opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits'}, 'nYrObs': 5.0}
 
 
 Let’s run the code and see how long it takes:
@@ -239,8 +239,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.28 s, sys: 51.6 ms, total: 3.33 s
-    Wall time: 3.33 s
+    CPU times: user 3.32 s, sys: 48.7 ms, total: 3.37 s
+    Wall time: 3.37 s
 
 
 .. code:: ipython3
@@ -291,7 +291,7 @@ Let’s run the code and see how long it takes:
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.022889</td>
+          <td>1.195015</td>
           <td>22.990404</td>
           <td>0.026246</td>
           <td>23.011212</td>
@@ -310,7 +310,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>1</th>
-          <td>0.832232</td>
+          <td>1.421741</td>
           <td>22.962996</td>
           <td>0.025645</td>
           <td>23.012586</td>
@@ -329,7 +329,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>2</th>
-          <td>1.177199</td>
+          <td>1.712093</td>
           <td>23.050979</td>
           <td>0.027628</td>
           <td>22.992791</td>
@@ -348,7 +348,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>3</th>
-          <td>0.600264</td>
+          <td>0.052385</td>
           <td>23.015021</td>
           <td>0.026798</td>
           <td>22.984763</td>
@@ -367,7 +367,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>4</th>
-          <td>1.489338</td>
+          <td>0.747223</td>
           <td>23.005344</td>
           <td>0.026579</td>
           <td>23.010790</td>
@@ -468,12 +468,12 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
 
     Loaded observing conditions from configuration file: 
     nside = 128, 
-    mask file:  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
-    weight file:  /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
+    mask file:  /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits, 
+    weight file:  /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/../../examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits, 
     tot_nVis_flag = True, 
     random_seed = 42, 
     map_dict contains the following items: 
-    {'airmass': '/opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits', 'nYrObs': 5.0}
+    {'airmass': '/opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits', 'nYrObs': 5.0}
 
 
 .. code:: ipython3
@@ -541,7 +541,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.022889</td>
+          <td>1.195015</td>
           <td>22.990381</td>
           <td>0.026308</td>
           <td>23.011222</td>
@@ -560,7 +560,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>1</th>
-          <td>0.832232</td>
+          <td>1.421741</td>
           <td>22.963601</td>
           <td>0.025237</td>
           <td>23.012513</td>
@@ -579,7 +579,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>2</th>
-          <td>1.177199</td>
+          <td>1.712093</td>
           <td>23.050276</td>
           <td>0.027242</td>
           <td>22.992825</td>
@@ -598,7 +598,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>3</th>
-          <td>0.600264</td>
+          <td>0.052385</td>
           <td>23.014777</td>
           <td>0.026365</td>
           <td>22.984848</td>
@@ -617,7 +617,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>4</th>
-          <td>1.489338</td>
+          <td>0.747223</td>
           <td>23.005223</td>
           <td>0.025983</td>
           <td>23.010704</td>

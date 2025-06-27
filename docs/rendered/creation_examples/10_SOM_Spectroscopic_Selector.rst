@@ -306,17 +306,13 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-      0 32.6M    0 32434    0     0  45361      0  0:12:34 --:--:--  0:12:34 45362
-
-.. parsed-literal::
-
     romandesc_spec_data_37k.hdf5
     romandesc_deep_data_75k.hdf5
 
 
 .. parsed-literal::
 
-     94 32.6M   94 30.7M    0     0  17.8M      0  0:00:01  0:00:01 --:--:-- 17.8M100 32.6M  100 32.6M    0     0  18.6M      0  0:00:01  0:00:01 --:--:-- 18.6M
+    100 32.6M  100 32.6M    0     0  56.7M      0 --:--:-- --:--:-- --:--:-- 56.8M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file
@@ -566,7 +562,7 @@ to use as the reference/spec data.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.17/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py:100: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy

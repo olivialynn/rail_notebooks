@@ -306,57 +306,13 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
-
-.. parsed-literal::
-
-      0 32.6M    0 16050    0     0   3479      0  2:44:02  0:00:04  2:43:58  3479
-
-.. parsed-literal::
-
-      0 32.6M    0  107k    0     0  17879      0  0:31:55  0:00:06  0:31:49 19974
-
-.. parsed-literal::
-
-      0 32.6M    0  107k    0     0  15382      0  0:37:06  0:00:07  0:36:59 22086
-
-.. parsed-literal::
-
-      0 32.6M    0  195k    0     0  26403      0  0:21:36  0:00:07  0:21:29 40364
-
-.. parsed-literal::
-
-      5 32.6M    5 1699k    0     0   198k      0  0:02:48  0:00:08  0:02:40  343k
-
-.. parsed-literal::
-
-     16 32.6M   16 5475k    0     0   572k      0  0:00:58  0:00:09  0:00:49 1101k
-
-.. parsed-literal::
-
-     43 32.6M   43 14.3M    0     0  1387k      0  0:00:24  0:00:10  0:00:14 3293k
-
-.. parsed-literal::
-
     romandesc_spec_data_37k.hdf5
     romandesc_deep_data_75k.hdf5
 
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  2909k      0  0:00:11  0:00:11 --:--:-- 7706k
+    100 32.6M  100 32.6M    0     0  50.2M      0 --:--:-- --:--:-- --:--:-- 50.2M
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

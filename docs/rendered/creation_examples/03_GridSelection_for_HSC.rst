@@ -128,7 +128,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.48</td>
+          <td>2.4</td>
         </tr>
         <tr>
           <th>1</th>
@@ -136,7 +136,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.48</td>
+          <td>2.4</td>
         </tr>
         <tr>
           <th>2</th>
@@ -144,7 +144,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.48</td>
+          <td>2.4</td>
         </tr>
         <tr>
           <th>3</th>
@@ -152,7 +152,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.48</td>
+          <td>2.4</td>
         </tr>
         <tr>
           <th>4</th>
@@ -160,7 +160,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.48</td>
+          <td>2.4</td>
         </tr>
       </tbody>
     </table>
@@ -220,7 +220,7 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.75 s, sys: 94.9 ms, total: 2.84 s
+    CPU times: user 2.74 s, sys: 110 ms, total: 2.85 s
     Wall time: 2.84 s
 
 
@@ -235,19 +235,19 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 182084 entries, 84300 to 927787
+    Index: 181888 entries, 84300 to 927787
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          182084 non-null  float64
-     1   gz         182084 non-null  float64
-     2   g          182084 non-null  float64
-     3   z          182084 non-null  float64
-     4   redshift   182084 non-null  float64
-     5   x_vals     182084 non-null  float64
-     6   y_vals     182084 non-null  float64
-     7   ratios     182084 non-null  float64
-     8   max_specz  182084 non-null  float64
+     0   i          181888 non-null  float64
+     1   gz         181888 non-null  float64
+     2   g          181888 non-null  float64
+     3   z          181888 non-null  float64
+     4   redshift   181888 non-null  float64
+     5   x_vals     181888 non-null  float64
+     6   y_vals     181888 non-null  float64
+     7   ratios     181888 non-null  float64
+     8   max_specz  181888 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 
@@ -274,7 +274,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 .. parsed-literal::
 
-    /tmp/ipykernel_5384/1938339790.py:1: SettingWithCopyWarning: 
+    /tmp/ipykernel_5380/1938339790.py:1: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

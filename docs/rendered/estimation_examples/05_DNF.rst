@@ -148,15 +148,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.96 ms, sys: 1 ms, total: 11 ms
-    Wall time: 10.6 ms
+    CPU times: user 9.17 ms, sys: 1.01 ms, total: 10.2 ms
+    Wall time: 10.4 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fd87a8f38e0>
+    <rail.core.data.ModelHandle at 0x7f0866d9fd30>
 
 
 
@@ -197,26 +197,16 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:397: RuntimeWarning: invalid value encountered in sqrt
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
       alpha = np.sqrt(1.0 - NIP**2)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:442: RuntimeWarning: divide by zero encountered in divide
-      inverse_distances = 1.0 / distances
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:450: RuntimeWarning: invalid value encountered in divide
-      wmatrix = inverse_distances / row_sum
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [  50   87  169  542  649  669  849 1225 1447 1460 1558 1808 2100 2164
-     2244 2465 2484 2537 2576 2796 4107 4425 5088 5252 6302 6729 7123 7464
-     7503 7942 8706 9500 9679 9962] have an integral of 0.
-      warnings.warn(
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
-      new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
-      self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([  50,   50,   50, ..., 9962, 9962, 9962], shape=(10234,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(10234,)))
-      warnings.warn(
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
+      inverse_distances = 1.0 / distances
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
+      wmatrix = inverse_distances / row_sum
 
 
 .. parsed-literal::
@@ -228,27 +218,16 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:397: RuntimeWarning: invalid value encountered in sqrt
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
       alpha = np.sqrt(1.0 - NIP**2)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:442: RuntimeWarning: divide by zero encountered in divide
-      inverse_distances = 1.0 / distances
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:450: RuntimeWarning: invalid value encountered in divide
-      wmatrix = inverse_distances / row_sum
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 204  272  279  742  928 1397 1460 1610 1718 2133 2254 2415 3107 3174
-     3177 3207 3687 3704 4028 4101 4181 4195 4364 4449 4467 4623 4643 4988
-     5012 5251 5337 5501 5515 5568 5574 5730 5784 5836 5852 5884 5950 5973
-     6376 6516 6675 6988 7019 7067 7203 7488 8152 8260 8369 8626 8694 9649] have an integral of 0.
-      warnings.warn(
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
-      new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
-      self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 204,  204,  204, ..., 9649, 9649, 9649], shape=(16856,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(16856,)))
-      warnings.warn(
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
+      inverse_distances = 1.0 / distances
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
+      wmatrix = inverse_distances / row_sum
 
 
 .. parsed-literal::
@@ -259,14 +238,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 9.55 s, sys: 384 ms, total: 9.94 s
-    Wall time: 9.92 s
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([   50,    50,    50, ..., 19649, 19649, 19649], shape=(27090,)), array([  0,   1,   2, ..., 298, 299, 300], shape=(27090,)))
-      warnings.warn(
+    CPU times: user 1min 21s, sys: 1.51 s, total: 1min 22s
+    Wall time: 1min 22s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -306,7 +279,7 @@ mode for each object and plot that as well:
 
 .. parsed-literal::
 
-    array([0.19, 0.07, 0.07, ..., 0.13, 2.47, 2.73], shape=(20449,))
+    array([0.08, 0.03, 0.03, ..., 3.  , 2.94, 3.  ], shape=(20449,))
 
 
 
@@ -443,8 +416,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 9.4 s, sys: 343 ms, total: 9.74 s
-    Wall time: 9.72 s
+    CPU times: user 1min 14s, sys: 1.52 s, total: 1min 16s
+    Wall time: 1min 15s
 
 
 .. code:: ipython3
@@ -569,7 +542,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd87837d300>
+    <matplotlib.legend.Legend at 0x7f0840c6b0a0>
 
 
 

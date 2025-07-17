@@ -136,7 +136,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.554436</td>
+          <td>0.465171</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -146,7 +146,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>0.382590</td>
+          <td>1.731060</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -156,7 +156,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.332178</td>
+          <td>1.400735</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -166,7 +166,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>1.292856</td>
+          <td>0.593421</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -176,7 +176,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>1.550438</td>
+          <td>1.546757</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -239,7 +239,7 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.2 s, sys: 48.8 ms, total: 3.25 s
+    CPU times: user 3.21 s, sys: 50.2 ms, total: 3.26 s
     Wall time: 3.25 s
 
 
@@ -291,7 +291,7 @@ Let’s run the code and see how long it takes:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.554436</td>
+          <td>0.465171</td>
           <td>22.990404</td>
           <td>0.026246</td>
           <td>23.011212</td>
@@ -310,7 +310,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>1</th>
-          <td>0.382590</td>
+          <td>1.731060</td>
           <td>22.962996</td>
           <td>0.025645</td>
           <td>23.012586</td>
@@ -329,7 +329,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>2</th>
-          <td>1.332178</td>
+          <td>1.400735</td>
           <td>23.050979</td>
           <td>0.027628</td>
           <td>22.992791</td>
@@ -348,7 +348,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>3</th>
-          <td>1.292856</td>
+          <td>0.593421</td>
           <td>23.015021</td>
           <td>0.026798</td>
           <td>22.984763</td>
@@ -367,7 +367,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>4</th>
-          <td>1.550438</td>
+          <td>1.546757</td>
           <td>23.005344</td>
           <td>0.026579</td>
           <td>23.010790</td>
@@ -541,7 +541,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.554436</td>
+          <td>0.465171</td>
           <td>22.990381</td>
           <td>0.026308</td>
           <td>23.011222</td>
@@ -560,7 +560,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>1</th>
-          <td>0.382590</td>
+          <td>1.731060</td>
           <td>22.963601</td>
           <td>0.025237</td>
           <td>23.012513</td>
@@ -579,7 +579,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>2</th>
-          <td>1.332178</td>
+          <td>1.400735</td>
           <td>23.050276</td>
           <td>0.027242</td>
           <td>22.992825</td>
@@ -598,7 +598,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>3</th>
-          <td>1.292856</td>
+          <td>0.593421</td>
           <td>23.014777</td>
           <td>0.026365</td>
           <td>22.984848</td>
@@ -617,7 +617,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>4</th>
-          <td>1.550438</td>
+          <td>1.546757</td>
           <td>23.005223</td>
           <td>0.025983</td>
           <td>23.010704</td>

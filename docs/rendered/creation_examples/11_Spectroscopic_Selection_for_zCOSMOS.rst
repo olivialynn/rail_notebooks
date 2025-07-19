@@ -115,50 +115,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.639618</td>
-          <td>15.446603</td>
+          <td>25.520019</td>
+          <td>19.124142</td>
           <td>20.0</td>
-          <td>1.235088</td>
+          <td>0.972045</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.679777</td>
-          <td>19.095651</td>
+          <td>23.375050</td>
+          <td>17.712160</td>
           <td>20.0</td>
-          <td>1.443024</td>
+          <td>0.221588</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.577380</td>
-          <td>18.932451</td>
+          <td>20.667634</td>
+          <td>18.811775</td>
           <td>20.0</td>
-          <td>1.213791</td>
+          <td>0.902184</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.764209</td>
-          <td>15.982637</td>
+          <td>19.810911</td>
+          <td>19.974870</td>
           <td>20.0</td>
-          <td>1.302959</td>
+          <td>1.038499</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.722744</td>
-          <td>20.326893</td>
+          <td>25.020452</td>
+          <td>14.181108</td>
           <td>20.0</td>
-          <td>1.398706</td>
+          <td>0.109590</td>
         </tr>
       </tbody>
     </table>
@@ -205,8 +205,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.4 s, sys: 54.2 ms, total: 1.45 s
-    Wall time: 1.44 s
+    CPU times: user 1.43 s, sys: 38 ms, total: 1.47 s
+    Wall time: 1.45 s
 
 
 .. code:: ipython3
@@ -217,17 +217,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 502834 entries, 6 to 1999997
+    Index: 503671 entries, 2 to 1999992
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         502834 non-null  float64
-     1   g         502834 non-null  float64
-     2   r         502834 non-null  float64
-     3   i         502834 non-null  float64
-     4   z         502834 non-null  float64
-     5   y         502834 non-null  float64
-     6   redshift  502834 non-null  float64
+     0   u         503671 non-null  float64
+     1   g         503671 non-null  float64
+     2   r         503671 non-null  float64
+     3   i         503671 non-null  float64
+     4   z         503671 non-null  float64
+     5   y         503671 non-null  float64
+     6   redshift  503671 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 
@@ -292,54 +292,54 @@ a visual indication of how many galaxies in each cell we’ve kept.
       </thead>
       <tbody>
         <tr>
+          <th>2</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.667634</td>
+          <td>18.811775</td>
+          <td>20.0</td>
+          <td>0.902184</td>
+        </tr>
+        <tr>
           <th>6</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.156095</td>
-          <td>18.199234</td>
+          <td>20.686569</td>
+          <td>14.540375</td>
           <td>20.0</td>
-          <td>0.937204</td>
+          <td>0.834261</td>
         </tr>
         <tr>
           <th>7</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.495958</td>
-          <td>17.309945</td>
+          <td>19.404728</td>
+          <td>21.498075</td>
           <td>20.0</td>
-          <td>0.907932</td>
+          <td>0.397265</td>
         </tr>
         <tr>
-          <th>8</th>
+          <th>16</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.469093</td>
-          <td>16.339738</td>
+          <td>19.221136</td>
+          <td>14.850976</td>
           <td>20.0</td>
-          <td>0.081262</td>
+          <td>0.216685</td>
         </tr>
         <tr>
-          <th>9</th>
+          <th>26</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.868698</td>
-          <td>21.544517</td>
+          <td>20.840128</td>
+          <td>21.510224</td>
           <td>20.0</td>
-          <td>0.436571</td>
-        </tr>
-        <tr>
-          <th>15</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.363630</td>
-          <td>14.321279</td>
-          <td>20.0</td>
-          <td>0.249893</td>
+          <td>1.008125</td>
         </tr>
         <tr>
           <th>...</th>
@@ -352,58 +352,58 @@ a visual indication of how many galaxies in each cell we’ve kept.
           <td>...</td>
         </tr>
         <tr>
-          <th>1999978</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.907984</td>
-          <td>16.432487</td>
-          <td>20.0</td>
-          <td>1.002452</td>
-        </tr>
-        <tr>
-          <th>1999981</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.976668</td>
-          <td>17.342909</td>
-          <td>20.0</td>
-          <td>0.699886</td>
-        </tr>
-        <tr>
           <th>1999982</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.356482</td>
-          <td>20.295403</td>
+          <td>21.872867</td>
+          <td>20.377171</td>
           <td>20.0</td>
-          <td>0.079382</td>
+          <td>0.377890</td>
         </tr>
         <tr>
-          <th>1999995</th>
+          <th>1999984</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.564664</td>
-          <td>18.606452</td>
+          <td>19.275451</td>
+          <td>19.678958</td>
           <td>20.0</td>
-          <td>0.129886</td>
+          <td>0.697942</td>
         </tr>
         <tr>
-          <th>1999997</th>
+          <th>1999988</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.101345</td>
-          <td>17.446449</td>
+          <td>19.930138</td>
+          <td>20.158051</td>
           <td>20.0</td>
-          <td>0.577692</td>
+          <td>0.695511</td>
+        </tr>
+        <tr>
+          <th>1999989</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>21.198333</td>
+          <td>17.739622</td>
+          <td>20.0</td>
+          <td>1.292486</td>
+        </tr>
+        <tr>
+          <th>1999992</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>19.193590</td>
+          <td>18.364686</td>
+          <td>20.0</td>
+          <td>0.667322</td>
         </tr>
       </tbody>
     </table>
-    <p>502834 rows × 7 columns</p>
+    <p>503671 rows × 7 columns</p>
     </div>
 
 

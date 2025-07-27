@@ -619,15 +619,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.1 s, sys: 162 ms, total: 23.2 s
-    Wall time: 23.2 s
+    CPU times: user 23.1 s, sys: 172 ms, total: 23.3 s
+    Wall time: 23.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f65c0f78ee0>
+    <rail.core.data.QPHandle at 0x7f8fb07c1b40>
 
 
 
@@ -707,7 +707,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f65c0d379d0>
+    <matplotlib.legend.Legend at 0x7f8fb05539d0>
 
 
 
@@ -744,7 +744,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f65c0c59ff0>
+    <matplotlib.legend.Legend at 0x7f8fac359ff0>
 
 
 
@@ -823,7 +823,7 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.3 s, sys: 134 ms, total: 32.4 s
+    CPU times: user 32.3 s, sys: 125 ms, total: 32.4 s
     Wall time: 32.5 s
 
 
@@ -948,33 +948,25 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-      2  450k    2 11958    0     0  23527      0  0:00:19 --:--:--  0:00:19 23493
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   556k      0 --:--:-- --:--:-- --:--:--  556k
+    100  450k  100  450k    0     0   487k      0 --:--:-- --:--:-- --:--:--  487k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   143k      0 --:--:-- --:--:-- --:--:--  143k
-
-
-.. parsed-literal::
-
+     63 83848   63 52952    0     0   156k      0 --:--:-- --:--:-- --:--:--  155k100 83848  100 83848    0     0   234k      0 --:--:-- --:--:-- --:--:--  234k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-    100 83848  100 83848    0     0   143k      0 --:--:-- --:--:-- --:--:--  142k
+    100 83848  100 83848    0     0   274k      0 --:--:-- --:--:-- --:--:--  274k
 
 
 .. code:: ipython3
@@ -1007,15 +999,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.85 s, sys: 3.01 ms, total: 9.85 s
-    Wall time: 9.85 s
+    CPU times: user 9.83 s, sys: 1.97 ms, total: 9.83 s
+    Wall time: 9.83 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f65bcb2c3d0>
+    <rail.core.data.ModelHandle at 0x7f8fac243e80>
 
 
 
@@ -1125,7 +1117,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f65c0def5b0>
+    <matplotlib.legend.Legend at 0x7f8fac243fd0>
 
 
 
@@ -1201,7 +1193,7 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.6 s, sys: 126 ms, total: 12.8 s
+    CPU times: user 12.7 s, sys: 144 ms, total: 12.8 s
     Wall time: 12.8 s
 
 
@@ -1209,7 +1201,7 @@ results are any different:
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f65f1a561d0>
+    <rail.core.data.QPHandle at 0x7f8fd6653d00>
 
 
 
@@ -1236,7 +1228,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f65bcb9d480>
+    <matplotlib.legend.Legend at 0x7f8fac211600>
 
 
 
@@ -1299,7 +1291,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f65f1bfaa40>
+    <matplotlib.legend.Legend at 0x7f8fac210e80>
 
 
 

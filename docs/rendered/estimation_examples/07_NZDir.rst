@@ -151,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7effa2567e80>
+    <rail.core.data.ModelHandle at 0x7fd10671e2c0>
 
 
 
@@ -192,21 +192,17 @@ calculation, so this should run very fast:
     Inserting handle into data store.  single_NZ_nzsumm_low: inprogress_single_NZ_nzsumm_low.hdf5, nzsumm_low
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
     Process 0 running estimator on chunk 0 - 8513
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
+    Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
 
 
 .. parsed-literal::
 
-    Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 326 ms, sys: 4.03 ms, total: 330 ms
-    Wall time: 330 ms
+    CPU times: user 290 ms, sys: 4 ms, total: 294 ms
+    Wall time: 294 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -353,7 +349,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7eff9eb368f0>
+    <rail.core.data.ModelHandle at 0x7fd102a9be80>
 
 
 
@@ -383,8 +379,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 140 ms, sys: 2.96 ms, total: 143 ms
-    Wall time: 143 ms
+    CPU times: user 123 ms, sys: 4 ms, total: 127 ms
+    Wall time: 127 ms
 
 
 .. code:: ipython3

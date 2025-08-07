@@ -334,8 +334,107 @@ to another. By default, this will connect the output data product called
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, lsst_error_model_test
     Inserting handle into data store.  output_lsst_error_model_test: inprogress_output_lsst_error_model_test.pq, lsst_error_model_test
     Inserting handle into data store.  output_col_remapper_test: inprogress_output_col_remapper_test.pq, col_remapper_test
+
+
+
+
+.. raw:: html
+
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+    
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+    
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>mag_z_lsst</th>
+          <th>mag_y_lsst</th>
+          <th>mag_r_lsst</th>
+          <th>mag_i_lsst</th>
+          <th>redshift</th>
+          <th>mag_u_lsst</th>
+          <th>mag_g_lsst</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>24.594986</td>
+          <td>24.570778</td>
+          <td>25.783264</td>
+          <td>24.938288</td>
+          <td>0.936012</td>
+          <td>26.480864</td>
+          <td>26.258892</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>24.684788</td>
+          <td>24.592598</td>
+          <td>25.261063</td>
+          <td>24.813164</td>
+          <td>0.533285</td>
+          <td>27.151110</td>
+          <td>26.398911</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>23.247032</td>
+          <td>22.965092</td>
+          <td>24.729794</td>
+          <td>23.638914</td>
+          <td>0.681911</td>
+          <td>28.184902</td>
+          <td>26.186884</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>23.275990</td>
+          <td>23.122807</td>
+          <td>23.863188</td>
+          <td>23.495571</td>
+          <td>0.253598</td>
+          <td>26.024174</td>
+          <td>24.765572</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>24.266460</td>
+          <td>24.178432</td>
+          <td>25.198423</td>
+          <td>24.424183</td>
+          <td>0.751606</td>
+          <td>25.833296</td>
+          <td>25.687544</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>24.207104</td>
+          <td>24.205322</td>
+          <td>25.288637</td>
+          <td>24.442966</td>
+          <td>0.892296</td>
+          <td>25.842957</td>
+          <td>25.672918</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
 
 
 Initialize the pipeline
@@ -367,11 +466,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4180724a00>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f41859d7f70>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f09f8f14dc0>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f09fc9f8e20>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f4186891a80>]),
+       <rail.tools.table_tools.TableConverter at 0x7f09fc9f9660>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

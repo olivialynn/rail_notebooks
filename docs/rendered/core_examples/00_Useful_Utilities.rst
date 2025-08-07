@@ -423,6 +423,7 @@ Creating the Pipeline
 .. parsed-literal::
 
     Inserting handle into data store.  output_flow_engine_test: inprogress_output_flow_engine_test.pq, flow_engine_test
+    Inserting handle into data store.  input: None, col_remapper_test
 
 
 Introspecting the Pipeline
@@ -605,7 +606,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7fa77e52fd00>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff5c2ddf820>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -624,7 +625,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7fa77e52fd00>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff5c2ddf820>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

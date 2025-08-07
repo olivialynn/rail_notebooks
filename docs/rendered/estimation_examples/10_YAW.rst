@@ -201,6 +201,8 @@ realistic setup this number should be much larger**.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  data_ref: None, cache_ref
+    Inserting handle into data store.  rand_ref: None, cache_ref
     YAW | yet_another_wizz v3.1.2
 
 
@@ -340,6 +342,8 @@ deterministic. We can see in the log messages that the code reports
 
 .. parsed-literal::
 
+    Inserting handle into data store.  data_unk: None, cache_unk
+    Inserting handle into data store.  patch_source_unk: None, cache_unk
     YAW | yet_another_wizz v3.1.2
 
 
@@ -446,6 +450,7 @@ the cache (handle) of the reference dataset.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  sample: None, auto_corr
     YAW | yet_another_wizz v3.1.2
 
 
@@ -586,6 +591,8 @@ the cache (handles) of the reference and the unknown data.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  reference: None, cross_corr
+    Inserting handle into data store.  unknown: None, cross_corr
     YAW | yet_another_wizz v3.1.2
 
 
@@ -745,6 +752,8 @@ practice since the exact redshifts of the unknown objects are not known.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  cross_corr: None, summarize
+    Inserting handle into data store.  auto_corr_ref: None, summarize
     YAW | yet_another_wizz v3.1.2
 
 
@@ -852,7 +861,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f0a2de6df00>
+    <matplotlib.legend.Legend at 0x7ff66ce71870>
 
 
 

@@ -42,6 +42,11 @@ NZDir as a Pipeline
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, NZDirInformer
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model: inprogress_nzdir_model.pkl, NZDirInformer
 
 
@@ -86,8 +91,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f631c1b2470>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f631c1b11e0>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f105806f100>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f105806f0d0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -177,7 +182,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f62c3bbd5d0>
+    <matplotlib.legend.Legend at 0x7f1056a8f790>
 
 
 

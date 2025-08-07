@@ -53,6 +53,11 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, inform_pzflow
+
+
+.. parsed-literal::
+
     Training 30 epochs 
     Loss:
 
@@ -221,7 +226,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f75b0070c10>
+    <rail.tools.flow_handle.FlowHandle at 0x7f88b4a6ea70>
 
 
 

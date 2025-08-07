@@ -166,6 +166,7 @@ specify those numbers of the three broad types.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, bpz_custom_sed_prior
     using 10213 galaxies in calculation
 
 
@@ -181,15 +182,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.72 s, sys: 6.75 ms, total: 9.73 s
-    Wall time: 9.73 s
+    CPU times: user 9.55 s, sys: 1.94 ms, total: 9.55 s
+    Wall time: 9.55 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f9fc8d44fa0>
+    <rail.core.data.ModelHandle at 0x7fecb99e7d90>
 
 
 
@@ -299,7 +300,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f86e8d2d0>
+    <matplotlib.legend.Legend at 0x7fecb98ed6f0>
 
 
 
@@ -340,6 +341,7 @@ later use) for the first time.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model: <class 'rail.core.data.ModelHandle'> test_9816_customsed_demo_prior.pkl, (wd), rerun_bpz
       Generating new AB file DC2_DONOTUSE_El1.DC2LSST_u.AB....
     DC2_DONOTUSE_El1 DC2LSST_u
     x_res[0] 3000.0
@@ -848,15 +850,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 25.7 s, sys: 203 ms, total: 25.9 s
-    Wall time: 25.9 s
+    CPU times: user 25.6 s, sys: 180 ms, total: 25.8 s
+    Wall time: 25.8 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f9f8676a290>
+    <rail.core.data.QPHandle at 0x7fecb91921d0>
 
 
 
@@ -886,7 +888,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f866a9810>
+    <matplotlib.legend.Legend at 0x7fecb972de70>
 
 
 
@@ -1017,7 +1019,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f9f86b71420>
+    <matplotlib.legend.Legend at 0x7fecb96ce740>
 
 
 

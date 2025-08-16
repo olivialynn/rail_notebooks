@@ -182,15 +182,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.87 s, sys: 3.23 ms, total: 9.88 s
-    Wall time: 9.87 s
+    CPU times: user 9.65 s, sys: 2.52 ms, total: 9.65 s
+    Wall time: 9.65 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7efde8e23f10>
+    <rail.core.data.ModelHandle at 0x7f21a23cf970>
 
 
 
@@ -300,7 +300,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efd9cf65720>
+    <matplotlib.legend.Legend at 0x7f21a22d5720>
 
 
 
@@ -850,15 +850,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 25.6 s, sys: 168 ms, total: 25.8 s
-    Wall time: 25.8 s
+    CPU times: user 25.5 s, sys: 150 ms, total: 25.6 s
+    Wall time: 25.6 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7efd9c806710>
+    <rail.core.data.QPHandle at 0x7f21a1b821d0>
 
 
 
@@ -888,7 +888,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efd9cda1330>
+    <matplotlib.legend.Legend at 0x7f21a2431cf0>
 
 
 
@@ -1019,7 +1019,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7efd9cd458a0>
+    <matplotlib.legend.Legend at 0x7f21a208d8d0>
 
 
 

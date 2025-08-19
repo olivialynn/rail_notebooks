@@ -89,7 +89,7 @@ chunks of data
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7fd4176b7ca0>
+    <generator object iter_HDF5_to_dict at 0x7f8b5ee27ca0>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -120,7 +120,7 @@ which can be use to iterate over that file.
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7fd4176b7530>
+    <generator object iter_HDF5_to_dict at 0x7f8b5ee27d10>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715

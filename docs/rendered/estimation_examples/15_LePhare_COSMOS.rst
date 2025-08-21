@@ -35,7 +35,7 @@ you must both update the config and the values.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250820T065526
+    /home/runner/.cache/lephare/runs/20250821T065839
 
 
 Here we load previously created synthetic data
@@ -60,17 +60,7 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/hsc/rHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/rHSC.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
     Downloading file 'filt/cosmos/u_cfht.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_cfht.lowres' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/cosmos/u_new.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_new.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -80,7 +70,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/hsc/gHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/gHSC.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/u_new.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_new.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/hsc/rHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/rHSC.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -100,20 +95,25 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
+    Downloading file 'filt/hsc/gHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/gHSC.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/filt/vista
+    Created directory: /home/runner/.cache/lephare/data/filt/hsc
+    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
+    Checking/downloading 445 files...
+
+
+.. parsed-literal::
+
     Downloading file 'filt/vista/J.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/vista/J.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
     Downloading file 'filt/vista/H.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/vista/H.lowres' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
-    Created directory: /home/runner/.cache/lephare/data/filt/vista
-    Created directory: /home/runner/.cache/lephare/data/filt/hsc
-    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -138,12 +138,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/IB505.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB505.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/IB527.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB527.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/IB527.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB527.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/IB505.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB505.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -342,10 +342,6 @@ redshifts, extinction parameters, and reddening values.
     irac_ch3.lowres               29            5.7873      5.6765      1.3509    3.7537  -99.0000  -29.9581    7.0472       1      5.7592      1.0050
     irac_ch4.lowres               30            8.0442      7.7033      2.8394    4.3959  -99.0000  -31.2962    7.6701       1      7.9590      1.0110
     {'star_sed': '/home/runner/.cache/lephare/data/sed/STAR/STAR_MOD_ALL.list'}
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -375,7 +371,7 @@ redshifts, extinction parameters, and reddening values.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/STAR_COSMOS(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Aug 20 07:08:43 2025
+    # CREATION_DATE Thu Aug 21 07:11:53 2025
     #############################################
 
 
@@ -405,6 +401,10 @@ redshifts, extinction parameters, and reddening values.
     # Magnitude type     : AB
     # GAL_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_CE(.doc & .bin)
     # GAL_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/CE_COSMOS(.doc & .bin)
+
+
+.. parsed-literal::
+
     # Z_STEP   :0.0100 0.0000 3.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SMC_prevot.dat SB_calzetti.dat SB_calzetti_bump1.dat SB_calzetti_bump2.dat 
@@ -413,12 +413,8 @@ redshifts, extinction parameters, and reddening values.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Aug 20 07:08:44 2025
+    # CREATION_DATE Thu Aug 21 07:11:53 2025
     #############################################
-
-
-.. parsed-literal::
-
     {'qso_sed': '/home/runner/.cache/lephare/data/sed/QSO/SALVATO09/AGN_MOD.list'}
     #######################################
     # It s translating SEDs to binary library #
@@ -449,7 +445,7 @@ redshifts, extinction parameters, and reddening values.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Wed Aug 20 07:12:51 2025
+    # CREATION_DATE Thu Aug 21 07:16:00 2025
     #############################################
     Inserting handle into data store.  model_inform_COSMOS: inprogress_lephare.pkl, inform_COSMOS
 
@@ -458,7 +454,7 @@ redshifts, extinction parameters, and reddening values.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f293b957310>
+    <rail.core.data.ModelHandle at 0x7fae72a2b5b0>
 
 
 
@@ -515,7 +511,12 @@ data.
     # FIR_FREESCALE          : YES
     # FIR_SUBSTELLAR         : NO
     # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.100000 0.200000 0.300000 
-    # ERR_FACTOR             : 1.500000 
+    # ERR_FACTOR   AUTO_ADAPT set to NO. Using zero offsets.
+
+
+.. parsed-literal::
+
+              : 1.500000 
     # GLB_CONTEXT            : 0
     # FORB_CONTEXT           : -1
     # DZ_WIN                 : 1.000000
@@ -601,7 +602,6 @@ data.
     irac_ch2.lowres               28            4.5290      4.4610      1.0100    3.2630  -28.9400       1      1.0040
     irac_ch3.lowres               29            5.7870      5.6760      1.3510    3.7540  -29.9600       1      1.0050
     irac_ch4.lowres               30            8.0440      7.7030      2.8390    4.3960  -31.3000       1      1.0110
-    AUTO_ADAPT set to NO. Using zero offsets.
     Inserting handle into data store.  output_test_Lephare_COSMOS: inprogress_output_test_Lephare_COSMOS.hdf5, test_Lephare_COSMOS
 
 

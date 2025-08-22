@@ -620,15 +620,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.2 s, sys: 172 ms, total: 23.4 s
-    Wall time: 23.4 s
+    CPU times: user 23.8 s, sys: 166 ms, total: 24 s
+    Wall time: 23.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3fc6565a20>
+    <rail.core.data.QPHandle at 0x7f1e3833a560>
 
 
 
@@ -708,7 +708,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3fc62f6170>
+    <matplotlib.legend.Legend at 0x7f1e38106260>
 
 
 
@@ -745,7 +745,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3fc117c1f0>
+    <matplotlib.legend.Legend at 0x7f1e34f2c1c0>
 
 
 
@@ -824,8 +824,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.4 s, sys: 123 ms, total: 32.5 s
-    Wall time: 32.5 s
+    CPU times: user 32.7 s, sys: 117 ms, total: 32.8 s
+    Wall time: 32.8 s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -949,18 +949,18 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-      7  450k    7 32438    0     0  86100      0  0:00:05 --:--:--  0:00:05 86042
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   715k      0 --:--:-- --:--:-- --:--:--  714k
+    100  450k  100  450k    0     0   587k      0 --:--:-- --:--:-- --:--:--  587k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   213k      0 --:--:-- --:--:-- --:--:--  213k
+    100 83848  100 83848    0     0   281k      0 --:--:-- --:--:-- --:--:--  282k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -971,7 +971,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   136k      0 --:--:-- --:--:-- --:--:--  136k
+    100 83848  100 83848    0     0   149k      0 --:--:-- --:--:-- --:--:--  149k
 
 
 .. code:: ipython3
@@ -1004,15 +1004,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 10 s, sys: 6.96 ms, total: 10 s
-    Wall time: 10 s
+    CPU times: user 9.93 s, sys: 2 ms, total: 9.93 s
+    Wall time: 9.93 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3fc1128df0>
+    <rail.core.data.ModelHandle at 0x7f1e34f2f2e0>
 
 
 
@@ -1122,7 +1122,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3ff5f26b30>
+    <matplotlib.legend.Legend at 0x7f1e34e62710>
 
 
 
@@ -1198,15 +1198,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.9 s, sys: 127 ms, total: 13 s
-    Wall time: 13 s
+    CPU times: user 13.1 s, sys: 133 ms, total: 13.2 s
+    Wall time: 13.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f3ff5e81ae0>
+    <rail.core.data.QPHandle at 0x7f1e5e631ba0>
 
 
 
@@ -1233,7 +1233,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3ff5e41b70>
+    <matplotlib.legend.Legend at 0x7f1e5e7e04f0>
 
 
 
@@ -1296,7 +1296,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3ff5e675e0>
+    <matplotlib.legend.Legend at 0x7f1e34e60760>
 
 
 

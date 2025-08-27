@@ -77,47 +77,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      4 47.1M    4 2117k    0     0  1557k      0  0:00:30  0:00:01  0:00:29 1557k
+     27 47.1M   27 12.8M    0     0  10.4M      0  0:00:04  0:00:01  0:00:03 10.4M
 
 .. parsed-literal::
 
-     18 47.1M   18 8789k    0     0  3758k      0  0:00:12  0:00:02  0:00:10 3757k
-
-.. parsed-literal::
-
-     30 47.1M   30 14.4M    0     0  4442k      0  0:00:10  0:00:03  0:00:07 4442k
-
-.. parsed-literal::
-
-     43 47.1M   43 20.6M    0     0  4872k      0  0:00:09  0:00:04  0:00:05 4872k
-
-.. parsed-literal::
-
-     57 47.1M   57 27.1M    0     0  5178k      0  0:00:09  0:00:05  0:00:04 5566k
-
-.. parsed-literal::
-
-     65 47.1M   65 31.0M    0     0  5021k      0  0:00:09  0:00:06  0:00:03 5968k
-
-.. parsed-literal::
-
-     77 47.1M   77 36.3M    0     0  5028k      0  0:00:09  0:00:07  0:00:02 5617k
-
-.. parsed-literal::
-
-     80 47.1M   80 38.1M    0     0  4664k      0  0:00:10  0:00:08  0:00:02 4812k
-
-.. parsed-literal::
-
-     87 47.1M   87 41.2M    0     0  4525k      0  0:00:10  0:00:09  0:00:01 4224k
-
-.. parsed-literal::
-
-     97 47.1M   97 45.9M    0     0  4554k      0  0:00:10  0:00:10 --:--:-- 3877k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  4544k      0  0:00:10  0:00:10 --:--:-- 3840k
+    100 47.1M  100 47.1M    0     0  25.2M      0  0:00:01  0:00:01 --:--:-- 25.2M
 
 
 .. code:: ipython3
@@ -290,42 +254,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.815148</td>
-          <td>0.172280</td>
+          <td>0.605198</td>
+          <td>0.224077</td>
           <td>0.0</td>
-          <td>0.075807</td>
+          <td>0.048982</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.840146</td>
-          <td>0.136565</td>
+          <td>0.599711</td>
+          <td>0.124668</td>
           <td>0.0</td>
-          <td>0.158631</td>
+          <td>0.086585</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.380580</td>
-          <td>0.178361</td>
+          <td>1.243594</td>
+          <td>0.123066</td>
           <td>0.0</td>
-          <td>0.134641</td>
+          <td>0.108576</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.735590</td>
-          <td>0.079482</td>
+          <td>0.553151</td>
+          <td>0.167237</td>
           <td>0.0</td>
-          <td>0.102226</td>
+          <td>0.073084</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.772966</td>
-          <td>0.184385</td>
+          <td>0.287724</td>
+          <td>0.059496</td>
           <td>0.0</td>
-          <td>0.107099</td>
+          <td>0.060263</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -338,42 +302,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.553755</td>
-          <td>0.098650</td>
+          <td>0.402150</td>
+          <td>0.116031</td>
           <td>0.0</td>
-          <td>0.110927</td>
+          <td>0.041543</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.294449</td>
-          <td>0.082469</td>
+          <td>1.016676</td>
+          <td>0.198323</td>
           <td>0.0</td>
-          <td>0.148414</td>
+          <td>0.061096</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.536349</td>
-          <td>0.061719</td>
+          <td>0.468077</td>
+          <td>0.331812</td>
           <td>0.0</td>
-          <td>0.109689</td>
+          <td>0.119415</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.313995</td>
-          <td>0.099980</td>
+          <td>1.529455</td>
+          <td>0.047743</td>
           <td>0.0</td>
-          <td>0.074839</td>
+          <td>0.102197</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>1.042336</td>
-          <td>0.117851</td>
+          <td>0.521942</td>
+          <td>0.067984</td>
           <td>0.0</td>
-          <td>0.069671</td>
+          <td>0.096770</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -421,43 +385,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.172280</td>
-          <td>0.075807</td>
+          <td>0.224077</td>
+          <td>0.048982</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.815148</td>
+          <td>0.605198</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.136565</td>
-          <td>0.158631</td>
+          <td>0.124668</td>
+          <td>0.086585</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.840146</td>
+          <td>0.599711</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.178361</td>
-          <td>0.134641</td>
+          <td>0.123066</td>
+          <td>0.108576</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.380580</td>
+          <td>1.243594</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.079482</td>
-          <td>0.102226</td>
+          <td>0.167237</td>
+          <td>0.073084</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.735590</td>
+          <td>0.553151</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.184385</td>
-          <td>0.107099</td>
+          <td>0.059496</td>
+          <td>0.060263</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.772966</td>
+          <td>0.287724</td>
         </tr>
         <tr>
           <th>...</th>
@@ -469,43 +433,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.098650</td>
-          <td>0.110927</td>
+          <td>0.116031</td>
+          <td>0.041543</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.553755</td>
+          <td>0.402150</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.082469</td>
-          <td>0.148414</td>
+          <td>0.198323</td>
+          <td>0.061096</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.294449</td>
+          <td>1.016676</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.061719</td>
-          <td>0.109689</td>
+          <td>0.331812</td>
+          <td>0.119415</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.536349</td>
+          <td>0.468077</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.099980</td>
-          <td>0.074839</td>
+          <td>0.047743</td>
+          <td>0.102197</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.313995</td>
+          <td>1.529455</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.117851</td>
-          <td>0.069671</td>
+          <td>0.067984</td>
+          <td>0.096770</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.042336</td>
+          <td>0.521942</td>
         </tr>
       </tbody>
     </table>
@@ -958,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7feb0fa4b190>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f3d9030f1c0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1055,10 +1019,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 9000 - 10000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1107,18 +1067,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 20000 - 20449.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1474,6 +1426,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

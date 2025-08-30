@@ -184,7 +184,7 @@ rather than pip with the command:
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_som: inprogress_output_SOMoclu_model.pkl, inform_som
-    CPU times: user 15min 29s, sys: 531 ms, total: 15min 30s
+    CPU times: user 15min 29s, sys: 570 ms, total: 15min 30s
     Wall time: 3min 56s
 
 
@@ -192,7 +192,7 @@ rather than pip with the command:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f310cf34ca0>
+    <rail.core.data.ModelHandle at 0x7f62dc76f190>
 
 
 
@@ -261,7 +261,7 @@ a while):
 
 .. parsed-literal::
 
-    /tmp/ipykernel_8601/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
+    /tmp/ipykernel_8688/3421861057.py:8: RuntimeWarning: invalid value encountered in divide
       meanszs /= cellocc
 
 
@@ -395,12 +395,12 @@ actually output the uncovered galaxies in a separate file in the future.
     Process 0 running summarizer on chunk 0 - 1545
     Inserting handle into data store.  cellid_output_SOMoclu_summarizer: inprogress_output_cellIDs.hdf5, SOMoclu_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {np.int64(4096), np.int64(4097), np.int64(4098), np.int64(4110), np.int64(4111), np.int64(2065), np.int64(4120), np.int64(2079), np.int64(2085), np.int64(4141), np.int64(4158), np.int64(4159), np.int64(4160), np.int64(4166), np.int64(4167), np.int64(4181), np.int64(2140), np.int64(4191), np.int64(4197), np.int64(2150), np.int64(4209), np.int64(4218), np.int64(4227), np.int64(4232), np.int64(2193), np.int64(4244), np.int64(2205), np.int64(2217), np.int64(4268), np.int64(2224), np.int64(4273), np.int64(2234), np.int64(4287), np.int64(2257), np.int64(4308), np.int64(2265), np.int64(2271), np.int64(4320), np.int64(2282), np.int64(2283), np.int64(4336), np.int64(4338), np.int64(4348), np.int64(4350), np.int64(2309), np.int64(4376), np.int64(2328), np.int64(2329), np.int64(4379), np.int64(4381), np.int64(286), np.int64(4390), np.int64(4398), np.int64(2351), np.int64(2361), np.int64(2371), np.int64(2373), np.int64(2376), np.int64(4434), np.int64(2386), np.int64(4445), np.int64(4451), np.int64(2422), np.int64(2423), np.int64(4475), np.int64(417), np.int64(2469), np.int64(4521), np.int64(4542), np.int64(2498), np.int64(4547), np.int64(2500), np.int64(4548), np.int64(4556), np.int64(2517), np.int64(2524), np.int64(2541), np.int64(4596), np.int64(2557), np.int64(2559), np.int64(4627), np.int64(2582), np.int64(4641), np.int64(4645), np.int64(4646), np.int64(2599), np.int64(4649), np.int64(2604), np.int64(4662), np.int64(4664), np.int64(4666), np.int64(4667), np.int64(2635), np.int64(2643), np.int64(2657), np.int64(4736), np.int64(644), np.int64(2695), np.int64(2696), np.int64(2703), np.int64(2710), np.int64(664), np.int64(2713), np.int64(4762), np.int64(4769), np.int64(677), np.int64(2727), np.int64(4781), np.int64(697), np.int64(4793), np.int64(2762), np.int64(2765), np.int64(4817), np.int64(4820), np.int64(2779), np.int64(4827), np.int64(4837), np.int64(2793), np.int64(4841), np.int64(4843), np.int64(2797), np.int64(2802), np.int64(758), np.int64(2807), np.int64(2817), np.int64(2826), np.int64(4880), np.int64(4885), np.int64(2843), np.int64(4891), np.int64(2847), np.int64(4907), np.int64(4916), np.int64(4927), np.int64(2879), np.int64(4929), np.int64(4933), np.int64(2894), np.int64(2899), np.int64(2901), np.int64(4952), np.int64(4964), np.int64(2920), np.int64(4969), np.int64(877), np.int64(2927), np.int64(2931), np.int64(4980), np.int64(2933), np.int64(4991), np.int64(5001), np.int64(906), np.int64(2961), np.int64(2963), np.int64(2970), np.int64(2972), np.int64(2976), np.int64(2982), np.int64(5037), np.int64(2992), np.int64(3005), np.int64(3012), np.int64(972), np.int64(3035), np.int64(3078), np.int64(1038), np.int64(3088), np.int64(3092), np.int64(3107), np.int64(3113), np.int64(3119), np.int64(3132), np.int64(1107), np.int64(3156), np.int64(3170), np.int64(3173), np.int64(3198), np.int64(3207), np.int64(3214), np.int64(3241), np.int64(3242), np.int64(3244), np.int64(3247), np.int64(3255), np.int64(3260), np.int64(3266), np.int64(3275), np.int64(3277), np.int64(3318), np.int64(3323), np.int64(1276), np.int64(3325), np.int64(1280), np.int64(3328), np.int64(1286), np.int64(3337), np.int64(3341), np.int64(1302), np.int64(3355), np.int64(3359), np.int64(1313), np.int64(3367), np.int64(1320), np.int64(1322), np.int64(1331), np.int64(3382), np.int64(1341), np.int64(1344), np.int64(1358), np.int64(3408), np.int64(3415), np.int64(1375), np.int64(3433), np.int64(1388), np.int64(1389), np.int64(3437), np.int64(3451), np.int64(1405), np.int64(3459), np.int64(3469), np.int64(1423), np.int64(3476), np.int64(1434), np.int64(3483), np.int64(3486), np.int64(3503), np.int64(1459), np.int64(1468), np.int64(1480), np.int64(3533), np.int64(1485), np.int64(3545), np.int64(3547), np.int64(1501), np.int64(3554), np.int64(1513), np.int64(1518), np.int64(1521), np.int64(3572), np.int64(3576), np.int64(3587), np.int64(3595), np.int64(1552), np.int64(3617), np.int64(1610), np.int64(1611), np.int64(1619), np.int64(1620), np.int64(1630), np.int64(3679), np.int64(3684), np.int64(1644), np.int64(1649), np.int64(3699), np.int64(1652), np.int64(3700), np.int64(3710), np.int64(3711), np.int64(1668), np.int64(3726), np.int64(3731), np.int64(3732), np.int64(3734), np.int64(1687), np.int64(3744), np.int64(1701), np.int64(3749), np.int64(1705), np.int64(3754), np.int64(1719), np.int64(1723), np.int64(3772), np.int64(3775), np.int64(3782), np.int64(1737), np.int64(1746), np.int64(3794), np.int64(3800), np.int64(3802), np.int64(1755), np.int64(1766), np.int64(3821), np.int64(1794), np.int64(3851), np.int64(1805), np.int64(1814), np.int64(1818), np.int64(3873), np.int64(3874), np.int64(3879), np.int64(3883), np.int64(1838), np.int64(1856), np.int64(3906), np.int64(3921), np.int64(3923), np.int64(1888), np.int64(1890), np.int64(3939), np.int64(1894), np.int64(1905), np.int64(1912), np.int64(3962), np.int64(3963), np.int64(1919), np.int64(1921), np.int64(3969), np.int64(1922), np.int64(3970), np.int64(1931), np.int64(4010), np.int64(1970), np.int64(1971), np.int64(4021), np.int64(2008), np.int64(4080), np.int64(4092)}
+    {np.int64(4097), np.int64(4102), np.int64(4104), np.int64(2061), np.int64(4109), np.int64(4114), np.int64(2067), np.int64(2083), np.int64(4139), np.int64(4147), np.int64(4156), np.int64(2119), np.int64(4168), np.int64(4184), np.int64(2143), np.int64(2144), np.int64(2151), np.int64(4201), np.int64(4215), np.int64(2173), np.int64(4229), np.int64(4231), np.int64(4236), np.int64(4240), np.int64(4241), np.int64(4242), np.int64(4243), np.int64(4255), np.int64(4259), np.int64(4280), np.int64(4295), np.int64(2248), np.int64(2249), np.int64(4311), np.int64(4314), np.int64(2269), np.int64(2272), np.int64(4322), np.int64(2279), np.int64(4328), np.int64(2284), np.int64(4335), np.int64(2289), np.int64(4341), np.int64(2299), np.int64(4347), np.int64(2303), np.int64(4351), np.int64(4368), np.int64(2323), np.int64(2325), np.int64(4374), np.int64(2327), np.int64(288), np.int64(2361), np.int64(4409), np.int64(4414), np.int64(4420), np.int64(4431), np.int64(4434), np.int64(2400), np.int64(4451), np.int64(2410), np.int64(2416), np.int64(4465), np.int64(4518), np.int64(4525), np.int64(2488), np.int64(4541), np.int64(4544), np.int64(452), np.int64(4552), np.int64(4566), np.int64(4572), np.int64(2526), np.int64(2532), np.int64(4585), np.int64(4587), np.int64(2563), np.int64(2564), np.int64(2578), np.int64(4627), np.int64(2582), np.int64(2593), np.int64(4648), np.int64(2607), np.int64(4656), np.int64(2611), np.int64(2618), np.int64(4668), np.int64(2620), np.int64(585), np.int64(587), np.int64(4683), np.int64(2638), np.int64(2652), np.int64(4701), np.int64(2661), np.int64(4714), np.int64(4732), np.int64(4735), np.int64(4738), np.int64(4743), np.int64(2698), np.int64(4751), np.int64(4752), np.int64(2706), np.int64(4756), np.int64(2712), np.int64(4763), np.int64(2720), np.int64(4769), np.int64(4770), np.int64(2737), np.int64(2739), np.int64(4788), np.int64(4790), np.int64(701), np.int64(2750), np.int64(4799), np.int64(2771), np.int64(2773), np.int64(730), np.int64(4827), np.int64(2781), np.int64(4836), np.int64(4839), np.int64(2795), np.int64(4848), np.int64(2806), np.int64(2807), np.int64(4859), np.int64(781), np.int64(2833), np.int64(2837), np.int64(4886), np.int64(4895), np.int64(2848), np.int64(4898), np.int64(807), np.int64(2867), np.int64(4918), np.int64(2877), np.int64(4931), np.int64(2888), np.int64(2898), np.int64(2901), np.int64(4950), np.int64(2920), np.int64(2923), np.int64(2929), np.int64(4980), np.int64(4983), np.int64(4991), np.int64(4994), np.int64(4998), np.int64(2966), np.int64(2969), np.int64(923), np.int64(2973), np.int64(2980), np.int64(2984), np.int64(2991), np.int64(2998), np.int64(961), np.int64(3019), np.int64(977), np.int64(3027), np.int64(3029), np.int64(3031), np.int64(3054), np.int64(3060), np.int64(3081), np.int64(3094), np.int64(3099), np.int64(3101), np.int64(3138), np.int64(3147), np.int64(1107), np.int64(3184), np.int64(3191), np.int64(3199), np.int64(3211), np.int64(3215), np.int64(3238), np.int64(3239), np.int64(1191), np.int64(3248), np.int64(3253), np.int64(1245), np.int64(3303), np.int64(3304), np.int64(3308), np.int64(3313), np.int64(3314), np.int64(3315), np.int64(1278), np.int64(1280), np.int64(3329), np.int64(1283), np.int64(3333), np.int64(1285), np.int64(3337), np.int64(1303), np.int64(1304), np.int64(3353), np.int64(1310), np.int64(1314), np.int64(3363), np.int64(3368), np.int64(3374), np.int64(1340), np.int64(1342), np.int64(1346), np.int64(1353), np.int64(3401), np.int64(3403), np.int64(1356), np.int64(1385), np.int64(3435), np.int64(1388), np.int64(1389), np.int64(1387), np.int64(3439), np.int64(1394), np.int64(1397), np.int64(1408), np.int64(3471), np.int64(1427), np.int64(3481), np.int64(1436), np.int64(3489), np.int64(1442), np.int64(3499), np.int64(3508), np.int64(1466), np.int64(3520), np.int64(3524), np.int64(3527), np.int64(1482), np.int64(3532), np.int64(1487), np.int64(3557), np.int64(1518), np.int64(1521), np.int64(3583), np.int64(1538), np.int64(3586), np.int64(3592), np.int64(1585), np.int64(1601), np.int64(3650), np.int64(3654), np.int64(1611), np.int64(3666), np.int64(3667), np.int64(1622), np.int64(3693), np.int64(3695), np.int64(1650), np.int64(3699), np.int64(3706), np.int64(3713), np.int64(1676), np.int64(3724), np.int64(3728), np.int64(1682), np.int64(3738), np.int64(1694), np.int64(3743), np.int64(3762), np.int64(3763), np.int64(3769), np.int64(3773), np.int64(3780), np.int64(3788), np.int64(1740), np.int64(3800), np.int64(1759), np.int64(3813), np.int64(1768), np.int64(3817), np.int64(1772), np.int64(3832), np.int64(1784), np.int64(3840), np.int64(1798), np.int64(3846), np.int64(1827), np.int64(1837), np.int64(1845), np.int64(1850), np.int64(1862), np.int64(3919), np.int64(3925), np.int64(3935), np.int64(1897), np.int64(1900), np.int64(1902), np.int64(3950), np.int64(3963), np.int64(1917), np.int64(1923), np.int64(1924), np.int64(1925), np.int64(3973), np.int64(3989), np.int64(3992), np.int64(1952), np.int64(4005), np.int64(4006), np.int64(4027), np.int64(4058)}
 
 
 .. parsed-literal::
 
-    513 out of 5041 have usable data
+    521 out of 5041 have usable data
     Inserting handle into data store.  output_SOMoclu_summarizer: inprogress_SOM_ensemble.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  single_NZ_SOMoclu_summarizer: inprogress_fiducial_SOMoclu_NZ.hdf5, SOMoclu_summarizer
     Inserting handle into data store.  uncovered_cluster_file_SOMoclu_summarizer: inprogress_uncovered_cluster_file_SOMoclu_summarizer, SOMoclu_summarizer
@@ -415,7 +415,7 @@ actually output the uncovered galaxies in a separate file in the future.
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f30b5f9e170>
+    <rail.core.data.QPHandle at 0x7f6280380eb0>
 
 
 
@@ -451,7 +451,7 @@ compare it to the true tomographic bin file:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30b5f9e200>
+    <matplotlib.legend.Legend at 0x7f6280380490>
 
 
 
@@ -488,12 +488,12 @@ bright dataset that we made?
     Process 0 running summarizer on chunk 0 - 645
     Inserting handle into data store.  cellid_output_bright_summarizer: inprogress_BRIGHT_output_cellIDs.hdf5, bright_summarizer
     the following clusters contain photometric data but not spectroscopic data:
-    {np.int64(4096), np.int64(4098), np.int64(3587), np.int64(3078), np.int64(4110), np.int64(3088), np.int64(2065), np.int64(1552), np.int64(4627), np.int64(3092), np.int64(4120), np.int64(2079), np.int64(3617), np.int64(3107), np.int64(3113), np.int64(4141), np.int64(4662), np.int64(4664), np.int64(4666), np.int64(3132), np.int64(4160), np.int64(4167), np.int64(1610), np.int64(1107), np.int64(3156), np.int64(4181), np.int64(2643), np.int64(2140), np.int64(1630), np.int64(4191), np.int64(3684), np.int64(4197), np.int64(2150), np.int64(3173), np.int64(4209), np.int64(1649), np.int64(1652), np.int64(3198), np.int64(3711), np.int64(4736), np.int64(4227), np.int64(644), np.int64(4232), np.int64(2696), np.int64(3214), np.int64(2703), np.int64(2193), np.int64(2710), np.int64(3734), np.int64(4762), np.int64(2205), np.int64(3744), np.int64(4769), np.int64(2727), np.int64(3241), np.int64(1705), np.int64(4781), np.int64(3247), np.int64(3255), np.int64(1719), np.int64(697), np.int64(2234), np.int64(4793), np.int64(3260), np.int64(3772), np.int64(3775), np.int64(3277), np.int64(4308), np.int64(3800), np.int64(3802), np.int64(2779), np.int64(4827), np.int64(2271), np.int64(4837), np.int64(4841), np.int64(2283), np.int64(4843), np.int64(2797), np.int64(3821), np.int64(4338), np.int64(2807), np.int64(3323), np.int64(1276), np.int64(3328), np.int64(1286), np.int64(3337), np.int64(2826), np.int64(3851), np.int64(1805), np.int64(1302), np.int64(1814), np.int64(2328), np.int64(2329), np.int64(4379), np.int64(2843), np.int64(4381), np.int64(3873), np.int64(3874), np.int64(4390), np.int64(3367), np.int64(1341), np.int64(2879), np.int64(4929), np.int64(3906), np.int64(2373), np.int64(2376), np.int64(2894), np.int64(3408), np.int64(3921), np.int64(4434), np.int64(2386), np.int64(3923), np.int64(3415), np.int64(4952), np.int64(1375), np.int64(4964), np.int64(2920), np.int64(3433), np.int64(4969), np.int64(1388), np.int64(1389), np.int64(3437), np.int64(877), np.int64(2931), np.int64(2422), np.int64(2423), np.int64(1912), np.int64(3962), np.int64(3969), np.int64(1922), np.int64(5001), np.int64(906), np.int64(3469), np.int64(3476), np.int64(2970), np.int64(2972), np.int64(3486), np.int64(2469), np.int64(2982), np.int64(4521), np.int64(3503), np.int64(2992), np.int64(1459), np.int64(1971), np.int64(4021), np.int64(3005), np.int64(2498), np.int64(4547), np.int64(2500), np.int64(3012), np.int64(4556), np.int64(2517), np.int64(3547), np.int64(3035), np.int64(1521), np.int64(4596), np.int64(3572), np.int64(3576), np.int64(4092), np.int64(2557)}
+    {np.int64(4097), np.int64(3592), np.int64(3081), np.int64(2061), np.int64(4109), np.int64(4114), np.int64(2067), np.int64(3094), np.int64(2582), np.int64(3099), np.int64(2593), np.int64(4648), np.int64(4139), np.int64(4656), np.int64(4147), np.int64(2618), np.int64(4668), np.int64(3138), np.int64(3654), np.int64(4168), np.int64(3147), np.int64(4683), np.int64(1611), np.int64(2638), np.int64(3666), np.int64(3667), np.int64(1622), np.int64(4184), np.int64(2661), np.int64(2151), np.int64(3695), np.int64(3184), np.int64(1650), np.int64(4215), np.int64(3706), np.int64(4732), np.int64(2173), np.int64(4738), np.int64(4229), np.int64(4743), np.int64(1676), np.int64(3724), np.int64(4751), np.int64(4752), np.int64(4241), np.int64(4756), np.int64(4763), np.int64(1694), np.int64(4769), np.int64(4770), np.int64(3239), np.int64(2737), np.int64(2739), np.int64(3763), np.int64(3253), np.int64(4790), np.int64(3769), np.int64(701), np.int64(2750), np.int64(4799), np.int64(2773), np.int64(3800), np.int64(4827), np.int64(2781), np.int64(4836), np.int64(2279), np.int64(3303), np.int64(3304), np.int64(4839), np.int64(2795), np.int64(2284), np.int64(3308), np.int64(4848), np.int64(2289), np.int64(3315), np.int64(2806), np.int64(4347), np.int64(4859), np.int64(2303), np.int64(4351), np.int64(3840), np.int64(3333), np.int64(1285), np.int64(3846), np.int64(781), np.int64(2833), np.int64(2323), np.int64(2325), np.int64(4374), np.int64(2327), np.int64(1303), np.int64(3353), np.int64(2837), np.int64(3363), np.int64(807), np.int64(4409), np.int64(2877), np.int64(4414), np.int64(1342), np.int64(1346), np.int64(4420), np.int64(2888), np.int64(1356), np.int64(3919), np.int64(2898), np.int64(2901), np.int64(4950), np.int64(3925), np.int64(3935), np.int64(4451), np.int64(3435), np.int64(1388), np.int64(1389), np.int64(1387), np.int64(3439), np.int64(2923), np.int64(4465), np.int64(1394), np.int64(1900), np.int64(2929), np.int64(4980), np.int64(4983), np.int64(1917), np.int64(1408), np.int64(4994), np.int64(1924), np.int64(1925), np.int64(4998), np.int64(3471), np.int64(3989), np.int64(2966), np.int64(3481), np.int64(2969), np.int64(2973), np.int64(1952), np.int64(3489), np.int64(1442), np.int64(2980), np.int64(4006), np.int64(3499), np.int64(2998), np.int64(4027), np.int64(4541), np.int64(4544), np.int64(3524), np.int64(4552), np.int64(1482), np.int64(3019), np.int64(3027), np.int64(3029), np.int64(3031), np.int64(4572), np.int64(2532), np.int64(3557), np.int64(4585), np.int64(4587), np.int64(3054), np.int64(1521), np.int64(3060)}
 
 
 .. parsed-literal::
 
-    317 out of 5041 have usable data
+    316 out of 5041 have usable data
     Inserting handle into data store.  output_bright_summarizer: inprogress_BRIGHT_SOMoclu_ensemble.hdf5, bright_summarizer
     Inserting handle into data store.  single_NZ_bright_summarizer: inprogress_BRIGHT_fiducial_SOMoclu_NZ.hdf5, bright_summarizer
     Inserting handle into data store.  uncovered_cluster_file_bright_summarizer: inprogress_uncovered_cluster_file_bright_summarizer, bright_summarizer
@@ -508,7 +508,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f30b5d2faf0>
+    <rail.core.data.QPHandle at 0x7f6280227940>
 
 
 
@@ -535,7 +535,7 @@ bright dataset that we made?
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30b5d2f550>
+    <matplotlib.legend.Legend at 0x7f62803dba90>
 
 
 
@@ -650,9 +650,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3305+-0.0044
+    The mean redshift of the SOM ensemble is: 0.3336+-0.0045
     The mean redshift of the real data is: 0.3547
-    The bias of mean redshift is:-0.0242+-0.0044
+    The bias of mean redshift is:-0.0211+-0.0045
 
 
 .. code:: ipython3
@@ -677,9 +677,9 @@ Let’s check the accuracy and precision of mean readshift:
 
 .. parsed-literal::
 
-    The mean redshift of the SOM ensemble is: 0.3332+-0.0037
+    The mean redshift of the SOM ensemble is: 0.3337+-0.0035
     The mean redshift of the real data is: 0.3493
-    The bias of mean redshift is:-0.0161+-0.0037
+    The bias of mean redshift is:-0.0156+-0.0035
 
 
 .. code:: ipython3
@@ -740,7 +740,7 @@ RAIL.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f30ab711480>
+    <matplotlib.legend.Legend at 0x7f628028c8e0>
 
 
 

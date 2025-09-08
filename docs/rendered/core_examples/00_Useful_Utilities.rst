@@ -93,10 +93,6 @@ imports.
     Imported rail.bpz
     Imported rail.cmnn
     Imported rail.core
-
-
-.. parsed-literal::
-
     Imported rail.dnf
 
 
@@ -125,11 +121,11 @@ imports.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
     Imported rail.lephare
+    Imported rail.pzflow
 
 
 .. parsed-literal::
 
-    Imported rail.pzflow
     Imported rail.sklearn
     Imported rail.som
     Imported rail.stages
@@ -606,7 +602,7 @@ Just add a ``resume=True`` to do so.
 
     (({'flow_engine_test': <Job flow_engine_test>,
        'col_remapper_test': <Job col_remapper_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3794c283d0>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0f923d1810>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)}]),
      {'output_dir': '.', 'log_dir': '.', 'resume': True})
@@ -625,7 +621,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f3794c283d0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f0f923d1810>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

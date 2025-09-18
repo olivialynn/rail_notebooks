@@ -302,11 +302,95 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     32 32.6M   32 10.7M    0     0  10.5M      0  0:00:03  0:00:01  0:00:02 10.5M
+      1 32.6M    1  375k    0     0   414k      0  0:01:20 --:--:--  0:01:20  414k
+
+.. parsed-literal::
+
+      6 32.6M    6 2271k    0     0  1199k      0  0:00:27  0:00:01  0:00:26 1199k
+
+.. parsed-literal::
+
+     11 32.6M   11 3719k    0     0  1285k      0  0:00:26  0:00:02  0:00:24 1285k
+
+.. parsed-literal::
+
+     15 32.6M   15 5159k    0     0  1287k      0  0:00:25  0:00:04  0:00:21 1288k
+
+.. parsed-literal::
+
+     18 32.6M   18 6251k    0     0  1276k      0  0:00:26  0:00:04  0:00:22 1276k
+
+.. parsed-literal::
+
+     21 32.6M   21 7079k    0     0  1195k      0  0:00:27  0:00:05  0:00:22 1336k
+
+.. parsed-literal::
+
+     25 32.6M   25 8523k    0     0  1225k      0  0:00:27  0:00:06  0:00:21 1234k
+
+.. parsed-literal::
+
+     28 32.6M   28 9671k    0     0  1213k      0  0:00:27  0:00:07  0:00:20 1172k
+
+.. parsed-literal::
+
+     31 32.6M   31 10.1M    0     0  1170k      0  0:00:28  0:00:08  0:00:20 1074k
+
+.. parsed-literal::
+
+     35 32.6M   35 11.7M    0     0  1212k      0  0:00:27  0:00:09  0:00:18 1149k
+
+.. parsed-literal::
+
+     39 32.6M   39 12.8M    0     0  1209k      0  0:00:27  0:00:10  0:00:17 1225k
+
+.. parsed-literal::
+
+     43 32.6M   43 14.0M    0     0  1207k      0  0:00:27  0:00:11  0:00:16 1183k
+
+.. parsed-literal::
+
+     47 32.6M   47 15.3M    0     0  1221k      0  0:00:27  0:00:12  0:00:15 1235k
+
+.. parsed-literal::
+
+     49 32.6M   49 16.3M    0     0  1202k      0  0:00:27  0:00:13  0:00:14 1260k
+
+.. parsed-literal::
+
+     53 32.6M   53 17.6M    0     0  1211k      0  0:00:27  0:00:14  0:00:13 1211k
+
+.. parsed-literal::
+
+     57 32.6M   57 18.7M    0     0  1206k      0  0:00:27  0:00:15  0:00:12 1199k
+
+.. parsed-literal::
+
+     61 32.6M   61 20.1M    0     0  1223k      0  0:00:27  0:00:16  0:00:11 1260k
+
+.. parsed-literal::
+
+     67 32.6M   67 21.9M    0     0  1250k      0  0:00:26  0:00:17  0:00:09 1322k
+
+.. parsed-literal::
+
+     71 32.6M   71 23.2M    0     0  1261k      0  0:00:26  0:00:18  0:00:08 1424k
+
+.. parsed-literal::
+
+     77 32.6M   77 25.4M    0     0  1310k      0  0:00:25  0:00:19  0:00:06 1601k
+
+.. parsed-literal::
+
+     85 32.6M   85 27.9M    0     0  1371k      0  0:00:24  0:00:20  0:00:04 1895k
+
+.. parsed-literal::
+
+     94 32.6M   94 30.8M    0     0  1441k      0  0:00:23  0:00:21  0:00:02 2175k
 
 .. parsed-literal::
 
@@ -316,7 +400,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  25.0M      0  0:00:01  0:00:01 --:--:-- 24.9M
+    100 32.6M  100 32.6M    0     0  1490k      0  0:00:22  0:00:22 --:--:-- 2458k
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

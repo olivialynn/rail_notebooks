@@ -86,15 +86,67 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     12 47.1M   12 6255k    0     0  7006k      0  0:00:06 --:--:--  0:00:06 7005k
+      1 47.1M    1  779k    0     0   689k      0  0:01:09  0:00:01  0:01:08  689k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  31.5M      0  0:00:01  0:00:01 --:--:-- 31.5M
+      7 47.1M    7 3771k    0     0  1818k      0  0:00:26  0:00:02  0:00:24 1817k
+
+.. parsed-literal::
+
+     13 47.1M   13 6427k    0     0  2065k      0  0:00:23  0:00:03  0:00:20 2065k
+
+.. parsed-literal::
+
+     18 47.1M   18 8871k    0     0  2156k      0  0:00:22  0:00:04  0:00:18 2156k
+
+.. parsed-literal::
+
+     24 47.1M   24 11.6M    0     0  2355k      0  0:00:20  0:00:05  0:00:15 2386k
+
+.. parsed-literal::
+
+     34 47.1M   34 16.1M    0     0  2712k      0  0:00:17  0:00:06  0:00:11 3172k
+
+.. parsed-literal::
+
+     39 47.1M   39 18.8M    0     0  2682k      0  0:00:17  0:00:07  0:00:10 3034k
+
+.. parsed-literal::
+
+     43 47.1M   43 20.6M    0     0  2615k      0  0:00:18  0:00:08  0:00:10 2958k
+
+.. parsed-literal::
+
+     48 47.1M   48 22.9M    0     0  2594k      0  0:00:18  0:00:09  0:00:09 2958k
+
+.. parsed-literal::
+
+     57 47.1M   57 27.1M    0     0  2758k      0  0:00:17  0:00:10  0:00:07 3165k
+
+.. parsed-literal::
+
+     66 47.1M   66 31.5M    0     0  2919k      0  0:00:16  0:00:11  0:00:05 3175k
+
+.. parsed-literal::
+
+     77 47.1M   77 36.3M    0     0  3083k      0  0:00:15  0:00:12  0:00:03 3673k
+
+.. parsed-literal::
+
+     87 47.1M   87 41.3M    0     0  3239k      0  0:00:14  0:00:13  0:00:01 4254k
+
+.. parsed-literal::
+
+     97 47.1M   97 46.0M    0     0  3353k      0  0:00:14  0:00:14 --:--:-- 4725k
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  3373k      0  0:00:14  0:00:14 --:--:-- 4833k
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we

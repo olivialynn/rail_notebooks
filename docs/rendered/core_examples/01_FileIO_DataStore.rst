@@ -484,6 +484,10 @@ algorithm with the train_data:
 .. parsed-literal::
 
     Inserting handle into data store.  input: train_data, inform_knn
+
+
+.. parsed-literal::
+
     split into 7669 training and 2556 validation samples
     finding best fit sigma and NNeigh...
 
@@ -504,7 +508,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6edcdfe3b0>
+    <rail.core.data.ModelHandle at 0x7f20219b7100>
 
 
 
@@ -587,7 +591,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6eddf39570>
+    <matplotlib.legend.Legend at 0x7f2021972050>
 
 
 
@@ -617,7 +621,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f6ed9b61450>
+    <matplotlib.legend.Legend at 0x7f201c9ad450>
 
 
 

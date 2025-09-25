@@ -251,6 +251,10 @@ Here we evaluate p(z) for all the objects in a file
 .. parsed-literal::
 
     Inserting handle into data store.  input: /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/examples_data/testdata/validation_10gal.hdf5, train_z
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model: model_inform_trainz.pkl, train_z
     Process 0 running estimator on chunk 0 - 10
     Inserting handle into data store.  output_train_z: inprogress_output_train_z.hdf5, train_z

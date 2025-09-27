@@ -42,11 +42,67 @@ file with some data drawn from the Roman-Rubin simulation:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     26 4670k   26 1243k    0     0  1122k      0  0:00:04  0:00:01  0:00:03 1121k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+      0 4670k    0 11947    0     0   9013      0  0:08:50  0:00:01  0:08:49  9009
+
+.. parsed-literal::
+
+      9 4670k    9  430k    0     0   196k      0  0:00:23  0:00:02  0:00:21  196k
+
+.. parsed-literal::
+
+     12 4670k   12  586k    0     0   186k      0  0:00:25  0:00:03  0:00:22  186k
+
+.. parsed-literal::
+
+     14 4670k   14  673k    0     0   148k      0  0:00:31  0:00:04  0:00:27  148k
+
+.. parsed-literal::
+
+     14 4670k   14  690k    0     0   127k      0  0:00:36  0:00:05  0:00:31  134k
+
+.. parsed-literal::
+
+     14 4670k   14  690k    0     0   107k      0  0:00:43  0:00:06  0:00:37  133k
+
+.. parsed-literal::
+
+     14 4670k   14  699k    0     0  90097      0  0:00:53  0:00:07  0:00:46 47921
+
+.. parsed-literal::
+
+     16 4670k   16  768k    0     0  96450      0  0:00:49  0:00:08  0:00:41 37215
+
+.. parsed-literal::
+
+     19 4670k   19  925k    0     0   101k      0  0:00:46  0:00:09  0:00:37 55889
+
+.. parsed-literal::
+
+     22 4670k   22 1038k    0     0   102k      0  0:00:45  0:00:10  0:00:35 74977
+
+.. parsed-literal::
+
+     24 4670k   24 1133k    0     0   101k      0  0:00:45  0:00:11  0:00:34 95616
+
+.. parsed-literal::
+
+     27 4670k   27 1298k    0     0   105k      0  0:00:44  0:00:12  0:00:32  136k
+
+.. parsed-literal::
+
+     30 4670k   30 1419k    0     0   103k      0  0:00:45  0:00:13  0:00:32  117k
+
+.. parsed-literal::
+
+     79 4670k   79 3727k    0     0   263k      0  0:00:17  0:00:14  0:00:03  561k
 
 .. parsed-literal::
 
@@ -56,7 +112,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  3417k      0  0:00:01  0:00:01 --:--:-- 3416k
+    100 4670k  100 4670k    0     0   310k      0  0:00:15  0:00:15 --:--:--  741k
 
 
 Let’s load one of the files and look at the contents:
@@ -176,10 +232,6 @@ We can now feed this into our inform stage:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, inform_KNN
-
-
-.. parsed-literal::
-
     split into 11250 training and 3750 validation samples
     finding best fit sigma and NNeigh...
 
@@ -194,15 +246,15 @@ We can now feed this into our inform stage:
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_rd_demo_knn.pkl, inform_KNN
-    CPU times: user 13.9 s, sys: 2.91 s, total: 16.8 s
-    Wall time: 16.8 s
+    CPU times: user 13.4 s, sys: 2.85 s, total: 16.3 s
+    Wall time: 16.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fec86cd7fd0>
+    <rail.core.data.ModelHandle at 0x7f8e69f7fca0>
 
 
 

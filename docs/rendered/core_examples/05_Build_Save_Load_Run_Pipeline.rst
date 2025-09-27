@@ -466,11 +466,11 @@ This will do a few things:
        'lsst_error_model_test': <Job lsst_error_model_test>,
        'col_remapper_test': <Job col_remapper_test>,
        'table_conv_test': <Job table_conv_test>},
-      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f5659963df0>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f5659adfc40>,
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f4ef2251db0>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f4ef2251f00>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f565a994250>]),
+       <rail.tools.table_tools.TableConverter at 0x7f4ef2251e40>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -523,7 +523,7 @@ each case.
 
 .. parsed-literal::
 
-    Job flow_engine_test has completed successfully in 6.0 seconds seconds !
+    Job flow_engine_test has completed successfully in 6.0 seconds
 
 
 .. parsed-literal::
@@ -538,7 +538,7 @@ each case.
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully in 3.0 seconds seconds !
+    Job lsst_error_model_test has completed successfully in 3.0 seconds
 
 
 .. parsed-literal::
@@ -553,7 +553,7 @@ each case.
 
 .. parsed-literal::
 
-    Job col_remapper_test has completed successfully in 3.0 seconds seconds !
+    Job col_remapper_test has completed successfully in 3.0 seconds
 
 
 .. parsed-literal::
@@ -568,7 +568,7 @@ each case.
 
 .. parsed-literal::
 
-    Job table_conv_test has completed successfully in 3.0 seconds seconds !
+    Job table_conv_test has completed successfully in 3.0 seconds
 
 
 
@@ -617,7 +617,7 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job flow_engine_test has completed successfully in 6.0 seconds seconds !
+    Job flow_engine_test has completed successfully in 6.0 seconds
     
     Executing lsst_error_model_test
     Command is:
@@ -628,7 +628,7 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job lsst_error_model_test has completed successfully in 3.0 seconds seconds !
+    Job lsst_error_model_test has completed successfully in 3.0 seconds
     
     Executing col_remapper_test
     Command is:
@@ -639,7 +639,7 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job col_remapper_test has completed successfully in 3.0 seconds seconds !
+    Job col_remapper_test has completed successfully in 3.0 seconds
     
     Executing table_conv_test
     Command is:
@@ -650,7 +650,7 @@ pipeline we’ve just made would look like:
 
 .. parsed-literal::
 
-    Job table_conv_test has completed successfully in 3.0 seconds seconds !
+    Job table_conv_test has completed successfully in 3.0 seconds
 
 
 .. parsed-literal::

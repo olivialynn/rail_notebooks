@@ -35,7 +35,7 @@ you must both update the config and the values.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20250929T070009
+    /home/runner/.cache/lephare/runs/20250930T065753
 
 
 Here we load previously created synthetic data
@@ -60,12 +60,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -75,12 +75,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'alloutputkeys.txt' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/alloutputkeys.txt' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'alloutputkeys.txt' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/alloutputkeys.txt' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -96,25 +96,6 @@ Retrieve all the required filter and template files
 .. parsed-literal::
 
     Downloading file 'opa/tau04.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau04.out' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
-    Created directory: /home/runner/.cache/lephare/data/filt/hsc
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
-    Created directory: /home/runner/.cache/lephare/data/examples
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Created directory: /home/runner/.cache/lephare/data/filt/vista
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
-    Created directory: /home/runner/.cache/lephare/data/ext
-    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -135,6 +116,25 @@ Retrieve all the required filter and template files
 .. parsed-literal::
 
     Downloading file 'opa/tau08.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau08.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/ext
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/filt/hsc
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/filt/vista
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
+    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -319,12 +319,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau45.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau45.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau46.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau46.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau46.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau46.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau45.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau45.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -959,12 +959,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/g0iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/g0iii.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/g0i.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/g0i.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/g0i.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/g0i.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/g0iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/g0iii.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1304,12 +1304,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/m6iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m6iii.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/m5v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m5v.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/m5v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m5v.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/m6iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m6iii.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1359,12 +1359,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/LAGET/T3750G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T3750G400.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/LAGET/T3500G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T3500G400.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/LAGET/T3500G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T3500G400.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/LAGET/T3750G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T3750G400.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1434,12 +1434,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/LAGET/T7250G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T7250G400.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/LAGET/T7500G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T7500G400.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/LAGET/T7500G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T7500G400.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/LAGET/T7250G400.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/LAGET/T7250G400.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1739,12 +1739,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte27-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte27-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte28-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte28-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte28-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte28-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte27-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte27-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1844,12 +1844,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte56-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte56-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte58-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte58-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte58-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte58-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte56-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte56-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1989,12 +1989,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/GAL/COSMOS_SED/Ell7_A_0.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/GAL/COSMOS_SED/Ell7_A_0.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/GAL/COSMOS_SED/S0_A_0.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/GAL/COSMOS_SED/S0_A_0.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/GAL/COSMOS_SED/S0_A_0.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/GAL/COSMOS_SED/S0_A_0.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/GAL/COSMOS_SED/Ell7_A_0.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/GAL/COSMOS_SED/Ell7_A_0.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2134,12 +2134,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/Spi4_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/Spi4_template_norm.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/M82_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/M82_template_norm.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/M82_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/M82_template_norm.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/Spi4_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/Spi4_template_norm.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2154,12 +2154,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/S0_10_QSO2_90.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_10_QSO2_90.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/Sey2_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/Sey2_template_norm.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/Sey2_template_norm.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/Sey2_template_norm.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/S0_10_QSO2_90.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_10_QSO2_90.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2179,12 +2179,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/S0_50_QSO2_50.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_50_QSO2_50.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/S0_60_QSO2_40.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_60_QSO2_40.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/QSO/SALVATO09/S0_60_QSO2_40.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_60_QSO2_40.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/QSO/SALVATO09/S0_50_QSO2_50.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/QSO/SALVATO09/S0_50_QSO2_50.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2437,16 +2437,16 @@ redshifts, extinction parameters, and reddening values.
     # with the following options :           
     # Config file     : 
     # Library type     : STAR
-
-
-.. parsed-literal::
-
     # STAR_SED    :/home/runner/.cache/lephare/data/sed/STAR/STAR_MOD_ALL.list
     # STAR_LIB    :LIB_STAR
     # STAR_LIB doc:/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR.doc
     # STAR_FSCALE :0.0000
     #######################################
     Number of SED in the list 254
+
+
+.. parsed-literal::
+
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
@@ -2461,7 +2461,7 @@ redshifts, extinction parameters, and reddening values.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/STAR_COSMOS(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Sep 29 07:06:36 2025
+    # CREATION_DATE Tue Sep 30 07:03:37 2025
     #############################################
 
 
@@ -2499,7 +2499,7 @@ redshifts, extinction parameters, and reddening values.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Sep 29 07:06:36 2025
+    # CREATION_DATE Tue Sep 30 07:03:37 2025
     #############################################
 
 
@@ -2516,6 +2516,10 @@ redshifts, extinction parameters, and reddening values.
     # QSO_LIB doc:/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_QSO.doc
     # QSO_FSCALE :1.0000
     #######################################
+
+
+.. parsed-literal::
+
     Number of SED in the list 30
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
@@ -2531,12 +2535,8 @@ redshifts, extinction parameters, and reddening values.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon Sep 29 07:10:12 2025
+    # CREATION_DATE Tue Sep 30 07:07:44 2025
     #############################################
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model_inform_COSMOS: inprogress_lephare.pkl, inform_COSMOS
 
 
@@ -2544,7 +2544,7 @@ redshifts, extinction parameters, and reddening values.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f3ca453a4d0>
+    <rail.core.data.ModelHandle at 0x7ff6f1ff6530>
 
 
 
@@ -2597,11 +2597,7 @@ data.
     # FIR_FREESCALE          : YES
     # FIR_SUBSTELLAR         : NO
     # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.100000 0.200000 0.300000 
-    # ERR_FACTOR   
-
-.. parsed-literal::
-
-              : 1.500000 
+    # ERR_FACTOR             : 1.500000 
     # GLB_CONTEXT            : 0
     # FORB_CONTEXT           : -1
     # DZ_WIN                 : 1.000000
@@ -2629,8 +2625,7 @@ data.
     Read lib 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /hoAUTO_ADAPT set to NO. Using zero offsets.
-    me/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -2648,7 +2643,12 @@ data.
      Done with the library reading with 36374 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/CE_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lepAUTO_ADAPT set to NO. Using zero offsets.
+
+
+.. parsed-literal::
+
+    hare/runs/inform_COSMOS/lib_mag/CE_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -2662,11 +2662,7 @@ data.
     u_new.pb                      2             0.3690      0.3750      0.0456    0.6195  -20.8500       0      1.0000
     gHSC.pb                       3             0.4851      0.4760      0.1194   -0.0860  -20.7300       0      1.0000
     rHSC.pb                       4             0.6241      0.6142      0.1539    0.1466  -21.5100       0      1.0000
-    iHSC.pb                       5             0.7716      0.7637      0.1
-
-.. parsed-literal::
-
-    476    0.3942  -22.2300       0      1.0000
+    iHSC.pb                       5             0.7716      0.7637      0.1476    0.3942  -22.2300       0      1.0000
     zHSC.pb                       6             0.8915      0.8907      0.0768    0.5169  -22.6700       0      1.0000
     yHSC.pb                       7             0.9801      0.9771      0.0797    0.5534  -22.9100       0      1.0000
     Y.lowres                      8             1.0220      1.0200      0.0919    0.6043  -23.0600       0      1.0000
@@ -2675,7 +2671,11 @@ data.
     K.lowres                      11            2.1580      2.1430      0.2926    1.8330  -25.9100       0      1.0000
     IB427.lowres                  12            0.4264      0.4256      0.0207   -0.1446  -20.4100       0      1.0000
     IB464.lowres                  13            0.4636      0.4633      0.0218   -0.1520  -20.5900       0      1.0000
-    IB484.lowres                  14            0.4851      0.4846      0.0228   -0.0241  -20.8100       0      1.0000
+    IB484.lowres                  14    
+
+.. parsed-literal::
+
+            0.4851      0.4846      0.0228   -0.0241  -20.8100       0      1.0000
     IB505.lowres                  15            0.5064      0.5061      0.0231   -0.0656  -20.8600       0      1.0000
     IB527.lowres                  16            0.5262      0.5259      0.0242   -0.0260  -20.9900       0      1.0000
     IB574.lowres                  17            0.5766      0.5762      0.0272    0.0657  -21.2800       0      1.0000

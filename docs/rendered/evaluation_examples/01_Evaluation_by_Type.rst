@@ -73,267 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0 47.1M    0  455k    0     0  1395k      0  0:00:34 --:--:--  0:00:34 1393k
 
 .. parsed-literal::
 
-      0 47.1M    0 16083    0     0   8621      0  1:35:31  0:00:01  1:35:30  8618
-
-.. parsed-literal::
-
-      0 47.1M    0  245k    0     0  87355      0  0:09:25  0:00:02  0:09:23 87353
-
-.. parsed-literal::
-
-      0 47.1M    0  397k    0     0   103k      0  0:07:46  0:00:03  0:07:43  103k
-
-.. parsed-literal::
-
-      1 47.1M    1  601k    0     0   123k      0  0:06:29  0:00:04  0:06:25  123k
-
-.. parsed-literal::
-
-      2 47.1M    2 1021k    0     0   174k      0  0:04:36  0:00:05  0:04:31  205k
-
-.. parsed-literal::
-
-      3 47.1M    3 1617k    0     0   233k      0  0:03:26  0:00:06  0:03:20  317k
-
-.. parsed-literal::
-
-      4 47.1M    4 2341k    0     0   299k      0  0:02:41  0:00:07  0:02:34  423k
-
-.. parsed-literal::
-
-      5 47.1M    5 2837k    0     0   320k      0  0:02:30  0:00:08  0:02:22  487k
-
-.. parsed-literal::
-
-      6 47.1M    6 3209k    0     0   323k      0  0:02:29  0:00:09  0:02:20  513k
-
-.. parsed-literal::
-
-      8 47.1M    8 3949k    0     0   364k      0  0:02:12  0:00:10  0:02:02  587k
-
-.. parsed-literal::
-
-      9 47.1M    9 4765k    0     0   400k      0  0:02:00  0:00:11  0:01:49  631k
-
-.. parsed-literal::
-
-     12 47.1M   12 6205k    0     0   484k      0  0:01:39  0:00:12  0:01:27  773k
-
-.. parsed-literal::
-
-     15 47.1M   15 7641k    0     0   548k      0  0:01:27  0:00:13  0:01:14  945k
-
-.. parsed-literal::
-
-     16 47.1M   16 7897k    0     0   532k      0  0:01:30  0:00:14  0:01:16  956k
-
-.. parsed-literal::
-
-     18 47.1M   18 9153k    0     0   578k      0  0:01:23  0:00:15  0:01:08 1042k
-
-.. parsed-literal::
-
-     21 47.1M   21 10.2M    0     0   620k      0  0:01:17  0:00:16  0:01:01 1141k
-
-.. parsed-literal::
-
-     25 47.1M   25 12.2M    0     0   703k      0  0:01:08  0:00:17  0:00:51 1265k
-
-.. parsed-literal::
-
-     27 47.1M   27 12.9M    0     0   701k      0  0:01:08  0:00:18  0:00:50 1129k
-
-.. parsed-literal::
-
-     30 47.1M   30 14.2M    0     0   732k      0  0:01:05  0:00:19  0:00:46 1318k
-
-.. parsed-literal::
-
-     32 47.1M   32 15.0M    0     0   739k      0  0:01:05  0:00:20  0:00:45 1241k
-
-.. parsed-literal::
-
-     34 47.1M   34 16.1M    0     0   750k      0  0:01:04  0:00:22  0:00:42 1180k
-
-.. parsed-literal::
-
-     35 47.1M   35 16.5M    0     0   741k      0  0:01:05  0:00:22  0:00:43  875k
-
-.. parsed-literal::
-
-     37 47.1M   37 17.4M    0     0   750k      0  0:01:04  0:00:23  0:00:41  936k
-
-.. parsed-literal::
-
-     39 47.1M   39 18.4M    0     0   758k      0  0:01:03  0:00:24  0:00:39  861k
-
-.. parsed-literal::
-
-     40 47.1M   40 18.9M    0     0   752k      0  0:01:04  0:00:25  0:00:39  807k
-
-.. parsed-literal::
-
-     42 47.1M   42 19.8M    0     0   757k      0  0:01:03  0:00:26  0:00:37  790k
-
-.. parsed-literal::
-
-     44 47.1M   44 21.0M    0     0   773k      0  0:01:02  0:00:27  0:00:35  923k
-
-.. parsed-literal::
-
-     45 47.1M   45 21.5M    0     0   762k      0  0:01:03  0:00:28  0:00:35  820k
-
-.. parsed-literal::
-
-     46 47.1M   46 22.1M    0     0   752k      0  0:01:04  0:00:30  0:00:34  724k
-
-.. parsed-literal::
-
-     48 47.1M   48 22.6M    0     0   752k      0  0:01:04  0:00:30  0:00:34  754k
-
-.. parsed-literal::
-
-     50 47.1M   50 23.5M    0     0   756k      0  0:01:03  0:00:31  0:00:32  748k
-
-.. parsed-literal::
-
-     51 47.1M   51 24.3M    0     0   759k      0  0:01:03  0:00:32  0:00:31  678k
-
-.. parsed-literal::
-
-     54 47.1M   54 25.5M    0     0   765k      0  0:01:03  0:00:34  0:00:29  782k
-
-.. parsed-literal::
-
-     55 47.1M   55 26.2M    0     0   771k      0  0:01:02  0:00:34  0:00:28  890k
-
-.. parsed-literal::
-
-     55 47.1M   55 26.3M    0     0   751k      0  0:01:04  0:00:35  0:00:29  745k
-
-.. parsed-literal::
-
-     58 47.1M   58 27.4M    0     0   760k      0  0:01:03  0:00:36  0:00:27  787k
-
-.. parsed-literal::
-
-     60 47.1M   60 28.4M    0     0   770k      0  0:01:02  0:00:37  0:00:25  840k
-
-.. parsed-literal::
-
-     63 47.1M   63 30.0M    0     0   792k      0  0:01:00  0:00:38  0:00:22  986k
-
-.. parsed-literal::
-
-     65 47.1M   65 30.6M    0     0   786k      0  0:01:01  0:00:39  0:00:22  892k
-
-.. parsed-literal::
-
-     65 47.1M   65 30.6M    0     0   767k      0  0:01:02  0:00:40  0:00:22  879k
-
-.. parsed-literal::
-
-     65 47.1M   65 30.6M    0     0   736k      0  0:01:05  0:00:42  0:00:23  581k
-
-.. parsed-literal::
-
-     69 47.1M   69 32.6M    0     0   780k      0  0:01:01  0:00:42  0:00:19  859k
-
-.. parsed-literal::
-
-     69 47.1M   69 32.7M    0     0   764k      0  0:01:03  0:00:43  0:00:20  548k
-
-.. parsed-literal::
-
-     69 47.1M   69 32.9M    0     0   750k      0  0:01:04  0:00:45  0:00:19  465k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.0M    0     0   736k      0  0:01:05  0:00:45  0:00:20  483k
-
-.. parsed-literal::
-
-     71 47.1M   71 33.5M    0     0   731k      0  0:01:05  0:00:46  0:00:19  678k
-
-.. parsed-literal::
-
-     73 47.1M   73 34.4M    0     0   737k      0  0:01:05  0:00:47  0:00:18  363k
-
-.. parsed-literal::
-
-     76 47.1M   76 36.0M    0     0   749k      0  0:01:04  0:00:49  0:00:15  628k
-
-.. parsed-literal::
-
-     76 47.1M   76 36.1M    0     0   742k      0  0:01:04  0:00:49  0:00:15  671k
-
-.. parsed-literal::
-
-     78 47.1M   78 37.1M    0     0   745k      0  0:01:04  0:00:51  0:00:13  818k
-
-.. parsed-literal::
-
-     80 47.1M   80 38.0M    0     0   750k      0  0:01:04  0:00:51  0:00:13  936k
-
-.. parsed-literal::
-
-     82 47.1M   82 38.7M    0     0   751k      0  0:01:04  0:00:52  0:00:12  883k
-
-.. parsed-literal::
-
-     83 47.1M   83 39.5M    0     0   752k      0  0:01:04  0:00:53  0:00:11  788k
-
-.. parsed-literal::
-
-     84 47.1M   84 39.9M    0     0   745k      0  0:01:04  0:00:54  0:00:10  778k
-
-.. parsed-literal::
-
-     85 47.1M   85 40.1M    0     0   731k      0  0:01:05  0:00:56  0:00:09  603k
-
-.. parsed-literal::
-
-     85 47.1M   85 40.1M    0     0   723k      0  0:01:06  0:00:56  0:00:10  435k
-
-.. parsed-literal::
-
-     85 47.1M   85 40.1M    0     0   710k      0  0:01:07  0:00:57  0:00:10  286k
-
-.. parsed-literal::
-
-     91 47.1M   91 42.8M    0     0   746k      0  0:01:04  0:00:58  0:00:06  674k
-
-.. parsed-literal::
-
-     93 47.1M   93 43.8M    0     0   739k      0  0:01:05  0:01:00  0:00:05  679k 93 47.1M   93 43.8M    0     0   737k      0  0:01:05  0:01:00  0:00:05  809k
-
-.. parsed-literal::
-
-     93 47.1M   93 44.1M    0     0   728k      0  0:01:06  0:01:01  0:00:05  794k
-
-.. parsed-literal::
-
-     95 47.1M   95 44.8M    0     0   731k      0  0:01:06  0:01:02  0:00:04  973k
-
-.. parsed-literal::
-
-     96 47.1M   96 45.5M    0     0   728k      0  0:01:06  0:01:03  0:00:03  525k
-
-.. parsed-literal::
-
-     97 47.1M   97 45.9M    0     0   725k      0  0:01:06  0:01:04  0:00:02  522k
-
-.. parsed-literal::
-
-     99 47.1M   99 46.8M    0     0   727k      0  0:01:06  0:01:05  0:00:01  607k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0   727k      0  0:01:06  0:01:06 --:--:--  705k
+    100 47.1M  100 47.1M    0     0  67.0M      0 --:--:-- --:--:-- --:--:-- 67.0M
 
 
 .. code:: ipython3
@@ -506,42 +250,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.884872</td>
-          <td>0.056800</td>
+          <td>0.322484</td>
+          <td>0.268671</td>
           <td>0.0</td>
-          <td>0.059018</td>
+          <td>0.074247</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.192688</td>
-          <td>0.068293</td>
+          <td>0.863622</td>
+          <td>0.330171</td>
           <td>0.0</td>
-          <td>0.088985</td>
+          <td>0.091270</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>2.060486</td>
-          <td>0.546329</td>
+          <td>0.763410</td>
+          <td>0.683654</td>
           <td>0.0</td>
-          <td>0.106932</td>
+          <td>0.101043</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.753828</td>
-          <td>0.064264</td>
+          <td>2.086365</td>
+          <td>0.072290</td>
           <td>0.0</td>
-          <td>0.063849</td>
+          <td>0.092710</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>2.465772</td>
-          <td>0.055713</td>
+          <td>0.402854</td>
+          <td>0.020615</td>
           <td>0.0</td>
-          <td>0.075091</td>
+          <td>0.079201</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -554,42 +298,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>1.409816</td>
-          <td>0.252876</td>
+          <td>0.311331</td>
+          <td>0.213816</td>
           <td>0.0</td>
-          <td>0.054109</td>
+          <td>0.086766</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.495664</td>
-          <td>0.210749</td>
+          <td>1.580241</td>
+          <td>0.234207</td>
           <td>0.0</td>
-          <td>0.054438</td>
+          <td>0.069889</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.469411</td>
-          <td>0.087304</td>
+          <td>2.515212</td>
+          <td>0.086755</td>
           <td>0.0</td>
-          <td>0.074603</td>
+          <td>0.104889</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>1.739377</td>
-          <td>0.039002</td>
+          <td>1.658520</td>
+          <td>0.121969</td>
           <td>0.0</td>
-          <td>0.109385</td>
+          <td>0.115938</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.522381</td>
-          <td>0.122904</td>
+          <td>1.890626</td>
+          <td>0.046866</td>
           <td>0.0</td>
-          <td>0.100136</td>
+          <td>0.116730</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -637,43 +381,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.056800</td>
-          <td>0.059018</td>
+          <td>0.268671</td>
+          <td>0.074247</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.884872</td>
+          <td>0.322484</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.068293</td>
-          <td>0.088985</td>
+          <td>0.330171</td>
+          <td>0.091270</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.192688</td>
+          <td>0.863622</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.546329</td>
-          <td>0.106932</td>
+          <td>0.683654</td>
+          <td>0.101043</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>2.060486</td>
+          <td>0.763410</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.064264</td>
-          <td>0.063849</td>
+          <td>0.072290</td>
+          <td>0.092710</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.753828</td>
+          <td>2.086365</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.055713</td>
-          <td>0.075091</td>
+          <td>0.020615</td>
+          <td>0.079201</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>2.465772</td>
+          <td>0.402854</td>
         </tr>
         <tr>
           <th>...</th>
@@ -685,43 +429,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.252876</td>
-          <td>0.054109</td>
+          <td>0.213816</td>
+          <td>0.086766</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.409816</td>
+          <td>0.311331</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.210749</td>
-          <td>0.054438</td>
+          <td>0.234207</td>
+          <td>0.069889</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.495664</td>
+          <td>1.580241</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.087304</td>
-          <td>0.074603</td>
+          <td>0.086755</td>
+          <td>0.104889</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.469411</td>
+          <td>2.515212</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.039002</td>
-          <td>0.109385</td>
+          <td>0.121969</td>
+          <td>0.115938</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.739377</td>
+          <td>1.658520</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.122904</td>
-          <td>0.100136</td>
+          <td>0.046866</td>
+          <td>0.116730</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.522381</td>
+          <td>1.890626</td>
         </tr>
       </tbody>
     </table>
@@ -1174,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f63fc9a9600>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fcac45115d0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1323,6 +1067,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1678,10 +1426,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

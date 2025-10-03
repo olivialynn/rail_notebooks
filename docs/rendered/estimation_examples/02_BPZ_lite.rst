@@ -620,15 +620,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 21.9 s, sys: 214 ms, total: 22.1 s
-    Wall time: 22.1 s
+    CPU times: user 23.4 s, sys: 170 ms, total: 23.5 s
+    Wall time: 23.5 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f2eb6faa950>
+    <rail.core.data.QPHandle at 0x7f264f7ed5d0>
 
 
 
@@ -708,7 +708,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eb6d4eb30>
+    <matplotlib.legend.Legend at 0x7f264f5ea7a0>
 
 
 
@@ -745,7 +745,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eb1b3cbe0>
+    <matplotlib.legend.Legend at 0x7f264f696e90>
 
 
 
@@ -2504,8 +2504,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 1min 14s, sys: 238 ms, total: 1min 14s
-    Wall time: 1min 14s
+    CPU times: user 1min 18s, sys: 214 ms, total: 1min 18s
+    Wall time: 1min 18s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -2629,21 +2629,25 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   584k      0 --:--:-- --:--:-- --:--:--  583k100  450k  100  450k    0     0   583k      0 --:--:-- --:--:-- --:--:--  583k
+     19  450k   19 89782    0     0   694k      0 --:--:-- --:--:-- --:--:--  690k
+
+.. parsed-literal::
+
+    100  450k  100  450k    0     0  2533k      0 --:--:-- --:--:-- --:--:-- 2528k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   316k      0 --:--:-- --:--:-- --:--:--  317k
+    100 83848  100 83848    0     0   350k      0 --:--:-- --:--:-- --:--:--  351k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   370k      0 --:--:-- --:--:-- --:--:--  372k
+    100 83848  100 83848    0     0   759k      0 --:--:-- --:--:-- --:--:--  765k
 
 
 .. code:: ipython3
@@ -2676,15 +2680,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.48 s, sys: 3 ms, total: 9.49 s
-    Wall time: 9.48 s
+    CPU times: user 10 s, sys: 2.99 ms, total: 10 s
+    Wall time: 10 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2eb1b01840>
+    <rail.core.data.ModelHandle at 0x7f264c3e3ee0>
 
 
 
@@ -2794,7 +2798,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eb1ab5a50>
+    <matplotlib.legend.Legend at 0x7f264c2199f0>
 
 
 
@@ -2870,15 +2874,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 11.2 s, sys: 160 ms, total: 11.4 s
-    Wall time: 11.4 s
+    CPU times: user 12.8 s, sys: 146 ms, total: 12.9 s
+    Wall time: 12.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7f2ee975a9e0>
+    <rail.core.data.QPHandle at 0x7f26767a2b00>
 
 
 
@@ -2905,7 +2909,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eb19f21a0>
+    <matplotlib.legend.Legend at 0x7f26767499f0>
 
 
 
@@ -2968,7 +2972,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2eb1ab62c0>
+    <matplotlib.legend.Legend at 0x7f264c2dc310>
 
 
 

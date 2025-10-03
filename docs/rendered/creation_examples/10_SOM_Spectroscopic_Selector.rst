@@ -306,7 +306,75 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-      1 32.6M    1  535k    0     0   700k      0  0:00:47 --:--:--  0:00:47  700k
+      0 32.6M    0 11945    0     0  10020      0  0:56:57  0:00:01  0:56:56 10020
+
+.. parsed-literal::
+
+     42 32.6M   42 13.8M    0     0  7212k      0  0:00:04  0:00:01  0:00:03 7212k
+
+.. parsed-literal::
+
+     43 32.6M   43 14.1M    0     0  4344k      0  0:00:07  0:00:03  0:00:04 4344k
+
+.. parsed-literal::
+
+     43 32.6M   43 14.2M    0     0  3347k      0  0:00:09  0:00:04  0:00:05 3348k
+
+.. parsed-literal::
+
+     43 32.6M   43 14.2M    0     0  2721k      0  0:00:12  0:00:05  0:00:07 2721k
+
+.. parsed-literal::
+
+     43 32.6M   43 14.2M    0     0  2382k      0  0:00:14  0:00:06  0:00:08 2956k
+
+.. parsed-literal::
+
+     46 32.6M   46 15.2M    0     0  2245k      0  0:00:14  0:00:06  0:00:08  284k
+
+.. parsed-literal::
+
+     59 32.6M   59 19.5M    0     0  2504k      0  0:00:13  0:00:08  0:00:05 1183k
+
+.. parsed-literal::
+
+     63 32.6M   63 20.7M    0     0  2375k      0  0:00:14  0:00:08  0:00:06 1458k
+
+.. parsed-literal::
+
+     66 32.6M   66 21.8M    0     0  2238k      0  0:00:14  0:00:09  0:00:05 1682k
+
+.. parsed-literal::
+
+     69 32.6M   69 22.6M    0     0  2120k      0  0:00:15  0:00:10  0:00:05 1790k
+
+.. parsed-literal::
+
+     73 32.6M   73 23.9M    0     0  2041k      0  0:00:16  0:00:12  0:00:04 1760k
+
+.. parsed-literal::
+
+     78 32.6M   78 25.7M    0     0  2032k      0  0:00:16  0:00:12  0:00:04 1270k
+
+.. parsed-literal::
+
+     81 32.6M   81 26.7M    0     0  1961k      0  0:00:17  0:00:13  0:00:04 1217k
+
+.. parsed-literal::
+
+     84 32.6M   84 27.6M    0     0  1877k      0  0:00:17  0:00:15  0:00:02 1165k
+
+.. parsed-literal::
+
+     88 32.6M   88 28.7M    0     0  1836k      0  0:00:18  0:00:16  0:00:02 1224k
+
+.. parsed-literal::
+
+     93 32.6M   93 30.3M    0     0  1831k      0  0:00:18  0:00:16  0:00:02 1326k
+
+.. parsed-literal::
+
+     97 32.6M   97 31.9M    0     0  1819k      0  0:00:18  0:00:17  0:00:01 1270k
 
 .. parsed-literal::
 
@@ -316,7 +384,7 @@ Uncomment the lines in the cell below and execute to download the data needed fo
 
 .. parsed-literal::
 
-    100 32.6M  100 32.6M    0     0  27.3M      0  0:00:01  0:00:01 --:--:-- 27.3M
+    100 32.6M  100 32.6M    0     0  1812k      0  0:00:18  0:00:18 --:--:-- 1351k
 
 
 We will read in the two files, make similar cuts to the mock “spec” file

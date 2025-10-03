@@ -42,7 +42,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
@@ -52,7 +52,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  8954k      0 --:--:-- --:--:-- --:--:-- 8963k
+    100 4670k  100 4670k    0     0  11.2M      0 --:--:-- --:--:-- --:--:-- 11.1M
 
 
 Let’s load one of the files and look at the contents:
@@ -186,15 +186,15 @@ We can now feed this into our inform stage:
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_rd_demo_knn.pkl, inform_KNN
-    CPU times: user 15.8 s, sys: 4.38 s, total: 20.2 s
-    Wall time: 20.2 s
+    CPU times: user 13.5 s, sys: 2.85 s, total: 16.3 s
+    Wall time: 16.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fcbd2cffb20>
+    <rail.core.data.ModelHandle at 0x7f8bcdb97760>
 
 
 

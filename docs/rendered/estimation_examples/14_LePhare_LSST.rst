@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20251004T065147
+    /home/runner/.cache/lephare/runs/20251005T065258
 
 
 Here we load previously created synthetic data
@@ -60,16 +60,22 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Number of keywords read in the config file: 86
-
-
-.. parsed-literal::
-
     Registry file downloaded and saved as data_registry.txt.
 
 
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_i.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_i.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -85,16 +91,6 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_i.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_i.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -174,7 +170,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Sat Oct  4 07:02:27 2025
+    # CREATION_DATE Sun Oct  5 07:03:37 2025
     #############################################
 
 
@@ -204,10 +200,6 @@ takes ~3-4 minutes.
     # Magnitude type     : AB
     # GAL_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_GAL_BIN(.doc & .bin)
     # GAL_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG(.doc & .bin)
-
-
-.. parsed-literal::
-
     # Z_STEP   :0.1000 0.0000 3.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SMC_prevot.dat SB_calzetti.dat SB_calzetti_bump1.dat SB_calzetti_bump2.dat 
@@ -216,8 +208,12 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Sat Oct  4 07:02:28 2025
+    # CREATION_DATE Sun Oct  5 07:03:37 2025
     #############################################
+
+
+.. parsed-literal::
+
     {'qso_sed': '/home/runner/.cache/lephare/data/sed/QSO/SALVATO09/AGN_MOD.list'}
     #######################################
     # It s translating SEDs to binary library #
@@ -230,6 +226,10 @@ takes ~3-4 minutes.
     # QSO_FSCALE :1.0000
     #######################################
     Number of SED in the list 30
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -244,12 +244,8 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Sat Oct  4 07:05:46 2025
+    # CREATION_DATE Sun Oct  5 07:06:54 2025
     #############################################
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
@@ -257,7 +253,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f54b4376440>
+    <rail.core.data.ModelHandle at 0x7fbf588e5ae0>
 
 
 

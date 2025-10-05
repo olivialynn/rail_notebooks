@@ -42,7 +42,11 @@ file with some data drawn from the Roman-Rubin simulation:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+      2 4670k    2  110k    0     0   125k      0  0:00:37 --:--:--  0:00:37  124k
 
 .. parsed-literal::
 
@@ -52,7 +56,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  5115k      0 --:--:-- --:--:-- --:--:-- 5115k
+    100 4670k  100 4670k    0     0  3974k      0  0:00:01  0:00:01 --:--:-- 3977k
 
 
 Let’s load one of the files and look at the contents:
@@ -194,7 +198,7 @@ We can now feed this into our inform stage:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8fb114fc70>
+    <rail.core.data.ModelHandle at 0x7f7e0c427a90>
 
 
 

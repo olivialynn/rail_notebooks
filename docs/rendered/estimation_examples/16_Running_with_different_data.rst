@@ -46,7 +46,19 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-      2 4670k    2  119k    0     0   235k      0  0:00:19 --:--:--  0:00:19  235k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+     27 4670k   27 1287k    0     0   780k      0  0:00:05  0:00:01  0:00:04  779k
+
+.. parsed-literal::
+
+     36 4670k   36 1711k    0     0   677k      0  0:00:06  0:00:02  0:00:04  677k
+
+.. parsed-literal::
+
+     65 4670k   65 3067k    0     0   900k      0  0:00:05  0:00:03  0:00:02  900k
 
 .. parsed-literal::
 
@@ -56,7 +68,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  5970k      0 --:--:-- --:--:-- --:--:-- 5964k
+    100 4670k  100 4670k    0     0  1070k      0  0:00:04  0:00:04 --:--:-- 1071k
 
 
 Let’s load one of the files and look at the contents:
@@ -176,15 +188,7 @@ We can now feed this into our inform stage:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, inform_KNN
-
-
-.. parsed-literal::
-
     split into 11250 training and 3750 validation samples
-
-
-.. parsed-literal::
-
     finding best fit sigma and NNeigh...
 
 
@@ -198,15 +202,15 @@ We can now feed this into our inform stage:
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_rd_demo_knn.pkl, inform_KNN
-    CPU times: user 13.4 s, sys: 2.9 s, total: 16.3 s
-    Wall time: 16.4 s
+    CPU times: user 13.2 s, sys: 2.79 s, total: 16 s
+    Wall time: 16 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f84fb687af0>
+    <rail.core.data.ModelHandle at 0x7f675f97b760>
 
 
 

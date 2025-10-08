@@ -73,403 +73,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+     31 47.1M   31 14.8M    0     0  10.5M      0  0:00:04  0:00:01  0:00:03 10.5M
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
-
-.. parsed-literal::
-
-      0 47.1M    0 44755    0     0   9048      0  1:31:01  0:00:04  1:30:57  9048
-
-.. parsed-literal::
-
-      0 47.1M    0 48851    0     0   8387      0  1:38:11  0:00:05  1:38:06 10211
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   7652      0  1:47:37  0:00:06  1:47:31 11179
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   6685      0  2:03:11  0:00:07  2:03:04 10249
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   5935      0  2:18:45  0:00:08  2:18:37 10984
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   5336      0  2:34:20  0:00:09  2:34:11  1645
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   4847      0  2:49:54  0:00:10  2:49:44   803
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   4440      0  3:05:29  0:00:11  3:05:18     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   4096      0  3:21:03  0:00:12  3:20:51     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   3801      0  3:36:39  0:00:13  3:36:26     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   3546      0  3:52:14  0:00:14  3:52:00     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   3266      0  4:12:09  0:00:16  4:11:53     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   3076      0  4:27:44  0:00:17  4:27:27     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2907      0  4:43:17  0:00:18  4:42:59     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2755      0  4:58:55  0:00:19  4:58:36     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2619      0  5:14:27  0:00:20  5:14:07     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2495      0  5:30:04  0:00:21  5:29:43     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2383      0  5:45:35  0:00:22  5:45:13     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2280      0  6:01:12  0:00:23  6:00:49     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2186      0  6:16:44  0:00:24  6:16:20     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2099      0  6:32:21  0:00:25  6:31:56     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   2019      0  6:47:53  0:00:26  6:47:27     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   1945      0  7:03:25  0:00:27  7:02:58     0
-
-.. parsed-literal::
-
-      0 47.1M    0 52947    0     0   1876      0  7:18:59  0:00:28  7:18:31     0
-
-.. parsed-literal::
-
-      1 47.1M    1  683k    0     0  24357      0  0:33:48  0:00:28  0:33:20  139k
-
-.. parsed-literal::
-
-      2 47.1M    2 1251k    0     0  42804      0  0:19:14  0:00:29  0:18:45  253k
-
-.. parsed-literal::
-
-      2 47.1M    2 1291k    0     0  42899      0  0:19:11  0:00:30  0:18:41  268k
-
-.. parsed-literal::
-
-      2 47.1M    2 1443k    0     0  46255      0  0:17:48  0:00:31  0:17:17  293k
-
-.. parsed-literal::
-
-      3 47.1M    3 1787k    0     0  55759      0  0:14:46  0:00:32  0:14:14  376k
-
-.. parsed-literal::
-
-      3 47.1M    3 1795k    0     0  54061      0  0:15:14  0:00:34  0:14:40  211k
-
-.. parsed-literal::
-
-      3 47.1M    3 1795k    0     0  52516      0  0:15:40  0:00:35  0:15:05  107k
-
-.. parsed-literal::
-
-      3 47.1M    3 1891k    0     0  53588      0  0:15:22  0:00:36  0:14:46  112k
-
-.. parsed-literal::
-
-      3 47.1M    3 1891k    0     0  52144      0  0:15:47  0:00:37  0:15:10 88425
-
-.. parsed-literal::
-
-      4 47.1M    4 2135k    0     0  57197      0  0:14:23  0:00:38  0:13:45 65942
-
-.. parsed-literal::
-
-      4 47.1M    4 2327k    0     0  61327      0  0:13:25  0:00:38  0:12:47  109k
-
-.. parsed-literal::
-
-      5 47.1M    5 2483k    0     0  62676      0  0:13:08  0:00:40  0:12:28  123k
-
-.. parsed-literal::
-
-      5 47.1M    5 2483k    0     0  61167      0  0:13:27  0:00:41  0:12:46  109k
-
-.. parsed-literal::
-
-      5 47.1M    5 2695k    0     0  65158      0  0:12:38  0:00:42  0:11:56  154k
-
-.. parsed-literal::
-
-      6 47.1M    6 2919k    0     0  69872      0  0:11:47  0:00:42  0:11:05  172k
-
-.. parsed-literal::
-
-      6 47.1M    6 3035k    0     0  70961      0  0:11:36  0:00:43  0:10:53  143k
-
-.. parsed-literal::
-
-      6 47.1M    6 3071k    0     0  69998      0  0:11:45  0:00:44  0:11:01  134k
-
-.. parsed-literal::
-
-      6 47.1M    6 3083k    0     0  68864      0  0:11:57  0:00:45  0:11:12  140k
-
-.. parsed-literal::
-
-      6 47.1M    6 3095k    0     0  66866      0  0:12:18  0:00:47  0:11:31 81221
-
-.. parsed-literal::
-
-      7 47.1M    7 3719k    0     0  79609      0  0:10:20  0:00:47  0:09:33  158k
-
-.. parsed-literal::
-
-      7 47.1M    7 3795k    0     0  78966      0  0:10:25  0:00:49  0:09:36  140k
-
-.. parsed-literal::
-
-      7 47.1M    7 3807k    0     0  78012      0  0:10:33  0:00:49  0:09:44  145k
-
-.. parsed-literal::
-
-      8 47.1M    8 3911k    0     0  77715      0  0:10:35  0:00:51  0:09:44  145k
-
-.. parsed-literal::
-
-      8 47.1M    8 3911k    0     0  76235      0  0:10:48  0:00:52  0:09:56  158k
-
-.. parsed-literal::
-
-      8 47.1M    8 3911k    0     0  74809      0  0:11:00  0:00:53  0:10:07 34510
-
-.. parsed-literal::
-
-      8 47.1M    8 3911k    0     0  73436      0  0:11:12  0:00:54  0:10:18 22311
-
-.. parsed-literal::
-
-      8 47.1M    8 4099k    0     0  75962      0  0:10:50  0:00:55  0:09:55 56576
-
-.. parsed-literal::
-
-      8 47.1M    8 4143k    0     0  76091      0  0:10:49  0:00:55  0:09:54 56255
-
-.. parsed-literal::
-
-     11 47.1M   11 5347k    0     0  96437      0  0:08:32  0:00:56  0:07:36  338k
-
-.. parsed-literal::
-
-     14 47.1M   14 6995k    0     0   120k      0  0:06:39  0:00:57  0:05:42  706k
-
-.. parsed-literal::
-
-     15 47.1M   15 7367k    0     0   125k      0  0:06:24  0:00:58  0:05:26  823k
-
-.. parsed-literal::
-
-     15 47.1M   15 7495k    0     0   125k      0  0:06:24  0:00:59  0:05:25  758k
-
-.. parsed-literal::
-
-     16 47.1M   16 7759k    0     0   127k      0  0:06:17  0:01:00  0:05:17  725k
-
-.. parsed-literal::
-
-     16 47.1M   16 7759k    0     0   125k      0  0:06:24  0:01:01  0:05:23  485k
-
-.. parsed-literal::
-
-     16 47.1M   16 7759k    0     0   123k      0  0:06:30  0:01:02  0:05:28  157k
-
-.. parsed-literal::
-
-     16 47.1M   16 8071k    0     0   126k      0  0:06:21  0:01:03  0:05:18  137k
-
-.. parsed-literal::
-
-     25 47.1M   25 11.7M    0     0   185k      0  0:04:20  0:01:05  0:03:15  863k
-
-.. parsed-literal::
-
-     25 47.1M   25 11.7M    0     0   182k      0  0:04:24  0:01:06  0:03:18  814k
-
-.. parsed-literal::
-
-     25 47.1M   25 12.0M    0     0   184k      0  0:04:21  0:01:06  0:03:15  907k
-
-.. parsed-literal::
-
-     28 47.1M   28 13.5M    0     0   204k      0  0:03:55  0:01:07  0:02:48 1212k
-
-.. parsed-literal::
-
-     34 47.1M   34 16.0M    0     0   239k      0  0:03:21  0:01:08  0:02:13 1717k
-
-.. parsed-literal::
-
-     42 47.1M   42 19.8M    0     0   290k      0  0:02:45  0:01:09  0:01:36 1740k
-
-.. parsed-literal::
-
-     45 47.1M   45 21.5M    0     0   310k      0  0:02:35  0:01:11  0:01:24 1921k
-
-.. parsed-literal::
-
-     45 47.1M   45 21.5M    0     0   305k      0  0:02:37  0:01:12  0:01:25 1778k
-
-.. parsed-literal::
-
-     45 47.1M   45 21.5M    0     0   301k      0  0:02:39  0:01:13  0:01:26 1503k
-
-.. parsed-literal::
-
-     45 47.1M   45 21.5M    0     0   297k      0  0:02:42  0:01:14  0:01:28 1029k
-
-.. parsed-literal::
-
-     46 47.1M   46 21.7M    0     0   297k      0  0:02:42  0:01:14  0:01:28  392k
-
-.. parsed-literal::
-
-     46 47.1M   46 21.8M    0     0   295k      0  0:02:43  0:01:15  0:01:28 63789
-
-.. parsed-literal::
-
-     47 47.1M   47 22.5M    0     0   301k      0  0:02:40  0:01:16  0:01:24  226k
-
-.. parsed-literal::
-
-     51 47.1M   51 24.4M    0     0   320k      0  0:02:30  0:01:18  0:01:12  614k
-
-.. parsed-literal::
-
-     57 47.1M   57 27.1M    0     0   353k      0  0:02:16  0:01:18  0:00:58 1266k
-
-.. parsed-literal::
-
-     67 47.1M   67 31.7M    0     0   407k      0  0:01:58  0:01:19  0:00:39 2039k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.0M    0     0   418k      0  0:01:55  0:01:20  0:00:35 2324k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.1M    0     0   414k      0  0:01:56  0:01:21  0:00:35 2138k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.2M    0     0   410k      0  0:01:57  0:01:22  0:00:35 1895k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.2M    0     0   406k      0  0:01:58  0:01:23  0:00:35 1247k
-
-.. parsed-literal::
-
-     70 47.1M   70 33.2M    0     0   402k      0  0:01:59  0:01:24  0:00:35  322k
-
-.. parsed-literal::
-
-     73 47.1M   73 34.8M    0     0   416k      0  0:01:55  0:01:25  0:00:30  369k
-
-.. parsed-literal::
-
-     79 47.1M   79 37.3M    0     0   440k      0  0:01:49  0:01:26  0:00:23  853k
-
-.. parsed-literal::
-
-     81 47.1M   81 38.3M    0     0   444k      0  0:01:48  0:01:28  0:00:20  942k
-
-.. parsed-literal::
-
-     82 47.1M   82 39.0M    0     0   449k      0  0:01:47  0:01:28  0:00:19 1152k
-
-.. parsed-literal::
-
-     85 47.1M   85 40.3M    0     0   457k      0  0:01:45  0:01:30  0:00:15 1286k
-
-.. parsed-literal::
-
-     85 47.1M   85 40.3M    0     0   452k      0  0:01:46  0:01:31  0:00:15 1004k
-
-.. parsed-literal::
-
-     86 47.1M   86 40.5M    0     0   450k      0  0:01:47  0:01:32  0:00:15  616k
-
-.. parsed-literal::
-
-     86 47.1M   86 40.8M    0     0   448k      0  0:01:47  0:01:33  0:00:14  534k
-
-.. parsed-literal::
-
-     89 47.1M   89 42.3M    0     0   462k      0  0:01:44  0:01:33  0:00:11  694k
-
-.. parsed-literal::
-
-     89 47.1M   89 42.3M    0     0   457k      0  0:01:45  0:01:34  0:00:11  462k
-
-.. parsed-literal::
-
-     89 47.1M   89 42.3M    0     0   452k      0  0:01:46  0:01:35  0:00:11  462k
-
-.. parsed-literal::
-
-     89 47.1M   89 42.3M    0     0   448k      0  0:01:47  0:01:36  0:00:11  396k
-
-.. parsed-literal::
-
-     89 47.1M   89 42.3M    0     0   443k      0  0:01:48  0:01:37  0:00:11  332k
-
-.. parsed-literal::
-
-     90 47.1M   90 42.4M    0     0   440k      0  0:01:49  0:01:38  0:00:11 30974
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0   484k      0  0:01:39  0:01:39 --:--:--  996k
+    100 47.1M  100 47.1M    0     0  23.6M      0  0:00:01  0:00:01 --:--:-- 23.5M
 
 
 .. code:: ipython3
@@ -642,42 +254,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.930197</td>
-          <td>0.058322</td>
+          <td>0.517516</td>
+          <td>0.075329</td>
           <td>0.0</td>
-          <td>0.067972</td>
+          <td>0.091249</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.169268</td>
-          <td>0.234380</td>
+          <td>1.255608</td>
+          <td>0.075320</td>
           <td>0.0</td>
           <td>0.086585</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.671950</td>
-          <td>0.082704</td>
+          <td>1.056186</td>
+          <td>0.436397</td>
           <td>0.0</td>
-          <td>0.083151</td>
+          <td>0.107803</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.262559</td>
-          <td>0.270963</td>
+          <td>2.545102</td>
+          <td>0.118593</td>
           <td>0.0</td>
-          <td>0.086284</td>
+          <td>0.105127</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.443766</td>
-          <td>0.091839</td>
+          <td>0.568261</td>
+          <td>0.058265</td>
           <td>0.0</td>
-          <td>0.067366</td>
+          <td>0.076170</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -690,42 +302,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>1.008565</td>
-          <td>0.081359</td>
+          <td>0.545280</td>
+          <td>0.036390</td>
           <td>0.0</td>
-          <td>0.064758</td>
+          <td>0.072995</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>1.044481</td>
-          <td>0.151086</td>
+          <td>0.255057</td>
+          <td>0.155114</td>
           <td>0.0</td>
-          <td>0.054048</td>
+          <td>0.071710</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>2.409048</td>
-          <td>0.142489</td>
+          <td>0.480593</td>
+          <td>0.231611</td>
           <td>0.0</td>
-          <td>0.057368</td>
+          <td>0.096338</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.392787</td>
-          <td>0.186328</td>
+          <td>0.311180</td>
+          <td>0.382416</td>
           <td>0.0</td>
-          <td>0.092076</td>
+          <td>0.111775</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.553830</td>
-          <td>0.235813</td>
+          <td>0.504787</td>
+          <td>0.078744</td>
           <td>0.0</td>
-          <td>0.062986</td>
+          <td>0.091204</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -773,43 +385,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.058322</td>
-          <td>0.067972</td>
+          <td>0.075329</td>
+          <td>0.091249</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.930197</td>
+          <td>0.517516</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.234380</td>
+          <td>0.075320</td>
           <td>0.086585</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.169268</td>
+          <td>1.255608</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.082704</td>
-          <td>0.083151</td>
+          <td>0.436397</td>
+          <td>0.107803</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.671950</td>
+          <td>1.056186</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.270963</td>
-          <td>0.086284</td>
+          <td>0.118593</td>
+          <td>0.105127</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.262559</td>
+          <td>2.545102</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.091839</td>
-          <td>0.067366</td>
+          <td>0.058265</td>
+          <td>0.076170</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.443766</td>
+          <td>0.568261</td>
         </tr>
         <tr>
           <th>...</th>
@@ -821,43 +433,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.081359</td>
-          <td>0.064758</td>
+          <td>0.036390</td>
+          <td>0.072995</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.008565</td>
+          <td>0.545280</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.151086</td>
-          <td>0.054048</td>
+          <td>0.155114</td>
+          <td>0.071710</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.044481</td>
+          <td>0.255057</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.142489</td>
-          <td>0.057368</td>
+          <td>0.231611</td>
+          <td>0.096338</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>2.409048</td>
+          <td>0.480593</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.186328</td>
-          <td>0.092076</td>
+          <td>0.382416</td>
+          <td>0.111775</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.392787</td>
+          <td>0.311180</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.235813</td>
-          <td>0.062986</td>
+          <td>0.078744</td>
+          <td>0.091204</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.553830</td>
+          <td>0.504787</td>
         </tr>
       </tbody>
     </table>
@@ -1310,7 +922,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f5144c655d0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f68817c3c40>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1459,10 +1071,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 
@@ -1818,6 +1426,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

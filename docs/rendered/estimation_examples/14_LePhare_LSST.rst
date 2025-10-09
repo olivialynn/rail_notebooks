@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20251008T065527
+    /home/runner/.cache/lephare/runs/20251009T065649
 
 
 Here we load previously created synthetic data
@@ -65,12 +65,7 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -80,12 +75,17 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -156,9 +156,17 @@ takes ~3-4 minutes.
     # STAR_FSCALE :0.0000
     #######################################
     Number of SED in the list 254
+
+
+.. parsed-literal::
+
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -170,12 +178,8 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Oct  8 07:07:10 2025
+    # CREATION_DATE Thu Oct  9 07:07:12 2025
     #############################################
-
-
-.. parsed-literal::
-
     {'gal_sed': '/home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED/COSMOS_MOD.list'}
     #######################################
     # It s translating SEDs to binary library #
@@ -208,7 +212,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Oct  8 07:07:10 2025
+    # CREATION_DATE Thu Oct  9 07:07:12 2025
     #############################################
 
 
@@ -244,7 +248,7 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Wed Oct  8 07:10:28 2025
+    # CREATION_DATE Thu Oct  9 07:10:30 2025
     #############################################
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
@@ -253,7 +257,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f91305ba440>
+    <rail.core.data.ModelHandle at 0x7f24a4507a00>
 
 
 
@@ -284,10 +288,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Process 0 running estimator on chunk 0 - 1,500
     Using user columns from input table assuming they are in the standard order.
     Processing 1500 objects with 6 bands
-
-
-.. parsed-literal::
-
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -312,7 +312,11 @@ data. Takes ~2 minutes to run on 1500 inputs.
     # DZ_WIN                 : 1.000000
     # MIN_THRES              : 0.020000
     # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_ABS_AGN            : -30.000000 -10.000
+
+.. parsed-literal::
+
+    000
     # MAG_REF                : 3
     # NZ_PRIOR               : -1 -2
     # Z_INTERP               : YES
@@ -368,6 +372,10 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+
+
+.. parsed-literal::
+
     AUTO_ADAPT set to NO. Using zero offsets.
 
 

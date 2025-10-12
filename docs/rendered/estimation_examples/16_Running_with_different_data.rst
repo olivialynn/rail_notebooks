@@ -46,13 +46,17 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
+      3 4670k    3  175k    0     0   279k      0  0:00:16 --:--:--  0:00:16  279k
+
+.. parsed-literal::
+
     romanrubin_train_data.hdf5
     romanrubin_test_data.hdf5
 
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  6115k      0 --:--:-- --:--:-- --:--:-- 6120k
+    100 4670k  100 4670k    0     0  5471k      0 --:--:-- --:--:-- --:--:-- 5468k
 
 
 Let’s load one of the files and look at the contents:
@@ -186,15 +190,15 @@ We can now feed this into our inform stage:
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_rd_demo_knn.pkl, inform_KNN
-    CPU times: user 14.2 s, sys: 3.11 s, total: 17.3 s
-    Wall time: 17.3 s
+    CPU times: user 13.4 s, sys: 2.74 s, total: 16.2 s
+    Wall time: 16.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f0e7c14b760>
+    <rail.core.data.ModelHandle at 0x7ff8a8cbae00>
 
 
 

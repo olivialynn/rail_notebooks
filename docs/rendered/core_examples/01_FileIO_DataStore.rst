@@ -288,7 +288,7 @@ Let’s list the data abailable to us in the DataStore:
 
     DataStore
     {  train_data:<class 'rail.core.data.PqHandle'> None, (d)
-      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
+      test_data:<class 'rail.core.data.TableHandle'> /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_validation_9816.hdf5, (wd)
     }
 
 
@@ -484,6 +484,10 @@ algorithm with the train_data:
 .. parsed-literal::
 
     Inserting handle into data store.  input: train_data, inform_knn
+
+
+.. parsed-literal::
+
     split into 7669 training and 2556 validation samples
     finding best fit sigma and NNeigh...
 
@@ -504,7 +508,7 @@ algorithm with the train_data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f48851137c0>
+    <rail.core.data.ModelHandle at 0x7f56bb57fdc0>
 
 
 
@@ -587,7 +591,7 @@ against our true redshifts from the test data:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f488516a290>
+    <matplotlib.legend.Legend at 0x7f56bb5c7dc0>
 
 
 
@@ -617,7 +621,7 @@ operate on the output files:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f4882164580>
+    <matplotlib.legend.Legend at 0x7f56bb4ee6e0>
 
 
 

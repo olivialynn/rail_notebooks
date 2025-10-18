@@ -64,22 +64,6 @@ This will load (and download if needed) two files:
     
     ztrue_file = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
 
-
-.. parsed-literal::
-
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-
-.. parsed-literal::
-
-      0 47.1M    0  427k    0     0  1113k      0  0:00:43 --:--:--  0:00:43 1110k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  48.7M      0 --:--:-- --:--:-- --:--:-- 48.7M
-
-
 .. code:: ipython3
 
     ensemble = DS.read_file(key='pdfs_data', handle_class=QPHandle, path=pdfs_file)
@@ -250,42 +234,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.396088</td>
-          <td>0.083970</td>
+          <td>4.991587</td>
+          <td>0.053469</td>
           <td>0.0</td>
-          <td>0.072394</td>
+          <td>0.068693</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>4.278137</td>
-          <td>0.084553</td>
+          <td>2.129593</td>
+          <td>0.234973</td>
           <td>0.0</td>
-          <td>0.113386</td>
+          <td>0.086585</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.784717</td>
-          <td>0.154872</td>
+          <td>0.866565</td>
+          <td>0.342486</td>
           <td>0.0</td>
-          <td>0.097172</td>
+          <td>0.144136</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.682973</td>
-          <td>0.271875</td>
+          <td>0.778127</td>
+          <td>0.464127</td>
           <td>0.0</td>
-          <td>0.085943</td>
+          <td>0.075802</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.430731</td>
-          <td>0.113625</td>
+          <td>1.771814</td>
+          <td>0.055109</td>
           <td>0.0</td>
-          <td>0.098424</td>
+          <td>0.063511</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -298,42 +282,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>1.444975</td>
-          <td>0.091326</td>
+          <td>1.497001</td>
+          <td>0.057707</td>
           <td>0.0</td>
-          <td>0.106373</td>
+          <td>0.077741</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.457212</td>
-          <td>0.024709</td>
+          <td>3.062671</td>
+          <td>0.060927</td>
           <td>0.0</td>
-          <td>0.058635</td>
+          <td>0.087177</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.941731</td>
-          <td>0.295990</td>
+          <td>0.355375</td>
+          <td>0.097501</td>
           <td>0.0</td>
-          <td>0.080685</td>
+          <td>0.077740</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>1.418925</td>
-          <td>0.072462</td>
+          <td>0.374636</td>
+          <td>0.329199</td>
           <td>0.0</td>
-          <td>0.072002</td>
+          <td>0.062170</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.212658</td>
-          <td>0.051556</td>
+          <td>1.359660</td>
+          <td>0.059366</td>
           <td>0.0</td>
-          <td>0.089958</td>
+          <td>0.103506</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -381,43 +365,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.083970</td>
-          <td>0.072394</td>
+          <td>0.053469</td>
+          <td>0.068693</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.396088</td>
+          <td>4.991587</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.084553</td>
-          <td>0.113386</td>
+          <td>0.234973</td>
+          <td>0.086585</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>4.278137</td>
+          <td>2.129593</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.154872</td>
-          <td>0.097172</td>
+          <td>0.342486</td>
+          <td>0.144136</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.784717</td>
+          <td>0.866565</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.271875</td>
-          <td>0.085943</td>
+          <td>0.464127</td>
+          <td>0.075802</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.682973</td>
+          <td>0.778127</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.113625</td>
-          <td>0.098424</td>
+          <td>0.055109</td>
+          <td>0.063511</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.430731</td>
+          <td>1.771814</td>
         </tr>
         <tr>
           <th>...</th>
@@ -429,43 +413,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.091326</td>
-          <td>0.106373</td>
+          <td>0.057707</td>
+          <td>0.077741</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.444975</td>
+          <td>1.497001</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.024709</td>
-          <td>0.058635</td>
+          <td>0.060927</td>
+          <td>0.087177</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.457212</td>
+          <td>3.062671</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.295990</td>
-          <td>0.080685</td>
+          <td>0.097501</td>
+          <td>0.077740</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.941731</td>
+          <td>0.355375</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.072462</td>
-          <td>0.072002</td>
+          <td>0.329199</td>
+          <td>0.062170</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.418925</td>
+          <td>0.374636</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.051556</td>
-          <td>0.089958</td>
+          <td>0.059366</td>
+          <td>0.103506</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.212658</td>
+          <td>1.359660</td>
         </tr>
       </tbody>
     </table>
@@ -918,7 +902,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f575486a5f0>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fce7d31e410>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1212,7 +1196,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -1431,7 +1415,7 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 

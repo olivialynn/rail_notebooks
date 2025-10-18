@@ -149,15 +149,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 
     Inserting handle into data store.  input: None, inform_DNF
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 7.59 ms, sys: 2.97 ms, total: 10.6 ms
-    Wall time: 10.3 ms
+    CPU times: user 7.06 ms, sys: 3 ms, total: 10.1 ms
+    Wall time: 9.85 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fad5eeaca60>
+    <rail.core.data.ModelHandle at 0x7f808ed8bee0>
 
 
 
@@ -199,15 +199,15 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
       alpha = np.sqrt(1.0 - NIP**2)
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
       inverse_distances = 1.0 / distances
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
       wmatrix = inverse_distances / row_sum
 
 
@@ -220,15 +220,15 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:418: RuntimeWarning: invalid value encountered in sqrt
       alpha = np.sqrt(1.0 - NIP**2)
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:459: RuntimeWarning: divide by zero encountered in divide
       inverse_distances = 1.0 / distances
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:467: RuntimeWarning: invalid value encountered in divide
       wmatrix = inverse_distances / row_sum
 
 
@@ -240,8 +240,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 1min 17s, sys: 1.5 s, total: 1min 18s
-    Wall time: 1min 18s
+    CPU times: user 1min 14s, sys: 876 ms, total: 1min 14s
+    Wall time: 1min 14s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -418,8 +418,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 1min 14s, sys: 1.52 s, total: 1min 16s
-    Wall time: 1min 16s
+    CPU times: user 1min 12s, sys: 854 ms, total: 1min 13s
+    Wall time: 1min 13s
 
 
 .. code:: ipython3
@@ -544,7 +544,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fad37924850>
+    <matplotlib.legend.Legend at 0x7f80768d9d80>
 
 
 

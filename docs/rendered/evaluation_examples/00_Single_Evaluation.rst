@@ -86,15 +86,15 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0 47.1M    0  201k    0     0   321k      0  0:02:29 --:--:--  0:02:29  321k
+     48 47.1M   48 22.9M    0     0  22.6M      0  0:00:02  0:00:01  0:00:01 22.6M
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  32.5M      0  0:00:01  0:00:01 --:--:-- 32.5M
+    100 47.1M  100 47.1M    0     0  35.7M      0  0:00:01  0:00:01 --:--:-- 35.7M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we

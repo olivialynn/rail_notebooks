@@ -53,14 +53,14 @@ for bpz demo data:
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   914k      0 --:--:-- --:--:-- --:--:--  914k
+    100  450k  100  450k    0     0   632k      0 --:--:-- --:--:-- --:--:--  632k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   182k      0 --:--:-- --:--:-- --:--:--  182k
+    100 83848  100 83848    0     0   218k      0 --:--:-- --:--:-- --:--:--  219k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -71,7 +71,7 @@ for bpz demo data:
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   165k      0 --:--:-- --:--:-- --:--:--  165k
+    100 83848  100 83848    0     0   162k      0 --:--:-- --:--:-- --:--:--  162k
 
 
 The files must be untarred and moved, as well:
@@ -211,15 +211,15 @@ specify those numbers of the three broad types.
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.5679393  2.23510956 0.11549469]
     Inserting handle into data store.  model_bpz_custom_sed_prior: inprogress_test_9816_customsed_demo_prior.pkl, bpz_custom_sed_prior
-    CPU times: user 9.8 s, sys: 310 μs, total: 9.8 s
-    Wall time: 9.8 s
+    CPU times: user 9.54 s, sys: 3.53 ms, total: 9.55 s
+    Wall time: 9.54 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7efff494a410>
+    <rail.core.data.ModelHandle at 0x7fef185c3a90>
 
 
 
@@ -329,7 +329,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7eff9e59a950>
+    <matplotlib.legend.Legend at 0x7feec21ea950>
 
 
 
@@ -879,15 +879,15 @@ later use) for the first time.
 
 .. parsed-literal::
 
-    CPU times: user 26 s, sys: 131 ms, total: 26.1 s
-    Wall time: 26.1 s
+    CPU times: user 26 s, sys: 147 ms, total: 26.2 s
+    Wall time: 26.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7eff9de85b10>
+    <rail.core.data.QPHandle at 0x7feec1e69540>
 
 
 
@@ -917,7 +917,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7eff9de85e40>
+    <matplotlib.legend.Legend at 0x7feec1f40130>
 
 
 
@@ -1048,7 +1048,7 @@ likelihood or posterior shape:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7eff9e33f490>
+    <matplotlib.legend.Legend at 0x7feec1d6b490>
 
 
 

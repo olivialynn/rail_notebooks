@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20251021T065547
+    /home/runner/.cache/lephare/runs/20251022T065623
 
 
 Here we load previously created synthetic data
@@ -65,7 +65,7 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -75,22 +75,22 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -156,13 +156,13 @@ takes ~3-4 minutes.
 .. parsed-literal::
 
     (VERBOSE, NO)
-    WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
-    We have 2 instead of 8
-    Use default value 0,0 for all filters 
 
 
 .. parsed-literal::
 
+    WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
+    We have 2 instead of 8
+    Use default value 0,0 for all filters 
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -174,7 +174,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Tue Oct 21 07:06:20 2025
+    # CREATION_DATE Wed Oct 22 07:06:53 2025
     #############################################
     #######################################
     # It s translating SEDs to binary library #
@@ -208,7 +208,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Tue Oct 21 07:06:20 2025
+    # CREATION_DATE Wed Oct 22 07:06:54 2025
     #############################################
 
 
@@ -244,7 +244,7 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Tue Oct 21 07:09:42 2025
+    # CREATION_DATE Wed Oct 22 07:10:15 2025
     #############################################
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
@@ -277,9 +277,7 @@ takes ~3-4 minutes.
     # DZ_WIN                 : 1.000000
     # MIN_THRES              : 0.020000
     # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000
-    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
-    000
+    # MAG_ABS_AGN            : -30.000000 -10.000000
     # MAG_REF                : 3
     # NZ_PRIOR               : -1 -1
     # Z_INTERP               : YES
@@ -334,13 +332,15 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    
+    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8e5d4e3dc0>
+    <rail.core.data.ModelHandle at 0x7f53f38fa980>
 
 
 

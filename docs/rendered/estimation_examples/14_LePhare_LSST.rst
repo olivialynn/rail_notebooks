@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20251023T065549
+    /home/runner/.cache/lephare/runs/20251024T065334
 
 
 Here we load previously created synthetic data
@@ -69,12 +69,17 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_r.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_r.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -90,11 +95,6 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -144,6 +144,10 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729    0.5879  -22.1705    4.5353       0      0.7539      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178    0.7624  -22.6171    4.5165       0      0.8669      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512    0.7770  -22.9043    4.5084       0      0.9744      1.0000
+
+
+.. parsed-literal::
+
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -160,10 +164,6 @@ takes ~3-4 minutes.
 .. parsed-literal::
 
     (VERBOSE, NO)
-
-
-.. parsed-literal::
-
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
@@ -178,8 +178,12 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Thu Oct 23 07:06:23 2025
+    # CREATION_DATE Fri Oct 24 07:03:58 2025
     #############################################
+
+
+.. parsed-literal::
+
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -212,7 +216,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Thu Oct 23 07:06:24 2025
+    # CREATION_DATE Fri Oct 24 07:03:58 2025
     #############################################
 
 
@@ -230,6 +234,10 @@ takes ~3-4 minutes.
     #######################################
     Number of SED in the list 30
     (VERBOSE, NO)
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -244,16 +252,10 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Thu Oct 23 07:09:45 2025
+    # CREATION_DATE Fri Oct 24 07:06:53 2025
     #############################################
-
-
-.. parsed-literal::
-
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
-    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
-    
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -333,6 +335,12 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
+    
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
@@ -340,7 +348,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f44d8274610>
+    <rail.core.data.ModelHandle at 0x7f9808d706a0>
 
 
 
@@ -371,10 +379,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Process 0 running estimator on chunk 0 - 1,500
     Using user columns from input table assuming they are in the standard order.
     Processing 1500 objects with 6 bands
-
-
-.. parsed-literal::
-
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -454,13 +458,17 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-    # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
-    
 
 
 .. parsed-literal::
 
+    # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
+    
     Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1703.4709 470.1358
+
+
+.. parsed-literal::
+
     Source 425 // Band 5 removed to improve the chi2, with old and new chi2 1233.4076 0.0679
     Source 449 // Band 0 removed to improve the chi2, with old and new chi2 1769.2671 535.9139
     Source 449 // Band 1 removed to improve the chi2, with old and new chi2 1769.2671 233.6168

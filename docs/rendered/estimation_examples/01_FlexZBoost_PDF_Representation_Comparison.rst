@@ -78,43 +78,23 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:23] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:23] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:23] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:23] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:32] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:23] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -122,39 +102,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:24] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:24] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:24] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:33] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:34] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:24] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -162,19 +122,15 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:35] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:25] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:35] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:25] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:35] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:25] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -182,15 +138,7 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:36] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:36] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:36] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:25] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -198,7 +146,15 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:36] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:26] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:26] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:26] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -206,11 +162,7 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:37] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:37] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:26] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -218,19 +170,11 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:37] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:27] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:37] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:38] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:27] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -238,15 +182,11 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:38] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:27] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:38] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:38] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:27] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -254,7 +194,11 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:39] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:28] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:28] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -262,7 +206,71 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:12:39] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:28] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:28] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:29] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:29] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:29] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:29] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:30] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:30] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:30] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:30] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:31] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:09:31] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -285,43 +293,23 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:27] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:17] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:27] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:17] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:27] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:17] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:27] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:17] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:27] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:28] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:28] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:28] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:28] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:17] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -329,39 +317,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:29] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:18] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:29] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:18] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:29] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:18] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:29] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:30] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:18] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -369,39 +337,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:19] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:19] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:19] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:32] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:32] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:19] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -409,39 +357,19 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:20] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:20] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:33] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:20] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:33] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:34] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:20] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -449,11 +377,95 @@ file name ``demo_FZB_model.pkl``.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:35] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:21] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:13:35] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:21] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:21] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:21] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:22] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:22] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:22] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:22] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:23] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:23] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:23] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:23] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:24] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:24] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:24] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:24] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:25] WARNING: /workspace/src/learner.cc:790: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [07:10:25] WARNING: /workspace/src/learner.cc:790: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -462,15 +474,15 @@ file name ``demo_FZB_model.pkl``.
 .. parsed-literal::
 
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 56.4 s, sys: 1.01 s, total: 57.4 s
-    Wall time: 1min 7s
+    CPU times: user 52.9 s, sys: 870 ms, total: 53.8 s
+    Wall time: 1min 4s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fd9e46ca860>
+    <rail.core.data.ModelHandle at 0x7fa62bfe7190>
 
 
 
@@ -526,13 +538,9 @@ basis functions.
 
     Process 0 running estimator on chunk 20,000 - 20,449
     Process 0 estimating PZ PDF for rows 20,000 - 20,449
-
-
-.. parsed-literal::
-
     File Size is : 3199236 bytes
-    CPU times: user 563 ms, sys: 64.9 ms, total: 628 ms
-    Wall time: 1.22 s
+    CPU times: user 553 ms, sys: 53.8 ms, total: 607 ms
+    Wall time: 1.2 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -555,8 +563,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 8.65 s, sys: 16.8 ms, total: 8.67 s
-    Wall time: 8.33 s
+    CPU times: user 8.16 s, sys: 13 ms, total: 8.17 s
+    Wall time: 7.87 s
 
 
 .. code:: ipython3
@@ -567,8 +575,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 10.8 s, sys: 49 ms, total: 10.8 s
-    Wall time: 10.5 s
+    CPU times: user 10.2 s, sys: 67.3 ms, total: 10.3 s
+    Wall time: 9.95 s
 
 
 Plotting median values.
@@ -605,7 +613,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    10.5 s ± 36.1 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    10 s ± 9.21 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 Now we’ll repeat the experiment using ``qp.interp`` storage. Again,
@@ -667,8 +675,8 @@ experiment, we used 35 basis functions.
 .. parsed-literal::
 
     File Size is : 49576854 bytes
-    CPU times: user 12.2 s, sys: 202 ms, total: 12.4 s
-    Wall time: 12 s
+    CPU times: user 11.5 s, sys: 238 ms, total: 11.7 s
+    Wall time: 11.5 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -691,7 +699,7 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    867 ms ± 17.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    754 ms ± 6.31 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 .. code:: ipython3
@@ -702,8 +710,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 196 ms, sys: 86.2 ms, total: 282 ms
-    Wall time: 282 ms
+    CPU times: user 201 ms, sys: 142 ms, total: 344 ms
+    Wall time: 343 ms
 
 
 Plotting median values.
@@ -739,7 +747,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    330 ms ± 3.63 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    436 ms ± 3.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 We’ll clean up the files that were produced: the model pickle file, and

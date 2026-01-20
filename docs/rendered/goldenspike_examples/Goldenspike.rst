@@ -65,7 +65,7 @@ Imports
     )
     from rail.creation.degraders.quantityCut import QuantityCut
     from rail.creation.engines.flowEngine import FlowModeler, FlowCreator, FlowPosterior
-    from rail.core.data import TableHandle, Hdf5Handle
+    from rail.core.data import TableHandle
     from rail.core.stage import RailStage
     from rail.tools.table_tools import ColumnMapper, TableConverter
     
@@ -178,161 +178,157 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    (0) 17.6137
+    (0) 21.6113
 
 
 .. parsed-literal::
 
-    (1) 1.4262
+    (1) 4.8595
 
 
 .. parsed-literal::
 
-    (2) -0.8627
+    (2) 2.8853
 
 
 .. parsed-literal::
 
-    (3) -0.1395
+    (3) 6.2401
 
 
 .. parsed-literal::
 
-    (4) -1.6230
+    (4) 0.4821
 
 
 .. parsed-literal::
 
-    (5) -1.6476
+    (5) 3402823273761818485311871060541440.0000
 
 
 .. parsed-literal::
 
-    (6) -1.4887
+    (6) 0.0002
 
 
 .. parsed-literal::
 
-    (7) -2.9610
+    (7) 0.4176
 
 
 .. parsed-literal::
 
-    (8) -2.2657
+    (8) -1.5908
 
 
 .. parsed-literal::
 
-    (9) -1.9334
+    (9) -0.5265
 
 
 .. parsed-literal::
 
-    (10) -2.1435
+    (10) -1.5568
 
 
 .. parsed-literal::
 
-    (11) -3.5972
+    (11) -1.3779
 
 
 .. parsed-literal::
 
-    (12) -3.6541
+    (12) -2.1522
 
 
 .. parsed-literal::
 
-    (13) -2.4199
+    (13) -0.7772
 
 
 .. parsed-literal::
 
-    (14) -3.1701
+    (14) 3402823273761818485311871060541440.0000
 
 
 .. parsed-literal::
 
-    (15) -3.4888
+    (15) -2.2924
 
 
 .. parsed-literal::
 
-    (16) -3.5407
+    (16) -0.8432
 
 
 .. parsed-literal::
 
-    (17) -2.9666
+    (17) -2.5264
 
 
 .. parsed-literal::
 
-    (18) -3.9360
+    (18) -2.7623
 
 
 .. parsed-literal::
 
-    (19) -3.8658
+    (19) -2.4564
 
 
 .. parsed-literal::
 
-    (20) -3.7625
+    (20) -2.5878
 
 
 .. parsed-literal::
 
-    (21) -4.0082
+    (21) -3.2968
 
 
 .. parsed-literal::
 
-    (22) -4.1543
+    (22) -1.9988
 
 
 .. parsed-literal::
 
-    (23) -3.8306
+    (23) -3.4888
 
 
 .. parsed-literal::
 
-    (24) -3.0881
+    (24) -3.5754
 
 
 .. parsed-literal::
 
-    (25) -3.8606
+    (25) -3.4277
 
 
 .. parsed-literal::
 
-    (26) -4.6545
+    (26) -2.5471
 
 
 .. parsed-literal::
 
-    (27) -4.4266
+    (27) -3.3801
 
 
 .. parsed-literal::
 
-    (28) -3.9326
+    (28) -3.8286
 
 
 .. parsed-literal::
 
-    (29) -4.0385
+    (29) -3.5420
 
 
 .. parsed-literal::
 
-    (30) -4.1573
-
-
-.. parsed-literal::
-
+    (30) -2.6855
     Inserting handle into data store.  model_flow_modeler: /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/inprogress_trained_flow.pkl, flow_modeler
 
 
@@ -340,7 +336,7 @@ Now we will create the flow and train it
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f5d58bc8bb0>
+    <rail.tools.flow_handle.FlowHandle at 0x7f9a99e983d0>
 
 
 
@@ -419,12 +415,6 @@ More details about the degraders are available in the
     )
 
 
-
-.. parsed-literal::
-
-    Inserting handle into data store.  model: <class 'rail.tools.flow_handle.FlowHandle'> /home/runner/work/rail_notebooks/rail_notebooks/rail/examples/goldenspike_examples/data/trained_flow.pkl, (wd), flow_creator_train
-
-
 .. code:: ipython3
 
     train_data_orig = flow_creator_train.sample(150, 1235)
@@ -499,83 +489,83 @@ quick writeout of the columns:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.952719</td>
-          <td>26.619179</td>
-          <td>0.413308</td>
-          <td>26.761279</td>
-          <td>0.173191</td>
-          <td>25.172795</td>
-          <td>0.037870</td>
-          <td>24.092996</td>
-          <td>0.023870</td>
-          <td>23.186844</td>
-          <td>0.020585</td>
-          <td>22.838460</td>
-          <td>0.033810</td>
+          <td>0.435034</td>
+          <td>25.903435</td>
+          <td>0.233527</td>
+          <td>25.609573</td>
+          <td>0.063497</td>
+          <td>24.735930</td>
+          <td>0.025797</td>
+          <td>24.385818</td>
+          <td>0.030818</td>
+          <td>24.105335</td>
+          <td>0.045993</td>
+          <td>24.055890</td>
+          <td>0.099261</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.242703</td>
-          <td>25.742569</td>
-          <td>0.204291</td>
-          <td>25.729806</td>
-          <td>0.070619</td>
-          <td>25.280733</td>
-          <td>0.041670</td>
-          <td>24.599625</td>
-          <td>0.037216</td>
-          <td>23.939355</td>
-          <td>0.039698</td>
-          <td>23.465508</td>
-          <td>0.058942</td>
+          <td>0.548779</td>
+          <td>27.280719</td>
+          <td>0.668775</td>
+          <td>24.365029</td>
+          <td>0.021327</td>
+          <td>22.340394</td>
+          <td>0.005823</td>
+          <td>21.086317</td>
+          <td>0.005265</td>
+          <td>20.525250</td>
+          <td>0.005354</td>
+          <td>20.167223</td>
+          <td>0.005872</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.288323</td>
-          <td>24.964743</td>
-          <td>0.105002</td>
-          <td>24.724524</td>
-          <td>0.029075</td>
-          <td>24.190278</td>
-          <td>0.016243</td>
-          <td>23.811567</td>
-          <td>0.018775</td>
-          <td>23.468351</td>
-          <td>0.026232</td>
-          <td>23.073676</td>
-          <td>0.041630</td>
+          <td>0.355870</td>
+          <td>27.107808</td>
+          <td>0.592721</td>
+          <td>25.274161</td>
+          <td>0.047180</td>
+          <td>24.149218</td>
+          <td>0.015709</td>
+          <td>23.661401</td>
+          <td>0.016572</td>
+          <td>23.329905</td>
+          <td>0.023267</td>
+          <td>23.195663</td>
+          <td>0.046387</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.112897</td>
-          <td>25.793041</td>
-          <td>0.213084</td>
-          <td>25.126657</td>
-          <td>0.041407</td>
-          <td>25.017405</td>
-          <td>0.033012</td>
-          <td>24.749948</td>
-          <td>0.042518</td>
-          <td>24.954134</td>
-          <td>0.097449</td>
-          <td>24.886825</td>
-          <td>0.202808</td>
+          <td>0.624946</td>
+          <td>25.055148</td>
+          <td>0.113587</td>
+          <td>25.018314</td>
+          <td>0.037630</td>
+          <td>24.513521</td>
+          <td>0.021294</td>
+          <td>24.152911</td>
+          <td>0.025142</td>
+          <td>24.294233</td>
+          <td>0.054390</td>
+          <td>24.226829</td>
+          <td>0.115249</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.546981</td>
-          <td>26.142925</td>
-          <td>0.284035</td>
-          <td>26.114759</td>
-          <td>0.099089</td>
-          <td>24.999978</td>
-          <td>0.032509</td>
-          <td>24.408098</td>
-          <td>0.031428</td>
-          <td>24.327648</td>
-          <td>0.056028</td>
-          <td>23.974794</td>
-          <td>0.092443</td>
+          <td>0.729438</td>
+          <td>27.905618</td>
+          <td>1.000672</td>
+          <td>26.339680</td>
+          <td>0.120558</td>
+          <td>25.690544</td>
+          <td>0.059952</td>
+          <td>24.810958</td>
+          <td>0.044883</td>
+          <td>24.653418</td>
+          <td>0.074776</td>
+          <td>24.348776</td>
+          <td>0.128126</td>
         </tr>
       </tbody>
     </table>
@@ -658,29 +648,13 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 41  73  88 126] have an integral of 0.
-      warnings.warn(
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
-      new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/qp/interp_pdf.py:89: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 41,  41,  41,  41,  41,  41,  41,  41,  41,  41,  41,  41,  41,
-            41,  41,  41,  41,  41,  41,  41,  41,  73,  73,  73,  73,  73,
-            73,  73,  73,  73,  73,  73,  73,  73,  73,  73,  73,  73,  73,
-            73,  73,  73,  88,  88,  88,  88,  88,  88,  88,  88,  88,  88,
-            88,  88,  88,  88,  88,  88,  88,  88,  88,  88,  88, 126, 126,
-           126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126,
-           126, 126, 126, 126, 126, 126]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
-           17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
-           13, 14, 15, 16, 17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,
-            9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,  0,  1,  2,  3,  4,
-            5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]))
-      warnings.warn(
 
 
 .. code:: ipython3
 
-    test_data_handle = Hdf5Handle('input')
+    test_data_handle = TableHandle('input')
     od = OrderedDict()
     od['photometry'] = test_data_orig.data.to_records()
     test_data_handle.set_data(od)
@@ -744,83 +718,83 @@ For the test sample we will:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.692669</td>
-          <td>27.874756</td>
-          <td>0.982203</td>
-          <td>26.734041</td>
-          <td>0.169227</td>
-          <td>26.410646</td>
-          <td>0.113064</td>
-          <td>25.716154</td>
-          <td>0.099961</td>
-          <td>25.577545</td>
-          <td>0.167170</td>
-          <td>25.442592</td>
-          <td>0.319762</td>
+          <td>1.943550</td>
+          <td>27.638556</td>
+          <td>0.847918</td>
+          <td>26.778751</td>
+          <td>0.175778</td>
+          <td>26.726763</td>
+          <td>0.148646</td>
+          <td>26.455131</td>
+          <td>0.188991</td>
+          <td>25.914196</td>
+          <td>0.221980</td>
+          <td>25.554871</td>
+          <td>0.349504</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.721994</td>
-          <td>23.356383</td>
-          <td>0.025748</td>
-          <td>22.707621</td>
-          <td>0.006918</td>
-          <td>21.968698</td>
-          <td>0.005452</td>
-          <td>21.184774</td>
-          <td>0.005311</td>
-          <td>20.949561</td>
-          <td>0.005700</td>
-          <td>20.767341</td>
-          <td>0.007214</td>
+          <td>1.964463</td>
+          <td>25.589794</td>
+          <td>0.179659</td>
+          <td>25.553459</td>
+          <td>0.060420</td>
+          <td>25.307591</td>
+          <td>0.042674</td>
+          <td>25.230384</td>
+          <td>0.065127</td>
+          <td>24.893355</td>
+          <td>0.092386</td>
+          <td>24.610029</td>
+          <td>0.160426</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.262085</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>28.118049</td>
-          <td>0.511955</td>
-          <td>27.200149</td>
-          <td>0.221882</td>
-          <td>27.018839</td>
-          <td>0.300916</td>
-          <td>27.851583</td>
-          <td>0.927617</td>
-          <td>26.665047</td>
-          <td>0.782218</td>
+          <td>1.377230</td>
+          <td>25.448819</td>
+          <td>0.159395</td>
+          <td>24.462945</td>
+          <td>0.023185</td>
+          <td>23.749138</td>
+          <td>0.011523</td>
+          <td>22.889852</td>
+          <td>0.009338</td>
+          <td>22.410438</td>
+          <td>0.011104</td>
+          <td>14.900721</td>
+          <td>0.005001</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.703162</td>
-          <td>27.769909</td>
-          <td>0.921041</td>
-          <td>26.311129</td>
-          <td>0.117604</td>
-          <td>25.559267</td>
-          <td>0.053358</td>
-          <td>24.864865</td>
-          <td>0.047083</td>
-          <td>24.215845</td>
-          <td>0.050734</td>
-          <td>24.031016</td>
-          <td>0.097120</td>
+          <td>1.778730</td>
+          <td>26.122561</td>
+          <td>0.279392</td>
+          <td>26.155280</td>
+          <td>0.102664</td>
+          <td>25.919199</td>
+          <td>0.073414</td>
+          <td>25.649345</td>
+          <td>0.094272</td>
+          <td>25.080715</td>
+          <td>0.108863</td>
+          <td>25.324959</td>
+          <td>0.290965</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.497056</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>26.563070</td>
-          <td>0.146214</td>
-          <td>25.481600</td>
-          <td>0.049802</td>
-          <td>24.850461</td>
-          <td>0.046485</td>
-          <td>24.472652</td>
-          <td>0.063718</td>
-          <td>24.249670</td>
-          <td>0.117563</td>
+          <td>1.298723</td>
+          <td>29.100352</td>
+          <td>1.860164</td>
+          <td>26.686129</td>
+          <td>0.162459</td>
+          <td>26.318630</td>
+          <td>0.104334</td>
+          <td>25.469288</td>
+          <td>0.080452</td>
+          <td>24.733401</td>
+          <td>0.080248</td>
+          <td>24.039220</td>
+          <td>0.097821</td>
         </tr>
       </tbody>
     </table>
@@ -892,8 +866,18 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
+    using 59 galaxies in calculation
+    best values for fo and kt:
+    [1.]
+    [0.3]
+    minimizing for type 0
+    best fit z0, alpha, km for type 0: [0.32126008 1.58007795 0.05819656]
     Inserting handle into data store.  model_inform_bpz: inprogress_bpz.pkl, inform_bpz
-    split into 50 training and 17 validation samples
+
+
+.. parsed-literal::
+
+    split into 44 training and 15 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -902,7 +886,7 @@ an SED template library for a template-fitting or hybrid estimator.
     
     
     
-    best fit values are sigma=0.075 and numneigh=4
+    best fit values are sigma=0.075 and numneigh=7
     
     
     
@@ -914,154 +898,48 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:30] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/joblib/externals/loky/backend/fork_exec.py:38: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+      pid = os.fork()
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:54] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:55] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:31] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
@@ -1081,150 +959,38 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:58] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:58] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:58] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:58] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:59] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:59] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:59] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
+      warnings.warn(smsg, UserWarning)
+    /opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [07:42:59] WARNING: /workspace/src/learner.cc:740: 
     Parameters: { "silent" } are not used.
     
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:34] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/xgboost/training.py:199: UserWarning: [08:00:35] WARNING: /workspace/src/learner.cc:790: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
+      warnings.warn(smsg, UserWarning)
 
 
 .. parsed-literal::
@@ -1236,7 +1002,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f5d3419ae60>
+    <rail.core.data.ModelHandle at 0x7f9a971abca0>
 
 
 
@@ -1301,13 +1067,8 @@ using the training data. See `Izbicki & Lee
 
 .. parsed-literal::
 
-    Inserting handle into data store.  test_data: None, test_FZBoost
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_test_FZBoost: inprogress_output_test_FZBoost.hdf5, test_FZBoost
 
 
@@ -1373,19 +1134,21 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  truth: None, bpz_dist_to_point
     Requested metrics: ['cdeloss', 'pit', 'brier']
     Inserting handle into data store.  output_bpz_dist_to_point: inprogress_output_bpz_dist_to_point.hdf5, bpz_dist_to_point
     Inserting handle into data store.  summary_bpz_dist_to_point: inprogress_summary_bpz_dist_to_point.hdf5, bpz_dist_to_point
     Inserting handle into data store.  single_distribution_summary_bpz_dist_to_point: inprogress_single_distribution_summary_bpz_dist_to_point.hdf5, bpz_dist_to_point
+    Warning.  Failed to convert column No conversion path for dtype: dtype('<U16')
     Requested metrics: ['cdeloss', 'pit', 'brier']
     Inserting handle into data store.  output_fzboost_dist_to_point: inprogress_output_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
     Inserting handle into data store.  summary_fzboost_dist_to_point: inprogress_summary_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
     Inserting handle into data store.  single_distribution_summary_fzboost_dist_to_point: inprogress_single_distribution_summary_fzboost_dist_to_point.hdf5, fzboost_dist_to_point
+    Warning.  Failed to convert column No conversion path for dtype: dtype('<U16')
     Requested metrics: ['cdeloss', 'pit', 'brier']
     Inserting handle into data store.  output_knn_dist_to_point: inprogress_output_knn_dist_to_point.hdf5, knn_dist_to_point
     Inserting handle into data store.  summary_knn_dist_to_point: inprogress_summary_knn_dist_to_point.hdf5, knn_dist_to_point
     Inserting handle into data store.  single_distribution_summary_knn_dist_to_point: inprogress_single_distribution_summary_knn_dist_to_point.hdf5, knn_dist_to_point
+    Warning.  Failed to convert column No conversion path for dtype: dtype('<U16')
 
 
 .. code:: ipython3
@@ -1397,15 +1160,15 @@ dictionary, keyed by the name of the estimator.
 
 .. parsed-literal::
 
-    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f5d342c25f0>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f5d58bc8370>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f5cfce26080>},
-     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f5cfce26f20>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f5cfce26830>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f5cfce24cd0>},
-     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f5d54139270>,
-      'summary': <rail.core.data.Hdf5Handle at 0x7f5d04447a00>,
-      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f5d04445d80>}}
+    {'bpz': {'output': <rail.core.data.Hdf5Handle at 0x7f9a76d96950>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f9a74717e50>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f9a74716830>},
+     'fzboost': {'output': <rail.core.data.Hdf5Handle at 0x7f9a83879570>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f9ae1551990>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f9ae1553610>},
+     'knn': {'output': <rail.core.data.Hdf5Handle at 0x7f9ae1553b20>,
+      'summary': <rail.core.data.Hdf5Handle at 0x7f9a74715510>,
+      'single_distribution_summary': <rail.core.data.QPDictHandle at 0x7f9ae158dfc0>}}
 
 
 
@@ -1456,8 +1219,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.942038</td>
-          <td>213.940817</td>
+          <td>-0.794232</td>
+          <td>171.890208</td>
         </tr>
       </tbody>
     </table>
@@ -1500,8 +1263,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.932817</td>
-          <td>185.396585</td>
+          <td>0.600896</td>
+          <td>388.047609</td>
         </tr>
       </tbody>
     </table>
@@ -1544,8 +1307,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.882924</td>
-          <td>234.997914</td>
+          <td>4.082261</td>
+          <td>793.408846</td>
         </tr>
       </tbody>
     </table>
@@ -1594,7 +1357,7 @@ First we make the stages, then execute them, then plot the output.
 
 
 
-.. image:: ../../../docs/rendered/goldenspike_examples/Goldenspike_files/../../../docs/rendered/goldenspike_examples/Goldenspike_47_0.png
+.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_47_0.png
 
 
 .. code:: ipython3
@@ -1604,7 +1367,7 @@ First we make the stages, then execute them, then plot the output.
 
 
 
-.. image:: ../../../docs/rendered/goldenspike_examples/Goldenspike_files/../../../docs/rendered/goldenspike_examples/Goldenspike_48_0.png
+.. image:: ../../../docs/rendered/goldenspike_examples/goldenspike_files/../../../docs/rendered/goldenspike_examples/goldenspike_48_0.png
 
 
 Convert this to a ``ceci`` Pipeline
@@ -1683,30 +1446,30 @@ objects between them, we can build a ``ceci`` Pipeline.
        'test_FZBoost': <Job test_FZBoost>,
        'point_estimate_test': <Job point_estimate_test>,
        'naive_stack_test': <Job naive_stack_test>},
-      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f5d6c1637f0>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f5d54138b50>,
-       <rail.creation.engines.flowEngine.FlowCreator at 0x7f5d54138640>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f5d541389a0>,
-       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f5d54138160>,
-       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f5d541388e0>,
+      [<rail.creation.engines.flowEngine.FlowModeler at 0x7f9b00fe2710>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f9a97b5eda0>,
+       <rail.creation.engines.flowEngine.FlowCreator at 0x7f9a97b5ee90>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f9a97b5de40>,
+       <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f9a97b5e770>,
+       <rail.creation.degraders.spectroscopic_degraders.InvRedshiftIncompleteness at 0x7f9a97b5d8d0>,
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f5d54138910>,
-       <rail.tools.table_tools.TableConverter at 0x7f5d54139570>,
+       <rail.creation.degraders.spectroscopic_degraders.LineConfusion at 0x7f9a97b5e140>,
+       <rail.tools.table_tools.TableConverter at 0x7f9a97b5ea10>,
        Degrader that applies the following cuts to a pandas DataFrame:
        {column: (min, max), ...}
        {'mag_i_lsst': (-inf, 25.0)},
        Stage that applies remaps the following column names in a pandas DataFrame:
        f{str(self.config.columns)},
-       <rail.tools.table_tools.TableConverter at 0x7f5d540fb5b0>,
-       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f5d5413bfa0>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f5d04ea06a0>,
-       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f5d540eb160>,
-       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f5d04e2b670>,
-       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f5d04e2b6d0>,
-       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f5d04e2aa70>,
-       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f5cfce24040>,
-       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f5cfce276a0>]),
+       <rail.tools.table_tools.TableConverter at 0x7f9a97b5e7d0>,
+       <rail.estimation.algos.bpz_lite.BPZliteInformer at 0x7f9a83879ba0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighInformer at 0x7f9a83879a50>,
+       <rail.estimation.algos.flexzboost.FlexZBoostInformer at 0x7f9a838797e0>,
+       <rail.estimation.algos.bpz_lite.BPZliteEstimator at 0x7f9a747152a0>,
+       <rail.estimation.algos.k_nearneigh.KNearNeighEstimator at 0x7f9a74715810>,
+       <rail.estimation.algos.flexzboost.FlexZBoostEstimator at 0x7f9a747157e0>,
+       <rail.estimation.algos.point_est_hist.PointEstHistSummarizer at 0x7f9ae15513c0>,
+       <rail.estimation.algos.naive_stack.NaiveStackSummarizer at 0x7f9ae1551600>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1742,7 +1505,7 @@ Read back the pipeline and run it
 
 .. parsed-literal::
 
-    Job flow_modeler has completed successfully in 1 minutes, 36.1 seconds
+    Job flow_modeler has completed successfully in 1 minutes, 21.1 seconds seconds !
 
 
 .. parsed-literal::

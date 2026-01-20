@@ -57,47 +57,47 @@ magnitudes and the non-detect magnitude errors replaced with a value of
 1.0. The config parameters that can be set by the user for
 ``CMNNInformer`` are:
 
--  bands: list of the band names that should be present in the input
-   data.
--  err_bands: list of the magnitude error column names that should be
-   present in the input data.
--  redshift_col: a string giving the name for the redshift column
-   present in the input data.
--  mag_limits: a dictionary with keys that match those in bands and a
-   float with the 1 sigma limiting magnitude for each band.
--  nondetect_val: float or np.nan, the value indicating a non-detection,
-   which will be replaced by the values in mag_limits.
--  nondetect_replace: bool, if set to ``False`` (the default) this
-   option ignores colors with non-detected values in the Mahalanobis
-   distance calculation, with a corresponding drop in the degrees of
-   freedom value. If set to ``True``, the method will replace
-   non-detections with the 1-sigma limiting magnitudes specified via
-   ``mag_limits`` (or default 1-sigma limits if not supplied), and will
-   use all colors in the Mahalanobis distance calculation.
+- bands: list of the band names that should be present in the input
+  data.
+- err_bands: list of the magnitude error column names that should be
+  present in the input data.
+- redshift_col: a string giving the name for the redshift column present
+  in the input data.
+- mag_limits: a dictionary with keys that match those in bands and a
+  float with the 1 sigma limiting magnitude for each band.
+- nondetect_val: float or np.nan, the value indicating a non-detection,
+  which will be replaced by the values in mag_limits.
+- nondetect_replace: bool, if set to ``False`` (the default) this option
+  ignores colors with non-detected values in the Mahalanobis distance
+  calculation, with a corresponding drop in the degrees of freedom
+  value. If set to ``True``, the method will replace non-detections with
+  the 1-sigma limiting magnitudes specified via ``mag_limits`` (or
+  default 1-sigma limits if not supplied), and will use all colors in
+  the Mahalanobis distance calculation.
 
 The parameters that can be set via the config_params in
 ``CMNNEstimator`` are described in brief below:
 
--  bands, err_bands, redshift_col, mag_limits are all the same as
-   described above for CMNNInformer.
--  ppf_value: float, usually 0.68 or 0.95, which sets the value of the
-   PPF used in the Mahalanobis distance calculation.
--  selection_mode: int, selects how the central value of the Gaussian
-   PDF is calculated in the algorithm, if set to **0** randomly chooses
-   from set within the Mahalanobis distance, if set to **1** chooses the
-   nearest neighbor point, if set to **2** adds a distance weight to the
-   random choice.
--  min_n: int, the minimum number of training galaxies to use.
--  min_thresh: float, the minimum threshold cutoff. Values smaller than
-   this threshold value will be ignored.
--  min_dist: float, the minimum Mahalanobis distance. Values smaller
-   than this will be ignored.
--  bad_redshift_val: float, in the unlikely case that there are not
-   enough training galaxies, this central redshift will be assigned to
-   galaxies.
--  bad_redshift_err: float, in the unlikely case that there are not
-   enough training galaxies, this Gaussian width will be assigned to
-   galaxies.
+- bands, err_bands, redshift_col, mag_limits are all the same as
+  described above for CMNNInformer.
+- ppf_value: float, usually 0.68 or 0.95, which sets the value of the
+  PPF used in the Mahalanobis distance calculation.
+- selection_mode: int, selects how the central value of the Gaussian PDF
+  is calculated in the algorithm, if set to **0** randomly chooses from
+  set within the Mahalanobis distance, if set to **1** chooses the
+  nearest neighbor point, if set to **2** adds a distance weight to the
+  random choice.
+- min_n: int, the minimum number of training galaxies to use.
+- min_thresh: float, the minimum threshold cutoff. Values smaller than
+  this threshold value will be ignored.
+- min_dist: float, the minimum Mahalanobis distance. Values smaller than
+  this will be ignored.
+- bad_redshift_val: float, in the unlikely case that there are not
+  enough training galaxies, this central redshift will be assigned to
+  galaxies.
+- bad_redshift_err: float, in the unlikely case that there are not
+  enough training galaxies, this Gaussian width will be assigned to
+  galaxies.
 
 Let’s grab some example data, train the model by running the
 ``CMNNInformer`` ``inform`` method, then calculate a set of photo-z’s
@@ -183,15 +183,15 @@ cell below:
 
     Inserting handle into data store.  input: None, inform_CMNN
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.77 ms, sys: 43 μs, total: 1.81 ms
-    Wall time: 1.71 ms
+    CPU times: user 1.07 ms, sys: 946 μs, total: 2.01 ms
+    Wall time: 2.51 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f55c8821ff0>
+    <rail.core.data.ModelHandle at 0x1399c5c90>
 
 
 
@@ -240,8 +240,8 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    CPU times: user 43.8 s, sys: 7.22 ms, total: 43.8 s
-    Wall time: 43.8 s
+    CPU times: user 50.1 s, sys: 360 ms, total: 50.4 s
+    Wall time: 50.5 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and
@@ -276,7 +276,7 @@ look:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_19_1.png
+.. image:: 04_CMNN_files/04_CMNN_19_1.png
 
 
 Very nice! Not many outliers and a fairly small scatter without much
@@ -292,7 +292,7 @@ minimum number of 20, so we should see a large peak at that value:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_21_0.png
+.. image:: 04_CMNN_files/04_CMNN_21_0.png
 
 
 As mentioned previously, we can change the method for how we select the
@@ -351,7 +351,7 @@ neighbor estimator:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_24_1.png
+.. image:: 04_CMNN_files/04_CMNN_24_1.png
 
 
 Slightly worse, but not dramatically so, a few more outliers are visible
@@ -408,7 +408,7 @@ visually. Finally, we can try the weighted random selection by setting
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_27_1.png
+.. image:: 04_CMNN_files/04_CMNN_27_1.png
 
 
 Again, not a dramatic difference, but it can make a difference if there
@@ -434,7 +434,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_30_1.png
+.. image:: 04_CMNN_files/04_CMNN_30_1.png
 
 
 .. code:: ipython3
@@ -451,7 +451,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_31_1.png
+.. image:: 04_CMNN_files/04_CMNN_31_1.png
 
 
 .. code:: ipython3
@@ -468,7 +468,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: ../../../docs/rendered/estimation_examples/04_CMNN_files/../../../docs/rendered/estimation_examples/04_CMNN_32_1.png
+.. image:: 04_CMNN_files/04_CMNN_32_1.png
 
 
 We see a wide variety of widths, as expected for a single Gaussian

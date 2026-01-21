@@ -33,8 +33,13 @@ jobs:
         
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
-        pip install .[dev]
-        pip install pz-rail-cmnn
+        
+        conda install --file conda-reqs.txt
+        pip install .
+        rail dev install --package-file rail_packages.yml
+
+        #pip install .[dev]
+        #pip install pz-rail-cmnn
         
     # Render notebooks
     - run: python render_notebooks.py core

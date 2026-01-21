@@ -33,7 +33,7 @@ files.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260121T173341
+    /home/runner/.cache/lephare/runs/20260121T195433
 
 
 Here we load previously created synthetic data
@@ -60,21 +60,7 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Number of keywords read in the config file: 86
-
-
-.. parsed-literal::
-
     Registry file downloaded and saved as data_registry.txt.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -84,7 +70,17 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -94,7 +90,7 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_z.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_z.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -173,12 +169,8 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Jan 21 17:38:48 2026
+    # CREATION_DATE Wed Jan 21 19:59:36 2026
     #############################################
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -210,7 +202,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Wed Jan 21 17:38:48 2026
+    # CREATION_DATE Wed Jan 21 19:59:36 2026
     #############################################
 
 
@@ -245,15 +237,10 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Wed Jan 21 17:41:15 2026
+    # CREATION_DATE Wed Jan 21 20:02:29 2026
     #############################################
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
-
-
-.. parsed-literal::
-
-    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -333,7 +320,12 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
     
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
@@ -341,7 +333,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f19cfa863d0>
+    <rail.core.data.ModelHandle at 0x7f9bd8bd3090>
 
 
 
@@ -396,7 +388,8 @@ data. Takes ~2 minutes to run on 1500 inputs.
     # DZ_WIN                 : 1.000000
     # MIN_THRES              : 0.020000
     # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_ABS_AGN            : -30.000000 -10.000AUTO_ADAPT is set to YES. Computing offsets.
+    000
     # MAG_REF                : 3
     # NZ_PRIOR               : -1 -1
     # Z_INTERP               : YES
@@ -440,7 +433,11 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.
+
+.. parsed-literal::
+
+    bin
      Done with the library reading with 46444 SED read. 
     Read lib out 
     Read filt 
@@ -451,7 +448,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-    AUTO_ADAPT is set to YES. Computing offsets.
 
 
 .. parsed-literal::
@@ -459,10 +455,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
     
     Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1703.4709 470.1358
-
-
-.. parsed-literal::
-
     Source 425 // Band 5 removed to improve the chi2, with old and new chi2 1233.4076 0.0679
     Source 449 // Band 0 removed to improve the chi2, with old and new chi2 1769.2671 535.9139
     Source 449 // Band 1 removed to improve the chi2, with old and new chi2 1769.2671 233.6168
@@ -479,6 +471,10 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Source 1302 // Band 5 removed to improve the chi2, with old and new chi2 1236.4875 3.1952
     Source 1427 // Band 5 removed to improve the chi2, with old and new chi2 1151.7123 0.0671
     Source 1451 // Band 5 removed to improve the chi2, with old and new chi2 1227.1517 0.0367
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_test_Lephare: inprogress_output_test_Lephare.hdf5, test_Lephare
 
 

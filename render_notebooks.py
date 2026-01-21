@@ -46,24 +46,43 @@ def _parse_args():
     return group_name, verbose
 
 
-def _clear_rendered_output(output_dir, group_name, verbose=False):
-    """Clear all files in the rendered output directory.
+def _resolve_repo_paths():
+    """Resolve important repository paths relative to the script location.
 
-    Parameters
-    ----------
-    output_dir : Path
-        The directory containing rendered notebook files.
-    group_name : str
-        The group name of the notebooks being rendered.
-    verbose : bool, optional
-        If True, prints a message after clearing the directory.
+    Returns
+    -------
+    tuple[Path, Path]
+        Tuple containing the render script root and rail repository root.
+
+    Raises
+    ------
+    FileNotFoundError
+        If the rail repository cannot be located.
     """
-    # We'll see eg, 04_CMNN.rst and also 04_CMNN_files/; clear both.
-    rendered_notebooks = output_dir / f"{group_name}_examples"
-    shutil.rmtree(rendered_notebooks, ignore_errors=False)
+    script_root = Path(__file__).resolve().parent
 
-    if verbose:
-        print(f"Cleared rendered output directory: {rendered_notebooks}")
+    # GitHub runners clone rail inside this repository; local development keeps it adjacent.
+    candidates = [
+        script_root / "rail",
+        script_root.parent / "rail",
+    ]
+
+    for candidate in candidates:
+        if (candidate / "examples").exists():
+            return script_root, candidate
+
+    searched = ", ".join(str(path) for path in candidates)
+    raise FileNotFoundError(
+        "Could not locate the rail repository. Checked: " + searched
+    )
+
+
+def _clear_rendered_output(rendered_dir, verbose=False):
+    """Clear previously rendered outputs if the directory exists."""
+    if rendered_dir.exists():
+        shutil.rmtree(rendered_dir, ignore_errors=False)
+        if verbose:
+            print(f"Cleared rendered output directory: {rendered_dir}")
 
 
 def render_notebook_group():
@@ -92,13 +111,14 @@ def render_notebook_group():
     if verbose:
         print(f"Rendering notebooks in group: {group_name}...")
 
+    script_root, rail_root = _resolve_repo_paths()
+
     # Set paths for raw and rendered notebooks.
-    raw_notebook_dir = Path("..", "rail", "examples", f"{group_name}_examples")
-    rendered_root_dir = Path("docs", "rendered")
-    rendered_group_dir = rendered_root_dir / f"{group_name}_examples"
+    raw_notebook_dir = rail_root / "examples" / f"{group_name}_examples"
+    rendered_group_dir = script_root / "docs" / "rendered" / f"{group_name}_examples"
 
     # Clear the rendered output directory.
-    _clear_rendered_output(rendered_root_dir, group_name, verbose)
+    _clear_rendered_output(rendered_group_dir, verbose)
 
     # Render each notebook in the specified group.
     if not rendered_group_dir.exists():

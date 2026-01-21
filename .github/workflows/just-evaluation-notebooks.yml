@@ -1,8 +1,3 @@
-# This workflow can be triggered manually; it will also run daily at 6:45 UTC.
-# This workflow grabs globbed notebooks from the RAIL repository, runs them, and
-# renders the notebooks with outputs into .rst files for easy integration into
-# ReadTheDocs.
-        
 name: Just evaluation notebooks
 
 on:
@@ -16,22 +11,35 @@ jobs:
     
     # Set up
     - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v4
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.10'
-    - name: Install dependencies
+        python-version: '3.11'
+    - name: System deps (MPI + build)
       run: |
         sudo apt-get update
-        python -m pip install --upgrade pip
-        
-        sudo apt-get install pandoc
-        pip install wheel numpy # For RAIL
-        pip install jupyter nbconvert # For notebooks
-        
+        sudo apt-get install -y --no-install-recommends \
+        build-essential libbz2-dev \
+        openmpi-bin libopenmpi-dev
+    - name: Install dependencies
+      run: |
+        cd ..
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
+
+        # The following was copied from rail's CI (from main repo) on Jan 20, 2026:
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip install "numpy<2" cython
+        python -m pip install --upgrade --no-binary=mpi4py mpi4py
+        python -m pip install --no-build-isolation somoclu
+        python -m pip install --upgrade pip
+        pip install wheel numpy
         pip install .[dev]
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+        # Extras, for notebooks:
+        pip install jupyter nbconvert # For notebooks
+        sudo apt-get install pandoc
         
     # Render evaluation notebooks
     - run: python render_notebooks.py evaluation

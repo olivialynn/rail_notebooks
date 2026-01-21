@@ -42,7 +42,7 @@ jobs:
         sudo apt-get install pandoc
         
     # Render evaluation notebooks
-    - run: python src/rail_notebooks/render_notebooks.py core
+    - run: python src/rail_notebooks/render_notebooks.py core -v
       if: always()
       
     # Commit changes

@@ -50,15 +50,15 @@ jobs:
         
         
     # Render notebooks
-    - run: python render_notebooks.py core
+    - run: python src/rail_notebooks/render_notebooks.py core -v
       if: always()
-    - run: python render_notebooks.py creation
+    - run: python src/rail_notebooks/render_notebooks.py creation -v
       if: always()
-    - run: python render_notebooks.py estimation
+    - run: python src/rail_notebooks/render_notebooks.py estimation -v
       if: always()
-    - run: python render_notebooks.py evaluation
+    - run: python src/rail_notebooks/render_notebooks.py evaluation -v
       if: always()
-    - run: python render_notebooks.py goldenspike
+    - run: python src/rail_notebooks/render_notebooks.py goldenspike -v
       if: always()
       
     # Commit changes

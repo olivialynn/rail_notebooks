@@ -23,9 +23,7 @@ jobs:
         openmpi-bin libopenmpi-dev
     - name: Install dependencies
       run: |
-        #python -m pip install --upgrade pip
-        #pip install wheel numpy # For RAIL
-        
+        cd ..
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
 

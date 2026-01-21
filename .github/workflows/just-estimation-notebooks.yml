@@ -26,7 +26,10 @@ jobs:
         
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
-        pip install .[dev]
+        #pip install .[dev]
+        conda install --file conda-reqs.txt
+        pip install .
+        rail dev install --package-file rail_packages.yml
         
     # Render estimation notebooks
     - run: python render_notebooks.py estimation

@@ -138,11 +138,15 @@ def _render_notebook_group(
             class Result:
                 def __init__(self):
                     self.returncode = random.random() > 0.8 and 1 or 0
-                    self.stderr = "Mock render error message." if self.returncode else ""
+                    self.stderr = (
+                        "Mock render error message." if self.returncode else ""
+                    )
 
             result = Result()
             if result.returncode == 0:
-                with open(rendered_group_dir / out_name, "w", encoding="utf-8") as handle:
+                with open(
+                    rendered_group_dir / out_name, "w", encoding="utf-8"
+                ) as handle:
                     handle.write("")
         else:
             result = subprocess.run(
@@ -203,12 +207,15 @@ def _report_render_status(status, verbose=False):
         if nb_status != 0:
             failed_notebooks.append(nb_name)
 
-    if failed_notebooks:
+    if failed_notebooks:  # Print regardless of verbosity
         print(f"\n{len(failed_notebooks)} FAILED NOTEBOOK(S):")
-        output = "\n".join(
-            f"{index}. {nb}" for index, nb in enumerate(failed_notebooks, start=1)
+        for index, nb in enumerate(failed_notebooks, start=1):
+            print(f"{index}. {nb}")
+        print()
+
+        raise ValueError(
+            f"{len(failed_notebooks)} out of {len(status)} notebooks failed to render."
         )
-        raise ValueError(f"The following notebook(s) failed to render:\n{output}")
 
 
 def run_render_notebook_group():

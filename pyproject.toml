@@ -3,7 +3,7 @@ name = "rail_notebooks"
 license = {file = "LICENSE"}
 readme = "README.md"
 authors = [
-    { name = "LF" }
+    { name = "Olivia Lynn" }
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

@@ -42,7 +42,7 @@ jobs:
         sudo apt-get install pandoc
         
     # Render estimation notebooks
-    - run: python render_notebooks.py estimation -v
+    - run: python src/render_notebooks/render_notebooks.py estimation -v
       if: always()
       
     # Commit changes

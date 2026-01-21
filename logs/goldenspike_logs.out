@@ -1,0 +1,29 @@
+Rendering notebooks in group: goldenspike...
+RENDERING: Goldenspike
+[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
+[32m   1511[39m     @final
+[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
+[32m-> [39m[32m1513[39m         raise ValueError(
+[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
+[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
+[32m   1516[39m         )
+
+[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+
+
+NOTEBOOK RENDERING STATUS:
+R. Code  Notebook
+-------  ------------------------------------------------------------
+      1  /home/runner/work/rail_notebooks/rail/examples/goldenspike_examples/Goldenspike.ipynb
+
+1 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/examples/goldenspike_examples/Goldenspike.ipynb
+
+Traceback (most recent call last):
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
+    run_render_notebook_group()
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 259, in run_render_notebook_group
+    _report_render_status(status, verbose)
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
+    raise ValueError(
+ValueError: 1 out of 1 notebooks failed to render.

@@ -17,19 +17,26 @@ jobs:
         python-version: '3.11'
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        python -m pip install --upgrade pip
-        
-        sudo apt-get install pandoc
-        pip install wheel numpy # For RAIL
-        pip install jupyter nbconvert # For notebooks
+        #sudo apt-get update
+        #python -m pip install --upgrade pip
+        #pip install wheel numpy # For RAIL
         
         git clone https://github.com/LSSTDESC/rail.git
         cd rail
-        #pip install .[dev]
-        conda install --file conda-reqs.txt
-        pip install .
-        rail dev install --package-file rail_packages.yml
+
+        # The following was copied from rail's CI (from main repo) on Jan 20, 2026:
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip install "numpy<2" cython
+        python -m pip install --upgrade --no-binary=mpi4py mpi4py
+        python -m pip install --no-build-isolation somoclu
+        python -m pip install --upgrade pip
+        pip install wheel numpy
+        pip install .[dev]
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+        # Extras, for notebooks:
+        pip install jupyter nbconvert # For notebooks
+        sudo apt-get install pandoc
         
     # Render estimation notebooks
     - run: python render_notebooks.py estimation

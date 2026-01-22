@@ -36,7 +36,9 @@ Any notebook added to one of the following RAIL repositories is included automat
 
 ## Notebook Status
 
-The tables below show the current rendering status by notebook category and are updated automatically by a weekly workflow.
+Tables are updated automatically by a weekly workflow.
+
+See more info in each group's log file, in `logs/`.
 
 <!--auto update below-->
 

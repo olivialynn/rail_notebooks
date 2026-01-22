@@ -76,7 +76,7 @@ def _parse_output_files(output_files):
 
             table_name = output_file.stem.split("_")[0]  # e.g., "core" from "core_logs.out"
             parsed_data[table_name] = sorted(table_contents, key=lambda x: x[0])
-            print(f"PARSED DATA for TABLE {table_name}:\n", "\n".join(str(item) for item in parsed_data[table_name]), "\n")
+            print(f"\nPARSED DATA for TABLE {table_name}:\n", "\n".join(str(item) for item in parsed_data[table_name]), "\n")
     return parsed_data
 
 def _write_new_tables(parsed_tables):
@@ -100,11 +100,13 @@ def _write_new_tables(parsed_tables):
         else:
             table_contents = parsed_tables[expected_name]
 
-            new_tables += "| Notebook | Return Code |\n"
-            new_tables += "|----------|-------------|\n"
+            new_tables += "|   | Notebook |\n"
+            new_tables += "|---|----------|\n"
             for notebook_name, return_code in table_contents:
-                new_tables += f"| {notebook_name} | {return_code} |\n"
+                icon = ":heavy_check_mark:" if return_code == "0" else ":x:"
+                new_tables += f"| {icon} | {notebook_name} |\n"
             new_tables += "\n"
+            
     return new_tables
 
 def update_readme():
@@ -114,9 +116,6 @@ def update_readme():
     readme_path = paths["readme_path"] 
     output_files = list(logs_path.glob("*.out"))
 
-    parsed_tables = _parse_output_files(output_files)
-    new_tables_as_markdown = _write_new_tables(parsed_tables)
-
     with readme_path.open("r") as f:
         readme_contents = f.readlines()
     
@@ -125,6 +124,9 @@ def update_readme():
     for line in readme_contents:
         if line.strip() == "<!--auto update below-->":
             found_marker = True
+
+            parsed_tables = _parse_output_files(output_files)
+            new_tables_as_markdown = _write_new_tables(parsed_tables)
 
             new_contents.append(line)
             new_contents.append("\n")

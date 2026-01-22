@@ -36,7 +36,7 @@ Any notebook added to one of the following RAIL repositories is included automat
 
 ## Notebook Status (last updated yyyy-mm-dd)
 
-The tables below show the current rendering status by notebook category and are updated automatically by the weekly workflow.
+The tables below show the current rendering status by notebook category and are updated automatically by a weekly workflow.
 
 ### Core Notebooks
 | Rendered?          | Notebook                |

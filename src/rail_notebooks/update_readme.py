@@ -5,7 +5,7 @@ there being a specific marker in README.md to indicate where to insert the
 updated tables.
 
 If you feel inspired and have the cycles, please feel free to improve this
-script!
+script! It is fairly brittle at the moment.
 """
 
 from pathlib import Path
@@ -50,14 +50,20 @@ def _parse_output_files(output_files):
             raw_content = f.read()
 
             raw_table = raw_content.split("NOTEBOOK RENDERING STATUS:")[1]
-            raw_table = raw_table.split("FAILED NOTEBOOK(S):")[0]
+            if "FAILED NOTEBOOK(S):" in raw_table:
+                # The format is "X FAILED NOTEBOOK(S):" , where X is a number.
+                # So, we want to cut that whole section off.
+                raw_table = raw_table.split("FAILED NOTEBOOK(S):")[0]
+                raw_table = raw_table.rsplit("\n", 1)[0]  # Remove the last line which has just a number
 
             table_contents = []
-            for line in raw_table.splitlines():
+            for line in raw_table.splitlines(): 
                 # Skip header lines.
+                if line.strip() == "":
+                    continue
                 if line.strip().startswith("R. Code"):
                     continue
-                if line.strip().startswith("-------"):
+                if line.strip().startswith("----"):
                     continue
 
                 # Expect a line like:
@@ -68,7 +74,9 @@ def _parse_output_files(output_files):
                 # Append to table contents.
                 table_contents.append((notebook_name, return_code))
 
-            parsed_data[output_file.stem] = sorted(table_contents, key=lambda x: x[0])
+            table_name = output_file.stem.split("_")[0]  # e.g., "core" from "core_logs.out"
+            parsed_data[table_name] = sorted(table_contents, key=lambda x: x[0])
+            print(f"PARSED DATA for TABLE {table_name}:\n", "\n".join(str(item) for item in parsed_data[table_name]), "\n")
     return parsed_data
 
 def _write_new_tables(parsed_tables):
@@ -113,19 +121,25 @@ def update_readme():
         readme_contents = f.readlines()
     
     new_contents = []
+    found_marker = False
     for line in readme_contents:
         if line.strip() == "<!--auto update below-->":
+            found_marker = True
+
             new_contents.append(line)
             new_contents.append("\n")
             
             last_updated_date_string = date.today().strftime("%B %d, %Y")
-            new_contents.append(f"**Tables last updated:** {last_updated_date_string}\n")
+            new_contents.append(f"**Tables last updated:** {last_updated_date_string}\n\n")
             
             new_contents.append(new_tables_as_markdown)
             new_contents.append("\n")
             break
         else:
             new_contents.append(line)
+
+    if not found_marker:
+        raise RuntimeError("Could not find marker in README.md to insert updated tables.")
 
     with readme_path.open("w") as f:
         f.writelines(new_contents)

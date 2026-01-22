@@ -1,5 +1,5 @@
 # RAIL Notebooks
-*Note that this readme is automatically updated weekly. To make changes to the text here, modify the template in update-readme.py.*
+<!--Note that this readme is automatically updated weekly. To make changes to the text here, modify the template in update-readme.py--otherwise, whatever you write here will just be overwritten!-->
 
 ## Overview
 

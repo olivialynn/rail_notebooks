@@ -34,9 +34,11 @@ Any notebook added to one of the following RAIL repositories is included automat
 - Use **one** top-level markdown heading (`# Title`) per notebook.
 - Additional top-level headings may be interpreted as separate documents in Read the Docs.
 
-## Notebook Status (last updated yyyy-mm-dd)
+## Notebook Status
 
 The tables below show the current rendering status by notebook category and are updated automatically by a weekly workflow.
+
+<!--auto update below-->
 
 ### Core Notebooks
 | Rendered?          | Notebook                |

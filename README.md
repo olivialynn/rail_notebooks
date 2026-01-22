@@ -1,26 +1,43 @@
 # RAIL Notebooks
 <!--Note that this readme is automatically updated weekly. To make changes to the text here, modify the template in update-readme.py--otherwise, whatever you write here will just be overwritten!-->
 
-## Overview
+This repository hosts **rendered RAIL notebooks** used in the RAIL documentation. It is built as a standalone **Read the Docs subproject** and is linked from the main RAIL docs.
 
-RAIL Notebooks is part of the [RAIL ecosystem](https://github.com/lsstdesc/rail), where it maintains the rendered notebooks seen in the RAIL documentation. This repo is built as its own [Read the Docs subproject](https://rail-hub.readthedocs.io/projects/rail-notebooks/en/latest/index.html), which is linked to the main [RAIL Read the Docs project](https://rail-hub.readthedocs.io/en/latest/).
+The rendered notebooks provide a stable, browsable reference without requiring users to execute notebooks locally.
 
-### How does it work?
+## Automation and workflow
 
-The main functionality is in [render_notebooks.py](https://github.com/olivialynn/rail_notebooks/blob/main/src/rail_notebooks/render_notebooks.py), which is run weekly by the [render-notebooks.yml](https://github.com/olivialynn/rail_notebooks/blob/main/.github/workflows/render-notebooks.yml) workflow, and will:
-- gather all notebooks in RAIL
-- render them to .rst files using nbconvert
-- save the rendered versions in this repository, in the [docs/](https://github.com/olivialynn/rail_notebooks/tree/main/docs) directory
-- output logs in the [logs/](https://github.com/olivialynn/rail_notebooks/tree/main/logs) directory
-- finally, update the tables below for at-a-glance monitoring
+Notebook rendering is fully automated and runs weekly via GitHub Actions.
 
-### How can I add my RAIL notebook?
+The workflow:
 
-All notebooks placed in the main repository's core, creation, estimation, evaluation, or goldenspike notebook repositories are automatically included.
+- Converts notebooks in the main RAIL repository to `.rst` using `nbconvert`
+- Writes rendered outputs to `docs/` and saves logs to `logs/`
+- Updates the status tables below
 
-We strongly recommend that you only use one title in your notebook, at the top (ie, a single # in markdown as in `# My Notebook`)--otherwise the second title will be interpreted as a new notebook in the navigation on Read the Docs.
+Rendering logic lives in `render_notebooks.py` and is invoked by the `render-notebooks.yml` workflow.
+
+## Adding notebooks
+
+No changes to this repository are required.
+
+Any notebook added to one of the following RAIL repositories is included automatically:
+
+- core
+- creation
+- estimation
+- evaluation
+- goldenspike
+
+### Formatting requirements
+
+- Use **one** top-level markdown heading (`# Title`) per notebook.
+- Additional top-level headings may be interpreted as separate documents in Read the Docs.
 
 ## Notebook Status (last updated yyyy-mm-dd)
+
+The tables below show the current rendering status by notebook category and are updated automatically by the weekly workflow.
+
 ### Core Notebooks
 | Rendered?          | Notebook                |
 | ------------------ | ----------------------- |

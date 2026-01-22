@@ -53,27 +53,27 @@ jobs:
     - name: Render core notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py core -v > logs/core_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py core -v > logs/core_logs.out 2>&1  | tee logs/core_logs.out
       if: always()
     - name: Render creation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py creation -v > logs/creation_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py creation -v > logs/creation_logs.out 2>&1 | tee logs/creation_logs.out
       if: always()
     - name: Render estimation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py estimation -v > logs/estimation_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py estimation -v > logs/estimation_logs.out 2>&1 | tee logs/estimation_logs.out
       if: always()
     - name: Render evaluation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py evaluation -v > logs/evaluation_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py evaluation -v > logs/evaluation_logs.out 2>&1 | tee logs/evaluation_logs.out
       if: always()
     - name: Render goldenspike notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py goldenspike -v > logs/goldenspike_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py goldenspike -v > logs/goldenspike_logs.out 2>&1 | tee logs/goldenspike_logs.out
       if: always()
       
     # Commit changes

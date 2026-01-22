@@ -45,7 +45,7 @@ jobs:
     - name: Render creation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py creation -v > logs/creation_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py creation -v > logs/creation_logs.out 2>&1 | tee logs/creation_logs.out
       if: always()
       
     # Commit changes

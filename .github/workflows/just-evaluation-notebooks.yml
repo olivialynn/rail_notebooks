@@ -45,7 +45,7 @@ jobs:
     - name: Render evaluation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py evaluation -v > logs/evaluation_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py evaluation -v > logs/evaluation_logs.out 2>&1 | tee logs/evaluation_logs.out
       if: always()
       
     # Commit changes

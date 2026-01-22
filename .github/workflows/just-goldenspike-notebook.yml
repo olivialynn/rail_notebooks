@@ -45,7 +45,7 @@ jobs:
     - name: Render goldenspike notebook
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py goldenspike -v > logs/goldenspike_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py goldenspike -v > logs/goldenspike_logs.out 2>&1 | tee logs/goldenspike_logs.out
       if: always()
       
     # Commit changes

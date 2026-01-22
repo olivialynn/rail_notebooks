@@ -45,7 +45,7 @@ jobs:
     - name: Render core notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py core -v > logs/core_logs.out 2>&1
+        python src/rail_notebooks/render_notebooks.py core -v > logs/core_logs.out 2>&1 | tee logs/core_logs.out
       if: always()
       
     # Commit changes

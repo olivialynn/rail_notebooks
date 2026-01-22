@@ -1,0 +1,61 @@
+# This workflow can be triggered manually; it also runs every Monday at 14:45 UTC.
+        
+name: Update readme
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 45 14 * * 1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    # Set up and installation
+    - uses: actions/checkout@v6
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.11'
+    - name: System deps (MPI + build)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends \
+        build-essential libbz2-dev \
+        openmpi-bin libopenmpi-dev
+    - name: Install dependencies
+      run: |
+        cd ..
+        git clone https://github.com/LSSTDESC/rail.git
+        cd rail
+
+        # The following was copied from rail's CI (from main repo) on Jan 20, 2026:
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip install "numpy<2" cython
+        python -m pip install --upgrade --no-binary=mpi4py mpi4py
+        python -m pip install --no-build-isolation somoclu
+        python -m pip install --upgrade pip
+        pip install wheel numpy
+        pip install .[dev]
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+        # Extras, for notebooks:
+        pip install jupyter nbconvert # For notebooks
+        sudo apt-get install pandoc
+        
+        
+    # Update readme
+    - name: Update readme
+      run: |
+        python src/rail_notebooks/update_readme.py 
+      if: always()
+      
+    # Commit changes
+    - uses: stefanzweifel/git-auto-commit-action@v7
+      if: always()
+      with: 
+        commit_user_name: GitHub Actions Bot 
+        commit_user_email: github-actions-bot@example.org
+        commit_author: Author <actions@github.com>

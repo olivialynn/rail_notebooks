@@ -44,66 +44,66 @@ The tables below show the current rendering status by notebook category and are 
 
 ### Core Notebooks
 
-| Notebook | Return Code |
-|----------|-------------|
-| 00_Useful_Utilities.ipynb | 1 |
-| 01_FileIO_DataStore.ipynb | 0 |
-| 02_FluxtoMag_and_Deredden.ipynb | 0 |
-| 03_Hyperbolic_Magnitude.ipynb | 1 |
-| 04_Iterate_Tabular_Data.ipynb | 0 |
-| 05_Build_Save_Load_Run_Pipeline.ipynb | 1 |
-| 06_Rail_Interfaces.ipynb | 0 |
+|   | Notebook |
+|---|----------|
+| :x: | 00_Useful_Utilities.ipynb |
+| :heavy_check_mark: | 01_FileIO_DataStore.ipynb |
+| :heavy_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
+| :x: | 03_Hyperbolic_Magnitude.ipynb |
+| :heavy_check_mark: | 04_Iterate_Tabular_Data.ipynb |
+| :x: | 05_Build_Save_Load_Run_Pipeline.ipynb |
+| :heavy_check_mark: | 06_Rail_Interfaces.ipynb |
 
 ### Creation Notebooks
 
-| Notebook | Return Code |
-|----------|-------------|
-| 00_Quick_Start_in_Creation.ipynb | 1 |
-| 01_Photometric_Realization.ipynb | 1 |
-| 02_Photometric_Realization_with_Other_Surveys.ipynb | 1 |
-| 03_GridSelection_for_HSC.ipynb | 1 |
-| 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb | 1 |
-| 05_True_Posterior.ipynb | 1 |
-| 06_Blending_Degrader.ipynb | 1 |
-| 07_DSPS_SED.ipynb | 1 |
-| 08_FSPS_SED.ipynb | 1 |
-| 09_Spatial_Variability.ipynb | 1 |
-| 10_SOM_Spectroscopic_Selector.ipynb | 1 |
-| 11_Spectroscopic_Selection_for_zCOSMOS.ipynb | 1 |
+|   | Notebook |
+|---|----------|
+| :x: | 00_Quick_Start_in_Creation.ipynb |
+| :x: | 01_Photometric_Realization.ipynb |
+| :x: | 02_Photometric_Realization_with_Other_Surveys.ipynb |
+| :x: | 03_GridSelection_for_HSC.ipynb |
+| :x: | 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb |
+| :x: | 05_True_Posterior.ipynb |
+| :x: | 06_Blending_Degrader.ipynb |
+| :x: | 07_DSPS_SED.ipynb |
+| :x: | 08_FSPS_SED.ipynb |
+| :x: | 09_Spatial_Variability.ipynb |
+| :x: | 10_SOM_Spectroscopic_Selector.ipynb |
+| :x: | 11_Spectroscopic_Selection_for_zCOSMOS.ipynb |
 
 ### Estimation Notebooks
 
-| Notebook | Return Code |
-|----------|-------------|
-| 00_Quick_Start_in_Estimation.ipynb | 0 |
-| 01_FlexZBoost_PDF_Representation_Comparison.ipynb | 0 |
-| 02_BPZ_lite.ipynb | 0 |
-| 03_BPZ_lite_Custom_SEDs.ipynb | 0 |
-| 04_CMNN.ipynb | 0 |
-| 05_DNF.ipynb | 0 |
-| 06_GPz.ipynb | 0 |
-| 07_NZDir.ipynb | 1 |
-| 08_NZDir_pipeline.ipynb | 1 |
-| 09_PZFlow.ipynb | 0 |
-| 10_YAW.ipynb | 0 |
-| 11_SomocluSOM.ipynb | 1 |
-| 12_SomocluSOM_Quality_Control.ipynb | 1 |
-| 13_Sampled_Summarizers.ipynb | 0 |
-| 14_LePhare_LSST.ipynb | 0 |
-| 15_LePhare_COSMOS.ipynb | 0 |
-| 16_Running_with_different_data.ipynb | 0 |
+|   | Notebook |
+|---|----------|
+| :heavy_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
+| :heavy_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
+| :heavy_check_mark: | 02_BPZ_lite.ipynb |
+| :heavy_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
+| :heavy_check_mark: | 04_CMNN.ipynb |
+| :heavy_check_mark: | 05_DNF.ipynb |
+| :heavy_check_mark: | 06_GPz.ipynb |
+| :x: | 07_NZDir.ipynb |
+| :x: | 08_NZDir_pipeline.ipynb |
+| :heavy_check_mark: | 09_PZFlow.ipynb |
+| :heavy_check_mark: | 10_YAW.ipynb |
+| :x: | 11_SomocluSOM.ipynb |
+| :x: | 12_SomocluSOM_Quality_Control.ipynb |
+| :heavy_check_mark: | 13_Sampled_Summarizers.ipynb |
+| :heavy_check_mark: | 14_LePhare_LSST.ipynb |
+| :heavy_check_mark: | 15_LePhare_COSMOS.ipynb |
+| :heavy_check_mark: | 16_Running_with_different_data.ipynb |
 
 ### Evaluation Notebooks
 
-| Notebook | Return Code |
-|----------|-------------|
-| 00_Single_Evaluation.ipynb | 0 |
-| 01_Evaluation_by_Type.ipynb | 0 |
+|   | Notebook |
+|---|----------|
+| :heavy_check_mark: | 00_Single_Evaluation.ipynb |
+| :heavy_check_mark: | 01_Evaluation_by_Type.ipynb |
 
 ### Goldenspike Notebooks
 
-| Notebook | Return Code |
-|----------|-------------|
-| Goldenspike.ipynb | 1 |
+|   | Notebook |
+|---|----------|
+| :x: | Goldenspike.ipynb |
 
 

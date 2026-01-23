@@ -103,7 +103,7 @@ def _write_new_tables(parsed_tables):
             new_tables += "|   | Notebook |\n"
             new_tables += "|---|----------|\n"
             for notebook_name, return_code in table_contents:
-                icon = ":heavy_check_mark:" if return_code == "0" else ":x:"
+                icon = ":white_check_mark:" if return_code == "0" else ":x:"
                 new_tables += f"| {icon} | {notebook_name} |\n"
             new_tables += "\n"
             

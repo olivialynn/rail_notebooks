@@ -1,6 +1,8 @@
 # RAIL Notebooks
 <!--Note that this readme is automatically updated weekly. To make changes to the text here, modify the template in update-readme.py--otherwise, whatever you write here will just be overwritten!-->
 
+![Static Badge](https://img.shields.io/badge/Read_the_Docs-RAIL_Notebooks-blue)
+
 This repository hosts **rendered RAIL notebooks** used in the RAIL documentation. It is built as a standalone **Read the Docs subproject** and is linked from the main RAIL docs.
 
 The rendered notebooks provide a stable, browsable reference without requiring users to execute notebooks locally.

@@ -53,12 +53,12 @@ See more info in each group's log file, in `logs/`.
 |   | Notebook |
 |---|----------|
 | :x: | 00_Useful_Utilities.ipynb |
-| :heavy_check_mark: | 01_FileIO_DataStore.ipynb |
-| :heavy_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
+| :white_check_mark: | 01_FileIO_DataStore.ipynb |
+| :white_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
 | :x: | 03_Hyperbolic_Magnitude.ipynb |
-| :heavy_check_mark: | 04_Iterate_Tabular_Data.ipynb |
+| :white_check_mark: | 04_Iterate_Tabular_Data.ipynb |
 | :x: | 05_Build_Save_Load_Run_Pipeline.ipynb |
-| :heavy_check_mark: | 06_Rail_Interfaces.ipynb |
+| :white_check_mark: | 06_Rail_Interfaces.ipynb |
 
 ### Creation Notebooks
 
@@ -81,30 +81,30 @@ See more info in each group's log file, in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :heavy_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
-| :heavy_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
-| :heavy_check_mark: | 02_BPZ_lite.ipynb |
-| :heavy_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
-| :heavy_check_mark: | 04_CMNN.ipynb |
-| :heavy_check_mark: | 05_DNF.ipynb |
-| :heavy_check_mark: | 06_GPz.ipynb |
+| :white_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
+| :white_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
+| :white_check_mark: | 02_BPZ_lite.ipynb |
+| :white_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
+| :white_check_mark: | 04_CMNN.ipynb |
+| :white_check_mark: | 05_DNF.ipynb |
+| :white_check_mark: | 06_GPz.ipynb |
 | :x: | 07_NZDir.ipynb |
 | :x: | 08_NZDir_pipeline.ipynb |
-| :heavy_check_mark: | 09_PZFlow.ipynb |
-| :heavy_check_mark: | 10_YAW.ipynb |
+| :white_check_mark: | 09_PZFlow.ipynb |
+| :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
-| :heavy_check_mark: | 13_Sampled_Summarizers.ipynb |
-| :heavy_check_mark: | 14_LePhare_LSST.ipynb |
-| :heavy_check_mark: | 15_LePhare_COSMOS.ipynb |
-| :heavy_check_mark: | 16_Running_with_different_data.ipynb |
+| :white_check_mark: | 13_Sampled_Summarizers.ipynb |
+| :white_check_mark: | 14_LePhare_LSST.ipynb |
+| :white_check_mark: | 15_LePhare_COSMOS.ipynb |
+| :white_check_mark: | 16_Running_with_different_data.ipynb |
 
 ### Evaluation Notebooks
 
 |   | Notebook |
 |---|----------|
-| :heavy_check_mark: | 00_Single_Evaluation.ipynb |
-| :heavy_check_mark: | 01_Evaluation_by_Type.ipynb |
+| :white_check_mark: | 00_Single_Evaluation.ipynb |
+| :white_check_mark: | 01_Evaluation_by_Type.ipynb |
 
 ### Goldenspike Notebooks
 

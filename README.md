@@ -42,7 +42,7 @@ Any notebook added to one of the following RAIL repositories is included automat
 
 Tables are updated automatically by a weekly workflow.
 
-See more info in each group's log file, in `logs/`.
+See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 

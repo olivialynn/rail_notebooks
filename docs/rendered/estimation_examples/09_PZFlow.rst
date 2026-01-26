@@ -69,152 +69,152 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    (1) 9.1670
+    (1) 9.1674
 
 
 .. parsed-literal::
 
-    (2) 6.4495
+    (2) 6.4361
 
 
 .. parsed-literal::
 
-    (3) 4.4579
+    (3) 4.7238
 
 
 .. parsed-literal::
 
-    (4) 4.1441
+    (4) 3.4769
 
 
 .. parsed-literal::
 
-    (5) 2.7376
+    (5) 2.9439
 
 
 .. parsed-literal::
 
-    (6) 2.3259
+    (6) 2.3171
 
 
 .. parsed-literal::
 
-    (7) 2.1545
+    (7) 2.8256
 
 
 .. parsed-literal::
 
-    (8) 1.5058
+    (8) 1.7551
 
 
 .. parsed-literal::
 
-    (9) 1.1224
+    (9) 1.2474
 
 
 .. parsed-literal::
 
-    (10) 1.1663
+    (10) 1.0867
 
 
 .. parsed-literal::
 
-    (11) 0.8277
+    (11) 0.7046
 
 
 .. parsed-literal::
 
-    (12) 0.7675
+    (12) 0.6254
 
 
 .. parsed-literal::
 
-    (13) 0.3613
+    (13) 0.4099
 
 
 .. parsed-literal::
 
-    (14) 0.3453
+    (14) 0.9001
 
 
 .. parsed-literal::
 
-    (15) 0.1319
+    (15) 0.5123
 
 
 .. parsed-literal::
 
-    (16) 0.2957
+    (16) 0.1235
 
 
 .. parsed-literal::
 
-    (17) 0.2010
+    (17) -0.0027
 
 
 .. parsed-literal::
 
-    (18) 0.1892
+    (18) 0.0661
 
 
 .. parsed-literal::
 
-    (19) 1.1782
+    (19) 0.0004
 
 
 .. parsed-literal::
 
-    (20) 0.1756
+    (20) -0.1497
 
 
 .. parsed-literal::
 
-    (21) -0.0300
+    (21) 0.9533
 
 
 .. parsed-literal::
 
-    (22) 0.1839
+    (22) 0.2805
 
 
 .. parsed-literal::
 
-    (23) -0.3598
+    (23) -0.0489
 
 
 .. parsed-literal::
 
-    (24) -0.4848
+    (24) -0.3461
 
 
 .. parsed-literal::
 
-    (25) -0.3293
+    (25) -0.4095
 
 
 .. parsed-literal::
 
-    (26) -0.4628
+    (26) -0.3788
 
 
 .. parsed-literal::
 
-    (27) -0.3978
+    (27) -0.4560
 
 
 .. parsed-literal::
 
-    (28) -0.3756
+    (28) -0.3629
 
 
 .. parsed-literal::
 
-    (29) -0.2094
+    (29) -0.6286
 
 
 .. parsed-literal::
 
-    (30) -0.4207
+    (30) -0.7268
 
 
 .. parsed-literal::
@@ -226,7 +226,7 @@ Author: Tianqing Zhang
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f99b7918f50>
+    <rail.tools.flow_handle.FlowHandle at 0x7f8928a4c750>
 
 
 

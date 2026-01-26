@@ -46,16 +46,6 @@ RENDERING: 03_BPZ_lite_Custom_SEDs
 RENDERING: 09_PZFlow
 RENDERING: 16_Running_with_different_data
 RENDERING: 07_NZDir
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 04_CMNN
 
 NOTEBOOK RENDERING STATUS:
@@ -76,14 +66,13 @@ R. Code  Notebook
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/09_PZFlow.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/16_Running_with_different_data.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/04_CMNN.ipynb
 
-4 FAILED NOTEBOOK(S):
+3 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
 2. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
 3. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
-4. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
@@ -92,4 +81,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
     raise ValueError(
-ValueError: 4 out of 17 notebooks failed to render.
+ValueError: 3 out of 17 notebooks failed to render.

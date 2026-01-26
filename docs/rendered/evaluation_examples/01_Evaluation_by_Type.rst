@@ -73,331 +73,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+     31 47.1M   31 14.8M    0     0  28.6M      0  0:00:01 --:--:--  0:00:01 28.6M
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:11 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:12 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:13 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:14 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:15 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:16 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:17 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:18 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:19 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:21 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:22 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:23 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:24 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:25 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:26 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:27 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:28 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:31 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:32 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:33 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:34 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:35 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:36 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:37 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:38 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:39 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:40 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:41 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:42 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:43 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:44 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:45 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:46 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:47 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:48 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:49 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:50 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:51 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:52 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:53 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:54 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:55 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:56 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:57 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:58 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:00:59 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:00 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:01 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:02 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:03 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:04 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:05 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:06 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:07 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:08 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:09 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:10 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:11 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:12 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:13 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:14 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:15 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:16 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:17 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:18 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:19 --:--:--     0
-
-.. parsed-literal::
-
-      0     0    0     0    0     0      0      0 --:--:--  0:01:20 --:--:--     0
-
-.. parsed-literal::
-
-      0 47.1M    0 11978    0     0    148      0 92:44:31  0:01:20 92:43:11  2602
-
-.. parsed-literal::
-
-     70 47.1M   70 33.0M    0     0   414k      0  0:01:56  0:01:21  0:00:35 7595k100 47.1M  100 47.1M    0     0   588k      0  0:01:21  0:01:21 --:--:-- 12.9M
+    100 47.1M  100 47.1M    0     0  60.0M      0 --:--:-- --:--:-- --:--:-- 59.9M
 
 
 .. code:: ipython3
@@ -570,42 +250,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.935973</td>
-          <td>0.041390</td>
+          <td>1.066274</td>
+          <td>0.308995</td>
           <td>0.0</td>
-          <td>0.084877</td>
+          <td>0.070167</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.611381</td>
-          <td>0.176341</td>
+          <td>0.860133</td>
+          <td>0.109600</td>
           <td>0.0</td>
-          <td>0.104827</td>
+          <td>0.107642</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>3.550583</td>
-          <td>0.122844</td>
+          <td>1.753244</td>
+          <td>0.123986</td>
           <td>0.0</td>
-          <td>0.099115</td>
+          <td>0.103977</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.960690</td>
-          <td>0.114087</td>
+          <td>2.510007</td>
+          <td>0.120340</td>
           <td>0.0</td>
-          <td>0.070169</td>
+          <td>0.118318</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.369826</td>
-          <td>0.104331</td>
+          <td>0.348069</td>
+          <td>0.445818</td>
           <td>0.0</td>
-          <td>0.110138</td>
+          <td>0.058871</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -618,42 +298,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>1.447775</td>
-          <td>0.072096</td>
+          <td>0.327387</td>
+          <td>0.083082</td>
           <td>0.0</td>
-          <td>0.069739</td>
+          <td>0.098931</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.805727</td>
-          <td>0.084808</td>
+          <td>1.193582</td>
+          <td>0.060542</td>
           <td>0.0</td>
-          <td>0.101760</td>
+          <td>0.063249</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.959759</td>
-          <td>0.102408</td>
+          <td>0.891522</td>
+          <td>0.049367</td>
           <td>0.0</td>
-          <td>0.165459</td>
+          <td>0.077068</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.511227</td>
-          <td>0.119721</td>
+          <td>0.979126</td>
+          <td>0.085531</td>
           <td>0.0</td>
-          <td>0.119761</td>
+          <td>0.090077</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>1.454921</td>
-          <td>0.112263</td>
+          <td>0.416557</td>
+          <td>0.152328</td>
           <td>0.0</td>
-          <td>0.109488</td>
+          <td>0.071475</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -701,43 +381,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.041390</td>
-          <td>0.084877</td>
+          <td>0.308995</td>
+          <td>0.070167</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.935973</td>
+          <td>1.066274</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.176341</td>
-          <td>0.104827</td>
+          <td>0.109600</td>
+          <td>0.107642</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.611381</td>
+          <td>0.860133</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.122844</td>
-          <td>0.099115</td>
+          <td>0.123986</td>
+          <td>0.103977</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>3.550583</td>
+          <td>1.753244</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.114087</td>
-          <td>0.070169</td>
+          <td>0.120340</td>
+          <td>0.118318</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.960690</td>
+          <td>2.510007</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.104331</td>
-          <td>0.110138</td>
+          <td>0.445818</td>
+          <td>0.058871</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.369826</td>
+          <td>0.348069</td>
         </tr>
         <tr>
           <th>...</th>
@@ -749,43 +429,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.072096</td>
-          <td>0.069739</td>
+          <td>0.083082</td>
+          <td>0.098931</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.447775</td>
+          <td>0.327387</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.084808</td>
-          <td>0.101760</td>
+          <td>0.060542</td>
+          <td>0.063249</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.805727</td>
+          <td>1.193582</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.102408</td>
-          <td>0.165459</td>
+          <td>0.049367</td>
+          <td>0.077068</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.959759</td>
+          <td>0.891522</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.119721</td>
-          <td>0.119761</td>
+          <td>0.085531</td>
+          <td>0.090077</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.511227</td>
+          <td>0.979126</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.112263</td>
-          <td>0.109488</td>
+          <td>0.152328</td>
+          <td>0.071475</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.454921</td>
+          <td>0.416557</td>
         </tr>
       </tbody>
     </table>
@@ -1238,7 +918,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f270ea1d750>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fb52e767fd0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1339,6 +1019,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 9000 - 10000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1371,10 +1055,18 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 17000 - 18000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 18000 - 19000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1387,10 +1079,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  summary_single: inprogress_summary_single.hdf5, single
     Inserting handle into data store.  single_distribution_summary_single: inprogress_single_distribution_summary_single.hdf5, single
 

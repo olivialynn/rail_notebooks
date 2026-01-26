@@ -11,16 +11,6 @@ RENDERING: 10_SOM_Spectroscopic_Selector
 [31mNameError[39m: name 'wrap_train' is not defined
 
 RENDERING: 01_Photometric_Realization
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 07_DSPS_SED
 [32m      9[39m [43m                                                                 [49m[43mmin_wavelength[49m[43m=[49m[32;43m250[39;49m[43m,[49m[43m [49m[43mmax_wavelength[49m[43m=[49m[32;43m12000[39;49m[43m)[49m
 
@@ -33,49 +23,9 @@ RENDERING: 07_DSPS_SED
 [31mTypeError[39m: DSPSSingleSedModeler.__init__() got an unexpected keyword argument 'aliases'
 
 RENDERING: 05_True_Posterior
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 06_Blending_Degrader
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 02_Photometric_Realization_with_Other_Surveys
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 08_FSPS_SED
 [32m    382[39m                                 mwr=mwr[i], uvb=uvb[i], wgp1=wgp1[i], wgp2=[38;5;28mself[39m.config.wgp2,
 [32m    383[39m                                 wgp3=[38;5;28mself[39m.config.wgp3,
@@ -88,38 +38,8 @@ RENDERING: 08_FSPS_SED
 [31mNameError[39m: name 'fsps' is not defined
 
 RENDERING: 00_Quick_Start_in_Creation
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 03_GridSelection_for_HSC
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 09_Spatial_Variability
-[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pandas/core/generic.py[39m in [36m?[39m[34m(self)[39m
-[32m   1511[39m     @final
-[32m   1512[39m     [38;5;28;01mdef[39;00m __bool__(self) -> NoReturn:
-[32m-> [39m[32m1513[39m         raise ValueError(
-[32m   1514[39m             [33mf"The truth value of a {type(self).__name__} is ambiguous. "[39m
-[32m   1515[39m             [33m"Use a.empty, a.bool(), a.item(), a.any() or a.all()."[39m
-[32m   1516[39m         )
-
-[31mValueError[39m: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
-
 RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
 [36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/GCRCatalogs/cosmodc2.py:128[39m, in [36mCosmoDC2ParentClass._subclass_init[39m[34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[39m
 [32m    125[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, **kwargs):
@@ -136,31 +56,23 @@ NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/01_Photometric_Realization.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/01_Photometric_Realization.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/05_True_Posterior.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/06_Blending_Degrader.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/05_True_Posterior.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/06_Blending_Degrader.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/00_Quick_Start_in_Creation.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/03_GridSelection_for_HSC.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/09_Spatial_Variability.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/00_Quick_Start_in_Creation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/03_GridSelection_for_HSC.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/09_Spatial_Variability.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 
-12 FAILED NOTEBOOK(S):
+4 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-2. /home/runner/work/rail_notebooks/rail/examples/creation_examples/01_Photometric_Realization.ipynb
-3. /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
-4. /home/runner/work/rail_notebooks/rail/examples/creation_examples/05_True_Posterior.ipynb
-5. /home/runner/work/rail_notebooks/rail/examples/creation_examples/06_Blending_Degrader.ipynb
-6. /home/runner/work/rail_notebooks/rail/examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
-7. /home/runner/work/rail_notebooks/rail/examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
-8. /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
-9. /home/runner/work/rail_notebooks/rail/examples/creation_examples/00_Quick_Start_in_Creation.ipynb
-10. /home/runner/work/rail_notebooks/rail/examples/creation_examples/03_GridSelection_for_HSC.ipynb
-11. /home/runner/work/rail_notebooks/rail/examples/creation_examples/09_Spatial_Variability.ipynb
-12. /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
+3. /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
+4. /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
@@ -169,4 +81,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
     raise ValueError(
-ValueError: 12 out of 12 notebooks failed to render.
+ValueError: 4 out of 12 notebooks failed to render.

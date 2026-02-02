@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** January 22, 2026
+**Tables last updated:** February 02, 2026
 
 ### Core Notebooks
 
@@ -55,7 +55,7 @@ See more info in each group's log file in `logs/`.
 | :x: | 00_Useful_Utilities.ipynb |
 | :white_check_mark: | 01_FileIO_DataStore.ipynb |
 | :white_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
-| :x: | 03_Hyperbolic_Magnitude.ipynb |
+| :white_check_mark: | 03_Hyperbolic_Magnitude.ipynb |
 | :white_check_mark: | 04_Iterate_Tabular_Data.ipynb |
 | :x: | 05_Build_Save_Load_Run_Pipeline.ipynb |
 | :white_check_mark: | 06_Rail_Interfaces.ipynb |
@@ -64,18 +64,18 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :x: | 00_Quick_Start_in_Creation.ipynb |
-| :x: | 01_Photometric_Realization.ipynb |
-| :x: | 02_Photometric_Realization_with_Other_Surveys.ipynb |
-| :x: | 03_GridSelection_for_HSC.ipynb |
+| :white_check_mark: | 00_Quick_Start_in_Creation.ipynb |
+| :white_check_mark: | 01_Photometric_Realization.ipynb |
+| :white_check_mark: | 02_Photometric_Realization_with_Other_Surveys.ipynb |
+| :white_check_mark: | 03_GridSelection_for_HSC.ipynb |
 | :x: | 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb |
-| :x: | 05_True_Posterior.ipynb |
-| :x: | 06_Blending_Degrader.ipynb |
+| :white_check_mark: | 05_True_Posterior.ipynb |
+| :white_check_mark: | 06_Blending_Degrader.ipynb |
 | :x: | 07_DSPS_SED.ipynb |
 | :x: | 08_FSPS_SED.ipynb |
-| :x: | 09_Spatial_Variability.ipynb |
+| :white_check_mark: | 09_Spatial_Variability.ipynb |
 | :x: | 10_SOM_Spectroscopic_Selector.ipynb |
-| :x: | 11_Spectroscopic_Selection_for_zCOSMOS.ipynb |
+| :white_check_mark: | 11_Spectroscopic_Selection_for_zCOSMOS.ipynb |
 
 ### Estimation Notebooks
 
@@ -88,7 +88,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 04_CMNN.ipynb |
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
-| :x: | 07_NZDir.ipynb |
+| :white_check_mark: | 07_NZDir.ipynb |
 | :x: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
@@ -110,6 +110,6 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :x: | Goldenspike.ipynb |
+| :white_check_mark: | Goldenspike.ipynb |
 
 

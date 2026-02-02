@@ -128,7 +128,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.05</td>
+          <td>0.75</td>
         </tr>
         <tr>
           <th>1</th>
@@ -136,7 +136,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.05</td>
+          <td>0.75</td>
         </tr>
         <tr>
           <th>2</th>
@@ -144,7 +144,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.05</td>
+          <td>0.75</td>
         </tr>
         <tr>
           <th>3</th>
@@ -152,7 +152,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.05</td>
+          <td>0.75</td>
         </tr>
         <tr>
           <th>4</th>
@@ -160,7 +160,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.05</td>
+          <td>0.75</td>
         </tr>
       </tbody>
     </table>
@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 3.76 s, sys: 73.6 ms, total: 3.83 s
-    Wall time: 3.82 s
+    CPU times: user 3.13 s, sys: 76.2 ms, total: 3.21 s
+    Wall time: 3.2 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -235,21 +235,21 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.DataFrame'>
-    Index: 181450 entries, 84300 to 927787
+    Index: 182043 entries, 84300 to 927787
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          181450 non-null  float64
-     1   gz         181450 non-null  float64
-     2   g          181450 non-null  float64
-     3   z          181450 non-null  float64
-     4   redshift   181450 non-null  float64
-     5   x_vals     181450 non-null  float64
-     6   y_vals     181450 non-null  float64
-     7   ratios     181450 non-null  float64
-     8   max_specz  181450 non-null  float64
+     0   i          182043 non-null  float64
+     1   gz         182043 non-null  float64
+     2   g          182043 non-null  float64
+     3   z          182043 non-null  float64
+     4   redshift   182043 non-null  float64
+     5   x_vals     182043 non-null  float64
+     6   y_vals     182043 non-null  float64
+     7   ratios     182043 non-null  float64
+     8   max_specz  182043 non-null  float64
     dtypes: float64(9)
-    memory usage: 13.8 MB
+    memory usage: 13.9 MB
 
 
 And we see that we’ve kept 625,677 out of the 4,000,000 galaxies in the

@@ -1,4 +1,5 @@
 Rendering notebooks in group: creation...
+Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/creation_examples
 RENDERING: 10_SOM_Spectroscopic_Selector
 [32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
 [32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,

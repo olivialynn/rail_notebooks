@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** February 02, 2026
+**Tables last updated:** February 09, 2026
 
 ### Core Notebooks
 

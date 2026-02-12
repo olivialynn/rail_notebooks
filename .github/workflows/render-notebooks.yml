@@ -49,31 +49,58 @@ jobs:
         sudo apt-get install pandoc
         
         
-    # Render notebooks
+    # Render interactive notebooks
     - name: Render core notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py core -v > logs/core_logs.out 2>&1  | tee logs/core_logs.out
+        python src/rail_notebooks/render_notebooks.py core interactive_examples -v > logs/interactive_examples/core_logs.out 2>&1  | tee logs/interactive_examples/core_logs.out
       if: always()
     - name: Render creation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py creation -v > logs/creation_logs.out 2>&1 | tee logs/creation_logs.out
+        python src/rail_notebooks/render_notebooks.py creation interactive_examples -v > logs/interactive_examples/creation_logs.out 2>&1 | tee logs/interactive_examples/creation_logs.out
       if: always()
     - name: Render estimation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py estimation -v > logs/estimation_logs.out 2>&1 | tee logs/estimation_logs.out
+        python src/rail_notebooks/render_notebooks.py estimation interactive_examples -v > logs/interactive_examples/estimation_logs.out 2>&1 | tee logs/interactive_examples/estimation_logs.out
       if: always()
     - name: Render evaluation notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py evaluation -v > logs/evaluation_logs.out 2>&1 | tee logs/evaluation_logs.out
+        python src/rail_notebooks/render_notebooks.py evaluation interactive_examples -v > logs/interactive_examples/evaluation_logs.out 2>&1 | tee logs/interactive_examples/evaluation_logs.out
       if: always()
     - name: Render goldenspike notebooks
       run: |
         mkdir -p logs
-        python src/rail_notebooks/render_notebooks.py goldenspike -v > logs/goldenspike_logs.out 2>&1 | tee logs/goldenspike_logs.out
+        python src/rail_notebooks/render_notebooks.py goldenspike interactive_examples -v > logs/interactive_examples/goldenspike_logs.out 2>&1 | tee logs/interactive_examples/goldenspike_logs.out
+      if: always()
+
+    # Render pipeline notebooks
+    - name: Render core notebooks
+      run: |
+        mkdir -p logs
+        python src/rail_notebooks/render_notebooks.py core pipeline_examples -v > logs/pipeline_examples/core_logs.out 2>&1  | tee logs/pipeline_examples/core_logs.out
+      if: always()
+    - name: Render creation notebooks
+      run: |
+        mkdir -p logs
+        python src/rail_notebooks/render_notebooks.py creation pipeline_examples -v > logs/pipeline_examples/creation_logs.out 2>&1 | tee logs/pipeline_examples/creation_logs.out
+      if: always()
+    - name: Render estimation notebooks
+      run: |
+        mkdir -p logs
+        python src/rail_notebooks/render_notebooks.py estimation pipeline_examples -v > logs/pipeline_examples/estimation_logs.out 2>&1 | tee logs/pipeline_examples/estimation_logs.out
+      if: always()
+    - name: Render evaluation notebooks
+      run: |
+        mkdir -p logs
+        python src/rail_notebooks/render_notebooks.py evaluation pipeline_examples -v > logs/pipeline_examples/evaluation_logs.out 2>&1 | tee logs/pipeline_examples/evaluation_logs.out
+      if: always()
+    - name: Render goldenspike notebooks
+      run: |
+        mkdir -p logs
+        python src/rail_notebooks/render_notebooks.py goldenspike -v pipeline_examples > logs/pipeline_examples/goldenspike_logs.out 2>&1 | tee logs/pipeline_examples/goldenspike_logs.out
       if: always()
       
     # Commit changes

@@ -15,20 +15,20 @@ Rail Notebooks
    :caption: Interactive Mode Notebooks
    :maxdepth: 2
 
-   Overview of Demonstrations <interactive/index>
-   Core Notebooks <interactive/core_notebooks>
-   Creation Notebooks <interactive/creation_notebooks>
-   Estimation Notebooks <interactive/estimation_notebooks>
-   Evaluation Notebooks <interactive/evaluation_notebooks>
-   Goldenspike Notebook <interactive/goldenspike_notebook>
+   Overview of Demonstrations <interactive_examples/index>
+   Core Notebooks <interactive_examples/core_notebooks>
+   Creation Notebooks <interactive_examples/creation_notebooks>
+   Estimation Notebooks <interactive_examples/estimation_notebooks>
+   Evaluation Notebooks <interactive_examples/evaluation_notebooks>
+   Goldenspike Notebook <interactive_examples/goldenspike_notebook>
 
 .. toctree::
    :caption: Pipeline Mode Notebooks
    :maxdepth: 2
 
-   Overview of Demonstrations <pipeline/index>
-   Core Notebooks <pipeline/core_notebooks>
-   Creation Notebooks <pipeline/creation_notebooks>
-   Estimation Notebooks <pipeline/estimation_notebooks>
-   Evaluation Notebooks <pipeline/evaluation_notebooks>
-   Goldenspike Notebook <pipeline/goldenspike_notebook>
+   Overview of Demonstrations <pipeline_examples/index>
+   Core Notebooks <pipeline_examples/core_notebooks>
+   Creation Notebooks <pipeline_examples/creation_notebooks>
+   Estimation Notebooks <pipeline_examples/estimation_notebooks>
+   Evaluation Notebooks <pipeline_examples/evaluation_notebooks>
+   Goldenspike Notebook <pipeline_examples/goldenspike_notebook>

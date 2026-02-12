@@ -10,13 +10,25 @@ Rail Notebooks
 
    Back to RAIL <https://rail-hub.readthedocs.io/en/latest/>
 
+
 .. toctree::
-   :caption: Usage Demos
+   :caption: Interactive Mode Notebooks
    :maxdepth: 2
 
-   Overview of Demonstrations <demonstrations>
-   Core Notebooks <core_notebooks>
-   Creation Notebooks <creation_notebooks>
-   Estimation Notebooks <estimation_notebooks>
-   Evaluation Notebooks <evaluation_notebooks>
-   Goldenspike Notebook <goldenspike_notebook>
+   Overview of Demonstrations <interactive/index>
+   Core Notebooks <interactive/core_notebooks>
+   Creation Notebooks <interactive/creation_notebooks>
+   Estimation Notebooks <interactive/estimation_notebooks>
+   Evaluation Notebooks <interactive/evaluation_notebooks>
+   Goldenspike Notebook <interactive/goldenspike_notebook>
+
+.. toctree::
+   :caption: Pipeline Mode Notebooks
+   :maxdepth: 2
+
+   Overview of Demonstrations <pipeline/index>
+   Core Notebooks <pipeline/core_notebooks>
+   Creation Notebooks <pipeline/creation_notebooks>
+   Estimation Notebooks <pipeline/estimation_notebooks>
+   Evaluation Notebooks <pipeline/evaluation_notebooks>
+   Goldenspike Notebook <pipeline/goldenspike_notebook>

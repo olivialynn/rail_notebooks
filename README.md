@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** February 09, 2026
+**Tables last updated:** February 16, 2026
 
 ### Core Notebooks
 
@@ -89,7 +89,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :x: | 08_NZDir_pipeline.ipynb |
+| :white_check_mark: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |

@@ -1,20 +1,11 @@
 Rendering notebooks in group: estimation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/estimation_examples
-RENDERING: 15_LePhare_COSMOS
-RENDERING: 14_LePhare_LSST
-RENDERING: 08_NZDir_pipeline
-[32m    459[39m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[33m'[39m[33mNone[39m[33m'[39m, [33m'[39m[33mnone[39m[33m'[39m, [38;5;28;01mNone[39;00m]:
-[32m    460[39m     [38;5;66;03m# Path exists, use that                [39;00m
-[32m    461[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isfile(path):
-[32m--> [39m[32m462[39m         [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([33mf[39m[33m"[39m[33mUnable to find file: [39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[33m"[39m)
-[32m    463[39m     handle.path = path
-[32m    464[39m     [38;5;28;01mif[39;00m do_read:
-[32m    465[39m         [38;5;66;03m# Read the data using the handle[39;00m
-
-[31mFileNotFoundError[39m: Unable to find file: NZDir_model.pkl
-
-RENDERING: 02_BPZ_lite
-RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
+RENDERING: 03_BPZ_lite_Custom_SEDs
+RENDERING: 09_PZFlow
+RENDERING: 06_GPz
+RENDERING: 16_Running_with_different_data
+RENDERING: 05_DNF
+RENDERING: 07_NZDir
 RENDERING: 11_SomocluSOM
 [32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
 [32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
@@ -26,10 +17,15 @@ RENDERING: 11_SomocluSOM
 
 [31mNameError[39m: name 'wrap_train' is not defined
 
-RENDERING: 05_DNF
-RENDERING: 06_GPz
+RENDERING: 14_LePhare_LSST
+RENDERING: 15_LePhare_COSMOS
 RENDERING: 00_Quick_Start_in_Estimation
+RENDERING: 02_BPZ_lite
+RENDERING: 10_YAW
 RENDERING: 13_Sampled_Summarizers
+RENDERING: 08_NZDir_pipeline
+RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
+RENDERING: 04_CMNN
 RENDERING: 12_SomocluSOM_Quality_Control
 [32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
 [32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
@@ -41,38 +37,31 @@ RENDERING: 12_SomocluSOM_Quality_Control
 
 [31mNameError[39m: name 'wrap_train' is not defined
 
-RENDERING: 10_YAW
-RENDERING: 03_BPZ_lite_Custom_SEDs
-RENDERING: 09_PZFlow
-RENDERING: 16_Running_with_different_data
-RENDERING: 07_NZDir
-RENDERING: 04_CMNN
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/15_LePhare_COSMOS.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/14_LePhare_LSST.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/02_BPZ_lite.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/05_DNF.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/06_GPz.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/13_Sampled_Summarizers.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/10_YAW.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/09_PZFlow.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/06_GPz.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/16_Running_with_different_data.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/05_DNF.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/14_LePhare_LSST.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/15_LePhare_COSMOS.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/02_BPZ_lite.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/10_YAW.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/13_Sampled_Summarizers.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/04_CMNN.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
 
-3 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
-2. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
-3. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
+2 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
@@ -81,4 +70,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
     raise ValueError(
-ValueError: 3 out of 17 notebooks failed to render.
+ValueError: 2 out of 17 notebooks failed to render.

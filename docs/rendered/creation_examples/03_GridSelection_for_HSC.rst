@@ -128,7 +128,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.44</td>
+          <td>2.21</td>
         </tr>
         <tr>
           <th>1</th>
@@ -136,7 +136,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.44</td>
+          <td>2.21</td>
         </tr>
         <tr>
           <th>2</th>
@@ -144,7 +144,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.44</td>
+          <td>2.21</td>
         </tr>
         <tr>
           <th>3</th>
@@ -152,7 +152,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.44</td>
+          <td>2.21</td>
         </tr>
         <tr>
           <th>4</th>
@@ -160,7 +160,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.44</td>
+          <td>2.21</td>
         </tr>
       </tbody>
     </table>
@@ -220,8 +220,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.99 s, sys: 81.9 ms, total: 3.08 s
-    Wall time: 3.07 s
+    CPU times: user 3.15 s, sys: 78.9 ms, total: 3.23 s
+    Wall time: 3.23 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -235,19 +235,19 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.DataFrame'>
-    Index: 181851 entries, 84300 to 927787
+    Index: 181995 entries, 84300 to 927787
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          181851 non-null  float64
-     1   gz         181851 non-null  float64
-     2   g          181851 non-null  float64
-     3   z          181851 non-null  float64
-     4   redshift   181851 non-null  float64
-     5   x_vals     181851 non-null  float64
-     6   y_vals     181851 non-null  float64
-     7   ratios     181851 non-null  float64
-     8   max_specz  181851 non-null  float64
+     0   i          181995 non-null  float64
+     1   gz         181995 non-null  float64
+     2   g          181995 non-null  float64
+     3   z          181995 non-null  float64
+     4   redshift   181995 non-null  float64
+     5   x_vals     181995 non-null  float64
+     6   y_vals     181995 non-null  float64
+     7   ratios     181995 non-null  float64
+     8   max_specz  181995 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 

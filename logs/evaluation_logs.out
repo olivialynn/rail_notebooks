@@ -1,10 +1,10 @@
 Rendering notebooks in group: evaluation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/evaluation_examples
-RENDERING: 01_Evaluation_by_Type
 RENDERING: 00_Single_Evaluation
+RENDERING: 01_Evaluation_by_Type
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/01_Evaluation_by_Type.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/00_Single_Evaluation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/01_Evaluation_by_Type.ipynb

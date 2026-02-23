@@ -10,7 +10,7 @@ import sys
 from importlib.metadata import version
 
 # Define path to the code to be documented **relative to where conf.py (this file) is kept**
-sys.path.insert(0, os.path.abspath('../src/'))
+sys.path.insert(0, os.path.abspath("../src/"))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -28,11 +28,13 @@ version = ".".join(release.split(".")[:2])
 extensions = ["sphinx.ext.mathjax", "sphinx.ext.napoleon", "sphinx.ext.viewcode"]
 
 templates_path = []
-exclude_patterns = ['_build', '**.ipynb_checkpoints']
+exclude_patterns = ["_build", "**.ipynb_checkpoints"]
 
 master_doc = "index"  # This assumes that sphinx-build is called from the root directory
-html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
-add_module_names = False # Remove namespaces from class/method signatures
+html_show_sourcelink = (
+    False  # Remove 'view source code' from top of page (for html, not python)
+)
+add_module_names = False  # Remove namespaces from class/method signatures
 
 """
 autoapi_type = "python"
@@ -45,19 +47,26 @@ autoapi_member_order = "bysource"
 # -- Grab the demonstrations file from the main RAIL repo --------------------
 from urllib.request import urlretrieve
 
-urlretrieve (
-    "https://raw.githubusercontent.com/LSSTDESC/rail/main/docs/source/demonstrations.rst",
-    "demonstrations.rst"
+# get interactive notebooks index file
+urlretrieve(
+    "https://raw.githubusercontent.com/LSSTDESC/rail/main/docs/source/interactive_notebooks/index.rst",
+    "interactive_examples/index.rst",
+)
+
+# get pipeline notebooks index file
+urlretrieve(
+    "https://raw.githubusercontent.com/LSSTDESC/rail/main/docs/source/pipeline_notebooks/index.rst",
+    "pipeline_examples/index.rst",
 )
 
 # -- CSS ---------------------------------------------------------------------
 html_theme = "sphinx_rtd_theme"
 
 # These folders are copied to the documentation's HTML output
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
 html_css_files = [
-    'css/notebooks.css',
+    "css/notebooks.css",
 ]

@@ -30,6 +30,7 @@ def _resolve_repo_paths():
         "readme_path": readme_path,
     }
 
+
 def _parse_output_files(output_files):
     """Parse output files to extract relevant data for tables.
 
@@ -54,10 +55,12 @@ def _parse_output_files(output_files):
                 # The format is "X FAILED NOTEBOOK(S):" , where X is a number.
                 # So, we want to cut that whole section off.
                 raw_table = raw_table.split("FAILED NOTEBOOK(S):")[0]
-                raw_table = raw_table.rsplit("\n", 1)[0]  # Remove the last line which has just a number
+                raw_table = raw_table.rsplit("\n", 1)[
+                    0
+                ]  # Remove the last line which has just a number
 
             table_contents = []
-            for line in raw_table.splitlines(): 
+            for line in raw_table.splitlines():
                 # Skip header lines.
                 if line.strip() == "":
                     continue
@@ -74,10 +77,17 @@ def _parse_output_files(output_files):
                 # Append to table contents.
                 table_contents.append((notebook_name, return_code))
 
-            table_name = output_file.stem.split("_")[0]  # e.g., "core" from "core_logs.out"
+            table_name = output_file.stem.split("_")[
+                0
+            ]  # e.g., "core" from "core_logs.out"
             parsed_data[table_name] = sorted(table_contents, key=lambda x: x[0])
-            print(f"\nPARSED DATA for TABLE {table_name}:\n", "\n".join(str(item) for item in parsed_data[table_name]), "\n")
+            print(
+                f"\nPARSED DATA for TABLE {table_name}:\n",
+                "\n".join(str(item) for item in parsed_data[table_name]),
+                "\n",
+            )
     return parsed_data
+
 
 def _write_new_tables(parsed_tables):
     """Generate markdown tables from output files.
@@ -93,8 +103,14 @@ def _write_new_tables(parsed_tables):
         The generated markdown tables as a string.
     """
     new_tables = ""
-    for expected_name in ["core", "creation", "estimation", "evaluation", "goldenspike"]:
-        new_tables += f"### {expected_name.capitalize()} Notebooks\n\n"
+    for expected_name in [
+        "core",
+        "creation",
+        "estimation",
+        "evaluation",
+        "goldenspike",
+    ]:
+        new_tables += f"#### {expected_name.capitalize()} Notebooks\n\n"
         if expected_name not in parsed_tables:
             new_tables += "*Error when parsing output files for this section*\n\n"
         else:
@@ -106,46 +122,70 @@ def _write_new_tables(parsed_tables):
                 icon = ":white_check_mark:" if return_code == "0" else ":x:"
                 new_tables += f"| {icon} | {notebook_name} |\n"
             new_tables += "\n"
-            
+
     return new_tables
+
 
 def update_readme():
     """Update the README.md file based on the output files in logs/."""
     paths = _resolve_repo_paths()
     logs_path = paths["logs_path"]
-    readme_path = paths["readme_path"] 
-    output_files = list(logs_path.glob("*.out"))
+    readme_path = paths["readme_path"]
+
+    # get list of files within the two logs sub-paths
+    interactive_logs_path = logs_path / "interactive_examples"
+    pipeline_logs_path = logs_path / "pipeline_examples"
+    interactive_output_files = list(interactive_logs_path.glob("*.out"))
+    pipeline_output_files = list(pipeline_logs_path.glob("*.out"))
 
     with readme_path.open("r") as f:
         readme_contents = f.readlines()
-    
+
     new_contents = []
     found_marker = False
     for line in readme_contents:
         if line.strip() == "<!--auto update below-->":
             found_marker = True
 
-            parsed_tables = _parse_output_files(output_files)
-            new_tables_as_markdown = _write_new_tables(parsed_tables)
+            # parse pipeline and interactive files into markdown tables
+            pipeline_parsed_tables = _parse_output_files(pipeline_output_files)
+            interactive_parsed_tables = _parse_output_files(interactive_output_files)
+            pipeline_tables_as_markdown = _write_new_tables(pipeline_parsed_tables)
+            interactive_tables_as_markdown = _write_new_tables(
+                interactive_parsed_tables
+            )
 
             new_contents.append(line)
             new_contents.append("\n")
-            
+
             last_updated_date_string = date.today().strftime("%B %d, %Y")
-            new_contents.append(f"**Tables last updated:** {last_updated_date_string}\n\n")
-            
-            new_contents.append(new_tables_as_markdown)
+            new_contents.append(
+                f"**Tables last updated:** {last_updated_date_string}\n\n"
+            )
+
+            # append pipeline notebooks
+            new_contents.append("\n")
+            new_contents.append("### Pipeline Notebooks")
+            new_contents.append(pipeline_tables_as_markdown)
+
+            # append interactive notebooks
+            new_contents.append("\n")
+            new_contents.append("### Interactive Notebooks")
+            new_contents.append(interactive_tables_as_markdown)
+
             new_contents.append("\n")
             break
         else:
             new_contents.append(line)
 
     if not found_marker:
-        raise RuntimeError("Could not find marker in README.md to insert updated tables.")
+        raise RuntimeError(
+            "Could not find marker in README.md to insert updated tables."
+        )
 
     with readme_path.open("w") as f:
         f.writelines(new_contents)
-    
+
 
 if __name__ == "__main__":
     update_readme()

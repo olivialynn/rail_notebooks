@@ -37,10 +37,10 @@ def _parse_args():
             sys.argv.remove("-d")
 
     # Get the notebook group.
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         raise ValueError(
             "Not enough arguments given. Usage: python render_notebooks.py "
-            "<notebook_group> [--verbose | -v] [--debug | -d]"
+            "<notebook_group> <super_group> [--verbose | -v] [--debug | -d]"
         )
     group_name = sys.argv[1]
     if group_name not in [
@@ -55,7 +55,10 @@ def _parse_args():
             "Try 'core', 'creation', 'estimation', 'evaluation', or 'goldenspike'."
         )
 
-    return group_name, verbose, debug
+    # get the super group
+    super_group = sys.argv[2]
+
+    return group_name, super_group, verbose, debug
 
 
 def _resolve_repo_paths():
@@ -231,6 +234,9 @@ def run_render_notebook_group():
     notebook_group : str
         The group of notebooks to render. Must be one of 'core', 'creation',
         'estimation', 'evaluation', or 'goldenspike'.
+    super_group: str
+        The folder that this group of notebooks is found in. Should be one of
+        'interactive_examples' or 'pipeline_examples'.
     --verbose, -v : bool, optional
         If specified, enables verbose output.
 
@@ -239,13 +245,15 @@ def run_render_notebook_group():
     ValueError
         If an invalid notebook group is provided or if any notebook failed to render.
     """
-    group_name, verbose, debug = _parse_args()
+    group_name, super_group, verbose, debug = _parse_args()
     if verbose:
         print(f"Rendering notebooks in group: {group_name}...")
 
     repo_root, rail_root = _resolve_repo_paths()
-    raw_notebook_dir = rail_root / "examples" / f"{group_name}_examples"
-    rendered_group_dir = repo_root / "docs" / "rendered" / f"{group_name}_examples"
+    raw_notebook_dir = rail_root / super_group / f"{group_name}_examples"
+    rendered_group_dir = (
+        repo_root / "docs" / super_group / "rendered" / f"{group_name}_examples"
+    )
 
     _clear_rendered_output(rendered_group_dir, verbose)
 

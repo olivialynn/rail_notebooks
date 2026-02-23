@@ -66,19 +66,6 @@ Specify the path to the pretrained ‘pzflow’ used to generate samples
     )
 
 
-We’ll start by setting up the Rail data store. RAIL uses
-`ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
-pipelines rather than interactive notebooks, the data store will work
-around that and enable us to use data interactively. See the
-``rail/examples/goldenspike/goldenspike.ipynb`` example notebook for
-more details on the Data Store.
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
-
 “True” Engine
 -------------
 
@@ -123,7 +110,7 @@ Let’s check that the Engine correctly read the underlying PZ Flow object
 
 .. parsed-literal::
 
-    <pzflow.flow.Flow at 0x7f6413e70d10>
+    <pzflow.flow.Flow at 0x7fab10215550>
 
 
 
@@ -207,7 +194,7 @@ using, you can just print the model:
 
 .. parsed-literal::
 
-    <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7f6413e70f10>
+    <rail.creation.degraders.photometric_errors.LSSTErrorModel at 0x7fab04c1ad50>
 
 
 
@@ -223,7 +210,7 @@ photometric errors.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  input: None, error_model
+    Inserting handle into data store.  output_truth: None, error_model
     Inserting handle into data store.  output_error_model: inprogress_output_error_model.pq, error_model
 
 
@@ -268,82 +255,82 @@ photometric errors.
         <tr>
           <th>0</th>
           <td>1.398944</td>
-          <td>29.586672</td>
-          <td>2.273363</td>
-          <td>26.815650</td>
-          <td>0.181360</td>
-          <td>25.957766</td>
-          <td>0.075960</td>
-          <td>25.179779</td>
-          <td>0.062270</td>
-          <td>24.666717</td>
-          <td>0.075660</td>
-          <td>24.141031</td>
-          <td>0.106938</td>
+          <td>29.995681</td>
+          <td>2.639520</td>
+          <td>26.865795</td>
+          <td>0.189208</td>
+          <td>26.110190</td>
+          <td>0.086891</td>
+          <td>25.231548</td>
+          <td>0.065195</td>
+          <td>24.655415</td>
+          <td>0.074908</td>
+          <td>24.085797</td>
+          <td>0.101895</td>
         </tr>
         <tr>
           <th>1</th>
           <td>2.285624</td>
-          <td>28.109795</td>
-          <td>1.128098</td>
-          <td>27.494877</td>
-          <td>0.317360</td>
-          <td>26.728171</td>
-          <td>0.148826</td>
-          <td>26.269168</td>
-          <td>0.161383</td>
-          <td>26.077949</td>
-          <td>0.254140</td>
-          <td>26.269863</td>
-          <td>0.597274</td>
+          <td>27.248165</td>
+          <td>0.653937</td>
+          <td>27.328244</td>
+          <td>0.277529</td>
+          <td>26.857468</td>
+          <td>0.166235</td>
+          <td>26.396354</td>
+          <td>0.179826</td>
+          <td>25.578010</td>
+          <td>0.167236</td>
+          <td>25.593776</td>
+          <td>0.360345</td>
         </tr>
         <tr>
           <th>2</th>
           <td>1.495132</td>
           <td>inf</td>
           <td>inf</td>
-          <td>28.058257</td>
-          <td>0.489873</td>
-          <td>29.528996</td>
-          <td>1.168987</td>
-          <td>26.031911</td>
-          <td>0.131603</td>
-          <td>25.106268</td>
-          <td>0.111318</td>
-          <td>24.337457</td>
-          <td>0.126875</td>
+          <td>29.646712</td>
+          <td>1.348162</td>
+          <td>28.020469</td>
+          <td>0.427404</td>
+          <td>26.048805</td>
+          <td>0.133539</td>
+          <td>24.970999</td>
+          <td>0.098900</td>
+          <td>24.241113</td>
+          <td>0.116691</td>
         </tr>
         <tr>
           <th>3</th>
           <td>0.842594</td>
           <td>inf</td>
           <td>inf</td>
-          <td>28.631909</td>
-          <td>0.734438</td>
-          <td>27.719360</td>
-          <td>0.338319</td>
-          <td>26.301480</td>
-          <td>0.165894</td>
-          <td>25.490034</td>
-          <td>0.155129</td>
-          <td>26.575426</td>
-          <td>0.737135</td>
+          <td>27.651311</td>
+          <td>0.359147</td>
+          <td>27.159388</td>
+          <td>0.214472</td>
+          <td>26.505199</td>
+          <td>0.197134</td>
+          <td>25.477840</td>
+          <td>0.153517</td>
+          <td>25.824559</td>
+          <td>0.430602</td>
         </tr>
         <tr>
           <th>4</th>
           <td>1.588960</td>
-          <td>26.305300</td>
-          <td>0.323528</td>
-          <td>26.141795</td>
-          <td>0.101461</td>
-          <td>25.900682</td>
-          <td>0.072221</td>
-          <td>25.696127</td>
-          <td>0.098222</td>
-          <td>25.387878</td>
-          <td>0.142099</td>
-          <td>25.301173</td>
-          <td>0.285425</td>
+          <td>26.027776</td>
+          <td>0.258652</td>
+          <td>25.978118</td>
+          <td>0.087896</td>
+          <td>25.819900</td>
+          <td>0.067237</td>
+          <td>25.646250</td>
+          <td>0.094016</td>
+          <td>25.579688</td>
+          <td>0.167475</td>
+          <td>25.161086</td>
+          <td>0.254638</td>
         </tr>
         <tr>
           <th>...</th>
@@ -364,82 +351,82 @@ photometric errors.
         <tr>
           <th>99995</th>
           <td>0.389450</td>
-          <td>27.042212</td>
-          <td>0.565632</td>
-          <td>26.330871</td>
-          <td>0.119639</td>
-          <td>25.439945</td>
-          <td>0.047993</td>
-          <td>25.062687</td>
-          <td>0.056125</td>
-          <td>24.864382</td>
-          <td>0.090063</td>
-          <td>24.559099</td>
-          <td>0.153585</td>
+          <td>27.411393</td>
+          <td>0.730780</td>
+          <td>26.604633</td>
+          <td>0.151523</td>
+          <td>25.346125</td>
+          <td>0.044159</td>
+          <td>25.084328</td>
+          <td>0.057213</td>
+          <td>24.725847</td>
+          <td>0.079715</td>
+          <td>24.689480</td>
+          <td>0.171667</td>
         </tr>
         <tr>
           <th>99996</th>
           <td>1.481047</td>
-          <td>29.052011</td>
-          <td>1.820704</td>
-          <td>26.503314</td>
-          <td>0.138888</td>
-          <td>26.079875</td>
-          <td>0.084602</td>
-          <td>25.237278</td>
-          <td>0.065526</td>
-          <td>24.748012</td>
-          <td>0.081289</td>
-          <td>24.381392</td>
-          <td>0.131794</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>26.585349</td>
+          <td>0.149038</td>
+          <td>26.064094</td>
+          <td>0.083433</td>
+          <td>25.230324</td>
+          <td>0.065124</td>
+          <td>24.806957</td>
+          <td>0.085624</td>
+          <td>24.065235</td>
+          <td>0.100077</td>
         </tr>
         <tr>
           <th>99997</th>
           <td>2.023548</td>
-          <td>26.970381</td>
-          <td>0.537064</td>
-          <td>26.956356</td>
-          <td>0.204176</td>
-          <td>26.403214</td>
-          <td>0.112333</td>
-          <td>25.902136</td>
-          <td>0.117589</td>
-          <td>25.929637</td>
-          <td>0.224849</td>
-          <td>25.596682</td>
-          <td>0.361166</td>
+          <td>26.809410</td>
+          <td>0.477123</td>
+          <td>26.821073</td>
+          <td>0.182194</td>
+          <td>26.571291</td>
+          <td>0.129996</td>
+          <td>26.004628</td>
+          <td>0.128531</td>
+          <td>25.536268</td>
+          <td>0.161386</td>
+          <td>26.194580</td>
+          <td>0.566065</td>
         </tr>
         <tr>
           <th>99998</th>
           <td>1.548204</td>
-          <td>26.735890</td>
-          <td>0.451577</td>
-          <td>26.409908</td>
-          <td>0.128124</td>
-          <td>26.070832</td>
-          <td>0.083930</td>
-          <td>26.109223</td>
-          <td>0.140687</td>
-          <td>25.531333</td>
-          <td>0.160707</td>
-          <td>25.895538</td>
-          <td>0.454344</td>
+          <td>26.214432</td>
+          <td>0.300877</td>
+          <td>26.158789</td>
+          <td>0.102980</td>
+          <td>26.099976</td>
+          <td>0.086113</td>
+          <td>25.769579</td>
+          <td>0.104747</td>
+          <td>25.994168</td>
+          <td>0.237199</td>
+          <td>25.602554</td>
+          <td>0.362830</td>
         </tr>
         <tr>
           <th>99999</th>
           <td>1.739491</td>
-          <td>28.622287</td>
-          <td>1.485375</td>
-          <td>26.811960</td>
-          <td>0.180795</td>
-          <td>26.544316</td>
-          <td>0.126994</td>
-          <td>26.175830</td>
-          <td>0.148984</td>
-          <td>26.019049</td>
-          <td>0.242122</td>
-          <td>25.475503</td>
-          <td>0.328246</td>
+          <td>28.466604</td>
+          <td>1.371523</td>
+          <td>27.033554</td>
+          <td>0.217780</td>
+          <td>26.332126</td>
+          <td>0.105573</td>
+          <td>26.238037</td>
+          <td>0.157144</td>
+          <td>26.045011</td>
+          <td>0.247355</td>
+          <td>26.547131</td>
+          <td>0.723286</td>
         </tr>
       </tbody>
     </table>
@@ -478,7 +465,7 @@ Let’s plot the error as a function of magnitude
 
 
 
-.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_19_0.png
+.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_17_0.png
 
 
 You can see that the photometric error increases as magnitude gets
@@ -515,6 +502,7 @@ Now we can stick this into a Creator and draw a new sample
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output_error_model: None, cuts
     Inserting handle into data store.  output_cuts: inprogress_output_cuts.pq, cuts
 
 
@@ -568,6 +556,7 @@ is the ‘’pivot’’ redshift. We’ll use :math:`z_p = 0.8`.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output_cuts: None, incompleteness
     Inserting handle into data store.  output_incompleteness: inprogress_output_incompleteness.pq, incompleteness
 
 
@@ -602,7 +591,7 @@ so far:
 
 
 
-.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_30_0.png
+.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_28_0.png
 
 
 You can see that the Gold sample has significantly fewer high-redshift
@@ -647,11 +636,9 @@ this scenario is!)
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output_incompleteness: None, lc_2p_0II_0III
     Inserting handle into data store.  output_lc_2p_0II_0III: inprogress_output_lc_2p_0II_0III.pq, lc_2p_0II_0III
-
-
-.. parsed-literal::
-
+    Inserting handle into data store.  output_lc_2p_0II_0III: None, lc_1p_0III_0II
     Inserting handle into data store.  output_lc_1p_0III_0II: inprogress_output_lc_1p_0III_0II.pq, lc_1p_0III_0II
 
 
@@ -690,7 +677,7 @@ Let’s plot the redshift distributions one more time
 
 
 
-.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_36_0.png
+.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_34_0.png
 
 
 You can see that the redshift distribution of this new sample is
@@ -725,7 +712,7 @@ listed in the new sample with Oxygen Line Confusion.
 
 
 
-.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_38_0.png
+.. image:: 00_Quick_Start_in_Creation_files/00_Quick_Start_in_Creation_36_0.png
 
 
 Now we can clearly see the spec-z errors! The galaxies above the line

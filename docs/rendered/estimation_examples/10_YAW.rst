@@ -35,10 +35,8 @@ poor.
     
     from rail.core.data import TableHandle, Hdf5Handle
     
-    # configure RAIL datastore to allow overwriting data
     from rail.core.stage import RailStage
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
+    import tables_io
 
 .. code:: ipython3
 
@@ -79,7 +77,7 @@ containing 100k objects on a limited redshift range of
     n_data = len(test_data)
     print(f"N={n_data}, {zmin:.1f}<z<{zmax:.1f}")
     
-    handle_test_data = DS.add_data("input_data", test_data, Hdf5Handle)
+    handle_test_data = Hdf5Handle("input_data",data=test_data)
 
 
 .. parsed-literal::
@@ -105,7 +103,7 @@ handle to the datastore.
     test_rand = generator.generate_dataframe(n_data * 10)
     test_rand.rename(columns=dict(redshifts="z"), inplace=True)
     
-    handle_test_rand = DS.add_data("input_rand", test_rand, Hdf5Handle)
+    handle_test_rand = Hdf5Handle("input_rand", data=test_rand)
 
 2. Splitting and caching the data
 ---------------------------------
@@ -450,7 +448,7 @@ the cache (handle) of the reference dataset.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  sample: None, auto_corr
+    Inserting handle into data store.  output_cache_ref: None, auto_corr
     YAW | yet_another_wizz v3.1.2
 
 
@@ -591,8 +589,8 @@ the cache (handles) of the reference and the unknown data.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  reference: None, cross_corr
-    Inserting handle into data store.  unknown: None, cross_corr
+    Inserting handle into data store.  output_cache_ref: None, cross_corr
+    Inserting handle into data store.  output_cache_unk: None, cross_corr
     YAW | yet_another_wizz v3.1.2
 
 
@@ -752,8 +750,8 @@ practice since the exact redshifts of the unknown objects are not known.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  cross_corr: None, summarize
-    Inserting handle into data store.  auto_corr_ref: None, summarize
+    Inserting handle into data store.  output_cross_corr: None, summarize
+    Inserting handle into data store.  output_auto_corr: None, summarize
     YAW | yet_another_wizz v3.1.2
 
 
@@ -861,7 +859,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fd245553d10>
+    <matplotlib.legend.Legend at 0x7f5611518950>
 
 
 

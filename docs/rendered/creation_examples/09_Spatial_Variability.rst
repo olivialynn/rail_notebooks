@@ -74,8 +74,6 @@ Analysis Framework (MAF).
     import rail
     from rail.core.stage import RailStage
     from rail.utils.path_utils import find_rail_file
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
 
 Let’s generate some fake data.
 
@@ -136,7 +134,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.336193</td>
+          <td>0.149810</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -146,7 +144,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>1.299312</td>
+          <td>1.229132</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -156,7 +154,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.976909</td>
+          <td>0.503253</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -166,7 +164,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>0.410912</td>
+          <td>0.872369</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -176,7 +174,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>0.876482</td>
+          <td>1.243992</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -239,8 +237,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.7 s, sys: 50.1 ms, total: 3.75 s
-    Wall time: 3.75 s
+    CPU times: user 3.59 s, sys: 56.6 ms, total: 3.64 s
+    Wall time: 3.64 s
 
 
 .. code:: ipython3
@@ -291,7 +289,7 @@ Let’s run the code and see how long it takes:
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.336193</td>
+          <td>0.149810</td>
           <td>22.990404</td>
           <td>0.026246</td>
           <td>23.011212</td>
@@ -310,7 +308,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>1</th>
-          <td>1.299312</td>
+          <td>1.229132</td>
           <td>22.962996</td>
           <td>0.025645</td>
           <td>23.012586</td>
@@ -329,7 +327,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>2</th>
-          <td>1.976909</td>
+          <td>0.503253</td>
           <td>23.050979</td>
           <td>0.027628</td>
           <td>22.992791</td>
@@ -348,7 +346,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>3</th>
-          <td>0.410912</td>
+          <td>0.872369</td>
           <td>23.015021</td>
           <td>0.026798</td>
           <td>22.984763</td>
@@ -367,7 +365,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>4</th>
-          <td>0.876482</td>
+          <td>1.243992</td>
           <td>23.005344</td>
           <td>0.026579</td>
           <td>23.010790</td>
@@ -410,7 +408,6 @@ at the SNR at different area of the sky, and compare that with the
     weight = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits"))
     Med_5sd_i = hp.read_map(find_rail_file("examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits"))
 
-
 .. code:: ipython3
 
     # Set negative values in mask to zero
@@ -442,7 +439,7 @@ at the SNR at different area of the sky, and compare that with the
 
 
 
-.. image:: 09_Spatial_Variability_files/09_Spatial_Variability_22_0.png
+.. image:: 09_Spatial_Variability_files/09_Spatial_Variability_21_0.png
 
 
 Now if we want to change any of the default settings, we can supply them
@@ -483,6 +480,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, ObsCondition
     Assigning pixels.
     No ra, dec found in catalogue, randomly assign pixels with weights.
     Warning: objects found outside given mask, pixel assigned=-99. These objects will be assigned with defualt error from LSST error model!
@@ -541,7 +539,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.336193</td>
+          <td>0.149810</td>
           <td>22.990381</td>
           <td>0.026308</td>
           <td>23.011222</td>
@@ -560,7 +558,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>1</th>
-          <td>1.299312</td>
+          <td>1.229132</td>
           <td>22.963601</td>
           <td>0.025237</td>
           <td>23.012513</td>
@@ -579,7 +577,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>2</th>
-          <td>1.976909</td>
+          <td>0.503253</td>
           <td>23.050276</td>
           <td>0.027242</td>
           <td>22.992825</td>
@@ -598,7 +596,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>3</th>
-          <td>0.410912</td>
+          <td>0.872369</td>
           <td>23.014777</td>
           <td>0.026365</td>
           <td>22.984848</td>
@@ -617,7 +615,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>4</th>
-          <td>0.876482</td>
+          <td>1.243992</td>
           <td>23.005223</td>
           <td>0.025983</td>
           <td>23.010704</td>
@@ -680,7 +678,20 @@ View the healpix map:
 
 
 
-.. image:: 09_Spatial_Variability_files/09_Spatial_Variability_33_0.png
+.. image:: 09_Spatial_Variability_files/09_Spatial_Variability_32_0.png
+
+
+.. code:: ipython3
+
+    avg_SNR_i_airmass
+
+
+
+
+.. parsed-literal::
+
+    array([0., 0., 0., ..., 0., 0., 0.], shape=(196608,))
+
 
 
 In both cases, we see a negative correlation between the airmass and the

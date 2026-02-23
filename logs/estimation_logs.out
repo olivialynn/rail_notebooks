@@ -1,11 +1,40 @@
 Rendering notebooks in group: estimation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/estimation_examples
-RENDERING: 03_BPZ_lite_Custom_SEDs
-RENDERING: 09_PZFlow
-RENDERING: 06_GPz
-RENDERING: 16_Running_with_different_data
-RENDERING: 05_DNF
-RENDERING: 07_NZDir
+RENDERING: 15_LePhare_COSMOS
+RENDERING: 14_LePhare_LSST
+RENDERING: 08_NZDir_pipeline
+[32m    485[39m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[33m"[39m[33mNone[39m[33m"[39m, [33m"[39m[33mnone[39m[33m"[39m, [38;5;28;01mNone[39;00m]:
+[32m    486[39m     [38;5;66;03m# Path exists, use that[39;00m
+[32m    487[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isfile(path):
+[32m--> [39m[32m488[39m         [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([33mf[39m[33m"[39m[33mUnable to find file: [39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[33m"[39m)
+[32m    489[39m     handle.path = path
+[32m    490[39m     [38;5;28;01mif[39;00m do_read:
+[32m    491[39m         [38;5;66;03m# Read the data using the handle[39;00m
+
+[31mFileNotFoundError[39m: Unable to find file: NZDir_model.pkl
+
+RENDERING: 02_BPZ_lite
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/desc_bpz/MLab_coe_py3.py:1661[39m, in [36mtrapz[39m[34m(y, x)[39m
+[32m   1658[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mtrapz[39m(y, x=[38;5;28;01mNone[39;00m):
+[32m   1659[39m [38;5;250m    [39m[33;03m"""trapz(y,x=None) integrates y = f(x) using the trapezoidal rule.[39;00m
+[32m   1660[39m [33;03m    """[39;00m
+[32m-> [39m[32m1661[39m     [38;5;28;01mif[39;00m x == [38;5;28;01mNone[39;00m: d = [32m1[39m
+[32m   1662[39m     [38;5;28;01melse[39;00m: d = diff(x)
+[32m   1663[39m     [38;5;28;01mreturn[39;00m [38;5;28msum[39m(d * (y[[32m1[39m:]+y[[32m0[39m:-[32m1[39m])/[32m2.0[39m)
+
+[31mValueError[39m: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
+[32m     20[39m nns = [np.argmin(np.abs(z_grid - true_z[ii])) [38;5;28;01mfor[39;00m ii [38;5;129;01min[39;00m [38;5;28mrange[39m(n_obs)]
+[32m     21[39m term2 = np.mean(cde_estimates[[38;5;28mrange[39m(n_obs), nns])
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
 RENDERING: 11_SomocluSOM
 [32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
 [32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
@@ -17,51 +46,110 @@ RENDERING: 11_SomocluSOM
 
 [31mNameError[39m: name 'wrap_train' is not defined
 
-RENDERING: 14_LePhare_LSST
-RENDERING: 15_LePhare_COSMOS
+RENDERING: 05_DNF
+[32m--> [39m[32m643[39m pdfs /= [43mnp[49m[43m.[49m[43mtrapz[49m(pdfs, zgrid, axis=[32m1[39m)[:, [38;5;28;01mNone[39;00m]
+[32m    645[39m [38;5;28;01mreturn[39;00m pdfs
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
+RENDERING: 06_GPz
 RENDERING: 00_Quick_Start_in_Estimation
-RENDERING: 02_BPZ_lite
-RENDERING: 10_YAW
+[32m     33[39m [38;5;66;03m# z bin closest to ztrue[39;00m
+[32m     34[39m nns = [np.argmin(np.abs([38;5;28mself[39m._xvals - z)) [38;5;28;01mfor[39;00m z [38;5;129;01min[39;00m [38;5;28mself[39m._ztrue]
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
 RENDERING: 13_Sampled_Summarizers
-RENDERING: 08_NZDir_pipeline
-RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
-RENDERING: 04_CMNN
+[32m     33[39m [38;5;66;03m# z bin closest to ztrue[39;00m
+[32m     34[39m nns = [np.argmin(np.abs([38;5;28mself[39m._xvals - z)) [38;5;28;01mfor[39;00m z [38;5;129;01min[39;00m [38;5;28mself[39m._ztrue]
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
 RENDERING: 12_SomocluSOM_Quality_Control
-[32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
-[32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
-[32m    240[39m            [38;5;28mself[39m._compact_support, [38;5;28mself[39m._neighborhood == [33m"[39m[33mgaussian[39m[33m"[39m,
-[32m    241[39m            [38;5;28mself[39m._std_coeff, [38;5;28mself[39m._verbose, [38;5;28mself[39m.codebook, [38;5;28mself[39m.bmus,
-[32m    242[39m            [38;5;28mself[39m.umatrix, [38;5;28mself[39m._vect_distance)
-[32m    243[39m [38;5;28mself[39m.umatrix.shape = ([38;5;28mself[39m._n_rows, [38;5;28mself[39m._n_columns)
-[32m    244[39m [38;5;28mself[39m.bmus.shape = ([38;5;28mself[39m.n_vectors, [32m2[39m)
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/desc_bpz/MLab_coe_py3.py:1661[39m, in [36mtrapz[39m[34m(y, x)[39m
+[32m   1658[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mtrapz[39m(y, x=[38;5;28;01mNone[39;00m):
+[32m   1659[39m [38;5;250m    [39m[33;03m"""trapz(y,x=None) integrates y = f(x) using the trapezoidal rule.[39;00m
+[32m   1660[39m [33;03m    """[39;00m
+[32m-> [39m[32m1661[39m     [38;5;28;01mif[39;00m x == [38;5;28;01mNone[39;00m: d = [32m1[39m
+[32m   1662[39m     [38;5;28;01melse[39;00m: d = diff(x)
+[32m   1663[39m     [38;5;28;01mreturn[39;00m [38;5;28msum[39m(d * (y[[32m1[39m:]+y[[32m0[39m:-[32m1[39m])/[32m2.0[39m)
 
-[31mNameError[39m: name 'wrap_train' is not defined
+[31mValueError[39m: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
 
+RENDERING: 10_YAW
+RENDERING: 03_BPZ_lite_Custom_SEDs
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/desc_bpz/MLab_coe_py3.py:1661[39m, in [36mtrapz[39m[34m(y, x)[39m
+[32m   1658[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mtrapz[39m(y, x=[38;5;28;01mNone[39;00m):
+[32m   1659[39m [38;5;250m    [39m[33;03m"""trapz(y,x=None) integrates y = f(x) using the trapezoidal rule.[39;00m
+[32m   1660[39m [33;03m    """[39;00m
+[32m-> [39m[32m1661[39m     [38;5;28;01mif[39;00m x == [38;5;28;01mNone[39;00m: d = [32m1[39m
+[32m   1662[39m     [38;5;28;01melse[39;00m: d = diff(x)
+[32m   1663[39m     [38;5;28;01mreturn[39;00m [38;5;28msum[39m(d * (y[[32m1[39m:]+y[[32m0[39m:-[32m1[39m])/[32m2.0[39m)
+
+[31mValueError[39m: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+RENDERING: 09_PZFlow
+RENDERING: 16_Running_with_different_data
+[32m     33[39m [38;5;66;03m# z bin closest to ztrue[39;00m
+[32m     34[39m nns = [np.argmin(np.abs([38;5;28mself[39m._xvals - z)) [38;5;28;01mfor[39;00m z [38;5;129;01min[39;00m [38;5;28mself[39m._ztrue]
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
+RENDERING: 07_NZDir
+RENDERING: 04_CMNN
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/09_PZFlow.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/06_GPz.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/16_Running_with_different_data.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/05_DNF.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/14_LePhare_LSST.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/15_LePhare_COSMOS.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/02_BPZ_lite.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/10_YAW.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/13_Sampled_Summarizers.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/04_CMNN.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/14_LePhare_LSST.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/02_BPZ_lite.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/05_DNF.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/06_GPz.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/13_Sampled_Summarizers.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/10_YAW.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/09_PZFlow.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/16_Running_with_different_data.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/07_NZDir.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/estimation_examples/04_CMNN.ipynb
 
-2 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
-2. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
+10 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/08_NZDir_pipeline.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/02_BPZ_lite.ipynb
+3. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
+4. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/11_SomocluSOM.ipynb
+5. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/05_DNF.ipynb
+6. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
+7. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/13_Sampled_Summarizers.ipynb
+8. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
+9. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
+10. /home/runner/work/rail_notebooks/rail/examples/estimation_examples/16_Running_with_different_data.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
@@ -70,4 +158,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
     raise ValueError(
-ValueError: 2 out of 17 notebooks failed to render.
+ValueError: 10 out of 17 notebooks failed to render.

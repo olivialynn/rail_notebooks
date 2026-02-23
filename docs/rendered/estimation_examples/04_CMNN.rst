@@ -117,13 +117,9 @@ estimators.
 
     import rail
     import qp
+    import tables_io
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
 
 Getting the list of available Estimators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -163,8 +159,8 @@ it.
     from rail.utils.path_utils import RAILDIR
     trainFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = os.path.join(RAILDIR, 'rail/examples_data/testdata/test_dc2_validation_9816.hdf5')
-    training_data = DS.read_file("training_data", TableHandle, trainFile)
-    test_data = DS.read_file("test_data", TableHandle, testFile)
+    training_data = tables_io.read(trainFile)
+    test_data = tables_io.read(testFile)
 
 The inform stage for CMNN should not take long to run, it essentially
 just converts the magnitudes to colors for the training data and stores
@@ -183,15 +179,15 @@ cell below:
 
     Inserting handle into data store.  input: None, inform_CMNN
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.88 ms, sys: 842 μs, total: 2.72 ms
-    Wall time: 2.4 ms
+    CPU times: user 2.52 ms, sys: 0 ns, total: 2.52 ms
+    Wall time: 2.29 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f1ca483d750>
+    <rail.core.data.ModelHandle at 0x7fc1ebd924d0>
 
 
 
@@ -220,28 +216,17 @@ each galaxy as the redshift estimate:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <class 'rail.core.data.ModelHandle'> demo_cmnn_model.pkl, (wd), CMNN
-    Process 0 running estimator on chunk 0 - 10,000
-    Process 0 estimating PZ PDF for rows 0 - 10,000
+    Inserting handle into data store.  input: None, CMNN
+    Inserting handle into data store.  model_inform_CMNN: <class 'rail.core.data.ModelHandle'> demo_cmnn_model.pkl, (wd), CMNN
+    Process 0 running estimator on chunk 0 - 20,449
+    Process 0 estimating PZ PDF for rows 0 - 20,449
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_CMNN: inprogress_output_CMNN.hdf5, CMNN
-    Process 0 running estimator on chunk 10,000 - 20,000
-    Process 0 estimating PZ PDF for rows 10,000 - 20,000
-
-
-.. parsed-literal::
-
-    Process 0 running estimator on chunk 20,000 - 20,449
-    Process 0 estimating PZ PDF for rows 20,000 - 20,449
-
-
-.. parsed-literal::
-
-    CPU times: user 47 s, sys: 10.4 ms, total: 47 s
-    Wall time: 47 s
+    CPU times: user 46.3 s, sys: 8.97 ms, total: 46.3 s
+    Wall time: 46.3 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and
@@ -260,7 +245,7 @@ look:
 .. code:: ipython3
 
     plt.figure(figsize=(8,8))
-    plt.scatter(test_data()['photometry']['redshift'],zmode,s=1,c='k',label='simple NN mode')
+    plt.scatter(test_data['photometry']['redshift'],zmode,s=1,c='k',label='simple NN mode')
     plt.plot([0,3],[0,3],'r--');
     plt.xlabel("true redshift")
     plt.ylabel("CMNN photo-z mode")
@@ -276,11 +261,11 @@ look:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_19_1.png
+.. image:: 04_CMNN_files/04_CMNN_18_1.png
 
 
 Very nice! Not many outliers and a fairly small scatter without much
-biase!
+bias!
 
 Now, let’s plot the histogram of how many neighbors were used. We set a
 minimum number of 20, so we should see a large peak at that value:
@@ -292,7 +277,7 @@ minimum number of 20, so we should see a large peak at that value:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_21_0.png
+.. image:: 04_CMNN_files/04_CMNN_20_0.png
 
 
 As mentioned previously, we can change the method for how we select the
@@ -314,28 +299,22 @@ neighbor estimator:
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 0 - 10,000
-    Process 0 estimating PZ PDF for rows 0 - 10,000
+    Inserting handle into data store.  input: None, CMNN_rand
+    Inserting handle into data store.  model_inform_CMNN: <class 'rail.core.data.ModelHandle'> demo_cmnn_model.pkl, (wd), CMNN_rand
+    Process 0 running estimator on chunk 0 - 20,449
+    Process 0 estimating PZ PDF for rows 0 - 20,449
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_CMNN_rand: inprogress_output_CMNN_rand.hdf5, CMNN_rand
-    Process 0 running estimator on chunk 10,000 - 20,000
-    Process 0 estimating PZ PDF for rows 10,000 - 20,000
-
-
-.. parsed-literal::
-
-    Process 0 running estimator on chunk 20,000 - 20,449
-    Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
 
 .. code:: ipython3
 
     zmode_rand = results_rand().ancil['zmode']
     plt.figure(figsize=(8,8))
-    plt.scatter(test_data()['photometry']['redshift'],zmode_rand,s=1,c='k',label='simple NN mode')
+    plt.scatter(test_data['photometry']['redshift'],zmode_rand,s=1,c='k',label='simple NN mode')
     plt.plot([0,3],[0,3],'r--');
     plt.xlabel("true redshift")
     plt.ylabel("CMNN photo-z mode")
@@ -351,7 +330,7 @@ neighbor estimator:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_24_1.png
+.. image:: 04_CMNN_files/04_CMNN_23_1.png
 
 
 Slightly worse, but not dramatically so, a few more outliers are visible
@@ -371,28 +350,22 @@ visually. Finally, we can try the weighted random selection by setting
 
 .. parsed-literal::
 
-    Process 0 running estimator on chunk 0 - 10,000
-    Process 0 estimating PZ PDF for rows 0 - 10,000
+    Inserting handle into data store.  input: None, CMNN_weight
+    Inserting handle into data store.  model_inform_CMNN: <class 'rail.core.data.ModelHandle'> demo_cmnn_model.pkl, (wd), CMNN_weight
+    Process 0 running estimator on chunk 0 - 20,449
+    Process 0 estimating PZ PDF for rows 0 - 20,449
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_CMNN_weight: inprogress_output_CMNN_weight.hdf5, CMNN_weight
-    Process 0 running estimator on chunk 10,000 - 20,000
-    Process 0 estimating PZ PDF for rows 10,000 - 20,000
-
-
-.. parsed-literal::
-
-    Process 0 running estimator on chunk 20,000 - 20,449
-    Process 0 estimating PZ PDF for rows 20,000 - 20,449
 
 
 .. code:: ipython3
 
     zmode_weight = results_weight().ancil['zmode']
     plt.figure(figsize=(8,8))
-    plt.scatter(test_data()['photometry']['redshift'],zmode_weight,s=1,c='k',label='simple NN mode')
+    plt.scatter(test_data['photometry']['redshift'],zmode_weight,s=1,c='k',label='simple NN mode')
     plt.plot([0,3],[0,3],'r--');
     plt.xlabel("true redshift")
     plt.ylabel("CMNN photo-z mode")
@@ -408,7 +381,7 @@ visually. Finally, we can try the weighted random selection by setting
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_27_1.png
+.. image:: 04_CMNN_files/04_CMNN_26_1.png
 
 
 Again, not a dramatic difference, but it can make a difference if there
@@ -434,7 +407,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_30_1.png
+.. image:: 04_CMNN_files/04_CMNN_29_1.png
 
 
 .. code:: ipython3
@@ -451,7 +424,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_31_1.png
+.. image:: 04_CMNN_files/04_CMNN_30_1.png
 
 
 .. code:: ipython3
@@ -468,7 +441,7 @@ Finally, let’s plot a few PDFs, again, they are a single Gaussian:
 
 
 
-.. image:: 04_CMNN_files/04_CMNN_32_1.png
+.. image:: 04_CMNN_files/04_CMNN_31_1.png
 
 
 We see a wide variety of widths, as expected for a single Gaussian

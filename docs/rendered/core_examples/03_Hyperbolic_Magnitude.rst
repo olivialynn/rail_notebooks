@@ -24,20 +24,11 @@ hyperbolical magnitudes using the pipeline stages
     
     import numpy as np
     import matplotlib.pyplot as plt
-    
+    import tables_io
     import rail
     from rail.core.data import TableHandle
     from rail.core.stage import RailStage
     from rail.tools.photometry_tools import HyperbolicSmoothing, HyperbolicMagnitudes
-
-We first set up a data store for interactive usage of RAIL (see the
-``examples/goldenspike_examples/goldenspike.ipynb`` for further
-examples).
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
 
 Next we load some DC2 sample data that provides LSST ugrizy magnitudes
 and magnitude errors, which we want to convert to hyperbolic magnitudes.
@@ -46,7 +37,7 @@ and magnitude errors, which we want to convert to hyperbolic magnitudes.
 
     from rail.utils.path_utils import find_rail_file
     testFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.pq')
-    test_mags = DS.read_file("test_data", TableHandle, testFile)
+    test_mags = tables_io.read(testFile)
 
 
 .. parsed-literal::
@@ -93,7 +84,7 @@ columns and their corresponding magnitude errors.
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7ff83c155d10>
+    <rail.core.data.PqHandle at 0x7f52ddb44d10>
 
 
 
@@ -232,6 +223,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, hyperbolic_magnitudes
     Inserting handle into data store.  parameters: None, hyperbolic_magnitudes
     Inserting handle into data store.  output_hyperbolic_magnitudes: inprogress_output_hyperbolic_magnitudes.pq, hyperbolic_magnitudes
 
@@ -240,7 +232,7 @@ magnitude errors and the output table of
 
 .. parsed-literal::
 
-    <rail.core.data.PqHandle at 0x7ff83c1ef190>
+    <rail.core.data.PqHandle at 0x7f529c2d9d10>
 
 
 
@@ -475,8 +467,8 @@ turn-off point is determined by the value for :math:`b` estimated above.
 
     filt = "r"
     
-    mag_class = test_mags.data[f"mag_{filt}_lsst"]
-    magerr_class = test_mags.data[f"mag_err_{filt}_lsst"]
+    mag_class = test_mags[f"mag_{filt}_lsst"]
+    magerr_class = test_mags[f"mag_err_{filt}_lsst"]
     mag_hyp = test_hypmags[f"mag_hyp_{filt}_lsst"]
     magerr_hyp = test_hypmags[f"mag_hyp_err_{filt}_lsst"]
     
@@ -497,6 +489,7 @@ turn-off point is determined by the value for :math:`b` estimated above.
 
 
 
-.. image:: 03_Hyperbolic_Magnitude_files/03_Hyperbolic_Magnitude_16_1.png
+.. image:: 03_Hyperbolic_Magnitude_files/03_Hyperbolic_Magnitude_14_1.png
+
 
 

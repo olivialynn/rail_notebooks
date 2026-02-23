@@ -1,10 +1,43 @@
 Rendering notebooks in group: evaluation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/evaluation_examples
-RENDERING: 00_Single_Evaluation
 RENDERING: 01_Evaluation_by_Type
+[32m     33[39m [38;5;66;03m# z bin closest to ztrue[39;00m
+[32m     34[39m nns = [np.argmin(np.abs([38;5;28mself[39m._xvals - z)) [38;5;28;01mfor[39;00m z [38;5;129;01min[39;00m [38;5;28mself[39m._ztrue]
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
+RENDERING: 00_Single_Evaluation
+[32m     33[39m [38;5;66;03m# z bin closest to ztrue[39;00m
+[32m     34[39m nns = [np.argmin(np.abs([38;5;28mself[39m._xvals - z)) [38;5;28;01mfor[39;00m z [38;5;129;01min[39;00m [38;5;28mself[39m._ztrue]
+
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/numpy/__init__.py:792[39m, in [36m__getattr__[39m[34m(attr)[39m
+[32m    789[39m     [38;5;28;01mimport[39;00m[38;5;250m [39m[34;01mnumpy[39;00m[34;01m.[39;00m[34;01mchar[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[34;01mchar[39;00m
+[32m    790[39m     [38;5;28;01mreturn[39;00m char.chararray
+[32m--> [39m[32m792[39m [38;5;28;01mraise[39;00m [38;5;167;01mAttributeError[39;00m([33mf[39m[33m"[39m[33mmodule [39m[38;5;132;01m{[39;00m[34m__name__[39m[38;5;132;01m!r}[39;00m[33m has no attribute [39m[38;5;132;01m{[39;00mattr[38;5;132;01m!r}[39;00m[33m"[39m)
+
+[31mAttributeError[39m: module 'numpy' has no attribute 'trapz'
+
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/00_Single_Evaluation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/00_Single_Evaluation.ipynb
+
+2 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/evaluation_examples/00_Single_Evaluation.ipynb
+
+Traceback (most recent call last):
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
+    run_render_notebook_group()
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 259, in run_render_notebook_group
+    _report_render_status(status, verbose)
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
+    raise ValueError(
+ValueError: 2 out of 2 notebooks failed to render.

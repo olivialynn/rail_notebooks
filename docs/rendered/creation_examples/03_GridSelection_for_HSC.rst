@@ -49,11 +49,6 @@ HSC.
     from rail.utils.path_utils import find_rail_file
     %matplotlib inline 
 
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
 Let’s make a grid of fake data matching the grid used by HSC. The 2D
 grid of spec-z success in this case is parameterized in terms of ``g-z``
 color vs ``i-band`` magnitude, with ``g-z`` between ``[-2, 6]`` and
@@ -128,7 +123,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.21</td>
+          <td>1.04</td>
         </tr>
         <tr>
           <th>1</th>
@@ -136,7 +131,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.21</td>
+          <td>1.04</td>
         </tr>
         <tr>
           <th>2</th>
@@ -144,7 +139,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.21</td>
+          <td>1.04</td>
         </tr>
         <tr>
           <th>3</th>
@@ -152,7 +147,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.21</td>
+          <td>1.04</td>
         </tr>
         <tr>
           <th>4</th>
@@ -160,7 +155,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>2.21</td>
+          <td>1.04</td>
         </tr>
       </tbody>
     </table>
@@ -220,8 +215,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 3.15 s, sys: 78.9 ms, total: 3.23 s
-    Wall time: 3.23 s
+    CPU times: user 2.64 s, sys: 62.2 ms, total: 2.71 s
+    Wall time: 2.7 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -235,19 +230,19 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.DataFrame'>
-    Index: 181995 entries, 84300 to 927787
+    Index: 181693 entries, 84300 to 927787
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          181995 non-null  float64
-     1   gz         181995 non-null  float64
-     2   g          181995 non-null  float64
-     3   z          181995 non-null  float64
-     4   redshift   181995 non-null  float64
-     5   x_vals     181995 non-null  float64
-     6   y_vals     181995 non-null  float64
-     7   ratios     181995 non-null  float64
-     8   max_specz  181995 non-null  float64
+     0   i          181693 non-null  float64
+     1   gz         181693 non-null  float64
+     2   g          181693 non-null  float64
+     3   z          181693 non-null  float64
+     4   redshift   181693 non-null  float64
+     5   x_vals     181693 non-null  float64
+     6   y_vals     181693 non-null  float64
+     7   ratios     181693 non-null  float64
+     8   max_specz  181693 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 
@@ -297,7 +292,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 
 
-.. image:: 03_GridSelection_for_HSC_files/03_GridSelection_for_HSC_23_1.png
+.. image:: 03_GridSelection_for_HSC_files/03_GridSelection_for_HSC_22_1.png
 
 
 The colormap shows the HSC ratios and the strenth of the black dots

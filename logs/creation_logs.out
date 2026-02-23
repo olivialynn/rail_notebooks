@@ -1,19 +1,5 @@
 Rendering notebooks in group: creation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/creation_examples
-RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
-[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/GCRCatalogs/cosmodc2.py:128[39m, in [36mCosmoDC2ParentClass._subclass_init[39m[34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[39m
-[32m    125[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, **kwargs):
-[32m    126[39m     [38;5;66;03m# pylint: disable=W0221[39;00m
-[32m    127[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isdir(catalog_root_dir):
-[32m--> [39m[32m128[39m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33m'[39m[33mCatalog directory [39m[38;5;132;01m{}[39;00m[33m does not exist[39m[33m'[39m.format(catalog_root_dir))
-[32m    130[39m     [38;5;28mself[39m.lightcone = kwargs.get([33m'[39m[33mlightcone[39m[33m'[39m, [38;5;28;01mTrue[39;00m)
-[32m    132[39m     get_file_list = [38;5;28mself[39m._get_healpix_file_list [38;5;28;01mif[39;00m [38;5;28mself[39m.lightcone [38;5;28;01melse[39;00m [38;5;28mself[39m._get_snapshot_file_list
-
-[31mValueError[39m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
-
-RENDERING: 09_Spatial_Variability
-RENDERING: 00_Quick_Start_in_Creation
-RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
 RENDERING: 10_SOM_Spectroscopic_Selector
 [32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
 [32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
@@ -25,8 +11,7 @@ RENDERING: 10_SOM_Spectroscopic_Selector
 
 [31mNameError[39m: name 'wrap_train' is not defined
 
-RENDERING: 05_True_Posterior
-RENDERING: 03_GridSelection_for_HSC
+RENDERING: 01_Photometric_Realization
 RENDERING: 07_DSPS_SED
 [32m      9[39m [43m                                                                 [49m[43mmin_wavelength[49m[43m=[49m[32;43m250[39;49m[43m,[49m[43m [49m[43mmax_wavelength[49m[43m=[49m[32;43m12000[39;49m[43m)[49m
 
@@ -38,42 +23,57 @@ RENDERING: 07_DSPS_SED
 
 [31mTypeError[39m: DSPSSingleSedModeler.__init__() got an unexpected keyword argument 'aliases'
 
-RENDERING: 02_Photometric_Realization_with_Other_Surveys
-RENDERING: 01_Photometric_Realization
+RENDERING: 05_True_Posterior
 RENDERING: 06_Blending_Degrader
+RENDERING: 02_Photometric_Realization_with_Other_Surveys
+RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
 RENDERING: 08_FSPS_SED
-[32m    382[39m                                 mwr=mwr[i], uvb=uvb[i], wgp1=wgp1[i], wgp2=[38;5;28mself[39m.config.wgp2,
-[32m    383[39m                                 wgp3=[38;5;28mself[39m.config.wgp3,
-[32m    384[39m                                 duste_gamma=duste_gamma[i], duste_umin=duste_umin[i],
-[32m    385[39m                                 duste_qpah=duste_qpah[i],
-[32m    386[39m                                 fagn=fagn[i], agn_tau=agn_tau[i])
-[32m    388[39m     [38;5;28;01mif[39;00m [38;5;28mself[39m.config.sfh_type == [32m3[39m:
-[32m    389[39m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[32m    666[39m         duste_umin=duste_umin[i],
+[32m    667[39m         duste_qpah=duste_qpah[i],
+[32m    668[39m         fagn=fagn[i],
+[32m    669[39m         agn_tau=agn_tau[i],
+[32m    670[39m     )
+[32m    672[39m     [38;5;28;01mif[39;00m [38;5;28mself[39m.config.sfh_type == [32m3[39m:
+[32m    673[39m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
 
 [31mNameError[39m: name 'fsps' is not defined
+
+RENDERING: 00_Quick_Start_in_Creation
+RENDERING: 03_GridSelection_for_HSC
+RENDERING: 09_Spatial_Variability
+RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/GCRCatalogs/cosmodc2.py:128[39m, in [36mCosmoDC2ParentClass._subclass_init[39m[34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[39m
+[32m    125[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, **kwargs):
+[32m    126[39m     [38;5;66;03m# pylint: disable=W0221[39;00m
+[32m    127[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isdir(catalog_root_dir):
+[32m--> [39m[32m128[39m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33m'[39m[33mCatalog directory [39m[38;5;132;01m{}[39;00m[33m does not exist[39m[33m'[39m.format(catalog_root_dir))
+[32m    130[39m     [38;5;28mself[39m.lightcone = kwargs.get([33m'[39m[33mlightcone[39m[33m'[39m, [38;5;28;01mTrue[39;00m)
+[32m    132[39m     get_file_list = [38;5;28mself[39m._get_healpix_file_list [38;5;28;01mif[39;00m [38;5;28mself[39m.lightcone [38;5;28;01melse[39;00m [38;5;28mself[39m._get_snapshot_file_list
+
+[31mValueError[39m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
 
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/09_Spatial_Variability.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/00_Quick_Start_in_Creation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/05_True_Posterior.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/03_GridSelection_for_HSC.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/01_Photometric_Realization.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/05_True_Posterior.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/06_Blending_Degrader.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
       1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/00_Quick_Start_in_Creation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/03_GridSelection_for_HSC.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/creation_examples/09_Spatial_Variability.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 
 4 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-2. /home/runner/work/rail_notebooks/rail/examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-3. /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
-4. /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
+1. /home/runner/work/rail_notebooks/rail/examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/creation_examples/07_DSPS_SED.ipynb
+3. /home/runner/work/rail_notebooks/rail/examples/creation_examples/08_FSPS_SED.ipynb
+4. /home/runner/work/rail_notebooks/rail/examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>

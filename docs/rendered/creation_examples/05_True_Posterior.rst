@@ -52,19 +52,6 @@ This notebook will cover three scenarios of increasing complexity:
     )
 
 
-We’ll start by setting up the Rail data store. RAIL uses
-`ceci <https://github.com/LSSTDESC/ceci>`__, which is designed for
-pipelines rather than interactive notebooks, the data store will work
-around that and enable us to use data interactively. See the
-``rail/examples/goldenspike_examples/goldenspike.ipynb`` example
-notebook for more details on the Data Store.
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
-
 1. Calculating posteriors without errors
 ----------------------------------------
 
@@ -111,30 +98,19 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. code:: ipython3
 
-    flow=DS.read_file('flow', FlowHandle, flow_file)
-
-.. code:: ipython3
-
-    flow.path
-
-
-
-
-.. parsed-literal::
-
-    '/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl'
-
-
-
-.. code:: ipython3
-
     flow_post = FlowPosterior.make_stage(
         name="truth_post",
         column="redshift",
         grid=np.linspace(0, 2.5, 100),
         marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
-        model=flow.path
+        model=flow_file
     )
+
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth_post
 
 
 .. code:: ipython3
@@ -145,7 +121,7 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  input: None, truth_post
+    Inserting handle into data store.  output_truth: None, truth_post
 
 
 .. parsed-literal::
@@ -196,7 +172,7 @@ Let’s plot these pdfs:
 
 
 
-.. image:: 05_True_Posterior_files/05_True_Posterior_16_0.png
+.. image:: 05_True_Posterior_files/05_True_Posterior_12_0.png
 
 
 The true posteriors are in blue, and the true redshifts are marked by
@@ -225,7 +201,7 @@ Now let’s draw a degraded sample:
     n_samples = 50
     # create the FlowEngine
     flowEngine_degr = FlowCreator.make_stage(
-        name="degraded", model=flow, n_samples=n_samples
+        name="degraded", model=flow_file, n_samples=n_samples
     )
     # draw a few samples
     samples_degr = flowEngine_degr.sample(n_samples, seed=0)
@@ -263,12 +239,23 @@ Now let’s draw a degraded sample:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degraded
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degraded: inprogress_output_degraded.pq, degraded
+    Inserting handle into data store.  output_degraded: xx, lsst_errors
     Inserting handle into data store.  output_lsst_errors: inprogress_output_lsst_errors.pq, lsst_errors
+    Inserting handle into data store.  output_lsst_errors: xx, gold_cut
     Inserting handle into data store.  output_gold_cut: inprogress_output_gold_cut.pq, gold_cut
+    Inserting handle into data store.  output_gold_cut: None, incompleteness
     Inserting handle into data store.  output_incompleteness: inprogress_output_incompleteness.pq, incompleteness
+    Inserting handle into data store.  output_incompleteness: None, lc_2p_0II_0III
     Inserting handle into data store.  output_lc_2p_0II_0III: inprogress_output_lc_2p_0II_0III.pq, lc_2p_0II_0III
+    Inserting handle into data store.  output_lc_2p_0II_0III: None, lc_1p_0III_0II
     Inserting handle into data store.  output_lc_1p_0III_0II: inprogress_output_lc_1p_0III_0II.pq, lc_1p_0III_0II
+    Inserting handle into data store.  output_lc_1p_0III_0II: None, detection
     Inserting handle into data store.  output_detection: inprogress_output_detection.pq, detection
 
 
@@ -320,178 +307,178 @@ Now let’s draw a degraded sample:
         <tr>
           <th>0</th>
           <td>0.857864</td>
-          <td>25.055910</td>
-          <td>0.113662</td>
-          <td>24.302851</td>
-          <td>0.020233</td>
-          <td>23.297869</td>
-          <td>0.008543</td>
-          <td>22.355282</td>
-          <td>0.007001</td>
-          <td>21.841154</td>
-          <td>0.007780</td>
-          <td>21.696200</td>
-          <td>0.012930</td>
+          <td>25.010571</td>
+          <td>0.109273</td>
+          <td>24.274142</td>
+          <td>0.019750</td>
+          <td>23.303909</td>
+          <td>0.008574</td>
+          <td>22.362317</td>
+          <td>0.007022</td>
+          <td>21.859363</td>
+          <td>0.007855</td>
+          <td>21.699498</td>
+          <td>0.012963</td>
         </tr>
         <tr>
           <th>1</th>
           <td>0.456452</td>
-          <td>25.263017</td>
-          <td>0.135943</td>
-          <td>23.627450</td>
-          <td>0.011823</td>
-          <td>22.133325</td>
-          <td>0.005590</td>
-          <td>21.492434</td>
-          <td>0.005511</td>
-          <td>21.134914</td>
-          <td>0.005941</td>
-          <td>20.868035</td>
-          <td>0.007571</td>
+          <td>25.420065</td>
+          <td>0.155533</td>
+          <td>23.607720</td>
+          <td>0.011654</td>
+          <td>22.136540</td>
+          <td>0.005593</td>
+          <td>21.494483</td>
+          <td>0.005513</td>
+          <td>21.133014</td>
+          <td>0.005938</td>
+          <td>20.862664</td>
+          <td>0.007550</td>
         </tr>
         <tr>
           <th>2</th>
           <td>0.214385</td>
-          <td>24.920968</td>
-          <td>0.101074</td>
-          <td>24.380403</td>
-          <td>0.021607</td>
-          <td>23.999487</td>
-          <td>0.013937</td>
-          <td>23.861558</td>
-          <td>0.019583</td>
-          <td>23.839543</td>
-          <td>0.036342</td>
-          <td>23.645172</td>
-          <td>0.069116</td>
+          <td>24.972513</td>
+          <td>0.105715</td>
+          <td>24.422247</td>
+          <td>0.022392</td>
+          <td>23.991825</td>
+          <td>0.013854</td>
+          <td>23.790480</td>
+          <td>0.018446</td>
+          <td>23.832192</td>
+          <td>0.036107</td>
+          <td>23.681895</td>
+          <td>0.071399</td>
         </tr>
         <tr>
           <th>3</th>
           <td>0.614859</td>
-          <td>25.435241</td>
-          <td>0.157560</td>
-          <td>25.341628</td>
-          <td>0.050085</td>
-          <td>24.736235</td>
-          <td>0.025803</td>
-          <td>24.331645</td>
-          <td>0.029387</td>
-          <td>24.217744</td>
-          <td>0.050819</td>
-          <td>24.013996</td>
-          <td>0.095680</td>
+          <td>25.487925</td>
+          <td>0.164792</td>
+          <td>25.490834</td>
+          <td>0.057161</td>
+          <td>24.770008</td>
+          <td>0.026573</td>
+          <td>24.297997</td>
+          <td>0.028533</td>
+          <td>24.212782</td>
+          <td>0.050596</td>
+          <td>24.191193</td>
+          <td>0.111725</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.239338</td>
-          <td>24.727435</td>
-          <td>0.085345</td>
-          <td>24.590030</td>
-          <td>0.025868</td>
-          <td>24.373423</td>
-          <td>0.018909</td>
-          <td>23.922786</td>
-          <td>0.020627</td>
-          <td>23.411198</td>
-          <td>0.024961</td>
-          <td>22.906184</td>
-          <td>0.035893</td>
+          <td>0.314718</td>
+          <td>24.431955</td>
+          <td>0.065840</td>
+          <td>23.214420</td>
+          <td>0.008958</td>
+          <td>22.218185</td>
+          <td>0.005676</td>
+          <td>21.891844</td>
+          <td>0.005971</td>
+          <td>21.591218</td>
+          <td>0.006916</td>
+          <td>21.501418</td>
+          <td>0.011187</td>
         </tr>
         <tr>
           <th>5</th>
-          <td>0.314718</td>
-          <td>24.496611</td>
-          <td>0.069693</td>
-          <td>23.230757</td>
-          <td>0.009048</td>
-          <td>22.228153</td>
-          <td>0.005687</td>
-          <td>21.894609</td>
-          <td>0.005976</td>
-          <td>21.588141</td>
-          <td>0.006907</td>
-          <td>21.507224</td>
-          <td>0.011234</td>
+          <td>0.707498</td>
+          <td>24.187785</td>
+          <td>0.053110</td>
+          <td>23.572831</td>
+          <td>0.011365</td>
+          <td>22.775400</td>
+          <td>0.006633</td>
+          <td>21.998503</td>
+          <td>0.006151</td>
+          <td>21.713320</td>
+          <td>0.007303</td>
+          <td>21.455901</td>
+          <td>0.010830</td>
         </tr>
         <tr>
           <th>6</th>
-          <td>0.707498</td>
-          <td>24.221493</td>
-          <td>0.054709</td>
-          <td>23.573461</td>
-          <td>0.011370</td>
-          <td>22.783268</td>
-          <td>0.006653</td>
-          <td>21.998264</td>
-          <td>0.006150</td>
-          <td>21.699961</td>
-          <td>0.007257</td>
-          <td>21.441971</td>
-          <td>0.010724</td>
+          <td>0.419468</td>
+          <td>25.430021</td>
+          <td>0.156860</td>
+          <td>24.758924</td>
+          <td>0.029962</td>
+          <td>23.678249</td>
+          <td>0.010949</td>
+          <td>23.407681</td>
+          <td>0.013523</td>
+          <td>23.228409</td>
+          <td>0.021327</td>
+          <td>22.954777</td>
+          <td>0.037469</td>
         </tr>
         <tr>
           <th>7</th>
-          <td>0.419468</td>
-          <td>25.493215</td>
-          <td>0.165535</td>
-          <td>24.722097</td>
-          <td>0.029014</td>
-          <td>23.687740</td>
-          <td>0.011023</td>
-          <td>23.401167</td>
-          <td>0.013455</td>
-          <td>23.196182</td>
-          <td>0.020749</td>
-          <td>22.963479</td>
-          <td>0.037759</td>
+          <td>0.370970</td>
+          <td>23.208909</td>
+          <td>0.022723</td>
+          <td>23.173042</td>
+          <td>0.008739</td>
+          <td>22.926373</td>
+          <td>0.007057</td>
+          <td>23.023204</td>
+          <td>0.010198</td>
+          <td>22.896833</td>
+          <td>0.016159</td>
+          <td>23.064097</td>
+          <td>0.041278</td>
         </tr>
         <tr>
           <th>8</th>
-          <td>0.370970</td>
-          <td>23.234294</td>
-          <td>0.023214</td>
-          <td>23.178044</td>
-          <td>0.008765</td>
-          <td>22.924030</td>
-          <td>0.007049</td>
-          <td>23.006445</td>
-          <td>0.010083</td>
-          <td>22.885785</td>
-          <td>0.016014</td>
-          <td>23.018818</td>
-          <td>0.039655</td>
+          <td>1.165920</td>
+          <td>24.753509</td>
+          <td>0.087317</td>
+          <td>24.450396</td>
+          <td>0.022937</td>
+          <td>24.048093</td>
+          <td>0.014483</td>
+          <td>23.679101</td>
+          <td>0.016815</td>
+          <td>23.016782</td>
+          <td>0.017839</td>
+          <td>22.703084</td>
+          <td>0.030014</td>
         </tr>
         <tr>
           <th>9</th>
-          <td>0.351819</td>
-          <td>25.515711</td>
-          <td>0.168730</td>
-          <td>25.164633</td>
-          <td>0.042821</td>
-          <td>24.530771</td>
-          <td>0.021610</td>
-          <td>24.452316</td>
-          <td>0.032676</td>
-          <td>24.206755</td>
-          <td>0.050326</td>
-          <td>24.146683</td>
-          <td>0.107468</td>
+          <td>1.794070</td>
+          <td>25.538512</td>
+          <td>0.172026</td>
+          <td>25.552549</td>
+          <td>0.060372</td>
+          <td>25.274876</td>
+          <td>0.041454</td>
+          <td>25.084039</td>
+          <td>0.057199</td>
+          <td>24.865804</td>
+          <td>0.090176</td>
+          <td>24.766636</td>
+          <td>0.183277</td>
         </tr>
         <tr>
           <th>10</th>
           <td>0.601109</td>
-          <td>25.080811</td>
-          <td>0.116144</td>
-          <td>24.656884</td>
-          <td>0.027412</td>
-          <td>24.073678</td>
-          <td>0.014782</td>
-          <td>23.628734</td>
-          <td>0.016135</td>
-          <td>23.540149</td>
-          <td>0.027928</td>
-          <td>23.474776</td>
-          <td>0.059428</td>
+          <td>24.957474</td>
+          <td>0.104340</td>
+          <td>24.638330</td>
+          <td>0.026974</td>
+          <td>24.049980</td>
+          <td>0.014505</td>
+          <td>23.659801</td>
+          <td>0.016551</td>
+          <td>23.518120</td>
+          <td>0.027395</td>
+          <td>23.417042</td>
+          <td>0.056460</td>
         </tr>
       </tbody>
     </table>
@@ -523,7 +510,7 @@ Let’s calculate posteriors with a variable number of error samples.
 
     degr_kwargs = dict(
         column="redshift",
-        model=flow,
+        model=flow_file,
         marg_rules=dict(flag=np.nan, u=lambda row: np.linspace(25, 31, 10)),
         grid=grid,
         seed=0,
@@ -540,17 +527,29 @@ Let’s calculate posteriors with a variable number of error samples.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1
+    Inserting handle into data store.  output_detection: None, degr_post_1
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_degr_post_1: inprogress_output_degr_post_1.hdf5, degr_post_1
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_10
+    Inserting handle into data store.  output_detection: None, degr_post_10
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_10: inprogress_output_degr_post_10.hdf5, degr_post_10
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_100
+    Inserting handle into data store.  output_detection: None, degr_post_100
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_100: inprogress_output_degr_post_100.hdf5, degr_post_100
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1000
+    Inserting handle into data store.  output_detection: None, degr_post_1000
 
 
 .. parsed-literal::
@@ -611,7 +610,7 @@ Let’s calculate posteriors with a variable number of error samples.
 
 
 
-.. image:: 05_True_Posterior_files/05_True_Posterior_25_0.png
+.. image:: 05_True_Posterior_files/05_True_Posterior_21_0.png
 
 
 You can see the effect of convolving the errors. In particular, notice
@@ -676,7 +675,7 @@ values of u to marginalize over.
 
 
 
-.. image:: 05_True_Posterior_files/05_True_Posterior_30_0.png
+.. image:: 05_True_Posterior_files/05_True_Posterior_26_0.png
 
 
 Based on this histogram, I will marginalize over u band values from 25
@@ -705,11 +704,11 @@ grid.
     # dict to save the marginalized posteriors
     pdfs_u_marginalized = {}
     
-    row3_selector = RowSelector.make_stage(name="select_row3", start=3, stop=4)
+    row3_selector = RowSelector.make_stage(name="select_row3", start_row=3, stop_row=4)
     row3_degraded = row3_selector(samples_degraded)
     
     degr_post_kwargs = dict(
-        grid=grid, err_samples=10000, seed=0, model=flow, column="redshift"
+        grid=grid, err_samples=10000, seed=0, model=flow_file, column="redshift"
     )
     
     # iterate over variable grid resolution
@@ -733,22 +732,31 @@ grid.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output_lc_1p_0III_0II: None, select_row3
     Inserting handle into data store.  output_select_row3: inprogress_output_select_row3.pq, select_row3
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_10
+    Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_10
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_10: inprogress_output_degr_post_degr_post_nbins_10.hdf5, degr_post_degr_post_nbins_10
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_20
+    Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_20
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_20: inprogress_output_degr_post_degr_post_nbins_20.hdf5, degr_post_degr_post_nbins_20
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_50
+    Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_50
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_50: inprogress_output_degr_post_degr_post_nbins_50.hdf5, degr_post_degr_post_nbins_50
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_100
+    Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_100
 
 
 .. parsed-literal::
@@ -769,7 +777,7 @@ grid.
 
 
 
-.. image:: 05_True_Posterior_files/05_True_Posterior_33_0.png
+.. image:: 05_True_Posterior_files/05_True_Posterior_29_0.png
 
 
 Notice that the resolution with only 10 bins is sufficient for this
@@ -779,3 +787,5 @@ In this example, only one of the bands featured a non-detection, but you
 can easily marginalize over more bands by including corresponding rules
 in the ``marg_rules`` dict. Note that marginalizing over multiple bands
 quickly gets expensive.
+
+

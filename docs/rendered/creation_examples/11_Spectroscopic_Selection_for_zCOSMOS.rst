@@ -41,11 +41,6 @@ function.
     from rail.core.stage import RailStage
     %matplotlib inline 
 
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
 Let’s make fake data for zCOSMOS selection.
 
 .. code:: ipython3
@@ -115,50 +110,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.786716</td>
-          <td>21.511256</td>
+          <td>20.577696</td>
+          <td>21.205776</td>
           <td>20.0</td>
-          <td>1.508421</td>
+          <td>1.074478</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.087135</td>
-          <td>18.580968</td>
+          <td>18.860625</td>
+          <td>18.154147</td>
           <td>20.0</td>
-          <td>0.845677</td>
+          <td>0.650143</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.083423</td>
-          <td>19.098373</td>
+          <td>18.251018</td>
+          <td>16.488519</td>
           <td>20.0</td>
-          <td>0.286761</td>
+          <td>0.408020</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.449539</td>
-          <td>15.636975</td>
+          <td>25.277452</td>
+          <td>20.945729</td>
           <td>20.0</td>
-          <td>0.041075</td>
+          <td>1.601905</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.591340</td>
-          <td>18.399550</td>
+          <td>21.830194</td>
+          <td>16.225305</td>
           <td>20.0</td>
-          <td>1.782782</td>
+          <td>1.268317</td>
         </tr>
       </tbody>
     </table>
@@ -205,8 +200,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.31 s, sys: 32 ms, total: 1.34 s
-    Wall time: 1.32 s
+    CPU times: user 1.32 s, sys: 36.9 ms, total: 1.36 s
+    Wall time: 1.34 s
 
 
 .. code:: ipython3
@@ -217,17 +212,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.DataFrame'>
-    Index: 502695 entries, 2 to 1999997
+    Index: 502933 entries, 0 to 1999995
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         502695 non-null  float64
-     1   g         502695 non-null  float64
-     2   r         502695 non-null  float64
-     3   i         502695 non-null  float64
-     4   z         502695 non-null  float64
-     5   y         502695 non-null  float64
-     6   redshift  502695 non-null  float64
+     0   u         502933 non-null  float64
+     1   g         502933 non-null  float64
+     2   r         502933 non-null  float64
+     3   i         502933 non-null  float64
+     4   z         502933 non-null  float64
+     5   y         502933 non-null  float64
+     6   redshift  502933 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 
@@ -292,54 +287,54 @@ a visual indication of how many galaxies in each cell we’ve kept.
       </thead>
       <tbody>
         <tr>
+          <th>0</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.577696</td>
+          <td>21.205776</td>
+          <td>20.0</td>
+          <td>1.074478</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>20.0</td>
+          <td>18.860625</td>
+          <td>18.154147</td>
+          <td>20.0</td>
+          <td>0.650143</td>
+        </tr>
+        <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.083423</td>
-          <td>19.098373</td>
+          <td>18.251018</td>
+          <td>16.488519</td>
           <td>20.0</td>
-          <td>0.286761</td>
+          <td>0.408020</td>
         </tr>
         <tr>
-          <th>3</th>
+          <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.449539</td>
-          <td>15.636975</td>
+          <td>21.830194</td>
+          <td>16.225305</td>
           <td>20.0</td>
-          <td>0.041075</td>
+          <td>1.268317</td>
         </tr>
         <tr>
-          <th>17</th>
+          <th>8</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.124216</td>
-          <td>15.218428</td>
+          <td>21.821227</td>
+          <td>16.157033</td>
           <td>20.0</td>
-          <td>0.321057</td>
-        </tr>
-        <tr>
-          <th>29</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>22.036834</td>
-          <td>14.447600</td>
-          <td>20.0</td>
-          <td>1.112240</td>
-        </tr>
-        <tr>
-          <th>30</th>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.0</td>
-          <td>20.316751</td>
-          <td>19.642835</td>
-          <td>20.0</td>
-          <td>0.775478</td>
+          <td>1.247721</td>
         </tr>
         <tr>
           <th>...</th>
@@ -352,58 +347,58 @@ a visual indication of how many galaxies in each cell we’ve kept.
           <td>...</td>
         </tr>
         <tr>
-          <th>1999979</th>
+          <th>1999985</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.404720</td>
-          <td>15.602187</td>
+          <td>18.850435</td>
+          <td>20.888637</td>
           <td>20.0</td>
-          <td>0.703757</td>
+          <td>0.433546</td>
         </tr>
         <tr>
-          <th>1999982</th>
+          <th>1999989</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.255663</td>
-          <td>18.097619</td>
+          <td>18.626388</td>
+          <td>19.810926</td>
           <td>20.0</td>
-          <td>0.220817</td>
+          <td>0.481376</td>
         </tr>
         <tr>
-          <th>1999984</th>
+          <th>1999991</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.818747</td>
-          <td>16.522342</td>
+          <td>22.390099</td>
+          <td>17.896498</td>
           <td>20.0</td>
-          <td>0.513455</td>
+          <td>0.805774</td>
         </tr>
         <tr>
           <th>1999993</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.108447</td>
-          <td>15.921255</td>
+          <td>22.325178</td>
+          <td>15.941412</td>
           <td>20.0</td>
-          <td>0.334828</td>
+          <td>1.357253</td>
         </tr>
         <tr>
-          <th>1999997</th>
+          <th>1999995</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.740801</td>
-          <td>14.927204</td>
+          <td>19.363668</td>
+          <td>17.704628</td>
           <td>20.0</td>
-          <td>0.017092</td>
+          <td>0.444839</td>
         </tr>
       </tbody>
     </table>
-    <p>502695 rows × 7 columns</p>
+    <p>502933 rows × 7 columns</p>
     </div>
 
 
@@ -422,7 +417,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 
 
-.. image:: 11_Spectroscopic_Selection_for_zCOSMOS_files/11_Spectroscopic_Selection_for_zCOSMOS_22_0.png
+.. image:: 11_Spectroscopic_Selection_for_zCOSMOS_files/11_Spectroscopic_Selection_for_zCOSMOS_21_0.png
 
 
 The colormap shows the zCOSMOS success ratios and the strenth of the

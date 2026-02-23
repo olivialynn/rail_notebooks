@@ -1,20 +1,9 @@
 Rendering notebooks in group: core...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/rendered/core_examples
-RENDERING: 01_FileIO_DataStore
-RENDERING: 03_Hyperbolic_Magnitude
 RENDERING: 02_FluxtoMag_and_Deredden
 RENDERING: 04_Iterate_Tabular_Data
-RENDERING: 05_Build_Save_Load_Run_Pipeline
-[32m    840[39m [38;5;28mself[39m.latent = [38;5;28mgetattr[39m(distributions, [38;5;28mself[39m._latent_info[[32m0[39m])(
-[32m    841[39m     *[38;5;28mself[39m._latent_info[[32m1[39m]
-[32m    842[39m )
-[32m    844[39m [38;5;66;03m# load the error models[39;00m
-[32m--> [39m[32m845[39m [38;5;28mself[39m.data_error_model = [43mstate[49m[43m[[49m[33;43m"[39;49m[33;43mdata_error_model[39;49m[33;43m"[39;49m[43m][49m
-[32m    846[39m [38;5;28mself[39m.condition_error_model = state[[33m"[39m[33mcondition_error_model[39m[33m"[39m]
-[32m    848[39m [38;5;66;03m# load the bijector[39;00m
-
-[31mKeyError[39m: 'data_error_model'
-
+RENDERING: 03_Hyperbolic_Magnitude
+RENDERING: 06_Rail_Interfaces
 RENDERING: 00_Useful_Utilities
 [32m    840[39m [38;5;28mself[39m.latent = [38;5;28mgetattr[39m(distributions, [38;5;28mself[39m._latent_info[[32m0[39m])(
 [32m    841[39m     *[38;5;28mself[39m._latent_info[[32m1[39m]
@@ -26,22 +15,44 @@ RENDERING: 00_Useful_Utilities
 
 [31mKeyError[39m: 'data_error_model'
 
-RENDERING: 06_Rail_Interfaces
+RENDERING: 05_Build_Save_Load_Run_Pipeline
+[32m    840[39m [38;5;28mself[39m.latent = [38;5;28mgetattr[39m(distributions, [38;5;28mself[39m._latent_info[[32m0[39m])(
+[32m    841[39m     *[38;5;28mself[39m._latent_info[[32m1[39m]
+[32m    842[39m )
+[32m    844[39m [38;5;66;03m# load the error models[39;00m
+[32m--> [39m[32m845[39m [38;5;28mself[39m.data_error_model = [43mstate[49m[43m[[49m[33;43m"[39;49m[33;43mdata_error_model[39;49m[33;43m"[39;49m[43m][49m
+[32m    846[39m [38;5;28mself[39m.condition_error_model = state[[33m"[39m[33mcondition_error_model[39m[33m"[39m]
+[32m    848[39m [38;5;66;03m# load the bijector[39;00m
+
+[31mKeyError[39m: 'data_error_model'
+
+RENDERING: 01_FileIO_DataStore
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mAttributeError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[7][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m DS = [43mRailStage[49m[43m.[49m[43mdata_store[49m
+[32m      2[39m DS.[34m__class__[39m.allow_overwrite = [38;5;28;01mTrue[39;00m
+
+[31mAttributeError[39m: type object 'RailStage' has no attribute 'data_store'
+
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/examples/core_examples/01_FileIO_DataStore.ipynb
-      0  /home/runner/work/rail_notebooks/rail/examples/core_examples/03_Hyperbolic_Magnitude.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/core_examples/04_Iterate_Tabular_Data.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
-      1  /home/runner/work/rail_notebooks/rail/examples/core_examples/00_Useful_Utilities.ipynb
+      0  /home/runner/work/rail_notebooks/rail/examples/core_examples/03_Hyperbolic_Magnitude.ipynb
       0  /home/runner/work/rail_notebooks/rail/examples/core_examples/06_Rail_Interfaces.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/core_examples/00_Useful_Utilities.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
+      1  /home/runner/work/rail_notebooks/rail/examples/core_examples/01_FileIO_DataStore.ipynb
 
-2 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
-2. /home/runner/work/rail_notebooks/rail/examples/core_examples/00_Useful_Utilities.ipynb
+3 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/examples/core_examples/00_Useful_Utilities.ipynb
+2. /home/runner/work/rail_notebooks/rail/examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
+3. /home/runner/work/rail_notebooks/rail/examples/core_examples/01_FileIO_DataStore.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 263, in <module>
@@ -50,4 +61,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 216, in _report_render_status
     raise ValueError(
-ValueError: 2 out of 7 notebooks failed to render.
+ValueError: 3 out of 7 notebooks failed to render.

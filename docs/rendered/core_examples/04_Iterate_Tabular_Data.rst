@@ -22,17 +22,6 @@ This notebook demonstrates three ways to iterate over tabular data:
     from rail.core.stage import RailStage
     from rail.core.data import TableHandle
 
-Get access to the RAIL DataStore, and set it to allow us to overwrite
-data.
-
-Allowing overwrites will prevent errors when re-running cells in the
-notebook.
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
 Set up the path to the test data.
 
 .. code:: ipython3
@@ -46,11 +35,11 @@ This will load the entire table from the file we are reading.
 
 .. code:: ipython3
 
-    data = DS.read_file('input', TableHandle, pdfs_file)
+    data = tables_io.read(pdfs_file)
 
 .. code:: ipython3
 
-    print(data())
+    print(data)
 
 
 .. parsed-literal::
@@ -89,7 +78,7 @@ chunks of data
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7fb18f4834c0>
+    <generator object iter_HDF5_to_dict at 0x7f7ab3005690>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -120,7 +109,7 @@ which can be use to iterate over that file.
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7fb18e712ce0>
+    <generator object iter_HDF5_to_dict at 0x7f7ab2e84970>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -155,6 +144,7 @@ over that file.
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5, ColumnMapper
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715

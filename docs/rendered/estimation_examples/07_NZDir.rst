@@ -30,11 +30,6 @@ First off, let’s load the relevant packages from RAIL:
 Next, let’s set up the Data Store, so that our RAIL module will know
 where to fetch data:
 
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
 Next, we’ll load some data into the Data Store:
 
 ``test_dc2_training_9816.hdf5`` contains ~10,000 galaxies from healpix
@@ -46,7 +41,7 @@ contains ~20,000 galaxies from this same healpix pixel.
     from rail.utils.path_utils import find_rail_file
     trainFile = find_rail_file('examples_data/testdata/test_dc2_training_9816.hdf5')
     testFile = find_rail_file('examples_data/testdata/test_dc2_validation_9816.hdf5')
-    training_data = DS.read_file("training_data", TableHandle, trainFile)
+    training_data = tables_io.read(trainFile)
 
 Let’s read test data in with tables_io, and then split it up into
 several tomographic bins. We can mock up some simple “tomographic” bins
@@ -66,12 +61,12 @@ all weights to one):
     lowmask = (szcol<=0.75)
     midmask = np.logical_and(szcol>.75, szcol<1.25)
     himask = (szcol>=1.25)
-    lowzdata = df[lowmask]
-    midzdata = df[midmask]
-    hizdata = df[himask]
-    low_bin = DS.add_data("lowz_bin", lowzdata, Hdf5Handle)
-    mid_bin = DS.add_data("midz_bin", midzdata, Hdf5Handle)
-    hi_bin = DS.add_data("hiz_bin", hizdata, Hdf5Handle)
+    low_bin = df[lowmask]
+    mid_bin = df[midmask]
+    hi_bin = df[himask]
+    # low_bin = DS.add_data("lowz_bin", lowzdata, Hdf5Handle)
+    # mid_bin = DS.add_data("midz_bin", midzdata, Hdf5Handle)
+    # hi_bin = DS.add_data("hiz_bin", hizdata, Hdf5Handle)
 
 The algorithm:
 --------------
@@ -116,8 +111,8 @@ training or test samples to account for various biases.
 
 .. code:: ipython3
 
-    numinphot = len(training_data()['photometry']['redshift'])
-    training_data()['photometry']['weight'] = np.ones(numinphot, dtype='float')*0.5
+    numinphot = len(training_data['photometry']['redshift'])
+    training_data['photometry']['weight'] = np.ones(numinphot, dtype='float')*0.5
 
 
 .. code:: ipython3
@@ -156,7 +151,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6598f24cd0>
+    <rail.core.data.ModelHandle at 0x7fdf33506190>
 
 
 
@@ -192,10 +187,13 @@ calculation, so this should run very fast:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, nzsumm_low
     Inserting handle into data store.  model: NZDir_model.pkl, nzsumm_low
     Process 0 running estimator on chunk 0 - 7679
     Inserting handle into data store.  single_NZ_nzsumm_low: inprogress_single_NZ_nzsumm_low.hdf5, nzsumm_low
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
+    Inserting handle into data store.  input: None, nzsumm_mid
+    Inserting handle into data store.  model: NZDir_model.pkl, nzsumm_mid
     Process 0 running estimator on chunk 0 - 8513
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
@@ -203,11 +201,17 @@ calculation, so this should run very fast:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, nzsumm_hi
+    Inserting handle into data store.  model: NZDir_model.pkl, nzsumm_hi
+
+
+.. parsed-literal::
+
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 290 ms, sys: 5.03 ms, total: 295 ms
-    Wall time: 296 ms
+    CPU times: user 278 ms, sys: 6.82 ms, total: 285 ms
+    Wall time: 286 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -226,7 +230,7 @@ realization for each bin:
     bin_datasets = [low_bin, mid_bin, hi_bin]
     binnames = ['low', 'mid', 'hi']
     for ii, (bin, indata) in enumerate(zip(binnames, bin_datasets)):
-        truehist, bins = np.histogram(indata()['redshift'], bins=samebins)
+        truehist, bins = np.histogram(indata['redshift'], bins=samebins)
         norm = np.sum(truehist)*binsize
         truehist = np.array(truehist)/norm
         bin_ens[f'{bin}']().plot_native(axes=axs[ii],label="DIR estimate")
@@ -246,7 +250,7 @@ realization for each bin:
 
 
 
-.. image:: 07_NZDir_files/07_NZDir_22_1.png
+.. image:: 07_NZDir_files/07_NZDir_21_1.png
 
 
 Non-representative data
@@ -286,8 +290,8 @@ at it:
 
 .. code:: ipython3
 
-    degrade_df = pd.DataFrame(training_data.data['photometry'])
-    degrade_data = DS.add_data("degrade_data", degrade_df, PqHandle)
+    degrade_data = pd.DataFrame(training_data['photometry'])
+    # degrade_data = DS.add_data("degrade_data", degrade_df, PqHandle)
 
 Now, apply our degraders:
 
@@ -299,7 +303,9 @@ Now, apply our degraders:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, line_confusion
     Inserting handle into data store.  output_line_confusion: inprogress_output_line_confusion.pq, line_confusion
+    Inserting handle into data store.  output_line_confusion: None, quantity_cut
     Inserting handle into data store.  output_quantity_cut: inprogress_output_quantity_cut.pq, quantity_cut
 
 
@@ -312,7 +318,7 @@ redshifts, and we are very incomplete at high redshift.
     #compare original specz data to degraded data
     fig = plt.figure(figsize=(10,6))
     xbins = np.linspace(0,3,41)
-    plt.hist(training_data()['photometry']['redshift'],bins=xbins,alpha=0.75, label='original training data');
+    plt.hist(training_data['photometry']['redshift'],bins=xbins,alpha=0.75, label='original training data');
     plt.hist(train_data_cut()['redshift'], bins=xbins,alpha=0.75, label='trimmed training data');
     plt.legend(loc='upper right', fontsize=15)
     plt.xlabel("redshift", fontsize=15)
@@ -328,7 +334,7 @@ redshifts, and we are very incomplete at high redshift.
 
 
 
-.. image:: 07_NZDir_files/07_NZDir_31_1.png
+.. image:: 07_NZDir_files/07_NZDir_30_1.png
 
 
 Let’s re-run our estimator on the same test data but now with our
@@ -347,6 +353,7 @@ incomplete training data:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output_quantity_cut: None, newsumm_inform
     Inserting handle into data store.  model_newsumm_inform: inprogress_NZDir_model_incompl.pkl, newsumm_inform
 
 
@@ -354,7 +361,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f65989071d0>
+    <rail.core.data.ModelHandle at 0x7fdf32aebed0>
 
 
 
@@ -375,17 +382,23 @@ Now we need to re-run our tomographic bin estimates with this new model:
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, nzsumm_low
+    Inserting handle into data store.  model_newsumm_inform: <class 'rail.core.data.ModelHandle'> NZDir_model_incompl.pkl, (wd), nzsumm_low
     Process 0 running estimator on chunk 0 - 7679
     Inserting handle into data store.  single_NZ_nzsumm_low: inprogress_single_NZ_nzsumm_low.hdf5, nzsumm_low
     Inserting handle into data store.  output_nzsumm_low: inprogress_output_nzsumm_low.hdf5, nzsumm_low
+    Inserting handle into data store.  input: None, nzsumm_mid
+    Inserting handle into data store.  model_newsumm_inform: <class 'rail.core.data.ModelHandle'> NZDir_model_incompl.pkl, (wd), nzsumm_mid
     Process 0 running estimator on chunk 0 - 8513
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
+    Inserting handle into data store.  input: None, nzsumm_hi
+    Inserting handle into data store.  model_newsumm_inform: <class 'rail.core.data.ModelHandle'> NZDir_model_incompl.pkl, (wd), nzsumm_hi
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 125 ms, sys: 3.02 ms, total: 128 ms
-    Wall time: 128 ms
+    CPU times: user 116 ms, sys: 4.88 ms, total: 121 ms
+    Wall time: 121 ms
 
 
 .. code:: ipython3
@@ -398,7 +411,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
     binnames = ['low', 'mid', 'hi']
     
     for ii, (bin, indata) in enumerate(zip(binnames, bin_datasets)):
-        truehist, bins = np.histogram(indata.data['redshift'], bins=samebins)
+        truehist, bins = np.histogram(indata['redshift'], bins=samebins)
         norm = np.sum(truehist)*binsize
         truehist = np.array(truehist)/norm
         new_ens[f'{bin}']().plot_native(axes=axs[ii],label="DIR estimate")
@@ -410,7 +423,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
 
 
 
-.. image:: 07_NZDir_files/07_NZDir_37_0.png
+.. image:: 07_NZDir_files/07_NZDir_36_0.png
 
 
 We see that the high redshift bin, where our training set was very

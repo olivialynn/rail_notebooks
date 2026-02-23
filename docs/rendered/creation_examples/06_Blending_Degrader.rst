@@ -15,14 +15,9 @@ unrecognized blends
     from rail.core.data import PqHandle
     from rail.core.stage import RailStage
     
+    import tables_io
     import matplotlib.pyplot as plt
     import pandas as pd, numpy as np
-
-.. code:: ipython3
-
-    DS = RailStage.data_store
-    DS.__class__.allow_overwrite = True
-
 
 Create a random catalog with ugrizy+YJHF bands as the the true input
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,9 +31,7 @@ Create a random catalog with ugrizy+YJHF bands as the the true input
     
     data_df = pd.DataFrame(data=data,    # values
                 columns=['ra', 'dec', 'z_true', 'u', 'g', 'r', 'i', 'z', 'y', 'Y', 'J', 'H', 'F'])
-    
-    data_truth_handle = DS.add_data('input', data_df, PqHandle)
-    data_truth = data_truth_handle.data
+    data_truth = data_df
 
 .. code:: ipython3
 
@@ -54,7 +47,7 @@ Create a random catalog with ugrizy+YJHF bands as the the true input
 
 
 
-.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_6_0.png
+.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_5_0.png
 
 
 The blending model
@@ -114,6 +107,11 @@ The blending model
 
 .. parsed-literal::
 
+    Inserting handle into data store.  input: None, unrec_bl_model
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_unrec_bl_model: inprogress_output_unrec_bl_model.pq, unrec_bl_model
     Inserting handle into data store.  compInd_unrec_bl_model: inprogress_compInd_unrec_bl_model.pq, unrec_bl_model
 
@@ -134,7 +132,7 @@ The blending model
 
 
 
-.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_10_0.png
+.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_9_0.png
 
 
 .. code:: ipython3
@@ -150,7 +148,7 @@ The blending model
 
 
 
-.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_11_0.png
+.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_10_0.png
 
 
 .. code:: ipython3
@@ -159,14 +157,14 @@ The blending model
     plt.hist(data_truth['z_true'], bins=20, label='True Redshift')
     plt.hist(samples_w_bl['z_weighted'], bins=20,  fill=False, label='Weighted Mean')
     
-    plt.xlabel(fr'Rdshift', fontsize=14)
+    plt.xlabel(fr'Redshift', fontsize=14)
     plt.legend(fontsize=12)
     plt.show()
 
 
 
 
-.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_12_0.png
+.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_11_0.png
 
 
 Study one BL case
@@ -207,28 +205,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.02486623 0.02501558 0.02498512 0.02489513] / 0.024940517306351946
+    [0.01375982 0.01377998 0.01368247] / 0.013740758638953285
     
     Truth DEC / Blended DEC:
-    [0.00594593 0.006326   0.00612963 0.00631572] / 0.006179318862900522
+    [0.00873848 0.00850219 0.00883985] / 0.00869350609379589
     
     Truth mag u / Blended mag u:
-    [24.99167514 24.12100806 20.37272622 17.993001  ] / 17.87302384560134
+    [27.85927235 24.70047298 19.13332714] / 19.126557556186697
     
     Truth mag g / Blended mag g:
-    [26.56358223 27.67712383 18.06547428 28.16064083] / 18.064786785111416
+    [21.67550547 27.03474068 21.00345596] / 20.532990759448676
     
     Truth mag r / Blended mag r:
-    [24.75589607 26.02215876 21.49384656 18.23157106] / 18.17573041577989
+    [21.58736669 22.07316491 20.94710042] / 20.245110967765306
     
     Truth mag i / Blended mag i:
-    [26.52912332 24.11333957 21.11130594 28.27446936] / 21.0366831305967
+    [19.9570728  28.89504455 25.43760921] / 19.9498337789834
     
     Truth mag z / Blended mag z:
-    [23.04915383 25.65144901 25.64440735 26.40906435] / 22.826243991085114
+    [21.95426299 28.21945131 25.47300342] / 21.909335511263322
     
     Truth mag y / Blended mag y:
-    [22.71092371 24.58172809 25.17156033 17.31307095] / 17.303463264380273
+    [22.10658351 26.26245057 16.13911877] / 16.134577488223833
     
 
 
@@ -256,6 +254,6 @@ Study one BL case
 
 
 
-.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_15_0.png
+.. image:: 06_Blending_Degrader_files/06_Blending_Degrader_14_0.png
 
 

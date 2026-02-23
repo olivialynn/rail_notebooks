@@ -46,14 +46,14 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** February 16, 2026
+**Tables last updated:** February 23, 2026
 
 ### Core Notebooks
 
 |   | Notebook |
 |---|----------|
 | :x: | 00_Useful_Utilities.ipynb |
-| :white_check_mark: | 01_FileIO_DataStore.ipynb |
+| :x: | 01_FileIO_DataStore.ipynb |
 | :white_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
 | :white_check_mark: | 03_Hyperbolic_Magnitude.ipynb |
 | :white_check_mark: | 04_Iterate_Tabular_Data.ipynb |
@@ -81,35 +81,35 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
-| :white_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
-| :white_check_mark: | 02_BPZ_lite.ipynb |
-| :white_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
+| :x: | 00_Quick_Start_in_Estimation.ipynb |
+| :x: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
+| :x: | 02_BPZ_lite.ipynb |
+| :x: | 03_BPZ_lite_Custom_SEDs.ipynb |
 | :white_check_mark: | 04_CMNN.ipynb |
-| :white_check_mark: | 05_DNF.ipynb |
+| :x: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :white_check_mark: | 08_NZDir_pipeline.ipynb |
+| :x: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
-| :white_check_mark: | 13_Sampled_Summarizers.ipynb |
+| :x: | 13_Sampled_Summarizers.ipynb |
 | :white_check_mark: | 14_LePhare_LSST.ipynb |
 | :white_check_mark: | 15_LePhare_COSMOS.ipynb |
-| :white_check_mark: | 16_Running_with_different_data.ipynb |
+| :x: | 16_Running_with_different_data.ipynb |
 
 ### Evaluation Notebooks
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | 00_Single_Evaluation.ipynb |
-| :white_check_mark: | 01_Evaluation_by_Type.ipynb |
+| :x: | 00_Single_Evaluation.ipynb |
+| :x: | 01_Evaluation_by_Type.ipynb |
 
 ### Goldenspike Notebooks
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | Goldenspike.ipynb |
+| :x: | Goldenspike.ipynb |
 
 

@@ -18,6 +18,7 @@ def _parse_args():
         A tuple containing the notebook group (str), a verbose flag (bool), and
         a debug flag (bool).
     """
+    print()
     # Check for verbose flags.
     verbose = False
     if "--verbose" in sys.argv or "-v" in sys.argv:

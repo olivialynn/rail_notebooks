@@ -47,6 +47,10 @@ autoapi_member_order = "bysource"
 # -- Grab the demonstrations file from the main RAIL repo --------------------
 from urllib.request import urlretrieve
 
+# Pull the demo index files from the main RAIL repo. They are stored there so
+# they show up in the sidebar of the main RAIL Read The Docs, and we copy
+# them programmatically to avoid drift between two different file copies.
+
 # get interactive notebooks index file
 urlretrieve(
     "https://raw.githubusercontent.com/LSSTDESC/rail/main/docs/source/interactive_notebooks/index.rst",

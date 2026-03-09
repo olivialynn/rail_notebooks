@@ -57,6 +57,10 @@ def _parse_args():
 
     # get the super group
     super_group = sys.argv[2]
+    if super_group not in ["interactive", "pipeline"]:
+        raise ValueError(
+            "Invalid notebook supergroup given. Try 'interactive' or 'pipelines'."
+        )
 
     return group_name, super_group, verbose, debug
 
@@ -236,23 +240,27 @@ def run_render_notebook_group():
         'estimation', 'evaluation', or 'goldenspike'.
     super_group: str
         The folder that this group of notebooks is found in. Should be one of
-        'interactive_examples' or 'pipeline_examples'.
+        'interactive' or 'pipeline'.
     --verbose, -v : bool, optional
         If specified, enables verbose output.
 
     Raises
     ------
     ValueError
-        If an invalid notebook group is provided or if any notebook failed to render.
+        If an invalid notebook group or supergroup is provided or if any notebook failed to render.
     """
     group_name, super_group, verbose, debug = _parse_args()
     if verbose:
         print(f"Rendering notebooks in group: {group_name}...")
 
     repo_root, rail_root = _resolve_repo_paths()
-    raw_notebook_dir = rail_root / super_group / f"{group_name}_examples"
+    raw_notebook_dir = rail_root / f"{super_group}_examples" / f"{group_name}_examples"
     rendered_group_dir = (
-        repo_root / "docs" / super_group / "rendered" / f"{group_name}_examples"
+        repo_root
+        / "docs"
+        / f"{super_group}_examples"
+        / "rendered"
+        / f"{group_name}_examples"
     )
 
     _clear_rendered_output(rendered_group_dir, verbose)

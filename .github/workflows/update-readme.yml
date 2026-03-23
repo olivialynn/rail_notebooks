@@ -28,7 +28,9 @@ jobs:
     - name: Install dependencies
       run: |
         cd ..
+        pwd  # Debug: show current directory
         git clone https://github.com/LSSTDESC/rail.git
+        ls -la  # Debug: verify rail exists
         cd rail
 
         # The following was copied from rail's CI (from main repo) on Jan 20, 2026:

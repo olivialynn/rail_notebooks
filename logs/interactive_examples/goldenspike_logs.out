@@ -1,9 +1,10 @@
+Rendering notebooks in group: goldenspike...
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 279, in <module>
     run_render_notebook_group()
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 252, in run_render_notebook_group
-    group_name, super_group, verbose, debug = _parse_args()
-                                              ^^^^^^^^^^^^^
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 61, in _parse_args
-    raise ValueError(
-ValueError: Invalid notebook supergroup given. Try 'interactive' or 'pipelines'.
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 256, in run_render_notebook_group
+    repo_root, rail_root = _resolve_repo_paths()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 95, in _resolve_repo_paths
+    raise FileNotFoundError(
+FileNotFoundError: Could not locate the rail repository. Checked: /home/runner/work/rail_notebooks/rail_notebooks/rail, /home/runner/work/rail_notebooks/rail

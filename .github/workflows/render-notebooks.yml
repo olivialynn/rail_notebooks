@@ -9,12 +9,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 45 11 * * 1
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    continue-on-error: true
     strategy: 
+      fail-fast: false
       max-parallel: 1
       matrix:
         super-group: ['interactive','pipeline']

@@ -85,7 +85,7 @@ Analysis Framework (MAF).
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T195050
+    /home/runner/.cache/lephare/runs/20260323T203833
 
 
 .. parsed-literal::
@@ -140,7 +140,7 @@ Analysis Framework (MAF).
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4618/2407287589.py", line 5, in <module>
+      File "/tmp/ipykernel_4468/2407287589.py", line 5, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -266,7 +266,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.888714</td>
+          <td>0.499449</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -276,7 +276,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>1.846640</td>
+          <td>1.089332</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -286,7 +286,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.754788</td>
+          <td>1.268438</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -296,7 +296,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>1.912300</td>
+          <td>1.665486</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -306,7 +306,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>1.867865</td>
+          <td>0.674884</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -396,7 +396,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.888714</td>
+          <td>0.499449</td>
           <td>22.990404</td>
           <td>0.026246</td>
           <td>23.011212</td>
@@ -415,7 +415,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>1.846640</td>
+          <td>1.089332</td>
           <td>22.962996</td>
           <td>0.025645</td>
           <td>23.012586</td>
@@ -434,7 +434,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.754788</td>
+          <td>1.268438</td>
           <td>23.050979</td>
           <td>0.027628</td>
           <td>22.992791</td>
@@ -453,7 +453,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>1.912300</td>
+          <td>1.665486</td>
           <td>23.015021</td>
           <td>0.026798</td>
           <td>22.984763</td>
@@ -472,7 +472,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>1.867865</td>
+          <td>0.674884</td>
           <td>23.005344</td>
           <td>0.026579</td>
           <td>23.010790</td>
@@ -669,7 +669,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.888714</td>
+          <td>0.499449</td>
           <td>22.990381</td>
           <td>0.026308</td>
           <td>23.011222</td>
@@ -688,7 +688,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>1</th>
-          <td>1.846640</td>
+          <td>1.089332</td>
           <td>22.963601</td>
           <td>0.025237</td>
           <td>23.012513</td>
@@ -707,7 +707,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>2</th>
-          <td>1.754788</td>
+          <td>1.268438</td>
           <td>23.050276</td>
           <td>0.027242</td>
           <td>22.992825</td>
@@ -726,7 +726,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>3</th>
-          <td>1.912300</td>
+          <td>1.665486</td>
           <td>23.014777</td>
           <td>0.026365</td>
           <td>22.984848</td>
@@ -745,7 +745,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>4</th>
-          <td>1.867865</td>
+          <td>0.674884</td>
           <td>23.005223</td>
           <td>0.025983</td>
           <td>23.010704</td>

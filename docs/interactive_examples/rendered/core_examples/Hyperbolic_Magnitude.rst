@@ -45,7 +45,7 @@ in the ``pipeline_examples/core_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T162255
+    /home/runner/.cache/lephare/runs/20260323T184807
 
 
 .. parsed-literal::
@@ -100,7 +100,7 @@ in the ``pipeline_examples/core_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4027/2416626524.py", line 2, in <module>
+      File "/tmp/ipykernel_4091/2416626524.py", line 2, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools

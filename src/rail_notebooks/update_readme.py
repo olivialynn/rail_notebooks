@@ -49,6 +49,9 @@ def _parse_output_files(output_files):
     for output_file in output_files:
         with output_file.open("r") as f:
             raw_content = f.read()
+            
+            print(f"\nRAW CONTENT of {output_file}:\n{raw_content}\n")
+            print("---\n")
 
             raw_table = raw_content.split("NOTEBOOK RENDERING STATUS:")[1]
             if "FAILED NOTEBOOK(S):" in raw_table:

@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     strategy: 
+      max-parallel: 1
       matrix:
         super-group: ['interactive','pipeline']
         notebook-dir: ['core','creation','estimation','evaluation','goldenspike']

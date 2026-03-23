@@ -65,8 +65,14 @@ def _parse_args():
     return group_name, super_group, verbose, debug
 
 
-def _resolve_repo_paths():
+def _resolve_repo_paths(super_group):
     """Resolve important repository paths relative to the repository root.
+
+    Parameters
+    ----------
+    super_group : str
+        The folder that this group of notebooks is found in. Should be one of
+        'interactive' or 'pipeline'.
 
     Returns
     -------
@@ -88,7 +94,7 @@ def _resolve_repo_paths():
     ]
 
     for candidate in candidates:
-        if (candidate / "examples").exists():
+        if (candidate / f"{super_group}_examples").exists():
             return repo_root, candidate
 
     searched = ", ".join(str(path) for path in candidates)
@@ -253,7 +259,7 @@ def run_render_notebook_group():
     if verbose:
         print(f"Rendering notebooks in group: {group_name}...")
 
-    repo_root, rail_root = _resolve_repo_paths()
+    repo_root, rail_root = _resolve_repo_paths(super_group)
     raw_notebook_dir = rail_root / f"{super_group}_examples" / f"{group_name}_examples"
     rendered_group_dir = (
         repo_root

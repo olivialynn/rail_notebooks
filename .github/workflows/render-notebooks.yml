@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 45 11 * * 1
+permissions:
+  pull-requests: write
 jobs:
   build:
     runs-on: ubuntu-latest

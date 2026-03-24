@@ -177,7 +177,7 @@ imports.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4506/2417425162.py", line 3, in <module>
+      File "/tmp/ipykernel_4520/2417425162.py", line 3, in <module>
         rail.stages.import_and_attach_all()
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
@@ -754,7 +754,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7feb691cfe10>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7ff340424110>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

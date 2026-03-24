@@ -1,4 +1,5 @@
 Rendering notebooks in group: creation...
+Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/creation_examples
 RENDERING: FSPS_SED
 [32m    670[39m         duste_umin=duste_umin[i],
 [32m    671[39m         duste_qpah=duste_qpah[i],

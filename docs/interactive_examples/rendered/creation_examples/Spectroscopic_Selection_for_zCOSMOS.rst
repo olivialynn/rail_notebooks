@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T195050
+    /home/runner/.cache/lephare/runs/20260323T203833
 
 
 .. parsed-literal::
@@ -113,7 +113,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4327/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_4114/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -249,50 +249,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.309452</td>
-          <td>19.077311</td>
+          <td>20.944495</td>
+          <td>21.436666</td>
           <td>20.0</td>
-          <td>0.291694</td>
+          <td>1.610457</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.404773</td>
-          <td>19.548146</td>
+          <td>20.236611</td>
+          <td>17.747225</td>
           <td>20.0</td>
-          <td>1.510559</td>
+          <td>1.519271</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.530621</td>
-          <td>18.234176</td>
+          <td>19.409126</td>
+          <td>20.896882</td>
           <td>20.0</td>
-          <td>1.799842</td>
+          <td>1.058749</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.212613</td>
-          <td>19.264935</td>
+          <td>25.875110</td>
+          <td>20.443097</td>
           <td>20.0</td>
-          <td>1.002464</td>
+          <td>1.103237</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.051810</td>
-          <td>19.972767</td>
+          <td>24.686296</td>
+          <td>17.536482</td>
           <td>20.0</td>
-          <td>0.382968</td>
+          <td>0.200349</td>
         </tr>
       </tbody>
     </table>
@@ -329,8 +329,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.24 s, sys: 16.3 ms, total: 1.26 s
-    Wall time: 1.25 s
+    CPU times: user 1.21 s, sys: 18.1 ms, total: 1.23 s
+    Wall time: 1.23 s
 
 
 .. code:: ipython3
@@ -341,17 +341,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.DataFrame'>
-    Index: 503379 entries, 4 to 1999999
+    Index: 503457 entries, 14 to 1999996
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503379 non-null  float64
-     1   g         503379 non-null  float64
-     2   r         503379 non-null  float64
-     3   i         503379 non-null  float64
-     4   z         503379 non-null  float64
-     5   y         503379 non-null  float64
-     6   redshift  503379 non-null  float64
+     0   u         503457 non-null  float64
+     1   g         503457 non-null  float64
+     2   r         503457 non-null  float64
+     3   i         503457 non-null  float64
+     4   z         503457 non-null  float64
+     5   y         503457 non-null  float64
+     6   redshift  503457 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 

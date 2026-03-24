@@ -33,6 +33,8 @@ jobs:
         sudo apt-get install -y --no-install-recommends \
         build-essential libbz2-dev \
         openmpi-bin libopenmpi-dev
+    - name: Collect Workflow Telemetry
+      uses: catchpoint/workflow-telemetry-action@v2
     - name: Install dependencies
       run: |
         cd ..

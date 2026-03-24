@@ -22,7 +22,9 @@ jobs:
         super-group: ['interactive','pipeline']
         notebook-dir: ['core','creation','estimation','evaluation','goldenspike']
     steps:
-    
+    - name: Start Workflow Telemetry
+      uses: dev-hato/actions-workflow-metrics@5269359070fd41816e138edfdeec9caff3f71135
+      if: always()
     # Set up and installation
     - uses: actions/checkout@v6
     - name: Set up Python 3.11
@@ -35,8 +37,7 @@ jobs:
         sudo apt-get install -y --no-install-recommends \
         build-essential libbz2-dev \
         openmpi-bin libopenmpi-dev
-    - name: Collect Workflow Telemetry
-      uses: catchpoint/workflow-telemetry-action@v2
+
     - name: Install dependencies
       run: |
         cd ..
@@ -73,12 +74,12 @@ jobs:
         git pull
         
     # Commit changes
-    - name: Commit changes 
-      uses: stefanzweifel/git-auto-commit-action@v7
-      if: always()
-      with: 
-        commit_user_name: GitHub Actions Bot 
-        commit_user_email: github-actions-bot@example.org
-        commit_author: Author <actions@github.com>
+    # - name: Commit changes 
+    #   uses: stefanzweifel/git-auto-commit-action@v7
+    #   if: always()
+    #   with: 
+    #     commit_user_name: GitHub Actions Bot 
+    #     commit_user_email: github-actions-bot@example.org
+    #     commit_author: Author <actions@github.com>
 
  

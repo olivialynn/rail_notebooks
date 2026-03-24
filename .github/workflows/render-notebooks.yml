@@ -67,6 +67,7 @@ jobs:
       if: always()
       run: |
         git pull
+        
     # Commit changes
     - name: Commit changes 
       uses: stefanzweifel/git-auto-commit-action@v7
@@ -76,49 +77,4 @@ jobs:
         commit_user_email: github-actions-bot@example.org
         commit_author: Author <actions@github.com>
 
-  #   - name: Upload rendered artifacts
-  #     uses: actions/upload-artifact@v4
-  #     with:
-  #       name: rendered-${{ matrix.super-group }}-${{ matrix.notebook-dir }}
-  #       path: docs/${{ matrix.super-group }}_examples/rendered/${{ matrix.notebook-dir }}_examples/
-  #       retention-days: 8
-
-  #   - name: Upload logs artifacts
-  #     uses: actions/upload-artifact@v4
-  #     with:
-  #       name: logs-${{ matrix.super-group }}-${{ matrix.notebook-dir }}
-  #       path: logs/${{ matrix.super-group }}_examples/${{ matrix.notebook-dir }}_logs.out
-  #       retention-days: 8
-
-  
-  # commit-changes:
-  #   runs-on: ubuntu-latest
-  #   needs:
-  #     - build
-
-  #   steps:
-  #   - uses: actions/checkout@v6
-  #   - name: Download rendered artifacts
-  #     uses: actions/download-artifact@v8
-  #     with:
-  #       pattern: rendered-*
-  #       merge-multiple: true
-  #   - name: Download log artifacts
-  #     uses: actions/download-artifact@v8
-  #     with:
-  #       pattern: logs-*
-  #       merge-multiple: true
-
-  #   - name: Display structure of downloaded files
-  #     run: ls -R ./
-    
-  #   # - name: Download logs artifacts 
-
-  #   # Commit changes
-  #   - name: Commit changes 
-  #     uses: stefanzweifel/git-auto-commit-action@v7
-  #     if: always()
-  #     with: 
-  #       commit_user_name: GitHub Actions Bot 
-  #       commit_user_email: github-actions-bot@example.org
-  #       commit_author: Author <actions@github.com>
+ 

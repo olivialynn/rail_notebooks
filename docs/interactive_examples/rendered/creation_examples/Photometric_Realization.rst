@@ -39,7 +39,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260324T150130
 
 
 .. parsed-literal::
@@ -94,7 +94,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4923/696671147.py", line 6, in <module>
+      File "/tmp/ipykernel_6387/696671147.py", line 6, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -252,8 +252,8 @@ engine is.
           <td>25.423050</td>
           <td>25.204436</td>
           <td>25.080073</td>
-          <td>0.048953</td>
-          <td>0.038597</td>
+          <td>0.134281</td>
+          <td>0.080528</td>
         </tr>
         <tr>
           <th>1</th>
@@ -264,8 +264,8 @@ engine is.
           <td>26.103835</td>
           <td>25.704334</td>
           <td>25.487085</td>
-          <td>0.005571</td>
-          <td>0.005506</td>
+          <td>0.027544</td>
+          <td>0.015446</td>
         </tr>
         <tr>
           <th>2</th>
@@ -276,8 +276,8 @@ engine is.
           <td>26.473378</td>
           <td>26.110453</td>
           <td>25.726033</td>
-          <td>0.038664</td>
-          <td>0.031715</td>
+          <td>0.006630</td>
+          <td>0.003950</td>
         </tr>
         <tr>
           <th>3</th>
@@ -288,8 +288,8 @@ engine is.
           <td>25.323484</td>
           <td>25.215736</td>
           <td>25.061188</td>
-          <td>0.014732</td>
-          <td>0.011283</td>
+          <td>0.146249</td>
+          <td>0.132909</td>
         </tr>
         <tr>
           <th>4</th>
@@ -300,8 +300,8 @@ engine is.
           <td>24.973738</td>
           <td>24.482849</td>
           <td>23.700091</td>
-          <td>0.007457</td>
-          <td>0.006633</td>
+          <td>0.068863</td>
+          <td>0.047064</td>
         </tr>
         <tr>
           <th>...</th>
@@ -324,8 +324,8 @@ engine is.
           <td>26.079070</td>
           <td>25.199434</td>
           <td>24.758864</td>
-          <td>0.010310</td>
-          <td>0.006117</td>
+          <td>0.081810</td>
+          <td>0.043078</td>
         </tr>
         <tr>
           <th>99996</th>
@@ -336,8 +336,8 @@ engine is.
           <td>25.080964</td>
           <td>24.695030</td>
           <td>24.119693</td>
-          <td>0.067335</td>
-          <td>0.052115</td>
+          <td>0.080776</td>
+          <td>0.046235</td>
         </tr>
         <tr>
           <th>99997</th>
@@ -348,8 +348,8 @@ engine is.
           <td>25.574312</td>
           <td>25.125290</td>
           <td>24.684619</td>
-          <td>0.057751</td>
-          <td>0.038064</td>
+          <td>0.108156</td>
+          <td>0.065309</td>
         </tr>
         <tr>
           <th>99998</th>
@@ -360,8 +360,8 @@ engine is.
           <td>25.585453</td>
           <td>25.270681</td>
           <td>25.192526</td>
-          <td>0.071331</td>
-          <td>0.048684</td>
+          <td>0.049793</td>
+          <td>0.039377</td>
         </tr>
         <tr>
           <th>99999</th>
@@ -372,8 +372,8 @@ engine is.
           <td>23.619452</td>
           <td>23.163058</td>
           <td>22.814961</td>
-          <td>0.069849</td>
-          <td>0.064400</td>
+          <td>0.155270</td>
+          <td>0.127337</td>
         </tr>
       </tbody>
     </table>

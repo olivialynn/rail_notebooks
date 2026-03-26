@@ -88,7 +88,15 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-     97 47.1M   97 45.8M    0     0  46.5M      0  0:00:01 --:--:--  0:00:01 46.5M100 47.1M  100 47.1M    0     0  47.1M      0  0:00:01  0:00:01 --:--:-- 47.1M
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+.. parsed-literal::
+
+     68 47.1M   68 32.3M    0     0  26.4M      0  0:00:01  0:00:01 --:--:-- 26.4M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  32.8M      0  0:00:01  0:00:01 --:--:-- 32.7M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -135,9 +143,7 @@ FlexZBoost results
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: Parameter `variant` has been introduced to replace `midrank`; `midrank` will be removed in SciPy 1.19.0. Specify `variant` to silence this warning. Note that the returned object will no longer be unpackable as a tuple, and `critical_values` will be omitted.
-      return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -250,9 +256,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: Parameter `variant` has been introduced to replace `midrank`; `midrank` will be removed in SciPy 1.19.0. Specify `variant` to silence this warning. Note that the returned object will no longer be unpackable as a tuple, and `critical_values` will be omitted.
-      return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -283,8 +287,8 @@ detailed below).
 
 .. parsed-literal::
 
-    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
-     'cvm': CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10),
+    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
+     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
      'ks': KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1)),
      'outlier_rate': np.float64(0.05873797877466336)}
 
@@ -440,8 +444,8 @@ are perfect.
 
 .. parsed-literal::
 
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10)
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 
 .. code:: ipython3
@@ -473,8 +477,8 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 
 .. code:: ipython3
@@ -548,7 +552,7 @@ depending on the true conditional densities :math:`f(z | x)`.
 
 .. parsed-literal::
 
-    stat_and_pval(statistic=np.float64(-6.725602928688289), p_value=nan)
+    stat_and_pval(statistic=np.float64(-6.725602928688286), p_value=nan)
 
 
 

@@ -240,42 +240,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.112828</td>
-          <td>0.049007</td>
+          <td>1.254874</td>
+          <td>0.159214</td>
           <td>0.0</td>
-          <td>0.063586</td>
+          <td>0.089023</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.761491</td>
-          <td>0.103185</td>
+          <td>1.202086</td>
+          <td>0.108119</td>
           <td>0.0</td>
-          <td>0.129275</td>
+          <td>0.100885</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.643152</td>
-          <td>0.115925</td>
+          <td>1.143545</td>
+          <td>0.087845</td>
           <td>0.0</td>
-          <td>0.060202</td>
+          <td>0.090739</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.158828</td>
-          <td>0.072206</td>
+          <td>0.252547</td>
+          <td>0.049275</td>
           <td>0.0</td>
-          <td>0.046696</td>
+          <td>0.067222</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.769608</td>
-          <td>0.059781</td>
+          <td>0.734472</td>
+          <td>0.094592</td>
           <td>0.0</td>
-          <td>0.071843</td>
+          <td>0.103273</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -288,42 +288,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.454081</td>
-          <td>0.045133</td>
+          <td>0.307388</td>
+          <td>0.140530</td>
           <td>0.0</td>
-          <td>0.076742</td>
+          <td>0.110514</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.906922</td>
-          <td>1.248793</td>
+          <td>0.670133</td>
+          <td>0.300930</td>
           <td>0.0</td>
-          <td>0.059284</td>
+          <td>0.124276</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>1.081322</td>
-          <td>0.266683</td>
+          <td>0.605144</td>
+          <td>0.133294</td>
           <td>0.0</td>
-          <td>0.051688</td>
+          <td>0.082253</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.688312</td>
-          <td>0.097478</td>
+          <td>0.471724</td>
+          <td>0.060510</td>
           <td>0.0</td>
-          <td>0.146366</td>
+          <td>0.103687</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>1.152337</td>
-          <td>0.095409</td>
+          <td>0.896659</td>
+          <td>0.066239</td>
           <td>0.0</td>
-          <td>0.077307</td>
+          <td>0.082783</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -371,43 +371,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.049007</td>
-          <td>0.063586</td>
+          <td>0.159214</td>
+          <td>0.089023</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.112828</td>
+          <td>1.254874</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.103185</td>
-          <td>0.129275</td>
+          <td>0.108119</td>
+          <td>0.100885</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.761491</td>
+          <td>1.202086</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.115925</td>
-          <td>0.060202</td>
+          <td>0.087845</td>
+          <td>0.090739</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.643152</td>
+          <td>1.143545</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.072206</td>
-          <td>0.046696</td>
+          <td>0.049275</td>
+          <td>0.067222</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.158828</td>
+          <td>0.252547</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.059781</td>
-          <td>0.071843</td>
+          <td>0.094592</td>
+          <td>0.103273</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.769608</td>
+          <td>0.734472</td>
         </tr>
         <tr>
           <th>...</th>
@@ -419,43 +419,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.045133</td>
-          <td>0.076742</td>
+          <td>0.140530</td>
+          <td>0.110514</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.454081</td>
+          <td>0.307388</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>1.248793</td>
-          <td>0.059284</td>
+          <td>0.300930</td>
+          <td>0.124276</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.906922</td>
+          <td>0.670133</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.266683</td>
-          <td>0.051688</td>
+          <td>0.133294</td>
+          <td>0.082253</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.081322</td>
+          <td>0.605144</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.097478</td>
-          <td>0.146366</td>
+          <td>0.060510</td>
+          <td>0.103687</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.688312</td>
+          <td>0.471724</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.095409</td>
-          <td>0.077307</td>
+          <td>0.066239</td>
+          <td>0.082783</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.152337</td>
+          <td>0.896659</td>
         </tr>
       </tbody>
     </table>
@@ -511,6 +511,10 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
     Inserting handle into data store.  pdfs_data: None, dist_to_point
     Inserting handle into data store.  ztrue_data: None, dist_to_point
     Requested metrics: ['cdeloss', 'pit', 'brier']
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 0 - 10000.
 
 
@@ -723,11 +727,11 @@ point_stats_sigma_mad: Sigma of the median absolute deviation
     Inserting handle into data store.  pdfs_data: None, point_to_point
     Inserting handle into data store.  ztrue_data: None, point_to_point
     Requested metrics: ['point_stats_ez', 'point_stats_iqr', 'point_bias', 'point_outlier_rate', 'point_stats_sigma_mad']
-    Processing 0 running evaluator on chunk 0 - 10000.
 
 
 .. parsed-literal::
 
+    Processing 0 running evaluator on chunk 0 - 10000.
     Inserting handle into data store.  output_point_to_point: inprogress_output_point_to_point.hdf5, point_to_point
     Processing 0 running evaluator on chunk 10000 - 20000.
     Processing 0 running evaluator on chunk 20000 - 20449.
@@ -924,7 +928,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fb822468b10>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fd97d985900>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -1036,14 +1040,14 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 12000 - 13000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 13000 - 14000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1209,9 +1213,7 @@ the catalog.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: Parameter `variant` has been introduced to replace `midrank`; `midrank` will be removed in SciPy 1.19.0. Specify `variant` to silence this warning. Note that the returned object will no longer be unpackable as a tuple, and `critical_values` will be omitted.
-      return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -1242,8 +1244,8 @@ detailed below).
 
 .. parsed-literal::
 
-    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
-     'cvm': CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10),
+    {'ad': Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001)),
+     'cvm': CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10),
      'ks': KstestResult(statistic=np.float64(0.033590049370962216), pvalue=np.float64(1.7621068075751534e-20), statistic_location=np.float64(0.9921210288809627), statistic_sign=np.int8(-1)),
      'outlier_rate': np.float64(0.05873797877466336)}
 
@@ -1387,8 +1389,8 @@ are perfect.
 
 .. parsed-literal::
 
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10)
-    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.623351996059352, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
+    PIT CvM stat and pval: CramerVonMisesResult(statistic=9.62335199605935, pvalue=9.265039846440004e-10)
 
 
 .. code:: ipython3
@@ -1420,15 +1422,13 @@ discrepancies in the tails of the distribution.
 
 .. parsed-literal::
 
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609377), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+    PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: Parameter `variant` has been introduced to replace `midrank`; `midrank` will be removed in SciPy 1.19.0. Specify `variant` to silence this warning. Note that the returned object will no longer be unpackable as a tuple, and `critical_values` will be omitted.
-      return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/metrics/array_metrics.py:27: UserWarning: p-value floored: true value smaller than 0.001. Consider specifying `method` (e.g. `method=stats.PermutationMethod()`.)
       return stats.anderson_ksamp([p_random_variables, q_random_variables], **kwargs)
 
 
@@ -1504,7 +1504,7 @@ depending on the true conditional densities :math:`f(z | x)`.
 
 .. parsed-literal::
 
-    stat_and_pval(statistic=np.float64(-6.725602928688289), p_value=nan)
+    stat_and_pval(statistic=np.float64(-6.725602928688286), p_value=nan)
 
 
 

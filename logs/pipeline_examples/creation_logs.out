@@ -1,76 +1,77 @@
 Rendering notebooks in group: creation...
-RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
-[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/GCRCatalogs/cosmodc2.py:128[39m, in [36mCosmoDC2ParentClass._subclass_init[39m[34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[39m
-[32m    125[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, **kwargs):
-[32m    126[39m     [38;5;66;03m# pylint: disable=W0221[39;00m
-[32m    127[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isdir(catalog_root_dir):
-[32m--> [39m[32m128[39m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([33m'[39m[33mCatalog directory [39m[38;5;132;01m{}[39;00m[33m does not exist[39m[33m'[39m.format(catalog_root_dir))
-[32m    130[39m     [38;5;28mself[39m.lightcone = kwargs.get([33m'[39m[33mlightcone[39m[33m'[39m, [38;5;28;01mTrue[39;00m)
-[32m    132[39m     get_file_list = [38;5;28mself[39m._get_healpix_file_list [38;5;28;01mif[39;00m [38;5;28mself[39m.lightcone [38;5;28;01melse[39;00m [38;5;28mself[39m._get_snapshot_file_list
-
-[31mValueError[39m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
-
+Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/creation_examples
 RENDERING: 09_Spatial_Variability
-RENDERING: 00_Quick_Start_in_Creation
 RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
+RENDERING: 01_Photometric_Realization
 RENDERING: 10_SOM_Spectroscopic_Selector
-[32m    238[39m            radiuscooling, scale0, scaleN, scalecooling,
-[32m    239[39m            [38;5;28mself[39m._kernel_type, [38;5;28mself[39m._map_type, [38;5;28mself[39m._grid_type,
-[32m    240[39m            [38;5;28mself[39m._compact_support, [38;5;28mself[39m._neighborhood == [33m"[39m[33mgaussian[39m[33m"[39m,
-[32m    241[39m            [38;5;28mself[39m._std_coeff, [38;5;28mself[39m._verbose, [38;5;28mself[39m.codebook, [38;5;28mself[39m.bmus,
-[32m    242[39m            [38;5;28mself[39m.umatrix, [38;5;28mself[39m._vect_distance)
-[32m    243[39m [38;5;28mself[39m.umatrix.shape = ([38;5;28mself[39m._n_rows, [38;5;28mself[39m._n_columns)
-[32m    244[39m [38;5;28mself[39m.bmus.shape = ([38;5;28mself[39m.n_vectors, [32m2[39m)
+[1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
+[1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
+[1;32m    240[0m            [38;5;28mself[39m[38;5;241m.[39m_compact_support, [38;5;28mself[39m[38;5;241m.[39m_neighborhood [38;5;241m==[39m [38;5;124m"[39m[38;5;124mgaussian[39m[38;5;124m"[39m,
+[1;32m    241[0m            [38;5;28mself[39m[38;5;241m.[39m_std_coeff, [38;5;28mself[39m[38;5;241m.[39m_verbose, [38;5;28mself[39m[38;5;241m.[39mcodebook, [38;5;28mself[39m[38;5;241m.[39mbmus,
+[1;32m    242[0m            [38;5;28mself[39m[38;5;241m.[39mumatrix, [38;5;28mself[39m[38;5;241m.[39m_vect_distance)
+[1;32m    243[0m [38;5;28mself[39m[38;5;241m.[39mumatrix[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39m_n_rows, [38;5;28mself[39m[38;5;241m.[39m_n_columns)
+[1;32m    244[0m [38;5;28mself[39m[38;5;241m.[39mbmus[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39mn_vectors, [38;5;241m2[39m)
 
-[31mNameError[39m: name 'wrap_train' is not defined
+[0;31mNameError[0m: name 'wrap_train' is not defined
 
-RENDERING: 05_True_Posterior
+RENDERING: 06_Blending_Degrader
+RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/GCRCatalogs/cosmodc2.py:128[0m, in [0;36mCosmoDC2ParentClass._subclass_init[0;34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[0m
+[1;32m    125[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, [38;5;241m*[39m[38;5;241m*[39mkwargs):
+[1;32m    126[0m     [38;5;66;03m# pylint: disable=W0221[39;00m
+[1;32m    127[0m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misdir(catalog_root_dir):
+[0;32m--> 128[0m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124m'[39m[38;5;124mCatalog directory [39m[38;5;132;01m{}[39;00m[38;5;124m does not exist[39m[38;5;124m'[39m[38;5;241m.[39mformat(catalog_root_dir))
+[1;32m    130[0m     [38;5;28mself[39m[38;5;241m.[39mlightcone [38;5;241m=[39m kwargs[38;5;241m.[39mget([38;5;124m'[39m[38;5;124mlightcone[39m[38;5;124m'[39m, [38;5;28;01mTrue[39;00m)
+[1;32m    132[0m     get_file_list [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_get_healpix_file_list [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mlightcone [38;5;28;01melse[39;00m [38;5;28mself[39m[38;5;241m.[39m_get_snapshot_file_list
+
+[0;31mValueError[0m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
+
+RENDERING: 02_Photometric_Realization_with_Other_Surveys
+RENDERING: 00_Quick_Start_in_Creation
 RENDERING: 03_GridSelection_for_HSC
 RENDERING: 07_DSPS_SED
 
-[36mFile [39m[32m/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/dsps/data_loaders/load_filter_data.py:68[39m, in [36mload_transmission_curve[39m[34m(fn, bn_pat, drn)[39m
-[32m     65[39m     [38;5;28;01massert[39;00m [38;5;28mlen[39m(fn_list) < [32m2[39m, msg.format(bn_pat, drn)
-[32m     66[39m     fn = fn_list[[32m0[39m]
-[32m---> [39m[32m68[39m [38;5;28;01massert[39;00m os.path.isfile(fn), [33m"[39m[38;5;132;01m{0}[39;00m[33m does not exist[39m[33m"[39m.format(fn)
-[32m     69[39m [38;5;28;01mwith[39;00m h5py.File(fn, [33m"[39m[33mr[39m[33m"[39m) [38;5;28;01mas[39;00m hdf:
-[32m     70[39m     wave = hdf[[33m"[39m[33mwave[39m[33m"[39m][...]
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/dsps/data_loaders/load_filter_data.py:68[0m, in [0;36mload_transmission_curve[0;34m(fn, bn_pat, drn)[0m
+[1;32m     65[0m     [38;5;28;01massert[39;00m [38;5;28mlen[39m(fn_list) [38;5;241m<[39m [38;5;241m2[39m, msg[38;5;241m.[39mformat(bn_pat, drn)
+[1;32m     66[0m     fn [38;5;241m=[39m fn_list[[38;5;241m0[39m]
+[0;32m---> 68[0m [38;5;28;01massert[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misfile(fn), [38;5;124m"[39m[38;5;132;01m{0}[39;00m[38;5;124m does not exist[39m[38;5;124m"[39m[38;5;241m.[39mformat(fn)
+[1;32m     69[0m [38;5;28;01mwith[39;00m h5py[38;5;241m.[39mFile(fn, [38;5;124m"[39m[38;5;124mr[39m[38;5;124m"[39m) [38;5;28;01mas[39;00m hdf:
+[1;32m     70[0m     wave [38;5;241m=[39m hdf[[38;5;124m"[39m[38;5;124mwave[39m[38;5;124m"[39m][[38;5;241m.[39m[38;5;241m.[39m[38;5;241m.[39m]
 
-[31mAssertionError[39m: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/examples_data/creation_data/data/dsps_default_data/filters/lsst_,_transmission.h5 does not exist
+[0;31mAssertionError[0m: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/dsps_default_data/filters/lsst_,_transmission.h5 does not exist
 
-RENDERING: 02_Photometric_Realization_with_Other_Surveys
-RENDERING: 01_Photometric_Realization
-RENDERING: 06_Blending_Degrader
 RENDERING: 08_FSPS_SED
-[32m    670[39m         duste_umin=duste_umin[i],
-[32m    671[39m         duste_qpah=duste_qpah[i],
-[32m    672[39m         fagn=fagn[i],
-[32m    673[39m         agn_tau=agn_tau[i],
-[32m    674[39m     )
-[32m    676[39m     [38;5;28;01mif[39;00m [38;5;28mself[39m.config.sfh_type == [32m3[39m:
-[32m    677[39m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[1;32m    670[0m         duste_umin[38;5;241m=[39mduste_umin[i],
+[1;32m    671[0m         duste_qpah[38;5;241m=[39mduste_qpah[i],
+[1;32m    672[0m         fagn[38;5;241m=[39mfagn[i],
+[1;32m    673[0m         agn_tau[38;5;241m=[39magn_tau[i],
+[1;32m    674[0m     )
+[1;32m    676[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39msfh_type [38;5;241m==[39m [38;5;241m3[39m:
+[1;32m    677[0m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
 
-[31mNameError[39m: name 'fsps' is not defined
+[0;31mNameError[0m: name 'fsps' is not defined
 
+RENDERING: 05_True_Posterior
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/09_Spatial_Variability.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/03_GridSelection_for_HSC.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
 
 4 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-2. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 3. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
 4. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
 

@@ -81,7 +81,7 @@ rail stages to keep track of where their inputs are coming from.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth
 
 
 .. parsed-literal::
@@ -116,7 +116,7 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth_post
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth_post
 
 
 .. code:: ipython3
@@ -245,7 +245,7 @@ Now let’s draw a degraded sample:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degraded
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degraded
 
 
 .. parsed-literal::
@@ -313,162 +313,178 @@ Now let’s draw a degraded sample:
         <tr>
           <th>0</th>
           <td>0.857864</td>
-          <td>25.051981</td>
-          <td>0.113275</td>
-          <td>24.304602</td>
-          <td>0.020263</td>
-          <td>23.310110</td>
-          <td>0.008605</td>
-          <td>22.354261</td>
-          <td>0.006997</td>
-          <td>21.865859</td>
-          <td>0.007882</td>
-          <td>21.680915</td>
-          <td>0.012780</td>
+          <td>25.162982</td>
+          <td>0.124706</td>
+          <td>24.309598</td>
+          <td>0.020349</td>
+          <td>23.300874</td>
+          <td>0.008558</td>
+          <td>22.358278</td>
+          <td>0.007010</td>
+          <td>21.862440</td>
+          <td>0.007868</td>
+          <td>21.690169</td>
+          <td>0.012870</td>
         </tr>
         <tr>
           <th>1</th>
           <td>0.456452</td>
-          <td>25.192820</td>
-          <td>0.127962</td>
-          <td>23.624631</td>
-          <td>0.011798</td>
-          <td>22.139681</td>
-          <td>0.005596</td>
-          <td>21.484490</td>
-          <td>0.005504</td>
-          <td>21.128480</td>
-          <td>0.005932</td>
-          <td>20.854409</td>
-          <td>0.007520</td>
+          <td>25.201766</td>
+          <td>0.128954</td>
+          <td>23.604725</td>
+          <td>0.011629</td>
+          <td>22.147666</td>
+          <td>0.005604</td>
+          <td>21.492212</td>
+          <td>0.005511</td>
+          <td>21.130416</td>
+          <td>0.005935</td>
+          <td>20.857084</td>
+          <td>0.007529</td>
         </tr>
         <tr>
           <th>2</th>
           <td>0.214385</td>
-          <td>25.089456</td>
-          <td>0.117017</td>
-          <td>24.380038</td>
-          <td>0.021600</td>
-          <td>24.005717</td>
-          <td>0.014006</td>
-          <td>23.806457</td>
-          <td>0.018695</td>
-          <td>23.876449</td>
-          <td>0.037548</td>
-          <td>23.788924</td>
-          <td>0.078483</td>
+          <td>25.064586</td>
+          <td>0.114521</td>
+          <td>24.407773</td>
+          <td>0.022117</td>
+          <td>23.992883</td>
+          <td>0.013865</td>
+          <td>23.802959</td>
+          <td>0.018640</td>
+          <td>23.812131</td>
+          <td>0.035472</td>
+          <td>23.685616</td>
+          <td>0.071635</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.229357</td>
-          <td>24.446403</td>
-          <td>0.066682</td>
-          <td>24.406973</td>
-          <td>0.022102</td>
-          <td>24.588160</td>
-          <td>0.022701</td>
-          <td>24.730992</td>
-          <td>0.041809</td>
-          <td>24.933242</td>
-          <td>0.095679</td>
-          <td>24.767695</td>
-          <td>0.183441</td>
+          <td>0.614859</td>
+          <td>25.550774</td>
+          <td>0.173823</td>
+          <td>25.336025</td>
+          <td>0.049837</td>
+          <td>24.724806</td>
+          <td>0.025548</td>
+          <td>24.293127</td>
+          <td>0.028412</td>
+          <td>24.147996</td>
+          <td>0.047768</td>
+          <td>23.783646</td>
+          <td>0.078118</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.865879</td>
-          <td>25.676025</td>
-          <td>0.193204</td>
-          <td>25.764220</td>
-          <td>0.072799</td>
-          <td>25.449642</td>
-          <td>0.048408</td>
-          <td>25.108416</td>
-          <td>0.058450</td>
-          <td>24.845984</td>
-          <td>0.088617</td>
-          <td>24.802912</td>
-          <td>0.188982</td>
+          <td>1.239338</td>
+          <td>24.889128</td>
+          <td>0.098306</td>
+          <td>24.665745</td>
+          <td>0.027624</td>
+          <td>24.385253</td>
+          <td>0.019099</td>
+          <td>23.978181</td>
+          <td>0.021625</td>
+          <td>23.403790</td>
+          <td>0.024802</td>
+          <td>22.921245</td>
+          <td>0.036374</td>
         </tr>
         <tr>
           <th>5</th>
           <td>0.314718</td>
-          <td>24.264201</td>
-          <td>0.056804</td>
-          <td>23.230755</td>
-          <td>0.009048</td>
-          <td>22.223355</td>
-          <td>0.005682</td>
-          <td>21.892228</td>
-          <td>0.005972</td>
-          <td>21.604459</td>
-          <td>0.006955</td>
-          <td>21.516145</td>
-          <td>0.011306</td>
+          <td>24.432424</td>
+          <td>0.065868</td>
+          <td>23.220762</td>
+          <td>0.008993</td>
+          <td>22.215744</td>
+          <td>0.005674</td>
+          <td>21.886328</td>
+          <td>0.005963</td>
+          <td>21.577718</td>
+          <td>0.006877</td>
+          <td>21.502080</td>
+          <td>0.011192</td>
         </tr>
         <tr>
           <th>6</th>
           <td>0.707498</td>
-          <td>24.284395</td>
-          <td>0.057823</td>
-          <td>23.567759</td>
-          <td>0.011323</td>
-          <td>22.789182</td>
-          <td>0.006669</td>
-          <td>21.997671</td>
-          <td>0.006149</td>
-          <td>21.700437</td>
-          <td>0.007259</td>
-          <td>21.453355</td>
-          <td>0.010811</td>
+          <td>24.326544</td>
+          <td>0.060008</td>
+          <td>23.546528</td>
+          <td>0.011153</td>
+          <td>22.775722</td>
+          <td>0.006634</td>
+          <td>21.999031</td>
+          <td>0.006152</td>
+          <td>21.694461</td>
+          <td>0.007239</td>
+          <td>21.451354</td>
+          <td>0.010795</td>
         </tr>
         <tr>
           <th>7</th>
-          <td>0.419468</td>
-          <td>25.686703</td>
-          <td>0.194945</td>
-          <td>24.734078</td>
-          <td>0.029319</td>
-          <td>23.689354</td>
-          <td>0.011036</td>
-          <td>23.422394</td>
-          <td>0.013679</td>
-          <td>23.207466</td>
-          <td>0.020949</td>
-          <td>23.050028</td>
-          <td>0.040766</td>
+          <td>0.780216</td>
+          <td>25.683176</td>
+          <td>0.194368</td>
+          <td>25.362520</td>
+          <td>0.051020</td>
+          <td>24.767132</td>
+          <td>0.026507</td>
+          <td>24.055712</td>
+          <td>0.023114</td>
+          <td>23.645505</td>
+          <td>0.030629</td>
+          <td>23.556973</td>
+          <td>0.063922</td>
         </tr>
         <tr>
           <th>8</th>
           <td>0.370970</td>
-          <td>23.230116</td>
-          <td>0.023133</td>
-          <td>23.174201</td>
-          <td>0.008745</td>
-          <td>22.923555</td>
+          <td>23.230862</td>
+          <td>0.023147</td>
+          <td>23.160475</td>
+          <td>0.008675</td>
+          <td>22.923565</td>
           <td>0.007048</td>
-          <td>23.010964</td>
-          <td>0.010114</td>
-          <td>22.848767</td>
-          <td>0.015540</td>
-          <td>23.087817</td>
-          <td>0.042155</td>
+          <td>23.024382</td>
+          <td>0.010207</td>
+          <td>22.851861</td>
+          <td>0.015579</td>
+          <td>22.993384</td>
+          <td>0.038772</td>
         </tr>
         <tr>
           <th>9</th>
+          <td>1.165920</td>
+          <td>24.805485</td>
+          <td>0.091379</td>
+          <td>24.444405</td>
+          <td>0.022820</td>
+          <td>23.997923</td>
+          <td>0.013920</td>
+          <td>23.669308</td>
+          <td>0.016680</td>
+          <td>23.039066</td>
+          <td>0.018174</td>
+          <td>22.724915</td>
+          <td>0.030595</td>
+        </tr>
+        <tr>
+          <th>10</th>
           <td>0.601109</td>
-          <td>24.931976</td>
-          <td>0.102048</td>
-          <td>24.686026</td>
-          <td>0.028116</td>
-          <td>24.043851</td>
-          <td>0.014434</td>
-          <td>23.622785</td>
-          <td>0.016057</td>
-          <td>23.500517</td>
-          <td>0.026978</td>
-          <td>23.352090</td>
-          <td>0.053297</td>
+          <td>24.956686</td>
+          <td>0.104268</td>
+          <td>24.692671</td>
+          <td>0.028279</td>
+          <td>24.054361</td>
+          <td>0.014556</td>
+          <td>23.614046</td>
+          <td>0.015943</td>
+          <td>23.458020</td>
+          <td>0.025998</td>
+          <td>23.319695</td>
+          <td>0.051787</td>
         </tr>
       </tbody>
     </table>
@@ -517,28 +533,32 @@ Let’s calculate posteriors with a variable number of error samples.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_detection: None, degr_post_1
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_1: inprogress_output_degr_post_1.hdf5, degr_post_1
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_10
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_10
     Inserting handle into data store.  output_detection: None, degr_post_10
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_10: inprogress_output_degr_post_10.hdf5, degr_post_10
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_100
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_100
     Inserting handle into data store.  output_detection: None, degr_post_100
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_100: inprogress_output_degr_post_100.hdf5, degr_post_100
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1000
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_1000
     Inserting handle into data store.  output_detection: None, degr_post_1000
 
 
@@ -724,28 +744,28 @@ grid.
 
     Inserting handle into data store.  output_lc_1p_0III_0II: None, select_row3
     Inserting handle into data store.  output_select_row3: inprogress_output_select_row3.pq, select_row3
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_10
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_10
     Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_10
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_10: inprogress_output_degr_post_degr_post_nbins_10.hdf5, degr_post_degr_post_nbins_10
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_20
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_20
     Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_20
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_20: inprogress_output_degr_post_degr_post_nbins_20.hdf5, degr_post_degr_post_nbins_20
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_50
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_50
     Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_50
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output_degr_post_degr_post_nbins_50: inprogress_output_degr_post_degr_post_nbins_50.hdf5, degr_post_degr_post_nbins_50
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_100
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, degr_post_degr_post_nbins_100
     Inserting handle into data store.  output_select_row3: None, degr_post_degr_post_nbins_100
 
 

@@ -1,23 +1,23 @@
 Rendering notebooks in group: core...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/core_examples
-RENDERING: FluxtoMag_and_Deredden
-[32m--> [39m[32m518[39m     np.array([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[43m.[49m[43mconfig[49m[43m.[49m[43mra_name[49m[43m][49m),
-[32m    519[39m     np.array(data[[38;5;28mself[39m.config.dec_name]),
-[32m    520[39m     unit=[33m"[39m[33mdeg[39m[33m"[39m,
-[32m    521[39m     frame=[33m"[39m[33mfk5[39m[33m"[39m,
-[32m    522[39m )
-[32m    523[39m dust_map_dict = [38;5;28mdict[39m(sfd=dustmaps_sfd.SFDQuery)
-[32m    524[39m [38;5;28;01mtry[39;00m:
-
-[31mKeyError[39m: 'ra'
-
 RENDERING: Hyperbolic_Magnitude
+RENDERING: FluxtoMag_and_Deredden
+[0;32m--> 518[0m     np[38;5;241m.[39marray([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mconfig[49m[38;5;241;43m.[39;49m[43mra_name[49m[43m][49m),
+[1;32m    519[0m     np[38;5;241m.[39marray(data[[38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39mdec_name]),
+[1;32m    520[0m     unit[38;5;241m=[39m[38;5;124m"[39m[38;5;124mdeg[39m[38;5;124m"[39m,
+[1;32m    521[0m     frame[38;5;241m=[39m[38;5;124m"[39m[38;5;124mfk5[39m[38;5;124m"[39m,
+[1;32m    522[0m )
+[1;32m    523[0m dust_map_dict [38;5;241m=[39m [38;5;28mdict[39m(sfd[38;5;241m=[39mdustmaps_sfd[38;5;241m.[39mSFDQuery)
+[1;32m    524[0m [38;5;28;01mtry[39;00m:
+
+[0;31mKeyError[0m: 'ra'
+
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/Hyperbolic_Magnitude.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb
 
 1 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb

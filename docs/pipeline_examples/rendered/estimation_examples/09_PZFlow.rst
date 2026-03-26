@@ -70,132 +70,136 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    (1) 9.1668
+    (1) 9.1679
 
 
 .. parsed-literal::
 
-    (3) 4.3143
+    (3) 4.7060
 
 
 .. parsed-literal::
 
-    (5) 2.6880
+    (5) 3.0395
 
 
 .. parsed-literal::
 
-    (7) 1.9657
+    (7) 1.8210
 
 
 .. parsed-literal::
 
-    (9) 1.7769
+    (9) 1.2419
 
 
 .. parsed-literal::
 
-    (11) 0.9218
+    (11) 0.7195
 
 
 .. parsed-literal::
 
-    (13) 0.5521
+    (13) 0.4739
 
 
 .. parsed-literal::
 
-    (15) 0.3503
+    (15) 0.3899
 
 
 .. parsed-literal::
 
-    (17) 0.3083
+    (17) 0.1622
 
 
 .. parsed-literal::
 
-    (19) -0.1059
+    (19) 0.0236
 
 
 .. parsed-literal::
 
-    (21) 0.5827
+    (21) 0.5141
 
 
 .. parsed-literal::
 
-    (23) -0.0415
+    (23) 0.1235
 
 
 .. parsed-literal::
 
-    (25) 0.7434
+    (25) -0.2421
 
 
 .. parsed-literal::
 
-    (27) -0.0244
+    (27) -0.3631
 
 
 .. parsed-literal::
 
-    (29) -0.1903
+    (29) -0.4974
 
 
 .. parsed-literal::
 
-    (31) -0.6207
+    (31) -0.4768
 
 
 .. parsed-literal::
 
-    (33) -0.3690
+    (33) -0.7454
 
 
 .. parsed-literal::
 
-    (35) -0.7538
+    (35) -0.3239
 
 
 .. parsed-literal::
 
-    (37) -0.7244
+    (37) -0.6735
 
 
 .. parsed-literal::
 
-    (39) 0.0022
+    (39) -0.5815
 
 
 .. parsed-literal::
 
-    (41) -0.8125
+    (41) -0.7599
 
 
 .. parsed-literal::
 
-    (43) -0.9086
+    (43) -0.8674
 
 
 .. parsed-literal::
 
-    (45) -0.7962
+    (45) -0.9404
 
 
 .. parsed-literal::
 
-    (47) -0.6495
+    (47) -0.7904
 
 
 .. parsed-literal::
 
-    (49) -0.6371
+    (49) -0.7422
 
 
 .. parsed-literal::
 
-    (50) -0.5922
+    (50) -0.9549
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_pzflow: inprogress_demo_pzflow.pkl, inform_pzflow
 
 
@@ -203,7 +207,7 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7f05bf339cd0>
+    <rail.tools.flow_handle.FlowHandle at 0x7ff394282f50>
 
 
 
@@ -223,22 +227,18 @@ version of this notebook in interactive mode.
 
     Inserting handle into data store.  input: None, estimate_pzflow
     Inserting handle into data store.  model: demo_pzflow.pkl, estimate_pzflow
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 0 - 20,449
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 6919 17601] have an integral of 0.
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 6919 17601] have an integral of 0.
       warnings.warn(
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
       new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,
             6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,
             6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,
             6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,  6919,

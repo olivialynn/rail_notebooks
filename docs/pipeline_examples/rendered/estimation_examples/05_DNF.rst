@@ -151,15 +151,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 
     Inserting handle into data store.  input: None, inform_DNF
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.01 ms, sys: 1.16 ms, total: 10.2 ms
-    Wall time: 9.85 ms
+    CPU times: user 9.01 ms, sys: 1 ms, total: 10 ms
+    Wall time: 9.8 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f20a1a86050>
+    <rail.core.data.ModelHandle at 0x7f58f088fd00>
 
 
 
@@ -202,15 +202,15 @@ the angular distance:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/estimation/algos/dnf.py:488: RuntimeWarning: invalid value encountered in sqrt
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:488: RuntimeWarning: invalid value encountered in sqrt
       alpha = np.sqrt(1.0 - NIP**2)
 
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/estimation/algos/dnf.py:529: RuntimeWarning: divide by zero encountered in divide
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:529: RuntimeWarning: divide by zero encountered in divide
       inverse_distances = 1.0 / distances
-    /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/estimation/algos/dnf.py:537: RuntimeWarning: invalid value encountered in divide
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/estimation/algos/dnf.py:537: RuntimeWarning: invalid value encountered in divide
       wmatrix = inverse_distances / row_sum
 
 
@@ -221,8 +221,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 2min 39s, sys: 962 ms, total: 2min 40s
-    Wall time: 2min 40s
+    CPU times: user 2min 51s, sys: 987 ms, total: 2min 52s
+    Wall time: 2min 52s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -393,8 +393,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 2min 35s, sys: 1.04 s, total: 2min 36s
-    Wall time: 2min 36s
+    CPU times: user 2min 54s, sys: 982 ms, total: 2min 55s
+    Wall time: 2min 55s
 
 
 .. code:: ipython3
@@ -519,7 +519,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f20a0c70090>
+    <matplotlib.legend.Legend at 0x7f588c8576d0>
 
 
 

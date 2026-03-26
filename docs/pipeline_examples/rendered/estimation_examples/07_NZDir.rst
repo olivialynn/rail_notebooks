@@ -154,7 +154,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2c5ebee490>
+    <rail.core.data.ModelHandle at 0x7f6ff6f4ebc0>
 
 
 
@@ -199,6 +199,10 @@ calculation, so this should run very fast:
     Inserting handle into data store.  model: NZDir_model.pkl, nzsumm_mid
     Process 0 running estimator on chunk 0 - 8513
     Inserting handle into data store.  single_NZ_nzsumm_mid: inprogress_single_NZ_nzsumm_mid.hdf5, nzsumm_mid
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_nzsumm_mid: inprogress_output_nzsumm_mid.hdf5, nzsumm_mid
 
 
@@ -206,15 +210,11 @@ calculation, so this should run very fast:
 
     Inserting handle into data store.  input: None, nzsumm_hi
     Inserting handle into data store.  model: NZDir_model.pkl, nzsumm_hi
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 278 ms, sys: 5.93 ms, total: 284 ms
-    Wall time: 284 ms
+    CPU times: user 296 ms, sys: 8.93 ms, total: 305 ms
+    Wall time: 306 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -364,7 +364,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f2c19d2f5d0>
+    <rail.core.data.ModelHandle at 0x7f6ff6f4e4a0>
 
 
 
@@ -399,17 +399,9 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Inserting handle into data store.  model_newsumm_inform: <class 'rail.core.data.ModelHandle'> NZDir_model_incompl.pkl, (wd), nzsumm_hi
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-
-
-.. parsed-literal::
-
-    CPU times: user 210 ms, sys: 3.02 ms, total: 213 ms
-    Wall time: 211 ms
+    CPU times: user 130 ms, sys: 4.94 ms, total: 135 ms
+    Wall time: 135 ms
 
 
 .. code:: ipython3

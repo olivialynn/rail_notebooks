@@ -39,14 +39,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -54,71 +54,75 @@ in the ``pipeline_examples/creation_examples/`` folder.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4923/696671147.py", line 6, in <module>
+      File "/tmp/ipykernel_6313/696671147.py", line 6, in <module>
         import rail.interactive as ri
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -129,20 +133,20 @@ in the ``pipeline_examples/creation_examples/`` folder.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -190,7 +194,7 @@ engine is.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
 
 
 .. parsed-literal::
@@ -245,63 +249,63 @@ engine is.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.400313</td>
-          <td>27.358033</td>
-          <td>26.623911</td>
-          <td>25.686214</td>
-          <td>25.423050</td>
-          <td>25.204436</td>
-          <td>25.080073</td>
-          <td>0.048953</td>
-          <td>0.038597</td>
+          <td>1.398944</td>
+          <td>27.667536</td>
+          <td>26.723337</td>
+          <td>26.032637</td>
+          <td>25.178587</td>
+          <td>24.695955</td>
+          <td>23.994413</td>
+          <td>0.049066</td>
+          <td>0.040902</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.983561</td>
-          <td>27.248891</td>
-          <td>26.808618</td>
-          <td>26.391002</td>
-          <td>26.103835</td>
-          <td>25.704334</td>
-          <td>25.487085</td>
-          <td>0.005571</td>
-          <td>0.005506</td>
+          <td>2.285624</td>
+          <td>28.786999</td>
+          <td>27.476589</td>
+          <td>26.640175</td>
+          <td>26.259745</td>
+          <td>25.865673</td>
+          <td>25.391064</td>
+          <td>0.123898</td>
+          <td>0.095070</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.633238</td>
-          <td>27.760765</td>
-          <td>27.373345</td>
-          <td>26.985904</td>
-          <td>26.473378</td>
-          <td>26.110453</td>
-          <td>25.726033</td>
-          <td>0.038664</td>
-          <td>0.031715</td>
+          <td>1.495132</td>
+          <td>30.011349</td>
+          <td>29.789337</td>
+          <td>28.200390</td>
+          <td>26.014826</td>
+          <td>25.030174</td>
+          <td>24.304707</td>
+          <td>0.018228</td>
+          <td>0.013919</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.593216</td>
-          <td>27.390467</td>
-          <td>26.602495</td>
-          <td>25.782788</td>
-          <td>25.323484</td>
-          <td>25.215736</td>
-          <td>25.061188</td>
-          <td>0.014732</td>
-          <td>0.011283</td>
+          <td>0.842594</td>
+          <td>29.306244</td>
+          <td>28.721798</td>
+          <td>27.353018</td>
+          <td>26.256907</td>
+          <td>25.529823</td>
+          <td>25.291103</td>
+          <td>0.035937</td>
+          <td>0.031090</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.418184</td>
-          <td>27.345716</td>
-          <td>26.187644</td>
-          <td>25.745173</td>
-          <td>24.973738</td>
-          <td>24.482849</td>
-          <td>23.700091</td>
-          <td>0.007457</td>
-          <td>0.006633</td>
+          <td>1.588960</td>
+          <td>26.273870</td>
+          <td>26.115387</td>
+          <td>25.950441</td>
+          <td>25.687405</td>
+          <td>25.466606</td>
+          <td>25.096743</td>
+          <td>0.021581</td>
+          <td>0.015770</td>
         </tr>
         <tr>
           <th>...</th>
@@ -317,63 +321,63 @@ engine is.
         </tr>
         <tr>
           <th>99995</th>
-          <td>1.151420</td>
-          <td>28.721063</td>
-          <td>27.912678</td>
-          <td>26.896495</td>
-          <td>26.079070</td>
-          <td>25.199434</td>
-          <td>24.758864</td>
-          <td>0.010310</td>
-          <td>0.006117</td>
+          <td>0.389450</td>
+          <td>27.270800</td>
+          <td>26.371506</td>
+          <td>25.436853</td>
+          <td>25.077412</td>
+          <td>24.852779</td>
+          <td>24.737946</td>
+          <td>0.013169</td>
+          <td>0.010164</td>
         </tr>
         <tr>
           <th>99996</th>
-          <td>1.359546</td>
-          <td>26.043028</td>
-          <td>25.756442</td>
-          <td>25.520627</td>
-          <td>25.080964</td>
-          <td>24.695030</td>
-          <td>24.119693</td>
-          <td>0.067335</td>
-          <td>0.052115</td>
+          <td>1.481047</td>
+          <td>27.478113</td>
+          <td>26.735254</td>
+          <td>26.042776</td>
+          <td>25.204935</td>
+          <td>24.825092</td>
+          <td>24.224169</td>
+          <td>0.070591</td>
+          <td>0.048106</td>
         </tr>
         <tr>
           <th>99997</th>
-          <td>1.595311</td>
-          <td>27.925256</td>
-          <td>27.009046</td>
-          <td>26.353701</td>
-          <td>25.574312</td>
-          <td>25.125290</td>
-          <td>24.684619</td>
-          <td>0.057751</td>
-          <td>0.038064</td>
+          <td>2.023548</td>
+          <td>26.990147</td>
+          <td>26.714737</td>
+          <td>26.377949</td>
+          <td>26.250343</td>
+          <td>25.917370</td>
+          <td>25.613836</td>
+          <td>0.046999</td>
+          <td>0.031431</td>
         </tr>
         <tr>
           <th>99998</th>
-          <td>0.849984</td>
-          <td>27.391571</td>
-          <td>27.111400</td>
-          <td>26.471609</td>
-          <td>25.585453</td>
-          <td>25.270681</td>
-          <td>25.192526</td>
-          <td>0.071331</td>
-          <td>0.048684</td>
+          <td>1.548204</td>
+          <td>26.367432</td>
+          <td>26.206884</td>
+          <td>26.087980</td>
+          <td>25.876932</td>
+          <td>25.715893</td>
+          <td>25.274899</td>
+          <td>0.099605</td>
+          <td>0.060103</td>
         </tr>
         <tr>
           <th>99999</th>
-          <td>0.693812</td>
-          <td>27.993451</td>
-          <td>26.319147</td>
-          <td>24.834481</td>
-          <td>23.619452</td>
-          <td>23.163058</td>
-          <td>22.814961</td>
-          <td>0.069849</td>
-          <td>0.064400</td>
+          <td>1.739491</td>
+          <td>26.881983</td>
+          <td>26.773064</td>
+          <td>26.553123</td>
+          <td>26.319622</td>
+          <td>25.955982</td>
+          <td>25.699642</td>
+          <td>0.076085</td>
+          <td>0.075945</td>
         </tr>
       </tbody>
     </table>

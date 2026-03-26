@@ -39,14 +39,14 @@ in the ``pipeline_examples/core_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -54,71 +54,75 @@ in the ``pipeline_examples/core_examples/`` folder.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5428/2313627096.py", line 5, in <module>
+      File "/tmp/ipykernel_4504/2313627096.py", line 5, in <module>
         from rail.interactive.creation.degraders import photometric_errors
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -129,20 +133,20 @@ in the ``pipeline_examples/core_examples/`` folder.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -213,63 +217,63 @@ Create a random catalog with ugrizy+YJHF bands as the the true input
       <tbody>
         <tr>
           <th>0</th>
-          <td>18.320677</td>
-          <td>22.351813</td>
-          <td>18.020899</td>
-          <td>24.327699</td>
-          <td>23.959063</td>
-          <td>25.840270</td>
-          <td>21.657865</td>
-          <td>25.091154</td>
-          <td>26.265418</td>
+          <td>18.939778</td>
+          <td>19.072641</td>
+          <td>26.163908</td>
+          <td>20.553186</td>
+          <td>21.799546</td>
+          <td>21.114998</td>
+          <td>24.888560</td>
+          <td>22.729915</td>
+          <td>27.937383</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.937542</td>
-          <td>20.560958</td>
-          <td>19.190631</td>
-          <td>26.045732</td>
-          <td>26.655364</td>
-          <td>21.480878</td>
-          <td>25.727952</td>
-          <td>24.486356</td>
-          <td>25.311813</td>
+          <td>27.388917</td>
+          <td>20.036402</td>
+          <td>20.117551</td>
+          <td>26.215399</td>
+          <td>21.132268</td>
+          <td>22.241236</td>
+          <td>24.704619</td>
+          <td>27.117632</td>
+          <td>24.112935</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>19.519233</td>
-          <td>24.369910</td>
-          <td>20.818267</td>
-          <td>26.270717</td>
-          <td>24.370919</td>
-          <td>22.334233</td>
-          <td>18.124804</td>
-          <td>24.815572</td>
-          <td>21.812881</td>
+          <td>22.276329</td>
+          <td>18.860751</td>
+          <td>25.106899</td>
+          <td>28.275819</td>
+          <td>20.681661</td>
+          <td>18.706773</td>
+          <td>25.705488</td>
+          <td>19.631577</td>
+          <td>24.023759</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>24.030633</td>
-          <td>24.124567</td>
-          <td>25.853963</td>
-          <td>15.543549</td>
-          <td>16.968032</td>
-          <td>25.440798</td>
-          <td>19.776363</td>
-          <td>19.378464</td>
-          <td>23.007118</td>
+          <td>19.978888</td>
+          <td>23.160220</td>
+          <td>30.082883</td>
+          <td>20.308177</td>
+          <td>22.481479</td>
+          <td>21.212916</td>
+          <td>19.398884</td>
+          <td>24.627587</td>
+          <td>23.089795</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>24.436440</td>
-          <td>24.260215</td>
-          <td>21.913165</td>
-          <td>21.531512</td>
-          <td>20.034205</td>
-          <td>23.596033</td>
-          <td>22.339704</td>
-          <td>16.855469</td>
-          <td>24.846130</td>
+          <td>26.325230</td>
+          <td>23.412856</td>
+          <td>20.921770</td>
+          <td>19.978369</td>
+          <td>27.239717</td>
+          <td>24.703266</td>
+          <td>25.057373</td>
+          <td>27.254548</td>
+          <td>25.291235</td>
         </tr>
         <tr>
           <th>...</th>
@@ -285,63 +289,63 @@ Create a random catalog with ugrizy+YJHF bands as the the true input
         </tr>
         <tr>
           <th>995</th>
-          <td>21.849821</td>
-          <td>21.115816</td>
-          <td>24.935250</td>
-          <td>19.801342</td>
-          <td>24.727717</td>
-          <td>21.939631</td>
-          <td>21.152031</td>
-          <td>21.055175</td>
-          <td>21.853939</td>
+          <td>15.145201</td>
+          <td>22.872954</td>
+          <td>18.393378</td>
+          <td>20.489487</td>
+          <td>20.622421</td>
+          <td>20.489121</td>
+          <td>25.385269</td>
+          <td>28.606679</td>
+          <td>24.419141</td>
         </tr>
         <tr>
           <th>996</th>
-          <td>23.121768</td>
-          <td>22.165857</td>
-          <td>23.893011</td>
-          <td>21.784859</td>
-          <td>19.388359</td>
-          <td>20.857120</td>
-          <td>20.571301</td>
-          <td>22.042942</td>
-          <td>26.090521</td>
+          <td>18.884553</td>
+          <td>25.767245</td>
+          <td>23.337443</td>
+          <td>21.738545</td>
+          <td>14.398790</td>
+          <td>26.188011</td>
+          <td>27.491173</td>
+          <td>21.812410</td>
+          <td>18.880427</td>
         </tr>
         <tr>
           <th>997</th>
-          <td>23.034752</td>
-          <td>21.813675</td>
-          <td>21.170410</td>
-          <td>21.776342</td>
-          <td>23.943249</td>
-          <td>24.716026</td>
-          <td>20.296134</td>
-          <td>24.799177</td>
-          <td>21.837255</td>
+          <td>23.158100</td>
+          <td>20.846878</td>
+          <td>24.948462</td>
+          <td>22.433533</td>
+          <td>25.192708</td>
+          <td>21.361917</td>
+          <td>24.091214</td>
+          <td>23.163089</td>
+          <td>23.181289</td>
         </tr>
         <tr>
           <th>998</th>
-          <td>24.467399</td>
-          <td>26.428534</td>
-          <td>24.711322</td>
-          <td>23.247719</td>
-          <td>25.206026</td>
-          <td>20.464519</td>
-          <td>18.405654</td>
-          <td>24.289189</td>
-          <td>25.229528</td>
+          <td>23.579910</td>
+          <td>25.722199</td>
+          <td>23.289484</td>
+          <td>22.704111</td>
+          <td>22.113844</td>
+          <td>14.438278</td>
+          <td>25.341520</td>
+          <td>23.577715</td>
+          <td>28.622641</td>
         </tr>
         <tr>
           <th>999</th>
-          <td>24.196592</td>
-          <td>20.805413</td>
-          <td>21.247262</td>
-          <td>27.400856</td>
-          <td>25.323455</td>
-          <td>20.985114</td>
-          <td>20.221226</td>
-          <td>16.420951</td>
-          <td>20.543457</td>
+          <td>25.602941</td>
+          <td>26.179746</td>
+          <td>20.217659</td>
+          <td>26.744500</td>
+          <td>21.119197</td>
+          <td>24.263217</td>
+          <td>24.706970</td>
+          <td>21.233421</td>
+          <td>20.396110</td>
         </tr>
       </tbody>
     </table>
@@ -408,93 +412,93 @@ The LSST error model adds noise to the optical bands
       <tbody>
         <tr>
           <th>0</th>
-          <td>18.330402</td>
-          <td>0.005040</td>
-          <td>22.358639</td>
-          <td>0.006133</td>
-          <td>18.022271</td>
-          <td>0.005002</td>
-          <td>24.332480</td>
-          <td>0.029408</td>
-          <td>23.875131</td>
-          <td>0.037504</td>
-          <td>25.657927</td>
-          <td>0.378839</td>
-          <td>21.657865</td>
-          <td>25.091154</td>
-          <td>26.265418</td>
+          <td>18.939268</td>
+          <td>0.005077</td>
+          <td>19.079653</td>
+          <td>0.005013</td>
+          <td>26.321858</td>
+          <td>0.104629</td>
+          <td>20.554610</td>
+          <td>0.005115</td>
+          <td>21.805436</td>
+          <td>0.007639</td>
+          <td>21.111188</td>
+          <td>0.008648</td>
+          <td>24.888560</td>
+          <td>22.729915</td>
+          <td>27.937383</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.962755</td>
-          <td>0.018526</td>
-          <td>20.559772</td>
-          <td>0.005079</td>
-          <td>19.195182</td>
-          <td>0.005009</td>
-          <td>26.117159</td>
-          <td>0.141653</td>
-          <td>27.070019</td>
-          <td>0.548485</td>
-          <td>21.471564</td>
-          <td>0.010951</td>
-          <td>25.727952</td>
-          <td>24.486356</td>
-          <td>25.311813</td>
+          <td>27.829887</td>
+          <td>0.955727</td>
+          <td>20.042018</td>
+          <td>0.005040</td>
+          <td>20.111188</td>
+          <td>0.005027</td>
+          <td>26.274428</td>
+          <td>0.162109</td>
+          <td>21.142360</td>
+          <td>0.005952</td>
+          <td>22.217153</td>
+          <td>0.019724</td>
+          <td>24.704619</td>
+          <td>27.117632</td>
+          <td>24.112935</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>19.514640</td>
-          <td>0.005150</td>
-          <td>24.357677</td>
-          <td>0.021194</td>
-          <td>20.817235</td>
-          <td>0.005074</td>
-          <td>26.154285</td>
-          <td>0.146251</td>
-          <td>24.416282</td>
-          <td>0.060612</td>
-          <td>22.301981</td>
-          <td>0.021198</td>
-          <td>18.124804</td>
-          <td>24.815572</td>
-          <td>21.812881</td>
+          <td>22.291028</td>
+          <td>0.011131</td>
+          <td>18.860652</td>
+          <td>0.005010</td>
+          <td>25.104822</td>
+          <td>0.035660</td>
+          <td>27.667168</td>
+          <td>0.496690</td>
+          <td>20.686642</td>
+          <td>0.005459</td>
+          <td>18.702835</td>
+          <td>0.005087</td>
+          <td>25.705488</td>
+          <td>19.631577</td>
+          <td>24.023759</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>24.099329</td>
-          <td>0.049134</td>
-          <td>24.181859</td>
-          <td>0.018285</td>
-          <td>25.811848</td>
-          <td>0.066759</td>
-          <td>15.547749</td>
-          <td>0.005000</td>
-          <td>16.970436</td>
-          <td>0.005003</td>
-          <td>25.078206</td>
-          <td>0.237845</td>
-          <td>19.776363</td>
-          <td>19.378464</td>
-          <td>23.007118</td>
+          <td>19.984583</td>
+          <td>0.005271</td>
+          <td>23.141752</td>
+          <td>0.008581</td>
+          <td>28.658484</td>
+          <td>0.678434</td>
+          <td>20.309459</td>
+          <td>0.005079</td>
+          <td>22.502444</td>
+          <td>0.011873</td>
+          <td>21.221908</td>
+          <td>0.009256</td>
+          <td>19.398884</td>
+          <td>24.627587</td>
+          <td>23.089795</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>24.455386</td>
-          <td>0.067211</td>
-          <td>24.255793</td>
-          <td>0.019448</td>
-          <td>21.916109</td>
-          <td>0.005415</td>
-          <td>21.525332</td>
-          <td>0.005539</td>
-          <td>20.025303</td>
-          <td>0.005160</td>
-          <td>23.604653</td>
-          <td>0.066680</td>
-          <td>22.339704</td>
-          <td>16.855469</td>
-          <td>24.846130</td>
+          <td>26.562542</td>
+          <td>0.395721</td>
+          <td>23.412984</td>
+          <td>0.010171</td>
+          <td>20.914816</td>
+          <td>0.005086</td>
+          <td>19.983186</td>
+          <td>0.005049</td>
+          <td>26.083030</td>
+          <td>0.255201</td>
+          <td>24.823283</td>
+          <td>0.192257</td>
+          <td>25.057373</td>
+          <td>27.254548</td>
+          <td>25.291235</td>
         </tr>
         <tr>
           <th>...</th>
@@ -516,93 +520,93 @@ The LSST error model adds noise to the optical bands
         </tr>
         <tr>
           <th>995</th>
-          <td>21.849199</td>
-          <td>0.008474</td>
-          <td>21.110918</td>
-          <td>0.005170</td>
-          <td>24.919693</td>
-          <td>0.030292</td>
-          <td>19.794023</td>
-          <td>0.005037</td>
-          <td>24.699879</td>
-          <td>0.077909</td>
-          <td>21.975361</td>
-          <td>0.016132</td>
-          <td>21.152031</td>
-          <td>21.055175</td>
-          <td>21.853939</td>
+          <td>15.143606</td>
+          <td>0.005002</td>
+          <td>22.881727</td>
+          <td>0.007476</td>
+          <td>18.398107</td>
+          <td>0.005004</td>
+          <td>20.488196</td>
+          <td>0.005104</td>
+          <td>20.621371</td>
+          <td>0.005413</td>
+          <td>20.498581</td>
+          <td>0.006470</td>
+          <td>25.385269</td>
+          <td>28.606679</td>
+          <td>24.419141</td>
         </tr>
         <tr>
           <th>996</th>
-          <td>23.109289</td>
-          <td>0.020905</td>
-          <td>22.158933</td>
-          <td>0.005834</td>
-          <td>23.912633</td>
-          <td>0.013027</td>
-          <td>21.777208</td>
-          <td>0.005809</td>
-          <td>19.384905</td>
-          <td>0.005061</td>
-          <td>20.854179</td>
-          <td>0.007519</td>
-          <td>20.571301</td>
-          <td>22.042942</td>
-          <td>26.090521</td>
+          <td>18.883614</td>
+          <td>0.005072</td>
+          <td>25.757943</td>
+          <td>0.072396</td>
+          <td>23.328636</td>
+          <td>0.008700</td>
+          <td>21.744284</td>
+          <td>0.005767</td>
+          <td>14.405894</td>
+          <td>0.005000</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>27.491173</td>
+          <td>21.812410</td>
+          <td>18.880427</td>
         </tr>
         <tr>
           <th>997</th>
-          <td>23.007274</td>
-          <td>0.019214</td>
-          <td>21.810241</td>
-          <td>0.005487</td>
-          <td>21.173012</td>
-          <td>0.005128</td>
-          <td>21.777812</td>
-          <td>0.005809</td>
-          <td>23.887650</td>
-          <td>0.037922</td>
-          <td>24.913911</td>
-          <td>0.207465</td>
-          <td>20.296134</td>
-          <td>24.799177</td>
-          <td>21.837255</td>
+          <td>23.164252</td>
+          <td>0.021887</td>
+          <td>20.850776</td>
+          <td>0.005117</td>
+          <td>24.942859</td>
+          <td>0.030915</td>
+          <td>22.450665</td>
+          <td>0.007309</td>
+          <td>25.163785</td>
+          <td>0.117038</td>
+          <td>21.357163</td>
+          <td>0.010115</td>
+          <td>24.091214</td>
+          <td>23.163089</td>
+          <td>23.181289</td>
         </tr>
         <tr>
           <th>998</th>
-          <td>24.646459</td>
-          <td>0.079496</td>
-          <td>26.444467</td>
-          <td>0.132011</td>
-          <td>24.676705</td>
-          <td>0.024504</td>
-          <td>23.256327</td>
-          <td>0.012049</td>
-          <td>25.325654</td>
-          <td>0.134674</td>
-          <td>20.466058</td>
-          <td>0.006397</td>
-          <td>18.405654</td>
-          <td>24.289189</td>
-          <td>25.229528</td>
+          <td>23.580875</td>
+          <td>0.031231</td>
+          <td>25.723570</td>
+          <td>0.070231</td>
+          <td>23.288012</td>
+          <td>0.008494</td>
+          <td>22.709173</td>
+          <td>0.008368</td>
+          <td>22.105865</td>
+          <td>0.009052</td>
+          <td>14.435163</td>
+          <td>0.005001</td>
+          <td>25.341520</td>
+          <td>23.577715</td>
+          <td>28.622641</td>
         </tr>
         <tr>
           <th>999</th>
-          <td>24.226134</td>
-          <td>0.054933</td>
-          <td>20.810370</td>
-          <td>0.005111</td>
-          <td>21.246671</td>
-          <td>0.005143</td>
-          <td>27.746695</td>
-          <td>0.526556</td>
-          <td>25.680763</td>
-          <td>0.182484</td>
-          <td>20.970645</td>
-          <td>0.007986</td>
-          <td>20.221226</td>
-          <td>16.420951</td>
-          <td>20.543457</td>
+          <td>25.683393</td>
+          <td>0.194404</td>
+          <td>26.466364</td>
+          <td>0.134532</td>
+          <td>20.218435</td>
+          <td>0.005032</td>
+          <td>26.781728</td>
+          <td>0.248134</td>
+          <td>21.122858</td>
+          <td>0.005923</td>
+          <td>24.205443</td>
+          <td>0.113121</td>
+          <td>24.706970</td>
+          <td>21.233421</td>
+          <td>20.396110</td>
         </tr>
       </tbody>
     </table>
@@ -694,78 +698,78 @@ The Roman error model adds noise to the infrared bands
       <tbody>
         <tr>
           <th>0</th>
-          <td>18.320677</td>
-          <td>22.351813</td>
-          <td>18.020899</td>
-          <td>24.327699</td>
-          <td>23.959063</td>
-          <td>25.840270</td>
-          <td>21.659578</td>
-          <td>0.005244</td>
-          <td>25.003098</td>
-          <td>0.058578</td>
-          <td>26.321146</td>
-          <td>0.185255</td>
+          <td>18.939778</td>
+          <td>19.072641</td>
+          <td>26.163908</td>
+          <td>20.553186</td>
+          <td>21.799546</td>
+          <td>21.114998</td>
+          <td>24.814921</td>
+          <td>0.029059</td>
+          <td>22.729079</td>
+          <td>0.008889</td>
+          <td>27.469738</td>
+          <td>0.465783</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.937542</td>
-          <td>20.560958</td>
-          <td>19.190631</td>
-          <td>26.045732</td>
-          <td>26.655364</td>
-          <td>21.480878</td>
-          <td>25.715651</td>
-          <td>0.064748</td>
-          <td>24.444213</td>
-          <td>0.035604</td>
-          <td>25.323593</td>
-          <td>0.077869</td>
+          <td>27.388917</td>
+          <td>20.036402</td>
+          <td>20.117551</td>
+          <td>26.215399</td>
+          <td>21.132268</td>
+          <td>22.241236</td>
+          <td>24.711970</td>
+          <td>0.026541</td>
+          <td>28.225669</td>
+          <td>0.792407</td>
+          <td>24.133708</td>
+          <td>0.027053</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>19.519233</td>
-          <td>24.369910</td>
-          <td>20.818267</td>
-          <td>26.270717</td>
-          <td>24.370919</td>
-          <td>22.334233</td>
-          <td>18.128458</td>
-          <td>0.005000</td>
-          <td>24.768572</td>
-          <td>0.047530</td>
-          <td>21.809233</td>
-          <td>0.005911</td>
+          <td>22.276329</td>
+          <td>18.860751</td>
+          <td>25.106899</td>
+          <td>28.275819</td>
+          <td>20.681661</td>
+          <td>18.706773</td>
+          <td>25.622429</td>
+          <td>0.059595</td>
+          <td>19.618713</td>
+          <td>0.005018</td>
+          <td>24.040323</td>
+          <td>0.024925</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>24.030633</td>
-          <td>24.124567</td>
-          <td>25.853963</td>
-          <td>15.543549</td>
-          <td>16.968032</td>
-          <td>25.440798</td>
-          <td>19.770549</td>
-          <td>0.005008</td>
-          <td>19.379426</td>
-          <td>0.005011</td>
-          <td>22.988803</td>
-          <td>0.010584</td>
+          <td>19.978888</td>
+          <td>23.160220</td>
+          <td>30.082883</td>
+          <td>20.308177</td>
+          <td>22.481479</td>
+          <td>21.212916</td>
+          <td>19.406954</td>
+          <td>0.005004</td>
+          <td>24.639962</td>
+          <td>0.042381</td>
+          <td>23.093621</td>
+          <td>0.011423</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>24.436440</td>
-          <td>24.260215</td>
-          <td>21.913165</td>
-          <td>21.531512</td>
-          <td>20.034205</td>
-          <td>23.596033</td>
-          <td>22.341709</td>
-          <td>0.005812</td>
-          <td>16.855545</td>
-          <td>0.005000</td>
-          <td>24.810883</td>
-          <td>0.049357</td>
+          <td>26.325230</td>
+          <td>23.412856</td>
+          <td>20.921770</td>
+          <td>19.978369</td>
+          <td>27.239717</td>
+          <td>24.703266</td>
+          <td>24.987404</td>
+          <td>0.033852</td>
+          <td>27.510521</td>
+          <td>0.480184</td>
+          <td>25.356049</td>
+          <td>0.080138</td>
         </tr>
         <tr>
           <th>...</th>
@@ -784,78 +788,78 @@ The Roman error model adds noise to the infrared bands
         </tr>
         <tr>
           <th>995</th>
-          <td>21.849821</td>
-          <td>21.115816</td>
-          <td>24.935250</td>
-          <td>19.801342</td>
-          <td>24.727717</td>
-          <td>21.939631</td>
-          <td>21.147902</td>
-          <td>0.005097</td>
-          <td>21.048373</td>
-          <td>0.005239</td>
-          <td>21.845821</td>
-          <td>0.005970</td>
+          <td>15.145201</td>
+          <td>22.872954</td>
+          <td>18.393378</td>
+          <td>20.489487</td>
+          <td>20.622421</td>
+          <td>20.489121</td>
+          <td>25.406400</td>
+          <td>0.049160</td>
+          <td>28.502936</td>
+          <td>0.944821</td>
+          <td>24.456239</td>
+          <td>0.035987</td>
         </tr>
         <tr>
           <th>996</th>
-          <td>23.121768</td>
-          <td>22.165857</td>
-          <td>23.893011</td>
-          <td>21.784859</td>
-          <td>19.388359</td>
-          <td>20.857120</td>
-          <td>20.581239</td>
-          <td>0.005034</td>
-          <td>22.031367</td>
-          <td>0.006322</td>
-          <td>26.204629</td>
-          <td>0.167796</td>
+          <td>18.884553</td>
+          <td>25.767245</td>
+          <td>23.337443</td>
+          <td>21.738545</td>
+          <td>14.398790</td>
+          <td>26.188011</td>
+          <td>28.305633</td>
+          <td>0.554007</td>
+          <td>21.811465</td>
+          <td>0.005915</td>
+          <td>18.879339</td>
+          <td>0.005005</td>
         </tr>
         <tr>
           <th>997</th>
-          <td>23.034752</td>
-          <td>21.813675</td>
-          <td>21.170410</td>
-          <td>21.776342</td>
-          <td>23.943249</td>
-          <td>24.716026</td>
-          <td>20.296810</td>
-          <td>0.005020</td>
-          <td>24.793089</td>
-          <td>0.048580</td>
-          <td>21.843415</td>
-          <td>0.005966</td>
+          <td>23.158100</td>
+          <td>20.846878</td>
+          <td>24.948462</td>
+          <td>22.433533</td>
+          <td>25.192708</td>
+          <td>21.361917</td>
+          <td>24.092780</td>
+          <td>0.015629</td>
+          <td>23.169630</td>
+          <td>0.012095</td>
+          <td>23.170949</td>
+          <td>0.012107</td>
         </tr>
         <tr>
           <th>998</th>
-          <td>24.467399</td>
-          <td>26.428534</td>
-          <td>24.711322</td>
-          <td>23.247719</td>
-          <td>25.206026</td>
-          <td>20.464519</td>
-          <td>18.406815</td>
-          <td>0.005001</td>
-          <td>24.342130</td>
-          <td>0.032520</td>
-          <td>25.117204</td>
-          <td>0.064838</td>
+          <td>23.579910</td>
+          <td>25.722199</td>
+          <td>23.289484</td>
+          <td>22.704111</td>
+          <td>22.113844</td>
+          <td>14.438278</td>
+          <td>25.371758</td>
+          <td>0.047665</td>
+          <td>23.570623</td>
+          <td>0.016669</td>
+          <td>27.623307</td>
+          <td>0.521851</td>
         </tr>
         <tr>
           <th>999</th>
-          <td>24.196592</td>
-          <td>20.805413</td>
-          <td>21.247262</td>
-          <td>27.400856</td>
-          <td>25.323455</td>
-          <td>20.985114</td>
-          <td>20.214674</td>
-          <td>0.005017</td>
-          <td>16.426729</td>
-          <td>0.005000</td>
-          <td>20.544313</td>
-          <td>0.005096</td>
+          <td>25.602941</td>
+          <td>26.179746</td>
+          <td>20.217659</td>
+          <td>26.744500</td>
+          <td>21.119197</td>
+          <td>24.263217</td>
+          <td>24.688462</td>
+          <td>0.025999</td>
+          <td>21.232185</td>
+          <td>0.005333</td>
+          <td>20.392071</td>
+          <td>0.005073</td>
         </tr>
       </tbody>
     </table>
@@ -943,78 +947,78 @@ The Euclid error model adds noise to YJH bands
       <tbody>
         <tr>
           <th>0</th>
-          <td>18.320677</td>
-          <td>22.351813</td>
-          <td>18.020899</td>
-          <td>24.327699</td>
-          <td>23.959063</td>
-          <td>25.840270</td>
-          <td>21.697455</td>
-          <td>0.020194</td>
-          <td>26.079220</td>
-          <td>0.671734</td>
-          <td>26.615655</td>
-          <td>1.011740</td>
+          <td>18.939778</td>
+          <td>19.072641</td>
+          <td>26.163908</td>
+          <td>20.553186</td>
+          <td>21.799546</td>
+          <td>21.114998</td>
+          <td>24.591948</td>
+          <td>0.252428</td>
+          <td>22.769187</td>
+          <td>0.043500</td>
+          <td>inf</td>
+          <td>inf</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>22.937542</td>
-          <td>20.560958</td>
-          <td>19.190631</td>
-          <td>26.045732</td>
-          <td>26.655364</td>
-          <td>21.480878</td>
-          <td>25.597348</td>
-          <td>0.550704</td>
-          <td>24.400881</td>
-          <td>0.182103</td>
-          <td>26.854397</td>
-          <td>1.162617</td>
+          <td>27.388917</td>
+          <td>20.036402</td>
+          <td>20.117551</td>
+          <td>26.215399</td>
+          <td>21.132268</td>
+          <td>22.241236</td>
+          <td>24.413624</td>
+          <td>0.217778</td>
+          <td>29.204160</td>
+          <td>3.025782</td>
+          <td>24.147681</td>
+          <td>0.159828</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>19.519233</td>
-          <td>24.369910</td>
-          <td>20.818267</td>
-          <td>26.270717</td>
-          <td>24.370919</td>
-          <td>22.334233</td>
-          <td>18.122921</td>
-          <td>0.005053</td>
-          <td>25.212330</td>
-          <td>0.353995</td>
-          <td>21.805256</td>
-          <td>0.020330</td>
+          <td>22.276329</td>
+          <td>18.860751</td>
+          <td>25.106899</td>
+          <td>28.275819</td>
+          <td>20.681661</td>
+          <td>18.706773</td>
+          <td>25.151700</td>
+          <td>0.394595</td>
+          <td>19.627225</td>
+          <td>0.005560</td>
+          <td>24.132145</td>
+          <td>0.157716</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>24.030633</td>
-          <td>24.124567</td>
-          <td>25.853963</td>
-          <td>15.543549</td>
-          <td>16.968032</td>
-          <td>25.440798</td>
-          <td>19.777845</td>
-          <td>0.006024</td>
-          <td>19.382476</td>
-          <td>0.005364</td>
-          <td>22.980212</td>
-          <td>0.057396</td>
+          <td>19.978888</td>
+          <td>23.160220</td>
+          <td>30.082883</td>
+          <td>20.308177</td>
+          <td>22.481479</td>
+          <td>21.212916</td>
+          <td>19.401346</td>
+          <td>0.005536</td>
+          <td>24.686519</td>
+          <td>0.231390</td>
+          <td>23.074864</td>
+          <td>0.062442</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>24.436440</td>
-          <td>24.260215</td>
-          <td>21.913165</td>
-          <td>21.531512</td>
-          <td>20.034205</td>
-          <td>23.596033</td>
-          <td>22.336991</td>
-          <td>0.035377</td>
-          <td>16.859706</td>
-          <td>0.005004</td>
-          <td>24.830955</td>
-          <td>0.282755</td>
+          <td>26.325230</td>
+          <td>23.412856</td>
+          <td>20.921770</td>
+          <td>19.978369</td>
+          <td>27.239717</td>
+          <td>24.703266</td>
+          <td>25.159082</td>
+          <td>0.396850</td>
+          <td>25.925715</td>
+          <td>0.603601</td>
+          <td>24.475294</td>
+          <td>0.210915</td>
         </tr>
         <tr>
           <th>...</th>
@@ -1033,78 +1037,78 @@ The Euclid error model adds noise to YJH bands
         </tr>
         <tr>
           <th>995</th>
-          <td>21.849821</td>
-          <td>21.115816</td>
-          <td>24.935250</td>
-          <td>19.801342</td>
-          <td>24.727717</td>
-          <td>21.939631</td>
-          <td>21.164105</td>
-          <td>0.013009</td>
-          <td>21.065298</td>
-          <td>0.010409</td>
-          <td>21.863721</td>
-          <td>0.021379</td>
+          <td>15.145201</td>
+          <td>22.872954</td>
+          <td>18.393378</td>
+          <td>20.489487</td>
+          <td>20.622421</td>
+          <td>20.489121</td>
+          <td>25.685983</td>
+          <td>0.586835</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>24.685491</td>
+          <td>0.251092</td>
         </tr>
         <tr>
           <th>996</th>
-          <td>23.121768</td>
-          <td>22.165857</td>
-          <td>23.893011</td>
-          <td>21.784859</td>
-          <td>19.388359</td>
-          <td>20.857120</td>
-          <td>20.574677</td>
-          <td>0.008595</td>
-          <td>22.020889</td>
-          <td>0.022463</td>
-          <td>26.537454</td>
-          <td>0.965013</td>
+          <td>18.884553</td>
+          <td>25.767245</td>
+          <td>23.337443</td>
+          <td>21.738545</td>
+          <td>14.398790</td>
+          <td>26.188011</td>
+          <td>28.182262</td>
+          <td>2.277080</td>
+          <td>21.801073</td>
+          <td>0.018601</td>
+          <td>18.878809</td>
+          <td>0.005176</td>
         </tr>
         <tr>
           <th>997</th>
-          <td>23.034752</td>
-          <td>21.813675</td>
-          <td>21.170410</td>
-          <td>21.776342</td>
-          <td>23.943249</td>
-          <td>24.716026</td>
-          <td>20.299054</td>
-          <td>0.007379</td>
-          <td>25.829475</td>
-          <td>0.563598</td>
-          <td>21.821889</td>
-          <td>0.020622</td>
+          <td>23.158100</td>
+          <td>20.846878</td>
+          <td>24.948462</td>
+          <td>22.433533</td>
+          <td>25.192708</td>
+          <td>21.361917</td>
+          <td>24.194061</td>
+          <td>0.181053</td>
+          <td>23.108300</td>
+          <td>0.058850</td>
+          <td>23.316761</td>
+          <td>0.077399</td>
         </tr>
         <tr>
           <th>998</th>
-          <td>24.467399</td>
-          <td>26.428534</td>
-          <td>24.711322</td>
-          <td>23.247719</td>
-          <td>25.206026</td>
-          <td>20.464519</td>
-          <td>18.405336</td>
-          <td>0.005089</td>
-          <td>24.212013</td>
-          <td>0.155018</td>
-          <td>25.321128</td>
-          <td>0.416223</td>
+          <td>23.579910</td>
+          <td>25.722199</td>
+          <td>23.289484</td>
+          <td>22.704111</td>
+          <td>22.113844</td>
+          <td>14.438278</td>
+          <td>24.870771</td>
+          <td>0.316432</td>
+          <td>23.600377</td>
+          <td>0.091029</td>
+          <td>25.324426</td>
+          <td>0.417274</td>
         </tr>
         <tr>
           <th>999</th>
-          <td>24.196592</td>
-          <td>20.805413</td>
-          <td>21.247262</td>
-          <td>27.400856</td>
-          <td>25.323455</td>
-          <td>20.985114</td>
-          <td>20.218187</td>
-          <td>0.007097</td>
-          <td>16.432207</td>
-          <td>0.005002</td>
-          <td>20.531173</td>
-          <td>0.007908</td>
+          <td>25.602941</td>
+          <td>26.179746</td>
+          <td>20.217659</td>
+          <td>26.744500</td>
+          <td>21.119197</td>
+          <td>24.263217</td>
+          <td>25.561535</td>
+          <td>0.536598</td>
+          <td>21.236423</td>
+          <td>0.011795</td>
+          <td>20.395346</td>
+          <td>0.007365</td>
         </tr>
       </tbody>
     </table>

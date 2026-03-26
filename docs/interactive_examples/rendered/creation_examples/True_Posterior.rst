@@ -54,14 +54,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -69,71 +69,75 @@ in the ``pipeline_examples/creation_examples/`` folder.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5255/696671147.py", line 6, in <module>
+      File "/tmp/ipykernel_4663/696671147.py", line 6, in <module>
         import rail.interactive as ri
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -144,20 +148,20 @@ in the ``pipeline_examples/creation_examples/`` folder.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -195,7 +199,7 @@ draw a sample.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
 
 
 .. parsed-literal::
@@ -230,7 +234,7 @@ Let’s calculate posteriors for every galaxy in our sample:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth_post
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, truth_post
     Inserting handle into data store.  input: None, truth_post
 
 
@@ -337,7 +341,7 @@ Now let’s draw a degraded sample:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
 
 
 .. parsed-literal::
@@ -403,115 +407,147 @@ Now let’s draw a degraded sample:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.416238</td>
-          <td>25.003053</td>
-          <td>0.108561</td>
-          <td>24.375750</td>
-          <td>0.021522</td>
-          <td>23.520383</td>
-          <td>0.009821</td>
-          <td>23.351435</td>
-          <td>0.012948</td>
-          <td>23.157585</td>
-          <td>0.020080</td>
-          <td>22.967545</td>
-          <td>0.037895</td>
+          <td>0.857864</td>
+          <td>24.890631</td>
+          <td>0.098435</td>
+          <td>24.305454</td>
+          <td>0.020278</td>
+          <td>23.311777</td>
+          <td>0.008614</td>
+          <td>22.349425</td>
+          <td>0.006983</td>
+          <td>21.851402</td>
+          <td>0.007822</td>
+          <td>21.698886</td>
+          <td>0.012957</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.212397</td>
-          <td>25.159968</td>
-          <td>0.124382</td>
-          <td>24.648095</td>
-          <td>0.027203</td>
-          <td>24.390613</td>
-          <td>0.019185</td>
-          <td>24.214004</td>
-          <td>0.026514</td>
-          <td>24.188210</td>
-          <td>0.049504</td>
-          <td>24.161354</td>
-          <td>0.108853</td>
+          <td>0.456452</td>
+          <td>25.070956</td>
+          <td>0.115155</td>
+          <td>23.634135</td>
+          <td>0.011881</td>
+          <td>22.138838</td>
+          <td>0.005595</td>
+          <td>21.487404</td>
+          <td>0.005507</td>
+          <td>21.133873</td>
+          <td>0.005940</td>
+          <td>20.870241</td>
+          <td>0.007579</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.669989</td>
-          <td>24.678971</td>
-          <td>0.081796</td>
-          <td>24.455169</td>
-          <td>0.023031</td>
-          <td>24.041320</td>
-          <td>0.014405</td>
-          <td>23.613801</td>
-          <td>0.015940</td>
-          <td>23.541530</td>
-          <td>0.027962</td>
-          <td>23.349680</td>
-          <td>0.053184</td>
+          <td>0.214385</td>
+          <td>24.930554</td>
+          <td>0.101922</td>
+          <td>24.383936</td>
+          <td>0.021672</td>
+          <td>23.983562</td>
+          <td>0.013764</td>
+          <td>23.802254</td>
+          <td>0.018629</td>
+          <td>23.764902</td>
+          <td>0.034024</td>
+          <td>23.753412</td>
+          <td>0.076059</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.487258</td>
-          <td>24.481878</td>
-          <td>0.068796</td>
-          <td>24.258706</td>
-          <td>0.019496</td>
-          <td>23.588183</td>
-          <td>0.010281</td>
-          <td>23.366042</td>
-          <td>0.013094</td>
-          <td>23.378941</td>
-          <td>0.024274</td>
-          <td>22.983941</td>
-          <td>0.038449</td>
+          <td>0.314718</td>
+          <td>24.562558</td>
+          <td>0.073851</td>
+          <td>23.219359</td>
+          <td>0.008985</td>
+          <td>22.223683</td>
+          <td>0.005682</td>
+          <td>21.889794</td>
+          <td>0.005968</td>
+          <td>21.586688</td>
+          <td>0.006903</td>
+          <td>21.496388</td>
+          <td>0.011147</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.705574</td>
-          <td>24.694310</td>
-          <td>0.082904</td>
-          <td>23.343388</td>
-          <td>0.009714</td>
-          <td>21.997513</td>
-          <td>0.005474</td>
-          <td>20.814343</td>
-          <td>0.005172</td>
-          <td>20.390275</td>
-          <td>0.005285</td>
-          <td>20.044626</td>
-          <td>0.005717</td>
+          <td>0.707498</td>
+          <td>24.158448</td>
+          <td>0.051757</td>
+          <td>23.583758</td>
+          <td>0.011454</td>
+          <td>22.770424</td>
+          <td>0.006621</td>
+          <td>21.993792</td>
+          <td>0.006142</td>
+          <td>21.682632</td>
+          <td>0.007199</td>
+          <td>21.449055</td>
+          <td>0.010778</td>
         </tr>
         <tr>
           <th>5</th>
-          <td>0.296443</td>
-          <td>22.123986</td>
-          <td>0.009967</td>
-          <td>20.152315</td>
-          <td>0.005046</td>
-          <td>18.863420</td>
-          <td>0.005006</td>
-          <td>18.341414</td>
-          <td>0.005006</td>
-          <td>18.059736</td>
-          <td>0.005011</td>
-          <td>17.879320</td>
-          <td>0.005027</td>
+          <td>0.419468</td>
+          <td>25.561102</td>
+          <td>0.175351</td>
+          <td>24.814440</td>
+          <td>0.031454</td>
+          <td>23.704565</td>
+          <td>0.011157</td>
+          <td>23.389138</td>
+          <td>0.013330</td>
+          <td>23.237201</td>
+          <td>0.021488</td>
+          <td>23.038870</td>
+          <td>0.040365</td>
         </tr>
         <tr>
           <th>6</th>
-          <td>1.034349</td>
-          <td>25.340232</td>
-          <td>0.145264</td>
-          <td>24.918297</td>
-          <td>0.034456</td>
-          <td>24.519326</td>
-          <td>0.021400</td>
-          <td>23.814711</td>
-          <td>0.018825</td>
-          <td>23.106567</td>
-          <td>0.019232</td>
-          <td>22.859879</td>
-          <td>0.034455</td>
+          <td>0.370970</td>
+          <td>23.228578</td>
+          <td>0.023103</td>
+          <td>23.149110</td>
+          <td>0.008618</td>
+          <td>22.916435</td>
+          <td>0.007026</td>
+          <td>23.020163</td>
+          <td>0.010177</td>
+          <td>22.854832</td>
+          <td>0.015617</td>
+          <td>23.008776</td>
+          <td>0.039304</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>1.165920</td>
+          <td>24.588572</td>
+          <td>0.075558</td>
+          <td>24.432812</td>
+          <td>0.022595</td>
+          <td>24.023732</td>
+          <td>0.014206</td>
+          <td>23.654072</td>
+          <td>0.016473</td>
+          <td>23.020686</td>
+          <td>0.017897</td>
+          <td>22.761598</td>
+          <td>0.031597</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>0.601109</td>
+          <td>24.945854</td>
+          <td>0.103289</td>
+          <td>24.628518</td>
+          <td>0.026745</td>
+          <td>24.038633</td>
+          <td>0.014375</td>
+          <td>23.627243</td>
+          <td>0.016115</td>
+          <td>23.487679</td>
+          <td>0.026678</td>
+          <td>23.389811</td>
+          <td>0.055112</td>
         </tr>
       </tbody>
     </table>
@@ -550,28 +586,28 @@ Let’s calculate posteriors with a variable number of error samples.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
@@ -699,7 +735,7 @@ values of u to marginalize over.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
     Inserting handle into data store.  input: None, LSSTErrorModel
     Inserting handle into data store.  output: inprogress_output.pq, LSSTErrorModel
@@ -762,28 +798,28 @@ grid.
 
     Inserting handle into data store.  input: None, RowSelector
     Inserting handle into data store.  output: inprogress_output.pq, RowSelector
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlowPosterior
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 

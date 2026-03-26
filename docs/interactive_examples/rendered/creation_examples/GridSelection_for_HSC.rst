@@ -66,14 +66,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -81,71 +81,75 @@ in the ``pipeline_examples/creation_examples/`` folder.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4232/285264119.py", line 4, in <module>
+      File "/tmp/ipykernel_6213/285264119.py", line 4, in <module>
         import rail.interactive as ri
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -156,20 +160,20 @@ in the ``pipeline_examples/creation_examples/`` folder.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -262,7 +266,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.03</td>
+          <td>0.84</td>
         </tr>
         <tr>
           <th>1</th>
@@ -270,7 +274,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.03</td>
+          <td>0.84</td>
         </tr>
         <tr>
           <th>2</th>
@@ -278,7 +282,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.03</td>
+          <td>0.84</td>
         </tr>
         <tr>
           <th>3</th>
@@ -286,7 +290,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.03</td>
+          <td>0.84</td>
         </tr>
         <tr>
           <th>4</th>
@@ -294,7 +298,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.03</td>
+          <td>0.84</td>
         </tr>
       </tbody>
     </table>
@@ -352,8 +356,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, GridSelection
-    CPU times: user 2.54 s, sys: 84.7 ms, total: 2.62 s
-    Wall time: 2.62 s
+    CPU times: user 2.7 s, sys: 99.4 ms, total: 2.8 s
+    Wall time: 2.8 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -366,20 +370,20 @@ galaxies.
 
 .. parsed-literal::
 
-    <class 'pandas.DataFrame'>
-    Index: 182021 entries, 84300 to 927791
+    <class 'pandas.core.frame.DataFrame'>
+    Index: 181838 entries, 84300 to 927791
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          182021 non-null  float64
-     1   gz         182021 non-null  float64
-     2   g          182021 non-null  float64
-     3   z          182021 non-null  float64
-     4   redshift   182021 non-null  float64
-     5   x_vals     182021 non-null  float64
-     6   y_vals     182021 non-null  float64
-     7   ratios     182021 non-null  float64
-     8   max_specz  182021 non-null  float64
+     0   i          181838 non-null  float64
+     1   gz         181838 non-null  float64
+     2   g          181838 non-null  float64
+     3   z          181838 non-null  float64
+     4   redshift   181838 non-null  float64
+     5   x_vals     181838 non-null  float64
+     6   y_vals     181838 non-null  float64
+     7   ratios     181838 non-null  float64
+     8   max_specz  181838 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 
@@ -404,6 +408,17 @@ a visual indication of how many galaxies in each cell we’ve kept.
 .. code:: ipython3
 
     trim_data["output"]["color"] = trim_data["output"]["g"] - trim_data["output"]["z"]
+
+
+.. parsed-literal::
+
+    /tmp/ipykernel_6213/3945432532.py:1: SettingWithCopyWarning: 
+    A value is trying to be set on a copy of a slice from a DataFrame.
+    Try using .loc[row_indexer,col_indexer] = value instead
+    
+    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+      trim_data["output"]["color"] = trim_data["output"]["g"] - trim_data["output"]["z"]
+
 
 .. code:: ipython3
 

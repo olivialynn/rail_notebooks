@@ -78,14 +78,14 @@ the data sets.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -93,71 +93,75 @@ the data sets.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4593/1847479680.py", line 1, in <module>
+      File "/tmp/ipykernel_5148/1847479680.py", line 1, in <module>
         import rail.interactive as ri
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -168,20 +172,20 @@ the data sets.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -385,157 +389,157 @@ we’re doing fewer so that it doesn’t take as long.
 
 .. parsed-literal::
 
-    (0) 19.6133
+    (0) 17.6137
 
 
 .. parsed-literal::
 
-    (1) 1.3356
+    (1) 2.3274
 
 
 .. parsed-literal::
 
-    (2) -0.2960
+    (2) 0.2876
 
 
 .. parsed-literal::
 
-    (3) -0.8647
+    (3) -0.0272
 
 
 .. parsed-literal::
 
-    (4) -1.2269
+    (4) -0.1473
 
 
 .. parsed-literal::
 
-    (5) 0.7571
+    (5) -2.1294
 
 
 .. parsed-literal::
 
-    (6) -1.3080
+    (6) -1.7337
 
 
 .. parsed-literal::
 
-    (7) -2.4602
+    (7) -1.5389
 
 
 .. parsed-literal::
 
-    (8) -1.6267
+    (8) -2.2590
 
 
 .. parsed-literal::
 
-    (9) -1.1870
+    (9) -1.9952
 
 
 .. parsed-literal::
 
-    (10) -2.0287
+    (10) -3.0617
 
 
 .. parsed-literal::
 
-    (11) -2.8581
+    (11) -3.3305
 
 
 .. parsed-literal::
 
-    (12) -3.2555
+    (12) -2.5602
 
 
 .. parsed-literal::
 
-    (13) -2.9009
+    (13) -3.1145
 
 
 .. parsed-literal::
 
-    (14) -2.9004
+    (14) -2.3787
 
 
 .. parsed-literal::
 
-    (15) -3.3742
+    (15) -3.8322
 
 
 .. parsed-literal::
 
-    (16) -3.2952
+    (16) -3.4641
 
 
 .. parsed-literal::
 
-    (17) -3.4071
+    (17) -3.1314
 
 
 .. parsed-literal::
 
-    (18) -3.4816
+    (18) -3.6828
 
 
 .. parsed-literal::
 
-    (19) -3.2921
+    (19) -2.9029
 
 
 .. parsed-literal::
 
-    (20) -2.4361
+    (20) -3.5720
 
 
 .. parsed-literal::
 
-    (21) -3.2809
+    (21) -4.0345
 
 
 .. parsed-literal::
 
-    (22) -2.9982
+    (22) -4.3882
 
 
 .. parsed-literal::
 
-    (23) -0.6346
+    (23) -4.5509
 
 
 .. parsed-literal::
 
-    (24) -3.8663
+    (24) -3.9286
 
 
 .. parsed-literal::
 
-    (25) -4.4979
+    (25) -3.7284
 
 
 .. parsed-literal::
 
-    (26) -4.0998
+    (26) -4.3904
 
 
 .. parsed-literal::
 
-    (27) -4.2410
+    (27) -4.3243
 
 
 .. parsed-literal::
 
-    (28) -4.0741
+    (28) -4.7942
 
 
 .. parsed-literal::
 
-    (29) -4.6661
+    (29) -4.7405
 
 
 .. parsed-literal::
 
-    (30) -4.5725
+    (30) -4.7778
 
 
 .. parsed-literal::
@@ -567,13 +571,13 @@ interactive functions.**
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f3d21abcb50>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f1a019015a0>, FlowCreator
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f3d21abcb50>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f1a019015a0>, FlowCreator
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
 
 
@@ -706,83 +710,83 @@ to make non-detections ``np.nan`` in the output.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.370414</td>
-          <td>27.122132</td>
-          <td>0.598764</td>
-          <td>26.918704</td>
-          <td>0.197826</td>
-          <td>25.869258</td>
-          <td>0.070240</td>
-          <td>25.662502</td>
-          <td>0.095367</td>
-          <td>25.598763</td>
-          <td>0.170217</td>
-          <td>25.932099</td>
-          <td>0.466979</td>
+          <td>1.433343</td>
+          <td>27.446394</td>
+          <td>0.748055</td>
+          <td>28.211738</td>
+          <td>0.548112</td>
+          <td>27.708995</td>
+          <td>0.335556</td>
+          <td>27.169004</td>
+          <td>0.339186</td>
+          <td>27.116238</td>
+          <td>0.567046</td>
+          <td>27.045358</td>
+          <td>0.993960</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.372931</td>
-          <td>26.918850</td>
-          <td>0.517267</td>
-          <td>25.936898</td>
-          <td>0.084767</td>
-          <td>24.755959</td>
-          <td>0.026250</td>
-          <td>24.309388</td>
-          <td>0.028819</td>
-          <td>24.016158</td>
-          <td>0.042495</td>
-          <td>23.829944</td>
-          <td>0.081376</td>
+          <td>1.323755</td>
+          <td>26.091792</td>
+          <td>0.272504</td>
+          <td>25.932552</td>
+          <td>0.084444</td>
+          <td>25.796621</td>
+          <td>0.065864</td>
+          <td>25.265092</td>
+          <td>0.067161</td>
+          <td>24.815723</td>
+          <td>0.086288</td>
+          <td>24.249732</td>
+          <td>0.117569</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.884873</td>
-          <td>23.906889</td>
-          <td>0.041496</td>
-          <td>23.670047</td>
-          <td>0.012199</td>
-          <td>23.195966</td>
-          <td>0.008063</td>
-          <td>22.531059</td>
-          <td>0.007602</td>
-          <td>22.139233</td>
-          <td>0.009244</td>
-          <td>22.031194</td>
-          <td>0.016887</td>
+          <td>0.870260</td>
+          <td>26.597977</td>
+          <td>0.406650</td>
+          <td>26.663111</td>
+          <td>0.159298</td>
+          <td>24.870533</td>
+          <td>0.029014</td>
+          <td>23.714600</td>
+          <td>0.017316</td>
+          <td>22.848013</td>
+          <td>0.015531</td>
+          <td>22.493640</td>
+          <td>0.025000</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.522923</td>
-          <td>26.468731</td>
-          <td>0.367962</td>
-          <td>25.222704</td>
-          <td>0.045079</td>
-          <td>24.024797</td>
-          <td>0.014218</td>
-          <td>23.450198</td>
-          <td>0.013981</td>
-          <td>23.188577</td>
-          <td>0.020615</td>
-          <td>22.913779</td>
-          <td>0.036135</td>
+          <td>1.793983</td>
+          <td>29.076769</td>
+          <td>1.840873</td>
+          <td>27.276723</td>
+          <td>0.266134</td>
+          <td>27.889978</td>
+          <td>0.386658</td>
+          <td>27.504056</td>
+          <td>0.439639</td>
+          <td>26.477421</td>
+          <td>0.350413</td>
+          <td>25.714324</td>
+          <td>0.395747</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>2.039537</td>
-          <td>27.228641</td>
-          <td>0.645154</td>
-          <td>27.856077</td>
-          <td>0.420774</td>
-          <td>26.810722</td>
-          <td>0.159733</td>
-          <td>26.389236</td>
-          <td>0.178745</td>
-          <td>25.516306</td>
-          <td>0.158656</td>
-          <td>25.616592</td>
-          <td>0.366833</td>
+          <td>1.294506</td>
+          <td>25.819838</td>
+          <td>0.217892</td>
+          <td>25.835736</td>
+          <td>0.077541</td>
+          <td>25.459463</td>
+          <td>0.048832</td>
+          <td>24.792595</td>
+          <td>0.044158</td>
+          <td>24.228459</td>
+          <td>0.051305</td>
+          <td>23.734367</td>
+          <td>0.074790</td>
         </tr>
       </tbody>
     </table>
@@ -828,7 +832,7 @@ magnitudes they’ve remained similar:
 
 .. parsed-literal::
 
-    <matplotlib.colorbar.Colorbar at 0x7f3c4327ff50>
+    <matplotlib.colorbar.Colorbar at 0x7f1987f305b0>
 
 
 
@@ -930,87 +934,87 @@ dropped.
         <tr>
           <th>0</th>
           <td>True</td>
-          <td>0.253092</td>
-          <td>26.113820</td>
-          <td>0.277420</td>
-          <td>25.452406</td>
-          <td>0.055248</td>
-          <td>24.764484</td>
-          <td>0.026446</td>
-          <td>24.547853</td>
-          <td>0.035551</td>
-          <td>24.405074</td>
-          <td>0.060012</td>
-          <td>24.485035</td>
-          <td>0.144121</td>
+          <td>0.710979</td>
+          <td>26.762862</td>
+          <td>0.460818</td>
+          <td>26.802089</td>
+          <td>0.179290</td>
+          <td>26.148865</td>
+          <td>0.089899</td>
+          <td>25.530220</td>
+          <td>0.084893</td>
+          <td>25.525601</td>
+          <td>0.159922</td>
+          <td>25.866070</td>
+          <td>0.444362</td>
         </tr>
         <tr>
           <th>1</th>
           <td>True</td>
-          <td>1.218356</td>
-          <td>27.211861</td>
-          <td>0.637675</td>
-          <td>26.849462</td>
-          <td>0.186618</td>
-          <td>26.323622</td>
-          <td>0.104791</td>
-          <td>25.962856</td>
-          <td>0.123960</td>
-          <td>25.353204</td>
-          <td>0.137915</td>
-          <td>25.103264</td>
-          <td>0.242815</td>
+          <td>0.684234</td>
+          <td>23.210656</td>
+          <td>0.022756</td>
+          <td>22.488883</td>
+          <td>0.006382</td>
+          <td>21.626449</td>
+          <td>0.005261</td>
+          <td>20.815851</td>
+          <td>0.005173</td>
+          <td>20.562635</td>
+          <td>0.005376</td>
+          <td>20.348689</td>
+          <td>0.006163</td>
         </tr>
         <tr>
           <th>2</th>
           <td>True</td>
-          <td>0.457460</td>
-          <td>26.202677</td>
-          <td>0.298050</td>
-          <td>25.819786</td>
-          <td>0.076458</td>
-          <td>24.684006</td>
-          <td>0.024660</td>
-          <td>24.354272</td>
-          <td>0.029976</td>
-          <td>24.122647</td>
-          <td>0.046705</td>
-          <td>24.020353</td>
-          <td>0.096216</td>
+          <td>0.249871</td>
+          <td>27.112190</td>
+          <td>0.594565</td>
+          <td>28.039316</td>
+          <td>0.483038</td>
+          <td>26.920252</td>
+          <td>0.175355</td>
+          <td>26.965811</td>
+          <td>0.288325</td>
+          <td>27.001835</td>
+          <td>0.521963</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
           <td>True</td>
-          <td>1.018021</td>
-          <td>28.267686</td>
-          <td>1.232677</td>
-          <td>26.988308</td>
-          <td>0.209710</td>
-          <td>26.870200</td>
-          <td>0.168048</td>
-          <td>26.293306</td>
-          <td>0.164742</td>
-          <td>25.498548</td>
-          <td>0.156264</td>
-          <td>25.048256</td>
-          <td>0.232025</td>
+          <td>1.751949</td>
+          <td>27.919353</td>
+          <td>1.008960</td>
+          <td>25.954472</td>
+          <td>0.086088</td>
+          <td>25.496445</td>
+          <td>0.050463</td>
+          <td>24.900504</td>
+          <td>0.048597</td>
+          <td>24.270590</td>
+          <td>0.053261</td>
+          <td>23.881404</td>
+          <td>0.085152</td>
         </tr>
         <tr>
           <th>4</th>
           <td>True</td>
-          <td>0.632389</td>
-          <td>26.198423</td>
-          <td>0.297032</td>
-          <td>26.278279</td>
-          <td>0.114292</td>
-          <td>25.678773</td>
-          <td>0.059329</td>
-          <td>25.233383</td>
-          <td>0.065301</td>
-          <td>25.068103</td>
-          <td>0.107671</td>
-          <td>25.545583</td>
-          <td>0.346958</td>
+          <td>0.478461</td>
+          <td>27.142777</td>
+          <td>0.607556</td>
+          <td>27.380647</td>
+          <td>0.289556</td>
+          <td>25.807922</td>
+          <td>0.066527</td>
+          <td>25.244399</td>
+          <td>0.065941</td>
+          <td>24.948522</td>
+          <td>0.096970</td>
+          <td>25.168788</td>
+          <td>0.256251</td>
         </tr>
         <tr>
           <th>...</th>
@@ -1032,87 +1036,87 @@ dropped.
         <tr>
           <th>595</th>
           <td>True</td>
-          <td>1.511651</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.810852</td>
-          <td>0.406459</td>
-          <td>27.415500</td>
-          <td>0.264987</td>
-          <td>27.085513</td>
-          <td>0.317422</td>
-          <td>25.843004</td>
-          <td>0.209180</td>
-          <td>27.449550</td>
-          <td>1.253839</td>
+          <td>0.577203</td>
+          <td>28.865338</td>
+          <td>1.671480</td>
+          <td>26.842217</td>
+          <td>0.185480</td>
+          <td>25.729843</td>
+          <td>0.062078</td>
+          <td>25.313037</td>
+          <td>0.070074</td>
+          <td>24.948450</td>
+          <td>0.096964</td>
+          <td>25.564396</td>
+          <td>0.352132</td>
         </tr>
         <tr>
           <th>596</th>
           <td>True</td>
-          <td>0.850231</td>
-          <td>27.009124</td>
-          <td>0.552332</td>
-          <td>27.756517</td>
-          <td>0.389795</td>
-          <td>27.153910</td>
-          <td>0.213493</td>
-          <td>26.101826</td>
-          <td>0.139793</td>
-          <td>25.496812</td>
-          <td>0.156032</td>
-          <td>25.432001</td>
-          <td>0.317072</td>
+          <td>0.405416</td>
+          <td>25.636360</td>
+          <td>0.186861</td>
+          <td>25.907552</td>
+          <td>0.082606</td>
+          <td>25.873413</td>
+          <td>0.070499</td>
+          <td>25.953150</td>
+          <td>0.122920</td>
+          <td>25.977916</td>
+          <td>0.234033</td>
+          <td>25.859538</td>
+          <td>0.442173</td>
         </tr>
         <tr>
           <th>597</th>
           <td>True</td>
-          <td>0.288089</td>
-          <td>27.100459</td>
-          <td>0.589638</td>
-          <td>26.268716</td>
-          <td>0.113344</td>
-          <td>25.152618</td>
-          <td>0.037199</td>
-          <td>24.822860</td>
-          <td>0.045360</td>
-          <td>24.400083</td>
-          <td>0.059747</td>
-          <td>24.462033</td>
-          <td>0.141295</td>
+          <td>0.410133</td>
+          <td>25.673685</td>
+          <td>0.192824</td>
+          <td>24.865269</td>
+          <td>0.032888</td>
+          <td>23.971060</td>
+          <td>0.013630</td>
+          <td>23.739090</td>
+          <td>0.017672</td>
+          <td>23.530157</td>
+          <td>0.027685</td>
+          <td>23.459727</td>
+          <td>0.058640</td>
         </tr>
         <tr>
           <th>598</th>
           <td>True</td>
-          <td>0.653297</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>28.324357</td>
-          <td>0.594137</td>
-          <td>26.440218</td>
-          <td>0.116014</td>
-          <td>25.802774</td>
-          <td>0.107831</td>
-          <td>25.527978</td>
-          <td>0.160247</td>
-          <td>25.116330</td>
-          <td>0.245443</td>
+          <td>0.299733</td>
+          <td>29.113775</td>
+          <td>1.871178</td>
+          <td>27.213368</td>
+          <td>0.252691</td>
+          <td>26.316164</td>
+          <td>0.104110</td>
+          <td>26.612522</td>
+          <td>0.215678</td>
+          <td>26.338080</td>
+          <td>0.313754</td>
+          <td>25.960055</td>
+          <td>0.476829</td>
         </tr>
         <tr>
           <th>599</th>
           <td>True</td>
-          <td>0.963349</td>
-          <td>32.428109</td>
-          <td>4.983029</td>
-          <td>26.777304</td>
-          <td>0.175562</td>
-          <td>26.496116</td>
-          <td>0.121793</td>
-          <td>25.692422</td>
-          <td>0.097903</td>
-          <td>25.479200</td>
-          <td>0.153696</td>
-          <td>25.310582</td>
-          <td>0.287605</td>
+          <td>0.218481</td>
+          <td>26.985461</td>
+          <td>0.542968</td>
+          <td>25.646029</td>
+          <td>0.065578</td>
+          <td>25.393283</td>
+          <td>0.046046</td>
+          <td>25.145220</td>
+          <td>0.060390</td>
+          <td>25.325217</td>
+          <td>0.134623</td>
+          <td>25.398899</td>
+          <td>0.308790</td>
         </tr>
       </tbody>
     </table>
@@ -1172,87 +1176,87 @@ at the calibration data set, where we left ``drop_rows`` as true:
         <tr>
           <th>0</th>
           <td>True</td>
-          <td>0.253092</td>
-          <td>26.113820</td>
-          <td>0.277420</td>
-          <td>25.452406</td>
-          <td>0.055248</td>
-          <td>24.764484</td>
-          <td>0.026446</td>
-          <td>24.547853</td>
-          <td>0.035551</td>
-          <td>24.405074</td>
-          <td>0.060012</td>
-          <td>24.485035</td>
-          <td>0.144121</td>
+          <td>0.710979</td>
+          <td>26.762862</td>
+          <td>0.460818</td>
+          <td>26.802089</td>
+          <td>0.179290</td>
+          <td>26.148865</td>
+          <td>0.089899</td>
+          <td>25.530220</td>
+          <td>0.084893</td>
+          <td>25.525601</td>
+          <td>0.159922</td>
+          <td>25.866070</td>
+          <td>0.444362</td>
         </tr>
         <tr>
           <th>1</th>
           <td>True</td>
-          <td>1.218356</td>
-          <td>27.211861</td>
-          <td>0.637675</td>
-          <td>26.849462</td>
-          <td>0.186618</td>
-          <td>26.323622</td>
-          <td>0.104791</td>
-          <td>25.962856</td>
-          <td>0.123960</td>
-          <td>25.353204</td>
-          <td>0.137915</td>
-          <td>25.103264</td>
-          <td>0.242815</td>
+          <td>0.684234</td>
+          <td>23.210656</td>
+          <td>0.022756</td>
+          <td>22.488883</td>
+          <td>0.006382</td>
+          <td>21.626449</td>
+          <td>0.005261</td>
+          <td>20.815851</td>
+          <td>0.005173</td>
+          <td>20.562635</td>
+          <td>0.005376</td>
+          <td>20.348689</td>
+          <td>0.006163</td>
         </tr>
         <tr>
           <th>2</th>
           <td>True</td>
-          <td>0.457460</td>
-          <td>26.202677</td>
-          <td>0.298050</td>
-          <td>25.819786</td>
-          <td>0.076458</td>
-          <td>24.684006</td>
-          <td>0.024660</td>
-          <td>24.354272</td>
-          <td>0.029976</td>
-          <td>24.122647</td>
-          <td>0.046705</td>
-          <td>24.020353</td>
-          <td>0.096216</td>
+          <td>0.249871</td>
+          <td>27.112190</td>
+          <td>0.594565</td>
+          <td>28.039316</td>
+          <td>0.483038</td>
+          <td>26.920252</td>
+          <td>0.175355</td>
+          <td>26.965811</td>
+          <td>0.288325</td>
+          <td>27.001835</td>
+          <td>0.521963</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
           <td>True</td>
-          <td>1.018021</td>
-          <td>28.267686</td>
-          <td>1.232677</td>
-          <td>26.988308</td>
-          <td>0.209710</td>
-          <td>26.870200</td>
-          <td>0.168048</td>
-          <td>26.293306</td>
-          <td>0.164742</td>
-          <td>25.498548</td>
-          <td>0.156264</td>
-          <td>25.048256</td>
-          <td>0.232025</td>
+          <td>1.751949</td>
+          <td>27.919353</td>
+          <td>1.008960</td>
+          <td>25.954472</td>
+          <td>0.086088</td>
+          <td>25.496445</td>
+          <td>0.050463</td>
+          <td>24.900504</td>
+          <td>0.048597</td>
+          <td>24.270590</td>
+          <td>0.053261</td>
+          <td>23.881404</td>
+          <td>0.085152</td>
         </tr>
         <tr>
           <th>4</th>
           <td>True</td>
-          <td>0.632389</td>
-          <td>26.198423</td>
-          <td>0.297032</td>
-          <td>26.278279</td>
-          <td>0.114292</td>
-          <td>25.678773</td>
-          <td>0.059329</td>
-          <td>25.233383</td>
-          <td>0.065301</td>
-          <td>25.068103</td>
-          <td>0.107671</td>
-          <td>25.545583</td>
-          <td>0.346958</td>
+          <td>0.478461</td>
+          <td>27.142777</td>
+          <td>0.607556</td>
+          <td>27.380647</td>
+          <td>0.289556</td>
+          <td>25.807922</td>
+          <td>0.066527</td>
+          <td>25.244399</td>
+          <td>0.065941</td>
+          <td>24.948522</td>
+          <td>0.096970</td>
+          <td>25.168788</td>
+          <td>0.256251</td>
         </tr>
         <tr>
           <th>...</th>
@@ -1274,87 +1278,87 @@ at the calibration data set, where we left ``drop_rows`` as true:
         <tr>
           <th>595</th>
           <td>True</td>
-          <td>1.511651</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.810852</td>
-          <td>0.406459</td>
-          <td>27.415500</td>
-          <td>0.264987</td>
-          <td>27.085513</td>
-          <td>0.317422</td>
-          <td>25.843004</td>
-          <td>0.209180</td>
-          <td>27.449550</td>
-          <td>1.253839</td>
+          <td>0.577203</td>
+          <td>28.865338</td>
+          <td>1.671480</td>
+          <td>26.842217</td>
+          <td>0.185480</td>
+          <td>25.729843</td>
+          <td>0.062078</td>
+          <td>25.313037</td>
+          <td>0.070074</td>
+          <td>24.948450</td>
+          <td>0.096964</td>
+          <td>25.564396</td>
+          <td>0.352132</td>
         </tr>
         <tr>
           <th>596</th>
           <td>True</td>
-          <td>0.850231</td>
-          <td>27.009124</td>
-          <td>0.552332</td>
-          <td>27.756517</td>
-          <td>0.389795</td>
-          <td>27.153910</td>
-          <td>0.213493</td>
-          <td>26.101826</td>
-          <td>0.139793</td>
-          <td>25.496812</td>
-          <td>0.156032</td>
-          <td>25.432001</td>
-          <td>0.317072</td>
+          <td>0.405416</td>
+          <td>25.636360</td>
+          <td>0.186861</td>
+          <td>25.907552</td>
+          <td>0.082606</td>
+          <td>25.873413</td>
+          <td>0.070499</td>
+          <td>25.953150</td>
+          <td>0.122920</td>
+          <td>25.977916</td>
+          <td>0.234033</td>
+          <td>25.859538</td>
+          <td>0.442173</td>
         </tr>
         <tr>
           <th>597</th>
           <td>True</td>
-          <td>0.288089</td>
-          <td>27.100459</td>
-          <td>0.589638</td>
-          <td>26.268716</td>
-          <td>0.113344</td>
-          <td>25.152618</td>
-          <td>0.037199</td>
-          <td>24.822860</td>
-          <td>0.045360</td>
-          <td>24.400083</td>
-          <td>0.059747</td>
-          <td>24.462033</td>
-          <td>0.141295</td>
+          <td>0.410133</td>
+          <td>25.673685</td>
+          <td>0.192824</td>
+          <td>24.865269</td>
+          <td>0.032888</td>
+          <td>23.971060</td>
+          <td>0.013630</td>
+          <td>23.739090</td>
+          <td>0.017672</td>
+          <td>23.530157</td>
+          <td>0.027685</td>
+          <td>23.459727</td>
+          <td>0.058640</td>
         </tr>
         <tr>
           <th>598</th>
           <td>True</td>
-          <td>0.653297</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>28.324357</td>
-          <td>0.594137</td>
-          <td>26.440218</td>
-          <td>0.116014</td>
-          <td>25.802774</td>
-          <td>0.107831</td>
-          <td>25.527978</td>
-          <td>0.160247</td>
-          <td>25.116330</td>
-          <td>0.245443</td>
+          <td>0.299733</td>
+          <td>29.113775</td>
+          <td>1.871178</td>
+          <td>27.213368</td>
+          <td>0.252691</td>
+          <td>26.316164</td>
+          <td>0.104110</td>
+          <td>26.612522</td>
+          <td>0.215678</td>
+          <td>26.338080</td>
+          <td>0.313754</td>
+          <td>25.960055</td>
+          <td>0.476829</td>
         </tr>
         <tr>
           <th>599</th>
           <td>True</td>
-          <td>0.963349</td>
-          <td>32.428109</td>
-          <td>4.983029</td>
-          <td>26.777304</td>
-          <td>0.175562</td>
-          <td>26.496116</td>
-          <td>0.121793</td>
-          <td>25.692422</td>
-          <td>0.097903</td>
-          <td>25.479200</td>
-          <td>0.153696</td>
-          <td>25.310582</td>
-          <td>0.287605</td>
+          <td>0.218481</td>
+          <td>26.985461</td>
+          <td>0.542968</td>
+          <td>25.646029</td>
+          <td>0.065578</td>
+          <td>25.393283</td>
+          <td>0.046046</td>
+          <td>25.145220</td>
+          <td>0.060390</td>
+          <td>25.325217</td>
+          <td>0.134623</td>
+          <td>25.398899</td>
+          <td>0.308790</td>
         </tr>
       </tbody>
     </table>
@@ -1456,83 +1460,83 @@ data set as is our goal.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.253092</td>
-          <td>26.113820</td>
-          <td>0.277420</td>
-          <td>25.452406</td>
-          <td>0.055248</td>
-          <td>24.764484</td>
-          <td>0.026446</td>
-          <td>24.547853</td>
-          <td>0.035551</td>
-          <td>24.405074</td>
-          <td>0.060012</td>
-          <td>24.485035</td>
-          <td>0.144121</td>
+          <td>0.710979</td>
+          <td>26.762862</td>
+          <td>0.460818</td>
+          <td>26.802089</td>
+          <td>0.179290</td>
+          <td>26.148865</td>
+          <td>0.089899</td>
+          <td>25.530220</td>
+          <td>0.084893</td>
+          <td>25.525601</td>
+          <td>0.159922</td>
+          <td>25.866070</td>
+          <td>0.444362</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.218356</td>
-          <td>27.211861</td>
-          <td>0.637675</td>
-          <td>26.849462</td>
-          <td>0.186618</td>
-          <td>26.323622</td>
-          <td>0.104791</td>
-          <td>25.962856</td>
-          <td>0.123960</td>
-          <td>25.353204</td>
-          <td>0.137915</td>
-          <td>25.103264</td>
-          <td>0.242815</td>
+          <td>0.684234</td>
+          <td>23.210656</td>
+          <td>0.022756</td>
+          <td>22.488883</td>
+          <td>0.006382</td>
+          <td>21.626449</td>
+          <td>0.005261</td>
+          <td>20.815851</td>
+          <td>0.005173</td>
+          <td>20.562635</td>
+          <td>0.005376</td>
+          <td>20.348689</td>
+          <td>0.006163</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.457460</td>
-          <td>26.202677</td>
-          <td>0.298050</td>
-          <td>25.819786</td>
-          <td>0.076458</td>
-          <td>24.684006</td>
-          <td>0.024660</td>
-          <td>24.354272</td>
-          <td>0.029976</td>
-          <td>24.122647</td>
-          <td>0.046705</td>
-          <td>24.020353</td>
-          <td>0.096216</td>
+          <td>0.249871</td>
+          <td>27.112190</td>
+          <td>0.594565</td>
+          <td>28.039316</td>
+          <td>0.483038</td>
+          <td>26.920252</td>
+          <td>0.175355</td>
+          <td>26.965811</td>
+          <td>0.288325</td>
+          <td>27.001835</td>
+          <td>0.521963</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.018021</td>
-          <td>28.267686</td>
-          <td>1.232677</td>
-          <td>26.988308</td>
-          <td>0.209710</td>
-          <td>26.870200</td>
-          <td>0.168048</td>
-          <td>26.293306</td>
-          <td>0.164742</td>
-          <td>25.498548</td>
-          <td>0.156264</td>
-          <td>25.048256</td>
-          <td>0.232025</td>
+          <td>1.751949</td>
+          <td>27.919353</td>
+          <td>1.008960</td>
+          <td>25.954472</td>
+          <td>0.086088</td>
+          <td>25.496445</td>
+          <td>0.050463</td>
+          <td>24.900504</td>
+          <td>0.048597</td>
+          <td>24.270590</td>
+          <td>0.053261</td>
+          <td>23.881404</td>
+          <td>0.085152</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.632389</td>
-          <td>26.198423</td>
-          <td>0.297032</td>
-          <td>26.278279</td>
-          <td>0.114292</td>
-          <td>25.678773</td>
-          <td>0.059329</td>
-          <td>25.233383</td>
-          <td>0.065301</td>
-          <td>25.068103</td>
-          <td>0.107671</td>
-          <td>25.545583</td>
-          <td>0.346958</td>
+          <td>0.478461</td>
+          <td>27.142777</td>
+          <td>0.607556</td>
+          <td>27.380647</td>
+          <td>0.289556</td>
+          <td>25.807922</td>
+          <td>0.066527</td>
+          <td>25.244399</td>
+          <td>0.065941</td>
+          <td>24.948522</td>
+          <td>0.096970</td>
+          <td>25.168788</td>
+          <td>0.256251</td>
         </tr>
         <tr>
           <th>...</th>
@@ -1552,83 +1556,83 @@ data set as is our goal.
         </tr>
         <tr>
           <th>595</th>
-          <td>1.511651</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.810852</td>
-          <td>0.406459</td>
-          <td>27.415500</td>
-          <td>0.264987</td>
-          <td>27.085513</td>
-          <td>0.317422</td>
-          <td>25.843004</td>
-          <td>0.209180</td>
-          <td>27.449550</td>
-          <td>1.253839</td>
+          <td>0.577203</td>
+          <td>28.865338</td>
+          <td>1.671480</td>
+          <td>26.842217</td>
+          <td>0.185480</td>
+          <td>25.729843</td>
+          <td>0.062078</td>
+          <td>25.313037</td>
+          <td>0.070074</td>
+          <td>24.948450</td>
+          <td>0.096964</td>
+          <td>25.564396</td>
+          <td>0.352132</td>
         </tr>
         <tr>
           <th>596</th>
-          <td>0.850231</td>
-          <td>27.009124</td>
-          <td>0.552332</td>
-          <td>27.756517</td>
-          <td>0.389795</td>
-          <td>27.153910</td>
-          <td>0.213493</td>
-          <td>26.101826</td>
-          <td>0.139793</td>
-          <td>25.496812</td>
-          <td>0.156032</td>
-          <td>25.432001</td>
-          <td>0.317072</td>
+          <td>0.405416</td>
+          <td>25.636360</td>
+          <td>0.186861</td>
+          <td>25.907552</td>
+          <td>0.082606</td>
+          <td>25.873413</td>
+          <td>0.070499</td>
+          <td>25.953150</td>
+          <td>0.122920</td>
+          <td>25.977916</td>
+          <td>0.234033</td>
+          <td>25.859538</td>
+          <td>0.442173</td>
         </tr>
         <tr>
           <th>597</th>
-          <td>0.288089</td>
-          <td>27.100459</td>
-          <td>0.589638</td>
-          <td>26.268716</td>
-          <td>0.113344</td>
-          <td>25.152618</td>
-          <td>0.037199</td>
-          <td>24.822860</td>
-          <td>0.045360</td>
-          <td>24.400083</td>
-          <td>0.059747</td>
-          <td>24.462033</td>
-          <td>0.141295</td>
+          <td>0.410133</td>
+          <td>25.673685</td>
+          <td>0.192824</td>
+          <td>24.865269</td>
+          <td>0.032888</td>
+          <td>23.971060</td>
+          <td>0.013630</td>
+          <td>23.739090</td>
+          <td>0.017672</td>
+          <td>23.530157</td>
+          <td>0.027685</td>
+          <td>23.459727</td>
+          <td>0.058640</td>
         </tr>
         <tr>
           <th>598</th>
-          <td>0.653297</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>28.324357</td>
-          <td>0.594137</td>
-          <td>26.440218</td>
-          <td>0.116014</td>
-          <td>25.802774</td>
-          <td>0.107831</td>
-          <td>25.527978</td>
-          <td>0.160247</td>
-          <td>25.116330</td>
-          <td>0.245443</td>
+          <td>0.299733</td>
+          <td>29.113775</td>
+          <td>1.871178</td>
+          <td>27.213368</td>
+          <td>0.252691</td>
+          <td>26.316164</td>
+          <td>0.104110</td>
+          <td>26.612522</td>
+          <td>0.215678</td>
+          <td>26.338080</td>
+          <td>0.313754</td>
+          <td>25.960055</td>
+          <td>0.476829</td>
         </tr>
         <tr>
           <th>599</th>
-          <td>0.963349</td>
-          <td>32.428109</td>
-          <td>4.983029</td>
-          <td>26.777304</td>
-          <td>0.175562</td>
-          <td>26.496116</td>
-          <td>0.121793</td>
-          <td>25.692422</td>
-          <td>0.097903</td>
-          <td>25.479200</td>
-          <td>0.153696</td>
-          <td>25.310582</td>
-          <td>0.287605</td>
+          <td>0.218481</td>
+          <td>26.985461</td>
+          <td>0.542968</td>
+          <td>25.646029</td>
+          <td>0.065578</td>
+          <td>25.393283</td>
+          <td>0.046046</td>
+          <td>25.145220</td>
+          <td>0.060390</td>
+          <td>25.325217</td>
+          <td>0.134623</td>
+          <td>25.398899</td>
+          <td>0.308790</td>
         </tr>
       </tbody>
     </table>
@@ -1786,88 +1790,88 @@ dataset at the same length:
       <tbody>
         <tr>
           <th>0</th>
-          <td>1</td>
-          <td>0.253092</td>
-          <td>26.113820</td>
-          <td>0.277420</td>
-          <td>25.452406</td>
-          <td>0.055248</td>
-          <td>24.764484</td>
-          <td>0.026446</td>
-          <td>24.547853</td>
-          <td>0.035551</td>
-          <td>24.405074</td>
-          <td>0.060012</td>
-          <td>24.485035</td>
-          <td>0.144121</td>
+          <td>0</td>
+          <td>0.710979</td>
+          <td>26.762862</td>
+          <td>0.460818</td>
+          <td>26.802089</td>
+          <td>0.179290</td>
+          <td>26.148865</td>
+          <td>0.089899</td>
+          <td>25.530220</td>
+          <td>0.084893</td>
+          <td>25.525601</td>
+          <td>0.159922</td>
+          <td>25.866070</td>
+          <td>0.444362</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0</td>
-          <td>1.218356</td>
-          <td>27.211861</td>
-          <td>0.637675</td>
-          <td>26.849462</td>
-          <td>0.186618</td>
-          <td>26.323622</td>
-          <td>0.104791</td>
-          <td>25.962856</td>
-          <td>0.123960</td>
-          <td>25.353204</td>
-          <td>0.137915</td>
-          <td>25.103264</td>
-          <td>0.242815</td>
+          <td>1</td>
+          <td>0.684234</td>
+          <td>23.210656</td>
+          <td>0.022756</td>
+          <td>22.488883</td>
+          <td>0.006382</td>
+          <td>21.626449</td>
+          <td>0.005261</td>
+          <td>20.815851</td>
+          <td>0.005173</td>
+          <td>20.562635</td>
+          <td>0.005376</td>
+          <td>20.348689</td>
+          <td>0.006163</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1</td>
-          <td>0.457460</td>
-          <td>26.202677</td>
-          <td>0.298050</td>
-          <td>25.819786</td>
-          <td>0.076458</td>
-          <td>24.684006</td>
-          <td>0.024660</td>
-          <td>24.354272</td>
-          <td>0.029976</td>
-          <td>24.122647</td>
-          <td>0.046705</td>
-          <td>24.020353</td>
-          <td>0.096216</td>
+          <td>0</td>
+          <td>0.249871</td>
+          <td>27.112190</td>
+          <td>0.594565</td>
+          <td>28.039316</td>
+          <td>0.483038</td>
+          <td>26.920252</td>
+          <td>0.175355</td>
+          <td>26.965811</td>
+          <td>0.288325</td>
+          <td>27.001835</td>
+          <td>0.521963</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0</td>
-          <td>1.018021</td>
-          <td>28.267686</td>
-          <td>1.232677</td>
-          <td>26.988308</td>
-          <td>0.209710</td>
-          <td>26.870200</td>
-          <td>0.168048</td>
-          <td>26.293306</td>
-          <td>0.164742</td>
-          <td>25.498548</td>
-          <td>0.156264</td>
-          <td>25.048256</td>
-          <td>0.232025</td>
+          <td>1</td>
+          <td>1.751949</td>
+          <td>27.919353</td>
+          <td>1.008960</td>
+          <td>25.954472</td>
+          <td>0.086088</td>
+          <td>25.496445</td>
+          <td>0.050463</td>
+          <td>24.900504</td>
+          <td>0.048597</td>
+          <td>24.270590</td>
+          <td>0.053261</td>
+          <td>23.881404</td>
+          <td>0.085152</td>
         </tr>
         <tr>
           <th>4</th>
           <td>0</td>
-          <td>0.632389</td>
-          <td>26.198423</td>
-          <td>0.297032</td>
-          <td>26.278279</td>
-          <td>0.114292</td>
-          <td>25.678773</td>
-          <td>0.059329</td>
-          <td>25.233383</td>
-          <td>0.065301</td>
-          <td>25.068103</td>
-          <td>0.107671</td>
-          <td>25.545583</td>
-          <td>0.346958</td>
+          <td>0.478461</td>
+          <td>27.142777</td>
+          <td>0.607556</td>
+          <td>27.380647</td>
+          <td>0.289556</td>
+          <td>25.807922</td>
+          <td>0.066527</td>
+          <td>25.244399</td>
+          <td>0.065941</td>
+          <td>24.948522</td>
+          <td>0.096970</td>
+          <td>25.168788</td>
+          <td>0.256251</td>
         </tr>
         <tr>
           <th>...</th>
@@ -1889,87 +1893,87 @@ dataset at the same length:
         <tr>
           <th>595</th>
           <td>0</td>
-          <td>1.511651</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>27.810852</td>
-          <td>0.406459</td>
-          <td>27.415500</td>
-          <td>0.264987</td>
-          <td>27.085513</td>
-          <td>0.317422</td>
-          <td>25.843004</td>
-          <td>0.209180</td>
-          <td>27.449550</td>
-          <td>1.253839</td>
+          <td>0.577203</td>
+          <td>28.865338</td>
+          <td>1.671480</td>
+          <td>26.842217</td>
+          <td>0.185480</td>
+          <td>25.729843</td>
+          <td>0.062078</td>
+          <td>25.313037</td>
+          <td>0.070074</td>
+          <td>24.948450</td>
+          <td>0.096964</td>
+          <td>25.564396</td>
+          <td>0.352132</td>
         </tr>
         <tr>
           <th>596</th>
           <td>0</td>
-          <td>0.850231</td>
-          <td>27.009124</td>
-          <td>0.552332</td>
-          <td>27.756517</td>
-          <td>0.389795</td>
-          <td>27.153910</td>
-          <td>0.213493</td>
-          <td>26.101826</td>
-          <td>0.139793</td>
-          <td>25.496812</td>
-          <td>0.156032</td>
-          <td>25.432001</td>
-          <td>0.317072</td>
+          <td>0.405416</td>
+          <td>25.636360</td>
+          <td>0.186861</td>
+          <td>25.907552</td>
+          <td>0.082606</td>
+          <td>25.873413</td>
+          <td>0.070499</td>
+          <td>25.953150</td>
+          <td>0.122920</td>
+          <td>25.977916</td>
+          <td>0.234033</td>
+          <td>25.859538</td>
+          <td>0.442173</td>
         </tr>
         <tr>
           <th>597</th>
           <td>1</td>
-          <td>0.288089</td>
-          <td>27.100459</td>
-          <td>0.589638</td>
-          <td>26.268716</td>
-          <td>0.113344</td>
-          <td>25.152618</td>
-          <td>0.037199</td>
-          <td>24.822860</td>
-          <td>0.045360</td>
-          <td>24.400083</td>
-          <td>0.059747</td>
-          <td>24.462033</td>
-          <td>0.141295</td>
+          <td>0.410133</td>
+          <td>25.673685</td>
+          <td>0.192824</td>
+          <td>24.865269</td>
+          <td>0.032888</td>
+          <td>23.971060</td>
+          <td>0.013630</td>
+          <td>23.739090</td>
+          <td>0.017672</td>
+          <td>23.530157</td>
+          <td>0.027685</td>
+          <td>23.459727</td>
+          <td>0.058640</td>
         </tr>
         <tr>
           <th>598</th>
           <td>0</td>
-          <td>0.653297</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>28.324357</td>
-          <td>0.594137</td>
-          <td>26.440218</td>
-          <td>0.116014</td>
-          <td>25.802774</td>
-          <td>0.107831</td>
-          <td>25.527978</td>
-          <td>0.160247</td>
-          <td>25.116330</td>
-          <td>0.245443</td>
+          <td>0.299733</td>
+          <td>29.113775</td>
+          <td>1.871178</td>
+          <td>27.213368</td>
+          <td>0.252691</td>
+          <td>26.316164</td>
+          <td>0.104110</td>
+          <td>26.612522</td>
+          <td>0.215678</td>
+          <td>26.338080</td>
+          <td>0.313754</td>
+          <td>25.960055</td>
+          <td>0.476829</td>
         </tr>
         <tr>
           <th>599</th>
           <td>0</td>
-          <td>1.637641</td>
-          <td>32.428109</td>
-          <td>4.983029</td>
-          <td>26.777304</td>
-          <td>0.175562</td>
-          <td>26.496116</td>
-          <td>0.121793</td>
-          <td>25.692422</td>
-          <td>0.097903</td>
-          <td>25.479200</td>
-          <td>0.153696</td>
-          <td>25.310582</td>
-          <td>0.287605</td>
+          <td>0.636955</td>
+          <td>26.985461</td>
+          <td>0.542968</td>
+          <td>25.646029</td>
+          <td>0.065578</td>
+          <td>25.393283</td>
+          <td>0.046046</td>
+          <td>25.145220</td>
+          <td>0.060390</td>
+          <td>25.325217</td>
+          <td>0.134623</td>
+          <td>25.398899</td>
+          <td>0.308790</td>
         </tr>
       </tbody>
     </table>
@@ -2171,83 +2175,83 @@ these arrays
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.253092</td>
-          <td>26.113820</td>
-          <td>0.277420</td>
-          <td>25.452406</td>
-          <td>0.055248</td>
-          <td>24.764484</td>
-          <td>0.026446</td>
-          <td>24.547853</td>
-          <td>0.035551</td>
-          <td>24.405074</td>
-          <td>0.060012</td>
-          <td>24.485035</td>
-          <td>0.144121</td>
+          <td>0.684234</td>
+          <td>23.210656</td>
+          <td>0.022756</td>
+          <td>22.488883</td>
+          <td>0.006382</td>
+          <td>21.626449</td>
+          <td>0.005261</td>
+          <td>20.815851</td>
+          <td>0.005173</td>
+          <td>20.562635</td>
+          <td>0.005376</td>
+          <td>20.348689</td>
+          <td>0.006163</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.457460</td>
-          <td>26.202677</td>
-          <td>0.298050</td>
-          <td>25.819786</td>
-          <td>0.076458</td>
-          <td>24.684006</td>
-          <td>0.024660</td>
-          <td>24.354272</td>
-          <td>0.029976</td>
-          <td>24.122647</td>
-          <td>0.046705</td>
-          <td>24.020353</td>
-          <td>0.096216</td>
+          <td>1.751949</td>
+          <td>27.919353</td>
+          <td>1.008960</td>
+          <td>25.954472</td>
+          <td>0.086088</td>
+          <td>25.496445</td>
+          <td>0.050463</td>
+          <td>24.900504</td>
+          <td>0.048597</td>
+          <td>24.270590</td>
+          <td>0.053261</td>
+          <td>23.881404</td>
+          <td>0.085152</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.195513</td>
-          <td>21.982291</td>
-          <td>0.009138</td>
-          <td>20.884207</td>
-          <td>0.005123</td>
-          <td>20.006312</td>
-          <td>0.005024</td>
-          <td>19.617867</td>
-          <td>0.005029</td>
-          <td>19.292390</td>
-          <td>0.005053</td>
-          <td>19.153310</td>
-          <td>0.005173</td>
+          <td>0.334738</td>
+          <td>22.874410</td>
+          <td>0.017247</td>
+          <td>22.589696</td>
+          <td>0.006609</td>
+          <td>22.079401</td>
+          <td>0.005541</td>
+          <td>22.081291</td>
+          <td>0.006311</td>
+          <td>21.733536</td>
+          <td>0.007373</td>
+          <td>21.967633</td>
+          <td>0.016030</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.648485</td>
-          <td>25.452218</td>
-          <td>0.159858</td>
-          <td>25.105943</td>
-          <td>0.040656</td>
-          <td>24.316884</td>
-          <td>0.018035</td>
-          <td>23.681232</td>
-          <td>0.016845</td>
-          <td>23.584093</td>
-          <td>0.029023</td>
-          <td>23.392849</td>
-          <td>0.055261</td>
+          <td>0.508261</td>
+          <td>28.081741</td>
+          <td>1.110059</td>
+          <td>26.276645</td>
+          <td>0.114130</td>
+          <td>25.395028</td>
+          <td>0.046117</td>
+          <td>24.961183</td>
+          <td>0.051288</td>
+          <td>24.863762</td>
+          <td>0.090014</td>
+          <td>24.410283</td>
+          <td>0.135127</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.942750</td>
-          <td>23.540863</td>
-          <td>0.030169</td>
-          <td>23.677898</td>
-          <td>0.012271</td>
-          <td>23.944262</td>
-          <td>0.013349</td>
-          <td>23.778484</td>
-          <td>0.018262</td>
-          <td>23.703332</td>
-          <td>0.032227</td>
-          <td>23.594741</td>
-          <td>0.066097</td>
+          <td>0.202286</td>
+          <td>25.221688</td>
+          <td>0.131189</td>
+          <td>24.293276</td>
+          <td>0.020071</td>
+          <td>23.534810</td>
+          <td>0.009916</td>
+          <td>23.200063</td>
+          <td>0.011558</td>
+          <td>22.954672</td>
+          <td>0.016944</td>
+          <td>22.812649</td>
+          <td>0.033050</td>
         </tr>
         <tr>
           <th>...</th>
@@ -2266,88 +2270,88 @@ these arrays
           <td>...</td>
         </tr>
         <tr>
+          <th>230</th>
+          <td>0.498327</td>
+          <td>25.262660</td>
+          <td>0.135901</td>
+          <td>24.728088</td>
+          <td>0.029166</td>
+          <td>23.968463</td>
+          <td>0.013603</td>
+          <td>23.650719</td>
+          <td>0.016428</td>
+          <td>23.688417</td>
+          <td>0.031807</td>
+          <td>23.429337</td>
+          <td>0.057080</td>
+        </tr>
+        <tr>
+          <th>231</th>
+          <td>0.351069</td>
+          <td>25.236311</td>
+          <td>0.132853</td>
+          <td>23.537328</td>
+          <td>0.011081</td>
+          <td>22.117558</td>
+          <td>0.005575</td>
+          <td>21.565970</td>
+          <td>0.005575</td>
+          <td>21.224826</td>
+          <td>0.006085</td>
+          <td>21.011602</td>
+          <td>0.008167</td>
+        </tr>
+        <tr>
+          <th>232</th>
+          <td>0.631504</td>
+          <td>27.523146</td>
+          <td>0.786924</td>
+          <td>25.309303</td>
+          <td>0.048671</td>
+          <td>23.763543</td>
+          <td>0.011646</td>
+          <td>22.631465</td>
+          <td>0.008012</td>
+          <td>22.201093</td>
+          <td>0.009619</td>
+          <td>21.919523</td>
+          <td>0.015417</td>
+        </tr>
+        <tr>
+          <th>233</th>
+          <td>1.020108</td>
+          <td>24.253126</td>
+          <td>0.056253</td>
+          <td>23.911289</td>
+          <td>0.014679</td>
+          <td>23.228338</td>
+          <td>0.008209</td>
+          <td>22.512949</td>
+          <td>0.007533</td>
+          <td>21.869678</td>
+          <td>0.007898</td>
+          <td>21.642636</td>
+          <td>0.012414</td>
+        </tr>
+        <tr>
           <th>234</th>
-          <td>1.244255</td>
-          <td>27.844785</td>
-          <td>0.964468</td>
-          <td>26.848555</td>
-          <td>0.186476</td>
-          <td>25.308613</td>
-          <td>0.042713</td>
-          <td>23.750076</td>
-          <td>0.017834</td>
-          <td>23.024036</td>
-          <td>0.017947</td>
-          <td>22.128198</td>
-          <td>0.018303</td>
-        </tr>
-        <tr>
-          <th>235</th>
-          <td>0.504704</td>
-          <td>26.356614</td>
-          <td>0.336957</td>
-          <td>25.884224</td>
-          <td>0.080926</td>
-          <td>24.939187</td>
-          <td>0.030816</td>
-          <td>24.631691</td>
-          <td>0.038287</td>
-          <td>24.399247</td>
-          <td>0.059703</td>
-          <td>24.425756</td>
-          <td>0.136944</td>
-        </tr>
-        <tr>
-          <th>236</th>
-          <td>0.921385</td>
-          <td>24.921151</td>
-          <td>0.101090</td>
-          <td>24.631261</td>
-          <td>0.026809</td>
-          <td>24.169269</td>
-          <td>0.015967</td>
-          <td>23.486935</td>
-          <td>0.014393</td>
-          <td>23.120676</td>
-          <td>0.019462</td>
-          <td>23.105292</td>
-          <td>0.042813</td>
-        </tr>
-        <tr>
-          <th>237</th>
-          <td>1.458479</td>
-          <td>25.413091</td>
-          <td>0.154609</td>
-          <td>25.223376</td>
-          <td>0.045106</td>
-          <td>25.026307</td>
-          <td>0.033272</td>
-          <td>24.668853</td>
-          <td>0.039569</td>
-          <td>24.329108</td>
-          <td>0.056100</td>
-          <td>23.804434</td>
-          <td>0.079565</td>
-        </tr>
-        <tr>
-          <th>238</th>
-          <td>0.288089</td>
-          <td>27.100459</td>
-          <td>0.589638</td>
-          <td>26.268716</td>
-          <td>0.113344</td>
-          <td>25.152618</td>
-          <td>0.037199</td>
-          <td>24.822860</td>
-          <td>0.045360</td>
-          <td>24.400083</td>
-          <td>0.059747</td>
-          <td>24.462033</td>
-          <td>0.141295</td>
+          <td>0.410133</td>
+          <td>25.673685</td>
+          <td>0.192824</td>
+          <td>24.865269</td>
+          <td>0.032888</td>
+          <td>23.971060</td>
+          <td>0.013630</td>
+          <td>23.739090</td>
+          <td>0.017672</td>
+          <td>23.530157</td>
+          <td>0.027685</td>
+          <td>23.459727</td>
+          <td>0.058640</td>
         </tr>
       </tbody>
     </table>
-    <p>239 rows × 13 columns</p>
+    <p>235 rows × 13 columns</p>
     </div>
 
 
@@ -2396,53 +2400,53 @@ these arrays
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.253092</td>
-          <td>26.299827</td>
-          <td>25.422216</td>
-          <td>24.751366</td>
-          <td>24.510188</td>
-          <td>24.326134</td>
-          <td>24.268778</td>
+          <td>0.684234</td>
+          <td>23.222248</td>
+          <td>22.496042</td>
+          <td>21.628773</td>
+          <td>20.817329</td>
+          <td>20.564213</td>
+          <td>20.347912</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.457460</td>
-          <td>26.601035</td>
-          <td>25.759947</td>
-          <td>24.711040</td>
-          <td>24.349515</td>
-          <td>24.120014</td>
-          <td>23.903554</td>
+          <td>1.751949</td>
+          <td>28.061226</td>
+          <td>26.201729</td>
+          <td>25.492706</td>
+          <td>24.880798</td>
+          <td>24.292238</td>
+          <td>23.972845</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.195513</td>
-          <td>21.985338</td>
-          <td>20.884806</td>
-          <td>20.012474</td>
-          <td>19.618118</td>
-          <td>19.291399</td>
-          <td>19.150343</td>
+          <td>0.334738</td>
+          <td>22.901604</td>
+          <td>22.585258</td>
+          <td>22.078140</td>
+          <td>22.091541</td>
+          <td>21.725985</td>
+          <td>21.967663</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.648485</td>
-          <td>25.744319</td>
-          <td>25.133746</td>
-          <td>24.297711</td>
-          <td>23.678938</td>
-          <td>23.540052</td>
-          <td>23.398750</td>
+          <td>0.508261</td>
+          <td>27.219675</td>
+          <td>26.349281</td>
+          <td>25.363613</td>
+          <td>24.975111</td>
+          <td>24.789568</td>
+          <td>24.562302</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.942750</td>
-          <td>23.543277</td>
-          <td>23.671578</td>
-          <td>23.943572</td>
-          <td>23.780021</td>
-          <td>23.708045</td>
-          <td>23.638526</td>
+          <td>0.202286</td>
+          <td>25.150200</td>
+          <td>24.267548</td>
+          <td>23.537415</td>
+          <td>23.175728</td>
+          <td>22.982109</td>
+          <td>22.828064</td>
         </tr>
         <tr>
           <th>...</th>
@@ -2455,58 +2459,58 @@ these arrays
           <td>...</td>
         </tr>
         <tr>
+          <th>230</th>
+          <td>0.498327</td>
+          <td>25.256531</td>
+          <td>24.734894</td>
+          <td>23.983690</td>
+          <td>23.683472</td>
+          <td>23.646606</td>
+          <td>23.460381</td>
+        </tr>
+        <tr>
+          <th>231</th>
+          <td>0.351069</td>
+          <td>25.185009</td>
+          <td>23.521603</td>
+          <td>22.113777</td>
+          <td>21.557377</td>
+          <td>21.228889</td>
+          <td>21.010700</td>
+        </tr>
+        <tr>
+          <th>232</th>
+          <td>0.631504</td>
+          <td>27.546143</td>
+          <td>25.364649</td>
+          <td>23.775986</td>
+          <td>22.639019</td>
+          <td>22.233021</td>
+          <td>21.900209</td>
+        </tr>
+        <tr>
+          <th>233</th>
+          <td>1.020108</td>
+          <td>24.216951</td>
+          <td>23.881901</td>
+          <td>23.230240</td>
+          <td>22.513334</td>
+          <td>21.873619</td>
+          <td>21.645157</td>
+        </tr>
+        <tr>
           <th>234</th>
-          <td>1.244255</td>
-          <td>27.780749</td>
-          <td>26.896284</td>
-          <td>25.357902</td>
-          <td>23.785710</td>
-          <td>23.000380</td>
-          <td>22.137876</td>
-        </tr>
-        <tr>
-          <th>235</th>
-          <td>0.504704</td>
-          <td>26.476533</td>
-          <td>25.818029</td>
-          <td>24.951983</td>
-          <td>24.587840</td>
-          <td>24.456913</td>
-          <td>24.290639</td>
-        </tr>
-        <tr>
-          <th>236</th>
-          <td>0.921385</td>
-          <td>24.923239</td>
-          <td>24.661077</td>
-          <td>24.186410</td>
-          <td>23.500600</td>
-          <td>23.186857</td>
-          <td>23.051891</td>
-        </tr>
-        <tr>
-          <th>237</th>
-          <td>1.458479</td>
-          <td>25.312094</td>
-          <td>25.134476</td>
-          <td>25.034131</td>
-          <td>24.670910</td>
-          <td>24.358104</td>
-          <td>23.821220</td>
-        </tr>
-        <tr>
-          <th>238</th>
-          <td>0.288089</td>
-          <td>28.011370</td>
-          <td>26.364248</td>
-          <td>25.201337</td>
-          <td>24.789670</td>
-          <td>24.479188</td>
-          <td>24.394670</td>
+          <td>0.410133</td>
+          <td>25.853966</td>
+          <td>24.891123</td>
+          <td>23.988443</td>
+          <td>23.726196</td>
+          <td>23.565538</td>
+          <td>23.432323</td>
         </tr>
       </tbody>
     </table>
-    <p>239 rows × 7 columns</p>
+    <p>235 rows × 7 columns</p>
     </div>
 
 
@@ -2588,7 +2592,7 @@ calibration set:
     
     
     
-    best fit values are sigma=0.075 and numneigh=7
+    best fit values are sigma=0.06777777777777778 and numneigh=7
     
     
     
@@ -2603,28 +2607,13 @@ calibration set:
     
     
     
-    best fit values are sigma=0.075 and numneigh=7
-    
-    
-    
-    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
-    Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 387 training and 129 validation samples
-    finding best fit sigma and NNeigh...
-
-
-.. parsed-literal::
-
-    
-    
-    
     best fit values are sigma=0.06777777777777778 and numneigh=7
     
     
     
     Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
     Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 205 training and 68 validation samples
+    split into 386 training and 128 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -2633,7 +2622,22 @@ calibration set:
     
     
     
-    best fit values are sigma=0.060555555555555564 and numneigh=5
+    best fit values are sigma=0.075 and numneigh=4
+    
+    
+    
+    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
+    Inserting handle into data store.  input: None, KNearNeighInformer
+    split into 191 training and 64 validation samples
+    finding best fit sigma and NNeigh...
+
+
+.. parsed-literal::
+
+    
+    
+    
+    best fit values are sigma=0.075 and numneigh=3
     
     
     
@@ -2650,129 +2654,130 @@ calibration set:
 
 .. parsed-literal::
 
-    {'model': {'kdtree': <sklearn.neighbors._kd_tree.KDTree at 0x55b858830270>,
-      'bestsig': np.float64(0.075),
+    {'model': {'kdtree': <sklearn.neighbors._kd_tree.KDTree at 0x55d9fc4664e0>,
+      'bestsig': np.float64(0.06777777777777778),
       'nneigh': 7,
-      'truezs': array([0.37041432, 0.37293102, 0.88487255, 0.52292334, 2.03953677,
-             0.87234497, 0.76126104, 1.05570277, 0.82707332, 1.80441105,
-             1.53999106, 0.12391515, 1.57087809, 0.35998814, 1.41811932,
-             0.95478163, 0.68934796, 0.91649538, 0.5942983 , 1.67666558,
-             0.1069951 , 0.80340879, 0.0597787 , 1.47044913, 1.32183845,
-             0.38511439, 0.86525102, 0.22147589, 0.24250877, 0.94493754,
-             0.17459164, 0.72071548, 1.79196878, 0.55541828, 1.87090932,
-             0.24110249, 0.41205712, 0.65573633, 2.14771004, 1.90447298,
-             0.57792776, 0.21930393, 0.16078756, 1.07067442, 0.37848213,
-             0.87633134, 0.54305878, 1.96480059, 1.20550637, 1.24314938,
-             1.40815611, 0.61095275, 0.81623   , 0.80070656, 1.35846752,
-             0.64569936, 1.46429376, 0.94821588, 0.7060872 , 1.23471168,
-             0.53675906, 1.59025825, 1.53018307, 0.32093234, 0.34766946,
-             1.40681974, 0.23022548, 0.48986603, 0.67083066, 0.42528986,
-             0.32136921, 0.96169965, 0.69501522, 0.43293158, 0.27448546,
-             0.48451278, 1.34559633, 0.25863142, 0.37816479, 0.45382018,
-             0.9352864 , 2.26264713, 0.71648138, 1.95121009, 1.43077771,
-             0.39010846, 0.26591574, 0.38683119, 0.60944337, 1.01718457,
-             0.31174827, 0.20256376, 0.27340745, 1.74784388, 0.27219877,
-             1.13039967, 0.46881774, 2.28173805, 0.37659034, 0.16388779,
-             0.5471006 , 0.57744219, 0.97883987, 2.03604243, 0.38430813,
-             0.79061626, 2.3542272 , 2.13007187, 0.28551183, 0.19583922,
-             0.44504381, 1.14239357, 1.23986149, 0.55671057, 0.67168345,
-             1.47941006, 1.28694231, 0.7340028 , 2.06579841, 0.67659514,
-             0.2886045 , 1.11563839, 0.18418745, 0.31764971, 0.7782977 ,
-             2.26600962, 0.5955293 , 1.00041106, 0.67378581, 2.18696473,
-             1.81270004, 0.25544345, 0.55683388, 1.23035462, 0.29847522,
-             1.03371547, 1.1533011 , 0.83696091, 1.10274197, 1.38293526,
-             0.35528046, 0.86316422, 1.04067072, 0.30460806, 0.75706364,
-             0.15915409, 1.1946161 , 1.24077634, 0.558343  , 0.50841595,
-             0.77275029, 1.92888887, 0.77633249, 0.1840094 , 0.64871989,
-             1.6643454 , 2.04221819, 0.9731697 , 0.3722718 , 0.98182411,
-             0.24893009, 1.32310029, 0.83432544, 0.99531797, 2.13498616,
-             1.99359043, 0.16212456, 0.74592372, 0.94662115, 0.64986473,
-             0.66014416, 0.30986064, 0.57537337, 0.44127442, 1.6909366 ,
-             2.24292201, 1.17841071, 0.63794244, 1.39338054, 0.3073989 ,
-             0.52596522, 0.87241962, 1.06873451, 1.00731852, 0.9001608 ,
-             0.91658695, 1.38428261, 1.26202341, 0.67902157, 0.73575187,
-             1.18636612, 0.7506069 , 1.22232523, 1.11784642, 0.66025545,
-             0.19790479, 2.07002869, 0.20965462, 0.57773413, 0.7668455 ,
-             0.64513218, 0.96638853, 0.13637805, 1.44075633, 0.65313404,
-             1.24799544, 1.59093438, 2.05417744, 2.03769357, 0.94054845,
-             2.0419127 , 0.73113841, 0.62134168, 0.5921035 , 0.94436547,
-             1.33483243, 0.81186601, 0.53969416, 1.22316902, 0.42965586,
-             1.24718999, 0.39199878, 0.45386412, 0.42217735, 0.66802381,
-             2.12258843, 1.08662455, 0.5867549 , 0.87841841, 0.6913596 ,
-             1.27642006, 1.17668759, 0.5713541 , 1.17528844, 1.92230425,
-             2.24099497, 1.9267174 , 0.33445798, 0.28702381, 0.1153327 ,
-             0.41562929, 2.06312174, 0.33878741, 1.98764758, 1.27990046,
-             1.02613143, 0.26337241, 1.20867513, 0.45349892, 1.78213981,
-             0.26147717, 0.31116315, 0.62057918, 0.40681918, 0.28491689,
-             1.45773683, 0.31421093, 0.40150273, 0.21598492, 1.44467906,
-             0.33797797, 0.60171564, 0.34437072, 0.4692395 , 2.18364998,
-             2.16177433, 0.27385045, 2.2476053 , 1.63485952, 0.40015442,
-             1.0441201 , 2.11237138, 1.84551716, 1.37492165, 1.12272645,
-             0.61249862, 0.68538179, 0.75474827, 1.6286294 , 1.35665191,
-             0.7815827 , 1.81475046, 0.80393499, 2.20452817, 0.32649636,
-             0.83476509, 0.25414852, 0.57164654, 0.7611451 , 0.21181502,
-             1.7115468 , 1.06013014, 0.71508392, 1.4358756 , 1.98151547,
-             1.21995182, 0.25698465, 0.58439428, 0.43665428, 2.23849035,
-             1.22101862, 1.12547572, 0.3264024 , 0.88775161, 0.22188179,
-             0.63048339, 0.57584537, 0.30714131, 0.5080915 , 0.34901209,
-             0.41248433, 1.859149  , 0.45451513, 1.74107343, 1.03071766,
-             0.80256855, 0.62314496, 0.33514118, 1.93974125, 0.99688196,
-             2.01416419, 0.6175092 , 0.47100322, 0.66848317, 0.31383034,
-             0.18041138, 0.46086892, 1.93967529, 0.51547914, 0.90867677,
-             1.87489697, 0.53026202, 1.71188999, 1.74225271, 0.96428554,
-             2.01707386, 0.14185144, 1.19456477, 0.13764871, 1.85591247,
-             1.46801669, 0.85681032, 0.2510978 , 0.56623433, 2.00904165,
-             1.14107084, 0.42261345, 1.59366072, 2.0581619 , 1.11146046,
-             0.61518367, 0.51218447, 1.78340455, 0.29554345, 2.19727899,
-             0.72082659, 0.92784521, 1.94351174, 0.86604333, 0.22073224,
-             1.51823318, 0.28729589, 0.33548783, 1.94062552, 1.02268639,
-             1.6324964 , 0.74646899, 1.6968113 , 0.95593257, 0.94939824,
-             0.69893777, 0.61217103, 0.64846932, 0.33770378, 1.06444164,
-             0.30828913, 1.41316667, 1.0183233 , 0.44256734, 0.97942663,
-             1.78561395, 0.52125053, 0.58736021, 0.17100162, 0.70027174,
-             0.1952387 , 1.06513327, 0.78505558, 0.6229917 , 1.86646689,
-             0.50536946, 0.26598804, 0.6502244 , 1.77566263, 0.50257933,
-             0.29070757, 1.56682548, 0.88838554, 0.57938561, 0.50109589,
-             0.21647805, 0.41736201, 0.86444241, 0.91822494, 1.03269703,
-             0.66239364, 0.69994883, 0.52728323, 1.36387164, 0.37919392,
-             1.91755206, 1.29074934, 0.44886388, 2.1750625 , 0.55836264,
-             1.2867997 , 0.74759611, 0.80593548, 0.32569463, 0.75986569,
-             0.26679856, 0.16248547, 0.30017034, 0.3706527 , 0.2916197 ,
-             1.41485667, 0.59213631, 1.29344257, 0.93727487, 0.69417891,
-             0.53194014, 1.08505018, 1.29900456, 0.62340054, 1.12360529,
-             0.93814818, 0.66207597, 1.18392794, 0.91878978, 1.19742511,
-             1.94155261, 0.92770948, 0.2488312 , 0.67239351, 0.31780791,
-             1.5332564 , 2.16704369, 0.5260346 , 0.51294641, 1.68879268,
-             2.18331092, 1.89371167, 0.60328257, 1.18209235, 0.65613956,
-             0.65901606, 0.68728589, 1.50322734, 1.03081485, 0.59584266,
-             0.80842544, 0.26618317, 0.67361356, 0.54109472, 1.318252  ,
-             0.19159987, 1.38913319, 0.26994828, 1.74337591, 2.24300465,
-             0.52955756, 1.77868642, 0.53752053, 1.75327534, 0.36349917,
-             0.81680722, 1.91870544, 1.71730975, 0.52112846, 2.16741537,
-             0.42438111, 0.24602613, 2.2058349 , 0.48769609, 0.73039044,
-             1.14668749, 1.9215205 , 1.05815144, 0.56980693, 0.31640424,
-             2.12766914, 1.45410015, 1.6595357 , 0.70295834, 1.46113419,
-             0.21371677, 0.84380564, 0.88929152, 0.4744537 , 1.24382177,
-             0.27265633, 0.93382634, 0.33391198, 1.54085463, 0.88388153,
-             0.24947914, 1.79498167, 0.36511825, 0.82997741, 1.36797273,
-             0.66084904, 1.14194883, 1.05432853, 0.29156086, 1.02254873,
-             1.73632411, 1.61913334, 1.23097105, 0.24139945, 0.98402699,
-             0.38808115, 0.85883242, 0.95947576, 1.98511095, 1.42311064,
-             0.99217939, 1.10438874, 1.23509096, 1.89756933, 1.82934694,
-             0.10629652, 1.00956107, 0.4936057 , 2.08364915, 2.17785699,
-             1.72616312, 0.73431324, 0.32007488, 1.10794078, 0.64613734,
-             1.70957447, 0.63747603, 1.02942876, 0.60175925, 0.42255361,
-             0.61910594, 1.10044884, 0.51699976, 0.25421487, 2.20995799,
-             1.78535162, 0.80301364, 0.56365274, 0.51552689, 1.68469112,
-             1.18826736, 0.79071026, 0.21497337, 0.8160969 , 0.96428346,
-             1.16410961, 1.42977865, 1.9621368 , 0.52218138, 2.01333222,
-             0.54655271, 1.44706587, 0.99190247, 1.01350631, 0.69746209,
-             0.34709097, 0.62514374, 0.37161624, 0.57771138, 1.09652679,
-             1.47064226, 1.08068793, 0.57647119, 0.38762443, 0.4724725 ,
-             2.06848791, 0.138305  , 0.30187062, 0.68216778, 0.95319077,
-             0.47097486, 2.10011824, 0.72064545, 1.1371776 , 0.73308297,
-             1.16363459, 0.6771987 , 1.95065524, 1.20645717, 0.82965135,
-             0.96641986, 1.70978676, 1.78605401, 0.86690129, 0.23487104]),
+      'truezs': array([1.4333429 , 1.3237551 , 0.8702599 , 1.7939827 , 1.2945056 ,
+             1.1320935 , 1.1123738 , 0.14820874, 1.7649848 , 0.13836348,
+             0.5463327 , 0.33181095, 0.45686185, 0.7568008 , 1.8688486 ,
+             0.51444894, 1.1470054 , 0.56240654, 0.77783823, 0.47601438,
+             0.8391931 , 0.9542949 , 0.52233857, 2.049638  , 0.9337821 ,
+             1.5828538 , 1.1982977 , 0.5996851 , 0.34287202, 1.302322  ,
+             0.5765392 , 0.5861906 , 0.9636896 , 1.3210725 , 0.29344237,
+             1.5826114 , 2.2057626 , 0.73928225, 1.2017496 , 0.29615378,
+             1.1129823 , 0.285105  , 0.9201316 , 0.7032695 , 1.9016705 ,
+             0.19354403, 1.4168835 , 0.73398304, 1.1979619 , 1.232079  ,
+             0.5940706 , 1.5156059 , 1.9105101 , 0.2790072 , 1.4457306 ,
+             1.5527472 , 0.41600168, 0.9682647 , 0.5611768 , 2.1933482 ,
+             1.3341204 , 1.3705808 , 1.7518663 , 0.59243715, 0.52366143,
+             0.5632213 , 1.650192  , 0.5890905 , 1.5205675 , 1.0699294 ,
+             0.73326874, 1.835554  , 1.7176813 , 1.743949  , 0.9451206 ,
+             0.08180296, 0.49115348, 1.4235613 , 1.1388881 , 0.38673675,
+             1.1898067 , 1.0973556 , 0.8509266 , 0.67183864, 0.8128478 ,
+             1.3921927 , 1.4698129 , 0.72021025, 1.3031769 , 0.32609248,
+             1.210638  , 0.42013288, 2.242836  , 1.3876585 , 0.78741646,
+             0.29916453, 2.1097922 , 1.3746064 , 0.26279032, 0.3636477 ,
+             0.3132515 , 2.2058485 , 0.98319566, 0.5067608 , 1.0027157 ,
+             0.849437  , 1.4602329 , 1.3697542 , 1.2450745 , 2.1913164 ,
+             1.6064138 , 0.93563014, 1.1443644 , 0.33537817, 0.8218638 ,
+             0.70383537, 0.90621483, 1.2114272 , 1.0715214 , 0.9545132 ,
+             1.065865  , 1.2047305 , 0.45711076, 0.66132927, 0.31336808,
+             0.17441905, 2.043468  , 0.17591262, 0.30481195, 0.470649  ,
+             0.7549343 , 0.43365705, 1.1348412 , 2.1660342 , 0.6524892 ,
+             0.8562118 , 0.14503407, 0.47894454, 2.1233435 , 1.7707397 ,
+             0.21947038, 2.0594726 , 2.201642  , 1.4173121 , 0.5161568 ,
+             0.8191002 , 2.1764154 , 0.65915453, 0.30754578, 1.3682023 ,
+             0.13578796, 1.7152648 , 1.2880605 , 1.4056685 , 0.24158561,
+             0.28185225, 0.7170991 , 1.9746878 , 0.32469094, 0.4641285 ,
+             2.1328204 , 0.7931153 , 0.71383107, 2.0965385 , 0.2099607 ,
+             1.1762638 , 0.35085678, 0.37228823, 1.5243781 , 1.7920742 ,
+             1.768083  , 2.241077  , 0.6705948 , 1.2002186 , 1.842099  ,
+             0.87937343, 0.29588675, 0.9430428 , 0.900398  , 1.7555468 ,
+             0.72097045, 1.2434773 , 1.4596146 , 1.3867974 , 1.0127914 ,
+             0.21674824, 1.9922367 , 2.217565  , 0.4885862 , 1.1067638 ,
+             0.6340991 , 1.6274004 , 1.7903895 , 2.2525907 , 1.1592224 ,
+             0.6944686 , 0.6926007 , 0.9301318 , 0.16400123, 0.9422506 ,
+             1.0048239 , 1.2398766 , 1.9664532 , 0.7971904 , 1.1084152 ,
+             0.3231094 , 0.8011063 , 0.16412175, 1.3823427 , 0.3111242 ,
+             0.66980475, 2.1324353 , 0.36510038, 0.42826843, 0.06771374,
+             1.0254345 , 0.90034324, 1.0493418 , 0.14361739, 0.17504692,
+             1.0162743 , 1.7410797 , 0.5967882 , 0.95617354, 0.7685839 ,
+             1.572384  , 0.9912834 , 1.8263315 , 2.157621  , 0.3042667 ,
+             0.5038768 , 1.7457547 , 2.29274   , 0.483999  , 1.3042163 ,
+             0.17721963, 0.37443542, 2.2124104 , 0.707572  , 1.8924183 ,
+             1.1780736 , 0.19370699, 1.0474126 , 0.29545975, 1.4300001 ,
+             0.44004273, 0.9724295 , 0.9186385 , 0.17414916, 0.63105214,
+             1.7826929 , 0.6058014 , 2.2586625 , 0.83745164, 0.2669332 ,
+             1.1646124 , 0.975093  , 2.257729  , 0.4385332 , 0.4218998 ,
+             0.30188823, 2.0057054 , 0.26030195, 2.2154443 , 0.89930093,
+             1.7500795 , 1.3424792 , 0.48091793, 0.5691763 , 0.8420398 ,
+             1.2838188 , 1.7509391 , 0.40002012, 1.4081954 , 0.72034645,
+             2.2843187 , 0.57547367, 0.30207837, 1.3668653 , 1.80824   ,
+             0.6391039 , 0.40295982, 0.7391731 , 0.7412892 , 2.1955771 ,
+             0.3370936 , 0.9087808 , 0.38845444, 0.30060232, 0.475186  ,
+             0.5246581 , 0.5085225 , 1.1101241 , 1.1015421 , 0.1892674 ,
+             0.5671846 , 0.787998  , 0.27489257, 1.9335248 , 0.4364879 ,
+             0.7695458 , 0.9013622 , 1.2346406 , 0.32413328, 0.9574801 ,
+             0.3013389 , 0.70873785, 0.52307767, 0.27721393, 0.5818955 ,
+             2.072917  , 0.35308433, 0.55400753, 0.33471656, 0.20966005,
+             0.60201263, 0.2505467 , 1.1141411 , 0.2803557 , 1.5231757 ,
+             2.0144129 , 1.6401707 , 0.73318845, 1.0635017 , 1.200102  ,
+             0.3425616 , 0.6631957 , 0.2206223 , 1.3993084 , 0.35734427,
+             1.4942942 , 1.1615012 , 1.3075851 , 1.0389373 , 1.223887  ,
+             1.0996472 , 0.6812018 , 2.0574875 , 1.3219174 , 1.1511052 ,
+             0.34176445, 1.3045671 , 0.87984765, 0.32177424, 0.3763888 ,
+             0.8202743 , 0.29169178, 0.31402266, 0.3444091 , 0.27668357,
+             0.2959299 , 1.5235835 , 1.5358413 , 0.67979324, 0.30667782,
+             0.30161166, 1.9743047 , 2.2682843 , 1.4258395 , 0.9695651 ,
+             0.5671768 , 1.0727217 , 0.46502316, 0.34059918, 0.23844993,
+             0.81917554, 0.16491187, 2.1633694 , 1.7594773 , 0.5566076 ,
+             1.6650255 , 0.21200144, 0.45102406, 0.38877988, 1.2053446 ,
+             0.34152937, 1.5321474 , 0.29181147, 0.4799868 , 1.2575852 ,
+             2.1957371 , 0.34061432, 1.1815947 , 0.84324145, 0.31398714,
+             0.51589644, 1.3904884 , 1.5146952 , 0.98825103, 1.3888367 ,
+             1.2802653 , 0.8861996 , 0.15926027, 0.9070977 , 0.7667237 ,
+             0.7266838 , 0.14852488, 0.69021386, 0.2171812 , 0.28067517,
+             0.65013725, 0.73057395, 1.2387667 , 0.2594204 , 2.2343667 ,
+             0.6506754 , 1.7647612 , 1.5926791 , 0.47002256, 0.30704796,
+             1.5875505 , 0.5977346 , 0.30942369, 0.43926072, 1.4083784 ,
+             0.7819265 , 1.6856236 , 0.1792171 , 1.3056164 , 0.76581246,
+             0.25475788, 1.1734301 , 1.6756759 , 0.28719735, 0.22969246,
+             0.6003391 , 0.17246795, 0.82271415, 0.527624  , 0.20761871,
+             1.2142472 , 0.5452797 , 0.28257442, 0.5789856 , 0.34235108,
+             1.0498717 , 0.6847771 , 1.140883  , 0.61571866, 0.49521637,
+             0.9500967 , 1.5125798 , 0.28669   , 0.35282803, 1.7318455 ,
+             0.47037816, 2.2011223 , 0.9508046 , 0.36787045, 0.29350114,
+             0.488513  , 0.332191  , 1.3395056 , 0.2969067 , 1.338268  ,
+             2.1542578 , 0.7112359 , 0.34530675, 2.0404677 , 0.6228099 ,
+             0.1826657 , 0.09311604, 1.8493752 , 1.7863531 , 0.3320719 ,
+             1.882168  , 0.56478727, 1.2733663 , 0.30870986, 0.6073284 ,
+             0.42434287, 1.2378035 , 0.5975763 , 1.3544034 , 0.9600128 ,
+             0.9768367 , 0.34299016, 0.8634549 , 0.23797214, 0.11863601,
+             1.0072093 , 1.1916834 , 1.0649809 , 1.4154159 , 1.3555586 ,
+             1.34472   , 1.6318725 , 1.8455282 , 0.39839816, 1.6346661 ,
+             1.6372824 , 2.0320172 , 0.5530062 , 0.34578633, 1.1159678 ,
+             1.2040006 , 0.27654958, 1.1554179 , 0.7724498 , 0.5336855 ,
+             0.7548364 , 2.108087  , 0.2729175 , 0.58194035, 0.33421624,
+             0.5175764 , 0.48491   , 1.8840697 , 0.7763976 , 0.23653305,
+             0.414626  , 0.42791784, 2.0598073 , 0.43945396, 1.5376469 ,
+             0.5895858 , 1.0193623 , 0.6483196 , 1.6718389 , 0.52963954,
+             0.3067937 , 1.0020282 , 0.9428348 , 0.2929634 , 1.5957819 ,
+             1.0945596 , 1.397035  , 1.5963764 , 1.0290524 , 0.22328591,
+             0.70576704, 0.22334087, 0.8895134 , 1.913652  , 1.8872316 ,
+             1.1563677 , 0.551071  , 0.74864054, 0.19263005, 0.59278095,
+             1.7926812 , 1.5917898 , 0.891467  , 0.33411133, 2.1682367 ,
+             0.50696313, 0.25047553, 0.9364835 , 0.2743677 , 0.61948425,
+             0.29832304, 0.31371355, 1.2902012 , 1.9265969 , 1.4590098 ,
+             0.41096365, 0.2730738 , 0.48057532, 1.2671596 , 2.2282958 ,
+             0.29613948, 1.2573075 , 1.7920887 , 0.6521886 , 1.3949696 ,
+             0.20531785, 1.2290087 , 0.5943552 , 1.4014667 , 1.1682425 ,
+             0.7588887 , 2.078631  , 1.2710853 , 1.7710841 , 0.77392304,
+             1.7186058 , 0.9631001 , 1.7394538 , 0.33084118, 0.78578913,
+             0.64480174, 1.0032451 , 1.4184198 , 0.43717694, 1.0607342 ,
+             0.6782961 , 1.9529852 , 0.75885445, 0.39110053, 1.1039946 ,
+             0.9746763 , 2.2530441 , 1.4716698 , 0.33372307, 0.39481735,
+             0.74744   , 0.33060288, 1.1515912 , 0.7316464 , 1.5216072 ],
+            dtype=float32),
       'only_colors': False}}
 
 
@@ -2814,435 +2819,436 @@ in a dictionary:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55b858830270>, 'bestsig': np.float64(0.075), 'nneigh': 7, 'truezs': array([0.37041432, 0.37293102, 0.88487255, 0.52292334, 2.03953677,
-           0.87234497, 0.76126104, 1.05570277, 0.82707332, 1.80441105,
-           1.53999106, 0.12391515, 1.57087809, 0.35998814, 1.41811932,
-           0.95478163, 0.68934796, 0.91649538, 0.5942983 , 1.67666558,
-           0.1069951 , 0.80340879, 0.0597787 , 1.47044913, 1.32183845,
-           0.38511439, 0.86525102, 0.22147589, 0.24250877, 0.94493754,
-           0.17459164, 0.72071548, 1.79196878, 0.55541828, 1.87090932,
-           0.24110249, 0.41205712, 0.65573633, 2.14771004, 1.90447298,
-           0.57792776, 0.21930393, 0.16078756, 1.07067442, 0.37848213,
-           0.87633134, 0.54305878, 1.96480059, 1.20550637, 1.24314938,
-           1.40815611, 0.61095275, 0.81623   , 0.80070656, 1.35846752,
-           0.64569936, 1.46429376, 0.94821588, 0.7060872 , 1.23471168,
-           0.53675906, 1.59025825, 1.53018307, 0.32093234, 0.34766946,
-           1.40681974, 0.23022548, 0.48986603, 0.67083066, 0.42528986,
-           0.32136921, 0.96169965, 0.69501522, 0.43293158, 0.27448546,
-           0.48451278, 1.34559633, 0.25863142, 0.37816479, 0.45382018,
-           0.9352864 , 2.26264713, 0.71648138, 1.95121009, 1.43077771,
-           0.39010846, 0.26591574, 0.38683119, 0.60944337, 1.01718457,
-           0.31174827, 0.20256376, 0.27340745, 1.74784388, 0.27219877,
-           1.13039967, 0.46881774, 2.28173805, 0.37659034, 0.16388779,
-           0.5471006 , 0.57744219, 0.97883987, 2.03604243, 0.38430813,
-           0.79061626, 2.3542272 , 2.13007187, 0.28551183, 0.19583922,
-           0.44504381, 1.14239357, 1.23986149, 0.55671057, 0.67168345,
-           1.47941006, 1.28694231, 0.7340028 , 2.06579841, 0.67659514,
-           0.2886045 , 1.11563839, 0.18418745, 0.31764971, 0.7782977 ,
-           2.26600962, 0.5955293 , 1.00041106, 0.67378581, 2.18696473,
-           1.81270004, 0.25544345, 0.55683388, 1.23035462, 0.29847522,
-           1.03371547, 1.1533011 , 0.83696091, 1.10274197, 1.38293526,
-           0.35528046, 0.86316422, 1.04067072, 0.30460806, 0.75706364,
-           0.15915409, 1.1946161 , 1.24077634, 0.558343  , 0.50841595,
-           0.77275029, 1.92888887, 0.77633249, 0.1840094 , 0.64871989,
-           1.6643454 , 2.04221819, 0.9731697 , 0.3722718 , 0.98182411,
-           0.24893009, 1.32310029, 0.83432544, 0.99531797, 2.13498616,
-           1.99359043, 0.16212456, 0.74592372, 0.94662115, 0.64986473,
-           0.66014416, 0.30986064, 0.57537337, 0.44127442, 1.6909366 ,
-           2.24292201, 1.17841071, 0.63794244, 1.39338054, 0.3073989 ,
-           0.52596522, 0.87241962, 1.06873451, 1.00731852, 0.9001608 ,
-           0.91658695, 1.38428261, 1.26202341, 0.67902157, 0.73575187,
-           1.18636612, 0.7506069 , 1.22232523, 1.11784642, 0.66025545,
-           0.19790479, 2.07002869, 0.20965462, 0.57773413, 0.7668455 ,
-           0.64513218, 0.96638853, 0.13637805, 1.44075633, 0.65313404,
-           1.24799544, 1.59093438, 2.05417744, 2.03769357, 0.94054845,
-           2.0419127 , 0.73113841, 0.62134168, 0.5921035 , 0.94436547,
-           1.33483243, 0.81186601, 0.53969416, 1.22316902, 0.42965586,
-           1.24718999, 0.39199878, 0.45386412, 0.42217735, 0.66802381,
-           2.12258843, 1.08662455, 0.5867549 , 0.87841841, 0.6913596 ,
-           1.27642006, 1.17668759, 0.5713541 , 1.17528844, 1.92230425,
-           2.24099497, 1.9267174 , 0.33445798, 0.28702381, 0.1153327 ,
-           0.41562929, 2.06312174, 0.33878741, 1.98764758, 1.27990046,
-           1.02613143, 0.26337241, 1.20867513, 0.45349892, 1.78213981,
-           0.26147717, 0.31116315, 0.62057918, 0.40681918, 0.28491689,
-           1.45773683, 0.31421093, 0.40150273, 0.21598492, 1.44467906,
-           0.33797797, 0.60171564, 0.34437072, 0.4692395 , 2.18364998,
-           2.16177433, 0.27385045, 2.2476053 , 1.63485952, 0.40015442,
-           1.0441201 , 2.11237138, 1.84551716, 1.37492165, 1.12272645,
-           0.61249862, 0.68538179, 0.75474827, 1.6286294 , 1.35665191,
-           0.7815827 , 1.81475046, 0.80393499, 2.20452817, 0.32649636,
-           0.83476509, 0.25414852, 0.57164654, 0.7611451 , 0.21181502,
-           1.7115468 , 1.06013014, 0.71508392, 1.4358756 , 1.98151547,
-           1.21995182, 0.25698465, 0.58439428, 0.43665428, 2.23849035,
-           1.22101862, 1.12547572, 0.3264024 , 0.88775161, 0.22188179,
-           0.63048339, 0.57584537, 0.30714131, 0.5080915 , 0.34901209,
-           0.41248433, 1.859149  , 0.45451513, 1.74107343, 1.03071766,
-           0.80256855, 0.62314496, 0.33514118, 1.93974125, 0.99688196,
-           2.01416419, 0.6175092 , 0.47100322, 0.66848317, 0.31383034,
-           0.18041138, 0.46086892, 1.93967529, 0.51547914, 0.90867677,
-           1.87489697, 0.53026202, 1.71188999, 1.74225271, 0.96428554,
-           2.01707386, 0.14185144, 1.19456477, 0.13764871, 1.85591247,
-           1.46801669, 0.85681032, 0.2510978 , 0.56623433, 2.00904165,
-           1.14107084, 0.42261345, 1.59366072, 2.0581619 , 1.11146046,
-           0.61518367, 0.51218447, 1.78340455, 0.29554345, 2.19727899,
-           0.72082659, 0.92784521, 1.94351174, 0.86604333, 0.22073224,
-           1.51823318, 0.28729589, 0.33548783, 1.94062552, 1.02268639,
-           1.6324964 , 0.74646899, 1.6968113 , 0.95593257, 0.94939824,
-           0.69893777, 0.61217103, 0.64846932, 0.33770378, 1.06444164,
-           0.30828913, 1.41316667, 1.0183233 , 0.44256734, 0.97942663,
-           1.78561395, 0.52125053, 0.58736021, 0.17100162, 0.70027174,
-           0.1952387 , 1.06513327, 0.78505558, 0.6229917 , 1.86646689,
-           0.50536946, 0.26598804, 0.6502244 , 1.77566263, 0.50257933,
-           0.29070757, 1.56682548, 0.88838554, 0.57938561, 0.50109589,
-           0.21647805, 0.41736201, 0.86444241, 0.91822494, 1.03269703,
-           0.66239364, 0.69994883, 0.52728323, 1.36387164, 0.37919392,
-           1.91755206, 1.29074934, 0.44886388, 2.1750625 , 0.55836264,
-           1.2867997 , 0.74759611, 0.80593548, 0.32569463, 0.75986569,
-           0.26679856, 0.16248547, 0.30017034, 0.3706527 , 0.2916197 ,
-           1.41485667, 0.59213631, 1.29344257, 0.93727487, 0.69417891,
-           0.53194014, 1.08505018, 1.29900456, 0.62340054, 1.12360529,
-           0.93814818, 0.66207597, 1.18392794, 0.91878978, 1.19742511,
-           1.94155261, 0.92770948, 0.2488312 , 0.67239351, 0.31780791,
-           1.5332564 , 2.16704369, 0.5260346 , 0.51294641, 1.68879268,
-           2.18331092, 1.89371167, 0.60328257, 1.18209235, 0.65613956,
-           0.65901606, 0.68728589, 1.50322734, 1.03081485, 0.59584266,
-           0.80842544, 0.26618317, 0.67361356, 0.54109472, 1.318252  ,
-           0.19159987, 1.38913319, 0.26994828, 1.74337591, 2.24300465,
-           0.52955756, 1.77868642, 0.53752053, 1.75327534, 0.36349917,
-           0.81680722, 1.91870544, 1.71730975, 0.52112846, 2.16741537,
-           0.42438111, 0.24602613, 2.2058349 , 0.48769609, 0.73039044,
-           1.14668749, 1.9215205 , 1.05815144, 0.56980693, 0.31640424,
-           2.12766914, 1.45410015, 1.6595357 , 0.70295834, 1.46113419,
-           0.21371677, 0.84380564, 0.88929152, 0.4744537 , 1.24382177,
-           0.27265633, 0.93382634, 0.33391198, 1.54085463, 0.88388153,
-           0.24947914, 1.79498167, 0.36511825, 0.82997741, 1.36797273,
-           0.66084904, 1.14194883, 1.05432853, 0.29156086, 1.02254873,
-           1.73632411, 1.61913334, 1.23097105, 0.24139945, 0.98402699,
-           0.38808115, 0.85883242, 0.95947576, 1.98511095, 1.42311064,
-           0.99217939, 1.10438874, 1.23509096, 1.89756933, 1.82934694,
-           0.10629652, 1.00956107, 0.4936057 , 2.08364915, 2.17785699,
-           1.72616312, 0.73431324, 0.32007488, 1.10794078, 0.64613734,
-           1.70957447, 0.63747603, 1.02942876, 0.60175925, 0.42255361,
-           0.61910594, 1.10044884, 0.51699976, 0.25421487, 2.20995799,
-           1.78535162, 0.80301364, 0.56365274, 0.51552689, 1.68469112,
-           1.18826736, 0.79071026, 0.21497337, 0.8160969 , 0.96428346,
-           1.16410961, 1.42977865, 1.9621368 , 0.52218138, 2.01333222,
-           0.54655271, 1.44706587, 0.99190247, 1.01350631, 0.69746209,
-           0.34709097, 0.62514374, 0.37161624, 0.57771138, 1.09652679,
-           1.47064226, 1.08068793, 0.57647119, 0.38762443, 0.4724725 ,
-           2.06848791, 0.138305  , 0.30187062, 0.68216778, 0.95319077,
-           0.47097486, 2.10011824, 0.72064545, 1.1371776 , 0.73308297,
-           1.16363459, 0.6771987 , 1.95065524, 1.20645717, 0.82965135,
-           0.96641986, 1.70978676, 1.78605401, 0.86690129, 0.23487104]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 239
-    Process 0 estimating PZ PDF for rows 0 - 239
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55d9fc4664e0>, 'bestsig': np.float64(0.06777777777777778), 'nneigh': 7, 'truezs': array([1.4333429 , 1.3237551 , 0.8702599 , 1.7939827 , 1.2945056 ,
+           1.1320935 , 1.1123738 , 0.14820874, 1.7649848 , 0.13836348,
+           0.5463327 , 0.33181095, 0.45686185, 0.7568008 , 1.8688486 ,
+           0.51444894, 1.1470054 , 0.56240654, 0.77783823, 0.47601438,
+           0.8391931 , 0.9542949 , 0.52233857, 2.049638  , 0.9337821 ,
+           1.5828538 , 1.1982977 , 0.5996851 , 0.34287202, 1.302322  ,
+           0.5765392 , 0.5861906 , 0.9636896 , 1.3210725 , 0.29344237,
+           1.5826114 , 2.2057626 , 0.73928225, 1.2017496 , 0.29615378,
+           1.1129823 , 0.285105  , 0.9201316 , 0.7032695 , 1.9016705 ,
+           0.19354403, 1.4168835 , 0.73398304, 1.1979619 , 1.232079  ,
+           0.5940706 , 1.5156059 , 1.9105101 , 0.2790072 , 1.4457306 ,
+           1.5527472 , 0.41600168, 0.9682647 , 0.5611768 , 2.1933482 ,
+           1.3341204 , 1.3705808 , 1.7518663 , 0.59243715, 0.52366143,
+           0.5632213 , 1.650192  , 0.5890905 , 1.5205675 , 1.0699294 ,
+           0.73326874, 1.835554  , 1.7176813 , 1.743949  , 0.9451206 ,
+           0.08180296, 0.49115348, 1.4235613 , 1.1388881 , 0.38673675,
+           1.1898067 , 1.0973556 , 0.8509266 , 0.67183864, 0.8128478 ,
+           1.3921927 , 1.4698129 , 0.72021025, 1.3031769 , 0.32609248,
+           1.210638  , 0.42013288, 2.242836  , 1.3876585 , 0.78741646,
+           0.29916453, 2.1097922 , 1.3746064 , 0.26279032, 0.3636477 ,
+           0.3132515 , 2.2058485 , 0.98319566, 0.5067608 , 1.0027157 ,
+           0.849437  , 1.4602329 , 1.3697542 , 1.2450745 , 2.1913164 ,
+           1.6064138 , 0.93563014, 1.1443644 , 0.33537817, 0.8218638 ,
+           0.70383537, 0.90621483, 1.2114272 , 1.0715214 , 0.9545132 ,
+           1.065865  , 1.2047305 , 0.45711076, 0.66132927, 0.31336808,
+           0.17441905, 2.043468  , 0.17591262, 0.30481195, 0.470649  ,
+           0.7549343 , 0.43365705, 1.1348412 , 2.1660342 , 0.6524892 ,
+           0.8562118 , 0.14503407, 0.47894454, 2.1233435 , 1.7707397 ,
+           0.21947038, 2.0594726 , 2.201642  , 1.4173121 , 0.5161568 ,
+           0.8191002 , 2.1764154 , 0.65915453, 0.30754578, 1.3682023 ,
+           0.13578796, 1.7152648 , 1.2880605 , 1.4056685 , 0.24158561,
+           0.28185225, 0.7170991 , 1.9746878 , 0.32469094, 0.4641285 ,
+           2.1328204 , 0.7931153 , 0.71383107, 2.0965385 , 0.2099607 ,
+           1.1762638 , 0.35085678, 0.37228823, 1.5243781 , 1.7920742 ,
+           1.768083  , 2.241077  , 0.6705948 , 1.2002186 , 1.842099  ,
+           0.87937343, 0.29588675, 0.9430428 , 0.900398  , 1.7555468 ,
+           0.72097045, 1.2434773 , 1.4596146 , 1.3867974 , 1.0127914 ,
+           0.21674824, 1.9922367 , 2.217565  , 0.4885862 , 1.1067638 ,
+           0.6340991 , 1.6274004 , 1.7903895 , 2.2525907 , 1.1592224 ,
+           0.6944686 , 0.6926007 , 0.9301318 , 0.16400123, 0.9422506 ,
+           1.0048239 , 1.2398766 , 1.9664532 , 0.7971904 , 1.1084152 ,
+           0.3231094 , 0.8011063 , 0.16412175, 1.3823427 , 0.3111242 ,
+           0.66980475, 2.1324353 , 0.36510038, 0.42826843, 0.06771374,
+           1.0254345 , 0.90034324, 1.0493418 , 0.14361739, 0.17504692,
+           1.0162743 , 1.7410797 , 0.5967882 , 0.95617354, 0.7685839 ,
+           1.572384  , 0.9912834 , 1.8263315 , 2.157621  , 0.3042667 ,
+           0.5038768 , 1.7457547 , 2.29274   , 0.483999  , 1.3042163 ,
+           0.17721963, 0.37443542, 2.2124104 , 0.707572  , 1.8924183 ,
+           1.1780736 , 0.19370699, 1.0474126 , 0.29545975, 1.4300001 ,
+           0.44004273, 0.9724295 , 0.9186385 , 0.17414916, 0.63105214,
+           1.7826929 , 0.6058014 , 2.2586625 , 0.83745164, 0.2669332 ,
+           1.1646124 , 0.975093  , 2.257729  , 0.4385332 , 0.4218998 ,
+           0.30188823, 2.0057054 , 0.26030195, 2.2154443 , 0.89930093,
+           1.7500795 , 1.3424792 , 0.48091793, 0.5691763 , 0.8420398 ,
+           1.2838188 , 1.7509391 , 0.40002012, 1.4081954 , 0.72034645,
+           2.2843187 , 0.57547367, 0.30207837, 1.3668653 , 1.80824   ,
+           0.6391039 , 0.40295982, 0.7391731 , 0.7412892 , 2.1955771 ,
+           0.3370936 , 0.9087808 , 0.38845444, 0.30060232, 0.475186  ,
+           0.5246581 , 0.5085225 , 1.1101241 , 1.1015421 , 0.1892674 ,
+           0.5671846 , 0.787998  , 0.27489257, 1.9335248 , 0.4364879 ,
+           0.7695458 , 0.9013622 , 1.2346406 , 0.32413328, 0.9574801 ,
+           0.3013389 , 0.70873785, 0.52307767, 0.27721393, 0.5818955 ,
+           2.072917  , 0.35308433, 0.55400753, 0.33471656, 0.20966005,
+           0.60201263, 0.2505467 , 1.1141411 , 0.2803557 , 1.5231757 ,
+           2.0144129 , 1.6401707 , 0.73318845, 1.0635017 , 1.200102  ,
+           0.3425616 , 0.6631957 , 0.2206223 , 1.3993084 , 0.35734427,
+           1.4942942 , 1.1615012 , 1.3075851 , 1.0389373 , 1.223887  ,
+           1.0996472 , 0.6812018 , 2.0574875 , 1.3219174 , 1.1511052 ,
+           0.34176445, 1.3045671 , 0.87984765, 0.32177424, 0.3763888 ,
+           0.8202743 , 0.29169178, 0.31402266, 0.3444091 , 0.27668357,
+           0.2959299 , 1.5235835 , 1.5358413 , 0.67979324, 0.30667782,
+           0.30161166, 1.9743047 , 2.2682843 , 1.4258395 , 0.9695651 ,
+           0.5671768 , 1.0727217 , 0.46502316, 0.34059918, 0.23844993,
+           0.81917554, 0.16491187, 2.1633694 , 1.7594773 , 0.5566076 ,
+           1.6650255 , 0.21200144, 0.45102406, 0.38877988, 1.2053446 ,
+           0.34152937, 1.5321474 , 0.29181147, 0.4799868 , 1.2575852 ,
+           2.1957371 , 0.34061432, 1.1815947 , 0.84324145, 0.31398714,
+           0.51589644, 1.3904884 , 1.5146952 , 0.98825103, 1.3888367 ,
+           1.2802653 , 0.8861996 , 0.15926027, 0.9070977 , 0.7667237 ,
+           0.7266838 , 0.14852488, 0.69021386, 0.2171812 , 0.28067517,
+           0.65013725, 0.73057395, 1.2387667 , 0.2594204 , 2.2343667 ,
+           0.6506754 , 1.7647612 , 1.5926791 , 0.47002256, 0.30704796,
+           1.5875505 , 0.5977346 , 0.30942369, 0.43926072, 1.4083784 ,
+           0.7819265 , 1.6856236 , 0.1792171 , 1.3056164 , 0.76581246,
+           0.25475788, 1.1734301 , 1.6756759 , 0.28719735, 0.22969246,
+           0.6003391 , 0.17246795, 0.82271415, 0.527624  , 0.20761871,
+           1.2142472 , 0.5452797 , 0.28257442, 0.5789856 , 0.34235108,
+           1.0498717 , 0.6847771 , 1.140883  , 0.61571866, 0.49521637,
+           0.9500967 , 1.5125798 , 0.28669   , 0.35282803, 1.7318455 ,
+           0.47037816, 2.2011223 , 0.9508046 , 0.36787045, 0.29350114,
+           0.488513  , 0.332191  , 1.3395056 , 0.2969067 , 1.338268  ,
+           2.1542578 , 0.7112359 , 0.34530675, 2.0404677 , 0.6228099 ,
+           0.1826657 , 0.09311604, 1.8493752 , 1.7863531 , 0.3320719 ,
+           1.882168  , 0.56478727, 1.2733663 , 0.30870986, 0.6073284 ,
+           0.42434287, 1.2378035 , 0.5975763 , 1.3544034 , 0.9600128 ,
+           0.9768367 , 0.34299016, 0.8634549 , 0.23797214, 0.11863601,
+           1.0072093 , 1.1916834 , 1.0649809 , 1.4154159 , 1.3555586 ,
+           1.34472   , 1.6318725 , 1.8455282 , 0.39839816, 1.6346661 ,
+           1.6372824 , 2.0320172 , 0.5530062 , 0.34578633, 1.1159678 ,
+           1.2040006 , 0.27654958, 1.1554179 , 0.7724498 , 0.5336855 ,
+           0.7548364 , 2.108087  , 0.2729175 , 0.58194035, 0.33421624,
+           0.5175764 , 0.48491   , 1.8840697 , 0.7763976 , 0.23653305,
+           0.414626  , 0.42791784, 2.0598073 , 0.43945396, 1.5376469 ,
+           0.5895858 , 1.0193623 , 0.6483196 , 1.6718389 , 0.52963954,
+           0.3067937 , 1.0020282 , 0.9428348 , 0.2929634 , 1.5957819 ,
+           1.0945596 , 1.397035  , 1.5963764 , 1.0290524 , 0.22328591,
+           0.70576704, 0.22334087, 0.8895134 , 1.913652  , 1.8872316 ,
+           1.1563677 , 0.551071  , 0.74864054, 0.19263005, 0.59278095,
+           1.7926812 , 1.5917898 , 0.891467  , 0.33411133, 2.1682367 ,
+           0.50696313, 0.25047553, 0.9364835 , 0.2743677 , 0.61948425,
+           0.29832304, 0.31371355, 1.2902012 , 1.9265969 , 1.4590098 ,
+           0.41096365, 0.2730738 , 0.48057532, 1.2671596 , 2.2282958 ,
+           0.29613948, 1.2573075 , 1.7920887 , 0.6521886 , 1.3949696 ,
+           0.20531785, 1.2290087 , 0.5943552 , 1.4014667 , 1.1682425 ,
+           0.7588887 , 2.078631  , 1.2710853 , 1.7710841 , 0.77392304,
+           1.7186058 , 0.9631001 , 1.7394538 , 0.33084118, 0.78578913,
+           0.64480174, 1.0032451 , 1.4184198 , 0.43717694, 1.0607342 ,
+           0.6782961 , 1.9529852 , 0.75885445, 0.39110053, 1.1039946 ,
+           0.9746763 , 2.2530441 , 1.4716698 , 0.33372307, 0.39481735,
+           0.74744   , 0.33060288, 1.1515912 , 0.7316464 , 1.5216072 ],
+          dtype=float32), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 235
+    Process 0 estimating PZ PDF for rows 0 - 235
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-
-.. parsed-literal::
-
-    
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55b85888efa0>, 'bestsig': np.float64(0.075), 'nneigh': 7, 'truezs': array([0.25309177, 1.21835621, 0.45746013, 1.01802131, 0.63238868,
-           0.60052531, 1.34183175, 1.54021255, 0.19551275, 1.50471896,
-           0.64848456, 0.28516801, 0.75562789, 2.15586876, 1.01312978,
-           0.94274995, 2.10850403, 2.0532249 , 1.05656108, 1.12997586,
-           2.11877442, 1.05530363, 0.67461712, 0.56061275, 1.46719074,
-           0.53616272, 0.30349588, 0.65309617, 0.6279801 , 0.68957098,
-           1.0754775 , 0.6478806 , 0.86787383, 1.03348678, 0.19844985,
-           0.46852816, 0.46366194, 0.28135946, 1.33362329, 0.64826097,
-           0.72858751, 0.8597691 , 0.46495051, 0.71713202, 1.04146351,
-           2.07321859, 1.37697313, 0.43682678, 1.75221886, 0.30807303,
-           1.22784543, 1.60407683, 1.23408343, 0.64617362, 0.47439717,
-           0.41932562, 0.41014885, 2.13265941, 0.80891905, 0.92770447,
-           1.46423532, 1.5662352 , 0.81063977, 1.81989263, 2.08822363,
-           0.94145233, 1.85387865, 1.19129305, 2.2556538 , 0.63047524,
-           0.46966132, 1.54654683, 1.73279811, 1.84612041, 1.25624049,
-           0.40055521, 0.93818986, 0.7417691 , 0.48399862, 1.3416698 ,
-           2.21047766, 1.28879961, 1.29391322, 0.15144656, 0.63323574,
-           1.04914794, 0.84878298, 0.88695089, 0.62678021, 1.19339653,
-           0.63504747, 0.35352925, 0.31714682, 1.0668786 , 1.47288873,
-           0.98735352, 1.33982618, 1.52166712, 1.66514284, 1.17447333,
-           1.18612182, 2.06972231, 0.93899877, 1.83234172, 0.11641201,
-           1.35233456, 0.95945149, 1.35575172, 0.55918467, 0.76354941,
-           0.52147694, 2.19812349, 0.95548149, 1.19069815, 1.07079477,
-           0.49891553, 0.65132695, 1.83770966, 0.6070777 , 0.40241035,
-           2.07991034, 0.71360152, 0.3931451 , 0.94291388, 0.21526213,
-           0.72838435, 1.38575082, 0.39796172, 0.95702769, 0.2757739 ,
-           0.9692667 , 0.67197386, 0.66440241, 0.42119632, 1.19232113,
-           0.4536533 , 1.67782481, 1.20197979, 2.0197101 , 0.47226628,
-           2.02684157, 0.69052446, 0.77400594, 0.8037474 , 1.66820926,
-           1.71247049, 0.67098337, 1.79389068, 0.63379999, 1.59316392,
-           0.56929536, 0.27365945, 0.26064337, 2.05356729, 0.4362379 ,
-           1.09233352, 0.77889356, 0.97039477, 0.30339425, 0.33817542,
-           0.27369154, 0.30624776, 1.20233839, 0.57293831, 1.9186845 ,
-           0.41660516, 2.23245939, 0.74449067, 0.54642869, 0.83586834,
-           1.04776531, 0.74919441, 0.22328907, 0.28748965, 0.4911291 ,
-           0.90980469, 1.65662558, 0.32900645, 0.82985822, 1.7795602 ,
-           1.58676577, 0.78219282, 0.43446707, 0.37343105, 0.46666177,
-           0.3053711 , 2.08495936, 1.08500356, 1.7894154 , 1.75483601,
-           0.77290467, 0.98170148, 0.39922947, 0.60256819, 1.46488124,
-           1.42635322, 1.80673547, 1.59606971, 0.60541173, 0.84666925,
-           1.86129912, 1.57305202, 1.80346572, 1.34560366, 2.23754759,
-           0.33877933, 0.80333029, 0.71142948, 0.32261939, 0.58825557,
-           1.25073217, 0.47832385, 0.37135108, 0.41006832, 0.61739822,
-           0.29994805, 0.32112241, 0.30730554, 1.82068355, 1.16629803,
-           1.05575162, 0.4255726 , 1.43966634, 1.66654912, 1.22949448,
-           1.45197672, 0.62259391, 1.10546227, 0.26790669, 0.36278803,
-           0.39620455, 1.86476398, 1.61904517, 0.72396176, 0.67455459,
-           1.10584001, 0.39286406, 0.65359227, 0.42790733, 2.0041101 ,
-           0.28577496, 1.29313438, 0.62087757, 1.23608593, 1.07337791,
-           0.17492781, 0.77970906, 1.06841932, 0.26631786, 1.10735728,
-           0.34557325, 1.14915057, 1.03410984, 0.80372433, 0.93740723,
-           1.36630777, 1.45522933, 0.38116387, 1.45280262, 0.31971201,
-           1.30565954, 1.54787446, 1.05911761, 1.23971575, 1.37877622,
-           1.27197332, 0.59720274, 0.3364253 , 0.33671221, 0.39680612,
-           1.84256299, 0.89126374, 1.44907223, 0.90581638, 0.83325304,
-           0.32000751, 0.82244776, 0.79484509, 1.15839043, 0.57948634,
-           1.32022434, 2.01778459, 0.47931603, 2.1042461 , 0.37421576,
-           1.36332329, 0.29127245, 0.95038535, 1.08670376, 0.19143835,
-           0.72612026, 0.37748109, 0.56783705, 0.78251785, 0.62196272,
-           0.71648831, 0.50040844, 0.4410377 , 0.34362399, 0.46564332,
-           0.38814121, 0.98045551, 1.36988405, 0.37585   , 2.0949197 ,
-           1.17425566, 0.60989865, 1.55230167, 0.72856066, 0.26123745,
-           1.13807335, 0.22936362, 2.24120104, 0.40894046, 1.69793048,
-           0.66816265, 1.67391257, 0.50708571, 1.53574673, 1.01563152,
-           1.23809777, 0.38412283, 2.0845943 , 0.3750406 , 1.72327502,
-           0.64831029, 0.76466687, 0.65166057, 1.81875889, 0.26687433,
-           1.29500684, 0.66811817, 0.5688482 , 1.02303833, 0.18857   ,
-           0.37469939, 1.23003193, 1.59945254, 0.46821956, 0.79207632,
-           1.42664023, 0.88677662, 0.93306271, 1.68078832, 0.87897123,
-           1.74588706, 0.94482081, 0.49456596, 1.69751167, 2.09552588,
-           1.55883994, 0.73136611, 0.32076214, 0.624582  , 0.63085777,
-           0.81397202, 0.59969345, 1.08825914, 1.59167229, 0.3868743 ,
-           0.20422268, 1.46094774, 2.05826534, 0.38188457, 0.60649395,
-           1.02041401, 0.65822657, 1.60516631, 0.65266129, 1.15950966,
-           0.50271663, 1.94428875, 2.14177822, 1.28936482, 2.05120703,
-           1.77542781, 0.72963415, 0.37581499, 0.36480709, 0.23493146,
-           1.16506552, 0.3835708 , 0.3257172 , 1.06094863, 1.02035314,
-           0.6465948 , 1.69224822, 0.4293268 , 0.27815165, 1.86409378,
-           1.08953973, 0.95251344, 0.9151339 , 0.61297671, 0.76480815,
-           1.21795506, 0.73378568, 2.04684055, 0.68423321, 0.50605302,
-           2.08967602, 0.77303766, 1.36112814, 0.87339089, 0.58604024,
-           1.32282776, 0.81826124, 0.37212193, 1.38377887, 0.46678269,
-           1.12225324, 0.84842693, 0.74003297, 1.46510812, 1.9174867 ,
-           1.64326919, 1.54592399, 2.01526717, 1.47565361, 0.32711296,
-           1.05661671, 0.66033008, 0.92836441, 1.55634529, 1.01928127,
-           2.22161674, 0.40150456, 0.270683  , 1.46239596, 0.56868906,
-           0.8619038 , 1.06607405, 0.21612825, 1.15727316, 1.32231606,
-           0.66038619, 0.37983609, 1.02183789, 0.25301454, 0.63707821,
-           1.40139645, 2.01530425, 0.66599314, 0.18034984, 1.81754079,
-           0.63315848, 1.70664607, 0.51046859, 0.11870979, 0.81452365,
-           2.10950895, 1.56458189, 0.4156815 , 1.90716866, 0.18006766,
-           0.63771906, 0.84541962, 0.60429022, 2.11474987, 0.57879989,
-           2.29139292, 2.1980303 , 0.29998052, 1.44259379, 0.38686525,
-           1.3189668 , 0.27633365, 1.01365756, 1.91306633, 0.79621238,
-           0.66101047, 1.0641618 , 0.22558454, 1.84221158, 1.87772232,
-           0.65902269, 0.84820539, 0.76972277, 2.19917115, 0.64697695,
-           0.50366965, 1.36233271, 0.51401802, 0.56100181, 0.52935187,
-           0.21757675, 1.06699951, 0.78329628, 1.04245825, 1.08771078,
-           0.34816487, 0.66783694, 0.1585602 , 1.03181748, 1.05491274,
-           0.97939913, 0.27113233, 1.95357471, 0.78663172, 2.09827791,
-           1.21296717, 0.69117083, 2.09529597, 1.62146017, 0.6116655 ,
-           0.58427184, 2.19125708, 0.90036049, 0.35481114, 1.20113008,
-           0.69845244, 0.83426279, 0.17509594, 1.74256957, 0.33729434,
-           1.27913834, 0.83111768, 0.27091408, 1.59905726, 0.28409023,
-           0.51027125, 1.54337295, 0.46545643, 0.1951714 , 0.2287925 ,
-           1.63649848, 0.74910965, 0.52925706, 0.24851234, 0.40152959,
-           1.1699321 , 0.98631438, 0.78085129, 0.9953637 , 1.29797684,
-           0.22374704, 0.47932512, 0.23031036, 0.3617988 , 1.31724719,
-           0.12082183, 0.22395452, 0.89029802, 0.38227046, 1.03251949,
-           2.20434507, 1.26721332, 1.24327659, 1.30181578, 1.23171456,
-           2.05457292, 0.64263786, 0.56602406, 2.19041606, 0.97882674,
-           0.46907319, 1.15901218, 0.647317  , 0.38422827, 0.54990009,
-           0.34833687, 1.72375296, 0.15865408, 2.06441057, 0.87348584,
-           0.75407841, 0.7693664 , 0.53698589, 2.04822799, 1.71914575,
-           1.17494204, 1.97864646, 0.95015764, 2.26241471, 0.64876506,
-           0.15837112, 1.29155858, 0.6566621 , 0.17596249, 0.91133529,
-           0.70412911, 0.66012115, 0.41618072, 1.30585975, 1.21847719,
-           1.49146629, 0.37022099, 1.96467577, 0.7545897 , 0.14590802,
-           1.24425507, 0.50470392, 1.71489274, 0.92138523, 1.45847874,
-           1.51165107, 0.85023128, 0.2880894 , 0.65329707, 0.9633488 ]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 239
-    Process 0 estimating PZ PDF for rows 0 - 239
-    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
-    Inserting handle into data store.  input: None, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55da0a1d4c10>, 'bestsig': np.float64(0.06777777777777778), 'nneigh': 7, 'truezs': array([0.7109789 , 0.684234  , 0.24987125, 1.7519494 , 0.47846103,
+           0.33473837, 0.50826055, 0.20228612, 0.6769716 , 1.3265918 ,
+           1.7202301 , 0.87294644, 1.1373162 , 1.8772999 , 0.08898091,
+           0.45685887, 1.9146216 , 0.22230697, 0.72233576, 0.5414646 ,
+           1.1675177 , 0.6698597 , 1.0965223 , 2.0495567 , 1.0193622 ,
+           1.833097  , 0.7588972 , 0.45343232, 2.1920176 , 1.216041  ,
+           0.6625742 , 1.1159935 , 0.34173703, 1.0484967 , 0.94162714,
+           1.6057475 , 0.7500063 , 0.71602046, 1.8231468 , 1.182788  ,
+           0.25448942, 0.69419223, 1.6918525 , 0.9241866 , 0.74404824,
+           1.2289805 , 0.21024513, 0.38334322, 1.0288469 , 1.911262  ,
+           1.0010829 , 0.90705556, 1.1687441 , 1.6545238 , 0.5605775 ,
+           0.784747  , 0.5195216 , 1.0560476 , 0.27467442, 0.23919082,
+           1.2195003 , 0.21392596, 0.37882733, 0.68585557, 0.5490009 ,
+           0.42329884, 1.555593  , 1.210321  , 0.81382084, 1.3347794 ,
+           0.6548316 , 1.5099897 , 1.858717  , 1.9246919 , 0.7614285 ,
+           1.9462461 , 0.7767667 , 0.32316816, 1.7933766 , 0.81352246,
+           1.1640702 , 1.1437674 , 0.69064885, 0.63813937, 0.5217388 ,
+           1.2677696 , 1.1091589 , 0.25915003, 2.0554237 , 1.523815  ,
+           1.3465053 , 1.7464467 , 0.3149128 , 0.7638346 , 0.25076175,
+           0.32721925, 1.2614264 , 1.0190805 , 0.26458716, 0.52258766,
+           0.801554  , 1.8529932 , 1.4897779 , 1.8443738 , 1.3805554 ,
+           1.9923592 , 0.4518503 , 0.2975279 , 1.00295   , 0.6558908 ,
+           0.9030685 , 0.30417752, 0.5760741 , 1.3896191 , 1.5866966 ,
+           1.0772498 , 0.3231529 , 0.9319731 , 1.8586497 , 0.19883513,
+           0.22013259, 0.33062005, 0.8908531 , 1.6711466 , 0.54070127,
+           1.9315952 , 1.7293675 , 0.49456823, 1.5056812 , 1.8751185 ,
+           2.096883  , 0.5033921 , 0.45904768, 0.84505564, 1.4364039 ,
+           0.7246009 , 1.2622792 , 1.5738457 , 0.03295648, 2.197969  ,
+           0.1921562 , 2.258078  , 1.2803447 , 1.2486078 , 0.3592161 ,
+           1.8083658 , 1.3751208 , 0.783929  , 0.7064227 , 1.6213154 ,
+           0.5070284 , 1.2207518 , 1.0689307 , 0.08825755, 1.1680539 ,
+           0.12144101, 0.98300195, 1.6140265 , 1.6799926 , 0.11701906,
+           1.2279174 , 1.6100335 , 0.4352889 , 1.8487916 , 0.4424889 ,
+           1.6828479 , 1.2518253 , 1.2403201 , 0.761552  , 1.0323439 ,
+           0.69296837, 0.81484187, 1.2265118 , 2.0952249 , 0.436754  ,
+           0.48351014, 1.0136161 , 2.2209527 , 0.3960607 , 2.081249  ,
+           1.0378922 , 0.6808912 , 1.1873897 , 0.5193564 , 0.32013834,
+           0.34706223, 1.219157  , 0.646887  , 2.1160793 , 1.2688411 ,
+           1.414916  , 1.3863642 , 2.0398643 , 0.7865466 , 1.1997736 ,
+           0.8022462 , 0.85921365, 0.30757582, 0.8409442 , 1.2399282 ,
+           0.35271335, 1.0404111 , 0.7396241 , 1.5488262 , 1.6761452 ,
+           0.5482834 , 1.9496062 , 1.5166888 , 0.3129294 , 1.7768048 ,
+           0.8412742 , 1.0084713 , 1.5489537 , 0.48848116, 0.14496863,
+           0.23794246, 0.3788036 , 0.46359015, 0.62428343, 1.9253665 ,
+           1.0352235 , 0.26477253, 0.66503334, 0.26914525, 0.34013057,
+           0.2453798 , 0.34928298, 0.52387416, 1.6353551 , 0.20927262,
+           1.7007978 , 1.2357035 , 0.78999966, 0.21197438, 0.34859014,
+           1.3615644 , 0.49246132, 0.6402361 , 1.0550171 , 0.4397025 ,
+           0.06682682, 0.2235887 , 0.6409944 , 1.1568516 , 0.34310257,
+           2.1020665 , 0.6676136 , 0.2892561 , 1.0816255 , 1.1975572 ,
+           0.21113086, 0.7874545 , 1.6710181 , 1.641495  , 0.47862422,
+           1.1729175 , 0.26468492, 0.66300887, 0.8555204 , 1.021383  ,
+           0.8085413 , 0.798252  , 0.4025681 , 0.448745  , 0.3244543 ,
+           1.3469714 , 1.0412824 , 0.1996845 , 0.28143764, 1.0004673 ,
+           1.8122331 , 1.2829037 , 0.12390375, 0.7586328 , 1.3448102 ,
+           0.17554522, 1.2371709 , 1.6698164 , 0.76215774, 0.71107644,
+           2.246666  , 0.69113314, 0.3506186 , 1.1662769 , 0.38393402,
+           0.4805318 , 0.38080978, 1.7821834 , 0.1840899 , 0.6428973 ,
+           1.2902075 , 1.3799711 , 1.4608349 , 0.14815784, 0.7778674 ,
+           0.4101075 , 2.1689503 , 2.165155  , 0.4863118 , 1.0381601 ,
+           1.6407136 , 0.67955685, 0.5607626 , 0.2334609 , 1.9129939 ,
+           0.6962531 , 0.5966457 , 0.9401247 , 1.2061448 , 1.1276329 ,
+           0.23477018, 0.9950513 , 0.9737336 , 0.2295376 , 0.78468144,
+           1.6631842 , 1.2192425 , 0.28074265, 0.95340025, 2.2354558 ,
+           1.7337321 , 1.5350442 , 1.5514237 , 0.5914608 , 0.30340016,
+           0.71777415, 2.157378  , 0.6288412 , 0.06341338, 1.8084018 ,
+           0.90526235, 1.3380194 , 0.9498703 , 0.4846537 , 0.8246906 ,
+           1.7548978 , 0.75522506, 0.6282366 , 1.0004065 , 1.4370538 ,
+           0.32454205, 0.5432165 , 0.3164065 , 0.57056123, 1.8136976 ,
+           1.4192182 , 1.4117311 , 0.84531534, 2.0079808 , 0.3490708 ,
+           0.254853  , 1.3801321 , 0.7821099 , 0.87743366, 0.2606058 ,
+           0.52621615, 1.6324197 , 1.2050378 , 0.337636  , 0.67370814,
+           1.3140535 , 1.6535616 , 0.7328976 , 0.26897717, 2.1861548 ,
+           0.2761942 , 0.72272885, 0.8308658 , 0.41968846, 1.0286633 ,
+           0.8081778 , 0.18077457, 0.2731949 , 2.0020351 , 1.5735263 ,
+           1.7204025 , 0.7102272 , 0.25153983, 0.28826392, 0.32783568,
+           2.1266177 , 0.8596837 , 0.79027414, 1.4484913 , 1.8321487 ,
+           1.2935405 , 1.7014916 , 0.82449925, 1.289315  , 0.7623329 ,
+           0.946247  , 0.44006944, 1.5548165 , 0.5012544 , 0.49273002,
+           0.34791315, 1.1781442 , 1.2139969 , 0.32177198, 1.9339446 ,
+           1.03222   , 1.1280472 , 2.1892319 , 0.5223257 , 0.48564768,
+           0.71715933, 0.48294783, 0.24194098, 0.30748248, 1.6466292 ,
+           0.764136  , 0.90872896, 1.3862547 , 1.6997713 , 0.825963  ,
+           0.65866965, 1.587491  , 0.5147842 , 1.0834266 , 0.34743237,
+           0.7781678 , 0.60572624, 1.1225178 , 1.5855931 , 0.68468964,
+           0.2807387 , 0.14923072, 1.1438118 , 1.2508092 , 0.18814528,
+           0.6471189 , 0.2442944 , 0.33424544, 0.30661714, 1.3162143 ,
+           0.31114745, 1.8743091 , 0.6789422 , 1.5728709 , 0.46619964,
+           0.4442432 , 0.37189484, 1.0652593 , 1.8779815 , 0.62861633,
+           1.1786792 , 0.32380974, 1.1075592 , 1.4031479 , 0.73665506,
+           1.8058543 , 0.68590575, 1.7401445 , 1.264687  , 2.0463743 ,
+           1.3998047 , 0.4694059 , 0.39519513, 0.5710615 , 0.1873436 ,
+           0.35757995, 0.7391028 , 0.23277509, 0.2373817 , 0.67686623,
+           1.9920671 , 0.47692108, 0.58705056, 0.17037988, 1.6296208 ,
+           0.09747732, 1.0740004 , 1.1446515 , 1.5588969 , 1.6577418 ,
+           0.7235913 , 2.0230772 , 1.3389658 , 0.3568672 , 0.82200575,
+           0.8137377 , 0.32149458, 2.262886  , 0.8974304 , 0.7102419 ,
+           0.27450657, 1.0300833 , 0.38317144, 1.3828422 , 0.3850013 ,
+           0.6407984 , 1.74429   , 2.071599  , 0.80022395, 1.4374872 ,
+           0.3299694 , 0.16367114, 0.6610519 , 1.0559413 , 1.1803398 ,
+           1.1252072 , 0.298823  , 1.3336755 , 1.1032159 , 0.99269354,
+           1.6185905 , 1.2204965 , 1.1078162 , 1.8344034 , 0.7249699 ,
+           0.26785254, 1.3186297 , 0.4636271 , 0.29694188, 1.0729576 ,
+           0.2956568 , 0.24910796, 1.3125856 , 0.20031476, 1.8605608 ,
+           1.216285  , 1.0338118 , 0.16625631, 0.6050299 , 1.8145348 ,
+           0.37368417, 1.6761639 , 1.571375  , 0.29964614, 0.75524414,
+           2.0574937 , 0.3185619 , 0.8659217 , 2.126754  , 2.0602818 ,
+           1.380269  , 0.25527608, 0.28007066, 0.23432124, 0.61618555,
+           1.0591956 , 0.36815393, 1.1343762 , 1.9245627 , 1.5464859 ,
+           1.059783  , 0.41786635, 1.6939487 , 2.0981293 , 0.78470504,
+           1.2277493 , 1.1570475 , 0.8899392 , 0.34040666, 1.1850611 ,
+           1.5435475 , 1.4924233 , 0.30082107, 1.2135372 , 1.5336401 ,
+           2.0479455 , 0.32986522, 0.1614908 , 1.717179  , 0.9428643 ,
+           0.24671948, 0.84659   , 0.30413032, 1.8622115 , 0.7089313 ,
+           0.5617754 , 0.6803961 , 1.9109143 , 1.2743742 , 1.9122435 ,
+           0.32125604, 0.78256035, 1.215565  , 1.8659166 , 1.8824646 ,
+           0.57487124, 1.903805  , 1.3982508 , 0.7146926 , 0.22318244,
+           0.58959544, 0.22787619, 1.5225413 , 0.7986866 , 0.42288804,
+           0.49832654, 0.8555077 , 0.35106885, 0.6315036 , 1.0201079 ,
+           0.57720315, 0.4054165 , 0.41013336, 0.29973304, 0.21848059],
+          dtype=float32), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 235
+    Process 0 estimating PZ PDF for rows 0 - 235
 
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55b858915a40>, 'bestsig': np.float64(0.06777777777777778), 'nneigh': 7, 'truezs': array([0.37041432, 0.37293102, 0.88487255, 1.04595578, 0.87234497,
-           0.76126104, 1.05570277, 0.82707332, 1.80441105, 0.12391515,
-           0.35998814, 0.95478163, 0.68934796, 0.91649538, 0.5942983 ,
-           0.1069951 , 0.80340879, 0.0597787 , 1.32183845, 0.38511439,
-           0.86525102, 0.22147589, 0.24250877, 0.94493754, 0.17459164,
-           0.72071548, 0.55541828, 0.24110249, 0.41205712, 0.65573633,
-           1.1198509 , 0.21930393, 0.16078756, 1.07067442, 0.37848213,
-           0.87633134, 0.54305878, 1.20550637, 1.24314938, 0.61095275,
-           0.81623   , 0.80070656, 1.35846752, 0.64569936, 0.94821588,
-           0.7060872 , 1.23471168, 0.53675906, 1.53018307, 0.32093234,
-           0.34766946, 1.40681974, 0.23022548, 0.48986603, 0.67083066,
-           0.42528986, 0.32136921, 0.96169965, 1.27715084, 0.43293158,
-           0.27448546, 0.48451278, 1.34559633, 0.25863142, 0.37816479,
-           0.45382018, 0.9352864 , 0.71648138, 1.95121009, 1.43077771,
-           0.39010846, 0.26591574, 0.38683119, 0.60944337, 1.01718457,
-           0.31174827, 0.20256376, 0.27340745, 1.74784388, 0.27219877,
-           1.13039967, 0.46881774, 2.28173805, 0.8493662 , 0.16388779,
-           0.5471006 , 0.57744219, 0.97883987, 2.03604243, 0.38430813,
-           0.79061626, 3.5062022 , 2.13007187, 0.28551183, 0.19583922,
-           0.44504381, 1.14239357, 1.09134688, 0.67168345, 1.47941006,
-           0.7340028 , 2.06579841, 0.67659514, 0.2886045 , 1.11563839,
-           0.18418745, 0.31764971, 0.7782977 , 0.5955293 , 1.00041106,
-           0.67378581, 2.18696473, 0.25544345, 0.55683388, 0.29847522,
-           1.03371547, 1.1533011 , 1.46784633, 1.10274197, 1.38293526,
-           0.35528046, 0.86316422, 1.74151819, 0.30460806, 0.75706364,
-           0.15915409, 1.1946161 , 1.24077634, 0.558343  , 0.50841595,
-           0.77275029, 0.77633249, 0.1840094 , 0.64871989, 1.6643454 ,
-           2.04221819, 0.9731697 , 0.3722718 , 0.98182411, 0.24893009,
-           1.46430574, 0.99531797, 2.13498616, 0.16212456, 1.34554335,
-           0.94662115, 0.64986473, 0.66014416, 0.30986064, 0.57537337,
-           0.44127442, 0.63794244, 1.39338054, 0.3073989 , 0.52596522,
-           0.87241962, 1.06873451, 1.00731852, 0.9001608 , 0.91658695,
-           1.38428261, 1.26202341, 0.67902157, 0.73575187, 1.18636612,
-           0.7506069 , 1.22232523, 1.11784642, 0.66025545, 0.19790479,
-           0.20965462, 0.57773413, 0.7668455 , 1.21013598, 0.96638853,
-           0.13637805, 1.44075633, 0.65313404, 1.24799544, 0.94054845,
-           2.0419127 , 0.73113841, 0.62134168, 0.5921035 , 0.94436547,
-           1.33483243, 0.81186601, 0.53969416, 1.22316902, 0.42965586,
-           1.24718999, 0.39199878, 0.45386412, 0.42217735, 1.24088951,
-           1.08662455, 0.5867549 , 0.87841841, 0.6913596 , 1.27642006,
-           1.17668759, 0.5713541 , 1.17528844, 0.33445798, 0.28702381,
-           0.1153327 , 0.41562929, 0.33878741, 1.02613143, 0.26337241,
-           1.20867513, 0.45349892, 0.26147717, 0.31116315, 0.62057918,
-           0.40681918, 0.28491689, 1.45773683, 0.31421093, 0.40150273,
-           0.21598492, 1.44467906, 0.33797797, 0.60171564, 0.34437072,
-           0.4692395 , 0.27385045, 2.2476053 , 1.63485952, 0.40015442,
-           1.0441201 , 2.19056418, 1.12272645, 0.61249862, 0.68538179,
-           0.75474827, 1.35665191, 0.7815827 , 0.80393499, 0.32649636,
-           0.83476509, 0.25414852, 0.57164654, 0.7611451 , 0.21181502,
-           1.06013014, 0.71508392, 1.21995182, 0.25698465, 0.58439428,
-           0.43665428, 2.23849035, 1.98380473, 1.12547572, 0.3264024 ,
-           0.88775161, 0.22188179, 0.63048339, 0.57584537, 0.30714131,
-           0.5080915 , 0.34901209, 0.41248433, 1.859149  , 0.45451513,
-           1.03071766, 0.80256855, 1.18059748, 0.79368175, 1.93974125,
-           0.99688196, 2.01416419, 0.6175092 , 0.47100322, 0.66848317,
-           0.31383034, 0.18041138, 0.46086892, 0.51547914, 0.90867677,
-           1.87489697, 0.53026202, 1.71188999, 0.96428554, 2.01707386,
-           0.14185144, 1.19456477, 0.13764871, 2.83674637, 0.85681032,
-           0.2510978 , 0.56623433, 2.00904165, 1.14107084, 0.42261345,
-           1.59366072, 2.0581619 , 1.11146046, 0.61518367, 0.51218447,
-           1.78340455, 0.29554345, 2.19727899, 0.72082659, 0.92784521,
-           0.86604333, 0.22073224, 0.28729589, 0.33548783, 1.94062552,
-           1.02268639, 0.74646899, 1.6968113 , 0.95593257, 0.94939824,
-           0.69893777, 0.61217103, 0.64846932, 0.33770378, 1.06444164,
-           0.30828913, 1.41316667, 0.44256734, 0.97942663, 1.78561395,
-           0.52125053, 0.58736021, 0.17100162, 0.70027174, 0.1952387 ,
-           1.06513327, 0.78505558, 0.6229917 , 0.50536946, 0.26598804,
-           0.6502244 , 1.77566263, 0.50257933, 0.29070757, 1.56682548,
-           0.88838554, 0.57938561, 0.50109589, 0.21647805, 0.41736201,
-           0.86444241, 0.91822494, 1.03269703, 0.66239364, 0.69994883,
-           0.52728323, 1.36387164, 0.37919392, 1.91755206, 1.29074934,
-           0.44886388, 0.55836264, 0.74759611, 0.80593548, 0.78099088,
-           0.75986569, 0.26679856, 0.16248547, 0.30017034, 0.3706527 ,
-           0.2916197 , 1.41485667, 0.59213631, 1.29344257, 0.93727487,
-           0.69417891, 0.53194014, 1.08505018, 1.29900456, 0.62340054,
-           1.12360529, 0.93814818, 0.66207597, 0.91878978, 1.94155261,
-           0.92770948, 0.2488312 , 0.67239351, 0.31780791, 1.5332564 ,
-           0.5260346 , 0.51294641, 1.68879268, 2.18331092, 0.60328257,
-           1.18209235, 0.65613956, 0.65901606, 0.68728589, 1.50322734,
-           1.03081485, 0.59584266, 0.80842544, 0.26618317, 0.67361356,
-           0.54109472, 0.19159987, 1.38913319, 0.26994828, 0.52955756,
-           1.77868642, 0.53752053, 0.36349917, 0.81680722, 1.91870544,
-           1.71730975, 0.52112846, 0.42438111, 0.24602613, 2.2058349 ,
-           0.48769609, 0.73039044, 1.14668749, 1.9215205 , 1.05815144,
-           0.56980693, 0.31640424, 1.45410015, 1.6595357 , 0.70295834,
-           0.21371677, 0.84380564, 0.88929152, 0.4744537 , 0.27265633,
-           0.93382634, 0.33391198, 2.41348515, 0.88388153, 0.24947914,
-           0.36511825, 0.82997741, 1.36797273, 1.23125064, 1.14194883,
-           1.05432853, 0.29156086, 1.02254873, 1.73632411, 1.61913334,
-           1.23097105, 0.24139945, 0.98402699, 0.38808115, 0.85883242,
-           0.95947576, 1.98511095, 1.42311064, 0.99217939, 1.10438874,
-           1.23509096, 0.10629652, 1.69972426, 0.4936057 , 3.26925945,
-           2.66243593, 0.73431324, 0.32007488, 1.10794078, 0.64613734,
-           1.70957447, 0.63747603, 0.60175925, 0.42255361, 0.61910594,
-           0.51699976, 0.25421487, 2.74195213, 0.80301364, 0.56365274,
-           0.51552689, 1.68469112, 1.18826736, 0.79071026, 0.21497337,
-           0.8160969 , 0.96428346, 1.16410961, 1.42977865, 0.52218138,
-           0.54655271, 1.44706587, 0.99190247, 1.01350631, 0.69746209,
-           0.34709097, 0.62514374, 0.37161624, 0.57771138, 1.09652679,
-           1.47064226, 0.57647119, 0.38762443, 0.4724725 , 2.06848791,
-           0.138305  , 0.30187062, 0.68216778, 0.95319077, 0.47097486,
-           2.10011824, 0.72064545, 1.1371776 , 0.73308297, 0.6771987 ,
-           1.20645717, 0.82965135, 0.96641986, 2.74289574, 0.86690129,
-           0.23487104]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 239
-    Process 0 estimating PZ PDF for rows 0 - 239
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
 
 
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55b8588f9480>, 'bestsig': np.float64(0.060555555555555564), 'nneigh': 5, 'truezs': array([0.37293102, 0.88487255, 1.04595578, 0.87234497, 0.76126104,
-           0.82707332, 0.12391515, 0.95478163, 0.68934796, 0.91649538,
-           0.5942983 , 0.1069951 , 0.80340879, 0.0597787 , 0.38511439,
-           0.86525102, 0.24250877, 0.94493754, 0.41205712, 0.65573633,
-           1.1198509 , 0.21930393, 0.37848213, 1.24314938, 0.61095275,
-           0.81623   , 1.35846752, 0.94821588, 1.23471168, 0.53675906,
-           0.48986603, 0.67083066, 1.27715084, 0.43293158, 0.27448546,
-           0.48451278, 0.25863142, 0.37816479, 0.45382018, 1.43077771,
-           0.39010846, 0.60944337, 1.01718457, 0.31174827, 0.20256376,
-           0.8493662 , 0.5471006 , 0.57744219, 0.38430813, 0.79061626,
-           0.28551183, 0.19583922, 1.09134688, 0.7340028 , 0.2886045 ,
-           1.11563839, 0.18418745, 0.31764971, 0.5955293 , 1.00041106,
-           0.67378581, 0.29847522, 1.03371547, 1.1533011 , 1.46784633,
-           1.10274197, 0.35528046, 0.86316422, 1.74151819, 0.30460806,
-           0.75706364, 0.558343  , 0.50841595, 0.77275029, 0.77633249,
-           0.1840094 , 0.64871989, 0.9731697 , 0.3722718 , 0.24893009,
-           1.46430574, 0.16212456, 1.34554335, 0.94662115, 0.30986064,
-           0.57537337, 0.44127442, 0.3073989 , 0.52596522, 0.9001608 ,
-           1.26202341, 0.67902157, 0.7506069 , 0.66025545, 0.57773413,
-           0.13637805, 0.65313404, 0.94054845, 0.73113841, 0.62134168,
-           0.5921035 , 0.94436547, 0.81186601, 1.24718999, 0.39199878,
-           0.45386412, 0.42217735, 1.24088951, 0.5867549 , 0.6913596 ,
-           1.17528844, 0.33445798, 0.1153327 , 0.26337241, 0.26147717,
-           0.62057918, 0.28491689, 0.31421093, 0.40150273, 1.44467906,
-           0.60171564, 0.34437072, 0.4692395 , 0.27385045, 1.63485952,
-           0.40015442, 1.0441201 , 2.19056418, 1.12272645, 0.61249862,
-           0.75474827, 0.7815827 , 0.80393499, 0.32649636, 0.83476509,
-           0.25414852, 0.57164654, 0.7611451 , 0.21181502, 0.71508392,
-           0.58439428, 0.43665428, 0.88775161, 0.22188179, 0.63048339,
-           0.57584537, 0.5080915 , 0.41248433, 1.03071766, 0.80256855,
-           1.18059748, 0.99688196, 0.47100322, 0.66848317, 0.18041138,
-           0.46086892, 0.51547914, 0.14185144, 0.13764871, 2.83674637,
-           0.85681032, 0.56623433, 0.42261345, 1.11146046, 0.61518367,
-           0.51218447, 0.92784521, 0.86604333, 0.22073224, 0.33548783,
-           1.02268639, 0.74646899, 0.95593257, 0.69893777, 0.61217103,
-           0.64846932, 0.52125053, 0.70027174, 0.78505558, 0.50536946,
-           0.26598804, 0.6502244 , 1.77566263, 0.50257933, 0.50109589,
-           0.41736201, 0.86444241, 0.91822494, 0.66239364, 0.69994883,
-           0.37919392, 0.44886388, 0.80593548, 0.75986569, 0.26679856,
-           0.16248547, 0.3706527 , 0.2916197 , 0.59213631, 1.29344257,
-           0.93727487, 0.69417891, 0.62340054, 0.93814818, 0.66207597,
-           0.91878978, 0.2488312 , 0.67239351, 1.5332564 , 0.5260346 ,
-           0.51294641, 0.65613956, 0.65901606, 0.68728589, 0.80842544,
-           0.67361356, 0.19159987, 0.52955756, 0.53752053, 0.36349917,
-           0.52112846, 0.42438111, 0.48769609, 1.14668749, 1.05815144,
-           0.56980693, 0.31640424, 1.45410015, 0.70295834, 0.84380564,
-           0.4744537 , 0.93382634, 0.36511825, 0.82997741, 1.36797273,
-           1.23125064, 1.05432853, 1.02254873, 0.98402699, 0.38808115,
-           0.85883242, 0.99217939, 1.10438874, 1.23509096, 0.10629652,
-           0.4936057 , 0.73431324, 0.32007488, 1.10794078, 0.64613734,
-           0.63747603, 0.60175925, 0.51699976, 0.25421487, 0.80301364,
-           0.56365274, 0.8160969 , 0.52218138, 1.01350631, 0.69746209,
-           0.37161624, 0.57771138, 1.09652679, 1.47064226, 0.57647119,
-           0.138305  , 0.68216778, 0.47097486, 0.72064545, 0.6771987 ,
-           0.96641986, 0.86690129, 0.23487104]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 239
-    Process 0 estimating PZ PDF for rows 0 - 239
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55da0cf41390>, 'bestsig': np.float64(0.075), 'nneigh': 4, 'truezs': array([1.43334293, 1.32375515, 0.87025988, 2.75354752, 1.2945056 ,
+           1.13209355, 1.11237383, 0.14820874, 1.76498485, 0.13836348,
+           0.54633272, 0.33181095, 0.45686185, 0.75680077, 1.86884856,
+           0.51444894, 1.14700544, 0.56240654, 0.77783823, 0.47601438,
+           0.83919311, 0.95429492, 0.52233857, 2.04963803, 0.9337821 ,
+           1.58285379, 0.59968507, 0.34287202, 0.57653922, 0.58619058,
+           1.63809873, 1.32107246, 0.29344237, 2.20576262, 0.73928225,
+           1.20174956, 0.29615378, 1.11298227, 0.28510499, 0.92013162,
+           0.70326948, 1.90167046, 0.19354403, 1.41688347, 0.73398304,
+           1.19796193, 0.59407061, 1.51560593, 1.91051006, 0.2790072 ,
+           0.41600168, 0.9682647 , 0.56117678, 1.33412039, 1.37058079,
+           1.75186634, 0.59243715, 1.04694736, 0.56322128, 1.65019202,
+           0.58909053, 1.52056754, 1.06992936, 0.73326874, 0.94512057,
+           0.08180296, 0.49115348, 1.42356133, 1.13888812, 0.38673675,
+           1.1898067 , 1.0973556 , 0.85092658, 0.67183864, 0.81284779,
+           1.39219272, 1.46981287, 0.72021025, 0.32609248, 1.21063805,
+           0.42013288, 2.242836  , 1.38765848, 1.40128634, 0.29916453,
+           1.37460637, 0.26279032, 0.3636477 , 0.3132515 , 0.98319566,
+           0.50676078, 1.69052792, 0.849437  , 1.46023285, 1.3697542 ,
+           1.24507451, 2.19131637, 2.50156   , 0.93563014, 1.14436436,
+           0.33537817, 0.82186377, 0.70383537, 0.90621483, 1.0715214 ,
+           0.95451319, 1.06586504, 1.20473051, 0.45711076, 0.66132927,
+           0.31336808, 0.17441905, 2.043468  , 0.17591262, 0.30481195,
+           0.470649  , 1.35764854, 0.43365705, 1.1348412 , 0.65248919,
+           0.85621178, 0.14503407, 0.9868729 , 2.12334347, 1.77073967,
+           0.21947038, 2.05947256, 2.20164204, 1.41731215, 0.51615679,
+           0.8191002 , 0.65915453, 0.30754578, 1.36820233, 0.13578796,
+           1.28806055, 1.4056685 , 0.24158561, 0.28185225, 1.30681917,
+           1.97468781, 0.32469094, 0.46412849, 0.79311532, 1.3024288 ,
+           0.2099607 , 1.17626381, 0.35085678, 0.37228823, 1.52437806,
+           0.67059481, 1.20021856, 1.84209895, 0.87937343, 0.29588675,
+           0.94304281, 0.90039802, 0.72097045, 1.24347734, 1.45961463,
+           1.38679743, 1.0127914 , 0.21674824, 1.99223673, 0.48858619,
+           1.10676384, 0.63409913, 1.15922236, 0.69446862, 0.69260073,
+           0.93013179, 0.16400123, 1.6092967 , 1.00482392, 1.96645319,
+           0.79719043, 0.32310939, 0.80110627, 0.16412175, 1.3823427 ,
+           0.31112421, 0.66980475, 2.13243532, 0.36510038, 0.42826843,
+           0.06771374, 1.02543449, 0.90034324, 1.0493418 , 0.14361739,
+           0.17504692, 1.01627433, 1.74107969, 0.59678823, 1.62800132,
+           0.76858389, 0.99128342, 1.8263315 , 2.15762091, 0.30426669,
+           0.50387681, 0.48399901, 1.30421627, 0.17721963, 0.37443542,
+           2.21241045, 0.70757198, 0.19370699, 1.04741263, 0.29545975,
+           1.43000007, 0.44004273, 0.97242951, 0.91863853, 0.17414916,
+           0.63105214, 0.6058014 , 2.25866246, 0.83745164, 0.2669332 ,
+           1.16461241, 0.97509301, 0.43853319, 0.4218998 , 0.30188823,
+           0.26030195, 0.89930093, 1.34247923, 0.48091793, 0.56917632,
+           1.47466955, 1.28381884, 0.40002012, 1.40819538, 0.72034645,
+           0.57547367, 0.30207837, 1.36686528, 1.80824006, 0.63910389,
+           0.40295982, 0.73917311, 0.7412892 , 0.33709359, 0.90878081,
+           0.38845444, 0.30060232, 0.47518599, 0.52465808, 0.50852251,
+           1.10154212, 0.59770911, 0.56718463, 0.78799802, 0.27489257,
+           1.93352485, 0.43648791, 0.76954579, 0.90136218, 1.2346406 ,
+           0.32413328, 0.95748007, 0.30133891, 0.70873785, 0.52307767,
+           0.27721393, 1.12518128, 0.81778729, 0.55400753, 0.33471656,
+           0.20966005, 0.60201263, 0.25054669, 1.11414111, 0.28035569,
+           0.73318845, 1.06350172, 1.20010197, 0.3425616 , 0.66319573,
+           0.2206223 , 1.39930844, 0.35734427, 1.49429417, 1.16150117,
+           1.30758512, 1.73918949, 1.22388697, 0.68120182, 1.32191741,
+           1.15110517, 0.34176445, 1.3045671 , 0.87984765, 0.32177424,
+           0.37638879, 0.82027429, 0.29169178, 0.31402266, 0.34440911,
+           0.27668357, 0.29592991, 1.53584135, 0.67979324, 0.30667782,
+           0.30161166, 1.42583954, 0.96956509, 0.56717682, 1.07272172,
+           0.46502316, 0.34059918, 0.23844993, 0.81917554, 0.16491187,
+           0.5566076 , 1.66502547, 0.21200144, 0.45102406, 0.38877988,
+           1.20534456, 0.34152937, 1.53214741, 0.29181147, 0.47998679,
+           1.25758517, 0.34061432, 1.18159473, 0.84324145, 0.31398714,
+           0.51589644, 1.39048839, 1.51469517, 0.98825103, 1.38883674,
+           1.28026533, 0.88619959, 0.15926027, 0.9070977 , 0.76672369,
+           0.7266838 , 0.14852488, 0.69021386, 0.21718121, 0.28067517,
+           0.65013725, 0.73057395, 1.23876667, 0.25942039, 0.65067542,
+           0.47002256, 0.30704796, 0.59773457, 0.30942369, 0.43926072,
+           0.78192651, 1.68562365, 0.58420714, 1.30561638, 0.76581246,
+           0.25475788, 0.28719735, 0.22969246, 0.60033911, 0.17246795,
+           0.82271415, 0.52762401, 0.20761871, 0.54527968, 0.28257442,
+           0.57898557, 0.34235108, 1.04987168, 0.68477708, 1.14088297,
+           0.61571866, 0.49521637, 0.95009673, 1.5125798 , 0.28669   ,
+           0.35282803, 1.7318455 , 0.47037816, 0.95080459, 0.36787045,
+           0.29350114, 0.48851299, 0.33219099, 1.33950555, 0.29690671,
+           1.33826804, 0.71123588, 0.34530675, 2.04046774, 0.62280989,
+           0.18266571, 0.09311604, 0.3320719 , 0.56478727, 1.27336633,
+           0.30870986, 0.60732841, 0.42434287, 1.23780346, 0.59757632,
+           1.35440338, 0.96001279, 0.97683668, 0.34299016, 0.86345488,
+           0.23797214, 0.11863601, 1.0072093 , 1.19168341, 1.06498086,
+           1.35555863, 1.34472001, 1.63187253, 1.84552824, 0.39839816,
+           1.63728237, 0.55300617, 0.34578633, 1.20400059, 0.27654958,
+           1.15541792, 0.77244979, 0.53368551, 0.75483638, 0.27291751,
+           0.58194035, 0.79243915, 0.5175764 , 0.48491001, 1.88406968,
+           0.77639759, 0.66120766, 0.414626  , 0.42791784, 2.0598073 ,
+           0.43945396, 0.58958578, 1.01936233, 0.6483196 , 1.67183888,
+           0.52963954, 0.30679369, 1.00202823, 0.94283479, 0.29296339,
+           1.59578192, 1.09455955, 1.59637642, 1.02905238, 0.22328591,
+           1.29159526, 0.22334087, 1.5384474 , 2.91431588, 1.88723159,
+           1.15636766, 0.55107099, 0.74864054, 0.19263005, 0.59278095,
+           0.89146698, 0.33411133, 0.50696313, 0.25047553, 0.9364835 ,
+           0.71203623, 0.61948425, 0.29832304, 0.31371355, 1.29020119,
+           0.41096365, 0.27307379, 0.48057532, 1.26715958, 0.29613948,
+           0.6521886 , 1.39496958, 0.20531785, 1.22900867, 0.59435523,
+           1.40146673, 1.16824245, 0.75888872, 2.07863092, 1.27108526,
+           1.77108407, 0.77392304, 0.96310008, 0.33084118, 0.78578913,
+           0.64480174, 1.00324512, 1.41841984, 0.43717694, 1.06073415,
+           0.67829609, 1.95298517, 0.75885445, 0.39110053, 1.10399461,
+           0.97467631, 2.25304413, 1.47166979, 0.33372307, 0.39481735,
+           0.74743998, 0.78758482, 1.15159118, 0.73164642]), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 235
+    Process 0 estimating PZ PDF for rows 0 - 235
+    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  input: None, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55da042d8e30>, 'bestsig': np.float64(0.075), 'nneigh': 3, 'truezs': array([0.87025988, 1.2945056 , 1.13209355, 0.13836348, 0.45686185,
+           0.75680077, 0.51444894, 1.14700544, 0.47601438, 0.83919311,
+           0.52233857, 0.59968507, 0.34287202, 0.57653922, 1.63809873,
+           0.29344237, 0.73928225, 0.29615378, 1.11298227, 0.92013162,
+           0.19354403, 0.59407061, 0.56117678, 1.33412039, 0.59243715,
+           1.04694736, 0.56322128, 0.58909053, 0.94512057, 0.49115348,
+           1.13888812, 1.1898067 , 0.85092658, 0.67183864, 0.81284779,
+           0.72021025, 0.32609248, 1.21063805, 1.40128634, 0.29916453,
+           0.3636477 , 0.3132515 , 0.50676078, 1.69052792, 1.46023285,
+           1.24507451, 0.93563014, 1.14436436, 0.82186377, 0.70383537,
+           0.90621483, 0.95451319, 1.06586504, 1.20473051, 0.45711076,
+           0.66132927, 0.31336808, 0.17441905, 0.30481195, 0.470649  ,
+           1.35764854, 0.65248919, 0.9868729 , 1.41731215, 0.51615679,
+           0.65915453, 0.30754578, 0.13578796, 0.24158561, 0.28185225,
+           0.46412849, 1.3024288 , 0.2099607 , 0.35085678, 1.52437806,
+           0.67059481, 1.20021856, 0.94304281, 0.90039802, 0.21674824,
+           0.48858619, 0.69446862, 0.93013179, 1.6092967 , 1.00482392,
+           0.79719043, 0.80110627, 0.16412175, 0.36510038, 0.42826843,
+           0.06771374, 1.02543449, 0.90034324, 1.0493418 , 1.01627433,
+           0.59678823, 1.62800132, 0.30426669, 0.50387681, 0.48399901,
+           0.37443542, 0.70757198, 0.19370699, 0.44004273, 0.97242951,
+           0.63105214, 0.83745164, 0.2669332 , 0.4218998 , 0.26030195,
+           1.34247923, 0.48091793, 0.56917632, 0.40002012, 0.72034645,
+           0.30207837, 0.63910389, 0.73917311, 0.7412892 , 0.33709359,
+           0.30060232, 0.47518599, 0.59770911, 0.56718463, 0.78799802,
+           0.27489257, 0.43648791, 1.2346406 , 0.95748007, 0.30133891,
+           0.55400753, 0.33471656, 0.60201263, 0.25054669, 1.11414111,
+           0.73318845, 0.2206223 , 1.22388697, 0.68120182, 1.32191741,
+           1.15110517, 0.34176445, 0.37638879, 0.82027429, 0.34440911,
+           0.27668357, 0.29592991, 0.67979324, 0.30161166, 1.07272172,
+           0.46502316, 0.34059918, 0.81917554, 0.45102406, 0.38877988,
+           1.20534456, 0.47998679, 1.25758517, 0.34061432, 0.84324145,
+           0.31398714, 0.51589644, 1.51469517, 0.98825103, 1.28026533,
+           0.88619959, 0.14852488, 0.28067517, 0.65013725, 0.73057395,
+           0.25942039, 0.65067542, 0.47002256, 0.59773457, 0.30942369,
+           0.43926072, 0.78192651, 0.58420714, 0.76581246, 0.25475788,
+           0.22969246, 0.60033911, 0.17246795, 0.82271415, 0.52762401,
+           0.34235108, 1.14088297, 0.61571866, 0.49521637, 0.95009673,
+           0.28669   , 0.35282803, 0.47037816, 0.36787045, 0.48851299,
+           0.33219099, 1.33950555, 0.34530675, 0.62280989, 0.18266571,
+           0.09311604, 0.3320719 , 0.56478727, 0.60732841, 0.59757632,
+           1.35440338, 0.96001279, 0.97683668, 0.34299016, 0.11863601,
+           1.19168341, 1.35555863, 1.20400059, 0.27654958, 1.15541792,
+           0.77244979, 0.75483638, 0.27291751, 0.5175764 , 0.48491001,
+           0.77639759, 0.6483196 , 0.52963954, 0.30679369, 0.22328591,
+           1.15636766, 0.55107099, 0.74864054, 0.19263005, 0.59278095,
+           0.89146698, 0.33411133, 0.50696313, 0.9364835 , 0.61948425,
+           0.29832304, 1.29020119, 0.48057532, 1.26715958, 0.29613948,
+           0.6521886 , 1.16824245, 0.75888872, 0.77392304, 0.78578913,
+           0.64480174, 1.00324512, 0.43717694, 0.75885445, 0.39110053,
+           0.97467631, 1.47166979, 0.74743998, 0.78758482, 0.73164642]), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 235
+    Process 0 estimating PZ PDF for rows 0 - 235
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
 
 
@@ -3282,7 +3288,7 @@ per distribution.
 
 .. parsed-literal::
 
-    {'output': Ensemble(the_class=mixmod,shape=(239, 7))}
+    {'output': Ensemble(the_class=mixmod,shape=(235, 7))}
 
 
 We can see that this algorithm outputs Ensembles of class ``mixmod``,
@@ -3320,37 +3326,43 @@ Let’s take a look at what the different dictionaries look like for this
 
 .. parsed-literal::
 
-    {'weights': array([[0.19225649, 0.14057875, 0.13767915, ..., 0.13302541, 0.13052931,
-            0.12829715],
-           [0.23237945, 0.14783115, 0.13839272, ..., 0.12606496, 0.11724972,
-            0.10670811],
-           [0.22858354, 0.14743387, 0.13971409, ..., 0.12034452, 0.11978395,
-            0.11829486],
+    {'weights': array([[0.23629855, 0.15147082, 0.15088038, ..., 0.12592662, 0.11959536,
+            0.0845446 ],
+           [0.25903318, 0.14618087, 0.13981088, ..., 0.11317833, 0.1083862 ,
+            0.10432916],
+           [0.29664524, 0.16999572, 0.12086626, ..., 0.10369715, 0.09583377,
+            0.09428205],
            ...,
-           [0.22288792, 0.16518327, 0.15654997, ..., 0.12123639, 0.09742502,
-            0.0944174 ],
-           [0.34450419, 0.13127727, 0.11597179, ..., 0.10159983, 0.09584281,
-            0.09582508],
-           [0.17773632, 0.14876468, 0.14064037, ..., 0.1329481 , 0.13204043,
-            0.12983903]], shape=(239, 7)), 'stds': array([[0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075],
-           [0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075],
-           [0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075],
+           [0.17956374, 0.15587108, 0.14357747, ..., 0.13113376, 0.1303593 ,
+            0.12812151],
+           [0.20232662, 0.1720883 , 0.15061593, ..., 0.11939139, 0.11831609,
+            0.10934293],
+           [0.21170527, 0.15228697, 0.15037734, ..., 0.13314878, 0.10882771,
+            0.09870863]], shape=(235, 7)), 'stds': array([[0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778],
+           [0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778],
+           [0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778],
            ...,
-           [0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075],
-           [0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075],
-           [0.075, 0.075, 0.075, ..., 0.075, 0.075, 0.075]], shape=(239, 7)), 'means': array([[0.42965586, 0.38808115, 0.32007488, ..., 0.34437072, 0.33548783,
-            0.28729589],
-           [0.55683388, 0.40150273, 0.5713541 , ..., 0.45451513, 0.32649636,
-            0.62314496],
-           [0.2916197 , 0.27385045, 0.21181502, ..., 0.52596522, 0.25414852,
-            0.5080915 ],
+           [0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778],
+           [0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778],
+           [0.06777778, 0.06777778, 0.06777778, ..., 0.06777778, 0.06777778,
+            0.06777778]], shape=(235, 7)), 'means': array([[0.6944686 , 0.7548364 , 0.6506754 , ..., 0.73318845, 0.7391731 ,
+            0.7588887 ],
+           [1.2575852 , 2.2586625 , 1.0607342 , ..., 1.4056685 , 0.14361739,
+            1.3746064 ],
+           [0.29344237, 0.29613948, 0.3111242 , ..., 0.33411133, 2.29274   ,
+            0.31402266],
            ...,
-           [0.88487255, 0.74646899, 0.51552689, ..., 0.86690129, 0.73113841,
-            1.01350631],
-           [1.1371776 , 1.4358756 , 1.36387164, ..., 1.37492165, 1.98764758,
-            1.38428261],
-           [0.41205712, 0.44127442, 0.25544345, ..., 0.37293102, 0.46086892,
-            0.2916197 ]], shape=(239, 7))}
+           [0.77392304, 0.47002256, 0.5890905 , ..., 0.72021025, 0.5611768 ,
+            0.48057532],
+           [0.98825103, 0.9574801 , 0.900398  , ..., 0.9636896 , 1.2573075 ,
+            1.1320935 ],
+           [0.33060288, 0.33471656, 0.34059918, ..., 0.45711076, 0.2505467 ,
+            0.30161166]], shape=(235, 7), dtype=float32)}
 
 
 Typically the ancillary data table includes a photo-z point estimate
@@ -3366,256 +3378,252 @@ called ‘zmode’ in the ancillary dictionary below:
 
 .. parsed-literal::
 
-    {'zmode': array([[0.34],
+    {'zmode': array([[0.71],
+           [1.29],
+           [0.3 ],
            [0.54],
-           [0.27],
-           [0.64],
-           [0.97],
-           [1.05],
-           [0.67],
-           [0.67],
-           [0.49],
-           [0.81],
-           [1.73],
-           [0.95],
-           [0.25],
-           [0.47],
-           [0.35],
-           [0.83],
-           [0.3 ],
-           [0.81],
-           [0.93],
-           [0.97],
-           [0.83],
-           [0.35],
-           [0.43],
-           [0.88],
-           [0.5 ],
-           [1.43],
-           [0.58],
-           [1.07],
-           [0.67],
-           [0.3 ],
-           [0.98],
-           [1.32],
-           [1.03],
-           [0.82],
-           [0.15],
-           [0.8 ],
-           [0.57],
-           [0.97],
-           [1.05],
-           [0.48],
-           [0.7 ],
-           [0.33],
-           [0.69],
-           [0.19],
+           [0.28],
+           [0.62],
+           [1.4 ],
+           [0.75],
+           [0.68],
+           [1.19],
+           [0.68],
+           [1.12],
+           [1.13],
            [0.65],
-           [1.  ],
-           [0.49],
-           [0.88],
-           [0.49],
-           [0.56],
-           [0.66],
+           [1.16],
            [0.78],
-           [0.71],
-           [0.58],
-           [0.49],
-           [0.2 ],
-           [0.73],
-           [0.74],
-           [0.35],
-           [0.57],
+           [0.67],
            [0.86],
            [1.15],
-           [0.56],
-           [0.99],
-           [0.41],
-           [0.75],
-           [0.65],
-           [0.47],
-           [0.3 ],
-           [0.99],
-           [0.88],
-           [0.8 ],
-           [0.46],
-           [0.68],
-           [0.75],
-           [0.65],
-           [0.44],
-           [0.33],
-           [0.32],
-           [0.37],
-           [1.05],
-           [0.98],
-           [1.27],
-           [0.33],
-           [0.31],
-           [0.67],
-           [0.38],
-           [0.56],
-           [0.34],
-           [1.09],
            [0.21],
-           [0.79],
-           [0.24],
+           [0.47],
+           [1.13],
+           [1.1 ],
+           [1.06],
+           [0.53],
+           [0.71],
+           [0.26],
+           [0.35],
+           [0.35],
+           [0.61],
+           [0.43],
+           [0.74],
+           [0.77],
+           [0.83],
+           [0.58],
+           [0.5 ],
+           [1.38],
+           [0.28],
+           [1.4 ],
+           [0.99],
+           [0.53],
+           [0.93],
+           [1.44],
+           [0.32],
+           [0.31],
+           [0.57],
+           [0.81],
+           [0.76],
+           [1.99],
+           [0.51],
+           [0.37],
+           [0.95],
+           [0.25],
+           [0.98],
+           [0.44],
+           [0.53],
+           [0.71],
+           [1.27],
+           [0.15],
+           [0.28],
+           [0.78],
+           [0.32],
+           [1.23],
+           [1.08],
+           [0.23],
+           [1.17],
+           [1.09],
+           [1.41],
+           [0.32],
+           [0.32],
+           [0.55],
+           [0.58],
+           [0.81],
+           [1.2 ],
+           [0.77],
            [0.31],
            [0.86],
-           [0.79],
-           [0.77],
-           [0.46],
-           [1.36],
-           [1.13],
-           [1.2 ],
-           [0.13],
-           [0.4 ],
-           [0.37],
-           [0.84],
-           [1.38],
-           [0.67],
-           [0.41],
-           [0.95],
-           [0.52],
-           [0.36],
-           [0.64],
-           [0.34],
-           [0.51],
-           [0.58],
-           [0.29],
-           [0.48],
-           [0.4 ],
-           [1.12],
-           [0.57],
-           [0.43],
-           [0.34],
-           [0.66],
-           [1.39],
-           [1.02],
-           [0.47],
-           [0.89],
-           [0.76],
-           [0.5 ],
-           [0.94],
-           [0.22],
-           [0.51],
-           [0.78],
-           [0.81],
-           [0.9 ],
-           [0.83],
-           [0.63],
-           [0.18],
-           [0.79],
-           [0.46],
-           [0.45],
-           [0.57],
-           [0.33],
-           [0.26],
-           [0.4 ],
-           [0.25],
-           [0.94],
-           [0.42],
-           [0.32],
-           [0.95],
-           [0.77],
-           [0.65],
-           [0.7 ],
-           [0.48],
-           [0.76],
-           [0.52],
-           [0.82],
-           [0.46],
-           [0.82],
-           [0.38],
-           [0.84],
-           [0.94],
-           [0.24],
-           [0.25],
-           [0.7 ],
-           [0.32],
-           [0.55],
-           [0.69],
-           [0.21],
-           [0.53],
-           [0.78],
-           [0.52],
-           [0.63],
-           [0.68],
-           [0.55],
-           [0.18],
-           [0.46],
-           [0.3 ],
-           [0.67],
-           [0.66],
-           [1.8 ],
-           [0.66],
-           [0.49],
-           [0.48],
-           [0.7 ],
-           [0.82],
-           [0.62],
-           [1.03],
-           [1.06],
-           [0.83],
            [0.23],
-           [0.74],
-           [0.61],
-           [1.18],
-           [0.69],
-           [0.79],
-           [0.15],
-           [0.47],
-           [1.88],
-           [0.69],
-           [0.4 ],
-           [0.28],
-           [0.65],
-           [0.2 ],
-           [0.34],
-           [1.19],
-           [0.78],
-           [0.98],
-           [0.32],
-           [0.39],
-           [0.46],
-           [0.18],
-           [0.32],
-           [0.32],
-           [1.  ],
-           [1.29],
-           [0.56],
-           [1.13],
-           [0.51],
-           [0.49],
-           [0.53],
-           [0.47],
-           [0.82],
-           [0.51],
-           [1.18],
-           [0.95],
-           [0.54],
-           [0.65],
-           [0.78],
-           [0.71],
-           [0.71],
-           [0.25],
+           [0.99],
+           [0.52],
+           [0.93],
            [1.43],
-           [1.08],
-           [1.1 ],
            [0.36],
-           [0.85],
+           [0.28],
+           [0.59],
+           [0.65],
+           [0.27],
+           [0.49],
+           [0.52],
+           [0.43],
+           [0.24],
+           [0.26],
+           [0.59],
+           [0.71],
+           [0.29],
+           [0.69],
+           [0.81],
+           [0.83],
+           [0.88],
+           [1.12],
+           [0.87],
+           [0.34],
+           [0.33],
+           [0.33],
+           [0.21],
+           [0.38],
+           [0.21],
+           [0.17],
+           [0.76],
+           [0.32],
+           [0.41],
+           [0.43],
+           [0.61],
+           [1.36],
+           [0.24],
+           [0.78],
+           [0.4 ],
+           [1.58],
+           [0.52],
+           [0.25],
+           [0.98],
+           [1.18],
+           [1.11],
+           [0.95],
+           [0.31],
+           [0.97],
+           [1.36],
+           [1.54],
+           [0.78],
+           [0.17],
+           [0.73],
+           [1.1 ],
+           [1.31],
+           [0.64],
+           [0.28],
+           [1.37],
+           [0.98],
+           [0.3 ],
+           [0.4 ],
+           [2.15],
+           [0.76],
+           [0.77],
+           [0.32],
+           [0.67],
+           [0.34],
+           [0.97],
+           [0.77],
+           [0.45],
+           [0.25],
+           [0.68],
+           [0.29],
+           [0.33],
+           [0.28],
+           [0.99],
+           [0.94],
            [1.4 ],
-           [0.39]]), 'redshift': 0      0.253092
-    1      0.457460
-    2      0.195513
-    3      0.648485
-    4      0.942750
+           [1.22],
+           [0.82],
+           [0.56],
+           [0.48],
+           [1.39],
+           [0.24],
+           [0.52],
+           [0.73],
+           [0.32],
+           [0.32],
+           [0.73],
+           [0.92],
+           [0.77],
+           [0.68],
+           [0.68],
+           [0.59],
+           [0.58],
+           [1.11],
+           [0.59],
+           [0.34],
+           [0.31],
+           [1.14],
+           [0.97],
+           [0.67],
+           [0.72],
+           [0.67],
+           [0.27],
+           [0.27],
+           [0.56],
+           [0.23],
+           [0.99],
+           [1.2 ],
+           [0.68],
+           [1.29],
+           [0.99],
+           [0.77],
+           [1.  ],
+           [0.31],
+           [0.44],
+           [0.66],
+           [0.31],
+           [0.23],
+           [0.33],
+           [0.69],
+           [1.3 ],
+           [0.52],
+           [0.23],
+           [0.99],
+           [0.55],
+           [1.23],
+           [0.43],
+           [0.75],
+           [0.26],
+           [0.3 ],
+           [0.25],
+           [0.73],
+           [0.99],
+           [0.34],
+           [0.37],
+           [0.75],
+           [0.99],
+           [1.1 ],
+           [0.96],
+           [0.29],
+           [0.84],
+           [0.7 ],
+           [0.33],
+           [0.73],
+           [0.58],
+           [0.7 ],
+           [0.21],
+           [0.65],
+           [0.8 ],
+           [0.34],
+           [0.48],
+           [0.45],
+           [0.52],
+           [0.97],
+           [0.32]]), 'redshift': 0      0.684234
+    1      1.751949
+    2      0.334738
+    3      0.508261
+    4      0.202286
              ...   
-    234    1.244255
-    235    0.504704
-    236    0.921385
-    237    1.458479
-    238    0.288089
-    Name: redshift, Length: 239, dtype: float64, 'distribution_type': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    230    0.498327
+    231    0.351069
+    232    0.631504
+    233    1.020108
+    234    0.410133
+    Name: redshift, Length: 235, dtype: float64, 'distribution_type': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -3625,7 +3633,7 @@ called ‘zmode’ in the ancillary dictionary below:
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])}
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])}
 
 
 The nice thing about the ``Ensemble`` is that you don’t actually need to
@@ -3718,7 +3726,7 @@ here we’ll use two of the most basic:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, PointEstHistSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
 
 
 .. parsed-literal::
@@ -3726,11 +3734,11 @@ here we’ll use two of the most basic:
     Inserting handle into data store.  output: inprogress_output.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
     Inserting handle into data store.  output: inprogress_output.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  input: None, PointEstHistSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
 
 
 .. parsed-literal::
@@ -3738,11 +3746,11 @@ here we’ll use two of the most basic:
     Inserting handle into data store.  output: inprogress_output.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
     Inserting handle into data store.  output: inprogress_output.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  input: None, PointEstHistSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
 
 
 .. parsed-literal::
@@ -3750,11 +3758,11 @@ here we’ll use two of the most basic:
     Inserting handle into data store.  output: inprogress_output.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
     Inserting handle into data store.  output: inprogress_output.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  input: None, PointEstHistSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
 
 
 .. parsed-literal::
@@ -3762,7 +3770,7 @@ here we’ll use two of the most basic:
     Inserting handle into data store.  output: inprogress_output.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer
-    Process 0 running estimator on chunk 0 - 239
+    Process 0 running estimator on chunk 0 - 235
     Inserting handle into data store.  output: inprogress_output.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NaiveStackSummarizer
 
@@ -3945,42 +3953,42 @@ distributions we’ve summarized, and turn it into a pandas DataFrame:
         <tr>
           <th>0</th>
           <td>0.00</td>
-          <td>0.031410</td>
-          <td>0.021344</td>
-          <td>0.025625</td>
-          <td>0.024800</td>
+          <td>0.018251</td>
+          <td>0.091872</td>
+          <td>0.024438</td>
+          <td>0.027158</td>
         </tr>
         <tr>
           <th>1</th>
           <td>0.01</td>
-          <td>0.039630</td>
-          <td>0.027665</td>
-          <td>0.033344</td>
-          <td>0.033139</td>
+          <td>0.024925</td>
+          <td>0.108324</td>
+          <td>0.031755</td>
+          <td>0.034996</td>
         </tr>
         <tr>
           <th>2</th>
           <td>0.02</td>
-          <td>0.049460</td>
-          <td>0.035429</td>
-          <td>0.042813</td>
-          <td>0.043518</td>
+          <td>0.033536</td>
+          <td>0.126094</td>
+          <td>0.040757</td>
+          <td>0.044551</td>
         </tr>
         <tr>
           <th>3</th>
           <td>0.03</td>
-          <td>0.061075</td>
-          <td>0.044846</td>
-          <td>0.054250</td>
-          <td>0.056169</td>
+          <td>0.044467</td>
+          <td>0.145059</td>
+          <td>0.051683</td>
+          <td>0.056047</td>
         </tr>
         <tr>
           <th>4</th>
           <td>0.04</td>
-          <td>0.074636</td>
-          <td>0.056131</td>
-          <td>0.067858</td>
-          <td>0.071273</td>
+          <td>0.058111</td>
+          <td>0.165115</td>
+          <td>0.064771</td>
+          <td>0.069705</td>
         </tr>
       </tbody>
     </table>
@@ -4068,128 +4076,128 @@ line up with our pre-degradation photometry data.
 
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.253092   26.299827   25.422216   24.751366   24.510188   24.326134   
-    1    0.457460   26.601035   25.759947   24.711040   24.349515   24.120014   
-    2    0.195513   21.985338   20.884806   20.012474   19.618118   19.291399   
-    3    0.648485   25.744319   25.133746   24.297711   23.678938   23.540052   
-    4    0.942750   23.543277   23.671578   23.943572   23.780021   23.708045   
+    0    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
+    1    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
+    2    0.334738   22.901604   22.585258   22.078140   22.091541   21.725985   
+    3    0.508261   27.219675   26.349281   25.363613   24.975111   24.789568   
+    4    0.202286   25.150200   24.267548   23.537415   23.175728   22.982109   
     ..        ...         ...         ...         ...         ...         ...   
-    234  1.244255   27.780749   26.896284   25.357902   23.785710   23.000380   
-    235  0.504704   26.476533   25.818029   24.951983   24.587840   24.456913   
-    236  0.921385   24.923239   24.661077   24.186410   23.500600   23.186857   
-    237  1.458479   25.312094   25.134476   25.034131   24.670910   24.358104   
-    238  0.288089   28.011370   26.364248   25.201337   24.789670   24.479188   
+    230  0.498327   25.256531   24.734894   23.983690   23.683472   23.646606   
+    231  0.351069   25.185009   23.521603   22.113777   21.557377   21.228889   
+    232  0.631504   27.546143   25.364649   23.775986   22.639019   22.233021   
+    233  1.020108   24.216951   23.881901   23.230240   22.513334   21.873619   
+    234  0.410133   25.853966   24.891123   23.988443   23.726196   23.565538   
     
          mag_y_lsst  
-    0     24.268778  
-    1     23.903554  
-    2     19.150343  
-    3     23.398750  
-    4     23.638526  
+    0     20.347912  
+    1     23.972845  
+    2     21.967663  
+    3     24.562302  
+    4     22.828064  
     ..          ...  
-    234   22.137876  
-    235   24.290639  
-    236   23.051891  
-    237   23.821220  
-    238   24.394670  
+    230   23.460381  
+    231   21.010700  
+    232   21.900209  
+    233   21.645157  
+    234   23.432323  
     
-    [239 rows x 7 columns], DistToPointEvaluator
+    [235 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
     Inserting handle into data store.  output: inprogress_output.hdf5, DistToPointEvaluator
     Inserting handle into data store.  summary: inprogress_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.253092   26.299827   25.422216   24.751366   24.510188   24.326134   
-    1    0.457460   26.601035   25.759947   24.711040   24.349515   24.120014   
-    2    0.195513   21.985338   20.884806   20.012474   19.618118   19.291399   
-    3    0.648485   25.744319   25.133746   24.297711   23.678938   23.540052   
-    4    0.942750   23.543277   23.671578   23.943572   23.780021   23.708045   
+    0    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
+    1    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
+    2    0.334738   22.901604   22.585258   22.078140   22.091541   21.725985   
+    3    0.508261   27.219675   26.349281   25.363613   24.975111   24.789568   
+    4    0.202286   25.150200   24.267548   23.537415   23.175728   22.982109   
     ..        ...         ...         ...         ...         ...         ...   
-    234  1.244255   27.780749   26.896284   25.357902   23.785710   23.000380   
-    235  0.504704   26.476533   25.818029   24.951983   24.587840   24.456913   
-    236  0.921385   24.923239   24.661077   24.186410   23.500600   23.186857   
-    237  1.458479   25.312094   25.134476   25.034131   24.670910   24.358104   
-    238  0.288089   28.011370   26.364248   25.201337   24.789670   24.479188   
+    230  0.498327   25.256531   24.734894   23.983690   23.683472   23.646606   
+    231  0.351069   25.185009   23.521603   22.113777   21.557377   21.228889   
+    232  0.631504   27.546143   25.364649   23.775986   22.639019   22.233021   
+    233  1.020108   24.216951   23.881901   23.230240   22.513334   21.873619   
+    234  0.410133   25.853966   24.891123   23.988443   23.726196   23.565538   
     
          mag_y_lsst  
-    0     24.268778  
-    1     23.903554  
-    2     19.150343  
-    3     23.398750  
-    4     23.638526  
+    0     20.347912  
+    1     23.972845  
+    2     21.967663  
+    3     24.562302  
+    4     22.828064  
     ..          ...  
-    234   22.137876  
-    235   24.290639  
-    236   23.051891  
-    237   23.821220  
-    238   24.394670  
+    230   23.460381  
+    231   21.010700  
+    232   21.900209  
+    233   21.645157  
+    234   23.432323  
     
-    [239 rows x 7 columns], DistToPointEvaluator
+    [235 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
     Inserting handle into data store.  output: inprogress_output.hdf5, DistToPointEvaluator
     Inserting handle into data store.  summary: inprogress_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.253092   26.299827   25.422216   24.751366   24.510188   24.326134   
-    1    0.457460   26.601035   25.759947   24.711040   24.349515   24.120014   
-    2    0.195513   21.985338   20.884806   20.012474   19.618118   19.291399   
-    3    0.648485   25.744319   25.133746   24.297711   23.678938   23.540052   
-    4    0.942750   23.543277   23.671578   23.943572   23.780021   23.708045   
+    0    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
+    1    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
+    2    0.334738   22.901604   22.585258   22.078140   22.091541   21.725985   
+    3    0.508261   27.219675   26.349281   25.363613   24.975111   24.789568   
+    4    0.202286   25.150200   24.267548   23.537415   23.175728   22.982109   
     ..        ...         ...         ...         ...         ...         ...   
-    234  1.244255   27.780749   26.896284   25.357902   23.785710   23.000380   
-    235  0.504704   26.476533   25.818029   24.951983   24.587840   24.456913   
-    236  0.921385   24.923239   24.661077   24.186410   23.500600   23.186857   
-    237  1.458479   25.312094   25.134476   25.034131   24.670910   24.358104   
-    238  0.288089   28.011370   26.364248   25.201337   24.789670   24.479188   
+    230  0.498327   25.256531   24.734894   23.983690   23.683472   23.646606   
+    231  0.351069   25.185009   23.521603   22.113777   21.557377   21.228889   
+    232  0.631504   27.546143   25.364649   23.775986   22.639019   22.233021   
+    233  1.020108   24.216951   23.881901   23.230240   22.513334   21.873619   
+    234  0.410133   25.853966   24.891123   23.988443   23.726196   23.565538   
     
          mag_y_lsst  
-    0     24.268778  
-    1     23.903554  
-    2     19.150343  
-    3     23.398750  
-    4     23.638526  
+    0     20.347912  
+    1     23.972845  
+    2     21.967663  
+    3     24.562302  
+    4     22.828064  
     ..          ...  
-    234   22.137876  
-    235   24.290639  
-    236   23.051891  
-    237   23.821220  
-    238   24.394670  
+    230   23.460381  
+    231   21.010700  
+    232   21.900209  
+    233   21.645157  
+    234   23.432323  
     
-    [239 rows x 7 columns], DistToPointEvaluator
+    [235 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
     Inserting handle into data store.  output: inprogress_output.hdf5, DistToPointEvaluator
     Inserting handle into data store.  summary: inprogress_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.253092   26.299827   25.422216   24.751366   24.510188   24.326134   
-    1    0.457460   26.601035   25.759947   24.711040   24.349515   24.120014   
-    2    0.195513   21.985338   20.884806   20.012474   19.618118   19.291399   
-    3    0.648485   25.744319   25.133746   24.297711   23.678938   23.540052   
-    4    0.942750   23.543277   23.671578   23.943572   23.780021   23.708045   
+    0    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
+    1    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
+    2    0.334738   22.901604   22.585258   22.078140   22.091541   21.725985   
+    3    0.508261   27.219675   26.349281   25.363613   24.975111   24.789568   
+    4    0.202286   25.150200   24.267548   23.537415   23.175728   22.982109   
     ..        ...         ...         ...         ...         ...         ...   
-    234  1.244255   27.780749   26.896284   25.357902   23.785710   23.000380   
-    235  0.504704   26.476533   25.818029   24.951983   24.587840   24.456913   
-    236  0.921385   24.923239   24.661077   24.186410   23.500600   23.186857   
-    237  1.458479   25.312094   25.134476   25.034131   24.670910   24.358104   
-    238  0.288089   28.011370   26.364248   25.201337   24.789670   24.479188   
+    230  0.498327   25.256531   24.734894   23.983690   23.683472   23.646606   
+    231  0.351069   25.185009   23.521603   22.113777   21.557377   21.228889   
+    232  0.631504   27.546143   25.364649   23.775986   22.639019   22.233021   
+    233  1.020108   24.216951   23.881901   23.230240   22.513334   21.873619   
+    234  0.410133   25.853966   24.891123   23.988443   23.726196   23.565538   
     
          mag_y_lsst  
-    0     24.268778  
-    1     23.903554  
-    2     19.150343  
-    3     23.398750  
-    4     23.638526  
+    0     20.347912  
+    1     23.972845  
+    2     21.967663  
+    3     24.562302  
+    4     22.828064  
     ..          ...  
-    234   22.137876  
-    235   24.290639  
-    236   23.051891  
-    237   23.821220  
-    238   24.394670  
+    230   23.460381  
+    231   21.010700  
+    232   21.900209  
+    233   21.645157  
+    234   23.432323  
     
-    [239 rows x 7 columns], DistToPointEvaluator
+    [235 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
     Inserting handle into data store.  output: inprogress_output.hdf5, DistToPointEvaluator
     Inserting handle into data store.  summary: inprogress_summary.hdf5, DistToPointEvaluator
@@ -4212,14 +4220,14 @@ want to look at, to make the dictionary a little easier to read.
 
 .. parsed-literal::
 
-    {'lsst_error_model': {'cdeloss': array([-3.08410803]),
-      'brier': array([227.25714224])},
-     'inv_redshift_inc': {'cdeloss': array([-6.87225685]),
-      'brier': array([365.25006883])},
-     'line_confusion': {'cdeloss': array([-3.10479471]),
-      'brier': array([230.25782694])},
-     'quantity_cut': {'cdeloss': array([-3.11508618]),
-      'brier': array([276.36791424])}}
+    {'lsst_error_model': {'cdeloss': array([-3.06683668]),
+      'brier': array([228.01555861])},
+     'inv_redshift_inc': {'cdeloss': array([-7.61215538]),
+      'brier': array([403.38103869])},
+     'line_confusion': {'cdeloss': array([-2.89249239]),
+      'brier': array([233.53128453])},
+     'quantity_cut': {'cdeloss': array([-2.80675096]),
+      'brier': array([253.3444831])}}
 
 
 

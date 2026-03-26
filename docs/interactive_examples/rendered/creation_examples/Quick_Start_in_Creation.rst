@@ -69,14 +69,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260323T203833
+    /home/runner/.cache/lephare/runs/20260326T201727
 
 
 .. parsed-literal::
 
     
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -84,71 +84,75 @@ in the ``pipeline_examples/creation_examples/`` folder.
     downgrade to 'numpy<2' or try to upgrade the affected module.
     We expect that some modules will need time to support NumPy 2.
     
-    Traceback (most recent call last):  File "<frozen runpy>", line 198, in _run_module_as_main
-      File "<frozen runpy>", line 88, in _run_code
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel_launcher.py", line 18, in <module>
+    Traceback (most recent call last):  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+        return _run_code(code, main_globals, None,
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/runpy.py", line 86, in _run_code
+        exec(code, run_globals)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 211, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
         self._run_once()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/base_events.py", line 1936, in _run_once
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
         handle._run()
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/asyncio/events.py", line 84, in _run
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/asyncio/events.py", line 80, in _run
         self._context.run(self._callback, *self._args)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/utils.py", line 71, in preserve_context
+        return await f(*args, **kwargs)
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
         await self.dispatch_shell(msg, subshell_id=subshell_id)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
         await result
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
         await super().execute_request(stream, ident, parent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
         return super().run_cell(*args, **kwargs)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3123, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3178, in _run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3132, in _run_cell
         result = runner(coro)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
         coro.send(None)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3400, in run_cell_async
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3336, in run_cell_async
         has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3641, in run_ast_nodes
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3519, in run_ast_nodes
         if await self.run_code(code, result, async_=asy):
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3701, in run_code
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5039/3568811912.py", line 6, in <module>
+      File "/tmp/ipykernel_4977/3568811912.py", line 6, in <module>
         from rail import interactive as ri
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/calib/__init__.py", line 3, in <module>
         from rail.utils.interactive.initialize_utils import _initialize_interactive_module
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/initialize_utils.py", line 17, in <module>
         from rail.utils.interactive.base_utils import (
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/interactive/base_utils.py", line 10, in <module>
         rail.stages.import_and_attach_all(silent=True)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/core/introspection.py", line 541, in import_all_packages
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/core/introspection.py", line 541, in import_all_packages
         _imported_module = importlib.import_module(pkg)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/importlib/__init__.py", line 126, in import_module
         return _bootstrap._gcd_import(name[level:], package, level)
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/som/__init__.py", line 1, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/som/__init__.py", line 1, in <module>
         from rail.creation.degraders.specz_som import *
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/creation/degraders/specz_som.py", line 15, in <module>
         from somoclu import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/__init__.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/__init__.py", line 11, in <module>
         from .train import Somoclu
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/train.py", line 25, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/train.py", line 25, in <module>
         from .somoclu_wrap import train as wrap_train
-      File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/somoclu/somoclu_wrap.py", line 11, in <module>
         import _somoclu_wrap
 
 
@@ -159,20 +163,20 @@ in the ``pipeline_examples/creation_examples/`` folder.
 
     ImportError                               Traceback (most recent call last)
 
-    File /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/numpy/core/_multiarray_umath.py:46, in __getattr__(attr_name)
-         41     # Also print the message (with traceback).  This is because old versions
-         42     # of NumPy unfortunately set up the import to replace (and hide) the
-         43     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
-         44     # seem to swallow it and we should be failing anyway...
-         45     sys.stderr.write(msg + tb_msg)
-    ---> 46     raise ImportError(msg)
-         48 ret = getattr(_multiarray_umath, attr_name, None)
-         49 if ret is None:
+    File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py:44, in __getattr__(attr_name)
+         39     # Also print the message (with traceback).  This is because old versions
+         40     # of NumPy unfortunately set up the import to replace (and hide) the
+         41     # error.  The traceback shouldn't be needed, but e.g. pytest plugins
+         42     # seem to swallow it and we should be failing anyway...
+         43     sys.stderr.write(msg + tb_msg)
+    ---> 44     raise ImportError(msg)
+         46 ret = getattr(_multiarray_umath, attr_name, None)
+         47 if ret is None:
 
 
     ImportError: 
     A module that was compiled using NumPy 1.x cannot be run in
-    NumPy 2.4.3 as it may crash. To support both 1.x and 2.x
+    NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
     versions of NumPy, modules must be compiled with NumPy 2.0.
     Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
     
@@ -221,7 +225,7 @@ engine is.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
+    Inserting handle into data store.  model: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/pzflow/example_files/example-flow.pzflow.pkl, FlowCreator
 
 
 .. parsed-literal::
@@ -297,83 +301,83 @@ model as a degrader and draw some samples with photometric errors.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.400313</td>
-          <td>inf</td>
-          <td>inf</td>
-          <td>26.562379</td>
-          <td>0.146128</td>
-          <td>25.661585</td>
-          <td>0.058431</td>
-          <td>25.581670</td>
-          <td>0.088827</td>
-          <td>25.274250</td>
-          <td>0.128817</td>
-          <td>25.288828</td>
-          <td>0.282586</td>
+          <td>1.398944</td>
+          <td>27.475039</td>
+          <td>0.762403</td>
+          <td>26.883271</td>
+          <td>0.192016</td>
+          <td>26.036157</td>
+          <td>0.081403</td>
+          <td>25.234488</td>
+          <td>0.065365</td>
+          <td>24.566946</td>
+          <td>0.069269</td>
+          <td>24.355412</td>
+          <td>0.128864</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.983561</td>
-          <td>28.405858</td>
-          <td>1.328311</td>
-          <td>27.090991</td>
-          <td>0.228428</td>
-          <td>26.315893</td>
-          <td>0.104085</td>
-          <td>26.232213</td>
-          <td>0.156363</td>
-          <td>25.778239</td>
-          <td>0.198122</td>
-          <td>24.966381</td>
-          <td>0.216762</td>
+          <td>2.285624</td>
+          <td>26.641737</td>
+          <td>0.420490</td>
+          <td>27.915651</td>
+          <td>0.440258</td>
+          <td>26.564036</td>
+          <td>0.129182</td>
+          <td>26.518535</td>
+          <td>0.199356</td>
+          <td>25.645883</td>
+          <td>0.177169</td>
+          <td>25.048667</td>
+          <td>0.232104</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.633238</td>
-          <td>28.291307</td>
-          <td>1.248759</td>
-          <td>27.076415</td>
-          <td>0.225682</td>
-          <td>26.820736</td>
-          <td>0.161106</td>
-          <td>26.952582</td>
-          <td>0.285257</td>
-          <td>25.958264</td>
-          <td>0.230254</td>
-          <td>25.298459</td>
-          <td>0.284799</td>
+          <td>1.495132</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>28.854453</td>
+          <td>0.849495</td>
+          <td>28.238837</td>
+          <td>0.503357</td>
+          <td>25.984526</td>
+          <td>0.126312</td>
+          <td>24.811145</td>
+          <td>0.085941</td>
+          <td>24.227041</td>
+          <td>0.115270</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.593216</td>
-          <td>27.621950</td>
-          <td>0.838954</td>
-          <td>26.662206</td>
-          <td>0.159175</td>
-          <td>25.799092</td>
-          <td>0.066009</td>
-          <td>25.374439</td>
-          <td>0.073986</td>
-          <td>25.104230</td>
-          <td>0.111120</td>
-          <td>25.367122</td>
-          <td>0.301016</td>
+          <td>0.842594</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>inf</td>
+          <td>27.306837</td>
+          <td>0.242382</td>
+          <td>26.256153</td>
+          <td>0.159598</td>
+          <td>25.259708</td>
+          <td>0.127205</td>
+          <td>24.857605</td>
+          <td>0.197892</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.418184</td>
-          <td>28.510934</td>
-          <td>1.403493</td>
-          <td>25.990088</td>
-          <td>0.088826</td>
-          <td>25.727905</td>
-          <td>0.061972</td>
-          <td>24.934946</td>
-          <td>0.050106</td>
-          <td>24.281265</td>
-          <td>0.053768</td>
-          <td>23.785846</td>
-          <td>0.078270</td>
+          <td>1.588960</td>
+          <td>26.025705</td>
+          <td>0.258215</td>
+          <td>26.036806</td>
+          <td>0.092545</td>
+          <td>25.938173</td>
+          <td>0.074656</td>
+          <td>25.629899</td>
+          <td>0.092675</td>
+          <td>25.300162</td>
+          <td>0.131739</td>
+          <td>25.572160</td>
+          <td>0.354287</td>
         </tr>
         <tr>
           <th>...</th>
@@ -393,83 +397,83 @@ model as a degrader and draw some samples with photometric errors.
         </tr>
         <tr>
           <th>99995</th>
-          <td>1.151420</td>
-          <td>28.829717</td>
-          <td>1.643603</td>
-          <td>28.340036</td>
-          <td>0.600770</td>
-          <td>26.810158</td>
-          <td>0.159656</td>
-          <td>26.057055</td>
-          <td>0.134495</td>
-          <td>25.095947</td>
-          <td>0.110320</td>
-          <td>24.923563</td>
-          <td>0.209147</td>
+          <td>0.389450</td>
+          <td>27.575796</td>
+          <td>0.814370</td>
+          <td>26.433111</td>
+          <td>0.130722</td>
+          <td>25.388637</td>
+          <td>0.045856</td>
+          <td>25.138161</td>
+          <td>0.060013</td>
+          <td>24.850637</td>
+          <td>0.088981</td>
+          <td>24.611135</td>
+          <td>0.160578</td>
         </tr>
         <tr>
           <th>99996</th>
-          <td>1.359546</td>
-          <td>25.625301</td>
-          <td>0.185127</td>
-          <td>25.719833</td>
-          <td>0.070000</td>
-          <td>25.617584</td>
-          <td>0.056193</td>
-          <td>25.117136</td>
-          <td>0.058904</td>
-          <td>24.697981</td>
-          <td>0.077778</td>
-          <td>24.183357</td>
-          <td>0.110964</td>
+          <td>1.481047</td>
+          <td>28.078166</td>
+          <td>1.107772</td>
+          <td>26.458609</td>
+          <td>0.133634</td>
+          <td>26.081068</td>
+          <td>0.084691</td>
+          <td>25.244019</td>
+          <td>0.065919</td>
+          <td>24.758668</td>
+          <td>0.082057</td>
+          <td>24.139170</td>
+          <td>0.106765</td>
         </tr>
         <tr>
           <th>99997</th>
-          <td>1.595311</td>
-          <td>27.033232</td>
-          <td>0.561998</td>
-          <td>27.195415</td>
-          <td>0.248993</td>
-          <td>26.356783</td>
-          <td>0.107873</td>
-          <td>25.509568</td>
-          <td>0.083362</td>
-          <td>25.103466</td>
-          <td>0.111046</td>
-          <td>24.396735</td>
-          <td>0.133554</td>
+          <td>2.023548</td>
+          <td>26.691198</td>
+          <td>0.436596</td>
+          <td>26.528450</td>
+          <td>0.141926</td>
+          <td>26.470009</td>
+          <td>0.119061</td>
+          <td>26.173376</td>
+          <td>0.148670</td>
+          <td>25.876736</td>
+          <td>0.215159</td>
+          <td>25.527232</td>
+          <td>0.341972</td>
         </tr>
         <tr>
           <th>99998</th>
-          <td>0.849984</td>
-          <td>27.231394</td>
-          <td>0.646387</td>
-          <td>27.023757</td>
-          <td>0.216009</td>
-          <td>26.642387</td>
-          <td>0.138233</td>
-          <td>25.565571</td>
-          <td>0.087578</td>
-          <td>25.139218</td>
-          <td>0.114561</td>
-          <td>24.980138</td>
-          <td>0.219261</td>
+          <td>1.548204</td>
+          <td>25.892191</td>
+          <td>0.231367</td>
+          <td>26.216371</td>
+          <td>0.108290</td>
+          <td>26.080762</td>
+          <td>0.084668</td>
+          <td>25.764179</td>
+          <td>0.104254</td>
+          <td>25.654067</td>
+          <td>0.178403</td>
+          <td>24.941562</td>
+          <td>0.212318</td>
         </tr>
         <tr>
           <th>99999</th>
-          <td>0.693812</td>
-          <td>27.635091</td>
-          <td>0.846042</td>
-          <td>26.211250</td>
-          <td>0.107807</td>
-          <td>24.786920</td>
-          <td>0.026968</td>
-          <td>23.636961</td>
-          <td>0.016244</td>
-          <td>23.181174</td>
-          <td>0.020486</td>
-          <td>22.885044</td>
-          <td>0.035229</td>
+          <td>1.739491</td>
+          <td>27.084820</td>
+          <td>0.583118</td>
+          <td>26.792031</td>
+          <td>0.177768</td>
+          <td>26.641430</td>
+          <td>0.138119</td>
+          <td>26.341506</td>
+          <td>0.171645</td>
+          <td>26.030357</td>
+          <td>0.244389</td>
+          <td>26.157504</td>
+          <td>0.551159</td>
         </tr>
       </tbody>
     </table>
@@ -582,84 +586,84 @@ cuts at i<25.3, which is the LSST gold sample.
       </thead>
       <tbody>
         <tr>
-          <th>4</th>
-          <td>1.418184</td>
-          <td>28.510934</td>
-          <td>1.403493</td>
-          <td>25.990088</td>
-          <td>0.088826</td>
-          <td>25.727905</td>
-          <td>0.061972</td>
-          <td>24.934946</td>
-          <td>0.050106</td>
-          <td>24.281265</td>
-          <td>0.053768</td>
-          <td>23.785846</td>
-          <td>0.078270</td>
+          <th>0</th>
+          <td>1.398944</td>
+          <td>27.475039</td>
+          <td>0.762403</td>
+          <td>26.883271</td>
+          <td>0.192016</td>
+          <td>26.036157</td>
+          <td>0.081403</td>
+          <td>25.234488</td>
+          <td>0.065365</td>
+          <td>24.566946</td>
+          <td>0.069269</td>
+          <td>24.355412</td>
+          <td>0.128864</td>
         </tr>
         <tr>
           <th>5</th>
-          <td>0.416238</td>
-          <td>25.252693</td>
-          <td>0.134740</td>
-          <td>24.381095</td>
-          <td>0.021620</td>
-          <td>23.527928</td>
-          <td>0.009871</td>
-          <td>23.326060</td>
-          <td>0.012699</td>
-          <td>23.207112</td>
-          <td>0.020943</td>
-          <td>23.013954</td>
-          <td>0.039484</td>
+          <td>1.446021</td>
+          <td>25.900038</td>
+          <td>0.232873</td>
+          <td>26.317628</td>
+          <td>0.118271</td>
+          <td>25.479765</td>
+          <td>0.049721</td>
+          <td>24.624817</td>
+          <td>0.038055</td>
+          <td>24.075825</td>
+          <td>0.044804</td>
+          <td>23.472792</td>
+          <td>0.059324</td>
         </tr>
         <tr>
-          <th>7</th>
-          <td>0.557914</td>
-          <td>25.706304</td>
-          <td>0.198178</td>
-          <td>25.742192</td>
-          <td>0.071396</td>
-          <td>25.254140</td>
-          <td>0.040699</td>
-          <td>25.125272</td>
-          <td>0.059330</td>
-          <td>25.171490</td>
-          <td>0.117825</td>
-          <td>24.888292</td>
-          <td>0.203058</td>
+          <th>6</th>
+          <td>0.857864</td>
+          <td>25.232186</td>
+          <td>0.132381</td>
+          <td>24.328590</td>
+          <td>0.020678</td>
+          <td>23.301601</td>
+          <td>0.008562</td>
+          <td>22.362370</td>
+          <td>0.007022</td>
+          <td>21.850467</td>
+          <td>0.007818</td>
+          <td>21.701424</td>
+          <td>0.012982</td>
         </tr>
         <tr>
-          <th>10</th>
-          <td>0.212397</td>
-          <td>25.265476</td>
-          <td>0.136231</td>
-          <td>24.696907</td>
-          <td>0.028384</td>
-          <td>24.381614</td>
-          <td>0.019040</td>
-          <td>24.239719</td>
-          <td>0.027116</td>
-          <td>24.133274</td>
-          <td>0.047148</td>
-          <td>24.156927</td>
-          <td>0.108434</td>
+          <th>8</th>
+          <td>1.281177</td>
+          <td>25.999880</td>
+          <td>0.252815</td>
+          <td>25.521586</td>
+          <td>0.058739</td>
+          <td>24.671778</td>
+          <td>0.024400</td>
+          <td>24.042848</td>
+          <td>0.022860</td>
+          <td>23.445766</td>
+          <td>0.025722</td>
+          <td>22.901603</td>
+          <td>0.035748</td>
         </tr>
         <tr>
           <th>12</th>
-          <td>0.498590</td>
-          <td>25.896396</td>
-          <td>0.232173</td>
-          <td>25.631958</td>
-          <td>0.064767</td>
-          <td>24.829587</td>
-          <td>0.027992</td>
-          <td>24.586522</td>
-          <td>0.036787</td>
-          <td>24.508675</td>
-          <td>0.065785</td>
-          <td>24.311546</td>
-          <td>0.124056</td>
+          <td>0.456452</td>
+          <td>25.339730</td>
+          <td>0.145202</td>
+          <td>23.619176</td>
+          <td>0.011752</td>
+          <td>22.148042</td>
+          <td>0.005604</td>
+          <td>21.485804</td>
+          <td>0.005505</td>
+          <td>21.126835</td>
+          <td>0.005929</td>
+          <td>20.855946</td>
+          <td>0.007525</td>
         </tr>
         <tr>
           <th>...</th>
@@ -678,88 +682,88 @@ cuts at i<25.3, which is the LSST gold sample.
           <td>...</td>
         </tr>
         <tr>
-          <th>99991</th>
-          <td>0.819176</td>
-          <td>27.730979</td>
-          <td>0.898960</td>
-          <td>26.753947</td>
-          <td>0.172115</td>
-          <td>25.894543</td>
-          <td>0.071830</td>
-          <td>25.225411</td>
-          <td>0.064841</td>
-          <td>25.207924</td>
-          <td>0.121616</td>
-          <td>24.893127</td>
-          <td>0.203883</td>
+          <th>99989</th>
+          <td>0.399217</td>
+          <td>26.783227</td>
+          <td>0.467895</td>
+          <td>25.956838</td>
+          <td>0.086267</td>
+          <td>25.083050</td>
+          <td>0.034981</td>
+          <td>24.823569</td>
+          <td>0.045389</td>
+          <td>24.755417</td>
+          <td>0.081822</td>
+          <td>24.834042</td>
+          <td>0.194007</td>
         </tr>
         <tr>
-          <th>99993</th>
-          <td>0.438179</td>
-          <td>26.983860</td>
-          <td>0.542338</td>
-          <td>26.601299</td>
-          <td>0.151091</td>
-          <td>25.078419</td>
-          <td>0.034838</td>
-          <td>24.699900</td>
-          <td>0.040672</td>
-          <td>24.313215</td>
-          <td>0.055314</td>
-          <td>24.354327</td>
-          <td>0.128743</td>
+          <th>99990</th>
+          <td>1.584182</td>
+          <td>25.866315</td>
+          <td>0.226464</td>
+          <td>25.975964</td>
+          <td>0.087730</td>
+          <td>25.707006</td>
+          <td>0.060834</td>
+          <td>25.291274</td>
+          <td>0.068737</td>
+          <td>24.997001</td>
+          <td>0.101179</td>
+          <td>24.465944</td>
+          <td>0.141772</td>
         </tr>
         <tr>
           <th>99994</th>
-          <td>0.628676</td>
-          <td>25.641687</td>
-          <td>0.187701</td>
-          <td>25.040384</td>
-          <td>0.038369</td>
-          <td>24.160499</td>
-          <td>0.015854</td>
-          <td>23.586745</td>
-          <td>0.015593</td>
-          <td>23.424528</td>
-          <td>0.025252</td>
-          <td>23.132351</td>
-          <td>0.043853</td>
+          <td>0.678879</td>
+          <td>26.899242</td>
+          <td>0.509886</td>
+          <td>26.224584</td>
+          <td>0.109069</td>
+          <td>25.458694</td>
+          <td>0.048799</td>
+          <td>24.756627</td>
+          <td>0.042771</td>
+          <td>24.576712</td>
+          <td>0.069871</td>
+          <td>24.399694</td>
+          <td>0.133896</td>
+        </tr>
+        <tr>
+          <th>99995</th>
+          <td>0.389450</td>
+          <td>27.575796</td>
+          <td>0.814370</td>
+          <td>26.433111</td>
+          <td>0.130722</td>
+          <td>25.388637</td>
+          <td>0.045856</td>
+          <td>25.138161</td>
+          <td>0.060013</td>
+          <td>24.850637</td>
+          <td>0.088981</td>
+          <td>24.611135</td>
+          <td>0.160578</td>
         </tr>
         <tr>
           <th>99996</th>
-          <td>1.359546</td>
-          <td>25.625301</td>
-          <td>0.185127</td>
-          <td>25.719833</td>
-          <td>0.070000</td>
-          <td>25.617584</td>
-          <td>0.056193</td>
-          <td>25.117136</td>
-          <td>0.058904</td>
-          <td>24.697981</td>
-          <td>0.077778</td>
-          <td>24.183357</td>
-          <td>0.110964</td>
-        </tr>
-        <tr>
-          <th>99999</th>
-          <td>0.693812</td>
-          <td>27.635091</td>
-          <td>0.846042</td>
-          <td>26.211250</td>
-          <td>0.107807</td>
-          <td>24.786920</td>
-          <td>0.026968</td>
-          <td>23.636961</td>
-          <td>0.016244</td>
-          <td>23.181174</td>
-          <td>0.020486</td>
-          <td>22.885044</td>
-          <td>0.035229</td>
+          <td>1.481047</td>
+          <td>28.078166</td>
+          <td>1.107772</td>
+          <td>26.458609</td>
+          <td>0.133634</td>
+          <td>26.081068</td>
+          <td>0.084691</td>
+          <td>25.244019</td>
+          <td>0.065919</td>
+          <td>24.758668</td>
+          <td>0.082057</td>
+          <td>24.139170</td>
+          <td>0.106765</td>
         </tr>
       </tbody>
     </table>
-    <p>51989 rows × 13 columns</p>
+    <p>52021 rows × 13 columns</p>
     </div>
 
 

@@ -9,19 +9,24 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 45 11 * * 1
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    continue-on-error: true
+    strategy: 
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        super-group: ['interactive','pipeline']
+        notebook-dir: ['core','creation','estimation','evaluation','goldenspike']
     steps:
     
     # Set up and installation
     - uses: actions/checkout@v6
-    - name: Set up Python 3.11
+    - name: Set up Python 3.10
       uses: actions/setup-python@v6
       with:
-        python-version: '3.11'
+        python-version: '3.10'
     - name: System deps (MPI + build)
       run: |
         sudo apt-get update
@@ -49,64 +54,27 @@ jobs:
         sudo apt-get install pandoc
         
         
-    # Render interactive notebooks
-    - name: Render core notebooks
+    # Render notebooks
+    - name: Render notebooks
       run: |
-        mkdir -p logs/interactive_examples
-        python src/rail_notebooks/render_notebooks.py core interactive -v > logs/interactive_examples/core_logs.out 2>&1  | tee logs/interactive_examples/core_logs.out
-      if: always()
-    - name: Render creation notebooks
-      run: |
-        mkdir -p logs/interactive_examples
-        python src/rail_notebooks/render_notebooks.py creation interactive -v > logs/interactive_examples/creation_logs.out 2>&1 | tee logs/interactive_examples/creation_logs.out
-      if: always()
-    - name: Render estimation notebooks
-      run: |
-        mkdir -p logs/interactive_examples
-        python src/rail_notebooks/render_notebooks.py estimation interactive -v > logs/interactive_examples/estimation_logs.out 2>&1 | tee logs/interactive_examples/estimation_logs.out
-      if: always()
-    - name: Render evaluation notebooks
-      run: |
-        mkdir -p logs/interactive_examples
-        python src/rail_notebooks/render_notebooks.py evaluation interactive -v > logs/interactive_examples/evaluation_logs.out 2>&1 | tee logs/interactive_examples/evaluation_logs.out
-      if: always()
-    - name: Render goldenspike notebooks
-      run: |
-        mkdir -p logs/interactive_examples
-        python src/rail_notebooks/render_notebooks.py goldenspike interactive -v > logs/interactive_examples/goldenspike_logs.out 2>&1 | tee logs/interactive_examples/goldenspike_logs.out
+        mkdir -p logs/${{ matrix.super-group }}_examples
+        python src/rail_notebooks/render_notebooks.py ${{ matrix.notebook-dir }} ${{ matrix.super-group }} -v > logs/${{ matrix.super-group }}_examples/${{ matrix.notebook-dir }}_logs.out 2>&1  | tee logs/${{ matrix.super-group }}_examples/${{ matrix.notebook-dir }}_logs.out
       if: always()
 
-    # Render pipeline notebooks
-    - name: Render core notebooks
-      run: |
-        mkdir -p logs/pipeline_examples
-        python src/rail_notebooks/render_notebooks.py core pipeline -v > logs/pipeline_examples/core_logs.out 2>&1  | tee logs/pipeline_examples/core_logs.out
+    
+    # Pull any changes that have been committed 
+    - name: Pull changes
       if: always()
-    - name: Render creation notebooks
       run: |
-        mkdir -p logs/pipeline_examples
-        python src/rail_notebooks/render_notebooks.py creation pipeline -v > logs/pipeline_examples/creation_logs.out 2>&1 | tee logs/pipeline_examples/creation_logs.out
-      if: always()
-    - name: Render estimation notebooks
-      run: |
-        mkdir -p logs/pipeline_examples
-        python src/rail_notebooks/render_notebooks.py estimation pipeline -v > logs/pipeline_examples/estimation_logs.out 2>&1 | tee logs/pipeline_examples/estimation_logs.out
-      if: always()
-    - name: Render evaluation notebooks
-      run: |
-        mkdir -p logs/pipeline_examples
-        python src/rail_notebooks/render_notebooks.py evaluation pipeline -v > logs/pipeline_examples/evaluation_logs.out 2>&1 | tee logs/pipeline_examples/evaluation_logs.out
-      if: always()
-    - name: Render goldenspike notebooks
-      run: |
-        mkdir -p logs/pipeline_examples
-        python src/rail_notebooks/render_notebooks.py goldenspike -v pipeline > logs/pipeline_examples/goldenspike_logs.out 2>&1 | tee logs/pipeline_examples/goldenspike_logs.out
-      if: always()
-      
+        git pull
+        
     # Commit changes
-    - uses: stefanzweifel/git-auto-commit-action@v7
+    - name: Commit changes 
+      uses: stefanzweifel/git-auto-commit-action@v7
       if: always()
       with: 
         commit_user_name: GitHub Actions Bot 
         commit_user_email: github-actions-bot@example.org
         commit_author: Author <actions@github.com>
+
+ 

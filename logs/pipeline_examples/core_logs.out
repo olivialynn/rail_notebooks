@@ -1,10 +1,64 @@
 Rendering notebooks in group: core...
+Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/core_examples
+RENDERING: 01_FileIO_DataStore
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mAttributeError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[7][39m[32m, line 1[39m
+[32m----> [39m[32m1[39m DS = [43mRailStage[49m[43m.[49m[43mdata_store[49m
+[32m      2[39m DS.[34m__class__[39m.allow_overwrite = [38;5;28;01mTrue[39;00m
+
+[31mAttributeError[39m: type object 'RailStage' has no attribute 'data_store'
+
+RENDERING: 03_Hyperbolic_Magnitude
+RENDERING: 02_FluxtoMag_and_Deredden
+[32m--> [39m[32m518[39m     np.array([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[43m.[49m[43mconfig[49m[43m.[49m[43mra_name[49m[43m][49m),
+[32m    519[39m     np.array(data[[38;5;28mself[39m.config.dec_name]),
+[32m    520[39m     unit=[33m"[39m[33mdeg[39m[33m"[39m,
+[32m    521[39m     frame=[33m"[39m[33mfk5[39m[33m"[39m,
+[32m    522[39m )
+[32m    523[39m dust_map_dict = [38;5;28mdict[39m(sfd=dustmaps_sfd.SFDQuery)
+[32m    524[39m [38;5;28;01mtry[39;00m:
+
+[31mKeyError[39m: 'ra'
+
+RENDERING: 04_Iterate_Tabular_Data
+RENDERING: 05_Build_Save_Load_Run_Pipeline
+RENDERING: 00_Useful_Utilities
+RENDERING: 06_Rail_Interfaces
+[32m    485[39m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[33m"[39m[33mNone[39m[33m"[39m, [33m"[39m[33mnone[39m[33m"[39m, [38;5;28;01mNone[39;00m]:
+[32m    486[39m     [38;5;66;03m# Path exists, use that[39;00m
+[32m    487[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os.path.isfile(path):
+[32m--> [39m[32m488[39m         [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([33mf[39m[33m"[39m[33mUnable to find file: [39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[33m"[39m)
+[32m    489[39m     handle.path = path
+[32m    490[39m     [38;5;28;01mif[39;00m do_read:
+[32m    491[39m         [38;5;66;03m# Read the data using the handle[39;00m
+
+[31mFileNotFoundError[39m: Unable to find file: model_inform_trainz.pkl
+
+
+NOTEBOOK RENDERING STATUS:
+R. Code  Notebook
+-------  ------------------------------------------------------------
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/01_FileIO_DataStore.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/03_Hyperbolic_Magnitude.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/04_Iterate_Tabular_Data.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/00_Useful_Utilities.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
+
+3 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/01_FileIO_DataStore.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
+
 Traceback (most recent call last):
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 279, in <module>
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
     run_render_notebook_group()
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 256, in run_render_notebook_group
-    repo_root, rail_root = _resolve_repo_paths()
-                           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 95, in _resolve_repo_paths
-    raise FileNotFoundError(
-FileNotFoundError: Could not locate the rail repository. Checked: /home/runner/work/rail_notebooks/rail_notebooks/rail, /home/runner/work/rail_notebooks/rail
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 281, in run_render_notebook_group
+    _report_render_status(status, verbose)
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
+    raise ValueError(
+ValueError: 3 out of 7 notebooks failed to render.

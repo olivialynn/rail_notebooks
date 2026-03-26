@@ -78,7 +78,7 @@ chunks of data
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7f8bb82b1690>
+    <generator object iter_HDF5_to_dict at 0x7f05a2e59a80>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -109,7 +109,7 @@ which can be use to iterate over that file.
 
 .. parsed-literal::
 
-    <generator object iter_HDF5_to_dict at 0x7f8bb7eccac0>
+    <generator object iter_HDF5_to_dict at 0x7f05a2e59b60>
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715
@@ -144,7 +144,7 @@ over that file.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  input: /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5, ColumnMapper
+    Inserting handle into data store.  input: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/testdata/test_dc2_training_9816.hdf5, ColumnMapper
     0 1000 8062500000
     1000 2000 8062643020
     2000 3000 8062942715

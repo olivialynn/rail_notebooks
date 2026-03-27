@@ -49,7 +49,7 @@ def _parse_output_files(output_files):
     for output_file in output_files:
         with output_file.open("r") as f:
             raw_content = f.read()
-            
+
             print(f"\nRAW CONTENT of {output_file}:\n{raw_content}\n")
             print("---\n")
 
@@ -169,11 +169,13 @@ def update_readme():
             # append pipeline notebooks
             new_contents.append("\n")
             new_contents.append("### Pipeline Notebooks")
+            new_contents.append("\n")
             new_contents.append(pipeline_tables_as_markdown)
 
             # append interactive notebooks
             new_contents.append("\n")
             new_contents.append("### Interactive Notebooks")
+            new_contents.append("\n")
             new_contents.append(interactive_tables_as_markdown)
 
             new_contents.append("\n")

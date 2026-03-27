@@ -46,21 +46,22 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** February 23, 2026
+**Tables last updated:** March 27, 2026
 
-### Core Notebooks
+
+### Pipeline Notebooks#### Core Notebooks
 
 |   | Notebook |
 |---|----------|
-| :x: | 00_Useful_Utilities.ipynb |
+| :white_check_mark: | 00_Useful_Utilities.ipynb |
 | :x: | 01_FileIO_DataStore.ipynb |
-| :white_check_mark: | 02_FluxtoMag_and_Deredden.ipynb |
+| :x: | 02_FluxtoMag_and_Deredden.ipynb |
 | :white_check_mark: | 03_Hyperbolic_Magnitude.ipynb |
 | :white_check_mark: | 04_Iterate_Tabular_Data.ipynb |
-| :x: | 05_Build_Save_Load_Run_Pipeline.ipynb |
-| :white_check_mark: | 06_Rail_Interfaces.ipynb |
+| :white_check_mark: | 05_Build_Save_Load_Run_Pipeline.ipynb |
+| :x: | 06_Rail_Interfaces.ipynb |
 
-### Creation Notebooks
+#### Creation Notebooks
 
 |   | Notebook |
 |---|----------|
@@ -77,39 +78,98 @@ See more info in each group's log file in `logs/`.
 | :x: | 10_SOM_Spectroscopic_Selector.ipynb |
 | :white_check_mark: | 11_Spectroscopic_Selection_for_zCOSMOS.ipynb |
 
-### Estimation Notebooks
+#### Estimation Notebooks
 
 |   | Notebook |
 |---|----------|
-| :x: | 00_Quick_Start_in_Estimation.ipynb |
-| :x: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
-| :x: | 02_BPZ_lite.ipynb |
-| :x: | 03_BPZ_lite_Custom_SEDs.ipynb |
+| :white_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
+| :white_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
+| :white_check_mark: | 02_BPZ_lite.ipynb |
+| :white_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
 | :white_check_mark: | 04_CMNN.ipynb |
-| :x: | 05_DNF.ipynb |
+| :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :x: | 08_NZDir_pipeline.ipynb |
+| :white_check_mark: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
-| :x: | 13_Sampled_Summarizers.ipynb |
+| :white_check_mark: | 13_Sampled_Summarizers.ipynb |
 | :white_check_mark: | 14_LePhare_LSST.ipynb |
 | :white_check_mark: | 15_LePhare_COSMOS.ipynb |
-| :x: | 16_Running_with_different_data.ipynb |
+| :white_check_mark: | 16_Running_with_different_data.ipynb |
 
-### Evaluation Notebooks
-
-|   | Notebook |
-|---|----------|
-| :x: | 00_Single_Evaluation.ipynb |
-| :x: | 01_Evaluation_by_Type.ipynb |
-
-### Goldenspike Notebooks
+#### Evaluation Notebooks
 
 |   | Notebook |
 |---|----------|
-| :x: | Goldenspike.ipynb |
+| :white_check_mark: | 00_Single_Evaluation.ipynb |
+| :white_check_mark: | 01_Evaluation_by_Type.ipynb |
+
+#### Goldenspike Notebooks
+
+|   | Notebook |
+|---|----------|
+| :white_check_mark: | Goldenspike.ipynb |
+
+
+### Interactive Notebooks#### Core Notebooks
+
+|   | Notebook |
+|---|----------|
+| :x: | FluxtoMag_and_Deredden.ipynb |
+| :white_check_mark: | Hyperbolic_Magnitude.ipynb |
+
+#### Creation Notebooks
+
+|   | Notebook |
+|---|----------|
+| :white_check_mark: | Blending_Degrader.ipynb |
+| :x: | DSPS_SED.ipynb |
+| :white_check_mark: | Exploring_the_Effects_of_Degraders.ipynb |
+| :x: | FSPS_SED.ipynb |
+| :white_check_mark: | GridSelection_for_HSC.ipynb |
+| :white_check_mark: | Photometric_Realization.ipynb |
+| :white_check_mark: | Photometric_Realization_with_Other_Surveys.ipynb |
+| :white_check_mark: | Quick_Start_in_Creation.ipynb |
+| :x: | SOM_Spectroscopic_Selector.ipynb |
+| :white_check_mark: | Spatial_Variability.ipynb |
+| :white_check_mark: | Spectroscopic_Selection_for_zCOSMOS.ipynb |
+| :white_check_mark: | True_Posterior.ipynb |
+
+#### Estimation Notebooks
+
+|   | Notebook |
+|---|----------|
+| :x: | BPZ_lite.ipynb |
+| :white_check_mark: | CMNN.ipynb |
+| :white_check_mark: | DNF.ipynb |
+| :white_check_mark: | Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters.ipynb |
+| :white_check_mark: | FlexZBoost_PDF_Representation_Comparison.ipynb |
+| :white_check_mark: | GPz.ipynb |
+| :white_check_mark: | LePhare_COSMOS.ipynb |
+| :white_check_mark: | LePhare_LSST.ipynb |
+| :white_check_mark: | NZDir.ipynb |
+| :white_check_mark: | PZFlow.ipynb |
+| :white_check_mark: | Quick_Start_in_Estimation.ipynb |
+| :x: | Running_with_different_data.ipynb |
+| :white_check_mark: | Sampled_Summarizers.ipynb |
+| :x: | SomocluSOM.ipynb |
+| :white_check_mark: | Using_Photometry_to_Estimate_Photometric_Redshifts.ipynb |
+| :x: | YAW.ipynb |
+
+#### Evaluation Notebooks
+
+|   | Notebook |
+|---|----------|
+| :white_check_mark: | Evaluation_by_Type.ipynb |
+| :white_check_mark: | Single_Evaluation.ipynb |
+
+#### Goldenspike Notebooks
+
+|   | Notebook |
+|---|----------|
+| :white_check_mark: | Goldenspike.ipynb |
 
 

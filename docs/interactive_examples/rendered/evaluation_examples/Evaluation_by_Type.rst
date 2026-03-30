@@ -21,7 +21,7 @@ ceci, qp, tables_io, etc… See the RAIL installation instructions for
 more info.
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```01_Evaluation_by_Type.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/evaluation_examples/01_Evaluation_by_Type.ipynb>`__
+`01_Evaluation_by_Type.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/evaluation_examples/01_Evaluation_by_Type.ipynb>`__
 in the ``pipeline_examples/evaluation_examples/`` folder.
 
 .. code:: ipython3
@@ -60,7 +60,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T215526
+    /home/runner/.cache/lephare/runs/20260330T130007
 
 
 .. parsed-literal::
@@ -119,7 +119,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4186/1627844557.py", line 13, in <module>
+      File "/tmp/ipykernel_4204/1627844557.py", line 13, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -209,15 +209,19 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      3 47.1M    3 1899k    0     0  1710k      0  0:00:28  0:00:01  0:00:27 1709k
+      0 47.1M    0  407k    0     0   476k      0  0:01:41 --:--:--  0:01:41  475k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  24.3M      0  0:00:01  0:00:01 --:--:-- 24.3M
+     59 47.1M   59 28.2M    0     0  15.3M      0  0:00:03  0:00:01  0:00:02 15.3M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  22.1M      0  0:00:02  0:00:02 --:--:-- 22.2M
 
 
 .. code:: ipython3
@@ -306,14 +310,14 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 
 .. parsed-literal::
 
-    {'cvm': array([0.12074014, 0.35050507, 0.06631446, ..., 0.06951275, 0.02820556,
-            0.13172028], shape=(20449,)),
-     'ks': array([0.08074724, 0.0865847 , 0.06020201, ..., 0.07870044, 0.05222363,
-            0.07224676], shape=(20449,)),
+    {'cvm': array([0.21976612, 0.06617212, 0.37526306, ..., 0.12288969, 0.21080068,
+            0.04666842], shape=(20449,)),
+     'ks': array([0.09176288, 0.0865847 , 0.12464098, ..., 0.09838792, 0.08922825,
+            0.17175173], shape=(20449,)),
      'rmse': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
      'kld': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
-     'ad': array([1.00232886, 2.45506833, 1.93585904, ..., 0.81103483, 0.63893079,
-            1.04557596], shape=(20449,))}
+     'ad': array([0.99615214, 0.59721122, 0.84680548, ..., 0.59410915, 2.32600125,
+            0.3794128 ], shape=(20449,))}
 
 
 
@@ -450,7 +454,7 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4186/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_4204/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       plt.legend()
 
 

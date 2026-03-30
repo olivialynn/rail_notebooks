@@ -11,7 +11,7 @@ algorithm.
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```DNF.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/DNF.ipynb>`__
+`DNF.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/DNF.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -151,15 +151,15 @@ the model keyword above, in this case, ‘demo_dnf_model.pkl’.
 
     Inserting handle into data store.  input: None, inform_DNF
     Inserting handle into data store.  model_inform_DNF: inprogress_demo_DNF_model.pkl, inform_DNF
-    CPU times: user 9.01 ms, sys: 1 ms, total: 10 ms
-    Wall time: 9.8 ms
+    CPU times: user 8.9 ms, sys: 993 μs, total: 9.9 ms
+    Wall time: 9.65 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f58f088fd00>
+    <rail.core.data.ModelHandle at 0x7f0d14d9fe50>
 
 
 
@@ -221,8 +221,8 @@ the angular distance:
 
 .. parsed-literal::
 
-    CPU times: user 2min 51s, sys: 987 ms, total: 2min 52s
-    Wall time: 2min 52s
+    CPU times: user 3min 1s, sys: 903 ms, total: 3min 2s
+    Wall time: 3min 2s
 
 
 DNF calculates its own point estimate, ``DNF_Z``, which is stored in the
@@ -393,8 +393,8 @@ distance, and compare both the mode results and PDF results:
 
 .. parsed-literal::
 
-    CPU times: user 2min 54s, sys: 982 ms, total: 2min 55s
-    Wall time: 2min 55s
+    CPU times: user 2min 57s, sys: 1.56 s, total: 2min 59s
+    Wall time: 2min 59s
 
 
 .. code:: ipython3
@@ -519,7 +519,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f588c8576d0>
+    <matplotlib.legend.Legend at 0x7f0cb4b7f310>
 
 
 

@@ -4,7 +4,7 @@ Author: Tianqing Zhang
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```PZFlow.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/PZFlow.ipynb>`__
+`PZFlow.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/PZFlow.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -207,7 +207,7 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7ff394282f50>
+    <rail.tools.flow_handle.FlowHandle at 0x7ff50c10f130>
 
 
 

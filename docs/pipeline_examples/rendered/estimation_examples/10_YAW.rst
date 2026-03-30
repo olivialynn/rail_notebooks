@@ -29,7 +29,7 @@ poor.
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```YAW.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/YAW.ipynb>`__
+`YAW.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/YAW.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -832,8 +832,8 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    array([0.99751831, 2.37893624, 2.14804959, 7.20831464, 2.18093417,
-           5.07480432, 2.19060571, 2.21372888])
+    array([1.09984438, 1.35783187, 1.56280972, 4.82706133, 2.48054089,
+           3.28897203, 2.65138368, 2.38081033])
 
 
 
@@ -865,7 +865,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe6ba699e70>
+    <matplotlib.legend.Legend at 0x7f4fd4d5da80>
 
 
 

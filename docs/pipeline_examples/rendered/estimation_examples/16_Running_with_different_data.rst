@@ -21,7 +21,7 @@ things running.
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```Running_with_different_data.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/Running_with_different_data.ipynb>`__
+`Running_with_different_data.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/Running_with_different_data.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -52,7 +52,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0 4670k    0 28341    0     0  48191      0  0:01:39 --:--:--  0:01:39 48198
 
 .. parsed-literal::
 
@@ -62,7 +62,7 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  5076k      0 --:--:-- --:--:-- --:--:-- 5076k
+    100 4670k  100 4670k    0     0  3116k      0  0:00:01  0:00:01 --:--:-- 3117k
 
 
 Let’s load one of the files and look at the contents:
@@ -185,10 +185,6 @@ We can now feed this into our inform stage:
 .. parsed-literal::
 
     split into 11250 training and 3750 validation samples
-
-
-.. parsed-literal::
-
     finding best fit sigma and NNeigh...
 
 
@@ -202,15 +198,15 @@ We can now feed this into our inform stage:
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_rd_demo_knn.pkl, inform_KNN
-    CPU times: user 13.5 s, sys: 1.96 s, total: 15.5 s
-    Wall time: 15.5 s
+    CPU times: user 13.8 s, sys: 2.01 s, total: 15.8 s
+    Wall time: 15.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fcde3563e80>
+    <rail.core.data.ModelHandle at 0x7f61a20b9450>
 
 
 

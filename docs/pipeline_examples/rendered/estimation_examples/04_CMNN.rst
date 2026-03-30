@@ -7,7 +7,7 @@ RAIL CMNN Tutorial Notebook
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```CMNN.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/CMNN.ipynb>`__
+`CMNN.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/CMNN.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -185,15 +185,15 @@ cell below:
 
     Inserting handle into data store.  input: None, inform_CMNN
     Inserting handle into data store.  model_inform_CMNN: inprogress_demo_cmnn_model.pkl, inform_CMNN
-    CPU times: user 1.58 ms, sys: 973 μs, total: 2.55 ms
-    Wall time: 2.27 ms
+    CPU times: user 1.3 ms, sys: 1.02 ms, total: 2.33 ms
+    Wall time: 2.09 ms
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fa8dca50640>
+    <rail.core.data.ModelHandle at 0x7f60cc5f0c70>
 
 
 
@@ -231,8 +231,8 @@ each galaxy as the redshift estimate:
 .. parsed-literal::
 
     Inserting handle into data store.  output_CMNN: inprogress_output_CMNN.hdf5, CMNN
-    CPU times: user 47.5 s, sys: 13.1 ms, total: 47.5 s
-    Wall time: 47.5 s
+    CPU times: user 47.8 s, sys: 3.41 ms, total: 47.8 s
+    Wall time: 47.8 s
 
 
 As mentioned above, in addition to the PDF, ``estimate`` calculates and

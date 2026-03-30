@@ -11,7 +11,7 @@ https://github.com/LSSTDESC/TXPipe/blob/nz-dir/txpipe/nz_calibration.py
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```NZDir.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/NZDir.ipynb>`__
+`NZDir.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/NZDir.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -154,7 +154,7 @@ specz neighborhood, and above we defined our bin column as “bin”:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6ff6f4ebc0>
+    <rail.core.data.ModelHandle at 0x7fd185acab00>
 
 
 
@@ -213,8 +213,8 @@ calculation, so this should run very fast:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 296 ms, sys: 8.93 ms, total: 305 ms
-    Wall time: 306 ms
+    CPU times: user 300 ms, sys: 5.02 ms, total: 305 ms
+    Wall time: 304 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -364,7 +364,7 @@ incomplete training data:
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f6ff6f4e4a0>
+    <rail.core.data.ModelHandle at 0x7fd1e45fff70>
 
 
 
@@ -400,8 +400,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ_nzsumm_hi: inprogress_single_NZ_nzsumm_hi.hdf5, nzsumm_hi
     Inserting handle into data store.  output_nzsumm_hi: inprogress_output_nzsumm_hi.hdf5, nzsumm_hi
-    CPU times: user 130 ms, sys: 4.94 ms, total: 135 ms
-    Wall time: 135 ms
+    CPU times: user 132 ms, sys: 5.66 ms, total: 137 ms
+    Wall time: 137 ms
 
 
 .. code:: ipython3

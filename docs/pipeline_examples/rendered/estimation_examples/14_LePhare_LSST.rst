@@ -14,7 +14,7 @@ on your laptop
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```LePhare_LSST.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/LePhare_LSST.ipynb>`__
+`LePhare_LSST.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/estimation_examples/LePhare_LSST.ipynb>`__
 in the ``interactive_examples/estimation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -34,11 +34,14 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    LEPHAREDIR is being set to the default cache directory which is being created at:
+    LEPHAREDIR is being set to the default cache directory:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
+    Default work cache is already linked. 
+    This is linked to the run directory:
+    /home/runner/.cache/lephare/runs/20260330T135604
 
 
 Here we load previously created synthetic data
@@ -74,17 +77,17 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'alloutputkeys.txt' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/alloutputkeys.txt' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
     Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'alloutputkeys.txt' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/alloutputkeys.txt' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -94,12 +97,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -114,30 +117,29 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/ext
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/filt/lsst
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Checking/downloading 421 files...
+
+
+.. parsed-literal::
+
     Downloading file 'opa/tau05.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau05.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
     Downloading file 'opa/tau06.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau06.out' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/ext
-    Created directory: /home/runner/.cache/lephare/data/filt/lsst
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/examples
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Checking/downloading 421 files...
 
 
 .. parsed-literal::
@@ -1017,12 +1019,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/k2i.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k2i.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/k1iv.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k1iv.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/k1iv.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k1iv.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/k2i.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/k2i.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2251,10 +2253,6 @@ takes ~3-4 minutes.
     # STAR_FSCALE :0.0000
     #######################################
     Number of SED in the list 254
-
-
-.. parsed-literal::
-
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
@@ -2269,7 +2267,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Thu Mar 26 22:43:26 2026
+    # CREATION_DATE Mon Mar 30 13:57:56 2026
     #############################################
 
 
@@ -2306,7 +2304,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Thu Mar 26 22:43:26 2026
+    # CREATION_DATE Mon Mar 30 13:57:56 2026
     #############################################
 
 
@@ -2323,10 +2321,6 @@ takes ~3-4 minutes.
     # QSO_FSCALE :1.0000
     #######################################
     Number of SED in the list 30
-
-
-.. parsed-literal::
-
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -2336,20 +2330,19 @@ takes ~3-4 minutes.
     # Magnitude type     : AB
     # QSO_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_QSO_BIN(.doc & .bin)
     # QSO_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG(.doc & .bin)
+
+
+.. parsed-literal::
+
     # Z_STEP   :0.1000 0.0000 3.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Thu Mar 26 22:45:55 2026
+    # CREATION_DATE Mon Mar 30 14:00:24 2026
     #############################################
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
-
-
-.. parsed-literal::
-
-    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -2429,7 +2422,12 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
     
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
 
 
@@ -2437,7 +2435,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f70ac933f40>
+    <rail.core.data.ModelHandle at 0x7f54ec6bc490>
 
 
 
@@ -2537,7 +2535,12 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.AUTO_ADAPT is set to YES. Computing offsets.
+
+
+.. parsed-literal::
+
+    bin
      Done with the library reading with 46444 SED read. 
     Read lib out 
     Read filt 
@@ -2548,7 +2551,6 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-    AUTO_ADAPT is set to YES. Computing offsets.
 
 
 .. parsed-literal::

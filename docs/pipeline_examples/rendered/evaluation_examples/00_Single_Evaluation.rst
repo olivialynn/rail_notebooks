@@ -21,7 +21,7 @@ more info.
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```Single_Evaluation.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/evaluation_examples/Single_Evaluation.ipynb>`__
+`Single_Evaluation.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/evaluation_examples/Single_Evaluation.ipynb>`__
 in the ``interactive_examples/evaluation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -88,15 +88,11 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      3 47.1M    3 1845k    0     0  2103k      0  0:00:22 --:--:--  0:00:22 2101k
 
 .. parsed-literal::
 
-     68 47.1M   68 32.3M    0     0  26.4M      0  0:00:01  0:00:01 --:--:-- 26.4M
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  32.8M      0  0:00:01  0:00:01 --:--:-- 32.7M
+    100 47.1M  100 47.1M    0     0  32.0M      0  0:00:01  0:00:01 --:--:-- 32.0M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we

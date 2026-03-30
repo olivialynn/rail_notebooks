@@ -22,7 +22,7 @@ more info.
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```Evaluation_by_Type.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/evaluation_examples/Evaluation_by_Type.ipynb>`__
+`Evaluation_by_Type.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/evaluation_examples/Evaluation_by_Type.ipynb>`__
 in the ``interactive_examples/evaluation_examples/`` folder for a
 version of this notebook in interactive mode.
 
@@ -240,42 +240,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.254874</td>
-          <td>0.159214</td>
+          <td>1.719499</td>
+          <td>0.037370</td>
           <td>0.0</td>
-          <td>0.089023</td>
+          <td>0.043913</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.202086</td>
-          <td>0.108119</td>
+          <td>0.960916</td>
+          <td>0.083511</td>
           <td>0.0</td>
-          <td>0.100885</td>
+          <td>0.086585</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.143545</td>
-          <td>0.087845</td>
+          <td>0.447846</td>
+          <td>0.282535</td>
           <td>0.0</td>
-          <td>0.090739</td>
+          <td>0.080758</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.252547</td>
-          <td>0.049275</td>
+          <td>0.315745</td>
+          <td>0.178825</td>
           <td>0.0</td>
-          <td>0.067222</td>
+          <td>0.073310</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.734472</td>
-          <td>0.094592</td>
+          <td>0.360013</td>
+          <td>0.049255</td>
           <td>0.0</td>
-          <td>0.103273</td>
+          <td>0.061691</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -288,42 +288,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.307388</td>
-          <td>0.140530</td>
+          <td>1.439257</td>
+          <td>0.266031</td>
           <td>0.0</td>
-          <td>0.110514</td>
+          <td>0.060433</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.670133</td>
-          <td>0.300930</td>
+          <td>0.441994</td>
+          <td>0.141142</td>
           <td>0.0</td>
-          <td>0.124276</td>
+          <td>0.062507</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.605144</td>
-          <td>0.133294</td>
+          <td>1.361919</td>
+          <td>0.068946</td>
           <td>0.0</td>
-          <td>0.082253</td>
+          <td>0.077674</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.471724</td>
-          <td>0.060510</td>
+          <td>0.384236</td>
+          <td>0.271620</td>
           <td>0.0</td>
-          <td>0.103687</td>
+          <td>0.079321</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.896659</td>
-          <td>0.066239</td>
+          <td>0.389618</td>
+          <td>0.289890</td>
           <td>0.0</td>
-          <td>0.082783</td>
+          <td>0.072912</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -371,43 +371,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.159214</td>
-          <td>0.089023</td>
+          <td>0.037370</td>
+          <td>0.043913</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.254874</td>
+          <td>1.719499</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.108119</td>
-          <td>0.100885</td>
+          <td>0.083511</td>
+          <td>0.086585</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.202086</td>
+          <td>0.960916</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.087845</td>
-          <td>0.090739</td>
+          <td>0.282535</td>
+          <td>0.080758</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.143545</td>
+          <td>0.447846</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.049275</td>
-          <td>0.067222</td>
+          <td>0.178825</td>
+          <td>0.073310</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.252547</td>
+          <td>0.315745</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.094592</td>
-          <td>0.103273</td>
+          <td>0.049255</td>
+          <td>0.061691</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.734472</td>
+          <td>0.360013</td>
         </tr>
         <tr>
           <th>...</th>
@@ -419,43 +419,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.140530</td>
-          <td>0.110514</td>
+          <td>0.266031</td>
+          <td>0.060433</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.307388</td>
+          <td>1.439257</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.300930</td>
-          <td>0.124276</td>
+          <td>0.141142</td>
+          <td>0.062507</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.670133</td>
+          <td>0.441994</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.133294</td>
-          <td>0.082253</td>
+          <td>0.068946</td>
+          <td>0.077674</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.605144</td>
+          <td>1.361919</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.060510</td>
-          <td>0.103687</td>
+          <td>0.271620</td>
+          <td>0.079321</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.471724</td>
+          <td>0.384236</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.066239</td>
-          <td>0.082783</td>
+          <td>0.289890</td>
+          <td>0.072912</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.896659</td>
+          <td>0.389618</td>
         </tr>
       </tbody>
     </table>
@@ -928,7 +928,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7fd97d985900>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f56511c5b10>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 

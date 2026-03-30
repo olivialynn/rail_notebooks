@@ -10,7 +10,7 @@ different magnitude error models. For more completed degrader demo, see
 ``Quick_Start_in_Creation.ipynb``
 
 If you’re interested in running this in pipeline mode, see
-```01_Photometric_Realization.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb>`__
+`01_Photometric_Realization.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb>`__
 in the ``pipeline_examples/creation_examples/`` folder.
 
 .. code:: ipython3
@@ -39,7 +39,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T201727
+    /home/runner/.cache/lephare/runs/20260330T121200
 
 
 .. parsed-literal::
@@ -98,7 +98,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6313/696671147.py", line 6, in <module>
+      File "/tmp/ipykernel_6300/696671147.py", line 6, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -256,8 +256,8 @@ engine is.
           <td>25.178587</td>
           <td>24.695955</td>
           <td>23.994413</td>
-          <td>0.049066</td>
-          <td>0.040902</td>
+          <td>0.117391</td>
+          <td>0.083192</td>
         </tr>
         <tr>
           <th>1</th>
@@ -268,8 +268,8 @@ engine is.
           <td>26.259745</td>
           <td>25.865673</td>
           <td>25.391064</td>
-          <td>0.123898</td>
-          <td>0.095070</td>
+          <td>0.037033</td>
+          <td>0.032379</td>
         </tr>
         <tr>
           <th>2</th>
@@ -280,8 +280,8 @@ engine is.
           <td>26.014826</td>
           <td>25.030174</td>
           <td>24.304707</td>
-          <td>0.018228</td>
-          <td>0.013919</td>
+          <td>0.076335</td>
+          <td>0.044359</td>
         </tr>
         <tr>
           <th>3</th>
@@ -292,8 +292,8 @@ engine is.
           <td>26.256907</td>
           <td>25.529823</td>
           <td>25.291103</td>
-          <td>0.035937</td>
-          <td>0.031090</td>
+          <td>0.039461</td>
+          <td>0.023180</td>
         </tr>
         <tr>
           <th>4</th>
@@ -304,8 +304,8 @@ engine is.
           <td>25.687405</td>
           <td>25.466606</td>
           <td>25.096743</td>
-          <td>0.021581</td>
-          <td>0.015770</td>
+          <td>0.138424</td>
+          <td>0.122771</td>
         </tr>
         <tr>
           <th>...</th>
@@ -328,8 +328,8 @@ engine is.
           <td>25.077412</td>
           <td>24.852779</td>
           <td>24.737946</td>
-          <td>0.013169</td>
-          <td>0.010164</td>
+          <td>0.161974</td>
+          <td>0.135271</td>
         </tr>
         <tr>
           <th>99996</th>
@@ -340,8 +340,8 @@ engine is.
           <td>25.204935</td>
           <td>24.825092</td>
           <td>24.224169</td>
-          <td>0.070591</td>
-          <td>0.048106</td>
+          <td>0.013237</td>
+          <td>0.009364</td>
         </tr>
         <tr>
           <th>99997</th>
@@ -352,8 +352,8 @@ engine is.
           <td>26.250343</td>
           <td>25.917370</td>
           <td>25.613836</td>
-          <td>0.046999</td>
-          <td>0.031431</td>
+          <td>0.044474</td>
+          <td>0.030082</td>
         </tr>
         <tr>
           <th>99998</th>
@@ -364,8 +364,8 @@ engine is.
           <td>25.876932</td>
           <td>25.715893</td>
           <td>25.274899</td>
-          <td>0.099605</td>
-          <td>0.060103</td>
+          <td>0.034031</td>
+          <td>0.027356</td>
         </tr>
         <tr>
           <th>99999</th>
@@ -376,8 +376,8 @@ engine is.
           <td>26.319622</td>
           <td>25.955982</td>
           <td>25.699642</td>
-          <td>0.076085</td>
-          <td>0.075945</td>
+          <td>0.026034</td>
+          <td>0.016274</td>
         </tr>
       </tbody>
     </table>

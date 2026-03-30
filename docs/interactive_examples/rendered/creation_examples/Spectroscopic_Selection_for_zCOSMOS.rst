@@ -29,7 +29,7 @@ In this quick notebook we’ll select galaxies based on zCOSMOS selection
 function.
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```11_Spectroscopic_Selection_for_zCOSMOS.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb>`__
+`11_Spectroscopic_Selection_for_zCOSMOS.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb>`__
 in the ``pipeline_examples/creation_examples/`` folder.
 
 .. code:: ipython3
@@ -114,7 +114,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3989/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_4007/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -250,50 +250,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.902566</td>
-          <td>20.295946</td>
+          <td>25.063475</td>
+          <td>16.653935</td>
           <td>20.0</td>
-          <td>1.677052</td>
+          <td>1.334377</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.961812</td>
-          <td>14.386672</td>
+          <td>24.782021</td>
+          <td>18.651675</td>
           <td>20.0</td>
-          <td>0.185835</td>
+          <td>0.074287</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.895689</td>
-          <td>18.402783</td>
+          <td>21.427946</td>
+          <td>20.160075</td>
           <td>20.0</td>
-          <td>1.390497</td>
+          <td>0.080307</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.721448</td>
-          <td>15.014161</td>
+          <td>21.636340</td>
+          <td>14.137127</td>
           <td>20.0</td>
-          <td>0.579031</td>
+          <td>0.658713</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.239556</td>
-          <td>17.811254</td>
+          <td>20.291772</td>
+          <td>18.062209</td>
           <td>20.0</td>
-          <td>1.225215</td>
+          <td>0.539937</td>
         </tr>
       </tbody>
     </table>
@@ -330,8 +330,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.39 s, sys: 20.2 ms, total: 1.41 s
-    Wall time: 1.41 s
+    CPU times: user 1.42 s, sys: 17.6 ms, total: 1.44 s
+    Wall time: 1.43 s
 
 
 .. code:: ipython3
@@ -342,19 +342,19 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503430 entries, 6 to 1999999
+    Index: 503954 entries, 3 to 1999993
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503430 non-null  float64
-     1   g         503430 non-null  float64
-     2   r         503430 non-null  float64
-     3   i         503430 non-null  float64
-     4   z         503430 non-null  float64
-     5   y         503430 non-null  float64
-     6   redshift  503430 non-null  float64
+     0   u         503954 non-null  float64
+     1   g         503954 non-null  float64
+     2   r         503954 non-null  float64
+     3   i         503954 non-null  float64
+     4   z         503954 non-null  float64
+     5   y         503954 non-null  float64
+     6   redshift  503954 non-null  float64
     dtypes: float64(7)
-    memory usage: 30.7 MB
+    memory usage: 30.8 MB
 
 
 And we see that we’ve kept 503967 out of the 2,000,000 galaxies in the

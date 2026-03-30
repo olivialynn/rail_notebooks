@@ -11,7 +11,7 @@ Friends to finds sources close to each other and merge them into
 unrecognized blends
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```06_Blending_Degrader.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb>`__
+`06_Blending_Degrader.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb>`__
 in the ``pipeline_examples/creation_examples/`` folder.
 
 .. code:: ipython3
@@ -38,7 +38,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T201727
+    /home/runner/.cache/lephare/runs/20260330T121200
 
 
 .. parsed-literal::
@@ -97,7 +97,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4265/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_4293/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -316,28 +316,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.01978506 0.02001464] / 0.01989985309119184
+    [0.00196715 0.00219661] / 0.00208188047722248
     
     Truth DEC / Blended DEC:
-    [0.00971417 0.00958051] / 0.00964734011661044
+    [0.01513593 0.01511296] / 0.015124442654953371
     
     Truth mag u / Blended mag u:
-    [20.45826363 24.69933198] / 20.43663820421421
+    [26.19121784 26.83461163] / 25.71336276938433
     
     Truth mag g / Blended mag g:
-    [24.75366771 23.10371628] / 22.888897680621106
+    [24.02434826 18.38562071] / 18.379608556273734
     
     Truth mag r / Blended mag r:
-    [17.96127779 20.11723837] / 17.82160672046279
+    [19.90115765 29.2197709 ] / 19.900954302454746
     
     Truth mag i / Blended mag i:
-    [18.94705184 20.76531774] / 18.760589194476616
+    [23.5405447  22.75258055] / 22.324021093051286
     
     Truth mag z / Blended mag z:
-    [21.62376646 25.98140876] / 21.604323024373976
+    [20.39669888 25.14309228] / 20.383070677505987
     
     Truth mag y / Blended mag y:
-    [22.73752594 24.50561186] / 22.542989125764006
+    [25.60486164 20.62405109] / 20.613055984737734
     
 
 

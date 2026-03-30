@@ -1,5 +1,16 @@
 Rendering notebooks in group: core...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/core_examples
+RENDERING: 06_Rail_Interfaces
+[1;32m    485[0m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[38;5;124m"[39m[38;5;124mNone[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mnone[39m[38;5;124m"[39m, [38;5;28;01mNone[39;00m]:
+[1;32m    486[0m     [38;5;66;03m# Path exists, use that[39;00m
+[1;32m    487[0m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misfile(path):
+[0;32m--> 488[0m         [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mUnable to find file: [39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[38;5;124m"[39m)
+[1;32m    489[0m     handle[38;5;241m.[39mpath [38;5;241m=[39m path
+[1;32m    490[0m     [38;5;28;01mif[39;00m do_read:
+[1;32m    491[0m         [38;5;66;03m# Read the data using the handle[39;00m
+
+[0;31mFileNotFoundError[0m: Unable to find file: model_inform_trainz.pkl
+
 RENDERING: 01_FileIO_DataStore
 
 
@@ -12,6 +23,7 @@ Cell [0;32mIn[7], line 1[0m
 [0;31mAttributeError[0m: type object 'RailStage' has no attribute 'data_store'
 
 RENDERING: 03_Hyperbolic_Magnitude
+RENDERING: 04_Iterate_Tabular_Data
 RENDERING: 02_FluxtoMag_and_Deredden
 [0;32m--> 518[0m     np[38;5;241m.[39marray([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mconfig[49m[38;5;241;43m.[39;49m[43mra_name[49m[43m][49m),
 [1;32m    519[0m     np[38;5;241m.[39marray(data[[38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39mdec_name]),
@@ -23,36 +35,24 @@ RENDERING: 02_FluxtoMag_and_Deredden
 
 [0;31mKeyError[0m: 'ra'
 
-RENDERING: 04_Iterate_Tabular_Data
-RENDERING: 05_Build_Save_Load_Run_Pipeline
 RENDERING: 00_Useful_Utilities
-RENDERING: 06_Rail_Interfaces
-[1;32m    485[0m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[38;5;124m"[39m[38;5;124mNone[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mnone[39m[38;5;124m"[39m, [38;5;28;01mNone[39;00m]:
-[1;32m    486[0m     [38;5;66;03m# Path exists, use that[39;00m
-[1;32m    487[0m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misfile(path):
-[0;32m--> 488[0m         [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mUnable to find file: [39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[38;5;124m"[39m)
-[1;32m    489[0m     handle[38;5;241m.[39mpath [38;5;241m=[39m path
-[1;32m    490[0m     [38;5;28;01mif[39;00m do_read:
-[1;32m    491[0m         [38;5;66;03m# Read the data using the handle[39;00m
-
-[0;31mFileNotFoundError[0m: Unable to find file: model_inform_trainz.pkl
-
+RENDERING: 05_Build_Save_Load_Run_Pipeline
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/01_FileIO_DataStore.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/03_Hyperbolic_Magnitude.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/04_Iterate_Tabular_Data.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/00_Useful_Utilities.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/05_Build_Save_Load_Run_Pipeline.ipynb
 
 3 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/01_FileIO_DataStore.ipynb
-2. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
-3. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/06_Rail_Interfaces.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/01_FileIO_DataStore.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/core_examples/02_FluxtoMag_and_Deredden.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

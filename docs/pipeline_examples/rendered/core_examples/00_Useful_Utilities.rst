@@ -181,7 +181,7 @@ imports.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4652/2417425162.py", line 3, in <module>
+      File "/tmp/ipykernel_4191/2417425162.py", line 3, in <module>
         rail.stages.import_and_attach_all()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
@@ -732,17 +732,16 @@ Just add a ``resume=True`` to do so.
     )
 
 
-.. parsed-literal::
-
-    Skipping stage flow_engine_test because its outputs exist already
-    Skipping stage col_remapper_test because its outputs exist already
-
-
 
 
 .. parsed-literal::
 
-    (({}, []), {'output_dir': '.', 'log_dir': '.', 'resume': True})
+    (({'flow_engine_test': <Job flow_engine_test>,
+       'col_remapper_test': <Job col_remapper_test>},
+      [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1a20cb2110>,
+       Stage that applies remaps the following column names in a pandas DataFrame:
+       f{str(self.config.columns)}]),
+     {'output_dir': '.', 'log_dir': '.', 'resume': True})
 
 
 
@@ -758,7 +757,7 @@ this pipeline will run.
 
 .. parsed-literal::
 
-    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f43f5a459f0>,
+    [<rail.creation.engines.flowEngine.FlowCreator at 0x7f1a20cb2110>,
      Stage that applies remaps the following column names in a pandas DataFrame:
      f{str(self.config.columns)}]
 

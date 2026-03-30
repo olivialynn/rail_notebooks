@@ -1,86 +1,54 @@
 Rendering notebooks in group: estimation...
+Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/estimation_examples
 RENDERING: Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters
-RENDERING: YAW
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/urllib/request.py:1351[0m, in [0;36mAbstractHTTPHandler.do_open[0;34m(self, http_class, req, **http_conn_args)[0m
-[1;32m   1348[0m         h[38;5;241m.[39mrequest(req[38;5;241m.[39mget_method(), req[38;5;241m.[39mselector, req[38;5;241m.[39mdata, headers,
-[1;32m   1349[0m                   encode_chunked[38;5;241m=[39mreq[38;5;241m.[39mhas_header([38;5;124m'[39m[38;5;124mTransfer-encoding[39m[38;5;124m'[39m))
-[1;32m   1350[0m     [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m err: [38;5;66;03m# timeout error[39;00m
-[0;32m-> 1351[0m         [38;5;28;01mraise[39;00m URLError(err)
-[1;32m   1352[0m     r [38;5;241m=[39m h[38;5;241m.[39mgetresponse()
-[1;32m   1353[0m [38;5;28;01mexcept[39;00m:
-
-[0;31mURLError[0m: <urlopen error [Errno 110] Connection timed out>
-
-RENDERING: SomocluSOM
-[1;32m    227[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
-[1;32m    228[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
-[1;32m    229[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
-[1;32m    230[0m     [38;5;28;01mtry[39;00m:
-
-[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
- filepath: '../examples_data/healpix_10326_bright_data.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
- because of error: 
- [Errno 2] Unable to synchronously open file (unable to open file: name = '../examples_data/healpix_10326_bright_data.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
-
-RENDERING: NZDir
-RENDERING: Using_Photometry_to_Estimate_Photometric_Redshifts
-RENDERING: Quick_Start_in_Estimation
-RENDERING: FlexZBoost_PDF_Representation_Comparison
-RENDERING: BPZ_lite
-[1;32m      9[0m     training_data[38;5;241m=[39mtraining_data, [38;5;241m*[39m[38;5;241m*[39mtrain_dict
-[1;32m     10[0m )[[38;5;124m"[39m[38;5;124mmodel[39m[38;5;124m"[39m]
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/utils/path_utils.py:21[0m, in [0;36mfind_rail_file[0;34m(relpath)[0m
-[1;32m     19[0m     [38;5;28;01mif[39;00m os[38;5;241m.[39mpath[38;5;241m.[39mexists(fullpath):
-[1;32m     20[0m         [38;5;28;01mreturn[39;00m fullpath
-[0;32m---> 21[0m [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mCould not find file [39m[38;5;132;01m{[39;00mrelpath[38;5;132;01m}[39;00m[38;5;124m in [39m[38;5;132;01m{[39;00mrail[38;5;241m.[39m__path__[38;5;132;01m}[39;00m[38;5;124m"[39m)
-
-[0;31mValueError[0m: Could not find file examples_data/estimation_data/data/test_dc2_training_9816_broadtypes.hdf5 in _NamespacePath(['/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail'])
-
-RENDERING: LePhare_LSST
-RENDERING: DNF
-RENDERING: PZFlow
-RENDERING: LePhare_COSMOS
-RENDERING: Sampled_Summarizers
-RENDERING: Running_with_different_data
-[1;32m    227[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
-[1;32m    228[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
-[1;32m    229[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
-[1;32m    230[0m     [38;5;28;01mtry[39;00m:
-
-[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
- filepath: '../examples_data/romanrubin_train_data.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
- because of error: 
- [Errno 2] Unable to synchronously open file (unable to open file: name = '../examples_data/romanrubin_train_data.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
-
-RENDERING: GPz
 RENDERING: CMNN
+RENDERING: BPZ_lite
+RENDERING: YAW
+RENDERING: Running_with_different_data
+RENDERING: GPz
+RENDERING: LePhare_LSST
+RENDERING: Using_Photometry_to_Estimate_Photometric_Redshifts
+RENDERING: PZFlow
+RENDERING: FlexZBoost_PDF_Representation_Comparison
+RENDERING: LePhare_COSMOS
+RENDERING: SomocluSOM
+[1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
+[1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
+[1;32m    240[0m            [38;5;28mself[39m[38;5;241m.[39m_compact_support, [38;5;28mself[39m[38;5;241m.[39m_neighborhood [38;5;241m==[39m [38;5;124m"[39m[38;5;124mgaussian[39m[38;5;124m"[39m,
+[1;32m    241[0m            [38;5;28mself[39m[38;5;241m.[39m_std_coeff, [38;5;28mself[39m[38;5;241m.[39m_verbose, [38;5;28mself[39m[38;5;241m.[39mcodebook, [38;5;28mself[39m[38;5;241m.[39mbmus,
+[1;32m    242[0m            [38;5;28mself[39m[38;5;241m.[39mumatrix, [38;5;28mself[39m[38;5;241m.[39m_vect_distance)
+[1;32m    243[0m [38;5;28mself[39m[38;5;241m.[39mumatrix[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39m_n_rows, [38;5;28mself[39m[38;5;241m.[39m_n_columns)
+[1;32m    244[0m [38;5;28mself[39m[38;5;241m.[39mbmus[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39mn_vectors, [38;5;241m2[39m)
+
+[0;31mNameError[0m: name 'wrap_train' is not defined
+
+RENDERING: Sampled_Summarizers
+RENDERING: Quick_Start_in_Estimation
+RENDERING: NZDir
+RENDERING: DNF
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/YAW.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/NZDir.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Using_Photometry_to_Estimate_Photometric_Redshifts.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Quick_Start_in_Estimation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/FlexZBoost_PDF_Representation_Comparison.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/BPZ_lite.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_LSST.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/DNF.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/PZFlow.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_COSMOS.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Sampled_Summarizers.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Running_with_different_data.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/GPz.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/CMNN.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/BPZ_lite.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/YAW.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Running_with_different_data.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/GPz.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_LSST.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Using_Photometry_to_Estimate_Photometric_Redshifts.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/PZFlow.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/FlexZBoost_PDF_Representation_Comparison.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_COSMOS.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Sampled_Summarizers.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Quick_Start_in_Estimation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/NZDir.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/DNF.ipynb
 
-4 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/YAW.ipynb
-2. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb
-3. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/BPZ_lite.ipynb
-4. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Running_with_different_data.ipynb
+1 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
@@ -89,4 +57,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
     raise ValueError(
-ValueError: 4 out of 16 notebooks failed to render.
+ValueError: 1 out of 16 notebooks failed to render.

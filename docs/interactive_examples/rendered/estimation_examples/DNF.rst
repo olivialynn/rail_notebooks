@@ -10,7 +10,7 @@ al. (2016) <https://arxiv.org/abs/1511.07623>`__ for more details on the
 algorithm.
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```05_DNF.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/05_DNF.ipynb>`__
+`05_DNF.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/05_DNF.ipynb>`__
 in the ``pipeline_examples/estimation_examples/`` folder.
 
 DNF (Directional Neighbourhood Fitting) is a nearest-neighbor approach
@@ -114,7 +114,7 @@ The configurable parameters for ``DNFEstimator`` include:
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T203551
+    /home/runner/.cache/lephare/runs/20260330T122231
 
 
 .. parsed-literal::
@@ -173,7 +173,7 @@ The configurable parameters for ``DNFEstimator`` include:
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6813/444981919.py", line 6, in <module>
+      File "/tmp/ipykernel_8386/444981919.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -664,7 +664,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f61a7e119c0>
+    <matplotlib.legend.Legend at 0x7ff9b8fa72b0>
 
 
 

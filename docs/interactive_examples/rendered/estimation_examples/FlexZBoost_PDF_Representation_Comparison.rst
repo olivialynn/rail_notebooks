@@ -11,7 +11,7 @@ Flexcode output using two different storage techniques. We’ll compare
 parameterization of ``qp_flexzboost``.
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```01_FlexZBoost_PDF_Representation_Comparison.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb>`__
+`01_FlexZBoost_PDF_Representation_Comparison.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb>`__
 in the ``pipeline_examples/estimation_examples/`` folder.
 
 .. code:: ipython3
@@ -40,7 +40,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T203551
+    /home/runner/.cache/lephare/runs/20260330T122231
 
 
 .. parsed-literal::
@@ -99,7 +99,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6268/2305495096.py", line 4, in <module>
+      File "/tmp/ipykernel_7491/2305495096.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -212,43 +212,23 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:26] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -256,39 +236,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:27] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:27] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:27] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:27] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:51] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -296,39 +256,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:52] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:52] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:52] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:28] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:52] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -336,39 +276,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:52] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:29] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -376,11 +296,95 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:06:30] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:53] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:54] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:39:55] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -403,43 +407,23 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:43] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:43] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:43] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:43] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:18] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:43] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -447,39 +431,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:19] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:19] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:19] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:19] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -487,39 +451,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:20] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:44] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -527,39 +471,19 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:45] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:45] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:45] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:21] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-
-
-.. parsed-literal::
-
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:22] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:22] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:22] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
-    Parameters: { "silent" } are not used.
-    
-      bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:22] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:45] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -567,11 +491,91 @@ Specifically we’ll use Xgboost with a set of 35 cosine basis functions.
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:23] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [21:07:23] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:46] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:47] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+
+
+.. parsed-literal::
+
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:48] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
+    Parameters: { "silent" } are not used.
+    
+      bst.update(dtrain, iteration=i, fobj=obj)
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/xgboost/training.py:200: UserWarning: [12:40:48] WARNING: /__w/xgboost/xgboost/src/learner.cc:782: 
     Parameters: { "silent" } are not used.
     
       bst.update(dtrain, iteration=i, fobj=obj)
@@ -602,7 +606,7 @@ the trained model.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, FlexZBoostEstimator
-    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f333549b790>, FlexZBoostEstimator
+    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f8bed4870a0>, FlexZBoostEstimator
     Process 0 running estimator on chunk 0 - 20,449
     Process 0 estimating PZ PDF for rows 0 - 20,449
 
@@ -610,8 +614,8 @@ the trained model.
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.hdf5, FlexZBoostEstimator
-    CPU times: user 11.1 s, sys: 84.4 ms, total: 11.2 s
-    Wall time: 11.3 s
+    CPU times: user 11 s, sys: 84.6 ms, total: 11.1 s
+    Wall time: 11.2 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -634,8 +638,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 867 ms, sys: 2.92 ms, total: 870 ms
-    Wall time: 868 ms
+    CPU times: user 893 ms, sys: 3.24 ms, total: 896 ms
+    Wall time: 890 ms
 
 
 .. code:: ipython3
@@ -646,8 +650,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 205 ms, sys: 62.3 ms, total: 268 ms
-    Wall time: 267 ms
+    CPU times: user 206 ms, sys: 56.8 ms, total: 263 ms
+    Wall time: 263 ms
 
 
 Plotting median values.
@@ -684,7 +688,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    316 ms ± 4.12 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    313 ms ± 1.24 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 Now we’ll repeat the experiment using ``qp.interp`` storage. Again,
@@ -709,7 +713,7 @@ interpolated technique.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, FlexZBoostEstimator
-    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f333549b790>, FlexZBoostEstimator
+    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f8bed4870a0>, FlexZBoostEstimator
     Process 0 running estimator on chunk 0 - 20,449
     Process 0 estimating PZ PDF for rows 0 - 20,449
 
@@ -739,7 +743,7 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    865 ms ± 3.75 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    875 ms ± 11.4 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 .. code:: ipython3
@@ -750,8 +754,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 207 ms, sys: 61.3 ms, total: 268 ms
-    Wall time: 268 ms
+    CPU times: user 202 ms, sys: 63.8 ms, total: 266 ms
+    Wall time: 265 ms
 
 
 Plotting median values.
@@ -787,5 +791,5 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    321 ms ± 3.12 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    313 ms ± 1.68 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 

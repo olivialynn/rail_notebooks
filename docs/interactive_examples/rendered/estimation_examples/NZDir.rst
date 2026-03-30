@@ -1,12 +1,11 @@
-The NZDir estimator
-===================
+i# The NZDir estimator
 
 **Author:** Sam Schmidt
 
 **Last successfully run:** Feb 9, 2026
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```07_NZDir.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/07_NZDir.ipynb>`__
+`07_NZDir.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/07_NZDir.ipynb>`__
 in the ``pipeline_examples/estimation_examples/`` folder.
 
 This is a quick demo of the NZDir estimator, it has been ported to RAIL
@@ -41,7 +40,7 @@ First off, let’s load the relevant packages from RAIL:
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T203551
+    /home/runner/.cache/lephare/runs/20260330T122231
 
 
 .. parsed-literal::
@@ -100,7 +99,7 @@ First off, let’s load the relevant packages from RAIL:
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5652/285264119.py", line 4, in <module>
+      File "/tmp/ipykernel_8239/285264119.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -361,8 +360,8 @@ calculation, so this should run very fast:
 
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
-    CPU times: user 242 ms, sys: 3.03 ms, total: 245 ms
-    Wall time: 243 ms
+    CPU times: user 238 ms, sys: 0 ns, total: 238 ms
+    Wall time: 237 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -564,10 +563,6 @@ Now we need to re-run our tomographic bin estimates with this new model:
            [24.16078758, 23.40859985, 23.29878235, 23.29213524, 23.34983253,
             23.5138588 ]], shape=(2576, 6))}, NZDirSummarizer
     Process 0 running estimator on chunk 0 - 7679
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
     Inserting handle into data store.  input: None, NZDirSummarizer
@@ -592,6 +587,10 @@ Now we need to re-run our tomographic bin estimates with this new model:
 .. parsed-literal::
 
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
     Inserting handle into data store.  input: None, NZDirSummarizer
     Inserting handle into data store.  model: {'distances': array([2.51892877, 0.85703786, 0.48703015, ..., 0.6715168 , 0.64272626,
@@ -612,8 +611,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
-    CPU times: user 235 ms, sys: 11 ms, total: 246 ms
-    Wall time: 245 ms
+    CPU times: user 224 ms, sys: 10 ms, total: 234 ms
+    Wall time: 233 ms
 
 
 .. code:: ipython3

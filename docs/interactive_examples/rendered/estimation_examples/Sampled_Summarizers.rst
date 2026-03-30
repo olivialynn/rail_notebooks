@@ -12,7 +12,7 @@ specified via the ``single_NZ`` keyword). I also updated NZDir and
 included it in this example notebook
 
 **Note:** If you’re interested in running this in pipeline mode, see
-```13_Sampled_Summarizers.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb>`__
+`13_Sampled_Summarizers.ipynb <https://github.com/LSSTDESC/rail/blob/main/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb>`__
 in the ``pipeline_examples/estimation_examples/`` folder.
 
 .. code:: ipython3
@@ -40,7 +40,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260326T203551
+    /home/runner/.cache/lephare/runs/20260330T122231
 
 
 .. parsed-literal::
@@ -99,7 +99,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_7988/4087826718.py", line 3, in <module>
+      File "/tmp/ipykernel_7867/4087826718.py", line 3, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -229,7 +229,7 @@ that are included in the RAIL repo:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x561db2774cf0>, 'bestsig': np.float64(0.023333333333333334), 'nneigh': 7, 'truezs': array([0.02043499, 0.01936132, 0.03672067, ..., 2.97927326, 2.98694714,
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55f23138b460>, 'bestsig': np.float64(0.023333333333333334), 'nneigh': 7, 'truezs': array([0.02043499, 0.01936132, 0.03672067, ..., 2.97927326, 2.98694714,
            2.97646626], shape=(10225,)), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 20,449
     Process 0 estimating PZ PDF for rows 0 - 20,449
@@ -308,7 +308,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f52983083a0>
+    <matplotlib.legend.Legend at 0x7f4960b1f820>
 
 
 
@@ -384,7 +384,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f52513d7d60>
+    <matplotlib.legend.Legend at 0x7f4960b1d9c0>
 
 
 
@@ -536,7 +536,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5250d75c60>
+    <matplotlib.legend.Legend at 0x7f4917dee5f0>
 
 
 
@@ -654,7 +654,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f5250cafee0>]
+    [<matplotlib.lines.Line2D at 0x7f4917de8370>]
 
 
 
@@ -671,7 +671,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f5250c04a90>]
+    [<matplotlib.lines.Line2D at 0x7f4917d60f10>]
 
 
 
@@ -688,7 +688,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7f5250da4ac0>]
+    [<matplotlib.lines.Line2D at 0x7f4917eb56c0>]
 
 
 
@@ -723,7 +723,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f5250d3b460>
+    <matplotlib.legend.Legend at 0x7f4917eafc70>
 
 
 

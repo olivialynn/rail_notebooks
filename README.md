@@ -46,10 +46,11 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** March 27, 2026
+**Tables last updated:** March 30, 2026
 
 
-### Pipeline Notebooks#### Core Notebooks
+### Pipeline Notebooks
+#### Core Notebooks
 
 |   | Notebook |
 |---|----------|
@@ -90,7 +91,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :white_check_mark: | 08_NZDir_pipeline.ipynb |
+| :x: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
@@ -114,7 +115,8 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | Goldenspike.ipynb |
 
 
-### Interactive Notebooks#### Core Notebooks
+### Interactive Notebooks
+#### Core Notebooks
 
 |   | Notebook |
 |---|----------|
@@ -142,7 +144,7 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :x: | BPZ_lite.ipynb |
+| :white_check_mark: | BPZ_lite.ipynb |
 | :white_check_mark: | CMNN.ipynb |
 | :white_check_mark: | DNF.ipynb |
 | :white_check_mark: | Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters.ipynb |
@@ -153,11 +155,11 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | NZDir.ipynb |
 | :white_check_mark: | PZFlow.ipynb |
 | :white_check_mark: | Quick_Start_in_Estimation.ipynb |
-| :x: | Running_with_different_data.ipynb |
+| :white_check_mark: | Running_with_different_data.ipynb |
 | :white_check_mark: | Sampled_Summarizers.ipynb |
 | :x: | SomocluSOM.ipynb |
 | :white_check_mark: | Using_Photometry_to_Estimate_Photometric_Redshifts.ipynb |
-| :x: | YAW.ipynb |
+| :white_check_mark: | YAW.ipynb |
 
 #### Evaluation Notebooks
 

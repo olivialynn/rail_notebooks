@@ -5,7 +5,7 @@ last run successfully: April 26, 2023
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```Spatial_Variability.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/creation_examples/Spatial_Variability.ipynb>`__
+`Spatial_Variability.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/creation_examples/Spatial_Variability.ipynb>`__
 in the ``interactive_examples/creation_examples/`` folder for a version
 of this notebook in interactive mode.
 
@@ -140,7 +140,7 @@ Let’s generate some fake data.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.700660</td>
+          <td>1.932480</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -150,7 +150,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>1</th>
-          <td>0.928722</td>
+          <td>1.403169</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -160,7 +160,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>2</th>
-          <td>1.718168</td>
+          <td>0.269099</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -170,7 +170,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>3</th>
-          <td>1.992060</td>
+          <td>1.813758</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -180,7 +180,7 @@ Let’s generate some fake data.
         </tr>
         <tr>
           <th>4</th>
-          <td>1.144524</td>
+          <td>0.843643</td>
           <td>23.0</td>
           <td>23.0</td>
           <td>23.0</td>
@@ -243,8 +243,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, ObsCondition
-    CPU times: user 3.29 s, sys: 46.6 ms, total: 3.34 s
-    Wall time: 3.33 s
+    CPU times: user 3.32 s, sys: 36.9 ms, total: 3.35 s
+    Wall time: 3.35 s
 
 
 .. code:: ipython3
@@ -295,7 +295,7 @@ Let’s run the code and see how long it takes:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.700660</td>
+          <td>1.932480</td>
           <td>22.990404</td>
           <td>0.026246</td>
           <td>23.011212</td>
@@ -314,7 +314,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>1</th>
-          <td>0.928722</td>
+          <td>1.403169</td>
           <td>22.962996</td>
           <td>0.025645</td>
           <td>23.012586</td>
@@ -333,7 +333,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>2</th>
-          <td>1.718168</td>
+          <td>0.269099</td>
           <td>23.050979</td>
           <td>0.027628</td>
           <td>22.992791</td>
@@ -352,7 +352,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>3</th>
-          <td>1.992060</td>
+          <td>1.813758</td>
           <td>23.015021</td>
           <td>0.026798</td>
           <td>22.984763</td>
@@ -371,7 +371,7 @@ Let’s run the code and see how long it takes:
         </tr>
         <tr>
           <th>4</th>
-          <td>1.144524</td>
+          <td>0.843643</td>
           <td>23.005344</td>
           <td>0.026579</td>
           <td>23.010790</td>
@@ -545,7 +545,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.700660</td>
+          <td>1.932480</td>
           <td>22.990381</td>
           <td>0.026308</td>
           <td>23.011222</td>
@@ -564,7 +564,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>1</th>
-          <td>0.928722</td>
+          <td>1.403169</td>
           <td>22.963601</td>
           <td>0.025237</td>
           <td>23.012513</td>
@@ -583,7 +583,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>2</th>
-          <td>1.718168</td>
+          <td>0.269099</td>
           <td>23.050276</td>
           <td>0.027242</td>
           <td>22.992825</td>
@@ -602,7 +602,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>3</th>
-          <td>1.992060</td>
+          <td>1.813758</td>
           <td>23.014777</td>
           <td>0.026365</td>
           <td>22.984848</td>
@@ -621,7 +621,7 @@ also supplied, then it will overwrite the explicitly computed ``m5``).
         </tr>
         <tr>
           <th>4</th>
-          <td>1.144524</td>
+          <td>0.843643</td>
           <td>23.005223</td>
           <td>0.025983</td>
           <td>23.010704</td>

@@ -10,7 +10,7 @@ unrecognized blends
 
 **Note:** If you’re planning to run this in a notebook, you may want to
 use interactive mode instead. See
-```Blending_Degrader.ipynb`` <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/creation_examples/Blending_Degrader.ipynb>`__
+`Blending_Degrader.ipynb <https://github.com/LSSTDESC/rail/blob/main/interactive_examples/creation_examples/Blending_Degrader.ipynb>`__
 in the ``interactive_examples/creation_examples/`` folder for a version
 of this notebook in interactive mode.
 
@@ -211,28 +211,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.01996706 0.01995275] / 0.019959906873194908
+    [0.00492816 0.00464614 0.0046847  0.00479657] / 0.004763888842092004
     
     Truth DEC / Blended DEC:
-    [0.00068724 0.00074106] / 0.0007141525362095429
+    [0.00904288 0.00889905 0.00906901 0.00873482] / 0.0089364418147714
     
     Truth mag u / Blended mag u:
-    [24.30851021 21.35806658] / 21.288630431615413
+    [24.7527416  23.20839504 24.80969566 19.22453335] / 19.18458783331645
     
     Truth mag g / Blended mag g:
-    [24.32004645 22.22008019] / 22.073494716619102
+    [21.71814085 25.66327611 23.16808682 20.91026972] / 20.39137457433595
     
     Truth mag r / Blended mag r:
-    [28.02994967 18.76611231] / 18.7658984457539
+    [24.97961046 22.90246214 24.23088987 26.1509406 ] / 22.46804143066779
     
     Truth mag i / Blended mag i:
-    [27.63375464 26.77605784] / 26.36975186394706
+    [20.2440329  21.97141316 23.16279874 25.51231307] / 19.97640251682867
     
     Truth mag z / Blended mag z:
-    [22.48966517 23.48078783] / 22.123278811985234
+    [25.12283883 25.97268371 27.76759094 22.21973651] / 22.109798826821166
     
     Truth mag y / Blended mag y:
-    [24.94019386 28.3549185 ] / 24.894416902736445
+    [29.95861968 28.6574644  26.29576847 26.05922337] / 25.349196291480872
     
 
 

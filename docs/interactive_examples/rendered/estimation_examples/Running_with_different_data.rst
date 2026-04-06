@@ -53,7 +53,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260330T122231
+    /home/runner/.cache/lephare/runs/20260406T121811
 
 
 .. parsed-literal::
@@ -112,7 +112,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5951/3836591137.py", line 7, in <module>
+      File "/tmp/ipykernel_5956/3836591137.py", line 7, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -199,13 +199,17 @@ file with some data drawn from the Roman-Rubin simulation:
 
 .. parsed-literal::
 
+      8 4670k    8  395k    0     0   597k      0  0:00:07 --:--:--  0:00:07  596k
+
+.. parsed-literal::
+
     romanrubin_train_data.hdf5
     romanrubin_test_data.hdf5
 
 
 .. parsed-literal::
 
-    100 4670k  100 4670k    0     0  13.8M      0 --:--:-- --:--:-- --:--:-- 13.8M
+    100 4670k  100 4670k    0     0  3885k      0  0:00:01  0:00:01 --:--:-- 3888k
 
 
 
@@ -347,7 +351,7 @@ stage:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55fc86c95fc0>, 'bestsig': np.float64(0.017222222222222222), 'nneigh': 7, 'truezs': array([0.61988401, 1.74063779, 1.08068781, ..., 0.25938554, 0.92907312,
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x56132891ba60>, 'bestsig': np.float64(0.017222222222222222), 'nneigh': 7, 'truezs': array([0.61988401, 1.74063779, 1.08068781, ..., 0.25938554, 0.92907312,
            2.84295586], shape=(15000,)), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 20,000
     Process 0 estimating PZ PDF for rows 0 - 20,000

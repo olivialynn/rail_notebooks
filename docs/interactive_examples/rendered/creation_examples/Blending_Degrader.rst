@@ -38,7 +38,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260330T121200
+    /home/runner/.cache/lephare/runs/20260406T120756
 
 
 .. parsed-literal::
@@ -97,7 +97,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4293/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_4187/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -316,28 +316,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.00196715 0.00219661] / 0.00208188047722248
+    [0.00843329 0.00816641 0.00828402] / 0.008294574980148595
     
     Truth DEC / Blended DEC:
-    [0.01513593 0.01511296] / 0.015124442654953371
+    [0.00434234 0.00441624 0.00421248] / 0.004323686813358304
     
     Truth mag u / Blended mag u:
-    [26.19121784 26.83461163] / 25.71336276938433
+    [25.21865203 23.60145179 25.83709747] / 23.273163834842677
     
     Truth mag g / Blended mag g:
-    [24.02434826 18.38562071] / 18.379608556273734
+    [23.36512521 26.79349446 25.30419255] / 23.158014630440064
     
     Truth mag r / Blended mag r:
-    [19.90115765 29.2197709 ] / 19.900954302454746
+    [24.02052343 20.87145355 27.9138015 ] / 20.811753637096903
     
     Truth mag i / Blended mag i:
-    [23.5405447  22.75258055] / 22.324021093051286
+    [20.16491073 23.42871891 22.36608238] / 19.984130764278575
     
     Truth mag z / Blended mag z:
-    [20.39669888 25.14309228] / 20.383070677505987
+    [27.91795252 21.38969843 19.36212271] / 19.205768501737804
     
     Truth mag y / Blended mag y:
-    [25.60486164 20.62405109] / 20.613055984737734
+    [22.80115741 23.48340875 23.17935589] / 21.92586683713565
     
 
 

@@ -114,7 +114,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4007/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_3932/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -250,50 +250,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.063475</td>
-          <td>16.653935</td>
+          <td>25.098267</td>
+          <td>18.243048</td>
           <td>20.0</td>
-          <td>1.334377</td>
+          <td>1.465712</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.782021</td>
-          <td>18.651675</td>
+          <td>22.241783</td>
+          <td>21.097393</td>
           <td>20.0</td>
-          <td>0.074287</td>
+          <td>0.638646</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.427946</td>
-          <td>20.160075</td>
+          <td>25.686531</td>
+          <td>20.814044</td>
           <td>20.0</td>
-          <td>0.080307</td>
+          <td>0.357820</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.636340</td>
-          <td>14.137127</td>
+          <td>24.385811</td>
+          <td>21.584044</td>
           <td>20.0</td>
-          <td>0.658713</td>
+          <td>0.594600</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.291772</td>
-          <td>18.062209</td>
+          <td>24.074451</td>
+          <td>15.518858</td>
           <td>20.0</td>
-          <td>0.539937</td>
+          <td>1.340057</td>
         </tr>
       </tbody>
     </table>
@@ -330,8 +330,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.42 s, sys: 17.6 ms, total: 1.44 s
-    Wall time: 1.43 s
+    CPU times: user 1.31 s, sys: 24.9 ms, total: 1.33 s
+    Wall time: 1.33 s
 
 
 .. code:: ipython3
@@ -342,19 +342,19 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503954 entries, 3 to 1999993
+    Index: 503587 entries, 1 to 1999999
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503954 non-null  float64
-     1   g         503954 non-null  float64
-     2   r         503954 non-null  float64
-     3   i         503954 non-null  float64
-     4   z         503954 non-null  float64
-     5   y         503954 non-null  float64
-     6   redshift  503954 non-null  float64
+     0   u         503587 non-null  float64
+     1   g         503587 non-null  float64
+     2   r         503587 non-null  float64
+     3   i         503587 non-null  float64
+     4   z         503587 non-null  float64
+     5   y         503587 non-null  float64
+     6   redshift  503587 non-null  float64
     dtypes: float64(7)
-    memory usage: 30.8 MB
+    memory usage: 30.7 MB
 
 
 And we see that we’ve kept 503967 out of the 2,000,000 galaxies in the

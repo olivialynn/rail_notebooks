@@ -66,7 +66,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260330T121200
+    /home/runner/.cache/lephare/runs/20260406T120756
 
 
 .. parsed-literal::
@@ -125,7 +125,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6197/285264119.py", line 4, in <module>
+      File "/tmp/ipykernel_6154/285264119.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -266,7 +266,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.87</td>
+          <td>1.18</td>
         </tr>
         <tr>
           <th>1</th>
@@ -274,7 +274,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.87</td>
+          <td>1.18</td>
         </tr>
         <tr>
           <th>2</th>
@@ -282,7 +282,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.87</td>
+          <td>1.18</td>
         </tr>
         <tr>
           <th>3</th>
@@ -290,7 +290,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.87</td>
+          <td>1.18</td>
         </tr>
         <tr>
           <th>4</th>
@@ -298,7 +298,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>1.87</td>
+          <td>1.18</td>
         </tr>
       </tbody>
     </table>
@@ -356,8 +356,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, GridSelection
-    CPU times: user 2.79 s, sys: 90.4 ms, total: 2.88 s
-    Wall time: 2.88 s
+    CPU times: user 2.57 s, sys: 96.1 ms, total: 2.66 s
+    Wall time: 2.66 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -371,19 +371,19 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 182026 entries, 84300 to 927791
+    Index: 181994 entries, 84300 to 927791
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          182026 non-null  float64
-     1   gz         182026 non-null  float64
-     2   g          182026 non-null  float64
-     3   z          182026 non-null  float64
-     4   redshift   182026 non-null  float64
-     5   x_vals     182026 non-null  float64
-     6   y_vals     182026 non-null  float64
-     7   ratios     182026 non-null  float64
-     8   max_specz  182026 non-null  float64
+     0   i          181994 non-null  float64
+     1   gz         181994 non-null  float64
+     2   g          181994 non-null  float64
+     3   z          181994 non-null  float64
+     4   redshift   181994 non-null  float64
+     5   x_vals     181994 non-null  float64
+     6   y_vals     181994 non-null  float64
+     7   ratios     181994 non-null  float64
+     8   max_specz  181994 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 
@@ -412,7 +412,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 .. parsed-literal::
 
-    /tmp/ipykernel_6197/3945432532.py:1: SettingWithCopyWarning: 
+    /tmp/ipykernel_6154/3945432532.py:1: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

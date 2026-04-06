@@ -70,132 +70,132 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    (1) 9.1679
+    (1) 9.1680
 
 
 .. parsed-literal::
 
-    (3) 4.7060
+    (3) 4.3895
 
 
 .. parsed-literal::
 
-    (5) 3.0395
+    (5) 2.9350
 
 
 .. parsed-literal::
 
-    (7) 1.8210
+    (7) 1.8445
 
 
 .. parsed-literal::
 
-    (9) 1.2419
+    (9) 1.1587
 
 
 .. parsed-literal::
 
-    (11) 0.7195
+    (11) 0.8108
 
 
 .. parsed-literal::
 
-    (13) 0.4739
+    (13) 0.5326
 
 
 .. parsed-literal::
 
-    (15) 0.3899
+    (15) 0.5473
 
 
 .. parsed-literal::
 
-    (17) 0.1622
+    (17) 0.4782
 
 
 .. parsed-literal::
 
-    (19) 0.0236
+    (19) -0.1172
 
 
 .. parsed-literal::
 
-    (21) 0.5141
+    (21) -0.0714
 
 
 .. parsed-literal::
 
-    (23) 0.1235
+    (23) -0.1248
 
 
 .. parsed-literal::
 
-    (25) -0.2421
+    (25) -0.4184
 
 
 .. parsed-literal::
 
-    (27) -0.3631
+    (27) 0.9513
 
 
 .. parsed-literal::
 
-    (29) -0.4974
+    (29) -0.4801
 
 
 .. parsed-literal::
 
-    (31) -0.4768
+    (31) -0.5840
 
 
 .. parsed-literal::
 
-    (33) -0.7454
+    (33) -0.4254
 
 
 .. parsed-literal::
 
-    (35) -0.3239
+    (35) -0.6859
 
 
 .. parsed-literal::
 
-    (37) -0.6735
+    (37) -0.6751
 
 
 .. parsed-literal::
 
-    (39) -0.5815
+    (39) -0.7844
 
 
 .. parsed-literal::
 
-    (41) -0.7599
+    (41) -0.9154
 
 
 .. parsed-literal::
 
-    (43) -0.8674
+    (43) -0.6023
 
 
 .. parsed-literal::
 
-    (45) -0.9404
+    (45) -0.1487
 
 
 .. parsed-literal::
 
-    (47) -0.7904
+    (47) -0.9291
 
 
 .. parsed-literal::
 
-    (49) -0.7422
+    (49) -0.7480
 
 
 .. parsed-literal::
 
-    (50) -0.9549
+    (50) -1.0246
 
 
 .. parsed-literal::
@@ -207,7 +207,7 @@ version of this notebook in interactive mode.
 
 .. parsed-literal::
 
-    <rail.tools.flow_handle.FlowHandle at 0x7ff50c10f130>
+    <rail.tools.flow_handle.FlowHandle at 0x7f18200ab3a0>
 
 
 

@@ -111,7 +111,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3992/3393143206.py", line 4, in <module>
+      File "/tmp/ipykernel_3990/3393143206.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -219,19 +219,15 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0 47.1M    0 11979    0     0  13528      0  1:00:52 --:--:--  1:00:52 13520
+      0 47.1M    0  138k    0     0   140k      0  0:05:42 --:--:--  0:05:42  140k
 
 .. parsed-literal::
 
-      4 47.1M    4 2127k    0     0  1144k      0  0:00:42  0:00:01  0:00:41 1144k
+     25 47.1M   25 12.1M    0     0  6380k      0  0:00:07  0:00:01  0:00:06 6380k
 
 .. parsed-literal::
 
-     64 47.1M   64 30.3M    0     0  10.6M      0  0:00:04  0:00:02  0:00:02 10.6M
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  15.2M      0  0:00:03  0:00:03 --:--:-- 15.2M
+    100 47.1M  100 47.1M    0     0  19.2M      0  0:00:02  0:00:02 --:--:-- 19.2M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we

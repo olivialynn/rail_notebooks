@@ -60,7 +60,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260406T125544
+    /home/runner/.cache/lephare/runs/20260413T131623
 
 
 .. parsed-literal::
@@ -119,7 +119,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4203/1627844557.py", line 13, in <module>
+      File "/tmp/ipykernel_4198/1627844557.py", line 13, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -213,15 +213,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 32468    0     0  57292      0  0:14:22 --:--:--  0:14:22 57262
+      2 47.1M    2 1211k    0     0  1304k      0  0:00:36 --:--:--  0:00:36 1304k
 
 .. parsed-literal::
 
-     15 47.1M   15 7699k    0     0  4933k      0  0:00:09  0:00:01  0:00:08 4932k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  21.5M      0  0:00:02  0:00:02 --:--:-- 21.5M
+    100 47.1M  100 47.1M    0     0  25.7M      0  0:00:01  0:00:01 --:--:-- 25.7M
 
 
 .. code:: ipython3
@@ -310,14 +306,14 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 
 .. parsed-literal::
 
-    {'cvm': array([0.19645149, 0.3571867 , 0.03950139, ..., 0.05187602, 0.14725307,
-            0.04646678], shape=(20449,)),
-     'ks': array([0.12938097, 0.14679726, 0.12506349, ..., 0.12005436, 0.0945067 ,
-            0.11672123], shape=(20449,)),
+    {'cvm': array([0.46217987, 0.69366302, 0.09720522, ..., 0.03814989, 0.20225074,
+            0.33078817], shape=(20449,)),
+     'ks': array([0.13724129, 0.08663355, 0.11543073, ..., 0.0871443 , 0.11928067,
+            0.0721973 ], shape=(20449,)),
      'rmse': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
      'kld': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
-     'ad': array([0.33200586, 0.65518542, 0.86030382, ..., 0.44583089, 0.60030318,
-            1.56968166], shape=(20449,))}
+     'ad': array([2.38809007, 0.84722345, 1.77696822, ..., 1.39185394, 0.7979629 ,
+            0.31640007], shape=(20449,))}
 
 
 
@@ -454,7 +450,7 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4203/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_4198/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       plt.legend()
 
 

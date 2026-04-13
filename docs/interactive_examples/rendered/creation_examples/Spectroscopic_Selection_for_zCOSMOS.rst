@@ -51,11 +51,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    LEPHAREDIR is being set to the default cache directory which is being created at:
+    LEPHAREDIR is being set to the default cache directory:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
+    Default work cache is already linked. 
+    This is linked to the run directory:
+    /home/runner/.cache/lephare/runs/20260413T121611
 
 
 .. parsed-literal::
@@ -114,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3932/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_5988/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -250,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.098267</td>
-          <td>18.243048</td>
+          <td>18.126800</td>
+          <td>19.068071</td>
           <td>20.0</td>
-          <td>1.465712</td>
+          <td>0.671441</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.241783</td>
-          <td>21.097393</td>
+          <td>21.594935</td>
+          <td>19.393875</td>
           <td>20.0</td>
-          <td>0.638646</td>
+          <td>1.231162</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.686531</td>
-          <td>20.814044</td>
+          <td>20.532179</td>
+          <td>20.598317</td>
           <td>20.0</td>
-          <td>0.357820</td>
+          <td>1.790636</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.385811</td>
-          <td>21.584044</td>
+          <td>19.576976</td>
+          <td>19.485438</td>
           <td>20.0</td>
-          <td>0.594600</td>
+          <td>0.346079</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.074451</td>
-          <td>15.518858</td>
+          <td>25.161643</td>
+          <td>20.659610</td>
           <td>20.0</td>
-          <td>1.340057</td>
+          <td>1.955862</td>
         </tr>
       </tbody>
     </table>
@@ -330,8 +333,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.31 s, sys: 24.9 ms, total: 1.33 s
-    Wall time: 1.33 s
+    CPU times: user 1.29 s, sys: 15.9 ms, total: 1.3 s
+    Wall time: 1.3 s
 
 
 .. code:: ipython3
@@ -342,17 +345,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503587 entries, 1 to 1999999
+    Index: 503438 entries, 1 to 1999999
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503587 non-null  float64
-     1   g         503587 non-null  float64
-     2   r         503587 non-null  float64
-     3   i         503587 non-null  float64
-     4   z         503587 non-null  float64
-     5   y         503587 non-null  float64
-     6   redshift  503587 non-null  float64
+     0   u         503438 non-null  float64
+     1   g         503438 non-null  float64
+     2   r         503438 non-null  float64
+     3   i         503438 non-null  float64
+     4   z         503438 non-null  float64
+     5   y         503438 non-null  float64
+     6   redshift  503438 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 

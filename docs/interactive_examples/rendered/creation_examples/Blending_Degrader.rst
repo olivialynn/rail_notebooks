@@ -31,14 +31,11 @@ in the ``pipeline_examples/creation_examples/`` folder.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    LEPHAREDIR is being set to the default cache directory:
+    LEPHAREDIR is being set to the default cache directory which is being created at:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
-    Default work cache is already linked. 
-    This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260406T120756
 
 
 .. parsed-literal::
@@ -97,7 +94,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4187/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_3932/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -316,28 +313,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.00843329 0.00816641 0.00828402] / 0.008294574980148595
+    [0.00457504 0.00457762] / 0.00457633181901035
     
     Truth DEC / Blended DEC:
-    [0.00434234 0.00441624 0.00421248] / 0.004323686813358304
+    [0.02808116 0.02812969] / 0.02810542734684531
     
     Truth mag u / Blended mag u:
-    [25.21865203 23.60145179 25.83709747] / 23.273163834842677
+    [25.95042527 22.36314821] / 22.32397800263033
     
     Truth mag g / Blended mag g:
-    [23.36512521 26.79349446 25.30419255] / 23.158014630440064
+    [19.20698558 26.28105369] / 19.20537946908062
     
     Truth mag r / Blended mag r:
-    [24.02052343 20.87145355 27.9138015 ] / 20.811753637096903
+    [18.90609812 18.05590836] / 17.647253289704338
     
     Truth mag i / Blended mag i:
-    [20.16491073 23.42871891 22.36608238] / 19.984130764278575
+    [27.95064464 22.78725248] / 22.777951989666356
     
     Truth mag z / Blended mag z:
-    [27.91795252 21.38969843 19.36212271] / 19.205768501737804
+    [19.93898805 22.97273091] / 19.87453077058133
     
     Truth mag y / Blended mag y:
-    [22.80115741 23.48340875 23.17935589] / 21.92586683713565
+    [24.40558259 24.14205303] / 23.51326689302088
     
 
 

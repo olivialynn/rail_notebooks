@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** April 06, 2026
+**Tables last updated:** April 13, 2026
 
 
 ### Pipeline Notebooks
@@ -91,7 +91,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :x: | 08_NZDir_pipeline.ipynb |
+| :white_check_mark: | 08_NZDir_pipeline.ipynb |
 | :white_check_mark: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |

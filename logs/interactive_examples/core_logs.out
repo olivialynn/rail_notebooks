@@ -1,6 +1,5 @@
 Rendering notebooks in group: core...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/core_examples
-RENDERING: Hyperbolic_Magnitude
 RENDERING: FluxtoMag_and_Deredden
 [0;32m--> 518[0m     np[38;5;241m.[39marray([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mconfig[49m[38;5;241;43m.[39;49m[43mra_name[49m[43m][49m),
 [1;32m    519[0m     np[38;5;241m.[39marray(data[[38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39mdec_name]),
@@ -12,12 +11,13 @@ RENDERING: FluxtoMag_and_Deredden
 
 [0;31mKeyError[0m: 'ra'
 
+RENDERING: Hyperbolic_Magnitude
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/Hyperbolic_Magnitude.ipynb
       1  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/Hyperbolic_Magnitude.ipynb
 
 1 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb

@@ -114,7 +114,7 @@ The configurable parameters for ``DNFEstimator`` include:
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260406T121811
+    /home/runner/.cache/lephare/runs/20260413T123647
 
 
 .. parsed-literal::
@@ -173,7 +173,7 @@ The configurable parameters for ``DNFEstimator`` include:
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_8390/444981919.py", line 6, in <module>
+      File "/tmp/ipykernel_5935/444981919.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -664,7 +664,7 @@ Finally, let’s directly compare the same PDFs that we plotted above
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fe33c25ff40>
+    <matplotlib.legend.Legend at 0x7f184556f610>
 
 
 

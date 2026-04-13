@@ -58,11 +58,14 @@ documentation <https://rail-hub.readthedocs.io/en/latest/source/user_guide/inter
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    LEPHAREDIR is being set to the default cache directory which is being created at:
+    LEPHAREDIR is being set to the default cache directory:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
+    Default work cache is already linked. 
+    This is linked to the run directory:
+    /home/runner/.cache/lephare/runs/20260413T123647
 
 
 .. parsed-literal::
@@ -121,7 +124,7 @@ documentation <https://rail-hub.readthedocs.io/en/latest/source/user_guide/inter
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3988/3510305779.py", line 2, in <module>
+      File "/tmp/ipykernel_6942/3510305779.py", line 2, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -410,156 +413,152 @@ we’re doing fewer so that it doesn’t take as long.
 
 .. parsed-literal::
 
-    (1) 2.3274
+    (1) 0.8740
 
 
 .. parsed-literal::
 
-    (2) 0.2876
+    (2) -0.5913
 
 
 .. parsed-literal::
 
-    (3) -0.0272
+    (3) 0.7176
 
 
 .. parsed-literal::
 
-    (4) -0.1473
+    (4) -0.9093
 
 
 .. parsed-literal::
 
-    (5) -2.1294
+    (5) -0.4305
 
 
 .. parsed-literal::
 
-    (6) -1.7337
+    (6) -1.7633
 
 
 .. parsed-literal::
 
-    (7) -1.5389
+    (7) -1.4254
 
 
 .. parsed-literal::
 
-    (8) -2.2590
+    (8) -2.6962
 
 
 .. parsed-literal::
 
-    (9) -1.9952
+    (9) -2.8001
 
 
 .. parsed-literal::
 
-    (10) -3.0617
+    (10) -1.5271
 
 
 .. parsed-literal::
 
-    (11) -3.3305
+    (11) -3.1819
 
 
 .. parsed-literal::
 
-    (12) -2.5602
+    (12) -1.8189
 
 
 .. parsed-literal::
 
-    (13) -3.1145
+    (13) -2.6294
 
 
 .. parsed-literal::
 
-    (14) -2.3787
+    (14) -3.5693
 
 
 .. parsed-literal::
 
-    (15) -3.8322
+    (15) -3.5883
 
 
 .. parsed-literal::
 
-    (16) -3.4641
+    (16) -3.2828
 
 
 .. parsed-literal::
 
-    (17) -3.1314
+    (17) -3.5843
 
 
 .. parsed-literal::
 
-    (18) -3.6828
+    (18) -2.2753
 
 
 .. parsed-literal::
 
-    (19) -2.9029
+    (19) -4.0064
 
 
 .. parsed-literal::
 
-    (20) -3.5720
+    (20) -2.5626
 
 
 .. parsed-literal::
 
-    (21) -4.0345
+    (21) -3.7406
 
 
 .. parsed-literal::
 
-    (22) -4.3882
+    (22) -3.2074
 
 
 .. parsed-literal::
 
-    (23) -4.5509
+    (23) -4.3113
 
 
 .. parsed-literal::
 
-    (24) -3.9286
+    (24) -3.1268
 
 
 .. parsed-literal::
 
-    (25) -3.7284
+    (25) -4.0936
 
 
 .. parsed-literal::
 
-    (26) -4.3904
+    (26) -3.1948
 
 
 .. parsed-literal::
 
-    (27) -4.3243
+    (27) -4.4349
 
 
 .. parsed-literal::
 
-    (28) -4.7942
+    (28) -4.5118
 
 
 .. parsed-literal::
 
-    (29) -4.7405
+    (29) -4.7653
 
 
 .. parsed-literal::
 
-    (30) -4.7778
-
-
-.. parsed-literal::
-
+    (30) -4.3649
     Inserting handle into data store.  model: inprogress_model.pkl, FlowModeler
 
 
@@ -576,7 +575,7 @@ dictionary:
 
 .. parsed-literal::
 
-    {'model': <pzflow.flow.Flow object at 0x7f86fd9761a0>}
+    {'model': <pzflow.flow.Flow object at 0x7f285d951f00>}
 
 
 Now we’ll use the flow to produce some synthetic data for our
@@ -600,7 +599,7 @@ interactive functions.**
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f86fd9761a0>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f285d951f00>, FlowCreator
 
 
 .. parsed-literal::
@@ -620,30 +619,30 @@ just given as a table:
 .. parsed-literal::
 
     {'output':      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    1.433343   28.280912   27.882185   27.530712   26.812515   26.413805   
-    1    1.323755   26.259487   26.035542   25.826984   25.285051   24.842354   
-    2    0.870260   27.230839   26.537441   24.902483   23.711864   22.847149   
-    3    1.793983   29.553865   28.533979   27.856812   27.306374   26.653337   
-    4    1.294506   26.105036   25.780891   25.402021   24.745909   24.225349   
+    0    1.457567   28.267445   27.804485   27.435261   26.651432   26.222874   
+    1    1.325402   26.251822   25.970957   25.726908   25.101812   24.611454   
+    2    0.893867   26.969597   26.337978   24.742476   23.584187   22.719334   
+    3    1.787176   29.413265   28.371691   27.711725   27.122871   26.453514   
+    4    1.302208   25.956703   25.612457   25.233931   24.481222   23.915579   
     ..        ...         ...         ...         ...         ...         ...   
-    245  0.440043   22.918629   21.488237   20.035812   19.109129   18.666946   
-    246  0.972430   26.248547   25.877398   25.350004   24.826731   24.365990   
-    247  0.918639   26.569534   26.381409   25.801516   24.942860   24.579403   
-    248  0.174149   27.195707   25.920229   25.361408   25.061169   24.982319   
-    249  0.631052   26.177553   25.298500   24.265676   23.571556   23.410421   
+    245  0.551861   22.804483   21.715130   20.476379   19.528458   19.157227   
+    246  1.382002   26.747984   26.366240   26.045853   25.634527   25.366415   
+    247  1.024927   27.088902   26.794044   26.218945   25.538654   24.945810   
+    248  0.176325   27.062140   25.895752   25.386101   25.088024   24.981846   
+    249  0.629779   26.145018   25.360502   24.390930   23.710407   23.538721   
     
          mag_y_lsst  
-    0     25.740788  
-    1     24.234245  
-    2     22.463053  
-    3     26.335152  
-    4     23.588650  
+    0     25.534056  
+    1     23.984524  
+    2     22.381075  
+    3     26.127983  
+    4     23.255400  
     ..          ...  
-    245   18.411720  
-    246   24.188030  
-    247   24.433424  
-    248   24.889046  
-    249   23.236485  
+    245   18.923553  
+    246   24.823549  
+    247   24.730619  
+    248   24.936480  
+    249   23.396826  
     
     [250 rows x 7 columns]}
 
@@ -664,7 +663,7 @@ to ensure that the data won’t be the same as the calibration set.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f86fd9761a0>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f285d951f00>, FlowCreator
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
 
 
@@ -744,10 +743,6 @@ notebook.
     Inserting handle into data store.  input: None, LSSTErrorModel
     Inserting handle into data store.  output: inprogress_output.pq, LSSTErrorModel
     Inserting handle into data store.  input: None, LSSTErrorModel
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output: inprogress_output.pq, LSSTErrorModel
 
 
@@ -797,83 +792,83 @@ notebook.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.433343</td>
-          <td>27.446394</td>
-          <td>0.748055</td>
-          <td>28.211738</td>
-          <td>0.548112</td>
-          <td>27.708995</td>
-          <td>0.335556</td>
-          <td>27.169004</td>
-          <td>0.339186</td>
-          <td>27.116238</td>
-          <td>0.567046</td>
-          <td>27.045358</td>
-          <td>0.993960</td>
+          <td>1.457567</td>
+          <td>27.440129</td>
+          <td>0.744942</td>
+          <td>28.107785</td>
+          <td>0.508110</td>
+          <td>27.597370</td>
+          <td>0.307001</td>
+          <td>26.951300</td>
+          <td>0.284961</td>
+          <td>26.776778</td>
+          <td>0.441503</td>
+          <td>26.471038</td>
+          <td>0.686953</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.323755</td>
-          <td>26.091792</td>
-          <td>0.272504</td>
-          <td>25.932552</td>
-          <td>0.084444</td>
-          <td>25.796621</td>
-          <td>0.065864</td>
-          <td>25.265092</td>
-          <td>0.067161</td>
-          <td>24.815723</td>
-          <td>0.086288</td>
-          <td>24.249732</td>
-          <td>0.117569</td>
+          <td>1.325402</td>
+          <td>26.085218</td>
+          <td>0.271052</td>
+          <td>25.873620</td>
+          <td>0.080174</td>
+          <td>25.699163</td>
+          <td>0.060412</td>
+          <td>25.084903</td>
+          <td>0.057243</td>
+          <td>24.589847</td>
+          <td>0.070688</td>
+          <td>23.996821</td>
+          <td>0.094249</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.870260</td>
-          <td>26.597977</td>
-          <td>0.406650</td>
-          <td>26.663111</td>
-          <td>0.159298</td>
-          <td>24.870533</td>
-          <td>0.029014</td>
-          <td>23.714600</td>
-          <td>0.017316</td>
-          <td>22.848013</td>
-          <td>0.015531</td>
-          <td>22.493640</td>
-          <td>0.025000</td>
+          <td>0.893867</td>
+          <td>26.444374</td>
+          <td>0.361029</td>
+          <td>26.441589</td>
+          <td>0.131683</td>
+          <td>24.714692</td>
+          <td>0.025325</td>
+          <td>23.586648</td>
+          <td>0.015592</td>
+          <td>22.720113</td>
+          <td>0.014023</td>
+          <td>22.409525</td>
+          <td>0.023246</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.793983</td>
-          <td>29.076769</td>
-          <td>1.840873</td>
-          <td>27.276723</td>
-          <td>0.266134</td>
-          <td>27.889978</td>
-          <td>0.386658</td>
-          <td>27.504056</td>
-          <td>0.439639</td>
-          <td>26.477421</td>
-          <td>0.350413</td>
-          <td>25.714324</td>
-          <td>0.395747</td>
+          <td>1.787176</td>
+          <td>28.984102</td>
+          <td>1.765826</td>
+          <td>27.223043</td>
+          <td>0.254704</td>
+          <td>27.740689</td>
+          <td>0.344067</td>
+          <td>27.287371</td>
+          <td>0.372212</td>
+          <td>26.305232</td>
+          <td>0.305609</td>
+          <td>25.592537</td>
+          <td>0.359995</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.294506</td>
-          <td>25.819838</td>
-          <td>0.217892</td>
-          <td>25.835736</td>
-          <td>0.077541</td>
-          <td>25.459463</td>
-          <td>0.048832</td>
-          <td>24.792595</td>
-          <td>0.044158</td>
-          <td>24.228459</td>
-          <td>0.051305</td>
-          <td>23.734367</td>
-          <td>0.074790</td>
+          <td>1.302208</td>
+          <td>25.703932</td>
+          <td>0.197784</td>
+          <td>25.659319</td>
+          <td>0.066354</td>
+          <td>25.283083</td>
+          <td>0.041757</td>
+          <td>24.517841</td>
+          <td>0.034620</td>
+          <td>23.917928</td>
+          <td>0.038952</td>
+          <td>23.361045</td>
+          <td>0.053723</td>
         </tr>
       </tbody>
     </table>
@@ -920,7 +915,7 @@ magnitudes they’ve remained similar:
 
 .. parsed-literal::
 
-    <matplotlib.colorbar.Colorbar at 0x7f8687b3f430>
+    <matplotlib.colorbar.Colorbar at 0x7f27ec4e1030>
 
 
 
@@ -961,7 +956,7 @@ that this has resulted in a smaller sample of galaxies:
 
 .. parsed-literal::
 
-    Number of galaxies after cut: 220
+    Number of galaxies after cut: 211
     Number of galaxies in original: 250
 
 
@@ -1073,8 +1068,8 @@ sample:
 
 .. parsed-literal::
 
-    Number of galaxies after cut: 108
-    Number of galaxies in original: 220
+    Number of galaxies after cut: 102
+    Number of galaxies in original: 211
 
 
 We can see that this cut the sample down significantly – now we’re at
@@ -1175,84 +1170,84 @@ function to see the effect on the column names:
       </thead>
       <tbody>
         <tr>
-          <th>1</th>
-          <td>0.870260</td>
-          <td>26.597977</td>
-          <td>0.406650</td>
-          <td>26.663111</td>
-          <td>0.159298</td>
-          <td>24.870533</td>
-          <td>0.029014</td>
-          <td>23.714600</td>
-          <td>0.017316</td>
-          <td>22.848013</td>
-          <td>0.015531</td>
-          <td>22.493640</td>
-          <td>0.025000</td>
+          <th>2</th>
+          <td>0.893867</td>
+          <td>26.444374</td>
+          <td>0.361029</td>
+          <td>26.441589</td>
+          <td>0.131683</td>
+          <td>24.714692</td>
+          <td>0.025325</td>
+          <td>23.586648</td>
+          <td>0.015592</td>
+          <td>22.720113</td>
+          <td>0.014023</td>
+          <td>22.409525</td>
+          <td>0.023246</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.294506</td>
-          <td>25.819838</td>
-          <td>0.217892</td>
-          <td>25.835736</td>
-          <td>0.077541</td>
-          <td>25.459463</td>
-          <td>0.048832</td>
-          <td>24.792595</td>
-          <td>0.044158</td>
-          <td>24.228459</td>
-          <td>0.051305</td>
-          <td>23.734367</td>
-          <td>0.074790</td>
+          <td>1.287156</td>
+          <td>24.796497</td>
+          <td>0.090664</td>
+          <td>24.474573</td>
+          <td>0.023417</td>
+          <td>23.933826</td>
+          <td>0.013242</td>
+          <td>23.541721</td>
+          <td>0.015037</td>
+          <td>23.169586</td>
+          <td>0.020285</td>
+          <td>22.796036</td>
+          <td>0.032570</td>
         </tr>
         <tr>
-          <th>4</th>
-          <td>1.132094</td>
-          <td>24.767104</td>
-          <td>0.088362</td>
-          <td>24.355817</td>
-          <td>0.021161</td>
-          <td>23.621690</td>
-          <td>0.010522</td>
-          <td>23.119809</td>
-          <td>0.010908</td>
-          <td>22.588412</td>
-          <td>0.012664</td>
-          <td>22.343922</td>
-          <td>0.021972</td>
+          <th>7</th>
+          <td>0.136699</td>
+          <td>25.557074</td>
+          <td>0.174753</td>
+          <td>24.917891</td>
+          <td>0.034444</td>
+          <td>24.815432</td>
+          <td>0.027648</td>
+          <td>24.561186</td>
+          <td>0.035972</td>
+          <td>24.793751</td>
+          <td>0.084634</td>
+          <td>24.787004</td>
+          <td>0.186461</td>
         </tr>
         <tr>
           <th>8</th>
-          <td>0.138363</td>
-          <td>24.973997</td>
-          <td>0.105852</td>
-          <td>24.290110</td>
-          <td>0.020017</td>
-          <td>24.091406</td>
-          <td>0.014993</td>
-          <td>23.882706</td>
-          <td>0.019937</td>
-          <td>24.160154</td>
-          <td>0.048286</td>
-          <td>24.142881</td>
-          <td>0.107111</td>
+          <td>0.528424</td>
+          <td>26.239728</td>
+          <td>0.307040</td>
+          <td>26.112581</td>
+          <td>0.098900</td>
+          <td>24.967011</td>
+          <td>0.031579</td>
+          <td>24.423155</td>
+          <td>0.031847</td>
+          <td>24.356228</td>
+          <td>0.057467</td>
+          <td>24.028407</td>
+          <td>0.096898</td>
         </tr>
         <tr>
-          <th>11</th>
-          <td>0.456862</td>
-          <td>24.101211</td>
-          <td>0.049216</td>
-          <td>21.938460</td>
-          <td>0.005594</td>
-          <td>20.409692</td>
-          <td>0.005041</td>
-          <td>19.695470</td>
-          <td>0.005033</td>
-          <td>19.436405</td>
-          <td>0.005066</td>
-          <td>19.226054</td>
-          <td>0.005194</td>
+          <th>10</th>
+          <td>0.447141</td>
+          <td>24.440489</td>
+          <td>0.066336</td>
+          <td>22.173527</td>
+          <td>0.005853</td>
+          <td>20.683201</td>
+          <td>0.005061</td>
+          <td>19.904717</td>
+          <td>0.005044</td>
+          <td>19.589198</td>
+          <td>0.005082</td>
+          <td>19.403434</td>
+          <td>0.005257</td>
         </tr>
       </tbody>
     </table>
@@ -1304,84 +1299,84 @@ function to see the effect on the column names:
       </thead>
       <tbody>
         <tr>
-          <th>1</th>
-          <td>0.870260</td>
-          <td>26.597977</td>
-          <td>0.406650</td>
-          <td>26.663111</td>
-          <td>0.159298</td>
-          <td>24.870533</td>
-          <td>0.029014</td>
-          <td>23.714600</td>
-          <td>0.017316</td>
-          <td>22.848013</td>
-          <td>0.015531</td>
-          <td>22.493640</td>
-          <td>0.025000</td>
+          <th>2</th>
+          <td>0.893867</td>
+          <td>26.444374</td>
+          <td>0.361029</td>
+          <td>26.441589</td>
+          <td>0.131683</td>
+          <td>24.714692</td>
+          <td>0.025325</td>
+          <td>23.586648</td>
+          <td>0.015592</td>
+          <td>22.720113</td>
+          <td>0.014023</td>
+          <td>22.409525</td>
+          <td>0.023246</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.294506</td>
-          <td>25.819838</td>
-          <td>0.217892</td>
-          <td>25.835736</td>
-          <td>0.077541</td>
-          <td>25.459463</td>
-          <td>0.048832</td>
-          <td>24.792595</td>
-          <td>0.044158</td>
-          <td>24.228459</td>
-          <td>0.051305</td>
-          <td>23.734367</td>
-          <td>0.074790</td>
+          <td>1.287156</td>
+          <td>24.796497</td>
+          <td>0.090664</td>
+          <td>24.474573</td>
+          <td>0.023417</td>
+          <td>23.933826</td>
+          <td>0.013242</td>
+          <td>23.541721</td>
+          <td>0.015037</td>
+          <td>23.169586</td>
+          <td>0.020285</td>
+          <td>22.796036</td>
+          <td>0.032570</td>
         </tr>
         <tr>
-          <th>4</th>
-          <td>1.132094</td>
-          <td>24.767104</td>
-          <td>0.088362</td>
-          <td>24.355817</td>
-          <td>0.021161</td>
-          <td>23.621690</td>
-          <td>0.010522</td>
-          <td>23.119809</td>
-          <td>0.010908</td>
-          <td>22.588412</td>
-          <td>0.012664</td>
-          <td>22.343922</td>
-          <td>0.021972</td>
+          <th>7</th>
+          <td>0.136699</td>
+          <td>25.557074</td>
+          <td>0.174753</td>
+          <td>24.917891</td>
+          <td>0.034444</td>
+          <td>24.815432</td>
+          <td>0.027648</td>
+          <td>24.561186</td>
+          <td>0.035972</td>
+          <td>24.793751</td>
+          <td>0.084634</td>
+          <td>24.787004</td>
+          <td>0.186461</td>
         </tr>
         <tr>
           <th>8</th>
-          <td>0.138363</td>
-          <td>24.973997</td>
-          <td>0.105852</td>
-          <td>24.290110</td>
-          <td>0.020017</td>
-          <td>24.091406</td>
-          <td>0.014993</td>
-          <td>23.882706</td>
-          <td>0.019937</td>
-          <td>24.160154</td>
-          <td>0.048286</td>
-          <td>24.142881</td>
-          <td>0.107111</td>
+          <td>0.528424</td>
+          <td>26.239728</td>
+          <td>0.307040</td>
+          <td>26.112581</td>
+          <td>0.098900</td>
+          <td>24.967011</td>
+          <td>0.031579</td>
+          <td>24.423155</td>
+          <td>0.031847</td>
+          <td>24.356228</td>
+          <td>0.057467</td>
+          <td>24.028407</td>
+          <td>0.096898</td>
         </tr>
         <tr>
-          <th>11</th>
-          <td>0.456862</td>
-          <td>24.101211</td>
-          <td>0.049216</td>
-          <td>21.938460</td>
-          <td>0.005594</td>
-          <td>20.409692</td>
-          <td>0.005041</td>
-          <td>19.695470</td>
-          <td>0.005033</td>
-          <td>19.436405</td>
-          <td>0.005066</td>
-          <td>19.226054</td>
-          <td>0.005194</td>
+          <th>10</th>
+          <td>0.447141</td>
+          <td>24.440489</td>
+          <td>0.066336</td>
+          <td>22.173527</td>
+          <td>0.005853</td>
+          <td>20.683201</td>
+          <td>0.005061</td>
+          <td>19.904717</td>
+          <td>0.005044</td>
+          <td>19.589198</td>
+          <td>0.005082</td>
+          <td>19.403434</td>
+          <td>0.005257</td>
         </tr>
       </tbody>
     </table>
@@ -1479,7 +1474,7 @@ find the data under. Set to ``""`` if the data is passed in directly.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 81 training and 27 validation samples
+    split into 76 training and 26 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -1494,118 +1489,27 @@ find the data under. Set to ``""`` if the data is passed in directly.
     
     Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558462fe7770>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.87025988, 1.2945056 , 1.13209355, 0.13836348, 0.45686185,
-           0.75680077, 0.51444894, 1.14700544, 0.47601438, 0.83919311,
-           0.52233857, 0.59968507, 0.34287202, 0.57653922, 0.96368963,
-           0.29344237, 0.73928225, 0.29615378, 1.11298227, 1.57958118,
-           0.19354403, 0.59407061, 0.56117678, 1.33412039, 0.59243715,
-           0.52366143, 0.56322128, 0.58909053, 0.94512057, 0.49115348,
-           1.13888812, 1.1898067 , 0.85092658, 0.67183864, 0.81284779,
-           0.72021025, 0.32609248, 1.21063805, 1.40128634, 0.29916453,
-           0.3636477 , 0.3132515 , 0.50676078, 1.00271571, 1.46023285,
-           1.24507451, 0.93563014, 1.14436436, 1.44756423, 0.70383537,
-           0.90621483, 0.95451319, 1.06586504, 1.20473051, 0.45711076,
-           0.66132927, 0.31336808, 0.17441905, 0.75293626, 0.97572835,
-           0.75493431, 0.65248919, 0.47894454, 1.41731215, 0.51615679,
-           0.65915453, 0.30754578, 0.13578796, 0.24158561, 0.28185225,
-           0.46412849, 0.71383107, 0.2099607 , 0.35085678, 1.52437806,
-           0.67059481, 1.20021856, 0.94304281, 0.90039802, 0.21674824,
-           0.48858619, 0.69446862, 0.93013179, 0.94225061, 1.00482392,
-           1.23987663, 0.79719043, 0.80110627, 0.16412175, 0.36510038,
-           0.42826843, 0.06771374, 1.02543449, 0.90034324, 1.75316726,
-           1.01627433, 0.59678823, 0.95617354, 0.30426669, 0.50387681,
-           1.74575472, 0.48399901, 0.37443542, 0.70757198, 0.19370699,
-           0.44004273, 0.97242951, 0.63105214]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 250
-    Process 0 estimating PZ PDF for rows 0 - 250
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 81 training and 27 validation samples
-    finding best fit sigma and NNeigh...
-    
-    
-    
-    best fit values are sigma=0.075 and numneigh=6
-    
-    
-    
-    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
-    Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558467ef8ae0>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.87025988, 1.2945056 , 1.13209355, 0.13836348, 0.45686185,
-           0.75680077, 0.51444894, 1.14700544, 0.47601438, 0.83919311,
-           0.52233857, 0.59968507, 0.34287202, 0.57653922, 0.96368963,
-           0.29344237, 0.73928225, 0.29615378, 1.11298227, 1.57958118,
-           0.19354403, 0.59407061, 0.56117678, 1.33412039, 0.59243715,
-           0.52366143, 0.56322128, 0.58909053, 0.94512057, 0.49115348,
-           1.13888812, 1.1898067 , 0.85092658, 0.67183864, 0.81284779,
-           0.72021025, 0.32609248, 1.21063805, 1.40128634, 0.29916453,
-           0.3636477 , 0.3132515 , 0.50676078, 1.00271571, 1.46023285,
-           1.24507451, 0.93563014, 1.14436436, 1.44756423, 0.70383537,
-           0.90621483, 0.95451319, 1.06586504, 1.20473051, 0.45711076,
-           0.66132927, 0.31336808, 0.17441905, 0.75293626, 0.97572835,
-           0.75493431, 0.65248919, 0.47894454, 1.41731215, 0.51615679,
-           0.65915453, 0.30754578, 0.13578796, 0.24158561, 0.28185225,
-           0.46412849, 0.71383107, 0.2099607 , 0.35085678, 1.52437806,
-           0.67059481, 1.20021856, 0.94304281, 0.90039802, 0.21674824,
-           0.48858619, 0.69446862, 0.93013179, 0.94225061, 1.00482392,
-           1.23987663, 0.79719043, 0.80110627, 0.16412175, 0.36510038,
-           0.42826843, 0.06771374, 1.02543449, 0.90034324, 1.75316726,
-           1.01627433, 0.59678823, 0.95617354, 0.30426669, 0.50387681,
-           1.74575472, 0.48399901, 0.37443542, 0.70757198, 0.19370699,
-           0.44004273, 0.97242951, 0.63105214]), 'only_colors': False}, KNearNeighEstimator
-    Process 0 running estimator on chunk 0 - 250
-    Process 0 estimating PZ PDF for rows 0 - 250
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
-    Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 81 training and 27 validation samples
-    finding best fit sigma and NNeigh...
-
-
-.. parsed-literal::
-
-    
-    
-    
-    best fit values are sigma=0.075 and numneigh=6
-    
-    
-    
-    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
-    Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55845d2bd9b0>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.87025988, 1.2945056 , 1.13209355, 0.13836348, 0.45686185,
-           0.75680077, 0.51444894, 1.14700544, 0.47601438, 0.83919311,
-           0.52233857, 0.59968507, 0.34287202, 0.57653922, 0.96368963,
-           0.29344237, 0.73928225, 0.29615378, 1.11298227, 1.57958118,
-           0.19354403, 0.59407061, 0.56117678, 1.33412039, 0.59243715,
-           0.52366143, 0.56322128, 0.58909053, 0.94512057, 0.49115348,
-           1.13888812, 1.1898067 , 0.85092658, 0.67183864, 0.81284779,
-           0.72021025, 0.32609248, 1.21063805, 1.40128634, 0.29916453,
-           0.3636477 , 0.3132515 , 0.50676078, 1.00271571, 1.46023285,
-           1.24507451, 0.93563014, 1.14436436, 1.44756423, 0.70383537,
-           0.90621483, 0.95451319, 1.06586504, 1.20473051, 0.45711076,
-           0.66132927, 0.31336808, 0.17441905, 0.75293626, 0.97572835,
-           0.75493431, 0.65248919, 0.47894454, 1.41731215, 0.51615679,
-           0.65915453, 0.30754578, 0.13578796, 0.24158561, 0.28185225,
-           0.46412849, 0.71383107, 0.2099607 , 0.35085678, 1.52437806,
-           0.67059481, 1.20021856, 0.94304281, 0.90039802, 0.21674824,
-           0.48858619, 0.69446862, 0.93013179, 0.94225061, 1.00482392,
-           1.23987663, 0.79719043, 0.80110627, 0.16412175, 0.36510038,
-           0.42826843, 0.06771374, 1.02543449, 0.90034324, 1.75316726,
-           1.01627433, 0.59678823, 0.95617354, 0.30426669, 0.50387681,
-           1.74575472, 0.48399901, 0.37443542, 0.70757198, 0.19370699,
-           0.44004273, 0.97242951, 0.63105214]), 'only_colors': False}, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558d0f30eb10>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.89386749, 1.28715646, 0.13669944, 0.52842361, 0.44714141,
+           0.82454646, 0.51238316, 0.88228261, 0.76767957, 0.45275044,
+           0.95481533, 0.5167731 , 0.58168089, 0.31295252, 0.55683708,
+           0.97304213, 0.72943944, 0.65232599, 1.61402755, 0.19236302,
+           0.56882685, 0.58158028, 1.02507162, 0.57718736, 0.51131564,
+           0.51764619, 0.61269331, 0.92453974, 0.46544194, 1.35575664,
+           1.25665736, 0.95025933, 0.65654165, 0.90821153, 0.89423275,
+           1.464293  , 0.69924277, 0.38057172, 1.21358752, 0.77823561,
+           0.76485178, 0.3500061 , 0.30414927, 0.47388995, 1.27942359,
+           1.28357577, 1.22945547, 0.82936347, 0.73571932, 0.95288533,
+           1.01996362, 1.10498297, 0.47896004, 0.66169471, 0.31951833,
+           0.19057477, 0.31050837, 0.44918132, 0.83133233, 0.68544328,
+           0.51041174, 1.40825975, 0.47210896, 0.86399877, 0.67155504,
+           0.57147968, 0.1458056 , 1.38526881, 0.26492941, 0.26390779,
+           0.4937464 , 0.72961587, 0.21930182, 0.33107889, 1.54982591,
+           0.67002618, 0.23729324, 0.5662998 , 0.51530981, 1.63489866,
+           0.66059667, 0.89940292, 1.01260579, 1.02117932, 1.25851142,
+           0.86582661, 0.69498348, 0.2046473 , 0.34921026, 0.3559624 ,
+           0.06207943, 0.95071113, 0.19316709, 0.64692485, 0.32656479,
+           0.49142575, 0.98890441, 0.34545076, 0.70189863, 0.17718768,
+           0.55186069, 0.6297785 ]), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 250
     Process 0 estimating PZ PDF for rows 0 - 250
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
@@ -1614,7 +1518,47 @@ find the data under. Set to ``""`` if the data is passed in directly.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 81 training and 27 validation samples
+    split into 76 training and 26 validation samples
+    finding best fit sigma and NNeigh...
+    
+    
+    
+    best fit values are sigma=0.075 and numneigh=6
+    
+    
+    
+    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
+    Inserting handle into data store.  input: None, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558d17e5c270>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.89386749, 1.28715646, 0.13669944, 0.52842361, 0.44714141,
+           0.82454646, 0.51238316, 0.88228261, 0.76767957, 0.45275044,
+           0.95481533, 0.5167731 , 0.58168089, 0.31295252, 0.55683708,
+           0.97304213, 0.72943944, 0.65232599, 1.61402755, 0.19236302,
+           0.56882685, 0.58158028, 1.02507162, 0.57718736, 0.51131564,
+           0.51764619, 0.61269331, 0.92453974, 0.46544194, 1.35575664,
+           1.25665736, 0.95025933, 0.65654165, 0.90821153, 0.89423275,
+           1.464293  , 0.69924277, 0.38057172, 1.21358752, 0.77823561,
+           0.76485178, 0.3500061 , 0.30414927, 0.47388995, 1.27942359,
+           1.28357577, 1.22945547, 0.82936347, 0.73571932, 0.95288533,
+           1.01996362, 1.10498297, 0.47896004, 0.66169471, 0.31951833,
+           0.19057477, 0.31050837, 0.44918132, 0.83133233, 0.68544328,
+           0.51041174, 1.40825975, 0.47210896, 0.86399877, 0.67155504,
+           0.57147968, 0.1458056 , 1.38526881, 0.26492941, 0.26390779,
+           0.4937464 , 0.72961587, 0.21930182, 0.33107889, 1.54982591,
+           0.67002618, 0.23729324, 0.5662998 , 0.51530981, 1.63489866,
+           0.66059667, 0.89940292, 1.01260579, 1.02117932, 1.25851142,
+           0.86582661, 0.69498348, 0.2046473 , 0.34921026, 0.3559624 ,
+           0.06207943, 0.95071113, 0.19316709, 0.64692485, 0.32656479,
+           0.49142575, 0.98890441, 0.34545076, 0.70189863, 0.17718768,
+           0.55186069, 0.6297785 ]), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 250
+    Process 0 estimating PZ PDF for rows 0 - 250
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
+    Inserting handle into data store.  input: None, KNearNeighInformer
+    split into 76 training and 26 validation samples
     finding best fit sigma and NNeigh...
 
 
@@ -1629,28 +1573,71 @@ find the data under. Set to ``""`` if the data is passed in directly.
     
     Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55846129de80>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.87025988, 1.2945056 , 1.13209355, 0.13836348, 0.45686185,
-           0.75680077, 0.51444894, 1.14700544, 0.47601438, 0.83919311,
-           0.52233857, 0.59968507, 0.34287202, 0.57653922, 0.96368963,
-           0.29344237, 0.73928225, 0.29615378, 1.11298227, 1.57958118,
-           0.19354403, 0.59407061, 0.56117678, 1.33412039, 0.59243715,
-           0.52366143, 0.56322128, 0.58909053, 0.94512057, 0.49115348,
-           1.13888812, 1.1898067 , 0.85092658, 0.67183864, 0.81284779,
-           0.72021025, 0.32609248, 1.21063805, 1.40128634, 0.29916453,
-           0.3636477 , 0.3132515 , 0.50676078, 1.00271571, 1.46023285,
-           1.24507451, 0.93563014, 1.14436436, 1.44756423, 0.70383537,
-           0.90621483, 0.95451319, 1.06586504, 1.20473051, 0.45711076,
-           0.66132927, 0.31336808, 0.17441905, 0.75293626, 0.97572835,
-           0.75493431, 0.65248919, 0.47894454, 1.41731215, 0.51615679,
-           0.65915453, 0.30754578, 0.13578796, 0.24158561, 0.28185225,
-           0.46412849, 0.71383107, 0.2099607 , 0.35085678, 1.52437806,
-           0.67059481, 1.20021856, 0.94304281, 0.90039802, 0.21674824,
-           0.48858619, 0.69446862, 0.93013179, 0.94225061, 1.00482392,
-           1.23987663, 0.79719043, 0.80110627, 0.16412175, 0.36510038,
-           0.42826843, 0.06771374, 1.02543449, 0.90034324, 1.75316726,
-           1.01627433, 0.59678823, 0.95617354, 0.30426669, 0.50387681,
-           1.74575472, 0.48399901, 0.37443542, 0.70757198, 0.19370699,
-           0.44004273, 0.97242951, 0.63105214]), 'only_colors': False}, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558d225b98c0>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.89386749, 1.28715646, 0.13669944, 0.52842361, 0.44714141,
+           0.82454646, 0.51238316, 0.88228261, 0.76767957, 0.45275044,
+           0.95481533, 0.5167731 , 0.58168089, 0.31295252, 0.55683708,
+           0.97304213, 0.72943944, 0.65232599, 1.61402755, 0.19236302,
+           0.56882685, 0.58158028, 1.02507162, 0.57718736, 0.51131564,
+           0.51764619, 0.61269331, 0.92453974, 0.46544194, 1.35575664,
+           1.25665736, 0.95025933, 0.65654165, 0.90821153, 0.89423275,
+           1.464293  , 0.69924277, 0.38057172, 1.21358752, 0.77823561,
+           0.76485178, 0.3500061 , 0.30414927, 0.47388995, 1.27942359,
+           1.28357577, 1.22945547, 0.82936347, 0.73571932, 0.95288533,
+           1.01996362, 1.10498297, 0.47896004, 0.66169471, 0.31951833,
+           0.19057477, 0.31050837, 0.44918132, 0.83133233, 0.68544328,
+           0.51041174, 1.40825975, 0.47210896, 0.86399877, 0.67155504,
+           0.57147968, 0.1458056 , 1.38526881, 0.26492941, 0.26390779,
+           0.4937464 , 0.72961587, 0.21930182, 0.33107889, 1.54982591,
+           0.67002618, 0.23729324, 0.5662998 , 0.51530981, 1.63489866,
+           0.66059667, 0.89940292, 1.01260579, 1.02117932, 1.25851142,
+           0.86582661, 0.69498348, 0.2046473 , 0.34921026, 0.3559624 ,
+           0.06207943, 0.95071113, 0.19316709, 0.64692485, 0.32656479,
+           0.49142575, 0.98890441, 0.34545076, 0.70189863, 0.17718768,
+           0.55186069, 0.6297785 ]), 'only_colors': False}, KNearNeighEstimator
+    Process 0 running estimator on chunk 0 - 250
+    Process 0 estimating PZ PDF for rows 0 - 250
+    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  input: None, KNearNeighInformer
+    split into 76 training and 26 validation samples
+    finding best fit sigma and NNeigh...
+
+
+.. parsed-literal::
+
+    
+    
+    
+    best fit values are sigma=0.075 and numneigh=6
+    
+    
+    
+    Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
+    Inserting handle into data store.  input: None, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558d088a4460>, 'bestsig': np.float64(0.075), 'nneigh': 6, 'truezs': array([0.89386749, 1.28715646, 0.13669944, 0.52842361, 0.44714141,
+           0.82454646, 0.51238316, 0.88228261, 0.76767957, 0.45275044,
+           0.95481533, 0.5167731 , 0.58168089, 0.31295252, 0.55683708,
+           0.97304213, 0.72943944, 0.65232599, 1.61402755, 0.19236302,
+           0.56882685, 0.58158028, 1.02507162, 0.57718736, 0.51131564,
+           0.51764619, 0.61269331, 0.92453974, 0.46544194, 1.35575664,
+           1.25665736, 0.95025933, 0.65654165, 0.90821153, 0.89423275,
+           1.464293  , 0.69924277, 0.38057172, 1.21358752, 0.77823561,
+           0.76485178, 0.3500061 , 0.30414927, 0.47388995, 1.27942359,
+           1.28357577, 1.22945547, 0.82936347, 0.73571932, 0.95288533,
+           1.01996362, 1.10498297, 0.47896004, 0.66169471, 0.31951833,
+           0.19057477, 0.31050837, 0.44918132, 0.83133233, 0.68544328,
+           0.51041174, 1.40825975, 0.47210896, 0.86399877, 0.67155504,
+           0.57147968, 0.1458056 , 1.38526881, 0.26492941, 0.26390779,
+           0.4937464 , 0.72961587, 0.21930182, 0.33107889, 1.54982591,
+           0.67002618, 0.23729324, 0.5662998 , 0.51530981, 1.63489866,
+           0.66059667, 0.89940292, 1.01260579, 1.02117932, 1.25851142,
+           0.86582661, 0.69498348, 0.2046473 , 0.34921026, 0.3559624 ,
+           0.06207943, 0.95071113, 0.19316709, 0.64692485, 0.32656479,
+           0.49142575, 0.98890441, 0.34545076, 0.70189863, 0.17718768,
+           0.55186069, 0.6297785 ]), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 250
     Process 0 estimating PZ PDF for rows 0 - 250
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
@@ -1730,37 +1717,37 @@ Let’s take a look at what the different dictionaries look like for this
 
 .. parsed-literal::
 
-    {'weights': array([[0.24669399, 0.24317862, 0.15652722, 0.12957944, 0.1173797 ,
-            0.10664103],
-           [0.41859356, 0.1223785 , 0.11984844, 0.11440585, 0.11315014,
-            0.11162351],
-           [0.17949233, 0.17288545, 0.16324274, 0.16291582, 0.16133306,
-            0.1601306 ],
+    {'weights': array([[0.2918513 , 0.16278321, 0.15516035, 0.14697529, 0.12250347,
+            0.12072638],
+           [0.34602373, 0.15792845, 0.15367406, 0.13880513, 0.10205082,
+            0.10151783],
+           [0.1793383 , 0.17367583, 0.16761759, 0.16358461, 0.15814113,
+            0.15764253],
            ...,
-           [0.22157341, 0.17519937, 0.17412502, 0.14587121, 0.14431278,
-            0.13891821],
-           [0.1816295 , 0.17977999, 0.17358197, 0.16125891, 0.15317168,
-            0.15057796],
-           [0.2034925 , 0.1694512 , 0.16279649, 0.15681303, 0.15443214,
-            0.15301463]], shape=(250, 6)), 'stds': array([[0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
+           [0.22545074, 0.17418616, 0.15100546, 0.15088091, 0.14982755,
+            0.14864918],
+           [0.183507  , 0.17294289, 0.1688335 , 0.1637988 , 0.16218283,
+            0.14873497],
+           [0.17188943, 0.17161809, 0.16714341, 0.16374974, 0.16315386,
+            0.16244548]], shape=(250, 6)), 'stds': array([[0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
            [0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
            [0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
            ...,
            [0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
            [0.075, 0.075, 0.075, 0.075, 0.075, 0.075],
-           [0.075, 0.075, 0.075, 0.075, 0.075, 0.075]], shape=(250, 6)), 'means': array([[0.85092658, 0.79719043, 0.90034324, 0.97242951, 0.70757198,
-            1.44756423],
-           [0.69446862, 0.59243715, 0.94225061, 0.57653922, 0.46412849,
-            0.73928225],
-           [0.97572835, 0.3636477 , 0.52233857, 0.52366143, 0.48399901,
-            0.71383107],
+           [0.075, 0.075, 0.075, 0.075, 0.075, 0.075]], shape=(250, 6)), 'means': array([[0.86582661, 1.63489866, 0.95071113, 0.82936347, 0.76767957,
+            1.38526881],
+           [0.66059667, 0.57718736, 0.4937464 , 0.55683708, 0.6297785 ,
+            0.51131564],
+           [0.52842361, 0.44918132, 0.3500061 , 0.5167731 , 0.49142575,
+            0.65232599],
            ...,
-           [0.3132515 , 0.97242951, 0.29615378, 0.29344237, 1.75316726,
-            0.67059481],
-           [1.14436436, 1.02543449, 1.74575472, 1.13209355, 0.96368963,
-            1.21063805],
-           [1.2945056 , 0.83919311, 0.90621483, 0.90039802, 1.20021856,
-            1.23987663]], shape=(250, 6))}
+           [0.30414927, 0.67002618, 0.31951833, 0.19236302, 0.17718768,
+            0.95071113],
+           [1.21358752, 1.02507162, 0.95481533, 0.97304213, 1.22945547,
+            1.10498297],
+           [0.82454646, 1.61402755, 0.95481533, 1.464293  , 1.40825975,
+            0.90821153]], shape=(250, 6))}
 
 
 Typically the ancillary data table includes a photo-z point estimate
@@ -1776,266 +1763,266 @@ called ‘zmode’ in the ancillary dictionary below:
 
 .. parsed-literal::
 
-    {'zmode': array([[0.84],
-           [0.68],
+    {'zmode': array([[0.86],
+           [0.6 ],
            [0.5 ],
-           [1.45],
+           [0.99],
+           [0.49],
+           [0.33],
            [0.26],
-           [0.31],
+           [0.21],
+           [0.52],
+           [0.71],
+           [0.9 ],
+           [0.97],
            [0.2 ],
-           [0.24],
-           [0.53],
-           [0.93],
-           [0.74],
-           [0.75],
-           [1.09],
-           [0.82],
+           [0.91],
+           [0.87],
+           [0.21],
+           [0.5 ],
+           [0.49],
+           [0.66],
+           [0.48],
+           [0.99],
+           [0.65],
+           [1.26],
            [0.95],
            [0.19],
-           [1.52],
-           [0.32],
-           [0.63],
-           [0.43],
-           [0.95],
-           [0.64],
-           [1.25],
-           [0.99],
+           [0.89],
+           [0.89],
+           [0.71],
+           [0.52],
+           [1.26],
+           [0.66],
+           [1.04],
+           [0.34],
+           [0.48],
            [0.94],
            [0.9 ],
-           [0.88],
-           [0.87],
-           [0.54],
-           [1.15],
-           [0.67],
-           [0.96],
-           [0.31],
-           [0.5 ],
-           [0.95],
-           [0.9 ],
-           [0.92],
-           [0.63],
-           [0.96],
-           [1.22],
-           [0.46],
-           [0.71],
-           [0.96],
+           [0.89],
+           [0.62],
            [0.91],
-           [0.95],
-           [1.19],
-           [0.23],
-           [0.3 ],
-           [1.24],
-           [1.12],
-           [0.97],
-           [0.9 ],
-           [0.92],
-           [1.37],
-           [0.5 ],
-           [0.69],
-           [0.35],
-           [1.25],
-           [0.3 ],
-           [0.28],
-           [1.22],
-           [0.48],
-           [0.45],
-           [1.53],
-           [0.22],
-           [0.29],
-           [0.22],
-           [1.19],
-           [0.58],
-           [1.31],
-           [0.85],
-           [0.51],
+           [1.26],
+           [0.64],
+           [0.27],
+           [0.55],
+           [0.98],
+           [0.91],
+           [1.32],
+           [0.21],
+           [0.49],
+           [0.98],
+           [1.29],
            [1.03],
-           [1.19],
-           [0.58],
-           [1.23],
-           [0.61],
+           [0.94],
+           [0.89],
+           [1.31],
+           [0.51],
+           [0.74],
+           [0.9 ],
+           [1.27],
+           [0.31],
+           [0.32],
+           [1.25],
+           [0.49],
+           [0.49],
+           [0.82],
+           [0.29],
+           [0.5 ],
+           [0.93],
+           [0.96],
+           [0.56],
+           [1.4 ],
+           [0.89],
+           [1.29],
+           [1.26],
+           [0.91],
+           [0.54],
+           [1.28],
+           [0.37],
+           [0.21],
+           [0.81],
+           [0.57],
+           [0.46],
+           [1.24],
+           [0.38],
+           [0.54],
+           [0.52],
+           [1.31],
+           [1.26],
+           [0.7 ],
+           [1.25],
+           [0.89],
+           [1.32],
+           [0.11],
+           [0.25],
+           [0.85],
+           [0.5 ],
            [0.19],
-           [0.75],
+           [1.37],
+           [1.04],
+           [0.2 ],
+           [0.55],
+           [0.64],
+           [1.29],
+           [1.3 ],
+           [0.24],
+           [1.26],
+           [0.54],
+           [0.5 ],
+           [0.27],
+           [1.02],
+           [0.56],
+           [0.93],
+           [0.67],
+           [0.58],
+           [1.29],
+           [1.39],
+           [0.96],
+           [0.54],
+           [0.95],
+           [0.19],
+           [0.67],
+           [0.24],
+           [0.51],
+           [0.89],
+           [0.16],
            [0.81],
            [0.33],
-           [1.14],
-           [0.35],
-           [0.5 ],
-           [0.53],
-           [1.47],
-           [1.23],
-           [0.73],
-           [1.15],
+           [0.9 ],
+           [0.52],
+           [1.28],
+           [0.54],
+           [1.57],
+           [0.49],
+           [0.26],
            [0.88],
-           [1.27],
-           [0.84],
-           [0.25],
-           [0.75],
-           [0.53],
-           [0.17],
-           [1.27],
-           [1.05],
-           [0.24],
-           [0.59],
-           [0.67],
-           [1.26],
-           [1.33],
-           [0.73],
-           [1.22],
-           [1.22],
-           [0.5 ],
-           [0.28],
-           [1.08],
-           [0.49],
-           [0.77],
-           [0.72],
-           [0.49],
-           [1.5 ],
-           [0.1 ],
-           [1.  ],
-           [0.29],
-           [0.88],
-           [0.15],
-           [0.69],
-           [0.25],
-           [0.32],
-           [0.58],
-           [1.2 ],
-           [0.74],
-           [0.71],
-           [0.94],
-           [0.52],
-           [1.26],
-           [1.1 ],
-           [0.97],
-           [0.5 ],
-           [0.23],
-           [0.82],
-           [0.15],
-           [0.69],
-           [0.97],
-           [1.41],
-           [0.12],
-           [0.96],
-           [0.7 ],
-           [0.36],
-           [0.83],
-           [1.21],
-           [0.29],
-           [0.36],
-           [1.56],
-           [0.92],
-           [0.75],
-           [0.75],
-           [0.47],
-           [1.22],
-           [1.01],
-           [0.76],
-           [0.91],
-           [0.14],
-           [1.23],
-           [1.54],
-           [1.48],
-           [0.31],
-           [0.96],
-           [1.24],
-           [0.9 ],
-           [0.94],
-           [0.48],
-           [0.9 ],
-           [1.22],
-           [1.16],
-           [0.32],
-           [0.84],
-           [0.73],
-           [0.75],
-           [1.24],
-           [0.97],
-           [0.47],
-           [0.27],
-           [1.12],
-           [0.73],
-           [0.66],
-           [0.3 ],
-           [0.9 ],
-           [0.73],
-           [1.1 ],
-           [0.49],
-           [0.48],
-           [0.3 ],
-           [0.31],
-           [0.59],
-           [0.71],
-           [1.15],
-           [0.74],
-           [1.27],
-           [1.15],
-           [0.68],
-           [1.23],
-           [0.58],
-           [0.41],
-           [0.29],
-           [0.83],
-           [1.25],
-           [0.31],
-           [1.02],
-           [0.89],
-           [1.52],
-           [0.73],
-           [0.52],
-           [1.32],
-           [1.35],
-           [0.73],
-           [1.21],
-           [0.16],
-           [0.94],
-           [1.29],
-           [0.29],
-           [0.29],
-           [0.16],
-           [0.22],
-           [0.4 ],
-           [0.52],
-           [0.97],
-           [1.21],
-           [0.32],
+           [0.99],
            [0.64],
+           [0.91],
+           [1.44],
+           [0.15],
            [0.67],
-           [0.22],
-           [0.24],
-           [0.46],
-           [0.55],
-           [0.14],
-           [0.7 ],
-           [1.29],
-           [1.24],
-           [0.89],
-           [0.38],
-           [0.53],
-           [1.41],
-           [0.48],
-           [0.59],
-           [1.23],
-           [0.58],
-           [0.74],
-           [0.73],
-           [0.24],
-           [0.96],
-           [0.22],
-           [1.16],
+           [0.35],
+           [0.45],
            [0.9 ],
-           [0.3 ],
-           [1.13],
-           [0.88]]), 'redshift': 0      0.710979
-    1      0.684234
-    2      0.249871
-    3      1.751949
-    4      0.478461
+           [1.27],
+           [0.69],
+           [0.31],
+           [1.59],
+           [0.96],
+           [0.69],
+           [0.8 ],
+           [0.49],
+           [1.23],
+           [1.  ],
+           [0.68],
+           [0.89],
+           [0.17],
+           [1.28],
+           [1.59],
+           [1.52],
+           [0.45],
+           [0.77],
+           [1.25],
+           [0.9 ],
+           [0.9 ],
+           [0.53],
+           [0.89],
+           [1.26],
+           [0.89],
+           [0.31],
+           [0.93],
+           [0.71],
+           [0.75],
+           [1.29],
+           [1.28],
+           [0.49],
+           [0.58],
+           [1.04],
+           [0.46],
+           [0.59],
+           [0.28],
+           [0.9 ],
+           [0.72],
+           [1.26],
+           [0.63],
+           [0.48],
+           [0.36],
+           [0.72],
+           [0.53],
+           [0.21],
+           [1.27],
+           [1.41],
+           [1.3 ],
+           [1.24],
+           [0.68],
+           [1.26],
+           [0.57],
+           [0.92],
+           [0.49],
+           [0.54],
+           [1.3 ],
+           [0.31],
+           [1.01],
+           [0.94],
+           [1.56],
+           [0.72],
+           [0.5 ],
+           [1.45],
+           [1.44],
+           [0.66],
+           [1.26],
+           [0.83],
+           [0.27],
+           [0.92],
+           [0.51],
+           [0.22],
+           [0.14],
+           [0.23],
+           [0.5 ],
+           [0.54],
+           [0.89],
+           [0.85],
+           [0.67],
+           [0.63],
+           [0.31],
+           [0.2 ],
+           [0.21],
+           [0.5 ],
+           [0.25],
+           [0.14],
+           [0.66],
+           [1.29],
+           [1.29],
+           [0.75],
+           [0.36],
+           [0.51],
+           [1.36],
+           [0.52],
+           [0.53],
+           [1.26],
+           [0.35],
+           [0.68],
+           [0.71],
+           [0.23],
+           [0.96],
+           [0.54],
+           [1.24],
+           [0.93],
+           [0.27],
+           [1.  ],
+           [0.9 ]]), 'redshift': 0      0.750908
+    1      0.648564
+    2      0.275019
+    3      1.727078
+    4      0.499235
              ...   
-    245    2.102067
-    246    0.667614
-    247    0.289256
-    248    1.081625
-    249    1.197557
+    245    2.012556
+    246    0.665149
+    247    0.349604
+    248    1.134209
+    249    1.306138
     Name: redshift, Length: 250, dtype: float32, 'distribution_type': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -2073,19 +2060,19 @@ of redshift grid points:
 
 .. parsed-literal::
 
-    array([[2.93808756e-020, 1.91806354e-019, 1.20258242e-018, ...,
-            1.97167973e-090, 3.26751149e-092, 5.20057143e-094],
-           [2.90830053e-009, 9.88754891e-009, 3.22844443e-008, ...,
-            1.25197409e-159, 5.35577355e-162, 2.20040317e-164],
-           [7.22243323e-006, 1.87582767e-005, 4.67910853e-005, ...,
-            2.95509417e-154, 1.38281543e-156, 6.21455876e-159],
+    array([[1.15754366e-023, 8.87790685e-023, 6.53942688e-022, ...,
+            1.38554284e-069, 3.79355537e-071, 9.97530282e-073],
+           [3.61745159e-010, 1.33981747e-009, 4.76744227e-009, ...,
+            2.53324875e-206, 5.09421019e-209, 9.83850425e-212],
+           [1.66503378e-005, 4.17023108e-005, 1.00320426e-004, ...,
+            3.84594827e-208, 7.56442514e-211, 1.42889926e-213],
            ...,
-           [9.40818403e-004, 2.05283251e-003, 4.30364036e-003, ...,
-            5.48453036e-058, 2.06168954e-059, 7.44321014e-061],
-           [1.14718513e-036, 1.48777427e-035, 1.85307957e-034, ...,
-            1.32099959e-058, 4.86809184e-060, 1.72293159e-061],
-           [5.86533953e-028, 5.44874920e-027, 4.86133057e-026, ...,
-            4.80543210e-109, 5.28399479e-111, 5.58014532e-113]],
+           [7.92526025e-002, 1.27105035e-001, 1.96014660e-001, ...,
+            3.25708058e-158, 1.42528887e-160, 5.99005037e-163],
+           [5.98838839e-036, 7.59927868e-035, 9.26255103e-034, ...,
+            1.02128266e-117, 9.43007558e-120, 8.36264441e-122],
+           [5.18996060e-027, 4.63566589e-026, 3.97661412e-025, ...,
+            9.92196455e-072, 2.56880683e-073, 6.38731620e-075]],
           shape=(250, 200))
 
 
@@ -2211,6 +2198,10 @@ we’ll use two of the most basic:
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer
     Process 0 running estimator on chunk 0 - 250
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.hdf5, NaiveStackSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NaiveStackSummarizer
 
@@ -2427,30 +2418,30 @@ redshifts from our initially sampled distribution.
 
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.710979   27.128540   26.701607   26.103630   25.440432   25.318165   
-    1    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
-    2    0.249871   28.452118   27.647137   27.146101   26.915216   26.965424   
-    3    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
-    4    0.478461   28.784658   27.170214   25.729788   25.174732   24.942528   
+    0    0.750908   27.164078   26.775993   26.225727   25.507996   25.336931   
+    1    0.648564   23.150772   22.366415   21.491493   20.731236   20.491596   
+    2    0.275019   28.322945   27.592419   27.075672   26.847256   26.854797   
+    3    1.727078   28.105497   26.135040   25.419762   24.767265   24.165056   
+    4    0.499235   28.817802   27.137247   25.664852   25.014309   24.740934   
     ..        ...         ...         ...         ...         ...         ...   
-    245  2.102067   30.277105   28.391989   27.616749   27.165022   26.598719   
-    246  0.667614   26.565666   25.922649   25.111830   24.431290   24.243885   
-    247  0.289256   27.459190   26.741211   26.134184   25.937506   25.852783   
-    248  1.081625   28.128185   27.520241   26.650793   25.952312   25.152357   
-    249  1.197557   28.616951   27.922165   27.124577   26.458269   25.736181   
+    245  2.012556   30.255859   28.493664   27.708603   27.206402   26.577536   
+    246  0.665149   26.606745   26.018583   25.270943   24.608408   24.401495   
+    247  0.349604   27.350212   26.747803   26.110224   25.893808   25.810492   
+    248  1.134209   28.412712   27.714722   26.864374   26.204229   25.371664   
+    249  1.306138   28.965940   28.081882   27.370880   26.612272   25.999018   
     
          mag_y_lsst  
-    0     25.236933  
-    1     20.347912  
-    2     26.922886  
-    3     23.972845  
-    4     24.702866  
+    0     25.276443  
+    1     20.287109  
+    2     26.788618  
+    3     23.801785  
+    4     24.513580  
     ..          ...  
-    245   26.184759  
-    246   24.105915  
-    247   25.740219  
-    248   24.850243  
-    249   25.287426  
+    245   26.203823  
+    246   24.269236  
+    247   25.664831  
+    248   25.018898  
+    249   25.375439  
     
     [250 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
@@ -2459,30 +2450,30 @@ redshifts from our initially sampled distribution.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.710979   27.128540   26.701607   26.103630   25.440432   25.318165   
-    1    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
-    2    0.249871   28.452118   27.647137   27.146101   26.915216   26.965424   
-    3    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
-    4    0.478461   28.784658   27.170214   25.729788   25.174732   24.942528   
+    0    0.750908   27.164078   26.775993   26.225727   25.507996   25.336931   
+    1    0.648564   23.150772   22.366415   21.491493   20.731236   20.491596   
+    2    0.275019   28.322945   27.592419   27.075672   26.847256   26.854797   
+    3    1.727078   28.105497   26.135040   25.419762   24.767265   24.165056   
+    4    0.499235   28.817802   27.137247   25.664852   25.014309   24.740934   
     ..        ...         ...         ...         ...         ...         ...   
-    245  2.102067   30.277105   28.391989   27.616749   27.165022   26.598719   
-    246  0.667614   26.565666   25.922649   25.111830   24.431290   24.243885   
-    247  0.289256   27.459190   26.741211   26.134184   25.937506   25.852783   
-    248  1.081625   28.128185   27.520241   26.650793   25.952312   25.152357   
-    249  1.197557   28.616951   27.922165   27.124577   26.458269   25.736181   
+    245  2.012556   30.255859   28.493664   27.708603   27.206402   26.577536   
+    246  0.665149   26.606745   26.018583   25.270943   24.608408   24.401495   
+    247  0.349604   27.350212   26.747803   26.110224   25.893808   25.810492   
+    248  1.134209   28.412712   27.714722   26.864374   26.204229   25.371664   
+    249  1.306138   28.965940   28.081882   27.370880   26.612272   25.999018   
     
          mag_y_lsst  
-    0     25.236933  
-    1     20.347912  
-    2     26.922886  
-    3     23.972845  
-    4     24.702866  
+    0     25.276443  
+    1     20.287109  
+    2     26.788618  
+    3     23.801785  
+    4     24.513580  
     ..          ...  
-    245   26.184759  
-    246   24.105915  
-    247   25.740219  
-    248   24.850243  
-    249   25.287426  
+    245   26.203823  
+    246   24.269236  
+    247   25.664831  
+    248   25.018898  
+    249   25.375439  
     
     [250 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
@@ -2491,30 +2482,30 @@ redshifts from our initially sampled distribution.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.710979   27.128540   26.701607   26.103630   25.440432   25.318165   
-    1    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
-    2    0.249871   28.452118   27.647137   27.146101   26.915216   26.965424   
-    3    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
-    4    0.478461   28.784658   27.170214   25.729788   25.174732   24.942528   
+    0    0.750908   27.164078   26.775993   26.225727   25.507996   25.336931   
+    1    0.648564   23.150772   22.366415   21.491493   20.731236   20.491596   
+    2    0.275019   28.322945   27.592419   27.075672   26.847256   26.854797   
+    3    1.727078   28.105497   26.135040   25.419762   24.767265   24.165056   
+    4    0.499235   28.817802   27.137247   25.664852   25.014309   24.740934   
     ..        ...         ...         ...         ...         ...         ...   
-    245  2.102067   30.277105   28.391989   27.616749   27.165022   26.598719   
-    246  0.667614   26.565666   25.922649   25.111830   24.431290   24.243885   
-    247  0.289256   27.459190   26.741211   26.134184   25.937506   25.852783   
-    248  1.081625   28.128185   27.520241   26.650793   25.952312   25.152357   
-    249  1.197557   28.616951   27.922165   27.124577   26.458269   25.736181   
+    245  2.012556   30.255859   28.493664   27.708603   27.206402   26.577536   
+    246  0.665149   26.606745   26.018583   25.270943   24.608408   24.401495   
+    247  0.349604   27.350212   26.747803   26.110224   25.893808   25.810492   
+    248  1.134209   28.412712   27.714722   26.864374   26.204229   25.371664   
+    249  1.306138   28.965940   28.081882   27.370880   26.612272   25.999018   
     
          mag_y_lsst  
-    0     25.236933  
-    1     20.347912  
-    2     26.922886  
-    3     23.972845  
-    4     24.702866  
+    0     25.276443  
+    1     20.287109  
+    2     26.788618  
+    3     23.801785  
+    4     24.513580  
     ..          ...  
-    245   26.184759  
-    246   24.105915  
-    247   25.740219  
-    248   24.850243  
-    249   25.287426  
+    245   26.203823  
+    246   24.269236  
+    247   25.664831  
+    248   25.018898  
+    249   25.375439  
     
     [250 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
@@ -2523,30 +2514,30 @@ redshifts from our initially sampled distribution.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.710979   27.128540   26.701607   26.103630   25.440432   25.318165   
-    1    0.684234   23.222248   22.496042   21.628773   20.817329   20.564213   
-    2    0.249871   28.452118   27.647137   27.146101   26.915216   26.965424   
-    3    1.751949   28.061226   26.201729   25.492706   24.880798   24.292238   
-    4    0.478461   28.784658   27.170214   25.729788   25.174732   24.942528   
+    0    0.750908   27.164078   26.775993   26.225727   25.507996   25.336931   
+    1    0.648564   23.150772   22.366415   21.491493   20.731236   20.491596   
+    2    0.275019   28.322945   27.592419   27.075672   26.847256   26.854797   
+    3    1.727078   28.105497   26.135040   25.419762   24.767265   24.165056   
+    4    0.499235   28.817802   27.137247   25.664852   25.014309   24.740934   
     ..        ...         ...         ...         ...         ...         ...   
-    245  2.102067   30.277105   28.391989   27.616749   27.165022   26.598719   
-    246  0.667614   26.565666   25.922649   25.111830   24.431290   24.243885   
-    247  0.289256   27.459190   26.741211   26.134184   25.937506   25.852783   
-    248  1.081625   28.128185   27.520241   26.650793   25.952312   25.152357   
-    249  1.197557   28.616951   27.922165   27.124577   26.458269   25.736181   
+    245  2.012556   30.255859   28.493664   27.708603   27.206402   26.577536   
+    246  0.665149   26.606745   26.018583   25.270943   24.608408   24.401495   
+    247  0.349604   27.350212   26.747803   26.110224   25.893808   25.810492   
+    248  1.134209   28.412712   27.714722   26.864374   26.204229   25.371664   
+    249  1.306138   28.965940   28.081882   27.370880   26.612272   25.999018   
     
          mag_y_lsst  
-    0     25.236933  
-    1     20.347912  
-    2     26.922886  
-    3     23.972845  
-    4     24.702866  
+    0     25.276443  
+    1     20.287109  
+    2     26.788618  
+    3     23.801785  
+    4     24.513580  
     ..          ...  
-    245   26.184759  
-    246   24.105915  
-    247   25.740219  
-    248   24.850243  
-    249   25.287426  
+    245   26.203823  
+    246   24.269236  
+    247   25.664831  
+    248   25.018898  
+    249   25.375439  
     
     [250 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'brier']
@@ -2568,7 +2559,7 @@ want to look at, to make the dictionary a little easier to read.
 
 .. parsed-literal::
 
-    {(3, 7): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (2, 6): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (2, 8): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (4, 9): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}}
+    {(3, 7): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (2, 6): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (2, 8): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (4, 9): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}}
 
 
 We can see that the metrics are actually quite similar across most of
@@ -3016,7 +3007,7 @@ We’ll try the parallelization with 2 cores first and see how fast it is:
 
 .. parsed-literal::
 
-    <TimeitResult : 7 s +- 51 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)>
+    <TimeitResult : 7.51 s +- 51.1 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)>
 
 
 
@@ -3379,7 +3370,7 @@ the data in:
 
 .. parsed-literal::
 
-    <TimeitResult : 7.39 s +- 69.1 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)>
+    <TimeitResult : 7.69 s +- 44.7 ms per loop (mean +- std. dev. of 7 runs, 1 loop each)>
 
 
 
@@ -3407,7 +3398,7 @@ calculated, and compare the results for the different parameters:
 
 .. parsed-literal::
 
-    {(2, 6): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (3, 7): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (2, 8): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (4, 9): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (5, 10): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (1, 9): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (2, 9): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}, (3, 10): {'cdeloss': array([-1.18973826]), 'brier': array([178.79729761])}}
+    {(2, 6): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (3, 7): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (2, 8): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (4, 9): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (5, 10): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (1, 9): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (2, 9): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}, (3, 10): {'cdeloss': array([-1.21461823]), 'brier': array([172.23436667])}}
 
 
 We can see that as before, most of the distributions have similar

@@ -1,16 +1,8 @@
 Rendering notebooks in group: estimation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/estimation_examples
-RENDERING: Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters
-RENDERING: CMNN
-RENDERING: BPZ_lite
-RENDERING: YAW
-RENDERING: Running_with_different_data
-RENDERING: GPz
+RENDERING: FlexZBoost_PDF_Representation_Comparison
 RENDERING: LePhare_LSST
 RENDERING: Using_Photometry_to_Estimate_Photometric_Redshifts
-RENDERING: PZFlow
-RENDERING: FlexZBoost_PDF_Representation_Comparison
-RENDERING: LePhare_COSMOS
 RENDERING: SomocluSOM
 [1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
 [1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
@@ -22,30 +14,38 @@ RENDERING: SomocluSOM
 
 [0;31mNameError[0m: name 'wrap_train' is not defined
 
-RENDERING: Sampled_Summarizers
-RENDERING: Quick_Start_in_Estimation
-RENDERING: NZDir
+RENDERING: LePhare_COSMOS
+RENDERING: Running_with_different_data
+RENDERING: BPZ_lite
 RENDERING: DNF
+RENDERING: YAW
+RENDERING: Quick_Start_in_Estimation
+RENDERING: Sampled_Summarizers
+RENDERING: NZDir
+RENDERING: Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters
+RENDERING: PZFlow
+RENDERING: CMNN
+RENDERING: GPz
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/CMNN.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/BPZ_lite.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/YAW.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Running_with_different_data.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/GPz.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/FlexZBoost_PDF_Representation_Comparison.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_LSST.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Using_Photometry_to_Estimate_Photometric_Redshifts.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/PZFlow.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/FlexZBoost_PDF_Representation_Comparison.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_COSMOS.ipynb
       1  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Sampled_Summarizers.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Quick_Start_in_Estimation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/NZDir.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/LePhare_COSMOS.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Running_with_different_data.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/BPZ_lite.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/DNF.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/YAW.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Quick_Start_in_Estimation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Sampled_Summarizers.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/NZDir.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/Estimating_Redshifts_and_Comparing_Results_for_Different_Parameters.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/PZFlow.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/CMNN.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/GPz.ipynb
 
 1 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/interactive_examples/estimation_examples/SomocluSOM.ipynb

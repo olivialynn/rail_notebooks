@@ -33,7 +33,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260413T123647
+    /home/runner/.cache/lephare/runs/20260420T122630
 
 
 .. parsed-literal::
@@ -92,7 +92,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_8143/1106421819.py", line 5, in <module>
+      File "/tmp/ipykernel_7475/1106421819.py", line 5, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -194,132 +194,132 @@ in the ``pipeline_examples/estimation_examples/`` folder.
 
 .. parsed-literal::
 
-    (1) 9.1680
+    (1) 9.1679
 
 
 .. parsed-literal::
 
-    (3) 4.3895
+    (3) 4.7060
 
 
 .. parsed-literal::
 
-    (5) 2.9350
+    (5) 3.0395
 
 
 .. parsed-literal::
 
-    (7) 1.8445
+    (7) 1.8210
 
 
 .. parsed-literal::
 
-    (9) 1.1587
+    (9) 1.2419
 
 
 .. parsed-literal::
 
-    (11) 0.8108
+    (11) 0.7195
 
 
 .. parsed-literal::
 
-    (13) 0.5326
+    (13) 0.4739
 
 
 .. parsed-literal::
 
-    (15) 0.5473
+    (15) 0.3899
 
 
 .. parsed-literal::
 
-    (17) 0.4782
+    (17) 0.1622
 
 
 .. parsed-literal::
 
-    (19) -0.1172
+    (19) 0.0236
 
 
 .. parsed-literal::
 
-    (21) -0.0714
+    (21) 0.5141
 
 
 .. parsed-literal::
 
-    (23) -0.1248
+    (23) 0.1235
 
 
 .. parsed-literal::
 
-    (25) -0.4184
+    (25) -0.2421
 
 
 .. parsed-literal::
 
-    (27) 0.9513
+    (27) -0.3631
 
 
 .. parsed-literal::
 
-    (29) -0.4801
+    (29) -0.4974
 
 
 .. parsed-literal::
 
-    (31) -0.5840
+    (31) -0.4768
 
 
 .. parsed-literal::
 
-    (33) -0.4254
+    (33) -0.7454
 
 
 .. parsed-literal::
 
-    (35) -0.6859
+    (35) -0.3239
 
 
 .. parsed-literal::
 
-    (37) -0.6751
+    (37) -0.6735
 
 
 .. parsed-literal::
 
-    (39) -0.7844
+    (39) -0.5815
 
 
 .. parsed-literal::
 
-    (41) -0.9154
+    (41) -0.7599
 
 
 .. parsed-literal::
 
-    (43) -0.6023
+    (43) -0.8674
 
 
 .. parsed-literal::
 
-    (45) -0.1487
+    (45) -0.9404
 
 
 .. parsed-literal::
 
-    (47) -0.9291
+    (47) -0.7904
 
 
 .. parsed-literal::
 
-    (49) -0.7480
+    (49) -0.7422
 
 
 .. parsed-literal::
 
-    (50) -1.0246
+    (50) -0.9549
 
 
 .. parsed-literal::
@@ -339,7 +339,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, PZFlowEstimator
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7fd2adaa8a30>, PZFlowEstimator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f8d7ca143d0>, PZFlowEstimator
     Process 0 running estimator on chunk 0 - 20,449
 
 

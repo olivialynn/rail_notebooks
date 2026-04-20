@@ -34,7 +34,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260413T123647
+    /home/runner/.cache/lephare/runs/20260420T122630
 
 
 .. parsed-literal::
@@ -104,7 +104,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4792/2887657405.py", line 9, in <module>
+      File "/tmp/ipykernel_4680/2887657405.py", line 9, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -193,12 +193,7 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/hsc/rHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/rHSC.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/hsc/iHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/iHSC.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/hsc/gHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/gHSC.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -208,17 +203,7 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/u_cfht.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_cfht.lowres' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/hsc/yHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/yHSC.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/hsc/gHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/gHSC.pb' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/hsc/rHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/rHSC.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -233,7 +218,30 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
+    Downloading file 'filt/cosmos/u_cfht.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/u_cfht.lowres' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/hsc/yHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/yHSC.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/hsc/iHSC.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/hsc/iHSC.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'filt/vista/J.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/vista/J.lowres' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/filt/vista
+    Created directory: /home/runner/.cache/lephare/data/filt/hsc
+    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
+    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -254,14 +262,6 @@ Retrieve all the required filter and template files
 .. parsed-literal::
 
     Downloading file 'filt/cosmos/IB464.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB464.lowres' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/filt/hsc
-    Created directory: /home/runner/.cache/lephare/data/filt/vista
-    Created directory: /home/runner/.cache/lephare/data/filt/cosmos
-    Checking/downloading 445 files...
 
 
 .. parsed-literal::
@@ -311,12 +311,12 @@ Retrieve all the required filter and template files
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/NB711.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/NB711.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/IB827.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB827.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/cosmos/IB827.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/IB827.lowres' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'filt/cosmos/NB711.lowres' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/cosmos/NB711.lowres' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -470,10 +470,6 @@ redshifts, extinction parameters, and reddening values.
     irac_ch2.lowres               28            4.5290      4.4609      1.0105    3.2634  -99.0000  -28.9384    6.5680       1      4.5111      1.0040
     irac_ch3.lowres               29            5.7873      5.6765      1.3509    3.7537  -99.0000  -29.9581    7.0472       1      5.7592      1.0050
     irac_ch4.lowres               30            8.0442      7.7033      2.8394    4.3959  -99.0000  -31.2962    7.6701       1      7.9590      1.0110
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -503,7 +499,7 @@ redshifts, extinction parameters, and reddening values.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_bin/LIB_STAR(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/STAR_COSMOS(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 13 12:43:33 2026
+    # CREATION_DATE Mon Apr 20 12:33:23 2026
     #############################################
 
 
@@ -540,7 +536,7 @@ redshifts, extinction parameters, and reddening values.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 13 12:43:34 2026
+    # CREATION_DATE Mon Apr 20 12:33:23 2026
     #############################################
 
 
@@ -557,6 +553,10 @@ redshifts, extinction parameters, and reddening values.
     # QSO_FSCALE :1.0000
     #######################################
     Number of SED in the list 30
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -571,12 +571,8 @@ redshifts, extinction parameters, and reddening values.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 13 12:47:23 2026
+    # CREATION_DATE Mon Apr 20 12:37:03 2026
     #############################################
-
-
-.. parsed-literal::
-
     Using user columns from input table assuming they are in the standard order.
     Processing 100 objects with 30 bands
     ####################################### 
@@ -628,7 +624,9 @@ redshifts, extinction parameters, and reddening values.
     Read lib 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+    
+    COSMOS/lib_mag/QSO_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -646,9 +644,7 @@ redshifts, extinction parameters, and reddening values.
      Done with the library reading with 36374 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/CE_COOffsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-    
-    SMOS.doc
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/CE_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -662,8 +658,7 @@ redshifts, extinction parameters, and reddening values.
     u_new.pb                      2             0.3690      0.3750      0.0456    0.6195  -20.8500       0      1.0000
     gHSC.pb                       3             0.4851      0.4760      0.1194   -0.0860  -20.7300       0      1.0000
     rHSC.pb                       4             0.6241      0.6142      0.1539    0.1466  -21.5100       0      1.0000
-    iHSC.pb                       5             0.7716      0.7637      0.1476    0.3942  -22.2300       0      Inserting handle into data store.  model_inform_COSMOS: inprogress_model_inform_COSMOS.pkl, inform_COSMOS
-    1.0000
+    iHSC.pb                       5             0.7716      0.7637      0.1476    0.3942  -22.2300       0      1.0000
     zHSC.pb                       6             0.8915      0.8907      0.0768    0.5169  -22.6700       0      1.0000
     yHSC.pb                       7             0.9801      0.9771      0.0797    0.5534  -22.9100       0      1.0000
     Y.lowres                      8             1.0220      1.0200      0.0919    0.6043  -23.0600       0      1.0000
@@ -681,7 +676,8 @@ redshifts, extinction parameters, and reddening values.
     IB709.lowres                  20            0.7075      0.7071      0.0316    0.2982  -21.9500       0      1.0000
     IB738.lowres                  21            0.7363      0.7358      0.0323    0.3460  -22.0900       0      1.0000
     IB767.lowres                  22            0.7687      0.7681      0.0364    0.3992  -22.2400       0      1.0000
-    IB827.lowres                  23            0.8246      0.8241      0.0344    0.4891  -22.4800       0      1.0000
+    IB827.lowres                  23      Inserting handle into data store.  model_inform_COSMOS: inprogress_model_inform_COSMOS.pkl, inform_COSMOS
+          0.8246      0.8241      0.0344    0.4891  -22.4800       0      1.0000
     NB711.lowres                  24            0.7120      0.7119      0.0073    0.3072  -21.9800       0      1.0000
     NB816.lowres                  25            0.8150      0.8149      0.0120    0.4713  -22.4300       0      1.0000
     NB118.lowres                  26            1.1910      1.1910      0.0112    0.8376  -23.6200       0      1.0000
@@ -739,11 +735,7 @@ data.
     # FIR_FREESCALE          : YES
     # FIR_SUBSTELLAR         : NO
     # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 0.050000 0.050000 0.050000 0.050000 0.100000 0.200000 0.300000 
-    # ERR_FACTOR   
-
-.. parsed-literal::
-
-    AUTO_ADAPT is set to YES. Computing offsets.          : 1.500000 
+    # ERR_FACTOR             : 1.500000 
     # GLB_CONTEXT            : 0
     # FORB_CONTEXT           : -1
     # DZ_WIN                 : 1.000000
@@ -770,14 +762,7 @@ data.
     Read lib 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_
-
-.. parsed-literal::
-
-    
-    # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-    
-    COSMOS/lib_mag/QSO_COSMOS.doc
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_COSMOS/lib_mag/QSO_COSMOS.doc
     Number of keywords read in the config file: 16
     Keyword NUMBER_ROWS not provided 
     Keyword NUMBER_SED not provided 
@@ -809,7 +794,12 @@ data.
     u_new.pb                      2             0.3690      0.3750      0.0456    0.6195  -20.8500       0      1.0000
     gHSC.pb                       3             0.4851      0.4760      0.1194   -0.0860  -20.7300       0      1.0000
     rHSC.pb                       4             0.6241      0.6142      0.1539    0.1466  -21.5100       0      1.0000
-    iHSC.pb                       5             0.7716      0.7637      0.1476    0.3942  -22.2300       0      1.0000
+    iHSC.pb                       5             0.7716      0.7637      0.1476    0.3942  -22.2300       0      AUTO_ADAPT is set to YES. Computing offsets.
+
+
+.. parsed-literal::
+
+    1.0000
     zHSC.pb                       6             0.8915      0.8907      0.0768    0.5169  -22.6700       0      1.0000
     yHSC.pb                       7             0.9801      0.9771      0.0797    0.5534  -22.9100       0      1.0000
     Y.lowres                      8             1.0220      1.0200      0.0919    0.6043  -23.0600       0      1.0000
@@ -818,10 +808,8 @@ data.
     K.lowres                      11            2.1580      2.1430      0.2926    1.8330  -25.9100       0      1.0000
     IB427.lowres                  12            0.4264      0.4256      0.0207   -0.1446  -20.4100       0      1.0000
     IB464.lowres                  13            0.4636      0.4633      0.0218   -0.1520  -20.5900       0      1.0000
-    IB484.lowres                  14            0.4851      0.4846      0.022
-
-.. parsed-literal::
-
+    IB484.lowres                  14            0.4851      0.4846      0.022# Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+    
     8   -0.0241  -20.8100       0      1.0000
     IB505.lowres                  15            0.5064      0.5061      0.0231   -0.0656  -20.8600       0      1.0000
     IB527.lowres                  16            0.5262      0.5259      0.0242   -0.0260  -20.9900       0      1.0000

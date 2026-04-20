@@ -48,7 +48,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260413T123647
+    /home/runner/.cache/lephare/runs/20260420T122630
 
 
 .. parsed-literal::
@@ -107,7 +107,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5690/3472743491.py", line 6, in <module>
+      File "/tmp/ipykernel_4958/3472743491.py", line 6, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -839,7 +839,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3675873eb0>
+    <matplotlib.legend.Legend at 0x7fc84088add0>
 
 
 
@@ -882,7 +882,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f36555c9fc0>
+    <matplotlib.legend.Legend at 0x7fc814dc9450>
 
 
 
@@ -2767,18 +2767,18 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-     26  450k   26  119k    0     0   175k      0  0:00:02 --:--:--  0:00:02  175k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   457k      0 --:--:-- --:--:-- --:--:--  457k
+    100  450k  100  450k    0     0   494k      0 --:--:-- --:--:-- --:--:--  493k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   147k      0 --:--:-- --:--:-- --:--:--  148k
+    100 83848  100 83848    0     0   216k      0 --:--:-- --:--:-- --:--:--  217k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
@@ -2789,7 +2789,7 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   188k      0 --:--:-- --:--:-- --:--:--  188k
+    100 83848  100 83848    0     0   221k      0 --:--:-- --:--:-- --:--:--  221k
 
 
 .. code:: ipython3
@@ -2809,6 +2809,10 @@ First, as mentioned in the above cell, we must download the file containing the 
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, BPZliteInformer
+
+
+.. parsed-literal::
+
     using 10213 galaxies in calculation
 
 
@@ -2965,7 +2969,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f36554fc820>
+    <matplotlib.legend.Legend at 0x7fc814cd7e80>
 
 
 
@@ -3065,7 +3069,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f36553ccac0>
+    <matplotlib.legend.Legend at 0x7fc814bade10>
 
 
 
@@ -3131,7 +3135,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f3655149c60>
+    <matplotlib.legend.Legend at 0x7fc814ad9c60>
 
 
 

@@ -111,7 +111,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3958/3393143206.py", line 4, in <module>
+      File "/tmp/ipykernel_3900/3393143206.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -219,15 +219,15 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0 47.1M    0 92636    0     0   155k      0  0:05:09 --:--:--  0:05:09  155k
 
 .. parsed-literal::
 
-      6 47.1M    6 3119k    0     0  1971k      0  0:00:24  0:00:01  0:00:23 1970k
+     15 47.1M   15 7538k    0     0  4651k      0  0:00:10  0:00:01  0:00:09 4650k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  18.7M      0  0:00:02  0:00:02 --:--:-- 18.7M
+    100 47.1M  100 47.1M    0     0  21.2M      0  0:00:02  0:00:02 --:--:-- 21.2M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -627,10 +627,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

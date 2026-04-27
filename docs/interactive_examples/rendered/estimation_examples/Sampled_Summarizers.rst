@@ -40,7 +40,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260420T122630
+    /home/runner/.cache/lephare/runs/20260427T123143
 
 
 .. parsed-literal::
@@ -99,7 +99,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5971/4087826718.py", line 3, in <module>
+      File "/tmp/ipykernel_5956/4087826718.py", line 3, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -229,7 +229,7 @@ that are included in the RAIL repo:
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x561d449d1e90>, 'bestsig': np.float64(0.023333333333333334), 'nneigh': 7, 'truezs': array([0.02043499, 0.01936132, 0.03672067, ..., 2.97927326, 2.98694714,
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x564cf54e8130>, 'bestsig': np.float64(0.023333333333333334), 'nneigh': 7, 'truezs': array([0.02043499, 0.01936132, 0.03672067, ..., 2.97927326, 2.98694714,
            2.97646626], shape=(10225,)), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 20,449
     Process 0 estimating PZ PDF for rows 0 - 20,449
@@ -308,7 +308,7 @@ plot a few of the bootstrap sample N(z) estimates:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc200f4d150>
+    <matplotlib.legend.Legend at 0x7fd558534b80>
 
 
 
@@ -384,7 +384,7 @@ appears alpha is broken, so this plot is not the best:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc26d0216c0>
+    <matplotlib.legend.Legend at 0x7fd5918d6080>
 
 
 
@@ -514,6 +514,10 @@ of samples
 .. parsed-literal::
 
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
 
 
@@ -536,7 +540,7 @@ of samples
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc253d25060>
+    <matplotlib.legend.Legend at 0x7fd581c82620>
 
 
 
@@ -654,7 +658,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fc253a9bc40>]
+    [<matplotlib.lines.Line2D at 0x7fd581c483a0>]
 
 
 
@@ -671,7 +675,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fc253bac610>]
+    [<matplotlib.lines.Line2D at 0x7fd581e44e20>]
 
 
 
@@ -688,7 +692,7 @@ distributions have been inherited by qp ensembles
 
 .. parsed-literal::
 
-    [<matplotlib.lines.Line2D at 0x7fc253b7ce50>]
+    [<matplotlib.lines.Line2D at 0x7fd581e6d1b0>]
 
 
 
@@ -723,7 +727,7 @@ could easily implement ``shift`` functionality in qp, I think.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fc253b3b370>
+    <matplotlib.legend.Legend at 0x7fd581f0b8e0>
 
 
 

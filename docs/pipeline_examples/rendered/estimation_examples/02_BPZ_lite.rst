@@ -613,15 +613,15 @@ for the SEDs and filters.
 
 .. parsed-literal::
 
-    CPU times: user 23.1 s, sys: 124 ms, total: 23.2 s
-    Wall time: 23.2 s
+    CPU times: user 23.2 s, sys: 132 ms, total: 23.4 s
+    Wall time: 23.3 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fb31876a080>
+    <rail.core.data.QPHandle at 0x7f036d541450>
 
 
 
@@ -701,7 +701,7 @@ in our template set.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb31853e350>
+    <matplotlib.legend.Legend at 0x7f036d31a470>
 
 
 
@@ -738,7 +738,7 @@ values of low todds and see where they lie in color space.
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb31844fc40>
+    <matplotlib.legend.Legend at 0x7f03681b0040>
 
 
 
@@ -818,8 +818,8 @@ used and stored for future runs).
 
 .. parsed-literal::
 
-    CPU times: user 32.8 s, sys: 118 ms, total: 32.9 s
-    Wall time: 32.9 s
+    CPU times: user 33.3 s, sys: 131 ms, total: 33.4 s
+    Wall time: 33.4 s
 
 
 A run on a single processor on a Mac took 15.7 seconds for me, relative
@@ -943,24 +943,24 @@ First, as mentioned in the above cell, we must download the file containing the 
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+     19  450k   19 89783    0     0   126k      0  0:00:03 --:--:--  0:00:03  126k
 
 .. parsed-literal::
 
-    100  450k  100  450k    0     0   419k      0  0:00:01  0:00:01 --:--:--  420k
+    100  450k  100  450k    0     0   454k      0 --:--:-- --:--:-- --:--:--  454k
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
+    100 83848  100 83848    0     0   194k      0 --:--:-- --:--:-- --:--:--  194k
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-    100 83848  100 83848    0     0   200k      0 --:--:-- --:--:-- --:--:--  200k
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
@@ -999,15 +999,15 @@ First, as mentioned in the above cell, we must download the file containing the 
     minimizing for type 2
     best fit z0, alpha, km for type 2: [0.557186   1.92439164 0.11126791]
     Inserting handle into data store.  model_bpz_new_prior: inprogress_test_9816_demo_prior.pkl, bpz_new_prior
-    CPU times: user 9.7 s, sys: 2 ms, total: 9.7 s
-    Wall time: 9.7 s
+    CPU times: user 9.87 s, sys: 1.96 ms, total: 9.88 s
+    Wall time: 9.87 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fb31853d9c0>
+    <rail.core.data.ModelHandle at 0x7f036d31bf70>
 
 
 
@@ -1117,7 +1117,7 @@ type, in our case 1 Elliptical SED, 2 Spiral SEDs, and 5 Irr/SB SEDs:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb33e77a3e0>
+    <matplotlib.legend.Legend at 0x7f039df469b0>
 
 
 
@@ -1189,15 +1189,15 @@ results are any different:
 
 .. parsed-literal::
 
-    CPU times: user 12.7 s, sys: 111 ms, total: 12.9 s
-    Wall time: 12.9 s
+    CPU times: user 12.9 s, sys: 110 ms, total: 13 s
+    Wall time: 13 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.QPHandle at 0x7fb33e6c5450>
+    <rail.core.data.QPHandle at 0x7f039de998a0>
 
 
 
@@ -1224,7 +1224,7 @@ default prior:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb3182d7850>
+    <matplotlib.legend.Legend at 0x7f039df9e500>
 
 
 
@@ -1287,7 +1287,7 @@ estimates and plot one:
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7fb33e52e200>
+    <matplotlib.legend.Legend at 0x7f039de664d0>
 
 
 

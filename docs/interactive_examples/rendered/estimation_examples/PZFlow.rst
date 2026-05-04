@@ -33,7 +33,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260427T123143
+    /home/runner/.cache/lephare/runs/20260504T123336
 
 
 .. parsed-literal::
@@ -92,7 +92,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_7472/1106421819.py", line 5, in <module>
+      File "/tmp/ipykernel_7415/1106421819.py", line 5, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -339,7 +339,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, PZFlowEstimator
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f2bb95300d0>, PZFlowEstimator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f6859a78c10>, PZFlowEstimator
     Process 0 running estimator on chunk 0 - 20,449
 
 

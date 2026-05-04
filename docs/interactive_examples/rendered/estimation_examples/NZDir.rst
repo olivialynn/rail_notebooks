@@ -40,7 +40,7 @@ First off, let’s load the relevant packages from RAIL:
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260427T123143
+    /home/runner/.cache/lephare/runs/20260504T123336
 
 
 .. parsed-literal::
@@ -99,7 +99,7 @@ First off, let’s load the relevant packages from RAIL:
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6116/285264119.py", line 4, in <module>
+      File "/tmp/ipykernel_6065/285264119.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -360,8 +360,8 @@ calculation, so this should run very fast:
 
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
-    CPU times: user 240 ms, sys: 3.84 ms, total: 244 ms
-    Wall time: 242 ms
+    CPU times: user 243 ms, sys: 3.72 ms, total: 246 ms
+    Wall time: 245 ms
 
 
 indeed, for our 20,000 test and 10,000 training galaxies, it takes less
@@ -581,15 +581,7 @@ Now we need to re-run our tomographic bin estimates with this new model:
             23.43612099],
            [24.16078758, 23.40859985, 23.29878235, 23.29213524, 23.34983253,
             23.5138588 ]], shape=(2576, 6))}, NZDirSummarizer
-
-
-.. parsed-literal::
-
     Process 0 running estimator on chunk 0 - 8513
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
     Inserting handle into data store.  input: None, NZDirSummarizer
@@ -611,8 +603,8 @@ Now we need to re-run our tomographic bin estimates with this new model:
     Process 0 running estimator on chunk 0 - 4257
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, NZDirSummarizer
     Inserting handle into data store.  output: inprogress_output.hdf5, NZDirSummarizer
-    CPU times: user 220 ms, sys: 13 ms, total: 233 ms
-    Wall time: 233 ms
+    CPU times: user 74.4 ms, sys: 938 μs, total: 75.4 ms
+    Wall time: 75.1 ms
 
 
 .. code:: ipython3

@@ -68,7 +68,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260427T123143
+    /home/runner/.cache/lephare/runs/20260504T123336
 
 
 .. parsed-literal::
@@ -127,7 +127,7 @@ in the ``pipeline_examples/estimation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5424/2253991977.py", line 10, in <module>
+      File "/tmp/ipykernel_5366/2253991977.py", line 10, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -1026,8 +1026,8 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    array([1.07182461, 1.35668927, 1.56375463, 4.83102594, 2.48537537,
-           3.28650675, 2.64576631, 2.38672804])
+    array([0.99751831, 2.37893624, 2.14804959, 7.20831464, 2.18093417,
+           5.07480432, 2.19060571, 2.21372888])
 
 
 
@@ -1059,7 +1059,7 @@ estimte error, samples and covariance matrix produced by
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f2ce383ad70>
+    <matplotlib.legend.Legend at 0x7ff2ae8479d0>
 
 
 

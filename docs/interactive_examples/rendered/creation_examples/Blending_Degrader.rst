@@ -94,7 +94,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3964/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_3949/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -313,28 +313,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.01329733 0.01348944] / 0.01339338213206983
+    [0.00958903 0.00947733] / 0.009533179726778517
     
     Truth DEC / Blended DEC:
-    [0.01289146 0.01306272] / 0.012977093807812791
+    [0.02341319 0.0232915 ] / 0.023352341908262436
     
     Truth mag u / Blended mag u:
-    [28.45576456 25.38339289] / 25.3211252199214
+    [28.98549545 27.90254616] / 27.561676386013026
     
     Truth mag g / Blended mag g:
-    [24.53850398 26.22095865] / 24.32944888214386
+    [22.58790051 21.70446568] / 21.306129173736444
     
     Truth mag r / Blended mag r:
-    [23.99221973 24.78455933] / 23.565085301466326
+    [25.74015855 20.80613545] / 20.794658730790744
     
     Truth mag i / Blended mag i:
-    [23.12278391 31.25427521] / 23.122177165945693
+    [26.68434502 26.79431927] / 25.985365340476413
     
     Truth mag z / Blended mag z:
-    [24.68280437 23.43728129] / 23.137876390273558
+    [24.59360031 22.40603258] / 22.270128370713838
     
     Truth mag y / Blended mag y:
-    [22.36995829 24.38402589] / 22.212142025114847
+    [30.87174768 22.57520881] / 22.574687611781485
     
 
 

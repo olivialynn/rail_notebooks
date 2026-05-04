@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260427T122115
+    /home/runner/.cache/lephare/runs/20260504T122301
 
 
 .. parsed-literal::
@@ -117,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6046/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_5974/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -253,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.553249</td>
-          <td>17.589214</td>
+          <td>21.144476</td>
+          <td>15.103271</td>
           <td>20.0</td>
-          <td>0.023257</td>
+          <td>1.456455</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.771860</td>
-          <td>16.719295</td>
+          <td>23.030269</td>
+          <td>21.665589</td>
           <td>20.0</td>
-          <td>1.562637</td>
+          <td>1.708614</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.735826</td>
-          <td>20.158740</td>
+          <td>19.403117</td>
+          <td>18.562844</td>
           <td>20.0</td>
-          <td>0.772565</td>
+          <td>1.873868</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.865449</td>
-          <td>19.898497</td>
+          <td>20.698560</td>
+          <td>19.739996</td>
           <td>20.0</td>
-          <td>1.521432</td>
+          <td>0.299712</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.459208</td>
-          <td>21.177882</td>
+          <td>25.668574</td>
+          <td>14.711401</td>
           <td>20.0</td>
-          <td>0.549870</td>
+          <td>1.794966</td>
         </tr>
       </tbody>
     </table>
@@ -333,8 +333,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.39 s, sys: 18.7 ms, total: 1.41 s
-    Wall time: 1.41 s
+    CPU times: user 1.43 s, sys: 19.4 ms, total: 1.45 s
+    Wall time: 1.44 s
 
 
 .. code:: ipython3
@@ -345,17 +345,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503231 entries, 4 to 1999993
+    Index: 502488 entries, 3 to 1999998
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503231 non-null  float64
-     1   g         503231 non-null  float64
-     2   r         503231 non-null  float64
-     3   i         503231 non-null  float64
-     4   z         503231 non-null  float64
-     5   y         503231 non-null  float64
-     6   redshift  503231 non-null  float64
+     0   u         502488 non-null  float64
+     1   g         502488 non-null  float64
+     2   r         502488 non-null  float64
+     3   i         502488 non-null  float64
+     4   z         502488 non-null  float64
+     5   y         502488 non-null  float64
+     6   redshift  502488 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 

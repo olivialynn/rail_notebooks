@@ -41,7 +41,7 @@ version of this notebook in interactive mode.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260427T140129
+    /home/runner/.cache/lephare/runs/20260504T140632
 
 
 Here we load previously created synthetic data
@@ -68,26 +68,17 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Number of keywords read in the config file: 86
-
-
-.. parsed-literal::
-
     Registry file downloaded and saved as data_registry.txt.
 
 
 .. parsed-literal::
 
-    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
     Downloading file 'filt/lsst/total_i.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_i.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_g.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_g.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -103,6 +94,11 @@ One could add or take out bandpasses by editing the configuration file.
 .. parsed-literal::
 
     Downloading file 'filt/lsst/total_y.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_y.pb' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'filt/lsst/total_u.pb' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/filt/lsst/total_u.pb' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -152,10 +148,6 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729    0.5879  -22.1705    4.5353       0      0.7539      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178    0.7624  -22.6171    4.5165       0      0.8669      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512    0.7770  -22.9043    4.5084       0      0.9744      1.0000
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -167,9 +159,17 @@ takes ~3-4 minutes.
     # STAR_FSCALE :0.0000
     #######################################
     Number of SED in the list 254
+
+
+.. parsed-literal::
+
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
+
+
+.. parsed-literal::
+
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -181,12 +181,8 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 27 14:09:43 2026
+    # CREATION_DATE Mon May  4 14:14:51 2026
     #############################################
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -201,10 +197,6 @@ takes ~3-4 minutes.
     # AGE_RANGE   0.0000 15000000000.0000
     #######################################
     Number of SED in the list 31
-
-
-.. parsed-literal::
-
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -222,8 +214,12 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 27 14:09:43 2026
+    # CREATION_DATE Mon May  4 14:14:51 2026
     #############################################
+
+
+.. parsed-literal::
+
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -253,134 +249,10 @@ takes ~3-4 minutes.
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon Apr 27 14:12:12 2026
+    # CREATION_DATE Mon May  4 14:17:33 2026
     #############################################
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
-
-
-.. parsed-literal::
-
-    ####################################### 
-    # PHOTOMETRIC REDSHIFT with OPTIONS   # 
-    # Config file            : 
-    # CAT_IN                 : bidon
-    # CAT_OUT                : zphot.out
-    # CAT_LINES              : 0 1000000000
-    # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
-    # INP_TYPE               : M
-    # CAT_FMT[0:MEME 1:MMEE] : 0
-    # CAT_MAG                : AB
-    # ZPHOTLIB               : LSST_STAR_MAG LSST_GAL_MAG LSST_QSO_MAG 
-    # FIR_LIB                : 
-    # FIR_LMIN               : 7.000000
-    # FIR_CONT               : -1.000000
-    # FIR_SCALE              : -1.000000
-    # FIR_FREESCALE          : YES
-    # FIR_SUBSTELLAR         : NO
-    # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 
-    # ERR_FACTOR             : 1.500000 
-    # GLB_CONTEXT            : 63
-    # FORB_CONTEXT           : -1
-    # DZ_WIN                 : 1.000000
-    # MIN_THRES              : 0.020000
-    # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
-    
-    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
-    000
-    # MAG_REF                : 3
-    # NZ_PRIOR               : -1 -1
-    # Z_INTERP               : YES
-    # Z_METHOD               : BEST
-    # MABS_METHOD            : 1
-    # MABS_CONTEXT           : 63 
-    # MABS_REF               : 1 
-    # AUTO_ADAPT             : NO
-    # ADAPT_BAND             : 5
-    # ADAPT_LIM              : 1.500000 23.000000
-    # ADAPT_ZBIN             : 0.010000 6.000000
-    # ZFIX                   : NO
-    # SPEC_OUT               : NO
-    # CHI_OUT                : NO
-    # PDZ_OUT                : test
-    ####################################### 
-    Reading input librairies ...
-    Read lib 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.bin
-     Done with the library reading with 3720 SED read. 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
-     Done with the library reading with 46190 SED read. 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
-     Done with the library reading with 46444 SED read. 
-    Read lib out 
-    Read filt 
-    # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
-    total_u.pb                    1             0.3717      0.3767      0.0446    0.6034  -20.8600       0      1.0000
-    total_g.pb                    2             0.4844      0.4746      0.1423   -0.0854  -20.7200       0      1.0000
-    total_r.pb                    3             0.6249      0.6162      0.1383    0.1515  -21.5200       0      1.0000
-    total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
-    total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
-    total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-
-
-
-
-.. parsed-literal::
-
-    <rail.core.data.ModelHandle at 0x7f605f885990>
-
-
-
-Now we take the sythetic test data, and find the best fits from the
-library. This results in a PDF, zmode, and zmean for each input test
-data. Takes ~2 minutes to run on 1500 inputs.
-
-.. code:: ipython3
-
-    estimate_lephare = LephareEstimator.make_stage(
-        name="test_Lephare",
-        nondetect_val=np.nan,
-        model=inform_lephare.get_handle("model"),
-        hdf5_groupname="",
-        aliases=dict(input="test_data", output="lephare_estim"),
-    )
-    
-    lephare_estimated = estimate_lephare.estimate(testdata_io)
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  test_data: None, test_Lephare
-    Inserting handle into data store.  model_inform_Lephare: <class 'rail.core.data.ModelHandle'> lephare.pkl, (wd), test_Lephare
-    User defined LEPHAREDIR is set. Code runs depend on all required
-    auxiliary data being present at /home/runner/.cache/lephare/data.
-    User defined LEPHAREWORK is set. All intermediate files will be written to:
-     /home/runner/.cache/lephare/runs/inform_Lephare
-    Process 0 running estimator on chunk 0 - 1,500
-    Using user columns from input table assuming they are in the standard order.
-    Processing 1500 objects with 6 bands
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -460,18 +332,146 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-    AUTO_ADAPT is set to YES. Computing offsets.
-
-
-.. parsed-literal::
-
-    # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
+    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
     
 
 
 .. parsed-literal::
 
+    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
+
+
+
+
+.. parsed-literal::
+
+    <rail.core.data.ModelHandle at 0x7f1b2dfe7a90>
+
+
+
+Now we take the sythetic test data, and find the best fits from the
+library. This results in a PDF, zmode, and zmean for each input test
+data. Takes ~2 minutes to run on 1500 inputs.
+
+.. code:: ipython3
+
+    estimate_lephare = LephareEstimator.make_stage(
+        name="test_Lephare",
+        nondetect_val=np.nan,
+        model=inform_lephare.get_handle("model"),
+        hdf5_groupname="",
+        aliases=dict(input="test_data", output="lephare_estim"),
+    )
+    
+    lephare_estimated = estimate_lephare.estimate(testdata_io)
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  test_data: None, test_Lephare
+    Inserting handle into data store.  model_inform_Lephare: <class 'rail.core.data.ModelHandle'> lephare.pkl, (wd), test_Lephare
+    User defined LEPHAREDIR is set. Code runs depend on all required
+    auxiliary data being present at /home/runner/.cache/lephare/data.
+    User defined LEPHAREWORK is set. All intermediate files will be written to:
+     /home/runner/.cache/lephare/runs/inform_Lephare
+    Process 0 running estimator on chunk 0 - 1,500
+    Using user columns from input table assuming they are in the standard order.
+    Processing 1500 objects with 6 bands
+
+
+.. parsed-literal::
+
+    AUTO_ADAPT is set to YES. Computing offsets.
+
+
+.. parsed-literal::
+
+    ####################################### 
+    # PHOTOMETRIC REDSHIFT with OPTIONS   # 
+    # Config file            : 
+    # CAT_IN                 : bidon
+    # CAT_OUT                : zphot.out
+    # CAT_LINES              : 0 1000000000
+    # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
+    # INP_TYPE               : M
+    # CAT_FMT[0:MEME 1:MMEE] : 0
+    # CAT_MAG                : AB
+    # ZPHOTLIB               : LSST_STAR_MAG LSST_GAL_MAG LSST_QSO_MAG 
+    # FIR_LIB                : 
+    # FIR_LMIN               : 7.000000
+    # FIR_CONT               : -1.000000
+    # FIR_SCALE              : -1.000000
+    # FIR_FREESCALE          : YES
+    # FIR_SUBSTELLAR         : NO
+    # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 
+    # ERR_FACTOR             : 1.500000 
+    # GLB_CONTEXT            : 63
+    # FORB_CONTEXT           : -1
+    # DZ_WIN                 : 1.000000
+    # MIN_THRES              : 0.020000
+    # MAG_ABS                : -24.000000 -5.000000
+    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_REF                : 3
+    # NZ_PRIOR               : -1 -1
+    # Z_INTERP               : YES
+    # Z_METHOD               : BEST
+    # MABS_METHOD            : 1
+    # MABS_CONTEXT           : 63 
+    # MABS_REF               : 1 
+    # AUTO_ADAPT             : NO
+    # ADAPT_BAND             : 5
+    # ADAPT_LIM              : 1.500000 23.000000
+    # ADAPT_ZBIN             : 0.010000 6.000000
+    # ZFIX                   : NO
+    # SPEC_OUT               : NO
+    # CHI_OUT                : NO
+    # PDZ_OUT                : test
+    ####################################### 
+    Reading input librairies ...
+    Read lib 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.bin
+     Done with the library reading with 3720 SED read. 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
+     Done with the library reading with 46190 SED read. 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
+     Done with the library reading with 46444 SED read. 
+    Read lib out 
+    Read filt 
+    # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
+    total_u.pb                    1             0.3717      0.3767      0.0446    0.6034  -20.8600       0      1.0000
+    total_g.pb                    2             0.4844      0.4746      0.1423   -0.0854  -20.7200       0      1.0000
+    total_r.pb                    3             0.6249      0.6162      0.1383    0.1515  -21.5200       0      1.0000
+    total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
+    total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
+    total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
+    
     Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1703.4709 470.1358
+
+
+.. parsed-literal::
+
     Source 425 // Band 5 removed to improve the chi2, with old and new chi2 1233.4076 0.0679
     Source 449 // Band 0 removed to improve the chi2, with old and new chi2 1769.2671 535.9139
     Source 449 // Band 1 removed to improve the chi2, with old and new chi2 1769.2671 233.6168
@@ -483,15 +483,15 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Source 1140 // Band 5 removed to improve the chi2, with old and new chi2 703.2486 0.8348
     Source 1160 // Band 1 removed to improve the chi2, with old and new chi2 2674.1035 1441.1565
     Source 1160 // Band 0 removed to improve the chi2, with old and new chi2 2674.1035 208.4284
-    Source 1251 // Band 2 removed to improve the chi2, with old and new chi2 3699.9778 2466.6408
+    So
+
+.. parsed-literal::
+
+    urce 1251 // Band 2 removed to improve the chi2, with old and new chi2 3699.9778 2466.6408
     Source 1251 // Band 1 removed to improve the chi2, with old and new chi2 3699.9778 1233.3110
     Source 1302 // Band 5 removed to improve the chi2, with old and new chi2 1236.4875 3.1952
     Source 1427 // Band 5 removed to improve the chi2, with old and new chi2 1151.7123 0.0671
     Source 1451 // Band 5 removed to improve the chi2, with old and new chi2 1227.1517 0.0367
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  output_test_Lephare: inprogress_output_test_Lephare.hdf5, test_Lephare
 
 

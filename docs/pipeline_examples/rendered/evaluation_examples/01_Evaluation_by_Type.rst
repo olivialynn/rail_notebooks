@@ -125,11 +125,11 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data: None, dist_to_dist
-    Requested metrics: ['cvm', 'ks', 'rmse', 'kld', 'ad']
 
 
 .. parsed-literal::
 
+    Requested metrics: ['cvm', 'ks', 'rmse', 'kld', 'ad']
     Processing 0 running evaluator on chunk 0 - 10000.
 
 
@@ -164,6 +164,10 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data: None, dist_to_dist
+
+
+.. parsed-literal::
+
     Requested metrics: ['cvm', 'ks', 'rmse', 'kld', 'ad']
 
 
@@ -240,42 +244,42 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.520690</td>
-          <td>0.117050</td>
+          <td>1.696297</td>
+          <td>0.193428</td>
           <td>0.0</td>
-          <td>0.068456</td>
+          <td>0.071035</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.252608</td>
-          <td>0.466364</td>
+          <td>1.824087</td>
+          <td>0.152220</td>
           <td>0.0</td>
-          <td>0.086585</td>
+          <td>0.124687</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.846368</td>
-          <td>0.101763</td>
+          <td>0.480585</td>
+          <td>0.294607</td>
           <td>0.0</td>
-          <td>0.133339</td>
+          <td>0.090792</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.957973</td>
-          <td>0.082024</td>
+          <td>0.442778</td>
+          <td>0.214621</td>
           <td>0.0</td>
-          <td>0.080845</td>
+          <td>0.078994</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.697095</td>
-          <td>0.076491</td>
+          <td>0.629638</td>
+          <td>0.054438</td>
           <td>0.0</td>
-          <td>0.077649</td>
+          <td>0.095529</td>
           <td>0.0</td>
         </tr>
         <tr>
@@ -288,42 +292,42 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>1.026648</td>
-          <td>0.316272</td>
+          <td>1.560347</td>
+          <td>0.085824</td>
           <td>0.0</td>
-          <td>0.099684</td>
+          <td>0.112816</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.452285</td>
-          <td>0.036856</td>
+          <td>0.715574</td>
+          <td>0.402116</td>
           <td>0.0</td>
-          <td>0.060074</td>
+          <td>0.181952</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.384596</td>
-          <td>0.721927</td>
+          <td>1.119567</td>
+          <td>0.058769</td>
           <td>0.0</td>
-          <td>0.078487</td>
+          <td>0.086473</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.550369</td>
-          <td>0.071281</td>
+          <td>0.673369</td>
+          <td>0.130901</td>
           <td>0.0</td>
-          <td>0.089369</td>
+          <td>0.114060</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.954342</td>
-          <td>0.161422</td>
+          <td>1.245132</td>
+          <td>0.068945</td>
           <td>0.0</td>
-          <td>0.069209</td>
+          <td>0.106548</td>
           <td>0.0</td>
         </tr>
       </tbody>
@@ -371,43 +375,43 @@ tables to pandas DataFrame objects for better display
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.117050</td>
-          <td>0.068456</td>
+          <td>0.193428</td>
+          <td>0.071035</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.520690</td>
+          <td>1.696297</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.466364</td>
-          <td>0.086585</td>
+          <td>0.152220</td>
+          <td>0.124687</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.252608</td>
+          <td>1.824087</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.101763</td>
-          <td>0.133339</td>
+          <td>0.294607</td>
+          <td>0.090792</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.846368</td>
+          <td>0.480585</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.082024</td>
-          <td>0.080845</td>
+          <td>0.214621</td>
+          <td>0.078994</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.957973</td>
+          <td>0.442778</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.076491</td>
-          <td>0.077649</td>
+          <td>0.054438</td>
+          <td>0.095529</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.697095</td>
+          <td>0.629638</td>
         </tr>
         <tr>
           <th>...</th>
@@ -419,43 +423,43 @@ tables to pandas DataFrame objects for better display
         </tr>
         <tr>
           <th>20444</th>
-          <td>0.316272</td>
-          <td>0.099684</td>
+          <td>0.085824</td>
+          <td>0.112816</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>1.026648</td>
+          <td>1.560347</td>
         </tr>
         <tr>
           <th>20445</th>
-          <td>0.036856</td>
-          <td>0.060074</td>
+          <td>0.402116</td>
+          <td>0.181952</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.452285</td>
+          <td>0.715574</td>
         </tr>
         <tr>
           <th>20446</th>
-          <td>0.721927</td>
-          <td>0.078487</td>
+          <td>0.058769</td>
+          <td>0.086473</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.384596</td>
+          <td>1.119567</td>
         </tr>
         <tr>
           <th>20447</th>
-          <td>0.071281</td>
-          <td>0.089369</td>
+          <td>0.130901</td>
+          <td>0.114060</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.550369</td>
+          <td>0.673369</td>
         </tr>
         <tr>
           <th>20448</th>
-          <td>0.161422</td>
-          <td>0.069209</td>
+          <td>0.068945</td>
+          <td>0.106548</td>
           <td>0.0</td>
           <td>0.0</td>
-          <td>0.954342</td>
+          <td>1.245132</td>
         </tr>
       </tbody>
     </table>
@@ -509,12 +513,12 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data: None, dist_to_point
-    Inserting handle into data store.  ztrue_data: None, dist_to_point
-    Requested metrics: ['cdeloss', 'pit', 'brier']
 
 
 .. parsed-literal::
 
+    Inserting handle into data store.  ztrue_data: None, dist_to_point
+    Requested metrics: ['cdeloss', 'pit', 'brier']
     Processing 0 running evaluator on chunk 0 - 10000.
 
 
@@ -725,12 +729,12 @@ point_stats_sigma_mad: Sigma of the median absolute deviation
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data: None, point_to_point
-    Inserting handle into data store.  ztrue_data: None, point_to_point
-    Requested metrics: ['point_stats_ez', 'point_stats_iqr', 'point_bias', 'point_outlier_rate', 'point_stats_sigma_mad']
 
 
 .. parsed-literal::
 
+    Inserting handle into data store.  ztrue_data: None, point_to_point
+    Requested metrics: ['point_stats_ez', 'point_stats_iqr', 'point_bias', 'point_outlier_rate', 'point_stats_sigma_mad']
     Processing 0 running evaluator on chunk 0 - 10000.
     Inserting handle into data store.  output_point_to_point: inprogress_output_point_to_point.hdf5, point_to_point
     Processing 0 running evaluator on chunk 10000 - 20000.
@@ -800,6 +804,10 @@ point_stats_sigma_mad: Sigma of the median absolute deviation
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data: None, point_to_point
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  ztrue_data: None, point_to_point
     Requested metrics: ['point_stats_ez', 'point_stats_iqr', 'point_bias', 'point_outlier_rate', 'point_stats_sigma_mad']
     Inserting handle into data store.  output_point_to_point: inprogress_output_point_to_point.hdf5, point_to_point
@@ -928,7 +936,7 @@ Setting up a RailPipeline with an evaluation stage
 .. parsed-literal::
 
     (({'point_to_point': <Job point_to_point>},
-      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f8722718d90>]),
+      [<rail.evaluation.point_to_point_evaluator.PointToPointEvaluator at 0x7f207d774ca0>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -979,6 +987,10 @@ forced to run on a single node for exact results.
 .. parsed-literal::
 
     Inserting handle into data store.  pdfs_data_2: None, single
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  ztrue_data_2: None, single
     This is not a qp file because 'meta'
     This is not a qp file because 'meta'
@@ -996,10 +1008,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 2000 - 3000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1028,6 +1036,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 9000 - 10000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1044,10 +1056,6 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
-
-
-.. parsed-literal::
-
     Processing 0 running evaluator on chunk 13000 - 14000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
@@ -1068,6 +1076,10 @@ forced to run on a single node for exact results.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist
     skipping kld PdfOrValue.both MetricInputType.dist_to_dist
+
+
+.. parsed-literal::
+
     Processing 0 running evaluator on chunk 18000 - 19000.
     skipping cvm PdfOrValue.both MetricInputType.dist_to_dist
     skipping ks PdfOrValue.both MetricInputType.dist_to_dist

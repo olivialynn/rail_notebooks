@@ -37,6 +37,16 @@ RENDERING: 04_CMNN
 RENDERING: 06_GPz
 RENDERING: 13_Sampled_Summarizers
 RENDERING: 09_PZFlow
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
@@ -57,11 +67,12 @@ R. Code  Notebook
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/04_CMNN.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/06_GPz.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
 
-2 FAILED NOTEBOOK(S):
+3 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
 2. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
@@ -70,4 +81,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
     raise ValueError(
-ValueError: 2 out of 17 notebooks failed to render.
+ValueError: 3 out of 17 notebooks failed to render.

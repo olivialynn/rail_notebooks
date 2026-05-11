@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** May 04, 2026
+**Tables last updated:** May 11, 2026
 
 
 ### Pipeline Notebooks
@@ -54,24 +54,24 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | 00_Useful_Utilities.ipynb |
+| :x: | 00_Useful_Utilities.ipynb |
 | :x: | 01_FileIO_DataStore.ipynb |
 | :x: | 02_FluxtoMag_and_Deredden.ipynb |
 | :white_check_mark: | 03_Hyperbolic_Magnitude.ipynb |
 | :white_check_mark: | 04_Iterate_Tabular_Data.ipynb |
-| :white_check_mark: | 05_Build_Save_Load_Run_Pipeline.ipynb |
+| :x: | 05_Build_Save_Load_Run_Pipeline.ipynb |
 | :x: | 06_Rail_Interfaces.ipynb |
 
 #### Creation Notebooks
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | 00_Quick_Start_in_Creation.ipynb |
-| :white_check_mark: | 01_Photometric_Realization.ipynb |
+| :x: | 00_Quick_Start_in_Creation.ipynb |
+| :x: | 01_Photometric_Realization.ipynb |
 | :white_check_mark: | 02_Photometric_Realization_with_Other_Surveys.ipynb |
 | :white_check_mark: | 03_GridSelection_for_HSC.ipynb |
 | :x: | 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb |
-| :white_check_mark: | 05_True_Posterior.ipynb |
+| :x: | 05_True_Posterior.ipynb |
 | :white_check_mark: | 06_Blending_Degrader.ipynb |
 | :x: | 07_DSPS_SED.ipynb |
 | :x: | 08_FSPS_SED.ipynb |
@@ -92,7 +92,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
 | :white_check_mark: | 08_NZDir_pipeline.ipynb |
-| :white_check_mark: | 09_PZFlow.ipynb |
+| :x: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
@@ -112,7 +112,7 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | Goldenspike.ipynb |
+| :x: | Goldenspike.ipynb |
 
 
 ### Interactive Notebooks
@@ -132,13 +132,13 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | Exploring_the_Effects_of_Degraders.ipynb |
 | :x: | FSPS_SED.ipynb |
 | :white_check_mark: | GridSelection_for_HSC.ipynb |
-| :white_check_mark: | Photometric_Realization.ipynb |
+| :x: | Photometric_Realization.ipynb |
 | :white_check_mark: | Photometric_Realization_with_Other_Surveys.ipynb |
-| :white_check_mark: | Quick_Start_in_Creation.ipynb |
+| :x: | Quick_Start_in_Creation.ipynb |
 | :x: | SOM_Spectroscopic_Selector.ipynb |
 | :white_check_mark: | Spatial_Variability.ipynb |
 | :white_check_mark: | Spectroscopic_Selection_for_zCOSMOS.ipynb |
-| :white_check_mark: | True_Posterior.ipynb |
+| :x: | True_Posterior.ipynb |
 
 #### Estimation Notebooks
 

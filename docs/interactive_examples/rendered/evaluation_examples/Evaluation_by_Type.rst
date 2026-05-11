@@ -60,7 +60,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260504T131147
+    /home/runner/.cache/lephare/runs/20260511T132952
 
 
 .. parsed-literal::
@@ -81,7 +81,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         exec(code, run_globals)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
@@ -119,7 +119,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4227/1627844557.py", line 13, in <module>
+      File "/tmp/ipykernel_4229/1627844557.py", line 13, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -213,15 +213,15 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 11988    0     0  26855      0  0:30:39 --:--:--  0:30:39 26818
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-     47 47.1M   47 22.4M    0     0  15.9M      0  0:00:02  0:00:01  0:00:01 15.9M
+      6 47.1M    6 3267k    0     0  2570k      0  0:00:18  0:00:01  0:00:17 2568k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  27.0M      0  0:00:01  0:00:01 --:--:-- 27.0M
+    100 47.1M  100 47.1M    0     0  22.6M      0  0:00:02  0:00:02 --:--:-- 22.6M
 
 
 .. code:: ipython3
@@ -310,14 +310,14 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 
 .. parsed-literal::
 
-    {'cvm': array([0.03717956, 0.15837746, 0.17907891, ..., 0.39890014, 0.24780873,
-            0.28090068], shape=(20449,)),
-     'ks': array([0.10860966, 0.0865847 , 0.06020201, ..., 0.11626526, 0.11004186,
-            0.0458032 ], shape=(20449,)),
+    {'cvm': array([0.09098969, 0.06840291, 0.05718762, ..., 0.11775189, 0.1452437 ,
+            0.22168521], shape=(20449,)),
+     'ks': array([0.05534353, 0.12562132, 0.09960829, ..., 0.03608353, 0.09310657,
+            0.11060109], shape=(20449,)),
      'rmse': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
      'kld': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
-     'ad': array([1.33892521, 0.73516951, 1.14316582, ..., 0.53547742, 0.34408738,
-            1.23676378], shape=(20449,))}
+     'ad': array([0.49087698, 2.82047899, 1.87101248, ..., 0.48475266, 1.43499566,
+            1.87842292], shape=(20449,))}
 
 
 
@@ -454,7 +454,7 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4227/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_4229/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       plt.legend()
 
 
@@ -955,6 +955,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

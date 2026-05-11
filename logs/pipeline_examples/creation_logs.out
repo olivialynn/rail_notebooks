@@ -1,6 +1,16 @@
 Rendering notebooks in group: creation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/creation_examples
 RENDERING: 01_Photometric_Realization
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
 RENDERING: 07_DSPS_SED
 
 File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/dsps/data_loaders/load_filter_data.py:68[0m, in [0;36mload_transmission_curve[0;34m(fn, bn_pat, drn)[0m
@@ -48,7 +58,27 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 [0;31mValueError[0m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
 
 RENDERING: 05_True_Posterior
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
 RENDERING: 00_Quick_Start_in_Creation
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
 RENDERING: 09_Spatial_Variability
 RENDERING: 06_Blending_Degrader
 RENDERING: 02_Photometric_Realization_with_Other_Surveys
@@ -56,24 +86,27 @@ RENDERING: 02_Photometric_Realization_with_Other_Surveys
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/03_GridSelection_for_HSC.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/09_Spatial_Variability.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
 
-4 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
-2. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
-3. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-4. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
+7 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
+4. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
+5. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
+6. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
+7. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
@@ -82,4 +115,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
     raise ValueError(
-ValueError: 4 out of 12 notebooks failed to render.
+ValueError: 7 out of 12 notebooks failed to render.

@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260504T122301
+    /home/runner/.cache/lephare/runs/20260511T124646
 
 
 .. parsed-literal::
@@ -79,7 +79,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         exec(code, run_globals)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
@@ -117,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5974/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_5680/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -253,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.144476</td>
-          <td>15.103271</td>
+          <td>24.656291</td>
+          <td>19.457180</td>
           <td>20.0</td>
-          <td>1.456455</td>
+          <td>1.119178</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.030269</td>
-          <td>21.665589</td>
+          <td>20.910769</td>
+          <td>15.630033</td>
           <td>20.0</td>
-          <td>1.708614</td>
+          <td>0.866439</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.403117</td>
-          <td>18.562844</td>
+          <td>22.723789</td>
+          <td>19.438972</td>
           <td>20.0</td>
-          <td>1.873868</td>
+          <td>0.071737</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.698560</td>
-          <td>19.739996</td>
+          <td>22.622376</td>
+          <td>20.990612</td>
           <td>20.0</td>
-          <td>0.299712</td>
+          <td>0.189934</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.668574</td>
-          <td>14.711401</td>
+          <td>19.584498</td>
+          <td>19.969111</td>
           <td>20.0</td>
-          <td>1.794966</td>
+          <td>0.328510</td>
         </tr>
       </tbody>
     </table>
@@ -345,19 +345,19 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 502488 entries, 3 to 1999998
+    Index: 503877 entries, 1 to 1999999
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         502488 non-null  float64
-     1   g         502488 non-null  float64
-     2   r         502488 non-null  float64
-     3   i         502488 non-null  float64
-     4   z         502488 non-null  float64
-     5   y         502488 non-null  float64
-     6   redshift  502488 non-null  float64
+     0   u         503877 non-null  float64
+     1   g         503877 non-null  float64
+     2   r         503877 non-null  float64
+     3   i         503877 non-null  float64
+     4   z         503877 non-null  float64
+     5   y         503877 non-null  float64
+     6   redshift  503877 non-null  float64
     dtypes: float64(7)
-    memory usage: 30.7 MB
+    memory usage: 30.8 MB
 
 
 And we see that we’ve kept 503967 out of the 2,000,000 galaxies in the

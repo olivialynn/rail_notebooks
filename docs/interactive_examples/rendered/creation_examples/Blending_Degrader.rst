@@ -56,7 +56,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         exec(code, run_globals)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel_launcher.py", line 18, in <module>
         app.launch_new_instance()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
         self.io_loop.start()
@@ -94,7 +94,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3949/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_4060/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -313,28 +313,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.00958903 0.00947733] / 0.009533179726778517
+    [0.00934513 0.00931235 0.00916263] / 0.009273368265771914
     
     Truth DEC / Blended DEC:
-    [0.02341319 0.0232915 ] / 0.023352341908262436
+    [0.02595876 0.02616115 0.02626161] / 0.02612717586397927
     
     Truth mag u / Blended mag u:
-    [28.98549545 27.90254616] / 27.561676386013026
+    [20.61388194 25.42148157 26.02928296] / 20.593702601237318
     
     Truth mag g / Blended mag g:
-    [22.58790051 21.70446568] / 21.306129173736444
+    [28.96476483 22.29577314 28.17494977] / 22.288631356223238
     
     Truth mag r / Blended mag r:
-    [25.74015855 20.80613545] / 20.794658730790744
+    [31.33449704 24.48519243 15.00327312] / 15.00309784355504
     
     Truth mag i / Blended mag i:
-    [26.68434502 26.79431927] / 25.985365340476413
+    [20.02697914 18.88520431 26.18788197] / 18.558909240699855
     
     Truth mag z / Blended mag z:
-    [24.59360031 22.40603258] / 22.270128370713838
+    [19.58125887 25.56301474 20.18332971] / 19.085721710751233
     
     Truth mag y / Blended mag y:
-    [30.87174768 22.57520881] / 22.574687611781485
+    [24.10997295 23.80208794 29.71743219] / 23.189916102542796
     
 
 

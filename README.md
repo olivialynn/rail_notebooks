@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** May 11, 2026
+**Tables last updated:** May 18, 2026
 
 
 ### Pipeline Notebooks
@@ -96,7 +96,7 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
-| :white_check_mark: | 13_Sampled_Summarizers.ipynb |
+| :x: | 13_Sampled_Summarizers.ipynb |
 | :white_check_mark: | 14_LePhare_LSST.ipynb |
 | :white_check_mark: | 15_LePhare_COSMOS.ipynb |
 | :white_check_mark: | 16_Running_with_different_data.ipynb |
@@ -129,7 +129,7 @@ See more info in each group's log file in `logs/`.
 |---|----------|
 | :white_check_mark: | Blending_Degrader.ipynb |
 | :x: | DSPS_SED.ipynb |
-| :white_check_mark: | Exploring_the_Effects_of_Degraders.ipynb |
+| :x: | Exploring_the_Effects_of_Degraders.ipynb |
 | :x: | FSPS_SED.ipynb |
 | :white_check_mark: | GridSelection_for_HSC.ipynb |
 | :x: | Photometric_Realization.ipynb |

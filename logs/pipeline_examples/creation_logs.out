@@ -1,51 +1,5 @@
 Rendering notebooks in group: creation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/creation_examples
-RENDERING: 01_Photometric_Realization
-[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
-[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
-[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
-[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
-[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
-
-[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
-
-RENDERING: 07_DSPS_SED
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/dsps/data_loaders/load_filter_data.py:68[0m, in [0;36mload_transmission_curve[0;34m(fn, bn_pat, drn)[0m
-[1;32m     65[0m     [38;5;28;01massert[39;00m [38;5;28mlen[39m(fn_list) [38;5;241m<[39m [38;5;241m2[39m, msg[38;5;241m.[39mformat(bn_pat, drn)
-[1;32m     66[0m     fn [38;5;241m=[39m fn_list[[38;5;241m0[39m]
-[0;32m---> 68[0m [38;5;28;01massert[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misfile(fn), [38;5;124m"[39m[38;5;132;01m{0}[39;00m[38;5;124m does not exist[39m[38;5;124m"[39m[38;5;241m.[39mformat(fn)
-[1;32m     69[0m [38;5;28;01mwith[39;00m h5py[38;5;241m.[39mFile(fn, [38;5;124m"[39m[38;5;124mr[39m[38;5;124m"[39m) [38;5;28;01mas[39;00m hdf:
-[1;32m     70[0m     wave [38;5;241m=[39m hdf[[38;5;124m"[39m[38;5;124mwave[39m[38;5;124m"[39m][[38;5;241m.[39m[38;5;241m.[39m[38;5;241m.[39m]
-
-[0;31mAssertionError[0m: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/dsps_default_data/filters/lsst_,_transmission.h5 does not exist
-
-RENDERING: 03_GridSelection_for_HSC
-RENDERING: 08_FSPS_SED
-[1;32m    670[0m         duste_umin[38;5;241m=[39mduste_umin[i],
-[1;32m    671[0m         duste_qpah[38;5;241m=[39mduste_qpah[i],
-[1;32m    672[0m         fagn[38;5;241m=[39mfagn[i],
-[1;32m    673[0m         agn_tau[38;5;241m=[39magn_tau[i],
-[1;32m    674[0m     )
-[1;32m    676[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39msfh_type [38;5;241m==[39m [38;5;241m3[39m:
-[1;32m    677[0m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
-
-[0;31mNameError[0m: name 'fsps' is not defined
-
-RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
-RENDERING: 10_SOM_Spectroscopic_Selector
-[1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
-[1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
-[1;32m    240[0m            [38;5;28mself[39m[38;5;241m.[39m_compact_support, [38;5;28mself[39m[38;5;241m.[39m_neighborhood [38;5;241m==[39m [38;5;124m"[39m[38;5;124mgaussian[39m[38;5;124m"[39m,
-[1;32m    241[0m            [38;5;28mself[39m[38;5;241m.[39m_std_coeff, [38;5;28mself[39m[38;5;241m.[39m_verbose, [38;5;28mself[39m[38;5;241m.[39mcodebook, [38;5;28mself[39m[38;5;241m.[39mbmus,
-[1;32m    242[0m            [38;5;28mself[39m[38;5;241m.[39mumatrix, [38;5;28mself[39m[38;5;241m.[39m_vect_distance)
-[1;32m    243[0m [38;5;28mself[39m[38;5;241m.[39mumatrix[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39m_n_rows, [38;5;28mself[39m[38;5;241m.[39m_n_columns)
-[1;32m    244[0m [38;5;28mself[39m[38;5;241m.[39mbmus[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39mn_vectors, [38;5;241m2[39m)
-
-[0;31mNameError[0m: name 'wrap_train' is not defined
-
 RENDERING: 04_Plotting_interface_skysim_cosmoDC2_COSMOS2020
 File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/GCRCatalogs/cosmodc2.py:128[0m, in [0;36mCosmoDC2ParentClass._subclass_init[0;34m(self, catalog_root_dir, catalog_filename_template, **kwargs)[0m
 [1;32m    125[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21m_subclass_init[39m([38;5;28mself[39m, catalog_root_dir, catalog_filename_template, [38;5;241m*[39m[38;5;241m*[39mkwargs):
@@ -57,16 +11,28 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 
 [0;31mValueError[0m: Catalog directory ^/xgal/skysim/skysim_v3.1.0 does not exist
 
-RENDERING: 05_True_Posterior
-[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+RENDERING: 03_GridSelection_for_HSC
+RENDERING: 07_DSPS_SED
 
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
-[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
-[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
-[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
-[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/dsps/data_loaders/load_filter_data.py:68[0m, in [0;36mload_transmission_curve[0;34m(fn, bn_pat, drn)[0m
+[1;32m     65[0m     [38;5;28;01massert[39;00m [38;5;28mlen[39m(fn_list) [38;5;241m<[39m [38;5;241m2[39m, msg[38;5;241m.[39mformat(bn_pat, drn)
+[1;32m     66[0m     fn [38;5;241m=[39m fn_list[[38;5;241m0[39m]
+[0;32m---> 68[0m [38;5;28;01massert[39;00m os[38;5;241m.[39mpath[38;5;241m.[39misfile(fn), [38;5;124m"[39m[38;5;132;01m{0}[39;00m[38;5;124m does not exist[39m[38;5;124m"[39m[38;5;241m.[39mformat(fn)
+[1;32m     69[0m [38;5;28;01mwith[39;00m h5py[38;5;241m.[39mFile(fn, [38;5;124m"[39m[38;5;124mr[39m[38;5;124m"[39m) [38;5;28;01mas[39;00m hdf:
+[1;32m     70[0m     wave [38;5;241m=[39m hdf[[38;5;124m"[39m[38;5;124mwave[39m[38;5;124m"[39m][[38;5;241m.[39m[38;5;241m.[39m[38;5;241m.[39m]
 
-[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+[0;31mAssertionError[0m: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/dsps_default_data/filters/lsst_,_transmission.h5 does not exist
+
+RENDERING: 10_SOM_Spectroscopic_Selector
+[1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
+[1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
+[1;32m    240[0m            [38;5;28mself[39m[38;5;241m.[39m_compact_support, [38;5;28mself[39m[38;5;241m.[39m_neighborhood [38;5;241m==[39m [38;5;124m"[39m[38;5;124mgaussian[39m[38;5;124m"[39m,
+[1;32m    241[0m            [38;5;28mself[39m[38;5;241m.[39m_std_coeff, [38;5;28mself[39m[38;5;241m.[39m_verbose, [38;5;28mself[39m[38;5;241m.[39mcodebook, [38;5;28mself[39m[38;5;241m.[39mbmus,
+[1;32m    242[0m            [38;5;28mself[39m[38;5;241m.[39mumatrix, [38;5;28mself[39m[38;5;241m.[39m_vect_distance)
+[1;32m    243[0m [38;5;28mself[39m[38;5;241m.[39mumatrix[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39m_n_rows, [38;5;28mself[39m[38;5;241m.[39m_n_columns)
+[1;32m    244[0m [38;5;28mself[39m[38;5;241m.[39mbmus[38;5;241m.[39mshape [38;5;241m=[39m ([38;5;28mself[39m[38;5;241m.[39mn_vectors, [38;5;241m2[39m)
+
+[0;31mNameError[0m: name 'wrap_train' is not defined
 
 RENDERING: 00_Quick_Start_in_Creation
 [0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
@@ -80,33 +46,67 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 [0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
 
 RENDERING: 09_Spatial_Variability
+RENDERING: 08_FSPS_SED
+[1;32m    670[0m         duste_umin[38;5;241m=[39mduste_umin[i],
+[1;32m    671[0m         duste_qpah[38;5;241m=[39mduste_qpah[i],
+[1;32m    672[0m         fagn[38;5;241m=[39mfagn[i],
+[1;32m    673[0m         agn_tau[38;5;241m=[39magn_tau[i],
+[1;32m    674[0m     )
+[1;32m    676[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39msfh_type [38;5;241m==[39m [38;5;241m3[39m:
+[1;32m    677[0m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+
+[0;31mNameError[0m: name 'fsps' is not defined
+
+RENDERING: 01_Photometric_Realization
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
 RENDERING: 06_Blending_Degrader
+RENDERING: 05_True_Posterior
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+
+RENDERING: 11_Spectroscopic_Selection_for_zCOSMOS
 RENDERING: 02_Photometric_Realization_with_Other_Surveys
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/03_GridSelection_for_HSC.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/03_GridSelection_for_HSC.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/09_Spatial_Variability.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/06_Blending_Degrader.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
+      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/11_Spectroscopic_Selection_for_zCOSMOS.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/02_Photometric_Realization_with_Other_Surveys.ipynb
 
 7 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
 2. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/07_DSPS_SED.ipynb
-3. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
-4. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
-5. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/04_Plotting_interface_skysim_cosmoDC2_COSMOS2020.ipynb
-6. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
-7. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/10_SOM_Spectroscopic_Selector.ipynb
+4. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/00_Quick_Start_in_Creation.ipynb
+5. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/08_FSPS_SED.ipynb
+6. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/01_Photometric_Realization.ipynb
+7. /home/runner/work/rail_notebooks/rail/pipeline_examples/creation_examples/05_True_Posterior.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

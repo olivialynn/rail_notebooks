@@ -94,7 +94,7 @@ in this demo we only take advantage of two specific estimators):
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260511T141859
+    /home/runner/.cache/lephare/runs/20260518T142506
 
 
 .. parsed-literal::
@@ -153,7 +153,7 @@ in this demo we only take advantage of two specific estimators):
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5067/4014131292.py", line 2, in <module>
+      File "/tmp/ipykernel_6469/4014131292.py", line 2, in <module>
         rail.stages.import_and_attach_all()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
@@ -409,15 +409,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 8.45 s, sys: 1.47 s, total: 9.92 s
-    Wall time: 9.91 s
+    CPU times: user 8.63 s, sys: 1.56 s, total: 10.2 s
+    Wall time: 10.2 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f8735d5feb0>
+    <rail.core.data.ModelHandle at 0x7f7219a1b370>
 
 
 
@@ -647,15 +647,15 @@ trained model for use with the estimation stage.
 
     Best bump = 0.08947368421052632, best sharpen = 1.2
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 57.4 s, sys: 511 ms, total: 57.9 s
-    Wall time: 1min
+    CPU times: user 58 s, sys: 689 ms, total: 58.7 s
+    Wall time: 1min 1s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7f873595f790>
+    <rail.core.data.ModelHandle at 0x7f72198eb280>
 
 
 
@@ -708,8 +708,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 185 μs, sys: 0 ns, total: 185 μs
-    Wall time: 189 μs
+    CPU times: user 164 μs, sys: 7 μs, total: 171 μs
+    Wall time: 175 μs
 
 
 
@@ -747,8 +747,8 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
 
 .. parsed-literal::
 
-    CPU times: user 11.2 s, sys: 124 ms, total: 11.3 s
-    Wall time: 11.4 s
+    CPU times: user 11.4 s, sys: 117 ms, total: 11.5 s
+    Wall time: 11.6 s
 
 
 We can calculate the median and mode values of the PDFs and plot their

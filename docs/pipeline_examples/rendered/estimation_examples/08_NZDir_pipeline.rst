@@ -89,8 +89,8 @@ Creating a pipeline with 2 process
 
     (({'NZDirInformer': <Job NZDirInformer>,
        'NZDirSummarizer': <Job NZDirSummarizer>},
-      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f151c307be0>,
-       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f151c304820>]),
+      [<rail.estimation.algos.nz_dir.NZDirInformer at 0x7f1eb46a3880>,
+       <rail.estimation.algos.nz_dir.NZDirSummarizer at 0x7f1e54616d70>]),
      {'output_dir': '.', 'log_dir': '.', 'resume': False})
 
 
@@ -145,7 +145,7 @@ Once the pipeline is saved, we execute it
     
     *************************************************
     Error running pipeline stage NZDirSummarizer.
-    Failed after 6.0 seconds.
+    Failed after 3.0 seconds.
     
     Standard output and error streams in ./NZDirSummarizer.out
     *************************************************
@@ -180,7 +180,7 @@ Reading the output
 
 .. parsed-literal::
 
-    <matplotlib.legend.Legend at 0x7f14bde0ee00>
+    <matplotlib.legend.Legend at 0x7f1e531636d0>
 
 
 

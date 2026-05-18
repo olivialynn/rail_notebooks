@@ -1,5 +1,4 @@
 Rendering notebooks in group: goldenspike...
-Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/goldenspike_examples
 RENDERING: Goldenspike
 [0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
 

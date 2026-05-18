@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260511T124646
+    /home/runner/.cache/lephare/runs/20260518T131208
 
 
 .. parsed-literal::
@@ -117,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5680/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_4475/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -253,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>24.656291</td>
-          <td>19.457180</td>
+          <td>19.315343</td>
+          <td>18.234651</td>
           <td>20.0</td>
-          <td>1.119178</td>
+          <td>1.410984</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.910769</td>
-          <td>15.630033</td>
+          <td>18.057878</td>
+          <td>21.528656</td>
           <td>20.0</td>
-          <td>0.866439</td>
+          <td>0.015302</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.723789</td>
-          <td>19.438972</td>
+          <td>25.113438</td>
+          <td>19.267121</td>
           <td>20.0</td>
-          <td>0.071737</td>
+          <td>0.454130</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.622376</td>
-          <td>20.990612</td>
+          <td>23.667867</td>
+          <td>15.805084</td>
           <td>20.0</td>
-          <td>0.189934</td>
+          <td>0.231741</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.584498</td>
-          <td>19.969111</td>
+          <td>21.862115</td>
+          <td>21.353733</td>
           <td>20.0</td>
-          <td>0.328510</td>
+          <td>0.664682</td>
         </tr>
       </tbody>
     </table>
@@ -333,8 +333,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.43 s, sys: 19.4 ms, total: 1.45 s
-    Wall time: 1.44 s
+    CPU times: user 999 ms, sys: 18.6 ms, total: 1.02 s
+    Wall time: 1.01 s
 
 
 .. code:: ipython3
@@ -345,19 +345,19 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503877 entries, 1 to 1999999
+    Index: 503802 entries, 1 to 1999997
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503877 non-null  float64
-     1   g         503877 non-null  float64
-     2   r         503877 non-null  float64
-     3   i         503877 non-null  float64
-     4   z         503877 non-null  float64
-     5   y         503877 non-null  float64
-     6   redshift  503877 non-null  float64
+     0   u         503802 non-null  float64
+     1   g         503802 non-null  float64
+     2   r         503802 non-null  float64
+     3   i         503802 non-null  float64
+     4   z         503802 non-null  float64
+     5   y         503802 non-null  float64
+     6   redshift  503802 non-null  float64
     dtypes: float64(7)
-    memory usage: 30.8 MB
+    memory usage: 30.7 MB
 
 
 And we see that we’ve kept 503967 out of the 2,000,000 galaxies in the

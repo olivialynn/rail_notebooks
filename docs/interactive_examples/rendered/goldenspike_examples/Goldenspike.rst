@@ -124,7 +124,7 @@ ensemble n(z) estimates.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3760/1750766246.py", line 2, in <module>
+      File "/tmp/ipykernel_3945/1750766246.py", line 2, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -247,152 +247,152 @@ engine for the notebook.
 
 .. parsed-literal::
 
-    (1) 0.6520
+    (1) 1.4431
 
 
 .. parsed-literal::
 
-    (2) -0.5447
+    (2) -0.0247
 
 
 .. parsed-literal::
 
-    (3) -1.1237
+    (3) -1.2539
 
 
 .. parsed-literal::
 
-    (4) -2.2452
+    (4) -1.4070
 
 
 .. parsed-literal::
 
-    (5) -0.9087
+    (5) -2.0570
 
 
 .. parsed-literal::
 
-    (6) -2.6153
+    (6) -0.5525
 
 
 .. parsed-literal::
 
-    (7) -3.0003
+    (7) -1.6905
 
 
 .. parsed-literal::
 
-    (8) -2.0957
+    (8) -1.7447
 
 
 .. parsed-literal::
 
-    (9) -3.0565
+    (9) -2.6114
 
 
 .. parsed-literal::
 
-    (10) -2.7510
+    (10) -3.0154
 
 
 .. parsed-literal::
 
-    (11) -2.4835
+    (11) -2.6144
 
 
 .. parsed-literal::
 
-    (12) -3.3952
+    (12) -2.3561
 
 
 .. parsed-literal::
 
-    (13) -2.1304
+    (13) -3.0956
 
 
 .. parsed-literal::
 
-    (14) -3.4847
+    (14) -3.3651
 
 
 .. parsed-literal::
 
-    (15) -3.4766
+    (15) -3.3584
 
 
 .. parsed-literal::
 
-    (16) -3.0520
+    (16) -3.6009
 
 
 .. parsed-literal::
 
-    (17) -2.2952
+    (17) -3.2523
 
 
 .. parsed-literal::
 
-    (18) -3.6583
+    (18) -3.4311
 
 
 .. parsed-literal::
 
-    (19) -4.3161
+    (19) -3.7140
 
 
 .. parsed-literal::
 
-    (20) -4.3173
+    (20) -2.5754
 
 
 .. parsed-literal::
 
-    (21) -4.1139
+    (21) -3.7610
 
 
 .. parsed-literal::
 
-    (22) -4.1250
+    (22) -4.3439
 
 
 .. parsed-literal::
 
-    (23) -3.4916
+    (23) -4.2062
 
 
 .. parsed-literal::
 
-    (24) -4.3064
+    (24) -4.0795
 
 
 .. parsed-literal::
 
-    (25) -3.4034
+    (25) -3.8448
 
 
 .. parsed-literal::
 
-    (26) -4.6735
+    (26) -4.5009
 
 
 .. parsed-literal::
 
-    (27) -4.3018
+    (27) -4.4987
 
 
 .. parsed-literal::
 
-    (28) -4.7525
+    (28) -3.8959
 
 
 .. parsed-literal::
 
-    (29) -4.5583
+    (29) -4.4735
 
 
 .. parsed-literal::
 
-    (30) -4.7738
+    (30) -4.3248
 
 
 .. parsed-literal::
@@ -444,7 +444,7 @@ notebook.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f8488a953c0>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f1124a86da0>, FlowCreator
 
 
 .. parsed-literal::
@@ -586,83 +586,83 @@ quick writeout of the columns:
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.242838</td>
-          <td>25.113348</td>
-          <td>0.119465</td>
-          <td>25.024177</td>
-          <td>0.037825</td>
-          <td>24.977014</td>
-          <td>0.031858</td>
-          <td>24.690140</td>
-          <td>0.040322</td>
-          <td>24.073465</td>
-          <td>0.044711</td>
-          <td>23.791711</td>
-          <td>0.078676</td>
+          <td>1.248485</td>
+          <td>25.048114</td>
+          <td>0.112895</td>
+          <td>24.944219</td>
+          <td>0.035251</td>
+          <td>24.921420</td>
+          <td>0.030338</td>
+          <td>24.687588</td>
+          <td>0.040231</td>
+          <td>24.138941</td>
+          <td>0.047386</td>
+          <td>23.883616</td>
+          <td>0.085318</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.228952</td>
-          <td>25.975207</td>
-          <td>0.247749</td>
-          <td>25.191938</td>
-          <td>0.043868</td>
-          <td>24.756894</td>
-          <td>0.026272</td>
-          <td>24.486493</td>
-          <td>0.033676</td>
-          <td>24.418759</td>
-          <td>0.060745</td>
-          <td>24.251326</td>
-          <td>0.117732</td>
+          <td>0.172574</td>
+          <td>25.694922</td>
+          <td>0.196295</td>
+          <td>24.839049</td>
+          <td>0.032139</td>
+          <td>24.455223</td>
+          <td>0.020263</td>
+          <td>24.191211</td>
+          <td>0.025993</td>
+          <td>24.144067</td>
+          <td>0.047602</td>
+          <td>24.016677</td>
+          <td>0.095906</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.062717</td>
-          <td>25.650095</td>
-          <td>0.189035</td>
-          <td>25.715295</td>
-          <td>0.069720</td>
-          <td>25.443896</td>
-          <td>0.048162</td>
-          <td>24.830244</td>
-          <td>0.045658</td>
-          <td>24.356002</td>
-          <td>0.057455</td>
-          <td>24.151387</td>
-          <td>0.107910</td>
+          <td>1.059188</td>
+          <td>25.593806</td>
+          <td>0.180269</td>
+          <td>25.627679</td>
+          <td>0.064522</td>
+          <td>25.362364</td>
+          <td>0.044799</td>
+          <td>24.776338</td>
+          <td>0.043525</td>
+          <td>24.302786</td>
+          <td>0.054805</td>
+          <td>24.122026</td>
+          <td>0.105177</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.781089</td>
-          <td>26.513461</td>
-          <td>0.380987</td>
-          <td>25.384487</td>
-          <td>0.052023</td>
-          <td>23.587306</td>
-          <td>0.010275</td>
-          <td>22.380700</td>
-          <td>0.007079</td>
-          <td>21.676435</td>
-          <td>0.007179</td>
-          <td>21.400308</td>
-          <td>0.010418</td>
+          <td>1.116981</td>
+          <td>25.977287</td>
+          <td>0.248173</td>
+          <td>25.065962</td>
+          <td>0.039246</td>
+          <td>24.146070</td>
+          <td>0.015669</td>
+          <td>23.496886</td>
+          <td>0.014507</td>
+          <td>22.710536</td>
+          <td>0.013918</td>
+          <td>22.212429</td>
+          <td>0.019646</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.392721</td>
-          <td>24.933812</td>
-          <td>0.102211</td>
-          <td>24.114490</td>
-          <td>0.017295</td>
-          <td>22.957633</td>
-          <td>0.007156</td>
-          <td>21.929488</td>
-          <td>0.006031</td>
-          <td>21.544731</td>
-          <td>0.006785</td>
-          <td>21.327006</td>
-          <td>0.009912</td>
+          <td>0.729585</td>
+          <td>25.754234</td>
+          <td>0.206293</td>
+          <td>24.798381</td>
+          <td>0.031014</td>
+          <td>23.123642</td>
+          <td>0.007758</td>
+          <td>21.860321</td>
+          <td>0.005924</td>
+          <td>21.234992</td>
+          <td>0.006103</td>
+          <td>20.977812</td>
+          <td>0.008017</td>
         </tr>
       </tbody>
     </table>
@@ -696,7 +696,7 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f8488a953c0>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f1124a86da0>, FlowCreator
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
 
 
@@ -726,7 +726,7 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f8488a953c0>, FlowPosterior
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f1124a86da0>, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
@@ -737,14 +737,19 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [7] have an integral of 0.
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 7 27 89] have an integral of 0.
       warnings.warn(
     /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
       new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
     /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
-           17, 18, 19, 20]))
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,
+            7,  7,  7,  7, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27,
+           27, 27, 27, 27, 27, 27, 27, 27, 89, 89, 89, 89, 89, 89, 89, 89, 89,
+           89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
+           17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
+           13, 14, 15, 16, 17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,
+            9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]))
       warnings.warn(
 
 
@@ -820,83 +825,83 @@ For the test sample we will:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.640352</td>
-          <td>25.247582</td>
-          <td>0.134148</td>
-          <td>24.281295</td>
-          <td>0.019869</td>
-          <td>23.203382</td>
-          <td>0.008096</td>
-          <td>22.292925</td>
-          <td>0.006819</td>
-          <td>21.988840</td>
-          <td>0.008439</td>
-          <td>21.689685</td>
-          <td>0.012866</td>
+          <td>0.558813</td>
+          <td>24.764794</td>
+          <td>0.088183</td>
+          <td>23.570155</td>
+          <td>0.011343</td>
+          <td>22.239975</td>
+          <td>0.005700</td>
+          <td>21.366162</td>
+          <td>0.005417</td>
+          <td>21.001081</td>
+          <td>0.005760</td>
+          <td>20.705326</td>
+          <td>0.007017</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.718805</td>
-          <td>26.241281</td>
-          <td>0.307422</td>
-          <td>26.170731</td>
-          <td>0.104060</td>
-          <td>25.651589</td>
-          <td>0.057915</td>
-          <td>25.022003</td>
-          <td>0.054134</td>
-          <td>24.797347</td>
-          <td>0.084903</td>
-          <td>24.726286</td>
-          <td>0.177118</td>
+          <td>0.750511</td>
+          <td>26.077371</td>
+          <td>0.269328</td>
+          <td>26.104339</td>
+          <td>0.098189</td>
+          <td>25.669234</td>
+          <td>0.058829</td>
+          <td>25.015138</td>
+          <td>0.053805</td>
+          <td>24.782854</td>
+          <td>0.083825</td>
+          <td>24.707658</td>
+          <td>0.174339</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.940856</td>
-          <td>26.727667</td>
-          <td>0.448790</td>
-          <td>26.133416</td>
-          <td>0.100720</td>
-          <td>25.544442</td>
-          <td>0.052660</td>
-          <td>24.907585</td>
-          <td>0.048904</td>
-          <td>24.472642</td>
-          <td>0.063718</td>
-          <td>24.179363</td>
-          <td>0.110578</td>
+          <td>0.902206</td>
+          <td>26.352164</td>
+          <td>0.335774</td>
+          <td>25.835499</td>
+          <td>0.077524</td>
+          <td>25.296516</td>
+          <td>0.042257</td>
+          <td>24.610552</td>
+          <td>0.037578</td>
+          <td>24.239847</td>
+          <td>0.051827</td>
+          <td>24.004230</td>
+          <td>0.094864</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.646883</td>
-          <td>28.471068</td>
-          <td>1.374725</td>
-          <td>29.290039</td>
-          <td>1.107126</td>
-          <td>28.055213</td>
-          <td>0.438828</td>
-          <td>26.923748</td>
-          <td>0.278668</td>
-          <td>25.899981</td>
-          <td>0.219369</td>
-          <td>26.885128</td>
-          <td>0.900753</td>
+          <td>1.533603</td>
+          <td>28.410844</td>
+          <td>1.331831</td>
+          <td>29.057433</td>
+          <td>0.964300</td>
+          <td>27.942524</td>
+          <td>0.402661</td>
+          <td>26.717088</td>
+          <td>0.235251</td>
+          <td>25.807358</td>
+          <td>0.203026</td>
+          <td>26.264160</td>
+          <td>0.594865</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>2.213605</td>
-          <td>28.998311</td>
-          <td>1.777254</td>
-          <td>26.764606</td>
-          <td>0.173680</td>
-          <td>26.838444</td>
-          <td>0.163560</td>
-          <td>26.757056</td>
-          <td>0.243145</td>
-          <td>25.952024</td>
-          <td>0.229066</td>
-          <td>25.596833</td>
-          <td>0.361208</td>
+          <td>2.207015</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>27.156611</td>
+          <td>0.241165</td>
+          <td>27.469417</td>
+          <td>0.276882</td>
+          <td>27.497233</td>
+          <td>0.437373</td>
+          <td>26.333349</td>
+          <td>0.312570</td>
+          <td>26.030642</td>
+          <td>0.502436</td>
         </tr>
       </tbody>
     </table>
@@ -935,7 +940,7 @@ an SED template library for a template-fitting or hybrid estimator.
     Inserting handle into data store.  input: None, BPZliteInformer
     Inserting handle into data store.  model: inprogress_model.pkl, BPZliteInformer
     Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 34 training and 12 validation samples
+    split into 33 training and 11 validation samples
     finding best fit sigma and NNeigh...
     
     
@@ -946,6 +951,10 @@ an SED template library for a template-fitting or hybrid estimator.
     
     Inserting handle into data store.  model: inprogress_model.pkl, KNearNeighInformer
     Inserting handle into data store.  input: None, FlexZBoostInformer
+
+
+.. parsed-literal::
+
     stacking some data...
     read in training data
     fit the model...
@@ -968,7 +977,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    Best bump = 0.35, best sharpen = 1.4
+    Best bump = 0.12421052631578948, best sharpen = 1.2
     Inserting handle into data store.  model: inprogress_model.pkl, FlexZBoostInformer
 
 
@@ -1022,6 +1031,10 @@ using the training data. See `Izbicki & Lee
     El_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_u.AB
       Generating new AB file El_B2004a.DC2LSST_g.AB....
     El_B2004a DC2LSST_g
@@ -1036,6 +1049,10 @@ using the training data. See `Izbicki & Lee
     El_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_r.AB
       Generating new AB file El_B2004a.DC2LSST_i.AB....
     El_B2004a DC2LSST_i
@@ -1050,6 +1067,10 @@ using the training data. See `Izbicki & Lee
     El_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/El_B2004a.DC2LSST_z.AB
       Generating new AB file El_B2004a.DC2LSST_y.AB....
     El_B2004a DC2LSST_y
@@ -1064,6 +1085,10 @@ using the training data. See `Izbicki & Lee
     Sbc_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_u.AB
       Generating new AB file Sbc_B2004a.DC2LSST_g.AB....
     Sbc_B2004a DC2LSST_g
@@ -1078,6 +1103,10 @@ using the training data. See `Izbicki & Lee
     Sbc_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_r.AB
       Generating new AB file Sbc_B2004a.DC2LSST_i.AB....
     Sbc_B2004a DC2LSST_i
@@ -1092,6 +1121,10 @@ using the training data. See `Izbicki & Lee
     Sbc_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Sbc_B2004a.DC2LSST_z.AB
       Generating new AB file Sbc_B2004a.DC2LSST_y.AB....
     Sbc_B2004a DC2LSST_y
@@ -1106,6 +1139,10 @@ using the training data. See `Izbicki & Lee
     Scd_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_u.AB
       Generating new AB file Scd_B2004a.DC2LSST_g.AB....
     Scd_B2004a DC2LSST_g
@@ -1120,6 +1157,10 @@ using the training data. See `Izbicki & Lee
     Scd_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_r.AB
       Generating new AB file Scd_B2004a.DC2LSST_i.AB....
     Scd_B2004a DC2LSST_i
@@ -1134,6 +1175,10 @@ using the training data. See `Izbicki & Lee
     Scd_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Scd_B2004a.DC2LSST_z.AB
       Generating new AB file Scd_B2004a.DC2LSST_y.AB....
     Scd_B2004a DC2LSST_y
@@ -1148,6 +1193,10 @@ using the training data. See `Izbicki & Lee
     Im_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_u.AB
       Generating new AB file Im_B2004a.DC2LSST_g.AB....
     Im_B2004a DC2LSST_g
@@ -1162,6 +1211,10 @@ using the training data. See `Izbicki & Lee
     Im_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_r.AB
       Generating new AB file Im_B2004a.DC2LSST_i.AB....
     Im_B2004a DC2LSST_i
@@ -1176,6 +1229,10 @@ using the training data. See `Izbicki & Lee
     Im_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/Im_B2004a.DC2LSST_z.AB
       Generating new AB file Im_B2004a.DC2LSST_y.AB....
     Im_B2004a DC2LSST_y
@@ -1190,6 +1247,10 @@ using the training data. See `Izbicki & Lee
     SB3_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_u.AB
       Generating new AB file SB3_B2004a.DC2LSST_g.AB....
     SB3_B2004a DC2LSST_g
@@ -1204,6 +1265,10 @@ using the training data. See `Izbicki & Lee
     SB3_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_r.AB
       Generating new AB file SB3_B2004a.DC2LSST_i.AB....
     SB3_B2004a DC2LSST_i
@@ -1218,6 +1283,10 @@ using the training data. See `Izbicki & Lee
     SB3_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB3_B2004a.DC2LSST_z.AB
       Generating new AB file SB3_B2004a.DC2LSST_y.AB....
     SB3_B2004a DC2LSST_y
@@ -1232,6 +1301,10 @@ using the training data. See `Izbicki & Lee
     SB2_B2004a DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_u.AB
       Generating new AB file SB2_B2004a.DC2LSST_g.AB....
     SB2_B2004a DC2LSST_g
@@ -1246,6 +1319,10 @@ using the training data. See `Izbicki & Lee
     SB2_B2004a DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_r.AB
       Generating new AB file SB2_B2004a.DC2LSST_i.AB....
     SB2_B2004a DC2LSST_i
@@ -1260,6 +1337,10 @@ using the training data. See `Izbicki & Lee
     SB2_B2004a DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/SB2_B2004a.DC2LSST_z.AB
       Generating new AB file SB2_B2004a.DC2LSST_y.AB....
     SB2_B2004a DC2LSST_y
@@ -1274,6 +1355,10 @@ using the training data. See `Izbicki & Lee
     ssp_25Myr_z008 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_u.AB
       Generating new AB file ssp_25Myr_z008.DC2LSST_g.AB....
     ssp_25Myr_z008 DC2LSST_g
@@ -1288,6 +1373,10 @@ using the training data. See `Izbicki & Lee
     ssp_25Myr_z008 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_r.AB
       Generating new AB file ssp_25Myr_z008.DC2LSST_i.AB....
     ssp_25Myr_z008 DC2LSST_i
@@ -1302,6 +1391,10 @@ using the training data. See `Izbicki & Lee
     ssp_25Myr_z008 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_25Myr_z008.DC2LSST_z.AB
       Generating new AB file ssp_25Myr_z008.DC2LSST_y.AB....
     ssp_25Myr_z008 DC2LSST_y
@@ -1316,6 +1409,10 @@ using the training data. See `Izbicki & Lee
     ssp_5Myr_z008 DC2LSST_u
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_u.AB
       Generating new AB file ssp_5Myr_z008.DC2LSST_g.AB....
     ssp_5Myr_z008 DC2LSST_g
@@ -1330,6 +1427,10 @@ using the training data. See `Izbicki & Lee
     ssp_5Myr_z008 DC2LSST_r
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_r.AB
       Generating new AB file ssp_5Myr_z008.DC2LSST_i.AB....
     ssp_5Myr_z008 DC2LSST_i
@@ -1344,6 +1445,10 @@ using the training data. See `Izbicki & Lee
     ssp_5Myr_z008 DC2LSST_z
     x_res[0] 3000.0
     x_res[-1] 11500.0
+
+
+.. parsed-literal::
+
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_z.AB
       Generating new AB file ssp_5Myr_z008.DC2LSST_y.AB....
     ssp_5Myr_z008 DC2LSST_y
@@ -1361,16 +1466,15 @@ using the training data. See `Izbicki & Lee
 .. parsed-literal::
 
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x56514e8c7650>, 'bestsig': np.float64(0.075), 'nneigh': 7, 'truezs': array([1.24283767, 0.22895248, 1.06271672, 0.78108948, 1.3927211 ,
-           1.37711191, 0.23441131, 0.46435353, 0.43104923, 0.76381856,
-           1.01513505, 0.62745124, 0.46593055, 0.70397484, 0.37883413,
-           1.2033819 , 1.76651287, 0.8703745 , 0.87095761, 0.52330321,
-           1.7357802 , 0.92489302, 0.89708531, 1.17130756, 0.79670662,
-           0.20855731, 0.56129444, 0.42860401, 0.98008621, 0.18994072,
-           0.4796893 , 2.17905404, 1.01519871, 0.73904616, 1.2374568 ,
-           0.78263283, 0.89657551, 0.20920752, 1.21324003, 1.74117535,
-           1.28061306, 0.11741922, 0.39583004, 0.75850296, 0.42948338,
-           0.29874933]), 'only_colors': False}, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x558731ae0c80>, 'bestsig': np.float64(0.075), 'nneigh': 7, 'truezs': array([1.24848473, 0.17257373, 1.05918765, 1.11698127, 0.72958469,
+           2.0794707 , 0.22092588, 0.29599017, 0.29740044, 0.45903644,
+           0.4143995 , 0.46935967, 0.33912238, 0.69080484, 0.41091365,
+           0.84274709, 0.81424224, 0.43857667, 1.03579164, 1.46242604,
+           0.36942825, 0.7169016 , 0.15013102, 0.76031083, 0.52148837,
+           0.37467706, 0.17641734, 0.47197208, 1.37685966, 2.37884083,
+           0.73172015, 0.52681112, 1.25423026, 0.74375266, 0.8230558 ,
+           0.12460821, 1.02158034, 1.53087509, 0.11890943, 0.42126921,
+           0.80016905, 0.73088247, 0.41537255, 0.31980702]), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
     Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
@@ -1379,7 +1483,7 @@ using the training data. See `Izbicki & Lee
 .. parsed-literal::
 
     Inserting handle into data store.  test_data: None, FlexZBoostEstimator
-    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f83fcd7f790>, FlexZBoostEstimator
+    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f10a0aa1c90>, FlexZBoostEstimator
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
     Inserting handle into data store.  fzboost_estim: inprogress_fzboost_estim.hdf5, FlexZBoostEstimator
@@ -1439,30 +1543,30 @@ dictionary, keyed by the name of the estimator.
 
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.640352   25.168390   24.283142   23.186247   22.283363   21.982437   
-    1    0.718805   26.541204   26.183083   25.626493   25.004520   24.778290   
-    2    0.940856   26.357170   26.058905   25.540985   24.893654   24.409941   
-    3    1.646883   29.811806   28.482990   27.859926   26.944519   26.227974   
-    4    2.213605   28.039825   27.283306   26.743887   26.435787   26.058645   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.315559   25.107685   24.025940   23.163746   22.892872   22.666174   
-    146  0.966927   24.771395   24.477812   23.698265   22.866850   22.221828   
-    147  2.209504   26.253962   25.949041   25.615923   25.553194   25.359169   
-    148  0.777675   25.568367   24.273769   22.684782   21.446318   20.945587   
-    149  1.194443   28.250896   27.367151   26.534557   25.937840   25.106590   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.686811  
-    1     24.667860  
-    2     24.198767  
-    3     25.746237  
-    4     25.565403  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   22.588453  
-    146   21.938881  
-    147   24.927837  
-    148   20.696480  
-    149   24.759459  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1471,30 +1575,30 @@ dictionary, keyed by the name of the estimator.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.640352   25.168390   24.283142   23.186247   22.283363   21.982437   
-    1    0.718805   26.541204   26.183083   25.626493   25.004520   24.778290   
-    2    0.940856   26.357170   26.058905   25.540985   24.893654   24.409941   
-    3    1.646883   29.811806   28.482990   27.859926   26.944519   26.227974   
-    4    2.213605   28.039825   27.283306   26.743887   26.435787   26.058645   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.315559   25.107685   24.025940   23.163746   22.892872   22.666174   
-    146  0.966927   24.771395   24.477812   23.698265   22.866850   22.221828   
-    147  2.209504   26.253962   25.949041   25.615923   25.553194   25.359169   
-    148  0.777675   25.568367   24.273769   22.684782   21.446318   20.945587   
-    149  1.194443   28.250896   27.367151   26.534557   25.937840   25.106590   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.686811  
-    1     24.667860  
-    2     24.198767  
-    3     25.746237  
-    4     25.565403  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   22.588453  
-    146   21.938881  
-    147   24.927837  
-    148   20.696480  
-    149   24.759459  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1503,30 +1607,30 @@ dictionary, keyed by the name of the estimator.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.640352   25.168390   24.283142   23.186247   22.283363   21.982437   
-    1    0.718805   26.541204   26.183083   25.626493   25.004520   24.778290   
-    2    0.940856   26.357170   26.058905   25.540985   24.893654   24.409941   
-    3    1.646883   29.811806   28.482990   27.859926   26.944519   26.227974   
-    4    2.213605   28.039825   27.283306   26.743887   26.435787   26.058645   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.315559   25.107685   24.025940   23.163746   22.892872   22.666174   
-    146  0.966927   24.771395   24.477812   23.698265   22.866850   22.221828   
-    147  2.209504   26.253962   25.949041   25.615923   25.553194   25.359169   
-    148  0.777675   25.568367   24.273769   22.684782   21.446318   20.945587   
-    149  1.194443   28.250896   27.367151   26.534557   25.937840   25.106590   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.686811  
-    1     24.667860  
-    2     24.198767  
-    3     25.746237  
-    4     25.565403  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   22.588453  
-    146   21.938881  
-    147   24.927837  
-    148   20.696480  
-    149   24.759459  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1545,14 +1649,14 @@ dictionary, keyed by the name of the estimator.
 .. parsed-literal::
 
     {'bpz': {'output': {},
-      'summary': {'cdeloss': array([-1.11386716]), 'brier': array([225.23365406])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 97))}},
+      'summary': {'cdeloss': array([-1.24960443]), 'brier': array([232.08179731])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 94))}},
      'fzboost': {'output': {},
-      'summary': {'cdeloss': array([0.59136676]), 'brier': array([238.59815604])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 78))}},
+      'summary': {'cdeloss': array([0.9731937]), 'brier': array([432.69869216])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 81))}},
      'knn': {'output': {},
-      'summary': {'cdeloss': array([-0.94234134]), 'brier': array([137.82648414])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 95))}}}
+      'summary': {'cdeloss': array([-1.09840301]), 'brier': array([151.28975485])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 93))}}}
 
 
 
@@ -1601,8 +1705,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.942341</td>
-          <td>137.826484</td>
+          <td>-1.098403</td>
+          <td>151.289755</td>
         </tr>
       </tbody>
     </table>
@@ -1644,8 +1748,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.591367</td>
-          <td>238.598156</td>
+          <td>0.973194</td>
+          <td>432.698692</td>
         </tr>
       </tbody>
     </table>
@@ -1687,8 +1791,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-1.113867</td>
-          <td>225.233654</td>
+          <td>-1.249604</td>
+          <td>232.081797</td>
         </tr>
       </tbody>
     </table>
@@ -1717,6 +1821,10 @@ First we make the stages, then execute them, then plot the output.
 
     Inserting handle into data store.  input: None, PointEstHistSummarizer
     Process 0 running estimator on chunk 0 - 150
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output: inprogress_output.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  single_NZ: inprogress_single_NZ.hdf5, PointEstHistSummarizer
     Inserting handle into data store.  input: None, NaiveStackSummarizer

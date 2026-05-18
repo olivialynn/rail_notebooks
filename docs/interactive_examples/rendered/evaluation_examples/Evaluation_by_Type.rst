@@ -60,7 +60,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260511T132952
+    /home/runner/.cache/lephare/runs/20260518T134808
 
 
 .. parsed-literal::
@@ -119,7 +119,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4229/1627844557.py", line 13, in <module>
+      File "/tmp/ipykernel_4181/1627844557.py", line 13, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -209,19 +209,19 @@ This will load (and download if needed) two files:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      1 47.1M    1  893k    0     0   814k      0  0:00:59  0:00:01  0:00:58  814k
 
 .. parsed-literal::
 
-      6 47.1M    6 3267k    0     0  2570k      0  0:00:18  0:00:01  0:00:17 2568k
+     66 47.1M   66 31.3M    0     0  14.9M      0  0:00:03  0:00:02  0:00:01 14.9M
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  22.6M      0  0:00:02  0:00:02 --:--:-- 22.6M
+    100 47.1M  100 47.1M    0     0  20.2M      0  0:00:02  0:00:02 --:--:-- 20.2M
 
 
 .. code:: ipython3
@@ -310,14 +310,14 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 
 .. parsed-literal::
 
-    {'cvm': array([0.09098969, 0.06840291, 0.05718762, ..., 0.11775189, 0.1452437 ,
-            0.22168521], shape=(20449,)),
-     'ks': array([0.05534353, 0.12562132, 0.09960829, ..., 0.03608353, 0.09310657,
-            0.11060109], shape=(20449,)),
+    {'cvm': array([0.05492298, 0.95250365, 0.49763767, ..., 0.31527975, 0.28891067,
+            0.0469005 ], shape=(20449,)),
+     'ks': array([0.0680552 , 0.0865847 , 0.10150909, ..., 0.11718385, 0.05706086,
+            0.09992982], shape=(20449,)),
      'rmse': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
      'kld': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
-     'ad': array([0.49087698, 2.82047899, 1.87101248, ..., 0.48475266, 1.43499566,
-            1.87842292], shape=(20449,))}
+     'ad': array([0.2386657 , 1.10847784, 0.61381628, ..., 0.60684432, 0.87861606,
+            1.4845293 ], shape=(20449,))}
 
 
 
@@ -454,7 +454,7 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4229/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_4181/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       plt.legend()
 
 

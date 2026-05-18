@@ -111,7 +111,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3983/3393143206.py", line 4, in <module>
+      File "/tmp/ipykernel_3945/3393143206.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -219,15 +219,19 @@ Next we need to set up some paths for the Data Store:
 
 .. parsed-literal::
 
-      0 47.1M    0 93908    0     0   104k      0  0:07:43 --:--:--  0:07:43  104k
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      9 47.1M    9 4819k    0     0  2552k      0  0:00:18  0:00:01  0:00:17 2551k
+      2 47.1M    2 1057k    0     0   816k      0  0:00:59  0:00:01  0:00:58  816k
 
 .. parsed-literal::
 
-    100 47.1M  100 47.1M    0     0  17.5M      0  0:00:02  0:00:02 --:--:-- 17.5M
+     67 47.1M   67 31.7M    0     0  13.9M      0  0:00:03  0:00:02  0:00:01 13.9M
+
+.. parsed-literal::
+
+    100 47.1M  100 47.1M    0     0  18.7M      0  0:00:02  0:00:02 --:--:-- 18.7M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -627,10 +631,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

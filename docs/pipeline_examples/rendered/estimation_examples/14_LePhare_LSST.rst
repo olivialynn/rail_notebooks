@@ -74,11 +74,6 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
     Downloading file 'examples/output.para' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/examples/output.para' to '/home/runner/.cache/lephare/data'.
 
 
@@ -94,12 +89,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau01.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau01.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -109,7 +104,29 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
+    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
     Downloading file 'opa/tau04.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau04.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/ext
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/filt/lsst
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Checking/downloading 421 files...
 
 
 .. parsed-literal::
@@ -124,29 +141,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau07.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau07.out' to '/home/runner/.cache/lephare/data'.
-
-
-.. parsed-literal::
-
-    Created directory: /home/runner/.cache/lephare/data/examples
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
-    Created directory: /home/runner/.cache/lephare/data/filt/lsst
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/ext
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Checking/downloading 421 files...
-
-
-.. parsed-literal::
-
     Downloading file 'opa/tau08.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau08.out' to '/home/runner/.cache/lephare/data'.
+
+
+.. parsed-literal::
+
+    Downloading file 'opa/tau07.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau07.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -351,12 +351,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau50.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau50.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau49.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau49.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau49.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau49.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau50.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau50.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1761,12 +1761,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte68-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte68-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte66-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte66-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte66-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte66-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte68-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte68-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1826,12 +1826,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte94-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte94-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte92-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte92-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/BD/lte92-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte92-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/BD/lte94-4.5-0.0.NextGen.7.sed' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/BD/lte94-4.5-0.0.NextGen.7.sed' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2264,7 +2264,7 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon May 18 14:25:22 2026
+    # CREATION_DATE Mon May 25 14:12:27 2026
     #############################################
 
 
@@ -2301,7 +2301,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Mon May 18 14:25:22 2026
+    # CREATION_DATE Mon May 25 14:12:28 2026
     #############################################
 
 
@@ -2318,10 +2318,6 @@ takes ~3-4 minutes.
     # QSO_FSCALE :1.0000
     #######################################
     Number of SED in the list 30
-
-
-.. parsed-literal::
-
     #######################################
     # It s computing the SYNTHETIC MAGNITUDES #
     # For Gal/QSO libraries with these OPTIONS #
@@ -2332,143 +2328,18 @@ takes ~3-4 minutes.
     # QSO_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_QSO_BIN(.doc & .bin)
     # QSO_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG(.doc & .bin)
     # Z_STEP   :0.1000 0.0000 3.0000
+
+
+.. parsed-literal::
+
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon May 18 14:27:51 2026
+    # CREATION_DATE Mon May 25 14:14:56 2026
     #############################################
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
-
-
-.. parsed-literal::
-
-    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
-    ####################################### 
-    # PHOTOMETRIC REDSHIFT with OPTIONS   # 
-    # Config file            : 
-    # CAT_IN                 : bidon
-    # CAT_OUT                : zphot.out
-    # CAT_LINES              : 0 1000000000
-    # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
-    # INP_TYPE               : M
-    # CAT_FMT[0:MEME 1:MMEE] : 0
-    # CAT_MAG                : AB
-    # ZPHOTLIB               : LSST_STAR_MAG LSST_GAL_MAG LSST_QSO_MAG 
-    # FIR_LIB                : 
-    # FIR_LMIN               : 7.000000
-    # FIR_CONT               : -1.000000
-    # FIR_SCALE              : -1.000000
-    # FIR_FREESCALE          : YES
-    # FIR_SUBSTELLAR         : NO
-    # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 
-    # ERR_FACTOR             : 1.500000 
-    # GLB_CONTEXT            : 63
-    # FORB_CONTEXT           : -1
-    # DZ_WIN                 : 1.000000
-    # MIN_THRES              : 0.020000
-    # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000000
-    # MAG_REF                : 3
-    # NZ_PRIOR               : -1 -1
-    # Z_INTERP               : YES
-    # Z_METHOD               : BEST
-    # MABS_METHOD            : 1
-    # MABS_CONTEXT           : 63 
-    # MABS_REF               : 1 
-    # AUTO_ADAPT             : NO
-    # ADAPT_BAND             : 5
-    # ADAPT_LIM              : 1.500000 23.000000
-    # ADAPT_ZBIN             : 0.010000 6.000000
-    # ZFIX                   : NO
-    # SPEC_OUT               : NO
-    # CHI_OUT                : NO
-    # PDZ_OUT                : test
-    ####################################### 
-    Reading input librairies ...
-    Read lib 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST
-    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
-    _QSO_MAG.bin
-     Done with the library reading with 3720 SED read. 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
-     Done with the library reading with 46190 SED read. 
-    Number of keywords to be read in the doc: 13
-    Number of keywords read at the command line (excluding -c config): 0
-    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
-    Number of keywords read in the config file: 16
-    Keyword NUMBER_ROWS not provided 
-    Keyword NUMBER_SED not provided 
-    Keyword Z_FORM not provided 
-    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
-     Done with the library reading with 46444 SED read. 
-    Read lib out 
-    Read filt 
-    # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
-    total_u.pb                    1             0.3717      0.3767      0.0446    0.6034  -20.8600       0      1.0000
-    total_g.pb                    2             0.4844      0.4746      0.1423   -0.0854  -20.7200       0      1.0000
-    total_r.pb                    3             0.6249      0.6162      0.1383    0.1515  -21.5200       0      1.0000
-    total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
-    total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
-    total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-
-
-
-
-.. parsed-literal::
-
-    <rail.core.data.ModelHandle at 0x7fef3c582080>
-
-
-
-Now we take the sythetic test data, and find the best fits from the
-library. This results in a PDF, zmode, and zmean for each input test
-data. Takes ~2 minutes to run on 1500 inputs.
-
-.. code:: ipython3
-
-    estimate_lephare = LephareEstimator.make_stage(
-        name="test_Lephare",
-        nondetect_val=np.nan,
-        model=inform_lephare.get_handle("model"),
-        hdf5_groupname="",
-        aliases=dict(input="test_data", output="lephare_estim"),
-    )
-    
-    lephare_estimated = estimate_lephare.estimate(testdata_io)
-
-
-.. parsed-literal::
-
-    Inserting handle into data store.  test_data: None, test_Lephare
-    Inserting handle into data store.  model_inform_Lephare: <class 'rail.core.data.ModelHandle'> lephare.pkl, (wd), test_Lephare
-    User defined LEPHAREDIR is set. Code runs depend on all required
-    auxiliary data being present at /home/runner/.cache/lephare/data.
-    User defined LEPHAREWORK is set. All intermediate files will be written to:
-     /home/runner/.cache/lephare/runs/inform_Lephare
-    Process 0 running estimator on chunk 0 - 1,500
-    Using user columns from input table assuming they are in the standard order.
-    Processing 1500 objects with 6 bands
-
-
-.. parsed-literal::
-
-    AUTO_ADAPT is set to YES. Computing offsets.
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
@@ -2548,6 +2419,131 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    Offsets from auto-adapt: 0.0,0.0,0.0,0.0,0.0,0.0
+    
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  model_inform_Lephare: inprogress_lephare.pkl, inform_Lephare
+
+
+
+
+.. parsed-literal::
+
+    <rail.core.data.ModelHandle at 0x7fe4a0683d90>
+
+
+
+Now we take the sythetic test data, and find the best fits from the
+library. This results in a PDF, zmode, and zmean for each input test
+data. Takes ~2 minutes to run on 1500 inputs.
+
+.. code:: ipython3
+
+    estimate_lephare = LephareEstimator.make_stage(
+        name="test_Lephare",
+        nondetect_val=np.nan,
+        model=inform_lephare.get_handle("model"),
+        hdf5_groupname="",
+        aliases=dict(input="test_data", output="lephare_estim"),
+    )
+    
+    lephare_estimated = estimate_lephare.estimate(testdata_io)
+
+
+.. parsed-literal::
+
+    Inserting handle into data store.  test_data: None, test_Lephare
+    Inserting handle into data store.  model_inform_Lephare: <class 'rail.core.data.ModelHandle'> lephare.pkl, (wd), test_Lephare
+    User defined LEPHAREDIR is set. Code runs depend on all required
+    auxiliary data being present at /home/runner/.cache/lephare/data.
+    User defined LEPHAREWORK is set. All intermediate files will be written to:
+     /home/runner/.cache/lephare/runs/inform_Lephare
+    Process 0 running estimator on chunk 0 - 1,500
+    Using user columns from input table assuming they are in the standard order.
+    Processing 1500 objects with 6 bands
+    ####################################### 
+    # PHOTOMETRIC REDSHIFT with OPTIONS   # 
+    # Config file            : 
+    # CAT_IN                 : bidon
+    # CAT_OUT                : zphot.out
+    # CAT_LINES              : 0 1000000000
+    # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
+    # INP_TYPE               : M
+    # CAT_FMT[0:MEME 1:MMEE] : 0
+    # CAT_MAG                : AB
+    # ZPHOTLIB               : LSST_STAR_MAG LSST_GAL_MAG LSST_QSO_MAG 
+    # FIR_LIB                : 
+    # FIR_LMIN               : 7.000000
+    # FIR_CONT               : -1.000000
+    # FIR_SCALE              : -1.000000
+    # FIR_FREESCALE          : YES
+    # FIR_SUBSTELLAR         : NO
+    # ERR_SCALE              : 0.020000 0.020000 0.020000 0.020000 0.020000 0.020000 
+    # ERR_FACTOR             : 1.500000 
+    # GLB_CONTEXT            : 63
+    # FORB_CONTEXT           : -1
+    # DZ_WIN                 : 1.000000
+    # MIN_THRES              : 0.020000
+    # MAG_ABS                : -24.000000 -5.000000
+    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_REF                : 3
+    # NZ_PRIOR               : -1 -1
+    # Z_INTERP               : YES
+    # Z_METHOD               : BEST
+    # MABS_METHOD            : 1
+    # MABS_CONTEXT           : 63 
+    # MABS_REF               : 1 
+    # AUTO_ADAPT             : NO
+    # ADAPT_BAND             : 5
+    # ADAPT_LIM              : 1.500000 23.000000
+    # ADAPT_ZBIN             : 0.010000 6.000000
+    # ZFIX                   : NO
+    # SPEC_OUT               : NO
+    # CHI_OUT                : NO
+    # PDZ_OUT                : test
+    ####################################### 
+    Reading input librairies ...
+    Read lib 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.bin
+     Done with the library reading with 3720 SED read. 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
+     Done with the library reading with 46190 SED read. 
+    Number of keywords to be read in the doc: 13
+    Number of keywords read at the command line (excluding -c config): 0
+    Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
+    Number of keywords read in the config file: 16
+    Keyword NUMBER_ROWS not provided 
+    Keyword NUMBER_SED not provided 
+    Keyword Z_FORM not provided 
+    Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
+     Done with the library reading with 46444 SED read. 
+    Read lib out 
+    Read filt 
+    # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
+    total_u.pb                    1             0.3717      0.3767      0.0446    0.6034  -20.8600       0      1.0000
+    total_g.pb                    2             0.4844      0.4746      0.1423   -0.0854  -20.7200       0      1.0000
+    total_r.pb                    3             0.6249      0.6162      0.1383    0.1515  -21.5200       0      1.0000
+    total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
+    total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
+    total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
+    AUTO_ADAPT is set to YES. Computing offsets.
 
 
 .. parsed-literal::

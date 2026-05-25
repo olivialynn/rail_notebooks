@@ -111,7 +111,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3945/3393143206.py", line 4, in <module>
+      File "/tmp/ipykernel_3948/3393143206.py", line 4, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -215,23 +215,19 @@ Next we need to set up some paths for the Data Store:
 
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 
 .. parsed-literal::
 
-      0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+      0 47.1M    0  287k    0     0   259k      0  0:03:06  0:00:01  0:03:05  259k
 
 .. parsed-literal::
 
-      2 47.1M    2 1057k    0     0   816k      0  0:00:59  0:00:01  0:00:58  816k
+     46 47.1M   46 21.8M    0     0  10.4M      0  0:00:04  0:00:02  0:00:02 10.4M
 
 .. parsed-literal::
 
-     67 47.1M   67 31.7M    0     0  13.9M      0  0:00:03  0:00:02  0:00:01 13.9M
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  18.7M      0  0:00:02  0:00:02 --:--:-- 18.7M
+    100 47.1M  100 47.1M    0     0  19.3M      0  0:00:02  0:00:02 --:--:-- 19.3M
 
 
 Read the data in, note that the fzdata is a ``qp`` Ensemble, and thus we
@@ -631,6 +627,10 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
+
+
+.. parsed-literal::
+
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

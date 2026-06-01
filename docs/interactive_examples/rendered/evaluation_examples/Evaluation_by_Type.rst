@@ -53,14 +53,11 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    LEPHAREDIR is being set to the default cache directory:
+    LEPHAREDIR is being set to the default cache directory which is being created at:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
-    Default work cache is already linked. 
-    This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260525T133609
 
 
 .. parsed-literal::
@@ -119,7 +116,7 @@ in the ``pipeline_examples/evaluation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4187/1627844557.py", line 13, in <module>
+      File "/tmp/ipykernel_3969/1627844557.py", line 13, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -213,15 +210,11 @@ This will load (and download if needed) two files:
 
 .. parsed-literal::
 
-      0 47.1M    0 11988    0     0  30818      0  0:26:43 --:--:--  0:26:43 30817
+      0 47.1M    0  387k    0     0   481k      0  0:01:40 --:--:--  0:01:40  481k
 
 .. parsed-literal::
 
-     16 47.1M   16 7791k    0     0  5704k      0  0:00:08  0:00:01  0:00:07 5704k
-
-.. parsed-literal::
-
-    100 47.1M  100 47.1M    0     0  24.1M      0  0:00:01  0:00:01 --:--:-- 24.1M
+     94 47.1M   94 44.5M    0     0  24.8M      0  0:00:01  0:00:01 --:--:-- 24.8M100 47.1M  100 47.1M    0     0  25.8M      0  0:00:01  0:00:01 --:--:-- 25.8M
 
 
 .. code:: ipython3
@@ -310,14 +303,14 @@ Divergence <https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence>`_
 
 .. parsed-literal::
 
-    {'cvm': array([0.09574485, 0.14358649, 0.05845897, ..., 0.03290585, 0.08748376,
-            0.16216666], shape=(20449,)),
-     'ks': array([0.05029211, 0.0865847 , 0.10133384, ..., 0.05664178, 0.11964041,
-            0.05075825], shape=(20449,)),
+    {'cvm': array([0.09529229, 0.08519109, 0.20140087, ..., 0.09552034, 0.84418494,
+            0.03399872], shape=(20449,)),
+     'ks': array([0.09722202, 0.11286702, 0.06671597, ..., 0.06896437, 0.07739037,
+            0.07097902], shape=(20449,)),
      'rmse': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
      'kld': array([0., 0., 0., ..., 0., 0., 0.], shape=(20449,)),
-     'ad': array([0.85608665, 0.62065983, 0.71828782, ..., 0.28107223, 0.60474731,
-            0.772674  ], shape=(20449,))}
+     'ad': array([1.17993636, 0.65606655, 0.72856911, ..., 0.90307722, 0.68955217,
+            0.76905378], shape=(20449,))}
 
 
 
@@ -454,7 +447,7 @@ Transform <https://en.wikipedia.org/wiki/Probability_integral_transform>`__
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4187/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+    /tmp/ipykernel_3969/180185046.py:8: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
       plt.legend()
 
 
@@ -955,10 +948,6 @@ discrepancies in the tails of the distribution.
 .. parsed-literal::
 
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
-
-
-.. parsed-literal::
-
     PIT AD stat and pval: Anderson_ksampResult(statistic=np.float64(84.95623553609381), critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), pvalue=np.float64(0.001))
 
 

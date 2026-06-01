@@ -84,12 +84,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/OPACITY.dat' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/OPACITY.dat' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau00.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau00.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -99,12 +99,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau03.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau03.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau02.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau02.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau03.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau03.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -114,18 +114,19 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Created directory: /home/runner/.cache/lephare/data/vega
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
-    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
-    Created directory: /home/runner/.cache/lephare/data/opa
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
-    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
-    Created directory: /home/runner/.cache/lephare/data/examples
     Created directory: /home/runner/.cache/lephare/data/ext
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR
     Created directory: /home/runner/.cache/lephare/data/filt/lsst
-    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/sed/QSO/SALVATO09
     Created directory: /home/runner/.cache/lephare/data/sed/STAR/WD
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/BETHERMIN12
+    Created directory: /home/runner/.cache/lephare/data/vega
+    Created directory: /home/runner/.cache/lephare/data/opa
+    Created directory: /home/runner/.cache/lephare/data/sed/GAL/COSMOS_SED
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/PICKLES
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/BD
+    Created directory: /home/runner/.cache/lephare/data/examples
+    Created directory: /home/runner/.cache/lephare/data/sed/STAR/LAGET
     Checking/downloading 421 files...
 
 
@@ -141,12 +142,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau08.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau08.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau07.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau07.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'opa/tau07.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau07.out' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'opa/tau08.out' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/opa/tau08.out' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -1151,12 +1152,12 @@ One could add or take out bandpasses by editing the configuration file.
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/m2iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m2iii.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/m2p5v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m2p5v.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
 
-    Downloading file 'sed/STAR/PICKLES/m2p5v.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m2p5v.sed.ext' to '/home/runner/.cache/lephare/data'.
+    Downloading file 'sed/STAR/PICKLES/m2iii.sed.ext' from 'https://raw.githubusercontent.com/lephare-photoz/lephare-data/main/sed/STAR/PICKLES/m2iii.sed.ext' to '/home/runner/.cache/lephare/data'.
 
 
 .. parsed-literal::
@@ -2235,10 +2236,6 @@ takes ~3-4 minutes.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729    0.5879  -22.1705    4.5353       0      0.7539      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178    0.7624  -22.6171    4.5165       0      0.8669      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512    0.7770  -22.9043    4.5084       0      0.9744      1.0000
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -2250,6 +2247,10 @@ takes ~3-4 minutes.
     # STAR_FSCALE :0.0000
     #######################################
     Number of SED in the list 254
+
+
+.. parsed-literal::
+
     WRONG NUMBER OF ARGUMENTS FOR OPTION MOD_EXTINC
     We have 2 instead of 8
     Use default value 0,0 for all filters 
@@ -2264,12 +2265,8 @@ takes ~3-4 minutes.
     # STAR_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_STAR_BIN(.doc & .bin)
     # STAR_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG(.doc & .bin)
     # LIB_ASCII   YES
-    # CREATION_DATE Mon May 25 14:12:27 2026
+    # CREATION_DATE Mon Jun  1 15:08:37 2026
     #############################################
-
-
-.. parsed-literal::
-
     #######################################
     # It s translating SEDs to binary library #
     # with the following options :           
@@ -2293,7 +2290,7 @@ takes ~3-4 minutes.
     # Magnitude type     : AB
     # GAL_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_GAL_BIN(.doc & .bin)
     # GAL_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG(.doc & .bin)
-    # Z_STEP   :0.1000 0.0000 3.0000
+    # Z_STEP   :0.0100 0.0000 7.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SMC_prevot.dat SB_calzetti.dat SB_calzetti_bump1.dat SB_calzetti_bump2.dat 
     # MOD_EXTINC   :18 26 26 33 26 33 26 33 
@@ -2301,7 +2298,7 @@ takes ~3-4 minutes.
     # EM_LINES   EMP_UV
     # EM_DISPERSION   0.5000,0.7500,1.0000,1.5000,2.0000,
     # LIB_ASCII   YES
-    # CREATION_DATE Mon May 25 14:12:28 2026
+    # CREATION_DATE Mon Jun  1 15:08:38 2026
     #############################################
 
 
@@ -2327,23 +2324,23 @@ takes ~3-4 minutes.
     # Magnitude type     : AB
     # QSO_LIB_IN    :/home/runner/.cache/lephare/runs/inform_Lephare/lib_bin/LSST_QSO_BIN(.doc & .bin)
     # QSO_LIB_OUT   :/home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG(.doc & .bin)
-    # Z_STEP   :0.1000 0.0000 3.0000
-
-
-.. parsed-literal::
-
+    # Z_STEP   :0.0100 0.0000 7.0000
     # COSMOLOGY   :70.0000,0.3000,0.7000
     # EXTINC_LAW   :SB_calzetti.dat 
     # MOD_EXTINC   :0 1000 
     # EB_V   :0.0000 0.1000 0.2000 0.3000 # LIB_ASCII   YES
-    # CREATION_DATE Mon May 25 14:14:56 2026
+    # CREATION_DATE Mon Jun  1 15:52:28 2026
     #############################################
+
+
+.. parsed-literal::
+
     Using user columns from input table assuming they are in the standard order.
     Processing 70 objects with 6 bands
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
-    # CAT_IN                 : bidon
+    # CAT_IN                 : undefined
     # CAT_OUT                : zphot.out
     # CAT_LINES              : 0 1000000000
     # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
@@ -2364,7 +2361,11 @@ takes ~3-4 minutes.
     # DZ_WIN                 : 1.000000
     # MIN_THRES              : 0.020000
     # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_ABS_AGN            : -30.000000 -10
+
+.. parsed-literal::
+
+    .000000
     # MAG_REF                : 3
     # NZ_PRIOR               : -1 -1
     # Z_INTERP               : YES
@@ -2391,7 +2392,7 @@ takes ~3-4 minutes.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.bin
-     Done with the library reading with 3720 SED read. 
+     Done with the library reading with 84120 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
     Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
@@ -2400,7 +2401,7 @@ takes ~3-4 minutes.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
-     Done with the library reading with 46190 SED read. 
+     Done with the library reading with 1044490 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
     Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
@@ -2409,7 +2410,7 @@ takes ~3-4 minutes.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
-     Done with the library reading with 46444 SED read. 
+     Done with the library reading with 1044744 SED read. 
     Read lib out 
     Read filt 
     # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
@@ -2432,7 +2433,7 @@ takes ~3-4 minutes.
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fe4a0683d90>
+    <rail.core.data.ModelHandle at 0x7f6c8d0a3580>
 
 
 
@@ -2467,7 +2468,7 @@ data. Takes ~2 minutes to run on 1500 inputs.
     ####################################### 
     # PHOTOMETRIC REDSHIFT with OPTIONS   # 
     # Config file            : 
-    # CAT_IN                 : bidon
+    # CAT_IN                 : undefined
     # CAT_OUT                : zphot.out
     # CAT_LINES              : 0 1000000000
     # PARA_OUT               : /home/runner/.cache/lephare/data/examples/output.para
@@ -2488,7 +2489,16 @@ data. Takes ~2 minutes to run on 1500 inputs.
     # DZ_WIN                 : 1.000000
     # MIN_THRES              : 0.020000
     # MAG_ABS                : -24.000000 -5.000000
-    # MAG_ABS_AGN            : -30.000000 -10.000000
+    # MAG_ABS_AGN            : -30.000000 -10
+
+.. parsed-literal::
+
+    AUTO_ADAPT is set to YES. Computing offsets.
+
+
+.. parsed-literal::
+
+    .000000
     # MAG_REF                : 3
     # NZ_PRIOR               : -1 -1
     # Z_INTERP               : YES
@@ -2515,7 +2525,7 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_QSO_MAG.bin
-     Done with the library reading with 3720 SED read. 
+     Done with the library reading with 84120 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
     Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.doc
@@ -2524,7 +2534,7 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_GAL_MAG.bin
-     Done with the library reading with 46190 SED read. 
+     Done with the library reading with 1044490 SED read. 
     Number of keywords to be read in the doc: 13
     Number of keywords read at the command line (excluding -c config): 0
     Reading keywords from /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.doc
@@ -2533,7 +2543,7 @@ data. Takes ~2 minutes to run on 1500 inputs.
     Keyword NUMBER_SED not provided 
     Keyword Z_FORM not provided 
     Reading library: /home/runner/.cache/lephare/runs/inform_Lephare/lib_mag/LSST_STAR_MAG.bin
-     Done with the library reading with 46444 SED read. 
+     Done with the library reading with 1044744 SED read. 
     Read lib out 
     Read filt 
     # NAME                        IDENT      Lbda_mean Lbeff(Vega)       FWHM     AB-cor      VEGA   CALIB    Fac_corr
@@ -2543,34 +2553,33 @@ data. Takes ~2 minutes to run on 1500 inputs.
     total_i.pb                    4             0.7579      0.7517      0.1278    0.3729  -22.1700       0      1.0000
     total_z.pb                    5             0.8692      0.8670      0.1047    0.5178  -22.6200       0      1.0000
     total_y.pb                    6             0.9768      0.9732      0.0898    0.5512  -22.9000       0      1.0000
-    AUTO_ADAPT is set to YES. Computing offsets.
-
-
-.. parsed-literal::
-
     # Offsets added to the modeled magnitudes (or substracted to the observed): 0.0,0.0,0.0,0.0,0.0,0.0
     
-    Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1703.4709 470.1358
 
 
 .. parsed-literal::
 
-    Source 425 // Band 5 removed to improve the chi2, with old and new chi2 1233.4076 0.0679
+    Source 113 // Band 0 removed to improve the chi2, with old and new chi2 1703.4709 470.1358
+    Source 425 // Band 5 removed to improve the chi2, with old and new chi2 1233.4035 0.0636
     Source 449 // Band 0 removed to improve the chi2, with old and new chi2 1769.2671 535.9139
-    Source 449 // Band 1 removed to improve the chi2, with old and new chi2 1769.2671 233.6168
+    Source 449 // Band 1 removed to improve the chi2, with old and new chi2 1769.2671 229.0725
     Source 492 // Band 1 removed to improve the chi2, with old and new chi2 3289.6386 2056.3348
     Source 492 // Band 0 removed to improve the chi2, with old and new chi2 3289.6386 823.0952
-    Source 789 // Band 5 removed to improve the chi2, with old and new chi2 1213.6508 1.7374
+    Source 789 // Band 5 removed to improve the chi2, with old and new chi2 1213.6508 1.6393
     Source 898 // Band 1 removed to improve the chi2, with old and new chi2 2183.3132 1054.9139
-    Source 898 // Band 0 removed to improve the chi2, with old and new chi2 2183.3132 0.1129
-    Source 1140 // Band 5 removed to improve the chi2, with old and new chi2 703.2486 0.8348
-    Source 1160 // Band 1 removed to improve the chi2, with old and new chi2 2674.1035 1441.1565
-    Source 1160 // Band 0 removed to improve the chi2, with old and new chi2 2674.1035 208.4284
-    Source 1251 // Band 2 removed to improve the chi2, with old and new chi2 3699.9778 2466.6408
-    Source 1251 // Band 1 removed to improve the chi2, with old and new chi2 3699.9778 1233.3110
-    Source 1302 // Band 5 removed to improve the chi2, with old and new chi2 1236.4875 3.1952
-    Source 1427 // Band 5 removed to improve the chi2, with old and new chi2 1151.7123 0.0671
-    Source 1451 // Band 5 removed to improve the chi2, with old and new chi2 1227.1517 0.0367
+    Source 898 // Band 0 removed to improve the chi2, with old and new chi2 2183.3132 0.1236
+    Source 1140 // Band 5 removed to improve the chi2, with old and new chi2 566.6393 0.3919
+    Source 1160 // Band 1 removed to improve the chi2, with old and new chi2 2671.9901 1439.0446
+    Source 1160 // Band 0 removed to improve the chi2, with old and new chi2 2671.9901 206.3085
+    Source 1251 // Band 2 removed to improve the chi2, with old and new chi2 3699.9761 2466.6396
+    Source 1251 // Band 1 removed to improve the chi2, with old and new chi2 3699.9761 1233.3106
+    Source 1302 // Band 5 removed to improve the chi2, with old and new chi2 1236.4347 3.1435
+    Source 1427 // Band 5 removed to improve the chi2, with old and new chi2 1151.7123 0.0561
+    Source 1451 // Band 5 removed to improve the chi2, with old and new chi2 1227.1517 0.0000
+
+
+.. parsed-literal::
+
     Inserting handle into data store.  output_test_Lephare: inprogress_output_test_Lephare.hdf5, test_Lephare
 
 

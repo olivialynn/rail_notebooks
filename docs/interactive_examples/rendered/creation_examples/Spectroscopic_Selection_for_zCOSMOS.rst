@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260525T125859
+    /home/runner/.cache/lephare/runs/20260601T134643
 
 
 .. parsed-literal::
@@ -117,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4469/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_5232/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -253,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>25.240040</td>
-          <td>21.128838</td>
+          <td>25.692555</td>
+          <td>17.028915</td>
           <td>20.0</td>
-          <td>0.369167</td>
+          <td>1.493043</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.709418</td>
-          <td>18.459038</td>
+          <td>23.719575</td>
+          <td>19.812460</td>
           <td>20.0</td>
-          <td>1.434006</td>
+          <td>0.401460</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.545694</td>
-          <td>18.914035</td>
+          <td>22.046114</td>
+          <td>15.558401</td>
           <td>20.0</td>
-          <td>0.876898</td>
+          <td>1.255974</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.167466</td>
-          <td>19.973821</td>
+          <td>25.106273</td>
+          <td>17.784584</td>
           <td>20.0</td>
-          <td>1.206146</td>
+          <td>1.852565</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>19.220573</td>
-          <td>17.584580</td>
+          <td>20.571933</td>
+          <td>19.199345</td>
           <td>20.0</td>
-          <td>1.630368</td>
+          <td>1.303478</td>
         </tr>
       </tbody>
     </table>
@@ -333,8 +333,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.48 s, sys: 23.8 ms, total: 1.5 s
-    Wall time: 1.5 s
+    CPU times: user 1.29 s, sys: 14.3 ms, total: 1.31 s
+    Wall time: 1.3 s
 
 
 .. code:: ipython3
@@ -345,17 +345,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503081 entries, 7 to 1999998
+    Index: 502900 entries, 6 to 1999998
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503081 non-null  float64
-     1   g         503081 non-null  float64
-     2   r         503081 non-null  float64
-     3   i         503081 non-null  float64
-     4   z         503081 non-null  float64
-     5   y         503081 non-null  float64
-     6   redshift  503081 non-null  float64
+     0   u         502900 non-null  float64
+     1   g         502900 non-null  float64
+     2   r         502900 non-null  float64
+     3   i         502900 non-null  float64
+     4   z         502900 non-null  float64
+     5   y         502900 non-null  float64
+     6   redshift  502900 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 

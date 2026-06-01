@@ -1,5 +1,29 @@
 Rendering notebooks in group: creation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/creation_examples
+RENDERING: Blending_Degrader
+RENDERING: Photometric_Realization_with_Other_Surveys
+RENDERING: FSPS_SED
+[1;32m    670[0m         duste_umin[38;5;241m=[39mduste_umin[i],
+[1;32m    671[0m         duste_qpah[38;5;241m=[39mduste_qpah[i],
+[1;32m    672[0m         fagn[38;5;241m=[39mfagn[i],
+[1;32m    673[0m         agn_tau[38;5;241m=[39magn_tau[i],
+[1;32m    674[0m     )
+[1;32m    676[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39msfh_type [38;5;241m==[39m [38;5;241m3[39m:
+[1;32m    677[0m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+
+[0;31mNameError[0m: name 'fsps' is not defined
+
+RENDERING: Exploring_the_Effects_of_Degraders
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/lib/_histograms_impl.py:296[0m, in [0;36m_ravel_and_check_weights[0;34m(a, weights)[0m
+[1;32m    294[0m     weights [38;5;241m=[39m np[38;5;241m.[39masarray(weights)
+[1;32m    295[0m     [38;5;28;01mif[39;00m weights[38;5;241m.[39mshape [38;5;241m!=[39m a[38;5;241m.[39mshape:
+[0;32m--> 296[0m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[1;32m    297[0m             [38;5;124m'[39m[38;5;124mweights should have the same shape as a.[39m[38;5;124m'[39m)
+[1;32m    298[0m     weights [38;5;241m=[39m weights[38;5;241m.[39mravel()
+[1;32m    299[0m a [38;5;241m=[39m a[38;5;241m.[39mravel()
+
+[0;31mValueError[0m: weights should have the same shape as a.
+
 RENDERING: DSPS_SED
 
 File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/dsps/data_loaders/load_filter_data.py:68[0m, in [0;36mload_transmission_curve[0;34m(fn, bn_pat, drn)[0m
@@ -11,18 +35,16 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 
 [0;31mAssertionError[0m: /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/creation_data/data/dsps_default_data/filters/lsst_,_transmission.h5 does not exist
 
-RENDERING: Spatial_Variability
-RENDERING: GridSelection_for_HSC
-RENDERING: FSPS_SED
-[1;32m    670[0m         duste_umin[38;5;241m=[39mduste_umin[i],
-[1;32m    671[0m         duste_qpah[38;5;241m=[39mduste_qpah[i],
-[1;32m    672[0m         fagn[38;5;241m=[39mfagn[i],
-[1;32m    673[0m         agn_tau[38;5;241m=[39magn_tau[i],
-[1;32m    674[0m     )
-[1;32m    676[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39msfh_type [38;5;241m==[39m [38;5;241m3[39m:
-[1;32m    677[0m         [38;5;28;01massert[39;00m tabulated_sfhs [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+RENDERING: True_Posterior
+[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
 
-[0;31mNameError[0m: name 'fsps' is not defined
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
+[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
+[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
+[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
+[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+
+[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
 
 RENDERING: Quick_Start_in_Creation
 [0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
@@ -35,29 +57,8 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 
 [0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
 
-RENDERING: Photometric_Realization
-[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
-[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
-[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
-[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
-[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
-
-[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
-
 RENDERING: Spectroscopic_Selection_for_zCOSMOS
-RENDERING: Exploring_the_Effects_of_Degraders
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/lib/_histograms_impl.py:296[0m, in [0;36m_ravel_and_check_weights[0;34m(a, weights)[0m
-[1;32m    294[0m     weights [38;5;241m=[39m np[38;5;241m.[39masarray(weights)
-[1;32m    295[0m     [38;5;28;01mif[39;00m weights[38;5;241m.[39mshape [38;5;241m!=[39m a[38;5;241m.[39mshape:
-[0;32m--> 296[0m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
-[1;32m    297[0m             [38;5;124m'[39m[38;5;124mweights should have the same shape as a.[39m[38;5;124m'[39m)
-[1;32m    298[0m     weights [38;5;241m=[39m weights[38;5;241m.[39mravel()
-[1;32m    299[0m a [38;5;241m=[39m a[38;5;241m.[39mravel()
-
-[0;31mValueError[0m: weights should have the same shape as a.
-
+RENDERING: Spatial_Variability
 RENDERING: SOM_Spectroscopic_Selector
 [1;32m    238[0m            radiuscooling, scale0, scaleN, scalecooling,
 [1;32m    239[0m            [38;5;28mself[39m[38;5;241m.[39m_kernel_type, [38;5;28mself[39m[38;5;241m.[39m_map_type, [38;5;28mself[39m[38;5;241m.[39m_grid_type,
@@ -69,8 +70,7 @@ RENDERING: SOM_Spectroscopic_Selector
 
 [0;31mNameError[0m: name 'wrap_train' is not defined
 
-RENDERING: Blending_Degrader
-RENDERING: True_Posterior
+RENDERING: Photometric_Realization
 [0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
 
 File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
@@ -81,32 +81,32 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 
 [0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
 
-RENDERING: Photometric_Realization_with_Other_Surveys
+RENDERING: GridSelection_for_HSC
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/DSPS_SED.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Spatial_Variability.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/GridSelection_for_HSC.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/FSPS_SED.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Quick_Start_in_Creation.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Photometric_Realization.ipynb
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Spectroscopic_Selection_for_zCOSMOS.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Exploring_the_Effects_of_Degraders.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/SOM_Spectroscopic_Selector.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Blending_Degrader.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/True_Posterior.ipynb
       0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Photometric_Realization_with_Other_Surveys.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/FSPS_SED.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Exploring_the_Effects_of_Degraders.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/DSPS_SED.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/True_Posterior.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Quick_Start_in_Creation.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Spectroscopic_Selection_for_zCOSMOS.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Spatial_Variability.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/SOM_Spectroscopic_Selector.ipynb
+      1  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Photometric_Realization.ipynb
+      0  /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/GridSelection_for_HSC.ipynb
 
 7 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/DSPS_SED.ipynb
-2. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/FSPS_SED.ipynb
-3. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Quick_Start_in_Creation.ipynb
-4. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Photometric_Realization.ipynb
-5. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Exploring_the_Effects_of_Degraders.ipynb
+1. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/FSPS_SED.ipynb
+2. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Exploring_the_Effects_of_Degraders.ipynb
+3. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/DSPS_SED.ipynb
+4. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/True_Posterior.ipynb
+5. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Quick_Start_in_Creation.ipynb
 6. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/SOM_Spectroscopic_Selector.ipynb
-7. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/True_Posterior.ipynb
+7. /home/runner/work/rail_notebooks/rail/interactive_examples/creation_examples/Photometric_Realization.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

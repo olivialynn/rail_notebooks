@@ -124,7 +124,7 @@ ensemble n(z) estimates.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_3917/1750766246.py", line 2, in <module>
+      File "/tmp/ipykernel_3994/1750766246.py", line 2, in <module>
         import rail.interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -247,152 +247,152 @@ engine for the notebook.
 
 .. parsed-literal::
 
-    (1) 0.8203
+    (1) 1.4431
 
 
 .. parsed-literal::
 
-    (2) -0.3311
+    (2) -0.0247
 
 
 .. parsed-literal::
 
-    (3) -1.2270
+    (3) -1.2539
 
 
 .. parsed-literal::
 
-    (4) -1.8016
+    (4) -1.4070
 
 
 .. parsed-literal::
 
-    (5) 0.6932
+    (5) -2.0570
 
 
 .. parsed-literal::
 
-    (6) -2.4607
+    (6) -0.5525
 
 
 .. parsed-literal::
 
-    (7) -2.7143
+    (7) -1.6905
 
 
 .. parsed-literal::
 
-    (8) -2.1091
+    (8) -1.7447
 
 
 .. parsed-literal::
 
-    (9) 2.9223
+    (9) -2.6114
 
 
 .. parsed-literal::
 
-    (10) -2.6319
+    (10) -3.0154
 
 
 .. parsed-literal::
 
-    (11) -2.6818
+    (11) -2.6144
 
 
 .. parsed-literal::
 
-    (12) -2.9049
+    (12) -2.3561
 
 
 .. parsed-literal::
 
-    (13) -2.3093
+    (13) -3.0956
 
 
 .. parsed-literal::
 
-    (14) -3.5844
+    (14) -3.3651
 
 
 .. parsed-literal::
 
-    (15) -2.7248
+    (15) -3.3584
 
 
 .. parsed-literal::
 
-    (16) -2.8104
+    (16) -3.6009
 
 
 .. parsed-literal::
 
-    (17) -3.1001
+    (17) -3.2523
 
 
 .. parsed-literal::
 
-    (18) -3.4940
+    (18) -3.4311
 
 
 .. parsed-literal::
 
-    (19) -2.7883
+    (19) -3.7140
 
 
 .. parsed-literal::
 
-    (20) -3.7015
+    (20) -2.5754
 
 
 .. parsed-literal::
 
-    (21) -3.0465
+    (21) -3.7610
 
 
 .. parsed-literal::
 
-    (22) -4.0176
+    (22) -4.3439
 
 
 .. parsed-literal::
 
-    (23) -2.8907
+    (23) -4.2062
 
 
 .. parsed-literal::
 
-    (24) -4.6285
+    (24) -4.0795
 
 
 .. parsed-literal::
 
-    (25) -4.5854
+    (25) -3.8448
 
 
 .. parsed-literal::
 
-    (26) -4.3568
+    (26) -4.5009
 
 
 .. parsed-literal::
 
-    (27) -1.9249
+    (27) -4.4987
 
 
 .. parsed-literal::
 
-    (28) -2.0749
+    (28) -3.8959
 
 
 .. parsed-literal::
 
-    (29) -4.0582
+    (29) -4.4735
 
 
 .. parsed-literal::
 
-    (30) -4.4706
+    (30) -4.3248
 
 
 .. parsed-literal::
@@ -444,7 +444,7 @@ notebook.
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f105daaba00>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7fec9d25beb0>, FlowCreator
 
 
 .. parsed-literal::
@@ -586,83 +586,83 @@ quick writeout of the columns:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.556576</td>
-          <td>24.570340</td>
-          <td>0.074358</td>
-          <td>23.965162</td>
-          <td>0.015322</td>
-          <td>22.818949</td>
-          <td>0.006747</td>
-          <td>22.119982</td>
-          <td>0.006393</td>
-          <td>21.829764</td>
-          <td>0.007734</td>
-          <td>21.551124</td>
-          <td>0.011598</td>
+          <td>1.248485</td>
+          <td>25.048114</td>
+          <td>0.112895</td>
+          <td>24.944219</td>
+          <td>0.035251</td>
+          <td>24.921420</td>
+          <td>0.030338</td>
+          <td>24.687588</td>
+          <td>0.040231</td>
+          <td>24.138941</td>
+          <td>0.047386</td>
+          <td>23.883616</td>
+          <td>0.085318</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.156282</td>
-          <td>26.001843</td>
-          <td>0.253222</td>
-          <td>25.137768</td>
-          <td>0.041816</td>
-          <td>24.814243</td>
-          <td>0.027619</td>
-          <td>24.527944</td>
-          <td>0.034931</td>
-          <td>24.466716</td>
-          <td>0.063384</td>
-          <td>24.337835</td>
-          <td>0.126917</td>
+          <td>0.172574</td>
+          <td>25.694922</td>
+          <td>0.196295</td>
+          <td>24.839049</td>
+          <td>0.032139</td>
+          <td>24.455223</td>
+          <td>0.020263</td>
+          <td>24.191211</td>
+          <td>0.025993</td>
+          <td>24.144067</td>
+          <td>0.047602</td>
+          <td>24.016677</td>
+          <td>0.095906</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.081121</td>
-          <td>25.727871</td>
-          <td>0.201793</td>
-          <td>25.779717</td>
-          <td>0.073801</td>
-          <td>25.517444</td>
-          <td>0.051412</td>
-          <td>24.930619</td>
-          <td>0.049914</td>
-          <td>24.468410</td>
-          <td>0.063479</td>
-          <td>24.269857</td>
-          <td>0.119645</td>
+          <td>1.059188</td>
+          <td>25.593806</td>
+          <td>0.180269</td>
+          <td>25.627679</td>
+          <td>0.064522</td>
+          <td>25.362364</td>
+          <td>0.044799</td>
+          <td>24.776338</td>
+          <td>0.043525</td>
+          <td>24.302786</td>
+          <td>0.054805</td>
+          <td>24.122026</td>
+          <td>0.105177</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.034289</td>
-          <td>26.417749</td>
-          <td>0.353576</td>
-          <td>25.360323</td>
-          <td>0.050921</td>
-          <td>24.437050</td>
-          <td>0.019953</td>
-          <td>23.820884</td>
-          <td>0.018923</td>
-          <td>23.033678</td>
-          <td>0.018092</td>
-          <td>22.660453</td>
-          <td>0.028913</td>
+          <td>1.116981</td>
+          <td>25.977287</td>
+          <td>0.248173</td>
+          <td>25.065962</td>
+          <td>0.039246</td>
+          <td>24.146070</td>
+          <td>0.015669</td>
+          <td>23.496886</td>
+          <td>0.014507</td>
+          <td>22.710536</td>
+          <td>0.013918</td>
+          <td>22.212429</td>
+          <td>0.019646</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.790806</td>
-          <td>25.795834</td>
-          <td>0.213581</td>
-          <td>25.483368</td>
-          <td>0.056784</td>
-          <td>25.133706</td>
-          <td>0.036582</td>
-          <td>24.671617</td>
-          <td>0.039666</td>
-          <td>24.459012</td>
-          <td>0.062952</td>
-          <td>24.278567</td>
-          <td>0.120554</td>
+          <td>0.729585</td>
+          <td>25.754234</td>
+          <td>0.206293</td>
+          <td>24.798381</td>
+          <td>0.031014</td>
+          <td>23.123642</td>
+          <td>0.007758</td>
+          <td>21.860321</td>
+          <td>0.005924</td>
+          <td>21.234992</td>
+          <td>0.006103</td>
+          <td>20.977812</td>
+          <td>0.008017</td>
         </tr>
       </tbody>
     </table>
@@ -696,7 +696,7 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f105daaba00>, FlowCreator
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7fec9d25beb0>, FlowCreator
     Inserting handle into data store.  output: inprogress_output.pq, FlowCreator
 
 
@@ -726,7 +726,7 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7f105daaba00>, FlowPosterior
+    Inserting handle into data store.  model: <pzflow.flow.Flow object at 0x7fec9d25beb0>, FlowPosterior
     Inserting handle into data store.  input: None, FlowPosterior
 
 
@@ -737,16 +737,16 @@ For the test sample we will:
 
 .. parsed-literal::
 
-    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 7 11 27] have an integral of 0.
+    /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:187: UserWarning: The distributions at indices = [ 7 27 89] have an integral of 0.
       warnings.warn(
     /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:207: RuntimeWarning: invalid value encountered in divide
       new_yvals = (self._yvals.T / self._ycumul[:, -1]).T
     /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:208: RuntimeWarning: invalid value encountered in divide
       self._ycumul = (self._ycumul.T / self._ycumul[:, -1]).T
     /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/qp/parameterizations/interp/interp.py:140: RuntimeWarning: There are non-finite values in the yvals for the following distributions: (array([ 7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,
-            7,  7,  7,  7, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11,
-           11, 11, 11, 11, 11, 11, 11, 11, 27, 27, 27, 27, 27, 27, 27, 27, 27,
-           27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
+            7,  7,  7,  7, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27,
+           27, 27, 27, 27, 27, 27, 27, 27, 89, 89, 89, 89, 89, 89, 89, 89, 89,
+           89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
            17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
            13, 14, 15, 16, 17, 18, 19, 20,  0,  1,  2,  3,  4,  5,  6,  7,  8,
             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]))
@@ -825,83 +825,83 @@ For the test sample we will:
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.576578</td>
-          <td>25.191498</td>
-          <td>0.127816</td>
-          <td>24.050870</td>
-          <td>0.016418</td>
-          <td>22.797245</td>
-          <td>0.006689</td>
-          <td>21.940036</td>
-          <td>0.006049</td>
-          <td>21.621931</td>
-          <td>0.007008</td>
-          <td>21.316804</td>
-          <td>0.009844</td>
+          <td>0.558813</td>
+          <td>24.764794</td>
+          <td>0.088183</td>
+          <td>23.570155</td>
+          <td>0.011343</td>
+          <td>22.239975</td>
+          <td>0.005700</td>
+          <td>21.366162</td>
+          <td>0.005417</td>
+          <td>21.001081</td>
+          <td>0.005760</td>
+          <td>20.705326</td>
+          <td>0.007017</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.710664</td>
-          <td>26.317394</td>
-          <td>0.326651</td>
-          <td>26.273781</td>
-          <td>0.113845</td>
-          <td>25.762382</td>
-          <td>0.063895</td>
-          <td>25.127875</td>
-          <td>0.059468</td>
-          <td>24.908445</td>
-          <td>0.093619</td>
-          <td>24.845605</td>
-          <td>0.195905</td>
+          <td>0.750511</td>
+          <td>26.077371</td>
+          <td>0.269328</td>
+          <td>26.104339</td>
+          <td>0.098189</td>
+          <td>25.669234</td>
+          <td>0.058829</td>
+          <td>25.015138</td>
+          <td>0.053805</td>
+          <td>24.782854</td>
+          <td>0.083825</td>
+          <td>24.707658</td>
+          <td>0.174339</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.960145</td>
-          <td>26.967345</td>
-          <td>0.535882</td>
-          <td>26.290216</td>
-          <td>0.115485</td>
-          <td>25.673743</td>
-          <td>0.059064</td>
-          <td>25.026222</td>
-          <td>0.054337</td>
-          <td>24.578019</td>
-          <td>0.069952</td>
-          <td>24.263974</td>
-          <td>0.119035</td>
+          <td>0.902206</td>
+          <td>26.352164</td>
+          <td>0.335774</td>
+          <td>25.835499</td>
+          <td>0.077524</td>
+          <td>25.296516</td>
+          <td>0.042257</td>
+          <td>24.610552</td>
+          <td>0.037578</td>
+          <td>24.239847</td>
+          <td>0.051827</td>
+          <td>24.004230</td>
+          <td>0.094864</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.660866</td>
-          <td>28.426355</td>
-          <td>1.342814</td>
-          <td>29.028473</td>
-          <td>0.947352</td>
-          <td>27.925009</td>
-          <td>0.397267</td>
-          <td>26.878198</td>
-          <td>0.268532</td>
-          <td>25.914306</td>
-          <td>0.222001</td>
-          <td>27.029973</td>
-          <td>0.984762</td>
+          <td>1.533603</td>
+          <td>28.410844</td>
+          <td>1.331831</td>
+          <td>29.057433</td>
+          <td>0.964300</td>
+          <td>27.942524</td>
+          <td>0.402661</td>
+          <td>26.717088</td>
+          <td>0.235251</td>
+          <td>25.807358</td>
+          <td>0.203026</td>
+          <td>26.264160</td>
+          <td>0.594865</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.505502</td>
-          <td>25.310711</td>
-          <td>0.141631</td>
-          <td>24.325771</td>
-          <td>0.020629</td>
-          <td>23.223199</td>
-          <td>0.008185</td>
-          <td>22.795467</td>
-          <td>0.008805</td>
-          <td>22.558163</td>
-          <td>0.012378</td>
-          <td>22.266115</td>
-          <td>0.020560</td>
+          <td>2.207015</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>27.156611</td>
+          <td>0.241165</td>
+          <td>27.469417</td>
+          <td>0.276882</td>
+          <td>27.497233</td>
+          <td>0.437373</td>
+          <td>26.333349</td>
+          <td>0.312570</td>
+          <td>26.030642</td>
+          <td>0.502436</td>
         </tr>
       </tbody>
     </table>
@@ -940,12 +940,12 @@ an SED template library for a template-fitting or hybrid estimator.
     Inserting handle into data store.  input: None, BPZliteInformer
     Inserting handle into data store.  model: inprogress_model.pkl, BPZliteInformer
     Inserting handle into data store.  input: None, KNearNeighInformer
-    split into 40 training and 14 validation samples
+    split into 33 training and 11 validation samples
     finding best fit sigma and NNeigh...
     
     
     
-    best fit values are sigma=0.075 and numneigh=3
+    best fit values are sigma=0.075 and numneigh=5
     
     
     
@@ -956,10 +956,6 @@ an SED template library for a template-fitting or hybrid estimator.
 .. parsed-literal::
 
     stacking some data...
-
-
-.. parsed-literal::
-
     read in training data
     fit the model...
 
@@ -981,7 +977,7 @@ an SED template library for a template-fitting or hybrid estimator.
 
 .. parsed-literal::
 
-    Best bump = 0.05473684210526315, best sharpen = 1.1
+    Best bump = 0.12421052631578948, best sharpen = 1.3
     Inserting handle into data store.  model: inprogress_model.pkl, FlexZBoostInformer
 
 
@@ -1465,31 +1461,25 @@ using the training data. See `Izbicki & Lee
     Writing AB file  /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/examples_data/estimation_data/data/AB/ssp_5Myr_z008.DC2LSST_y.AB
     Process 0 running estimator on chunk 0 - 150
     Inserting handle into data store.  output: inprogress_output.hdf5, BPZliteEstimator
-
-
-.. parsed-literal::
-
     Inserting handle into data store.  input: None, KNearNeighEstimator
-    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x55d7313913d0>, 'bestsig': np.float64(0.075), 'nneigh': 3, 'truezs': array([0.55657578, 0.15628164, 1.08112121, 1.03428864, 0.79080617,
-           0.5738259 , 1.33899605, 0.76665616, 1.22985588, 1.2558651 ,
-           0.23626536, 1.50679052, 0.40391368, 0.39398974, 0.67701137,
-           0.54411364, 0.58274353, 0.32774159, 0.66694409, 0.39556807,
-           1.66931748, 0.8531245 , 0.84963471, 0.45906514, 0.43978974,
-           0.77534676, 1.75164567, 0.90262765, 0.77140224, 0.67755717,
-           1.16743672, 0.79639375, 0.13033083, 0.55240422, 0.37811583,
-           0.77145851, 0.5949352 , 0.41755065, 1.3512429 , 0.94760352,
-           0.73229182, 0.71916658, 0.83944148, 0.09584825, 1.29376411,
-           1.02852273, 0.46523342, 1.23452401, 0.1253393 , 0.41696212,
-           1.09771186, 0.76246935, 0.39741305, 0.3066532 ]), 'only_colors': False}, KNearNeighEstimator
+    Inserting handle into data store.  model: {'kdtree': <sklearn.neighbors._kd_tree.KDTree object at 0x5561e89fc4a0>, 'bestsig': np.float64(0.075), 'nneigh': 5, 'truezs': array([1.24848473, 0.17257373, 1.05918765, 1.11698127, 0.72958469,
+           0.22092588, 0.29599017, 0.29740044, 0.45903644, 0.4143995 ,
+           0.46935967, 0.33912238, 0.69080484, 0.41091365, 0.84274709,
+           0.81424224, 0.43857667, 1.73496343, 1.46242604, 0.36942825,
+           1.1447295 , 0.7169016 , 0.15013102, 0.76031083, 0.52148837,
+           0.37467706, 0.17641734, 0.47197208, 1.37685966, 2.37884083,
+           0.73172015, 0.52681112, 1.25423026, 0.74375266, 0.8230558 ,
+           0.12460821, 1.02158034, 1.53087509, 0.11890943, 0.42126921,
+           0.80016905, 0.73088247, 0.41537255, 0.31980702]), 'only_colors': False}, KNearNeighEstimator
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
-    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
 
 
 .. parsed-literal::
 
+    Inserting handle into data store.  output: inprogress_output.hdf5, KNearNeighEstimator
     Inserting handle into data store.  test_data: None, FlexZBoostEstimator
-    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7f0fe3a95120>, FlexZBoostEstimator
+    Inserting handle into data store.  model: <flexcode.core.FlexCodeModel object at 0x7fec1457d1b0>, FlexZBoostEstimator
     Process 0 running estimator on chunk 0 - 150
     Process 0 estimating PZ PDF for rows 0 - 150
     Inserting handle into data store.  fzboost_estim: inprogress_fzboost_estim.hdf5, FlexZBoostEstimator
@@ -1549,30 +1539,30 @@ dictionary, keyed by the name of the estimator.
 
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.576578   25.116135   24.052393   22.783060   21.931549   21.616611   
-    1    0.710664   26.642641   26.287365   25.734652   25.108639   24.887367   
-    2    0.960145   26.522053   26.204634   25.669857   25.010715   24.509182   
-    3    1.660866   29.665260   28.350712   27.750101   26.898108   26.247391   
-    4    0.505502   25.260094   24.372253   23.218603   22.783365   22.563128   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.301121   25.541651   24.488293   23.704102   23.466599   23.224829   
-    146  0.904394   24.944120   24.650709   23.856140   22.962337   22.401966   
-    147  2.184218   28.033718   27.158781   26.339005   26.024715   25.503304   
-    148  0.752846   25.845242   24.625069   23.078152   21.886288   21.426828   
-    149  1.166007   28.032230   27.204971   26.370100   25.790749   24.962671   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.314606  
-    1     24.780603  
-    2     24.284958  
-    3     25.794825  
-    4     22.264570  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   23.171350  
-    146   22.187031  
-    147   24.730652  
-    148   21.228901  
-    149   24.655422  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1581,30 +1571,30 @@ dictionary, keyed by the name of the estimator.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.576578   25.116135   24.052393   22.783060   21.931549   21.616611   
-    1    0.710664   26.642641   26.287365   25.734652   25.108639   24.887367   
-    2    0.960145   26.522053   26.204634   25.669857   25.010715   24.509182   
-    3    1.660866   29.665260   28.350712   27.750101   26.898108   26.247391   
-    4    0.505502   25.260094   24.372253   23.218603   22.783365   22.563128   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.301121   25.541651   24.488293   23.704102   23.466599   23.224829   
-    146  0.904394   24.944120   24.650709   23.856140   22.962337   22.401966   
-    147  2.184218   28.033718   27.158781   26.339005   26.024715   25.503304   
-    148  0.752846   25.845242   24.625069   23.078152   21.886288   21.426828   
-    149  1.166007   28.032230   27.204971   26.370100   25.790749   24.962671   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.314606  
-    1     24.780603  
-    2     24.284958  
-    3     25.794825  
-    4     22.264570  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   23.171350  
-    146   22.187031  
-    147   24.730652  
-    148   21.228901  
-    149   24.655422  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1613,30 +1603,30 @@ dictionary, keyed by the name of the estimator.
     Inserting handle into data store.  single_distribution_summary: inprogress_single_distribution_summary.hdf5, DistToPointEvaluator
     Inserting handle into data store.  input: None, DistToPointEvaluator
     Inserting handle into data store.  truth:      redshift  mag_u_lsst  mag_g_lsst  mag_r_lsst  mag_i_lsst  mag_z_lsst  \
-    0    0.576578   25.116135   24.052393   22.783060   21.931549   21.616611   
-    1    0.710664   26.642641   26.287365   25.734652   25.108639   24.887367   
-    2    0.960145   26.522053   26.204634   25.669857   25.010715   24.509182   
-    3    1.660866   29.665260   28.350712   27.750101   26.898108   26.247391   
-    4    0.505502   25.260094   24.372253   23.218603   22.783365   22.563128   
+    0    0.558813   24.713184   23.571205   22.227867   21.358557   20.996706   
+    1    0.750511   26.330038   26.115959   25.643736   24.997763   24.764048   
+    2    0.902206   26.077417   25.778303   25.293756   24.599886   24.188847   
+    3    1.533603   29.617435   28.366131   27.764994   26.734232   26.104519   
+    4    2.207015   29.261814   28.010695   27.305864   26.933651   26.488111   
     ..        ...         ...         ...         ...         ...         ...   
-    145  0.301121   25.541651   24.488293   23.704102   23.466599   23.224829   
-    146  0.904394   24.944120   24.650709   23.856140   22.962337   22.401966   
-    147  2.184218   28.033718   27.158781   26.339005   26.024715   25.503304   
-    148  0.752846   25.845242   24.625069   23.078152   21.886288   21.426828   
-    149  1.166007   28.032230   27.204971   26.370100   25.790749   24.962671   
+    145  0.316623   25.344036   24.306952   23.400660   23.142962   22.880863   
+    146  0.929923   24.138351   23.904781   23.119789   22.210760   21.603788   
+    147  2.219889   26.615467   26.182072   25.804331   25.674774   25.449953   
+    148  0.754586   25.210999   23.976595   22.421484   21.186523   20.714924   
+    149  1.152684   27.990147   27.140587   26.285610   25.703796   24.866714   
     
          mag_y_lsst  
-    0     21.314606  
-    1     24.780603  
-    2     24.284958  
-    3     25.794825  
-    4     22.264570  
+    0     20.703762  
+    1     24.650198  
+    2     24.020731  
+    3     25.486366  
+    4     25.984112  
     ..          ...  
-    145   23.171350  
-    146   22.187031  
-    147   24.730652  
-    148   21.228901  
-    149   24.655422  
+    145   22.795786  
+    146   21.364206  
+    147   25.043123  
+    148   20.485714  
+    149   24.574997  
     
     [150 rows x 7 columns], DistToPointEvaluator
     Requested metrics: ['cdeloss', 'pit', 'brier']
@@ -1655,14 +1645,14 @@ dictionary, keyed by the name of the estimator.
 .. parsed-literal::
 
     {'bpz': {'output': {},
-      'summary': {'cdeloss': array([-1.26942386]), 'brier': array([236.53229046])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 97))}},
+      'summary': {'cdeloss': array([-1.24960443]), 'brier': array([232.08179731])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 94))}},
      'fzboost': {'output': {},
-      'summary': {'cdeloss': array([-0.80740688]), 'brier': array([109.89122998])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 95))}},
+      'summary': {'cdeloss': array([0.32863003]), 'brier': array([345.13003697])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 81))}},
      'knn': {'output': {},
-      'summary': {'cdeloss': array([-1.09976918]), 'brier': array([203.75672891])},
-      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 90))}}}
+      'summary': {'cdeloss': array([-1.24433719]), 'brier': array([167.19441218])},
+      'single_distribution_summary': {'pit': Ensemble(the_class=quant,shape=(1, 92))}}}
 
 
 
@@ -1711,8 +1701,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-1.099769</td>
-          <td>203.756729</td>
+          <td>-1.244337</td>
+          <td>167.194412</td>
         </tr>
       </tbody>
     </table>
@@ -1754,8 +1744,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-0.807407</td>
-          <td>109.89123</td>
+          <td>0.32863</td>
+          <td>345.130037</td>
         </tr>
       </tbody>
     </table>
@@ -1797,8 +1787,8 @@ dictionary, keyed by the name of the estimator.
       <tbody>
         <tr>
           <th>0</th>
-          <td>-1.269424</td>
-          <td>236.53229</td>
+          <td>-1.249604</td>
+          <td>232.081797</td>
         </tr>
       </tbody>
     </table>

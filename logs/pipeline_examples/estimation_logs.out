@@ -12,6 +12,16 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 [0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
 
 RENDERING: 03_BPZ_lite_Custom_SEDs
+[1;32m    317[0m [38;5;28;01mif[39;00m file [38;5;129;01min[39;00m {[38;5;241m0[39m, [38;5;241m1[39m, [38;5;241m2[39m}:
+[1;32m    318[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[1;32m    319[0m         [38;5;124mf[39m[38;5;124m"[39m[38;5;124mIPython won[39m[38;5;124m'[39m[38;5;124mt let you open fd=[39m[38;5;132;01m{[39;00mfile[38;5;132;01m}[39;00m[38;5;124m by default [39m[38;5;124m"[39m
+[1;32m    320[0m         [38;5;124m"[39m[38;5;124mas it is likely to crash IPython. If you know what you are doing, [39m[38;5;124m"[39m
+[1;32m    321[0m         [38;5;124m"[39m[38;5;124myou can use builtins[39m[38;5;124m'[39m[38;5;124m open.[39m[38;5;124m"[39m
+[1;32m    322[0m     )
+[0;32m--> 324[0m [38;5;28;01mreturn[39;00m [43mio_open[49m[43m([49m[43mfile[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'test_9816_customsed_demo_prior.pkl'
+
 RENDERING: 05_DNF
 RENDERING: 08_NZDir_pipeline
 [1;32m    485[0m [38;5;28;01mif[39;00m path [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[38;5;124m"[39m[38;5;124mNone[39m[38;5;124m"[39m, [38;5;124m"[39m[38;5;124mnone[39m[38;5;124m"[39m, [38;5;28;01mNone[39;00m]:
@@ -37,29 +47,49 @@ Cell [0;32mIn[17], line 1[0m
 [0;31mNameError[0m: name 'pointy_results' is not defined
 
 RENDERING: 10_YAW
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/urllib/request.py:1351[0m, in [0;36mAbstractHTTPHandler.do_open[0;34m(self, http_class, req, **http_conn_args)[0m
+[1;32m   1348[0m         h[38;5;241m.[39mrequest(req[38;5;241m.[39mget_method(), req[38;5;241m.[39mselector, req[38;5;241m.[39mdata, headers,
+[1;32m   1349[0m                   encode_chunked[38;5;241m=[39mreq[38;5;241m.[39mhas_header([38;5;124m'[39m[38;5;124mTransfer-encoding[39m[38;5;124m'[39m))
+[1;32m   1350[0m     [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m err: [38;5;66;03m# timeout error[39;00m
+[0;32m-> 1351[0m         [38;5;28;01mraise[39;00m URLError(err)
+[1;32m   1352[0m     r [38;5;241m=[39m h[38;5;241m.[39mgetresponse()
+[1;32m   1353[0m [38;5;28;01mexcept[39;00m:
+
+[0;31mURLError[0m: <urlopen error [Errno 110] Connection timed out>
+
 RENDERING: 02_BPZ_lite
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
+
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: 'bpz_results_defaultprior.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = 'bpz_results_defaultprior.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
 RENDERING: 12_SomocluSOM_Quality_Control
-[1;32m    234[0m         [38;5;66;03m# We prefer to receive explicit filenames for the outputs but will[39;00m
-[1;32m    235[0m         [38;5;66;03m# tolerate missing output filenames and will default to tag name in[39;00m
-[1;32m    236[0m         [38;5;66;03m# current folder.[39;00m
-[1;32m    237[0m         [38;5;28mself[39m[38;5;241m.[39m_outputs [38;5;241m=[39m {}
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
 
-[0;31mValueError[0m: 
-
-SOMoclu_summarizer Missing these names on the command line:
-    Input names: --model
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: './healpix_10326_bright_data.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = './healpix_10326_bright_data.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
 
 RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
 RENDERING: 11_SomocluSOM
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
 
-
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mTypeError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[10], line 1[0m
-[0;32m----> 1[0m SOM [38;5;241m=[39m [43mmodel[49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43msom[39;49m[38;5;124;43m'[39;49m[43m][49m
-[1;32m      2[0m bmu_coordinates [38;5;241m=[39m get_bmus(SOM, colors[38;5;241m.[39mT)[38;5;241m.[39mT
-
-[0;31mTypeError[0m: 'NoneType' object is not subscriptable
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: './healpix_10326_bright_data.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = './healpix_10326_bright_data.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
 
 RENDERING: 14_LePhare_LSST
 RENDERING: 07_NZDir
@@ -75,6 +105,16 @@ File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages
 [0;31mAssertionError[0m: 
 
 RENDERING: 16_Running_with_different_data
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
+
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: 'romanrubin_train_data.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = 'romanrubin_train_data.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
 RENDERING: 06_GPz
 RENDERING: 00_Quick_Start_in_Estimation
 
@@ -82,30 +122,34 @@ NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/05_DNF.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/08_NZDir_pipeline.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/04_CMNN.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/10_YAW.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/02_BPZ_lite.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/10_YAW.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/02_BPZ_lite.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/14_LePhare_LSST.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/07_NZDir.ipynb
       1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/15_LePhare_COSMOS.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/16_Running_with_different_data.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/16_Running_with_different_data.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/06_GPz.ipynb
       0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
 
-6 FAILED NOTEBOOK(S):
+10 FAILED NOTEBOOK(S):
 1. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
-2. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/08_NZDir_pipeline.ipynb
-3. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
-4. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
-5. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
-6. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/15_LePhare_COSMOS.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
+3. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/08_NZDir_pipeline.ipynb
+4. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
+5. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/10_YAW.ipynb
+6. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/02_BPZ_lite.ipynb
+7. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
+8. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
+9. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/15_LePhare_COSMOS.ipynb
+10. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/16_Running_with_different_data.ipynb
 
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
@@ -114,4 +158,4 @@ Traceback (most recent call last):
     _report_render_status(status, verbose)
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
     raise ValueError(
-ValueError: 6 out of 17 notebooks failed to render.
+ValueError: 10 out of 17 notebooks failed to render.

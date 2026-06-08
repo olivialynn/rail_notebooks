@@ -101,15 +101,15 @@ file name ``demo_FZB_model.pkl``.
 
     Best bump = 0.08947368421052632, best sharpen = 1.2
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 57.5 s, sys: 665 ms, total: 58.1 s
-    Wall time: 1min
+    CPU times: user 52.5 s, sys: 1.03 s, total: 53.6 s
+    Wall time: 56.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fe6f535df90>
+    <rail.core.data.ModelHandle at 0x7fafbfe43130>
 
 
 
@@ -159,8 +159,8 @@ basis functions.
 
     Inserting handle into data store.  output_fzboost_flexzboost: inprogress_flexzboost.hdf5, fzboost_flexzboost
     File Size is : 3199236 bytes
-    CPU times: user 225 ms, sys: 32.8 ms, total: 258 ms
-    Wall time: 741 ms
+    CPU times: user 227 ms, sys: 35.7 ms, total: 263 ms
+    Wall time: 757 ms
 
 
 Example calculating median and mode. Note that we’re using the
@@ -183,8 +183,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 8.83 s, sys: 19.5 ms, total: 8.85 s
-    Wall time: 8.49 s
+    CPU times: user 7.81 s, sys: 8.12 ms, total: 7.82 s
+    Wall time: 7.51 s
 
 
 .. code:: ipython3
@@ -195,8 +195,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 10.9 s, sys: 29.5 ms, total: 10.9 s
-    Wall time: 10.5 s
+    CPU times: user 9.83 s, sys: 25.3 ms, total: 9.86 s
+    Wall time: 9.53 s
 
 
 Plotting median values.
@@ -233,7 +233,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    10.5 s ± 61.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    9.6 s ± 47.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 Now we’ll repeat the experiment using ``qp.interp`` storage. Again,
@@ -289,8 +289,8 @@ experiment, we used 35 basis functions.
 .. parsed-literal::
 
     File Size is : 49576854 bytes
-    CPU times: user 11 s, sys: 138 ms, total: 11.1 s
-    Wall time: 11.3 s
+    CPU times: user 10.1 s, sys: 113 ms, total: 10.2 s
+    Wall time: 10.4 s
 
 
 Example calculating median and mode. Note that we’re using the
@@ -313,7 +313,7 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    877 ms ± 3.29 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    601 ms ± 2.47 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 .. code:: ipython3
@@ -324,8 +324,8 @@ N-1 cached calculations.
 
 .. parsed-literal::
 
-    CPU times: user 210 ms, sys: 49.3 ms, total: 259 ms
-    Wall time: 259 ms
+    CPU times: user 212 ms, sys: 46.2 ms, total: 258 ms
+    Wall time: 258 ms
 
 
 Plotting median values.
@@ -361,7 +361,7 @@ Example convertion to a ``qp.hist`` histogram representation.
 
 .. parsed-literal::
 
-    311 ms ± 3.12 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    327 ms ± 50.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 We’ll clean up the files that were produced: the model pickle file, and

@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** June 01, 2026
+**Tables last updated:** June 08, 2026
 
 
 ### Pipeline Notebooks
@@ -91,14 +91,14 @@ See more info in each group's log file in `logs/`.
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :white_check_mark: | 08_NZDir_pipeline.ipynb |
+| :x: | 08_NZDir_pipeline.ipynb |
 | :x: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
 | :x: | 13_Sampled_Summarizers.ipynb |
 | :white_check_mark: | 14_LePhare_LSST.ipynb |
-| :white_check_mark: | 15_LePhare_COSMOS.ipynb |
+| :x: | 15_LePhare_COSMOS.ipynb |
 | :white_check_mark: | 16_Running_with_different_data.ipynb |
 
 #### Evaluation Notebooks
@@ -165,8 +165,8 @@ See more info in each group's log file in `logs/`.
 
 |   | Notebook |
 |---|----------|
-| :white_check_mark: | Evaluation_by_Type.ipynb |
-| :white_check_mark: | Single_Evaluation.ipynb |
+| :x: | Evaluation_by_Type.ipynb |
+| :x: | Single_Evaluation.ipynb |
 
 #### Goldenspike Notebooks
 

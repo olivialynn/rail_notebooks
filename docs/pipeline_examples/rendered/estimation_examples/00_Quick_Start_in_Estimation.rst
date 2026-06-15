@@ -91,14 +91,11 @@ in this demo we only take advantage of two specific estimators):
     Imported rail.fsps
     Imported rail.gpz
     Imported rail.hub
-    LEPHAREDIR is being set to the default cache directory:
+    LEPHAREDIR is being set to the default cache directory which is being created at:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
-    Default work cache is already linked. 
-    This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260608T151853
 
 
 .. parsed-literal::
@@ -121,7 +118,7 @@ in this demo we only take advantage of two specific estimators):
         app.launch_new_instance()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 807, in start
         self.io_loop.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
@@ -141,9 +138,9 @@ in this demo we only take advantage of two specific estimators):
         await super().execute_request(stream, ident, parent)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 460, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 665, in run_cell
         return super().run_cell(*args, **kwargs)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
@@ -157,7 +154,7 @@ in this demo we only take advantage of two specific estimators):
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_6933/4014131292.py", line 2, in <module>
+      File "/tmp/ipykernel_5481/4014131292.py", line 2, in <module>
         rail.stages.import_and_attach_all()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/stages/__init__.py", line 74, in import_and_attach_all
         RailEnv.import_all_packages(silent=silent)
@@ -238,11 +235,12 @@ in this demo we only take advantage of two specific estimators):
     Imported rail.som
     Imported rail.stages
     Imported rail.yaw_rail
-    Attached 16 base classes and 98 fully formed stages to rail.stages
+    Attached 16 base classes and 99 fully formed stages to rail.stages
     <class 'rail.estimation.estimator.CatEstimator'>
     <class 'rail.estimation.algos.random_gauss.RandomGaussEstimator'>
     <class 'rail.estimation.algos.train_z.TrainZEstimator'>
     <class 'rail.estimation.algos.bpz_lite.BPZliteEstimator'>
+    <class 'rail.estimation.algos.bpz_preprocess.BPZlitePreEstimator'>
     <class 'rail.estimation.algos.cmnn.CMNNEstimator'>
     <class 'rail.estimation.algos.dnf.DNFEstimator'>
     <class 'rail.estimation.algos.flexzboost.FlexZBoostEstimator'>
@@ -413,15 +411,15 @@ those along with the KDTree in the model.
     
     
     Inserting handle into data store.  model_inform_KNN: inprogress_demo_knn.pkl, inform_KNN
-    CPU times: user 8.83 s, sys: 1.37 s, total: 10.2 s
-    Wall time: 10.2 s
+    CPU times: user 9.04 s, sys: 1.38 s, total: 10.4 s
+    Wall time: 10.4 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc60ca27a30>
+    <rail.core.data.ModelHandle at 0x7f245d46f100>
 
 
 
@@ -651,15 +649,15 @@ trained model for use with the estimation stage.
 
     Best bump = 0.08947368421052632, best sharpen = 1.2
     Inserting handle into data store.  model_inform_fzboost: inprogress_demo_FZB_model.pkl, inform_fzboost
-    CPU times: user 52.5 s, sys: 860 ms, total: 53.4 s
-    Wall time: 57.4 s
+    CPU times: user 53.6 s, sys: 1.03 s, total: 54.6 s
+    Wall time: 58.9 s
 
 
 
 
 .. parsed-literal::
 
-    <rail.core.data.ModelHandle at 0x7fc5f1708940>
+    <rail.core.data.ModelHandle at 0x7f244430d780>
 
 
 
@@ -712,8 +710,8 @@ https://qp-flexzboost.readthedocs.io/en/latest/source/performance_comparison.htm
 
 .. parsed-literal::
 
-    CPU times: user 162 μs, sys: 7 μs, total: 169 μs
-    Wall time: 173 μs
+    CPU times: user 590 μs, sys: 0 ns, total: 590 μs
+    Wall time: 597 μs
 
 
 
@@ -751,7 +749,7 @@ Now, let’s compute photo-z’s using with the ``estimate`` method.
 
 .. parsed-literal::
 
-    CPU times: user 10.3 s, sys: 107 ms, total: 10.4 s
+    CPU times: user 10.3 s, sys: 127 ms, total: 10.4 s
     Wall time: 10.6 s
 
 

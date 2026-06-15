@@ -46,7 +46,7 @@ See more info in each group's log file in `logs/`.
 
 <!--auto update below-->
 
-**Tables last updated:** June 08, 2026
+**Tables last updated:** June 15, 2026
 
 
 ### Pipeline Notebooks
@@ -85,19 +85,19 @@ See more info in each group's log file in `logs/`.
 |---|----------|
 | :white_check_mark: | 00_Quick_Start_in_Estimation.ipynb |
 | :white_check_mark: | 01_FlexZBoost_PDF_Representation_Comparison.ipynb |
-| :white_check_mark: | 02_BPZ_lite.ipynb |
-| :white_check_mark: | 03_BPZ_lite_Custom_SEDs.ipynb |
+| :x: | 02_BPZ_lite.ipynb |
+| :x: | 03_BPZ_lite_Custom_SEDs.ipynb |
 | :white_check_mark: | 04_CMNN.ipynb |
 | :white_check_mark: | 05_DNF.ipynb |
 | :white_check_mark: | 06_GPz.ipynb |
 | :white_check_mark: | 07_NZDir.ipynb |
-| :x: | 08_NZDir_pipeline.ipynb |
+| :white_check_mark: | 08_NZDir_pipeline.ipynb |
 | :x: | 09_PZFlow.ipynb |
 | :white_check_mark: | 10_YAW.ipynb |
 | :x: | 11_SomocluSOM.ipynb |
 | :x: | 12_SomocluSOM_Quality_Control.ipynb |
 | :x: | 13_Sampled_Summarizers.ipynb |
-| :white_check_mark: | 14_LePhare_LSST.ipynb |
+| :x: | 14_LePhare_LSST.ipynb |
 | :x: | 15_LePhare_COSMOS.ipynb |
 | :white_check_mark: | 16_Running_with_different_data.ipynb |
 

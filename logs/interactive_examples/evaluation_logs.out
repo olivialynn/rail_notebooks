@@ -1,5 +1,4 @@
 Rendering notebooks in group: evaluation...
-Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/evaluation_examples
 RENDERING: Evaluation_by_Type
 [1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
 [1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m

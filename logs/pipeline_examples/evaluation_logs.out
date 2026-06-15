@@ -1,10 +1,43 @@
 Rendering notebooks in group: evaluation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/evaluation_examples
-RENDERING: 00_Single_Evaluation
 RENDERING: 01_Evaluation_by_Type
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
+
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: 'examples_data/evaluation_data/data/output_fzboost.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = 'examples_data/evaluation_data/data/output_fzboost.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
+RENDERING: 00_Single_Evaluation
+[1;32m    239[0m             [38;5;241m+[39m [38;5;124mf[39m[38;5;124m"[39m[38;5;124m [39m[38;5;130;01m\n[39;00m[38;5;124m because of error: [39m[38;5;130;01m\n[39;00m[38;5;124m [39m[38;5;132;01m{[39;00me[38;5;132;01m}[39;00m[38;5;124m"[39m
+[1;32m    240[0m         ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01me[39;00m
+[1;32m    241[0m [38;5;28;01mif[39;00m fType [38;5;241m==[39m NUMPY_FITS:
+[1;32m    242[0m     [38;5;28;01mtry[39;00m:
+
+[0;31mRuntimeError[0m: numpyHdf5 file could not be read in with the following arguments: 
+ filepath: 'examples_data/evaluation_data/data/output_fzboost.hdf5', fmt: 'None', keys: None, allow_missing_keys: False, and **kwargs: {} 
+ because of error: 
+ [Errno 2] Unable to synchronously open file (unable to open file: name = 'examples_data/evaluation_data/data/output_fzboost.hdf5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
 
 NOTEBOOK RENDERING STATUS:
 R. Code  Notebook
 -------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/00_Single_Evaluation.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/00_Single_Evaluation.ipynb
+
+2 FAILED NOTEBOOK(S):
+1. /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/01_Evaluation_by_Type.ipynb
+2. /home/runner/work/rail_notebooks/rail/pipeline_examples/evaluation_examples/00_Single_Evaluation.ipynb
+
+Traceback (most recent call last):
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
+    run_render_notebook_group()
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 281, in run_render_notebook_group
+    _report_render_status(status, verbose)
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
+    raise ValueError(
+ValueError: 2 out of 2 notebooks failed to render.

@@ -31,11 +31,14 @@ in the ``pipeline_examples/creation_examples/`` folder.
     python -m pip install .
     export SPS_HOME=$(pwd)/src/fsps/libfsps
     
-    LEPHAREDIR is being set to the default cache directory which is being created at:
+    LEPHAREDIR is being set to the default cache directory:
     /home/runner/.cache/lephare/data
     More than 1Gb may be written there.
     LEPHAREWORK is being set to the default cache directory:
     /home/runner/.cache/lephare/work
+    Default work cache is already linked. 
+    This is linked to the run directory:
+    /home/runner/.cache/lephare/runs/20260615T135044
 
 
 .. parsed-literal::
@@ -58,7 +61,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         app.launch_new_instance()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 807, in start
         self.io_loop.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
@@ -78,9 +81,9 @@ in the ``pipeline_examples/creation_examples/`` folder.
         await super().execute_request(stream, ident, parent)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 460, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 665, in run_cell
         return super().run_cell(*args, **kwargs)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
@@ -94,7 +97,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_4109/561744479.py", line 4, in <module>
+      File "/tmp/ipykernel_5384/561744479.py", line 4, in <module>
         from rail.interactive.creation.degraders import unrec_bl_model
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -313,28 +316,28 @@ Study one BL case
 .. parsed-literal::
 
     Truth RA / Blended RA:
-    [0.00281167 0.00279159] / 0.0028016297222676137
+    [0.00309657 0.00311543] / 0.0031059982692828794
     
     Truth DEC / Blended DEC:
-    [0.00086827 0.0009158 ] / 0.0008920355271254831
+    [0.02330847 0.02347147] / 0.023389971859999727
     
     Truth mag u / Blended mag u:
-    [16.75826861 25.42749745] / 16.7578988149317
+    [17.87386702 27.42419409] / 17.873702749500648
     
     Truth mag g / Blended mag g:
-    [21.18061806 22.42591366] / 20.88115833321612
+    [26.69744682 21.19185262] / 21.1850585957132
     
     Truth mag r / Blended mag r:
-    [18.87132756 27.50149866] / 18.870944225842592
+    [28.21826258 25.13697177] / 25.07519930356511
     
     Truth mag i / Blended mag i:
-    [23.1799595  31.70850197] / 23.179538558244253
+    [25.44537576 24.72569868] / 24.27439343445661
     
     Truth mag z / Blended mag z:
-    [25.16476958 27.30257   ] / 25.022890188968656
+    [29.33821228 20.09765534] / 20.097436834313562
     
     Truth mag y / Blended mag y:
-    [24.14948997 24.12690859] / 23.38556558267567
+    [19.73951778 21.01724319] / 19.447786946343037
     
 
 

@@ -58,7 +58,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
     /home/runner/.cache/lephare/work
     Default work cache is already linked. 
     This is linked to the run directory:
-    /home/runner/.cache/lephare/runs/20260608T131703
+    /home/runner/.cache/lephare/runs/20260615T135044
 
 
 .. parsed-literal::
@@ -81,7 +81,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         app.launch_new_instance()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/traitlets/config/application.py", line 1082, in launch_instance
         app.start()
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 758, in start
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 807, in start
         self.io_loop.start()
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/tornado/platform/asyncio.py", line 211, in start
         self.asyncio_loop.run_forever()
@@ -101,9 +101,9 @@ in the ``pipeline_examples/creation_examples/`` folder.
         await super().execute_request(stream, ident, parent)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
         reply_content = await reply_content
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 464, in do_execute
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/ipkernel.py", line 460, in do_execute
         res = shell.run_cell(
-      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 663, in run_cell
+      File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 665, in run_cell
         return super().run_cell(*args, **kwargs)
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3077, in run_cell
         result = self._run_cell(
@@ -117,7 +117,7 @@ in the ``pipeline_examples/creation_examples/`` folder.
         if await self.run_code(code, result, async_=asy):
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3579, in run_code
         exec(code_obj, self.user_global_ns, self.user_ns)
-      File "/tmp/ipykernel_5377/1741399557.py", line 6, in <module>
+      File "/tmp/ipykernel_5650/1741399557.py", line 6, in <module>
         from rail import interactive as ri
       File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/interactive/__init__.py", line 3, in <module>
         from . import calib, creation, estimation, evaluation, tools
@@ -253,50 +253,50 @@ np.repeat(item, 100).flatten()
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>23.978921</td>
-          <td>21.057493</td>
+          <td>22.666854</td>
+          <td>21.783319</td>
           <td>20.0</td>
-          <td>1.957552</td>
+          <td>1.491814</td>
         </tr>
         <tr>
           <th>1</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>20.839300</td>
-          <td>15.927059</td>
+          <td>22.613128</td>
+          <td>20.378225</td>
           <td>20.0</td>
-          <td>0.644421</td>
+          <td>1.019943</td>
         </tr>
         <tr>
           <th>2</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>21.546569</td>
-          <td>20.303066</td>
+          <td>21.451353</td>
+          <td>17.687405</td>
           <td>20.0</td>
-          <td>0.146031</td>
+          <td>0.562014</td>
         </tr>
         <tr>
           <th>3</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>18.743059</td>
-          <td>14.935818</td>
+          <td>20.167573</td>
+          <td>21.169065</td>
           <td>20.0</td>
-          <td>0.830074</td>
+          <td>1.269813</td>
         </tr>
         <tr>
           <th>4</th>
           <td>20.0</td>
           <td>20.0</td>
           <td>20.0</td>
-          <td>22.394852</td>
-          <td>21.257817</td>
+          <td>18.399432</td>
+          <td>17.059114</td>
           <td>20.0</td>
-          <td>0.493431</td>
+          <td>1.471159</td>
         </tr>
       </tbody>
     </table>
@@ -333,8 +333,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output: inprogress_output.pq, SpecSelection_zCOSMOS
-    CPU times: user 1.41 s, sys: 21.5 ms, total: 1.44 s
-    Wall time: 1.43 s
+    CPU times: user 1.38 s, sys: 19.7 ms, total: 1.4 s
+    Wall time: 1.39 s
 
 
 .. code:: ipython3
@@ -345,17 +345,17 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 503353 entries, 1 to 1999997
+    Index: 503779 entries, 2 to 1999998
     Data columns (total 7 columns):
      #   Column    Non-Null Count   Dtype  
     ---  ------    --------------   -----  
-     0   u         503353 non-null  float64
-     1   g         503353 non-null  float64
-     2   r         503353 non-null  float64
-     3   i         503353 non-null  float64
-     4   z         503353 non-null  float64
-     5   y         503353 non-null  float64
-     6   redshift  503353 non-null  float64
+     0   u         503779 non-null  float64
+     1   g         503779 non-null  float64
+     2   r         503779 non-null  float64
+     3   i         503779 non-null  float64
+     4   z         503779 non-null  float64
+     5   y         503779 non-null  float64
+     6   redshift  503779 non-null  float64
     dtypes: float64(7)
     memory usage: 30.7 MB
 

@@ -129,7 +129,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.34</td>
+          <td>2.36</td>
         </tr>
         <tr>
           <th>1</th>
@@ -137,7 +137,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.34</td>
+          <td>2.36</td>
         </tr>
         <tr>
           <th>2</th>
@@ -145,7 +145,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.34</td>
+          <td>2.36</td>
         </tr>
         <tr>
           <th>3</th>
@@ -153,7 +153,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.34</td>
+          <td>2.36</td>
         </tr>
         <tr>
           <th>4</th>
@@ -161,7 +161,7 @@ circumstances.
           <td>-1.98</td>
           <td>20.0</td>
           <td>21.98</td>
-          <td>0.34</td>
+          <td>2.36</td>
         </tr>
       </tbody>
     </table>
@@ -221,8 +221,8 @@ Let’s run the code and see how long it takes:
 .. parsed-literal::
 
     Inserting handle into data store.  output_hsc_cutter: inprogress_test_hsc.pq, hsc_cutter
-    CPU times: user 2.58 s, sys: 97.8 ms, total: 2.68 s
-    Wall time: 2.67 s
+    CPU times: user 2.57 s, sys: 109 ms, total: 2.68 s
+    Wall time: 2.68 s
 
 
 This took 10.1s on my home computer, not too bad for 4 million mock
@@ -236,19 +236,19 @@ galaxies.
 .. parsed-literal::
 
     <class 'pandas.core.frame.DataFrame'>
-    Index: 181741 entries, 84300 to 927791
+    Index: 181565 entries, 84300 to 927791
     Data columns (total 9 columns):
      #   Column     Non-Null Count   Dtype  
     ---  ------     --------------   -----  
-     0   i          181741 non-null  float64
-     1   gz         181741 non-null  float64
-     2   g          181741 non-null  float64
-     3   z          181741 non-null  float64
-     4   redshift   181741 non-null  float64
-     5   x_vals     181741 non-null  float64
-     6   y_vals     181741 non-null  float64
-     7   ratios     181741 non-null  float64
-     8   max_specz  181741 non-null  float64
+     0   i          181565 non-null  float64
+     1   gz         181565 non-null  float64
+     2   g          181565 non-null  float64
+     3   z          181565 non-null  float64
+     4   redshift   181565 non-null  float64
+     5   x_vals     181565 non-null  float64
+     6   y_vals     181565 non-null  float64
+     7   ratios     181565 non-null  float64
+     8   max_specz  181565 non-null  float64
     dtypes: float64(9)
     memory usage: 13.9 MB
 
@@ -275,7 +275,7 @@ a visual indication of how many galaxies in each cell we’ve kept.
 
 .. parsed-literal::
 
-    /tmp/ipykernel_4533/1938339790.py:1: SettingWithCopyWarning: 
+    /tmp/ipykernel_4329/1938339790.py:1: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

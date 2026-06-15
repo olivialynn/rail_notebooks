@@ -1,14 +1,14 @@
 Rendering notebooks in group: goldenspike...
 RENDERING: Goldenspike
-[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
 
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
-[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
-[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
-[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
-[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
+File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/yaml/constructor.py:427[0m, in [0;36mSafeConstructor.construct_undefined[0;34m(self, node)[0m
+[1;32m    426[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mconstruct_undefined[39m([38;5;28mself[39m, node):
+[0;32m--> 427[0m     [38;5;28;01mraise[39;00m ConstructorError([38;5;28;01mNone[39;00m, [38;5;28;01mNone[39;00m,
+[1;32m    428[0m             [38;5;124m"[39m[38;5;124mcould not determine a constructor for the tag [39m[38;5;132;01m%r[39;00m[38;5;124m"[39m [38;5;241m%[39m node[38;5;241m.[39mtag,
+[1;32m    429[0m             node[38;5;241m.[39mstart_mark)
 
-[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
+[0;31mConstructorError[0m: could not determine a constructor for the tag 'tag:yaml.org,2002:python/object/apply:numpy._core.multiarray.scalar'
+  in "tmp_goldenspike_config.yml", line 359, column 5
 
 
 NOTEBOOK RENDERING STATUS:

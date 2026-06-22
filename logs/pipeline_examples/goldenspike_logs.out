@@ -1,29 +1,16 @@
 Rendering notebooks in group: goldenspike...
 RENDERING: Goldenspike
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/yaml/constructor.py:427[0m, in [0;36mSafeConstructor.construct_undefined[0;34m(self, node)[0m
-[1;32m    426[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mconstruct_undefined[39m([38;5;28mself[39m, node):
-[0;32m--> 427[0m     [38;5;28;01mraise[39;00m ConstructorError([38;5;28;01mNone[39;00m, [38;5;28;01mNone[39;00m,
-[1;32m    428[0m             [38;5;124m"[39m[38;5;124mcould not determine a constructor for the tag [39m[38;5;132;01m%r[39;00m[38;5;124m"[39m [38;5;241m%[39m node[38;5;241m.[39mtag,
-[1;32m    429[0m             node[38;5;241m.[39mstart_mark)
-
-[0;31mConstructorError[0m: could not determine a constructor for the tag 'tag:yaml.org,2002:python/object/apply:numpy._core.multiarray.scalar'
-  in "tmp_goldenspike_config.yml", line 359, column 5
-
-
-NOTEBOOK RENDERING STATUS:
-R. Code  Notebook
--------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/goldenspike_examples/Goldenspike.ipynb
-
-1 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/goldenspike_examples/Goldenspike.ipynb
-
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
     run_render_notebook_group()
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 281, in run_render_notebook_group
-    _report_render_status(status, verbose)
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
-    raise ValueError(
-ValueError: 1 out of 1 notebooks failed to render.
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 274, in run_render_notebook_group
+    status = _render_notebook_group(
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 165, in _render_notebook_group
+    result = subprocess.run(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'jupyter'

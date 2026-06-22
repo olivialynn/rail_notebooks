@@ -1,139 +1,17 @@
 Rendering notebooks in group: estimation...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/estimation_examples
 RENDERING: 11_SomocluSOM
-
-
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mTypeError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[10], line 1[0m
-[0;32m----> 1[0m SOM [38;5;241m=[39m [43mmodel[49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43msom[39;49m[38;5;124;43m'[39;49m[43m][49m
-[1;32m      2[0m bmu_coordinates [38;5;241m=[39m get_bmus(SOM, colors[38;5;241m.[39mT)[38;5;241m.[39mT
-
-[0;31mTypeError[0m: 'NoneType' object is not subscriptable
-
-RENDERING: 10_YAW
-RENDERING: 03_BPZ_lite_Custom_SEDs
-[1;32m    317[0m [38;5;28;01mif[39;00m file [38;5;129;01min[39;00m {[38;5;241m0[39m, [38;5;241m1[39m, [38;5;241m2[39m}:
-[1;32m    318[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
-[1;32m    319[0m         [38;5;124mf[39m[38;5;124m"[39m[38;5;124mIPython won[39m[38;5;124m'[39m[38;5;124mt let you open fd=[39m[38;5;132;01m{[39;00mfile[38;5;132;01m}[39;00m[38;5;124m by default [39m[38;5;124m"[39m
-[1;32m    320[0m         [38;5;124m"[39m[38;5;124mas it is likely to crash IPython. If you know what you are doing, [39m[38;5;124m"[39m
-[1;32m    321[0m         [38;5;124m"[39m[38;5;124myou can use builtins[39m[38;5;124m'[39m[38;5;124m open.[39m[38;5;124m"[39m
-[1;32m    322[0m     )
-[0;32m--> 324[0m [38;5;28;01mreturn[39;00m [43mio_open[49m[43m([49m[43mfile[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
-
-[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'test_9816_customsed_demo_prior.pkl'
-
-RENDERING: 09_PZFlow
-[0;32m---> 43[0m     [38;5;28;01mreturn[39;00m [43mflow_model_read[49m[43m([49m[43mpath[49m[43m)[49m
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/tools/flow_handle.py:13[0m, in [0;36mflow_model_read[0;34m(modelfile)[0m
-[1;32m     11[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mflow_model_read[39m(modelfile: [38;5;28mstr[39m) [38;5;241m-[39m[38;5;241m>[39m ModelLike:
-[1;32m     12[0m [38;5;250m    [39m[38;5;124;03m"""Default function to read model files, simply used pickle.load"""[39;00m
-[0;32m---> 13[0m     flow [38;5;241m=[39m [43mFlow[49m[43m([49m[43mfile[49m[38;5;241;43m=[39;49m[43mmodelfile[49m[43m)[49m
-[1;32m     14[0m     [38;5;28;01mreturn[39;00m flow
-
-[0;31mTypeError[0m: Flow.__init__() got an unexpected keyword argument 'file'
-
-RENDERING: 01_FlexZBoost_PDF_Representation_Comparison
-RENDERING: 16_Running_with_different_data
-RENDERING: 00_Quick_Start_in_Estimation
-RENDERING: 15_LePhare_COSMOS
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/lephare/filterSvc.py:255[0m, in [0;36mFilterSvc.from_keymap[0;34m(cls, keymap)[0m
-[1;32m    253[0m [38;5;28;01mfor[39;00m i [38;5;129;01min[39;00m [38;5;28mrange[39m([38;5;28mlen[39m(filter_list)):
-[1;32m    254[0m     name [38;5;241m=[39m os[38;5;241m.[39mpath[38;5;241m.[39mjoin(keymap[[38;5;124m"[39m[38;5;124mFILTER_REP[39m[38;5;124m"[39m][38;5;241m.[39mvalue, filter_list[i])
-[0;32m--> 255[0m     oneflt [38;5;241m=[39m [43mflt[49m[43m([49m[43mi[49m[43m,[49m[43m [49m[43mname[49m[43m,[49m[43m [49m[38;5;28;43mint[39;49m[43m([49m[43mfilter_trans[49m[43m[[49m[43mi[49m[43m][49m[43m)[49m[43m,[49m[43m [49m[38;5;28;43mint[39;49m[43m([49m[43mfilter_calib[49m[43m[[49m[43mi[49m[43m][49m[43m)[49m[43m)[49m
-[1;32m    256[0m     flt_array[38;5;241m.[39mappend(oneflt)
-[1;32m    257[0m [38;5;28;01mreturn[39;00m flt_array
-
-[0;31mValueError[0m: Can't open filter file /home/runner/.cache/lephare/data/filt/lsst/total_u.pb
-
-RENDERING: 05_DNF
-RENDERING: 14_LePhare_LSST
-[0;32m--> 192[0m [38;5;28;01mreturn[39;00m [43mds[49m[38;5;241;43m.[39;49m[43mopen[49m[43m([49m[43mpath[49m[43m,[49m[43m [49m[43mmode[49m[43m,[49m[43m [49m[43mencoding[49m[38;5;241;43m=[39;49m[43mencoding[49m[43m,[49m[43m [49m[43mnewline[49m[38;5;241;43m=[39;49m[43mnewline[49m[43m)[49m
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/numpy/lib/_datasource.py:529[0m, in [0;36mDataSource.open[0;34m(self, path, mode, encoding, newline)[0m
-[1;32m    526[0m     [38;5;28;01mreturn[39;00m _file_openers[ext](found, mode[38;5;241m=[39mmode,
-[1;32m    527[0m                               encoding[38;5;241m=[39mencoding, newline[38;5;241m=[39mnewline)
-[1;32m    528[0m [38;5;28;01melse[39;00m:
-[0;32m--> 529[0m     [38;5;28;01mraise[39;00m [38;5;167;01mFileNotFoundError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;132;01m{[39;00mpath[38;5;132;01m}[39;00m[38;5;124m not found.[39m[38;5;124m"[39m)
-
-[0;31mFileNotFoundError[0m: /home/runner/.cache/lephare/data/alloutputkeys.txt not found.
-
-RENDERING: 07_NZDir
-RENDERING: 12_SomocluSOM_Quality_Control
-[1;32m    113[0m     first [38;5;241m=[39m [38;5;28;01mTrue[39;00m
-
-File [0;32m/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/rail/estimation/algos/bpz_lite.py:479[0m, in [0;36mBPZliteEstimator.open_model[0;34m(self, **kwargs)[0m
-[1;32m    477[0m [38;5;28mself[39m[38;5;241m.[39mmodel [38;5;241m=[39m CatEstimator[38;5;241m.[39mopen_model([38;5;28mself[39m, [38;5;241m*[39m[38;5;241m*[39mkwargs)
-[1;32m    478[0m catmodeldict [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mmodel
-[0;32m--> 479[0m [38;5;28mself[39m[38;5;241m.[39mmodeldict [38;5;241m=[39m [43mcatmodeldict[49m[43m[[49m[38;5;124;43m"[39;49m[38;5;124;43mpriormodel[39;49m[38;5;124;43m"[39;49m[43m][49m
-[1;32m    480[0m [38;5;28mself[39m[38;5;241m.[39mzp_off_from_file [38;5;241m=[39m catmodeldict[[38;5;124m"[39m[38;5;124mzp_offsets[39m[38;5;124m"[39m][[38;5;124m"[39m[38;5;124moffsets[39m[38;5;124m"[39m]
-
-[0;31mKeyError[0m: 'priormodel'
-
-RENDERING: 13_Sampled_Summarizers
-------------------
-
-
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[17], line 1[0m
-[0;32m----> 1[0m pens [38;5;241m=[39m [43mpointy_results[49m[38;5;241m.[39mdata
-
-[0;31mNameError[0m: name 'pointy_results' is not defined
-
-RENDERING: 02_BPZ_lite
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[14], line 2[0m
-[1;32m      1[0m plt[38;5;241m.[39mfigure(figsize[38;5;241m=[39m([38;5;241m8[39m,[38;5;241m8[39m))
-[0;32m----> 2[0m plt[38;5;241m.[39mscatter(sz, [43mnewsed_result[49m()[38;5;241m.[39mancil[[38;5;124m'[39m[38;5;124mzmode[39m[38;5;124m'[39m][38;5;241m.[39mflatten(), s[38;5;241m=[39m[38;5;241m2[39m, c[38;5;241m=[39m[38;5;124m'[39m[38;5;124mk[39m[38;5;124m'[39m, label[38;5;241m=[39m[38;5;124m'[39m[38;5;124mdefault prior mode[39m[38;5;124m'[39m)
-[1;32m      3[0m plt[38;5;241m.[39mplot([[38;5;241m0[39m,[38;5;241m3[39m], [[38;5;241m0[39m,[38;5;241m3[39m], [38;5;124m'[39m[38;5;124mb--[39m[38;5;124m'[39m)
-[1;32m      4[0m plt[38;5;241m.[39mxlabel([38;5;124m"[39m[38;5;124mredshift[39m[38;5;124m"[39m)
-
-[0;31mNameError[0m: name 'newsed_result' is not defined
-
-RENDERING: 08_NZDir_pipeline
-RENDERING: 04_CMNN
-RENDERING: 06_GPz
-
-NOTEBOOK RENDERING STATUS:
-R. Code  Notebook
--------  ------------------------------------------------------------
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/10_YAW.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/01_FlexZBoost_PDF_Representation_Comparison.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/16_Running_with_different_data.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/00_Quick_Start_in_Estimation.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/15_LePhare_COSMOS.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/05_DNF.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/14_LePhare_LSST.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/07_NZDir.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
-      1  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/02_BPZ_lite.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/08_NZDir_pipeline.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/04_CMNN.ipynb
-      0  /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/06_GPz.ipynb
-
-8 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/11_SomocluSOM.ipynb
-2. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/03_BPZ_lite_Custom_SEDs.ipynb
-3. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/09_PZFlow.ipynb
-4. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/15_LePhare_COSMOS.ipynb
-5. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/14_LePhare_LSST.ipynb
-6. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/12_SomocluSOM_Quality_Control.ipynb
-7. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/13_Sampled_Summarizers.ipynb
-8. /home/runner/work/rail_notebooks/rail/pipeline_examples/estimation_examples/02_BPZ_lite.ipynb
-
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
     run_render_notebook_group()
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 281, in run_render_notebook_group
-    _report_render_status(status, verbose)
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
-    raise ValueError(
-ValueError: 8 out of 17 notebooks failed to render.
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 274, in run_render_notebook_group
+    status = _render_notebook_group(
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 165, in _render_notebook_group
+    result = subprocess.run(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'jupyter'

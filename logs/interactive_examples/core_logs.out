@@ -1,32 +1,17 @@
 Rendering notebooks in group: core...
 Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/core_examples
 RENDERING: Hyperbolic_Magnitude
-RENDERING: FluxtoMag_and_Deredden
-[0;32m--> 518[0m     np[38;5;241m.[39marray([43mdata[49m[43m[[49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mconfig[49m[38;5;241;43m.[39;49m[43mra_name[49m[43m][49m),
-[1;32m    519[0m     np[38;5;241m.[39marray(data[[38;5;28mself[39m[38;5;241m.[39mconfig[38;5;241m.[39mdec_name]),
-[1;32m    520[0m     unit[38;5;241m=[39m[38;5;124m"[39m[38;5;124mdeg[39m[38;5;124m"[39m,
-[1;32m    521[0m     frame[38;5;241m=[39m[38;5;124m"[39m[38;5;124mfk5[39m[38;5;124m"[39m,
-[1;32m    522[0m )
-[1;32m    523[0m dust_map_dict [38;5;241m=[39m [38;5;28mdict[39m(sfd[38;5;241m=[39mdustmaps_sfd[38;5;241m.[39mSFDQuery)
-[1;32m    524[0m [38;5;28;01mtry[39;00m:
-
-[0;31mKeyError[0m: 'ra'
-
-
-NOTEBOOK RENDERING STATUS:
-R. Code  Notebook
--------  ------------------------------------------------------------
-      0  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/Hyperbolic_Magnitude.ipynb
-      1  /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb
-
-1 FAILED NOTEBOOK(S):
-1. /home/runner/work/rail_notebooks/rail/interactive_examples/core_examples/FluxtoMag_and_Deredden.ipynb
-
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
     run_render_notebook_group()
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 281, in run_render_notebook_group
-    _report_render_status(status, verbose)
-  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 229, in _report_render_status
-    raise ValueError(
-ValueError: 1 out of 2 notebooks failed to render.
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 274, in run_render_notebook_group
+    status = _render_notebook_group(
+  File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 165, in _render_notebook_group
+    result = subprocess.run(
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'jupyter'

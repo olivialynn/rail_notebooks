@@ -1,5 +1,4 @@
 Rendering notebooks in group: creation...
-Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/interactive_examples/rendered/creation_examples
 RENDERING: FSPS_SED
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

@@ -1,5 +1,4 @@
 Rendering notebooks in group: estimation...
-Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/estimation_examples
 RENDERING: 11_SomocluSOM
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

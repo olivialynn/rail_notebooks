@@ -1,5 +1,4 @@
 Rendering notebooks in group: creation...
-Cleared rendered output directory: /home/runner/work/rail_notebooks/rail_notebooks/docs/pipeline_examples/rendered/creation_examples
 RENDERING: 06_Blending_Degrader
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>

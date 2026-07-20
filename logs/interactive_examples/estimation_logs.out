@@ -1,5 +1,5 @@
 Rendering notebooks in group: estimation...
-RENDERING: CMNN
+RENDERING: Sampled_Summarizers
 Traceback (most recent call last):
   File "/home/runner/work/rail_notebooks/rail_notebooks/src/rail_notebooks/render_notebooks.py", line 285, in <module>
     run_render_notebook_group()
